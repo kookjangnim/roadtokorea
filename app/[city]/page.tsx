@@ -34,9 +34,9 @@ export default async function CityPage({ params }: { params: { city: string } })
     tier: cityData.meta?.tier_level || 1,
     description: cityData.excerpt.rendered,
     history: cityData.content.rendered,
-    attractions: [],
-    accommodations: [],
-    transportation: []
+    attractions: [] as any[],
+    accommodations: [] as any[],
+    transportation: [] as any[]
   };
 
   // 티어별 색상
