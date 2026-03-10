@@ -60,7 +60,7 @@ export async function fetchPosts(params?: {
 
   try {
     const response = await fetch(`${API_BASE}/posts?${queryParams.toString()}`, {
-      next: { revalidate: 3600 }, // 1시간마다 재검증
+      next: { revalidate: 60 }, // 1분마다 재검증 (빠른 테스트 반영 위함)
     });
 
     if (!response.ok) {
@@ -82,7 +82,7 @@ export async function fetchPosts(params?: {
 export async function fetchCity(slug: string): Promise<WordPressPost | null> {
   try {
     const response = await fetch(`${API_BASE}/posts?slug=${slug}`, {
-      next: { revalidate: 3600 },
+      next: { revalidate: 60 },
     });
 
     if (!response.ok) {
@@ -146,7 +146,7 @@ export async function fetchPopularPosts(): Promise<WordPressPost[]> {
     const response = await fetch(
       `${API_BASE}/posts?orderby=meta_value&meta_key=popularity_score&per_page=6`,
       {
-        next: { revalidate: 3600 },
+        next: { revalidate: 60 },
       }
     );
 
@@ -169,7 +169,7 @@ export async function fetchLatestPosts(): Promise<WordPressPost[]> {
     const response = await fetch(
       `${API_BASE}/posts?orderby=date&order=desc&per_page=6`,
       {
-        next: { revalidate: 3600 },
+        next: { revalidate: 60 },
       }
     );
 
