@@ -61,14 +61,14 @@ export default function Home() {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+              }`}
           >
             <Image
               src={slide.image}
               alt="Discover Hidden Korea"
               fill
+              sizes="100vw"
               className="object-cover"
               priority={index === 0}
             />
@@ -90,9 +90,9 @@ export default function Home() {
             <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105 shadow-lg">
               Start Your Journey
             </button>
-            <button className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105 border border-white/30 shadow-lg">
+            <a href="#regions" className="inline-block bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105 border border-white/30 shadow-lg text-center">
               Explore Regions
-            </button>
+            </a>
           </div>
         </div>
 
@@ -123,9 +123,8 @@ export default function Home() {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                index === currentSlide ? 'bg-orange-500 w-8' : 'bg-white/50 hover:bg-white/80'
-              }`}
+              className={`w-3 h-3 rounded-full transition-all ${index === currentSlide ? 'bg-orange-500 w-8' : 'bg-white/50 hover:bg-white/80'
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
@@ -133,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* Tier Preview Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
+      <section id="regions" className="py-20 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">
             Explore Korean Cities
@@ -144,9 +143,12 @@ export default function Home() {
 
           {/* Tier 1: Large Cards */}
           <div className="mb-16">
-            <h3 className="text-2xl font-semibold text-white mb-8 flex items-center gap-2">
-              <span className="text-3xl">🏆</span> Tier 1: Must-Visit Cities
-            </h3>
+            <div className="flex justify-between items-center mb-8">
+              <h3 className="text-2xl font-semibold text-white flex items-center gap-2">
+                <span className="text-3xl">🏆</span> Tier 1: Must-Visit Cities
+              </h3>
+              <a href="/tier-1/cities" className="text-orange-400 hover:text-orange-300 font-medium transition-colors">See all →</a>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { name: 'Seoul', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg' },
@@ -163,6 +165,7 @@ export default function Home() {
                       src={city.image}
                       alt={city.name}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -180,9 +183,12 @@ export default function Home() {
 
           {/* Tier 2: Medium Cards */}
           <div className="mb-16">
-            <h3 className="text-2xl font-semibold text-white mb-8 flex items-center gap-2">
-              <span className="text-3xl">⭐</span> Tier 2: Popular Cities
-            </h3>
+            <div className="flex justify-between items-center mb-8">
+              <h3 className="text-2xl font-semibold text-white flex items-center gap-2">
+                <span className="text-3xl">⭐</span> Tier 2: Popular Cities
+              </h3>
+              <a href="/tier-2/cities" className="text-orange-400 hover:text-orange-300 font-medium transition-colors">See all →</a>
+            </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 { name: 'Jeonju', tier: 'Tier 2', image: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg' },
@@ -199,6 +205,7 @@ export default function Home() {
                       src={city.image}
                       alt={city.name}
                       fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -216,9 +223,12 @@ export default function Home() {
 
           {/* Tier 3-4: Small Cards */}
           <div>
-            <h3 className="text-2xl font-semibold text-white mb-8 flex items-center gap-2">
-              <span className="text-3xl">🌱</span> Tier 3-4: Hidden Gems
-            </h3>
+            <div className="flex justify-between items-center mb-8">
+              <h3 className="text-2xl font-semibold text-white flex items-center gap-2">
+                <span className="text-3xl">🌱</span> Tier 3-4: Hidden Gems
+              </h3>
+              <a href="/tier-3/cities" className="text-orange-400 hover:text-orange-300 font-medium transition-colors">See all →</a>
+            </div>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
               {[
                 { name: 'Suncheon', tier: 'Tier 3', image: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg' },
@@ -237,6 +247,7 @@ export default function Home() {
                       src={city.image}
                       alt={city.name}
                       fill
+                      sizes="(max-width: 768px) 33vw, 16vw"
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
@@ -302,6 +313,7 @@ export default function Home() {
                         src={post.image}
                         alt={post.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover"
                       />
                     </div>
@@ -400,18 +412,21 @@ export default function Home() {
             </p>
             <div className="flex justify-center gap-6 mb-6">
               <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
+                <span className="sr-only">Twitter</span>
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 18.84-7.314 22-20.001-20.373-13.284-37.665-31.091-39.664-8.317.653-6.637 1.188-9.636 2.504-9.636 2.518 0 .976-.032 1.849-.093 2.653-.17 3.096-2.058 6.004-3.471 9.693-3.883l2.24-1.423c-.058.451-.09.912-.09 1.374v18.372c0 .458.032.916.09 1.374z"/>
+                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 18.84-7.314 22-20.001-20.373-13.284-37.665-31.091-39.664-8.317.653-6.637 1.188-9.636 2.504-9.636 2.518 0 .976-.032 1.849-.093 2.653-.17 3.096-2.058 6.004-3.471 9.693-3.883 l 2.24 -1.423 c-.058.451-.09.912-.09 1.374 v 18.372 c0 .458.032.916.09 1.374z" />
                 </svg>
               </a>
               <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
+                <span className="sr-only">Instagram</span>
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 6.066 2.55 7.95 5.426 7.95 5.426 1.246 0 2.476-.195 3.603-.553.858-.358 1.65-.83 2.22-1.464 2.22-.508 0-1.024-.12-1.55-.353-.705-.46-1.26-1.058-1.636-1.824-.49-1.07-.712-2.194-.68-3.322.105-.75.284-1.47.46-2.19.702-2.554 1.733-2.957 3.35-4.822 6.485-4.822.376 0 .624-.028.92-.083.24-.348.966-.766 1.69-1.592 2.368-2.55.362-.53.616-1.087.97-1.693 1.29.087-.09.168-.16.348-.24.528-.247.025-.002.05-.025.075-.025.108 0 .04.02.082.028.124.06.24.06.47.38.763.63 1.098.348.664.557 1.37.557 2.095.557 2.095 0 3.792-.616 5.243-1.635.683.752 1.18 1.525 1.394 2.34.347.65.742.935 1.525.935 2.34 0 8.547-6.93 15.5-15.5 15.5-.078 0-.155-.002-.233-.005-.456-1.607-4.886-6.298-8.403-11.792-8.403-5.394 0-10.185 4.306-10.185 10.185v.327c0 1.363 1.106 2.468 2.468 2.468.678 0 1.32-.276 1.78-.724.458-1.09.795-2.49.697-4.075 1.636-6.352 1.636-3.495 0-6.753-1.39-9.21-3.69.254-.607 1.292-1.058 2.748-1.058 4.293 0 1.386.257 2.6.733.72 3.742l-2.445 2.05c-.054-.456-.09-.917-.09-1.387v-10.29c0-1.503.613-2.862 1.603-3.846.566-.966 1.32-1.555 2.15-1.555 2.485 0 .783-.078 1.505-.22 2.178-.615-.966-.513-1.752-1.23-2.29-2.12z"/>
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 6.066 2.55 7.95 5.426 7.95 5.426 1.246 0 2.476-.195 3.603-.553.858-.358 1.65-.83 2.22-1.464 2.22-.508 0-1.024-.12-1.55-.353-.705-.46-1.26-1.058-1.636-1.824-.49-1.07-.712-2.194-.68-3.322.105-.75.284-1.47.46-2.19.702-2.554 1.733-2.957 3.35-4.822 6.485-4.822.376 0 .624-.028.92-.083.24-.348.966-.766 1.69-1.592 2.368-2.55.362-.53.616-1.087.97-1.693 1.29.087-.09.168-.16.348-.24.528-.247.025-.002.05-.025.075-.025.108 0 .04.02.082.028.124.06.24.06.47.38.763.63 1.098.348.664.557 1.37.557 2.095.557 2.095 0 3.792-.616 5.243-1.635.683.752 1.18 1.525 1.394 2.34.347.65.742.935 1.525.935 2.34 0 8.547-6.93 15.5-15.5 15.5-.078 0-.155-.002-.233-.005-.456-1.607-4.886-6.298-8.403-11.792-8.403-5.394 0-10.185 4.306-10.185 10.185 v .327 c0 1.363 1.106 2.468 2.468 2.468.678 0 1.32-.276 1.78-.724.458-1.09.795-2.49.697-4.075 1.636-6.352 1.636-3.495 0-6.753-1.39-9.21-3.69.254-.607 1.292-1.058 2.748-1.058 4.293 0 1.386.257 2.6.733.72 3.742l-2.445 2.05c-.054-.456-.09-.917-.09-1.387v-10.29c0-1.503.613-2.862 1.603-3.846.566-.966 1.32-1.555 2.15-1.555 2.485 0 .783-.078 1.505-.22 2.178-.615-.966-.513-1.752-1.23-2.29-2.12z" />
                 </svg>
               </a>
               <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
+                <span className="sr-only">Facebook</span>
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0C5.372 0 .529 4.863.529 10.854c0 1.555.407 2.998 1.098 4.237-.002.032-.005.064-.007.096-.002.06.004.12.004.18 0 .018.001.036.002.054.002.082.248 1.332 1.003 2.543 2.254 3.494 1.252.947 2.578 1.69 4.013 1.735 5.288.044 1.088.076 2.18.076 3.277v.336c0 .857-.353 1.633-.92 2.2.564.566 1.078 1.287 1.734 2.15 1.734 3.258 0 6.32-2.612 6.32-6.32 0-.046-.003-.09-.008-.136-.018-1.843-4.563-5.922-7.548-10.637-7.548-4.785 0-8.768 3.863-8.768 8.632 0 .685.056 1.353.16 2.002v.32c0 2.39 1.94 4.33 4.33 4.33.653 0 1.236-.198 1.803-.534 2.412-.67.752-1.318 1.45-2.908 1.45-4.56 0-3.28-2.66-5.938-5.94-5.938-1.236 0-2.39.357-3.413.967l-2.226 1.848c.063.265.103.532.103.812v.247c0 2.39 1.94 4.33 4.33 4.33.653 0 1.236-.198 1.803-.534 2.412-.67.752-1.318 1.45-2.908 1.45-4.56 0-3.28-2.66-5.938-5.94-5.938z"/>
+                  <path d="M12 0C5.372 0 .529 4.863.529 10.854c0 1.555.407 2.998 1.098 4.237-.002.032-.005.064-.007.096-.002.06.004.12.004.18 0 .018.001.036.002.054.002.082.248 1.332 1.003 2.543 2.254 3.494 1.252.947 2.578 1.69 4.013 1.735 5.288.044 1.088.076 2.18.076 3.277 v .336 c0 .857-.353 1.633-.92 2.2.564.566 1.078 1.287 1.734 2.15 1.734 3.258 0 6.32-2.612 6.32-6.32 0-.046-.003-.09-.008-.136-.018-1.843-4.563-5.922-7.548-10.637-7.548-4.785 0-8.768 3.863-8.768 8.632 0 .685.056 1.353.16 2.002v.32c0 2.39 1.94 4.33 4.33 4.33.653 0 1.236-.198 1.803-.534 2.412-.67.752-1.318 1.45-2.908 1.45-4.56 0-3.28-2.66-5.938-5.94-5.938-1.236 0-2.39.357-3.413.967l-2.226 1.848c.063.265.103.532.103.812v.247c0 2.39 1.94 4.33 4.33 4.33.653 0 1.236-.198 1.803-.534 2.412-.67.752-1.318 1.45-2.908 1.45-4.56 0-3.28-2.66-5.938-5.94-5.938z" />
                 </svg>
               </a>
             </div>

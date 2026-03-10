@@ -123,8 +123,17 @@ export async function fetchMedia(id: number): Promise<WordPressMedia | null> {
  * @param tier - 티어 번호 (1, 2, 3, 4)
  */
 export async function fetchCitiesByTier(tier: number): Promise<WordPressPost[]> {
+  const tierCategoryMap: Record<number, number> = {
+    1: 1,
+    2: 9,
+    3: 10,
+    4: 11
+  };
+
+  const categoryId = tierCategoryMap[tier] || 1;
+
   return fetchPosts({
-    tier: `tier-${tier}`,
+    tier: categoryId.toString(),
     perPage: 20,
   });
 }
