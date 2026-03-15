@@ -31,7 +31,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground font-sans">
       {/* Hero Section */}
-      <HeroSlider posts={latestPosts} />
+      <HeroSlider />
 
       {/* Tier Preview Section */}
       <TierPreview tier1Posts={tier1Posts} tier2Posts={tier2Posts} tier34Posts={tier34Posts} />
