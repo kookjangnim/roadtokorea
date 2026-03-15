@@ -2,9 +2,9 @@ import { fetchCitiesByTier } from '@/lib/api';
 import CityList from './CityList';
 import { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ tier: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
-  const tierString = resolvedParams.city.replace('tier-', '');
+  const tierString = resolvedParams.tier.replace('tier-', '');
   const tier = parseInt(tierString);
   const title = `Tier ${tier} Cities`;
   const description = `Explore the best Tier ${tier} cities in South Korea. Find popular destinations and hidden gems.`;
@@ -15,14 +15,14 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     openGraph: {
       title,
       description,
-      url: `https://roadtokorea.blog/${resolvedParams.city}/cities`,
+      url: `https://roadtokorea.blog/${resolvedParams.tier}/cities`,
     }
   };
 }
 
-export default async function TierPage({ params }: { params: Promise<{ city: string }> }) {
+export default async function TierPage({ params }: { params: Promise<{ tier: string }> }) {
   const resolvedParams = await params;
-  const tierString = resolvedParams.city.replace('tier-', '');
+  const tierString = resolvedParams.tier.replace('tier-', '');
   const tier = parseInt(tierString);
   const cities = await fetchCitiesByTier(tier);
 

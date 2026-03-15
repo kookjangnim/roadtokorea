@@ -105,7 +105,7 @@ export default function CityList({ cities, tier }: CityListProps) {
                     {filteredAndSortedCities.map((city) => (
                         <a
                             key={city.id}
-                            href={`/${city.slug}`}
+                            href={`/tier-${tier}/${city.slug}`}
                             className="group relative bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 border border-gray-700 block"
                         >
                             <div className="relative aspect-[4/3]">
