@@ -6,6 +6,7 @@ interface WPPost {
   slug: string;
   title: { rendered: string };
   excerpt: { rendered: string };
+  content?: { rendered: string };
   _embedded?: {
     'wp:featuredmedia'?: Array<{ source_url: string; alt_text: string }>;
     'wp:term'?: Array<Array<{ name: string; slug: string; taxonomy: string }>>;
@@ -32,8 +33,18 @@ interface TierPreviewProps {
 function extractImageData(post: WPPost): string {
   const embeddedImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
   const fallbackImagePattern = /<img[^>]+src="([^">]+)"/;
-  const match = post.excerpt?.rendered?.match(fallbackImagePattern);
-  return embeddedImage || (match ? match[1] : '/images/placeholder.jpg');
+  const match = post.excerpt?.rendered?.match(fallbackImagePattern) || post.content?.rendered?.match(fallbackImagePattern);
+  
+  if (embeddedImage) return embeddedImage;
+  
+  if (match && match[1]) {
+    return match[1].replace(
+      /https?:\/\/roadtokorea\.blog\/wp-content/g,
+      'https://api.roadtokorea.blog/wp-content'
+    );
+  }
+  
+  return '/images/placeholder.jpg';
 }
 
 function extractCityName(title: string): string {
