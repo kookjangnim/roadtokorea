@@ -4,7 +4,7 @@ import Image from 'next/image';
 const tier1Cities = [
   { name: 'Seoul', slug: 'seoul', tier: 'Tier 1', image: '/images/cities/seoul.jpg', desc: 'The heart of tradition & tomorrow.' },
   { name: 'Busan', slug: 'busan', tier: 'Tier 1', image: '/images/cities/haeundae.jpg', desc: 'Coastal majesty.' },
-  { name: 'Jeju', slug: 'jeju', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg', desc: 'Volcanic paradise.' },
+  { name: 'Jeju', slug: 'jeju', tier: 'Tier 1', image: '/images/cities/jeju.jpg', desc: 'Volcanic paradise.' },
 ];
 
 const tier2Cities = [
@@ -15,18 +15,18 @@ const tier2Cities = [
 ];
 
 const tier34Cities = [
-  { name: 'Suncheon', slug: 'suncheon', tier: 'Tier 3', image: '/images/Gemini_Generated_Image_8p1cib8p1cib8p1c.jpg' },
-  { name: 'Tongyeong', slug: 'tongyeong', tier: 'Tier 3', image: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg' },
-  { name: 'Andong', slug: 'andong', tier: 'Tier 3', image: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg' },
-  { name: 'Pyeongchang', slug: 'pyeongchang', tier: 'Tier 3', image: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg' },
-  { name: 'Yeosu', slug: 'yeosu', tier: 'Tier 4', image: '/images/cities/haeundae.jpg' },
-  { name: 'Jinju', slug: 'jinju', tier: 'Tier 4', image: '/images/Gemini_Generated_Image_8p1cib8p1cib8p1c.jpg' },
-  { name: 'Wonju', slug: 'wonju', tier: 'Tier 4', image: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg' },
-  { name: 'Yangyang', slug: 'yangyang', tier: 'Tier 4', image: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg' },
-  { name: 'Boseong', slug: 'boseong', tier: 'Tier 4', image: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg' },
-  { name: 'Namwon', slug: 'namwon', tier: 'Tier 4', image: '/images/cities/jeonju.jpg' },
-  { name: 'Geoje', slug: 'geoje', tier: 'Tier 4', image: '/images/cities/haeundae.jpg' },
-  { name: 'Hadong', slug: 'hadong', tier: 'Tier 4', image: '/images/Gemini_Generated_Image_8p1cib8p1cib8p1c.jpg' },
+  { name: 'Suncheon', slug: 'suncheon', tier: 'Tier 3', image: '/images/cities/suncheon.jpg' },
+  { name: 'Tongyeong', slug: 'tongyeong', tier: 'Tier 3', image: '/images/cities/tongyeong.jpg' },
+  { name: 'Andong', slug: 'andong', tier: 'Tier 3', image: '/images/cities/andong.jpg' },
+  { name: 'Pyeongchang', slug: 'pyeongchang', tier: 'Tier 3', image: '/images/cities/pyeongchang.jpg' },
+  { name: 'Yeosu', slug: 'yeosu', tier: 'Tier 4', image: '/images/cities/yeosu.jpg' },
+  { name: 'Jinju', slug: 'jinju', tier: 'Tier 4', image: '/images/cities/jinju.jpg' },
+  { name: 'Wonju', slug: 'wonju', tier: 'Tier 4', image: '/images/cities/wonju.jpg' },
+  { name: 'Yangyang', slug: 'yangyang', tier: 'Tier 4', image: '/images/cities/yangyang.jpg' },
+  { name: 'Boseong', slug: 'boseong', tier: 'Tier 4', image: '/images/cities/boseong.jpg' },
+  { name: 'Namwon', slug: 'namwon', tier: 'Tier 4', image: '/images/cities/namwon.jpg' },
+  { name: 'Geoje', slug: 'geoje', tier: 'Tier 4', image: '/images/cities/geoje.jpg' },
+  { name: 'Hadong', slug: 'hadong', tier: 'Tier 4', image: '/images/cities/hadong.jpg' },
 ];
 
 export default function TierPreview() {
