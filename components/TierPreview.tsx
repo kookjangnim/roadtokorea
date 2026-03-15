@@ -12,9 +12,20 @@ interface WPPost {
   };
 }
 
+const tier1Cities = [
+  { name: 'Seoul', slug: 'seoul', tier: 'Tier 1', image: '/images/cities/seoul.jpg', desc: 'The heart of tradition & tomorrow.' },
+  { name: 'Busan', slug: 'busan', tier: 'Tier 1', image: '/images/cities/haeundae.jpg', desc: 'Coastal majesty.' },
+  { name: 'Jeju', slug: 'jeju', tier: 'Tier 1', image: '/images/cities/jeju.jpg', desc: 'Volcanic paradise.' },
+];
+
+const tier2Cities = [
+  { name: 'Jeonju', slug: 'jeonju', tier: 'Tier 2', image: '/images/cities/jeonju.jpg' },
+  { name: 'Daegu', slug: 'daegu', tier: 'Tier 2', image: '/images/cities/daegu.jpg' },
+  { name: 'Gangneung', slug: 'gangneung', tier: 'Tier 2', image: '/images/cities/gangneung.jpg' },
+  { name: 'Gwangju', slug: 'gwangju', tier: 'Tier 2', image: '/images/cities/gwangju.jpg' },
+];
+
 interface TierPreviewProps {
-  tier1Posts: WPPost[];
-  tier2Posts: WPPost[];
   tier34Posts: WPPost[];
 }
 
@@ -29,7 +40,7 @@ function extractCityName(title: string): string {
   return title.replace('Travel Guide: The Hidden Charms of ', '').trim();
 }
 
-export default function TierPreview({ tier1Posts, tier2Posts, tier34Posts }: TierPreviewProps) {
+export default function TierPreview({ tier34Posts }: TierPreviewProps) {
   return (
     <section id="regions" className="py-32 px-4 md:px-8 bg-background border-t border-brand-secondary">
       <div className="max-w-7xl mx-auto">
@@ -47,102 +58,96 @@ export default function TierPreview({ tier1Posts, tier2Posts, tier34Posts }: Tie
         </div>
 
         {/* Tier 1: Large Asymmetrical Feature */}
-        {tier1Posts.length > 0 && (
-          <div className="mb-32">
-            <div className="flex items-center gap-4 mb-12">
-              <span className="text-brand-accent text-sm tracking-widest uppercase">Chapter I</span>
-              <div className="h-[1px] flex-grow bg-brand-secondary"></div>
-              <h3 className="text-3xl font-editorial text-foreground italic">The Icons</h3>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-              {/* Featured Large Card */}
-              {tier1Posts[0] && (
-                <Link href={`/tier-1/${tier1Posts[0].slug}`} className="md:col-span-7 group relative block h-[600px] overflow-hidden rounded-sm">
-                  <Image
-                    src={extractImageData(tier1Posts[0])}
-                    alt={tier1Posts[0].title.rendered}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 66vw"
-                    className="object-cover transition-transform duration-1000 group-hover:scale-105"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                  <div className="absolute bottom-10 left-10 p-4 border-l border-brand-accent/50 z-10">
-                    <span className="text-brand-accent text-xs tracking-[0.3em] uppercase mb-2 block">Tier 1</span>
-                    <h4 className="text-5xl font-editorial text-white mb-2">{extractCityName(tier1Posts[0].title.rendered)}</h4>
-                    <p className="text-brand-taupe">Discover The Icon</p>
-                  </div>
-                </Link>
-              )}
-
-              {/* Two Smaller Stacked Cards */}
-              <div className="md:col-span-5 flex flex-col gap-8">
-                {tier1Posts.slice(1, 3).map((post, index) => (
-                  <Link
-                    href={`/tier-1/${post.slug}`}
-                    key={index}
-                    className="group relative flex-1 overflow-hidden rounded-sm min-h-[280px]"
-                  >
-                    <Image
-                      src={extractImageData(post)}
-                      alt={post.title.rendered}
-                      fill
-                      sizes="(max-width: 768px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-1000 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
-                    <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
-                      <span className="text-brand-accent text-xs tracking-widest uppercase mb-1">Tier 1</span>
-                      <h4 className="text-4xl font-editorial text-white">{extractCityName(post.title.rendered)}</h4>
-                      <p className="text-brand-sage text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
-                        Explore the majestic beauty
-                      </p>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div className="mt-8 text-right">
-              <Link href="/tier-1/cities" className="inline-block text-brand-taupe hover:text-foreground transition-colors border-b border-brand-taupe/30 hover:border-foreground pb-1 uppercase tracking-widest text-xs">
-                View All Icons
-              </Link>
-            </div>
+        <div className="mb-32">
+          <div className="flex items-center gap-4 mb-12">
+            <span className="text-brand-accent text-sm tracking-widest uppercase">Chapter I</span>
+            <div className="h-[1px] flex-grow bg-brand-secondary"></div>
+            <h3 className="text-3xl font-editorial text-foreground italic">The Icons</h3>
           </div>
-        )}
 
-        {/* Tier 2: Editorial Grid */}
-        {tier2Posts.length > 0 && (
-          <div className="mb-24">
-            <div className="flex items-center gap-4 mb-12">
-              <h3 className="text-3xl font-editorial text-foreground italic">Cultural Hubs</h3>
-              <div className="h-[1px] flex-grow bg-brand-secondary"></div>
-              <span className="text-brand-accent text-sm tracking-widest uppercase">Chapter II</span>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+            {/* Featured Large Card */}
+            <Link href={`/tier-1/${tier1Cities[0].slug}`} className="md:col-span-7 group relative block h-[600px] overflow-hidden rounded-sm">
+              <Image
+                src={tier1Cities[0].image}
+                alt={tier1Cities[0].name}
+                fill
+                sizes="(max-width: 768px) 100vw, 66vw"
+                className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-10 left-10 p-4 border-l border-brand-accent/50 z-10">
+                <span className="text-brand-accent text-xs tracking-[0.3em] uppercase mb-2 block">{tier1Cities[0].tier}</span>
+                <h4 className="text-5xl font-editorial text-white mb-2">{tier1Cities[0].name}</h4>
+                <p className="text-brand-taupe">{tier1Cities[0].desc}</p>
+              </div>
+            </Link>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-              {tier2Posts.map((post, index) => (
+            {/* Two Smaller Stacked Cards */}
+            <div className="md:col-span-5 flex flex-col gap-8">
+              {tier1Cities.slice(1, 3).map((city, index) => (
                 <Link
-                  href={`/tier-2/${post.slug}`}
+                  href={`/tier-1/${city.slug}`}
                   key={index}
-                  className="group block"
+                  className="group relative flex-1 overflow-hidden rounded-sm min-h-[280px]"
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-sm mb-4">
-                    <Image
-                      src={extractImageData(post)}
-                      alt={post.title.rendered}
-                      fill
-                      sizes="(max-width: 1024px) 50vw, 25vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale-[20%] group-hover:grayscale-0"
-                    />
+                  <Image
+                    src={city.image}
+                    alt={city.name}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
+                  <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
+                    <span className="text-brand-accent text-xs tracking-widest uppercase mb-1">{city.tier}</span>
+                    <h4 className="text-4xl font-editorial text-white">{city.name}</h4>
+                    <p className="text-brand-sage text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                      {city.desc}
+                    </p>
                   </div>
-                  <span className="text-brand-accent/80 text-[10px] tracking-widest uppercase block mb-1">Tier 2</span>
-                  <h4 className="text-2xl font-editorial text-foreground group-hover:text-brand-accent transition-colors">{extractCityName(post.title.rendered)}</h4>
                 </Link>
               ))}
             </div>
           </div>
-        )}
+          <div className="mt-8 text-right">
+            <Link href="/tier-1/cities" className="inline-block text-brand-taupe hover:text-foreground transition-colors border-b border-brand-taupe/30 hover:border-foreground pb-1 uppercase tracking-widest text-xs">
+              View All Icons
+            </Link>
+          </div>
+        </div>
+
+        {/* Tier 2: Editorial Grid */}
+        <div className="mb-24">
+          <div className="flex items-center gap-4 mb-12">
+            <h3 className="text-3xl font-editorial text-foreground italic">Cultural Hubs</h3>
+            <div className="h-[1px] flex-grow bg-brand-secondary"></div>
+            <span className="text-brand-accent text-sm tracking-widest uppercase">Chapter II</span>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {tier2Cities.map((city, index) => (
+              <Link
+                href={`/tier-2/${city.slug}`}
+                key={index}
+                className="group block"
+              >
+                <div className="relative aspect-[3/4] overflow-hidden rounded-sm mb-4">
+                  <Image
+                    src={city.image}
+                    alt={city.name}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale-[20%] group-hover:grayscale-0"
+                  />
+                </div>
+                <span className="text-brand-accent/80 text-[10px] tracking-widest uppercase block mb-1">{city.tier}</span>
+                <h4 className="text-2xl font-editorial text-foreground group-hover:text-brand-accent transition-colors">{city.name}</h4>
+              </Link>
+            ))}
+          </div>
+        </div>
 
         {/* Tier 3-4: Hidden Gems - Masonry Fallback */}
         {tier34Posts.length > 0 && (
@@ -190,7 +195,7 @@ export default function TierPreview({ tier1Posts, tier2Posts, tier34Posts }: Tie
           </div>
         )}
         
-        {tier1Posts.length === 0 && tier2Posts.length === 0 && tier34Posts.length === 0 && (
+        {tier34Posts.length === 0 && (
           <div className="text-center py-20">
             <p className="text-brand-taupe text-xl">Loading curated destinations...</p>
           </div>

@@ -12,8 +12,6 @@ import Footer from '@/components/Footer';
 export default async function Home() {
   // WordPress에서 카테고리별 포스트 가져오기
   const latestPosts = await fetchLatestPosts(6);
-  const tier1Posts = await fetchPostsByTier('tier-1', 4);
-  const tier2Posts = await fetchPostsByTier('tier-2', 4);
   
   const tier3Posts = await fetchPostsByTier('tier-3', 4);
   const tier4Posts = await fetchPostsByTier('tier-4', 4);
@@ -34,7 +32,7 @@ export default async function Home() {
       <HeroSlider />
 
       {/* Tier Preview Section */}
-      <TierPreview tier1Posts={tier1Posts} tier2Posts={tier2Posts} tier34Posts={tier34Posts} />
+      <TierPreview tier34Posts={tier34Posts} />
 
       {/* Latest Posts Section - API 데이터 사용 */}
       <LatestPosts posts={latestPosts} />
