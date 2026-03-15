@@ -160,6 +160,40 @@ body {
   display: none;
 }
 
+/* Back to Home Buttons */
+.back-home-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.back-home-wrapper.bottom {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.back-home-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 9999px; /* Pill shape */
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.back-home-btn:hover {
+  background-color: #333;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
 .hero-banner {
   position: relative;
   width: 100%;
