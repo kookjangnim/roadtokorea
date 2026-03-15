@@ -21,12 +21,37 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
           </h2>
         </div>
 
-        {/* Latest Posts Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {posts.map((post, index) => {
-            const featuredMedia = post._embedded?.['wp:featuredmedia']?.[0];
-            const imageUrl = featuredMedia?.source_url || '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg';
-            const category = post.categories[0]?.name || 'Travel';
+            // 1. 이미지 추출: featured_media 대신 content 내부의 첫 번째 img 태그 추출
+            let imageUrl = '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg';
+            if (post.content && post.content.rendered) {
+              const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/);
+              if (imgMatch && imgMatch[1]) {
+                imageUrl = imgMatch[1].replace(
+                  /https?:\/\/roadtokorea\.blog\/wp-content/g,
+                  'https://api.roadtokorea.blog/wp-content'
+                );
+              }
+            }
+
+            // 2. 카테고리(Tier) 및 슬러그 추출
+            let categoryLabel = 'Travel';
+            let tierSlug = 'tier-1'; // 기본값
+
+            const wpTerms = post._embedded?.['wp:term'] || [];
+            for (const taxonomyArray of wpTerms) {
+              const cat = taxonomyArray.find((t: any) => t.taxonomy === 'category');
+              if (cat) {
+                if (cat.slug && cat.slug.startsWith('tier-')) {
+                  tierSlug = cat.slug;
+                }
+                categoryLabel = cat.name || categoryLabel;
+              }
+            }
+
+            // URL 라우팅: /[tier]/[city_slug]
+            const postUrl = `/${tierSlug}/${post.slug}`;
 
             return (
               <article
@@ -34,7 +59,7 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
                 className="group cursor-pointer flex flex-col"
               >
                 <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6 border border-brand-secondary/50">
-                  <Link href={`/blog/${post.id}`}>
+                  <Link href={postUrl}>
                     <Image
                       src={imageUrl}
                       alt={post.title.rendered}
@@ -45,22 +70,21 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
                     />
                   </Link>
                   <div className="absolute top-4 left-4 glass-panel px-3 py-1 rounded-full">
-                    <span className="text-white/90 text-[10px] tracking-widest uppercase">{category}</span>
+                    <span className="text-white/90 text-[10px] tracking-widest uppercase">{categoryLabel}</span>
                   </div>
                 </div>
                 <div className="flex flex-col flex-grow">
                   <time className="text-brand-sage text-xs tracking-widest uppercase mb-3 block">
                     {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                   </time>
-                  <Link href={`/blog/${post.id}`}>
-                    <h3 className="text-2xl font-editorial text-foreground mb-4 group-hover:text-brand-accent transition-colors leading-tight line-clamp-2">
-                      {post.title.rendered}
+                  <Link href={postUrl}>
+                    <h3 className="text-2xl font-editorial text-foreground mb-4 group-hover:text-brand-accent transition-colors leading-tight line-clamp-2" dangerouslySetInnerHTML={{ __html: post.title.rendered }}>
                     </h3>
                   </Link>
                   <div className="mt-auto pt-4 border-t border-brand-secondary/50">
-                    <span className="text-brand-taupe text-xs uppercase tracking-[0.2em] group-hover:text-foreground transition-colors">
+                    <Link href={postUrl} className="text-brand-taupe text-xs uppercase tracking-[0.2em] group-hover:text-foreground transition-colors">
                       Read Article →
-                    </span>
+                    </Link>
                   </div>
                 </div>
               </article>
