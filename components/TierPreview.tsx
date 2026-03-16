@@ -14,9 +14,9 @@ interface WPPost {
 }
 
 const tier1Cities = [
-  { name: 'Seoul', slug: 'seoul', tier: 'Tier 1', image: '/images/cities/seoul.jpg', desc: 'The heart of tradition & tomorrow.' },
-  { name: 'Busan', slug: 'busan', tier: 'Tier 1', image: '/images/cities/haeundae.jpg', desc: 'Coastal majesty.' },
-  { name: 'Jeju', slug: 'jeju', tier: 'Tier 1', image: '/images/cities/jeju.jpg', desc: 'Volcanic paradise.' },
+  { name: 'Seoul', slug: 'seoul', tier: 'Tier 1', image: '/images/cities/seoul_hero_aesthetic_1773587191807.png', desc: 'The heart of tradition & tomorrow.' },
+  { name: 'Busan', slug: 'busan', tier: 'Tier 1', image: '/images/cities/busan_hero_aesthetic_1773587206276.png', desc: 'Coastal majesty.' },
+  { name: 'Jeju', slug: 'jeju', tier: 'Tier 1', image: '/images/cities/jeju_hero_aesthetic_1773587220023.png', desc: 'Volcanic paradise.' },
 ];
 
 const tier2Cities = [
@@ -96,12 +96,12 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
             </Link>
 
             {/* Two Smaller Stacked Cards */}
-            <div className="md:col-span-5 flex flex-col gap-8">
-              {tier1Cities.slice(1, 3).map((city, index) => (
-                <Link
+            <div className="md:col-span-5 grid grid-rows-3 gap-8">
+              {tier1Cities.slice(1).map((city) => (
+                <Link 
+                  key={city.slug} 
                   href={`/tier-1/${city.slug}`}
-                  key={index}
-                  className="group relative flex-1 overflow-hidden rounded-sm min-h-[280px]"
+                  className="group relative block overflow-hidden rounded-sm h-full"
                 >
                   <Image
                     src={city.image}

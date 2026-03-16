@@ -1,6 +1,7 @@
 import { fetchCity } from '@/lib/api';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import PopularSearches from '@/components/PopularSearches';
 
 export async function generateMetadata({ params }: { params: Promise<{ tier: string, city: string }> }): Promise<Metadata> {
   const { tier, city } = await params;
@@ -40,17 +41,17 @@ export default async function CityPage({ params }: { params: Promise<{ tier: str
 
   if (!cityData) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="min-h-screen flex items-center justify-center bg-background text-foreground">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold mb-4 font-editorial">
             City Not Found
           </h1>
-          <p className="text-gray-500 mb-8">
+          <p className="text-brand-taupe mb-8">
             The city you&apos;re looking for doesn&apos;t exist yet.
           </p>
           <Link
             href="/"
-            className="inline-block bg-gray-900 hover:bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold transition-all"
+            className="inline-block bg-foreground text-background px-8 py-4 rounded-full font-semibold transition-all hover:bg-brand-accent hover:text-white"
           >
             Back to Home
           </Link>
@@ -73,52 +74,27 @@ export default async function CityPage({ params }: { params: Promise<{ tier: str
     "url": `https://roadtokorea.blog/${citySlug}`
   };
 
+  // Optional: Extract some tags for popular searches related to the province if needed
+  const tags = ["Seoul", "Busan", "Jeju", "Gangneung", "Sokcho"];
+
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* City Hero — 간결한 배너 */}
-      <section className="bg-gray-900 py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            {cityInfo.name}
-          </h1>
-          {cityInfo.description && (
-            <div
-              className="text-lg text-gray-300 max-w-xl mx-auto"
-              dangerouslySetInnerHTML={{ __html: cleanContent(cityInfo.description) }}
-            />
-          )}
-        </div>
-      </section>
+      <article className="city-article pt-10 px-4 max-w-5xl mx-auto">
+        {cityInfo.content ? (
+          <div dangerouslySetInnerHTML={{ __html: cleanContent(cityInfo.content) }} />
+        ) : (
+          <p className="text-brand-taupe italic text-center py-20">
+            Content is currently being generated. Check back soon!
+          </p>
+        )}
+      </article>
 
-      {/* Main Content */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <article className="city-article">
-            {cityInfo.content ? (
-              <div dangerouslySetInnerHTML={{ __html: cleanContent(cityInfo.content) }} />
-            ) : (
-              <p className="text-gray-400 italic text-center py-10">
-                Content is currently being generated. Check back soon!
-              </p>
-            )}
-          </article>
-        </div>
-      </section>
-
-      {/* Back to Home */}
-      <section className="py-12 px-4 text-center border-t border-gray-200">
-        <Link
-          href="/"
-          className="inline-block bg-gray-900 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold transition-all"
-        >
-          ← Back to Home
-        </Link>
-      </section>
+      <PopularSearches tags={tags} />
     </main>
   );
 }
