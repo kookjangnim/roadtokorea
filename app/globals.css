@@ -376,12 +376,43 @@ body {
   object-fit: cover;
 }
 
+.placeholder-gradient {
+  width: 100%;
+  aspect-ratio: 16/10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(88, 28, 135, 0.8));
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.placeholder-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='rgba(255,255,255,0.03)' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.placeholder-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f9fafb;
+  text-align: center;
+  padding: 0 1.5rem;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  font-family: 'Inter', -apple-system, sans-serif;
+  letter-spacing: 0.5px;
+}
+
 .card-body {
   padding: 1rem 1.25rem 1.25rem;
 }
 
 .card-title {
-  color: #111827 !important;
+  color: #f9fafb !important;
   font-size: 1.05rem !important;
   font-weight: 700 !important;
   margin: 0 0 0.5rem 0 !important;
@@ -396,7 +427,7 @@ body {
 }
 
 .card-desc {
-  color: #4b5563 !important;
+  color: #d1d5db !important;
   font-size: 0.9rem !important;
   line-height: 1.6 !important;
   margin-bottom: 0.75rem !important;
@@ -430,17 +461,17 @@ body {
 }
 
 .card-why {
-  color: #92400e;
+  color: #fbbf24;
   font-size: 0.85rem;
   margin-top: 0.75rem;
   padding: 0.5rem 0.75rem;
-  background: rgba(245, 158, 11, 0.1);
+  background: rgba(251, 191, 36, 0.1);
   border-radius: 0.25rem;
   border-left: 3px solid #fbbf24;
 }
 
 .card-meta {
-  color: #4b5563;
+  color: #9ca3af;
   font-size: 0.8rem;
   margin-top: 0.5rem;
   display: flex;
