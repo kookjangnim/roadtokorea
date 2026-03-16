@@ -210,7 +210,6 @@ export default async function Tier1CityPage({ params }: { params: Promise<{ city
                   }
                 }
 
-                // Category and route logic
                 let categoryLabel = 'Travel';
                 let tierSlug = 'tier-1';
                 const wpTerms = post._embedded?.['wp:term'] || [];
@@ -221,7 +220,7 @@ export default async function Tier1CityPage({ params }: { params: Promise<{ city
                     categoryLabel = cat.name || categoryLabel;
                   }
                 }
-                const postUrl = `/${tierSlug}/${post.slug}`;
+                const postUrl = `/${tierSlug}/${cityData.slug}/${post.slug}`;
 
                 return (
                   <article key={post.id} className="group cursor-pointer flex flex-col">

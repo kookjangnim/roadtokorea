@@ -104,7 +104,7 @@ export async function fetchPosts(options: {
 
   try {
     const response = await fetch(url, {
-      next: { revalidate: 300 }, // 5분 캐시 (ISR)
+      next: { revalidate: 60 }, // 1분 캐시 (ISR)
     });
 
     if (!response.ok) {
@@ -235,7 +235,7 @@ export async function getCategoryIdBySlug(slug: string): Promise<number | undefi
 export async function getTagIdBySlug(slug: string): Promise<number | undefined> {
   const url = `${WP_CONFIG.baseUrl}/tags?slug=${slug}`;
   try {
-    const response = await fetch(url, { next: { revalidate: 3600 } });
+    const response = await fetch(url, { next: { revalidate: 60 } });
     if (!response.ok) throw new Error(`WordPress API 에러: ${response.status}`);
     const tags = await response.json();
     return tags.length > 0 ? tags[0].id : undefined;
