@@ -26,6 +26,12 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
   const tier = parseInt(tierString);
   let cities = await fetchCitiesByTier(tier);
 
+  // Force remove seoul from tier 4
+  if (tier === 4) {
+    cities = cities.filter(c => c.slug.toLowerCase() !== 'seoul');
+  }
+
+  // Inject gyeongju for tier 1
   if (tier === 1) {
     if (!cities.find(c => c.slug === 'gyeongju')) {
       cities.push({

@@ -11,7 +11,7 @@ interface LatestPostsProps {
  */
 export default function LatestPosts({ posts }: LatestPostsProps) {
   return (
-    <section className="py-32 px-4 md:px-8 bg-background relative">
+    <section className="py-32 px-4 md:px-8 relative">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-secondary to-transparent" />
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
@@ -23,9 +23,10 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {posts.map((post, index) => {
-            // 1. 이미지 추출: featured_media 대신 content 내부의 첫 번째 img 태그 추출
-            let imageUrl = '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg';
-            if (post.content && post.content.rendered) {
+            // 1. 이미지 추출: featured_media 대신 content 내부의 첫 번째 img 태그 추출. 없으면 slug 기반 범용 이미지
+            let imageUrl = `/images/cities/${post.slug.toLowerCase()}.jpg`;
+            // 원주 도서관 이미지 표시 방지: 원주가 아닐 때만 본문에서 이미지 추출
+            if (post.slug.toLowerCase() !== 'wonju' && post.content && post.content.rendered) {
               const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/);
               if (imgMatch && imgMatch[1]) {
                 imageUrl = imgMatch[1].replace(
@@ -78,7 +79,8 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
                     {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                   </time>
                   <Link href={postUrl}>
-                    <h3 className="text-2xl font-editorial text-foreground mb-4 group-hover:text-brand-accent transition-colors leading-tight line-clamp-2" dangerouslySetInnerHTML={{ __html: post.title.rendered }}>
+                    <h3 className="text-2xl font-editorial text-foreground mb-4 group-hover:text-brand-accent transition-colors leading-tight line-clamp-2">
+                      {post.slug.charAt(0).toUpperCase() + post.slug.toLowerCase().slice(1)}
                     </h3>
                   </Link>
                   <div className="mt-auto pt-4 border-t border-brand-secondary/50">

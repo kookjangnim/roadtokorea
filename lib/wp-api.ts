@@ -63,6 +63,8 @@ export async function fetchPosts(options: {
   perPage?: number;
   page?: number;
   categories?: number[];
+  tags?: number[];
+  search?: string;
   exclude?: number[];
   embed?: boolean;
 } = {}): Promise<WPPost[]> {
@@ -70,6 +72,8 @@ export async function fetchPosts(options: {
     perPage = 10,
     page = 1,
     categories,
+    tags,
+    search,
     exclude,
     embed = true,
   } = options;
@@ -82,6 +86,14 @@ export async function fetchPosts(options: {
 
   if (categories && categories.length > 0) {
     params.append('categories', categories.join(','));
+  }
+
+  if (tags && tags.length > 0) {
+    params.append('tags', tags.join(','));
+  }
+
+  if (search) {
+    params.append('search', search);
   }
 
   if (exclude && exclude.length > 0) {
@@ -212,4 +224,44 @@ export async function fetchCategories(): Promise<WPCategory[]> {
 export async function getCategoryIdBySlug(slug: string): Promise<number | undefined> {
   const categories = await fetchCategories();
   return categories.find(cat => cat.slug === slug)?.id;
+}
+
+/**
+ * 태그 슬러그으로 ID 찾기
+ *
+ * @param slug - 태그 슬러그
+ * @returns 태그 ID 또는 undefined
+ */
+export async function getTagIdBySlug(slug: string): Promise<number | undefined> {
+  const url = `${WP_CONFIG.baseUrl}/tags?slug=${slug}`;
+  try {
+    const response = await fetch(url, { next: { revalidate: 3600 } });
+    if (!response.ok) throw new Error(`WordPress API 에러: ${response.status}`);
+    const tags = await response.json();
+    return tags.length > 0 ? tags[0].id : undefined;
+  } catch (error) {
+    console.error('[WP API] 태그 ID 가져오기 실패:', error);
+    return undefined;
+  }
+}
+
+/**
+ * 도시 태그명 기반 관련 포스트 검색
+ *
+ * @param slug - 도시 슬러그 (예: 'seoul', 'busan')
+ * @param perPage - 최대 노출 수량
+ * @returns 포스트 배열
+ */
+export async function fetchPostsByCityTag(slug: string, perPage: number = 4): Promise<WPPost[]> {
+  const tagId = await getTagIdBySlug(slug.toLowerCase());
+  
+  if (!tagId) {
+    // 태그가 없으면 빈 배열을 반환 (관련 없는 최신 포스트 노출 방지)
+    return [];
+  }
+
+  return fetchPosts({
+    perPage,
+    tags: [tagId],
+  });
 }

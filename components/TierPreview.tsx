@@ -14,9 +14,10 @@ interface WPPost {
 }
 
 const tier1Cities = [
-  { name: 'Seoul', slug: 'seoul', tier: 'Tier 1', image: '/images/cities/seoul_hero_aesthetic_1773587191807.png', desc: 'The heart of tradition & tomorrow.' },
-  { name: 'Busan', slug: 'busan', tier: 'Tier 1', image: '/images/cities/busan_hero_aesthetic_1773587206276.png', desc: 'Coastal majesty.' },
-  { name: 'Jeju', slug: 'jeju', tier: 'Tier 1', image: '/images/cities/jeju_hero_aesthetic_1773587220023.png', desc: 'Volcanic paradise.' },
+  { name: 'Seoul', slug: 'seoul', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg', desc: 'The heart of tradition & tomorrow.' },
+  { name: 'Busan', slug: 'busan', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg', desc: 'Coastal majesty.' },
+  { name: 'Jeju', slug: 'jeju', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_8p1cib8p1cib8p1c.jpg', desc: 'Volcanic paradise.' },
+  { name: 'Gyeongju', slug: 'gyeongju', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg', desc: 'The ancient capital.' },
 ];
 
 const tier2Cities = [
@@ -47,13 +48,14 @@ function extractImageData(post: WPPost): string {
   return '/images/placeholder.jpg';
 }
 
-function extractCityName(title: string): string {
-  return title.replace('Travel Guide: The Hidden Charms of ', '').trim();
+function formatCityNameFromSlug(slug: string): string {
+  if (!slug) return '';
+  return slug.charAt(0).toUpperCase() + slug.toLowerCase().slice(1);
 }
 
 export default function TierPreview({ tier34Posts }: TierPreviewProps) {
   return (
-    <section id="regions" className="py-32 px-4 md:px-8 bg-background border-t border-brand-secondary">
+    <section id="regions" className="py-32 px-4 md:px-8 border-t border-brand-secondary">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-24 flex flex-col md:flex-row justify-between items-end border-b border-brand-secondary pb-12">
@@ -197,7 +199,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                     />
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 z-10">
                       <span className="text-brand-accent/80 text-[10px] tracking-widest uppercase block mb-1">{currentTier}</span>
-                      <h4 className="text-lg font-editorial text-white">{extractCityName(post.title.rendered)}</h4>
+                      <h4 className="text-lg font-editorial text-white">{formatCityNameFromSlug(post.slug)}</h4>
                     </div>
                   </Link>
                 )

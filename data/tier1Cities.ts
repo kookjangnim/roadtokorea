@@ -83,7 +83,7 @@ export const tier1Cities: Record<string, Tier1CityData> = {
   busan: {
     slug: 'busan',
     name: 'Busan',
-    heroImage: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg',
+    heroImage: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg',
     headline: 'Coastal Majesty of the South',
     description: 'South Korea\'s quintessential coastal city, renowned for its stunning beaches, majestic mountains, and magnificent temples.',
     culturalInsight: 'Busan offers a more laid-back coastal vibe compared to Seoul. It boasts spectacular seaside temples, bustling seafood markets, and the vibrant colors of hillside villages. Enjoy the fresh ocean breeze and the warm hospitality of the south.',
@@ -162,10 +162,10 @@ export const tier1Cities: Record<string, Tier1CityData> = {
         id: 'jeju-3',
         name: 'Jeongbang Waterfall',
         description: 'One of the rare waterfalls in the world that falls directly into the ocean, offering a spectacular natural display.',
-        image: 'https://images.unsplash.com/photo-1627916560935-4c0cfb4cd658?q=80&w=2000&auto=format&fit=crop',
+        image: '/images/cities/jeju.jpg',
         imageAlt: 'Jeongbang Waterfall in Jeju',
-        author: 'Unsplash',
-        sourceLink: 'https://unsplash.com/',
+        author: 'Local',
+        sourceLink: '/',
         tags: ['Waterfall', 'Ocean', 'Scenic']
       },
       {
@@ -183,7 +183,7 @@ export const tier1Cities: Record<string, Tier1CityData> = {
   gyeongju: {
     slug: 'gyeongju',
     name: 'Gyeongju',
-    heroImage: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg',
+    heroImage: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg',
     headline: 'The Museum Without Walls',
     description: 'The ancient capital of the Silla Kingdom, holding more tombs, temples, rock carvings, and Buddhist statuary than any other place in Korea.',
     culturalInsight: 'Walking through Gyeongju is like stepping back in time. The entire city is an open-air museum, filled with grassy burial mounds of ancient kings, elegant pavilions reflecting in serene ponds, and some of the finest Buddhist art in the world.',
@@ -202,10 +202,10 @@ export const tier1Cities: Record<string, Tier1CityData> = {
         id: 'gyeongju-2',
         name: 'Daereungwon Tomb Complex',
         description: 'A serene park housing large, grassy tumuli (burial mounds) of the Silla monarchs, creating an otherworldly landscape.',
-        image: 'https://images.unsplash.com/photo-1704285810052-16c4c5eff21e?q=80&w=2000&auto=format&fit=crop',
+        image: '/images/cities/gyeongju.jpg',
         imageAlt: 'Daereungwon Tomb Complex',
-        author: 'Unsplash',
-        sourceLink: 'https://unsplash.com/',
+        author: 'Local',
+        sourceLink: '/',
         tags: ['Tombs', 'Park', 'Ancient']
       },
       {

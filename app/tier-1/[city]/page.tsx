@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { tier1Cities } from '@/data/tier1Cities';
+import { fetchPostsByCityTag } from '@/lib/wp-api';
 import { fetchUnsplashImage } from '@/lib/unsplash';
 
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
@@ -47,6 +48,9 @@ export default async function Tier1CityPage({ params }: { params: Promise<{ city
   const enrichedHotspots = cityData.hotspots.map((spot, index) => {
     return { ...spot, dynamicImage: spot.image };
   });
+
+  // Fetch dynamic posts related to the city (e.g., Hongdae, Gangnam for Seoul)
+  const dynamicPosts = await fetchPostsByCityTag(cityData.slug, 8);
 
   return (
     <main className="min-h-screen bg-background text-foreground font-sans">
@@ -178,7 +182,94 @@ export default async function Tier1CityPage({ params }: { params: Promise<{ city
         </div>
       </section>
 
-      {/* 4. Footer & Navigation */}
+      {/* 4. Discover More (Dynamic Related Posts) */}
+      {dynamicPosts.length > 0 && (
+        <section className="py-32 px-4 md:px-8 border-t border-brand-secondary relative">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-20">
+              <span className="text-brand-accent tracking-[0.3em] text-xs uppercase mb-4 block">Journal</span>
+              <h2 className="text-4xl md:text-5xl font-editorial italic text-foreground mb-4">
+                Discover More in <span className="not-italic text-brand-taupe">{cityData.name}</span>
+              </h2>
+              <p className="text-brand-sage text-lg font-light max-w-2xl">
+                Read our latest travel notes and neighborhood guides for {cityData.name}.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {dynamicPosts.map((post, index) => {
+                // Image fallback logic
+                let imageUrl = `/images/cities/${post.slug.toLowerCase()}.jpg`;
+                if (post.slug.toLowerCase() !== 'wonju' && post.content?.rendered) {
+                  const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/);
+                  if (imgMatch && imgMatch[1]) {
+                    imageUrl = imgMatch[1].replace(
+                      /https?:\/\/roadtokorea\.blog\/wp-content/g,
+                      'https://api.roadtokorea.blog/wp-content'
+                    );
+                  }
+                }
+
+                // Category and route logic
+                let categoryLabel = 'Travel';
+                let tierSlug = 'tier-1';
+                const wpTerms = post._embedded?.['wp:term'] || [];
+                for (const taxonomyArray of wpTerms) {
+                  const cat = taxonomyArray.find((t: any) => t.taxonomy === 'category');
+                  if (cat) {
+                    if (cat.slug && cat.slug.startsWith('tier-')) tierSlug = cat.slug;
+                    categoryLabel = cat.name || categoryLabel;
+                  }
+                }
+                const postUrl = `/${tierSlug}/${post.slug}`;
+
+                return (
+                  <article key={post.id} className="group cursor-pointer flex flex-col">
+                    <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6 border border-brand-secondary/50">
+                      <Link href={postUrl}>
+                        <Image
+                          src={imageUrl}
+                          alt={post.title.rendered}
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                          className="object-cover transition-transform duration-1000 group-hover:scale-105 filter group-hover:brightness-110"
+                          loading="lazy"
+                        />
+                      </Link>
+                      <div className="absolute top-4 left-4 glass-panel px-3 py-1 rounded-full">
+                        <span className="text-white/90 text-[10px] tracking-widest uppercase">{categoryLabel}</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col flex-grow">
+                      <time className="text-brand-sage text-xs tracking-widest uppercase mb-3 block">
+                        {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                      </time>
+                      <Link href={postUrl}>
+                        <h3 className="text-2xl font-editorial text-foreground mb-4 group-hover:text-brand-accent transition-colors leading-tight line-clamp-2">
+                          {post.slug.charAt(0).toUpperCase() + post.slug.toLowerCase().slice(1)}
+                        </h3>
+                      </Link>
+                      <div className="mt-auto pt-4 border-t border-brand-secondary/50">
+                        <Link href={postUrl} className="text-brand-taupe text-xs uppercase tracking-[0.2em] group-hover:text-foreground transition-colors">
+                          Read Article →
+                        </Link>
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+            
+            <div className="mt-16 text-right">
+              <Link href="/blog" className="inline-block text-brand-taupe hover:text-foreground transition-colors border-b border-brand-taupe/30 hover:border-foreground pb-1 uppercase tracking-widest text-xs">
+                View All Journal Entries
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 5. Footer & Navigation */}
       <section className="py-24 text-center border-t border-brand-secondary bg-brand-primary">
         <p className="text-brand-taupe mb-8 tracking-[0.2em] text-sm uppercase">Continue Exploring</p>
         <Link 
