@@ -23,7 +23,7 @@ export const tier1Cities: Record<string, Tier1CityData> = {
   seoul: {
     slug: 'seoul',
     name: 'Seoul',
-    heroImage: '/images/cities/seoul_hero_aesthetic_1773587191807.png',
+    heroImage: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg',
     headline: 'Where Tradition Meets Tomorrow',
     description: 'A dynamic metropolis where modern skyscrapers, high-tech subways, and pop culture meet Buddhist temples, palaces, and street markets.',
     culturalInsight: 'Seoul is an intoxicating blend of the ancient and the hyper-modern. From the serene grounds of Gyeongbokgung Palace to the neon-drenched streets of Gangnam, this city never sleeps. Discover a culinary world that ranges from Michelin-starred fine dining to legendary street food stalls.',
@@ -83,7 +83,7 @@ export const tier1Cities: Record<string, Tier1CityData> = {
   busan: {
     slug: 'busan',
     name: 'Busan',
-    heroImage: '/images/cities/busan_hero_aesthetic_1773587206276.png',
+    heroImage: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg',
     headline: 'Coastal Majesty of the South',
     description: 'South Korea\'s quintessential coastal city, renowned for its stunning beaches, majestic mountains, and magnificent temples.',
     culturalInsight: 'Busan offers a more laid-back coastal vibe compared to Seoul. It boasts spectacular seaside temples, bustling seafood markets, and the vibrant colors of hillside villages. Enjoy the fresh ocean breeze and the warm hospitality of the south.',
@@ -133,7 +133,7 @@ export const tier1Cities: Record<string, Tier1CityData> = {
   jeju: {
     slug: 'jeju',
     name: 'Jeju',
-    heroImage: '/images/cities/jeju_hero_aesthetic_1773587220023.png',
+    heroImage: '/images/Gemini_Generated_Image_8p1cib8p1cib8p1c.jpg',
     headline: 'The Volcanic Island Paradise',
     description: 'A breathtaking volcanic island featuring a striking dormant volcano, dramatic lava tubes, and pristine white-sand beaches.',
     culturalInsight: 'Known as the "Hawaii of Korea," Jeju Island is a premier vacation destination. From the imposing Mt. Hallasan to the mystical Haenyeo (female deep-sea divers), the island is rich in unique myths, volcanic landscapes, and natural wonders.',
@@ -183,7 +183,7 @@ export const tier1Cities: Record<string, Tier1CityData> = {
   gyeongju: {
     slug: 'gyeongju',
     name: 'Gyeongju',
-    heroImage: '/images/cities/gyeongju_hero_aesthetic_1773587235023.png',
+    heroImage: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg',
     headline: 'The Museum Without Walls',
     description: 'The ancient capital of the Silla Kingdom, holding more tombs, temples, rock carvings, and Buddhist statuary than any other place in Korea.',
     culturalInsight: 'Walking through Gyeongju is like stepping back in time. The entire city is an open-air museum, filled with grassy burial mounds of ancient kings, elegant pavilions reflecting in serene ponds, and some of the finest Buddhist art in the world.',

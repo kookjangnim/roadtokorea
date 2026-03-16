@@ -24,7 +24,23 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
   const resolvedParams = await params;
   const tierString = resolvedParams.tier.replace('tier-', '');
   const tier = parseInt(tierString);
-  const cities = await fetchCitiesByTier(tier);
+  let cities = await fetchCitiesByTier(tier);
+
+  if (tier === 1) {
+    if (!cities.find(c => c.slug === 'gyeongju')) {
+      cities.push({
+        id: 9999,
+        title: { rendered: 'Gyeongju' },
+        content: { rendered: 'The ancient capital of the Silla Kingdom' },
+        excerpt: { rendered: 'The Museum Without Walls' },
+        date: new Date().toISOString(),
+        modified: new Date().toISOString(),
+        slug: 'gyeongju',
+        categories: [{ id: 1, name: 'Tier 1' }],
+        meta: { popularity_score: 95 }
+      } as any);
+    }
+  }
 
   if (cities.length === 0) {
     return (
