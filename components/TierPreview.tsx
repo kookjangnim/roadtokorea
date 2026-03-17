@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { VALID_CITY_SLUGS } from '@/constants/cities';
 
 interface WPPost {
   id: number;
@@ -17,13 +18,14 @@ const tier1Cities = [
   { name: 'Seoul', slug: 'seoul', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg', desc: 'The heart of tradition & tomorrow.' },
   { name: 'Busan', slug: 'busan', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg', desc: 'Coastal majesty.' },
   { name: 'Jeju', slug: 'jeju', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_8p1cib8p1cib8p1c.jpg', desc: 'Volcanic paradise.' },
-  { name: 'Gyeongju', slug: 'gyeongju', tier: 'Tier 1', image: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg', desc: 'The ancient capital.' },
+  { name: 'Gangneung', slug: 'gangneung', tier: 'Tier 1', image: '/images/cities/gangneung.jpg', desc: 'Where the pine forest meets the sea.' },
+  { name: 'Yeosu', slug: 'yeosu', tier: 'Tier 1', image: '/images/cities/yeosu.jpg', desc: 'The romantic night sea.' },
 ];
 
 const tier2Cities = [
+  { name: 'Gyeongju', slug: 'gyeongju', tier: 'Tier 2', image: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg' },
   { name: 'Jeonju', slug: 'jeonju', tier: 'Tier 2', image: '/images/cities/jeonju.jpg' },
   { name: 'Daegu', slug: 'daegu', tier: 'Tier 2', image: '/images/cities/daegu.jpg' },
-  { name: 'Gangneung', slug: 'gangneung', tier: 'Tier 2', image: '/images/cities/gangneung.jpg' },
   { name: 'Gwangju', slug: 'gwangju', tier: 'Tier 2', image: '/images/cities/gwangju.jpg' },
 ];
 
@@ -97,8 +99,8 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
               </div>
             </Link>
 
-            {/* Two Smaller Stacked Cards */}
-            <div className="md:col-span-5 grid grid-rows-3 gap-8">
+            {/* Four Smaller Stacked Cards */}
+            <div className="md:col-span-5 grid grid-cols-2 grid-rows-2 gap-4">
               {tier1Cities.slice(1).map((city) => (
                 <Link 
                   key={city.slug} 
@@ -174,11 +176,15 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {tier34Posts.map((post, index) => {
                 let currentTier = 'Tier 4';
+                let citySlug = 'seoul'; // 기본 도시 (fallback)
                 if (post._embedded?.['wp:term']) {
                   for (const group of post._embedded['wp:term']) {
                     for (const term of group) {
                       if (term.slug === 'tier-3') currentTier = 'Tier 3';
                       else if (term.slug === 'tier-4') currentTier = 'Tier 4';
+                      else if (term.taxonomy === 'post_tag' && term.slug) {
+                        if (VALID_CITY_SLUGS.includes(term.slug)) citySlug = term.slug;
+                      }
                     }
                   }
                 }
@@ -186,7 +192,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
 
                 return (
                   <Link
-                    href={`/${tierSlug}/${post.slug}`}
+                    href={`/${tierSlug}/${citySlug}/${post.slug}`}
                     key={index}
                     className="group relative overflow-hidden rounded-sm block aspect-square"
                   >

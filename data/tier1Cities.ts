@@ -180,53 +180,93 @@ export const tier1Cities: Record<string, Tier1CityData> = {
       }
     ]
   },
-  gyeongju: {
-    slug: 'gyeongju',
-    name: 'Gyeongju',
-    heroImage: '/images/Gemini_Generated_Image_mzbczumzbczumzbc.jpg',
-    headline: 'The Museum Without Walls',
-    description: 'The ancient capital of the Silla Kingdom, holding more tombs, temples, rock carvings, and Buddhist statuary than any other place in Korea.',
-    culturalInsight: 'Walking through Gyeongju is like stepping back in time. The entire city is an open-air museum, filled with grassy burial mounds of ancient kings, elegant pavilions reflecting in serene ponds, and some of the finest Buddhist art in the world.',
+  gangneung: {
+    slug: 'gangneung',
+    name: 'Gangneung',
+    heroImage: '/images/cities/gangneung.jpg',
+    headline: 'Where the Pine Forest Meets the Sea',
+    description: 'A coastal city famous for its breathtaking sunrises, fragrant pine forests, and a thriving coffee culture along the beach.',
+    culturalInsight: 'Gangneung is a peaceful retreat where the scent of roasting coffee blends with the salty ocean breeze. Known for its historical festivals and pristine beaches, it offers a perfect balance of deep-rooted Korean tradition and modern coastal relaxation.',
     hotspots: [
       {
-        id: 'gyeongju-1',
-        name: 'Bulguksa Temple',
-        description: 'A masterpiece of Buddhist art and architecture, representing the pinnacle of the Silla Kingdom\'s golden age.',
-        image: 'https://images.unsplash.com/photo-1534213469793-c32466377e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODM4MDN8MHwxfHNlYXJjaHwxfHxneWVvbmdqdSUyMEJ1bGd1a3NhJTIwVGVtcGxlfGVufDB8MHx8fDE3NzM1ODcyNTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
-        imageAlt: 'a bunch of paper flowers hanging from a ceiling',
-        author: 'Unsplash (Chang Patrick)',
-        sourceLink: 'https://unsplash.com/photos/a-bunch-of-paper-flowers-hanging-from-a-ceiling-HcOrdMwEboc',
-        tags: ['Temple', 'UNESCO', 'History']
+        id: 'gangneung-1',
+        name: 'Anmok Beach',
+        description: 'A beautiful white sand beach lined with a famous street of independent roasteries and seaside cafes.',
+        image: 'https://images.unsplash.com/photo-1598425237654-4c05bd617462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODM4MDN8MHwxfHNlYXJjaHwxfHxHYW5nbmV1bmclMjBBbm1vayUyMEJlYWNofGVufDB8MHx8fDE3MjExODkzMjR8MA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageAlt: 'Anmok Beach cafe street',
+        author: 'Unsplash',
+        sourceLink: '/',
+        tags: ['Beach', 'Coffee', 'Relaxation']
       },
       {
-        id: 'gyeongju-2',
-        name: 'Daereungwon Tomb Complex',
-        description: 'A serene park housing large, grassy tumuli (burial mounds) of the Silla monarchs, creating an otherworldly landscape.',
-        image: '/images/cities/gyeongju.jpg',
-        imageAlt: 'Daereungwon Tomb Complex',
+        id: 'gangneung-2',
+        name: 'Gyeongpodae',
+        description: 'A historic pavilion overlooking Gyeongpo Lake, offering one of the most celebrated moonlit views in Korea.',
+        image: 'https://images.unsplash.com/photo-1628185567303-7928d1eb2bb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODM4MDN8MHwxfHNlYXJjaHwxfHxHeWVvbmdwb2RhZXxlbnwwfDB8fHwxNzIxMTg5MzI0fDA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageAlt: 'Gyeongpodae pavilion',
+        author: 'Unsplash',
+        sourceLink: '/',
+        tags: ['History', 'Lake', 'Scenery']
+      },
+      {
+        id: 'gangneung-3',
+        name: 'Gyodong',
+        description: 'A vibrant neighborhood known for its incredible local cuisine, especially its famous spicy seafood noodles.',
+        image: '/images/cities/gangneung.jpg',
+        imageAlt: 'Gyodong streets',
         author: 'Local',
         sourceLink: '/',
-        tags: ['Tombs', 'Park', 'Ancient']
+        tags: ['Food', 'Local', 'Vibrant']
       },
       {
-        id: 'gyeongju-3',
-        name: 'Donggung Palace and Wolji Pond',
-        description: 'A secondary palace site that is particularly breathtaking at night when the pavilions are beautifully illuminated over the water.',
-        image: 'https://images.unsplash.com/photo-1669764372822-3cb8476d4f47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODM4MDN8MHwxfHNlYXJjaHwxfHxneWVvbmdqdSUyMERvbmdndW5nJTIwUGFsYWNlJTIwYW5kJTIwV29samklMjBQb25kfGVufDB8MHx8fDE3NzM1ODcyNjF8MA&ixlib=rb-4.1.0&q=80&w=1080',
-        imageAlt: 'a building with lights on at night',
-        author: 'Unsplash (john ko)',
-        sourceLink: 'https://unsplash.com/photos/a-building-with-lights-on-at-night-mgVMtZiOaeo',
-        tags: ['Palace', 'Night View', 'Romance']
+        id: 'gangneung-4',
+        name: 'Jeongdongjin',
+        description: 'Home to a famous sunrise viewing spot and a unique cruise-ship-shaped hotel perched on a coastal cliff.',
+        image: 'https://images.unsplash.com/photo-1628889814407-2c9744c68095?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODM4MDN8MHwxfHNlYXJjaHwxfHxKZW9uZ2RvbmdqaW58ZW58MHwwfHx8MTcyMTE4OTMyNHww&ixlib=rb-4.0.3&q=80&w=1080',
+        imageAlt: 'Jeongdongjin sunrise',
+        author: 'Unsplash',
+        sourceLink: '/',
+        tags: ['Sunrise', 'Ocean', 'Unique']
+      }
+    ]
+  },
+  yeosu: {
+    slug: 'yeosu',
+    name: 'Yeosu',
+    heroImage: '/images/cities/yeosu.jpg',
+    headline: 'The Romantic Night Sea',
+    description: 'A picturesque port city famed for its spectacular marine cable car, romantic night views, and islands.',
+    culturalInsight: 'Yeosu is synonymous with romance in Korea, largely thanks to the famous song "Yeosu Night Sea". The city is a gateway to hundreds of beautiful islands and offers an unforgettable culinary journey highlighted by fresh seafood and local delicacies.',
+    hotspots: [
+      {
+        id: 'yeosu-1',
+        name: 'Dolsan',
+        description: 'Famous for Dolsan Park and the spectacular bridge that glows vividly against the dark ocean at night.',
+        image: 'https://images.unsplash.com/photo-1621586546377-5125fa0a4309?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODM4MDN8MHwxfHNlYXJjaHwxfHxZZW9zdSUyMERvbHNhbnxlbnwwfDB8fHwxNzIxMTg5MzIwfDA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageAlt: 'Yeosu Dolsan Bridge at night',
+        author: 'Unsplash',
+        sourceLink: '/',
+        tags: ['Night View', 'Bridge', 'Romance']
       },
       {
-        id: 'gyeongju-4',
-        name: 'Cheomseongdae Observatory',
-        description: 'The oldest surviving astronomical observatory in Asia, a testament to the scientific advancement of the Silla period.',
-        image: 'https://images.unsplash.com/photo-1656980593245-b54c8c0828f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODM4MDN8MHwxfHNlYXJjaHwxfHxneWVvbmdqdSUyMENoZW9tc2VvbmdkYWV8ZW58MHwwfHx8MTc3MzU4NzI2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
-        imageAlt: 'a group of people standing around a tall tower',
-        author: 'Unsplash (rawkkim)',
-        sourceLink: 'https://unsplash.com/photos/a-group-of-people-standing-around-a-tall-tower-ema8Gib6TNc',
-        tags: ['Science', 'Landmark', 'History']
+        id: 'yeosu-2',
+        name: 'Ungcheon',
+        description: 'A modern waterfront district offering lively coastal parks, sleek cafes, and a yacht marina.',
+        image: 'https://images.unsplash.com/photo-1619864239855-824fd18e9bc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4ODM4MDN8MHwxfHNlYXJjaHwxfHxZZW9zdSUyME1hcmluYXxlbnwwfDB8fHwxNzIxMTg5MzQwfDA&ixlib=rb-4.0.3&q=80&w=1080',
+        imageAlt: 'Yeosu Ungcheon Marina',
+        author: 'Unsplash',
+        sourceLink: '/',
+        tags: ['Marina', 'Modern', 'Leisure']
+      },
+      {
+        id: 'yeosu-3',
+        name: 'Yi Sun-sin Square',
+        description: 'A historic plaza dedicated to the legendary Admiral Yi Sun-sin, surrounded by famous local eateries.',
+        image: '/images/cities/yeosu.jpg',
+        imageAlt: 'Yi Sun-sin Square',
+        author: 'Local',
+        sourceLink: '/',
+        tags: ['History', 'Food', 'Culture']
       }
     ]
   }

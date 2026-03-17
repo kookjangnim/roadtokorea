@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { WPPost } from '@/lib/wp-api';
+import { VALID_CITY_SLUGS } from '@/constants/cities';
 
 interface LatestPostsProps {
   posts: WPPost[];
@@ -36,23 +37,30 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
               }
             }
 
-            // 2. 카테고리(Tier) 및 슬러그 추출
+            // 2. 카테고리(Tier) 및 도시 슬러그 추출
             let categoryLabel = 'Travel';
             let tierSlug = 'tier-1'; // 기본값
+            let citySlug = 'seoul'; // 기본값
 
             const wpTerms = post._embedded?.['wp:term'] || [];
             for (const taxonomyArray of wpTerms) {
-              const cat = taxonomyArray.find((t: any) => t.taxonomy === 'category');
-              if (cat) {
-                if (cat.slug && cat.slug.startsWith('tier-')) {
-                  tierSlug = cat.slug;
+              for (const term of taxonomyArray) {
+                if (term.taxonomy === 'category') {
+                  if (term.slug && term.slug.startsWith('tier-')) {
+                    tierSlug = term.slug;
+                  }
+                  categoryLabel = term.name || categoryLabel;
+                } else if (term.taxonomy === 'post_tag' && term.slug) {
+                  // 유효한 도시 슬러그인지 확인하여 citySlug로 지정 (무작위 태그 방지)
+                  if (VALID_CITY_SLUGS.includes(term.slug)) {
+                    citySlug = term.slug;
+                  }
                 }
-                categoryLabel = cat.name || categoryLabel;
               }
             }
 
-            // URL 라우팅: /[tier]/[city_slug]
-            const postUrl = `/${tierSlug}/${post.slug}`;
+            // URL 라우팅: /[tier]/[city]/[hotspot_slug]
+            const postUrl = `/${tierSlug}/${citySlug}/${post.slug}`;
 
             return (
               <article
