@@ -12,14 +12,14 @@ interface LatestPostsProps {
  */
 export default function LatestPosts({ posts }: LatestPostsProps) {
   return (
-    <section className="py-32 px-4 md:px-8 relative">
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-brand-secondary to-transparent" />
+    <section className="py-24 md:py-32 px-4 md:px-8 bg-white relative border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <span className="text-brand-accent tracking-[0.3em] text-xs uppercase mb-4 block">Journal</span>
-          <h2 className="text-4xl md:text-6xl text-foreground font-editorial">
-            Travel <span className="italic text-brand-taupe">Notes</span>
+        <div className="text-center mb-20 flex flex-col items-center">
+          <span className="text-gray-500 tracking-[0.3em] text-xs uppercase mb-4 block font-semibold">Journal</span>
+          <h2 className="text-4xl md:text-6xl text-gray-900 font-serif leading-tight">
+            Travel <span className="italic text-gray-500">Notes</span>
           </h2>
+          <div className="w-16 h-[1px] bg-gray-300 mt-8"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -67,33 +67,33 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
                 key={post.id}
                 className="group cursor-pointer flex flex-col"
               >
-                <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6 border border-brand-secondary/50">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-sm mb-6 shadow-md bg-gray-100">
                   <Link href={postUrl}>
                     <Image
                       src={imageUrl}
                       alt={post.title.rendered}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover transition-transform duration-1000 group-hover:scale-105 filter group-hover:brightness-110"
+                      className="object-cover transition-transform duration-1000 group-hover:scale-105"
                       loading={index < 2 ? 'eager' : 'lazy'}
                     />
                   </Link>
-                  <div className="absolute top-4 left-4 glass-panel px-3 py-1 rounded-full">
-                    <span className="text-white/90 text-[10px] tracking-widest uppercase">{categoryLabel}</span>
+                  <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-sm shadow-sm">
+                    <span className="text-gray-900 text-[10px] tracking-widest uppercase font-semibold">{categoryLabel}</span>
                   </div>
                 </div>
-                <div className="flex flex-col flex-grow">
-                  <time className="text-brand-sage text-xs tracking-widest uppercase mb-3 block">
-                    {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                <div className="flex flex-col flex-grow px-2">
+                  <time className="text-gray-500 text-[10px] tracking-widest uppercase mb-3 block">
+                    {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                   </time>
                   <Link href={postUrl}>
-                    <h3 className="text-2xl font-editorial text-foreground mb-4 group-hover:text-brand-accent transition-colors leading-tight line-clamp-2">
+                    <h3 className="text-2xl font-serif text-gray-900 mb-4 group-hover:text-amber-800 transition-colors leading-tight line-clamp-2">
                       {post.slug.charAt(0).toUpperCase() + post.slug.toLowerCase().slice(1)}
                     </h3>
                   </Link>
-                  <div className="mt-auto pt-4 border-t border-brand-secondary/50">
-                    <Link href={postUrl} className="text-brand-taupe text-xs uppercase tracking-[0.2em] group-hover:text-foreground transition-colors">
-                      Read Article →
+                  <div className="mt-auto pt-4 border-t border-gray-200">
+                    <Link href={postUrl} className="text-gray-500 text-xs uppercase tracking-[0.2em] group-hover:text-gray-900 transition-colors font-medium">
+                      Read Article
                     </Link>
                   </div>
                 </div>
@@ -105,9 +105,9 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
         <div className="mt-20 flex justify-center">
           <Link
             href="/blog"
-            className="px-12 py-4 border border-brand-secondary hover:border-brand-accent text-foreground hover:text-brand-accent transition-colors tracking-widest uppercase text-xs"
+            className="px-10 py-4 border border-gray-300 hover:border-gray-900 text-gray-600 hover:text-gray-900 transition-all uppercase tracking-widest text-xs font-semibold rounded-sm"
           >
-            View All Journal Entries
+            Explore All Notes
           </Link>
         </div>
       </div>

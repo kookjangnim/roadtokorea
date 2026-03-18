@@ -1,0 +1,101 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   cards.css — 카드 컴포넌트 (attractions, food 등)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 640px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .card-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.card {
+  background: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(17, 24, 39, 0.1);
+}
+
+.card-img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+
+/* Placeholder when image is missing */
+.placeholder-gradient {
+  width: 100%; aspect-ratio: 16/10;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(88, 28, 135, 0.8));
+  position: relative; overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.placeholder-gradient::after {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='rgba(0, 0, 0,0.03)' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+.placeholder-text {
+  font-size: 1.25rem; font-weight: 700; color: #111827;
+  text-align: center; padding: 0 1.5rem; z-index: 1;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  font-family: 'Inter', -apple-system, sans-serif; letter-spacing: 0.5px;
+}
+
+.card-body { padding: 1rem 1.25rem 1.25rem; }
+
+.card-title {
+  color: #111827 !important; font-size: 1.05rem !important;
+  font-weight: 700 !important; margin: 0 0 0.5rem 0 !important; border: none !important;
+}
+.card-rating { color: #d97706; font-size: 0.85rem; margin-bottom: 0.5rem; font-weight: 500; }
+.card-desc {
+  color: #374151 !important; font-size: 0.9rem !important;
+  line-height: 1.6 !important; margin-bottom: 0.75rem !important;
+}
+.card-address { color: #9ca3af !important; font-size: 0.8rem !important; margin: 0 !important; }
+.card-menu {
+  color: #374151; font-size: 0.85rem; margin-bottom: 0.5rem;
+  padding: 0.3rem 0.5rem; background: rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem; display: inline-block;
+}
+.card-badge {
+  display: inline-block; padding: 0.2rem 0.5rem;
+  background: rgba(0, 0, 0, 0.08); color: #d97706;
+  font-size: 0.8rem; font-weight: 600; border-radius: 0.25rem; margin-top: 0.5rem;
+}
+.card-why {
+  color: #d97706; font-size: 0.85rem; margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem; background: rgba(251, 191, 36, 0.1);
+  border-radius: 0.25rem; border-left: 3px solid #d97706;
+}
+.card-meta { color: #9ca3af; font-size: 0.8rem; margin-top: 0.5rem; display: flex; gap: 1rem; }
+
+.cta-btn {
+  display: inline-block; padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.1); border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #ffffff !important; font-weight: 600; font-size: 0.85rem;
+  border-radius: 0.375rem; text-decoration: none !important;
+  transition: background 0.2s ease; margin-top: 0.5rem;
+}
+.cta-btn:hover { background: rgba(0, 0, 0, 0.2); }
+
+/* Nearby Cards */
+.nearby-section { margin-top: 1rem; margin-bottom: 2rem; }
+.nearby-card {
+  background: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0.5rem; overflow: hidden;
+}
+.nearby-card:hover { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); }
+
+/* Hide legacy marketing sections */
+.pain-section, .problem-section, .story-section, .solution-section,
+.social-proof-section, .authority-section, .benefits-section,
+.risk-section, .comparison-section, .target-section, .final-cta-section {
+  display: none !important;
+}

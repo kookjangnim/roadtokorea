@@ -1,0 +1,61 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   practical.css — 소유물, 실용정보(Good to Know), 축제
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Souvenirs */
+.souvenirs-section {
+  background: rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem; padding: 1.25rem 1.5rem;
+  margin-top: 1rem; margin-bottom: 2rem;
+}
+.souvenir-list { list-style: none !important; padding: 0 !important; }
+.souvenir-item {
+  padding: 0.75rem 0; border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #374151 !important; font-size: 0.95rem !important; line-height: 1.6 !important;
+}
+.souvenir-item:last-child { border-bottom: none; }
+.souvenir-item strong { color: #111827; }
+.souvenir-item em { color: #4b5563; font-size: 0.85rem; }
+
+/* Practical Info (Good to Know) */
+.practical-section {
+  background: rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem; padding: 1.25rem 1.5rem;
+  margin-top: 1rem; margin-bottom: 2rem;
+}
+.practical-grid {
+  display: grid; grid-template-columns: repeat(1, 1fr); gap: 1rem;
+}
+@media (min-width: 640px) { .practical-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.practical-item {
+  display: flex; flex-direction: column; gap: 0.25rem;
+  padding: 0.75rem; background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 0.375rem;
+  color: #111827 !important; font-size: 0.9rem; line-height: 1.5;
+}
+.practical-item * { color: #111827 !important; }
+.practical-item strong { color: #111827 !important; margin-right: 0.25rem; font-weight: 700; }
+
+/* Festivals */
+.festival-grid {
+  display: grid; grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem; margin-bottom: 2rem;
+}
+@media (min-width: 640px) { .festival-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.festival-card {
+  background: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0.5rem; padding: 1.25rem;
+}
+.festival-name {
+  color: #111827 !important; font-size: 1.05rem !important;
+  font-weight: 700 !important; margin: 0 0 0.5rem 0 !important;
+}
+.festival-date { color: #2563eb; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.5rem; }
+.festival-desc { color: #374151 !important; font-size: 0.9rem !important; line-height: 1.6 !important; }

@@ -1,0 +1,88 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   base.css — CSS 변수, body, 유틸, 애니메이션
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+
+  --color-brand-primary: #111111;
+  --color-brand-secondary: rgba(0, 0, 0, 0.1);
+  --color-brand-accent: #b08050;
+  --color-brand-sage: #5a6a56;
+  --color-brand-taupe: #787063;
+
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-cormorant);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Premium Mesh Background */
+.bg-mesh-dark {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(at 0% 0%, rgba(176, 128, 80, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(90, 106, 86, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(120, 112, 99, 0.05) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(0, 0, 0, 0.02) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Global Utilities */
+.font-editorial {
+  font-family: var(--font-serif), serif;
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+/* Animations */
+@keyframes ken-burns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+.animate-ken-burns {
+  animation: ken-burns 20s ease-out infinite alternate;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Masonry Grid Fallback */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 20px;
+  gap: 1.5rem;
+}

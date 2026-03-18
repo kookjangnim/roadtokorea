@@ -1,0 +1,73 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   transport.css — 교통, Tip 카드, 아코디언
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Practical Tip Cards (numbered tips 01/02/03) */
+.tip-card {
+  display: flex; align-items: flex-start; gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(37, 99, 235, 0.1);
+  border-left: 3px solid #2563eb;
+  border-radius: 0 0.375rem 0.375rem 0;
+  margin-bottom: 0.75rem;
+}
+.tip-number { color: #2563eb; font-size: 1.3rem; font-weight: 800; min-width: 1.5rem; line-height: 1; }
+.tip-card p { color: #374151 !important; margin: 0 !important; font-size: 0.95rem !important; line-height: 1.7 !important; }
+
+/* Transport Section */
+.transport-section {
+  background: rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem; padding: 1.25rem 1.5rem; margin-top: 1rem;
+}
+.transport-steps { display: flex; flex-direction: column; gap: 1rem; }
+.transport-step { display: flex; align-items: flex-start; gap: 1rem; }
+
+.step-number {
+  background: rgba(0, 0, 0, 0.1); border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #ffffff; width: 2rem; height: 2rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+}
+.step-content h3 { color: #111827 !important; font-size: 1rem !important; margin: 0 0 0.25rem 0 !important; }
+.step-content p { color: #374151 !important; margin: 0 !important; font-size: 0.9rem !important; }
+
+/* Accordion (v1 — blue variant) */
+.accordion { margin-top: -0.5rem; margin-bottom: 2rem; }
+.accordion summary {
+  cursor: pointer; color: #2563eb; font-weight: 600; font-size: 0.95rem;
+  padding: 0.75rem 1rem; background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 0.375rem;
+  list-style: none; transition: background 0.2s ease;
+}
+.accordion summary:hover { background: #dbeafe; }
+.accordion summary::-webkit-details-marker { display: none; }
+.accordion[open] summary { border-radius: 0.375rem 0.375rem 0 0; border-bottom: none; }
+
+.accordion-list {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none; border-radius: 0 0 0.375rem 0.375rem; overflow: hidden;
+}
+.accordion-item {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.75rem 1rem; border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.2s ease;
+}
+.accordion-item:last-child { border-bottom: none; }
+.accordion-item:hover { background: rgba(0, 0, 0, 0.04); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.accordion-name { flex: 1; color: #374151; font-size: 0.9rem; font-weight: 500; }
+.accordion-rating { color: #d97706; font-size: 0.85rem; font-weight: 500; }
+.accordion-badge {
+  display: inline-block; padding: 0.15rem 0.4rem;
+  background: rgba(0, 0, 0, 0.08); color: #9ca3af;
+  font-size: 0.75rem; font-weight: 600; border-radius: 0.2rem;
+}
+
+/* Accommodation CTA */
+.accommodation-section .cta-btn {
+  display: inline-block; margin-top: 0.75rem; padding: 0.5rem 1rem;
+  background: #1f2937; color: #ffffff; border-radius: 0.5rem;
+  text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: background 0.2s;
+}
+.accommodation-section .cta-btn:hover { background: rgba(0, 0, 0, 0.2); }
