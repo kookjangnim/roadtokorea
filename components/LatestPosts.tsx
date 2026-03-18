@@ -24,12 +24,17 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {posts.map((post, index) => {
-            // 1. 이미지 추출: featured_media 대신 content 내부의 첫 번째 img 태그 추출. 없으면 slug 기반 범용 이미지
+            // 1. 이미지: featured_media 우선(수동 사진), 없으면 content 첫 img
             let imageUrl = `/images/cities/${post.slug.toLowerCase()}.jpg`;
-            // 원주 도서관 이미지 표시 방지: 원주가 아닐 때만 본문에서 이미지 추출
-            if (post.slug.toLowerCase() !== 'wonju' && post.content && post.content.rendered) {
+            const featuredUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+            if (featuredUrl) {
+              imageUrl = featuredUrl.replace(
+                /https?:\/\/roadtokorea\.blog\/wp-content/g,
+                'https://api.roadtokorea.blog/wp-content'
+              );
+            } else if (post.content?.rendered) {
               const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/);
-              if (imgMatch && imgMatch[1]) {
+              if (imgMatch?.[1]) {
                 imageUrl = imgMatch[1].replace(
                   /https?:\/\/roadtokorea\.blog\/wp-content/g,
                   'https://api.roadtokorea.blog/wp-content'
@@ -88,7 +93,7 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
                   </time>
                   <Link href={postUrl}>
                     <h3 className="text-2xl font-serif text-gray-900 mb-4 group-hover:text-amber-800 transition-colors leading-tight line-clamp-2">
-                      {post.slug.charAt(0).toUpperCase() + post.slug.toLowerCase().slice(1)}
+                      {post.title.rendered}
                     </h3>
                   </Link>
                   <div className="mt-auto pt-4 border-t border-gray-200">
