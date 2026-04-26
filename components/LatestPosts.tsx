@@ -13,7 +13,7 @@ interface LatestPostsProps {
  */
 export default function LatestPosts({ posts }: LatestPostsProps) {
   return (
-    <section className="py-24 md:py-32 px-4 md:px-8 bg-white relative border-t border-gray-200">
+    <section id="journal" className="py-24 md:py-32 px-4 md:px-8 bg-white relative border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20 flex flex-col items-center">
           <span className="text-gray-500 tracking-[0.3em] text-xs uppercase mb-4 block font-semibold">Journal</span>
