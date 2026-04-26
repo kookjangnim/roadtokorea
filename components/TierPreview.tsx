@@ -255,7 +255,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
               Chapter III
             </span>
             <div className="h-[1px] flex-grow bg-gray-200" />
-            <h3 className="font-serif text-3xl italic text-gray-900">Deepening Routes</h3>
+              <h3 className="font-serif text-3xl italic text-gray-900">Route Logic</h3>
           </div>
 
           {t3Posts.length > 0 ? (
@@ -288,7 +288,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                       {post.title}
                     </h4>
                     <p className="mt-5 text-xs font-semibold uppercase tracking-[0.24em] text-stone-700">
-                      Read The Route
+                      Read The Logic
                     </p>
                   </div>
                 </Link>
@@ -300,21 +300,21 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
               <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-stone-500">
-                    Editorial Layer
+                    Route Layer
                   </p>
                   <h4 className="mt-4 max-w-3xl font-serif text-4xl leading-tight text-stone-900 md:text-5xl">
-                    Tier 3 is the bridge between city lists and fully personal routes.
+                    Tier 3 is where city picks turn into route logic.
                   </h4>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-stone-600">
-                    This chapter is reserved for longer-form route pieces, combination itineraries,
-                    and editorial travel logic that connects the big anchors to quieter detours.
-                    It is intentionally being built as a deeper layer, not a filler category.
+                    This chapter is for combination itineraries, editorial route pieces, and the
+                    travel logic that explains why certain cities belong together. It is the layer
+                    between isolated city guides and a trip that actually feels authored.
                   </p>
                 </div>
 
                 <div className="rounded-[1.5rem] border border-stone-200 bg-white/80 p-6 backdrop-blur">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                    What Will Live Here
+                    What Lives Here
                   </p>
                   <div className="mt-5 space-y-3 text-sm leading-7 text-stone-700">
                     <p>Seoul + regional pairings that make sense for one trip.</p>
