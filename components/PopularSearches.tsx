@@ -6,35 +6,29 @@ export default function PopularSearches({ tags = [] }: PopularSearchesProps) {
   if (tags.length === 0) return null;
 
   return (
-    <section className="py-24 px-4 bg-gray-50 border-t border-gray-200">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-serif text-gray-900 mb-12 italic">
-          Trending Inspirations
+    <section className="border-t border-gray-200 bg-stone-50 px-4 py-20 md:px-8 md:py-24">
+      <div className="mx-auto max-w-5xl text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-stone-500">
+          Editorial Pulse
+        </p>
+        <h2 className="mt-5 font-serif text-4xl leading-tight text-stone-900 md:text-6xl">
+          Places shaping the current
+          <span className="block text-stone-500">editorial map.</span>
         </h2>
+        <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-stone-600 md:text-lg">
+          These are the names surfacing most often across recent guides, route experiments, and
+          new story drafts. Use them as fast entry points when you want to jump straight into the
+          live edge of the site.
+        </p>
 
-        {/* Minimal Search Bar */}
-        <div className="relative mb-16 max-w-2xl mx-auto group">
-          <input
-            type="text"
-            placeholder="Search destinations..."
-            className="w-full bg-transparent border-b border-gray-300 text-gray-900 placeholder-gray-400 px-4 py-4 focus:outline-none focus:border-amber-800 transition-colors text-center text-lg font-light"
-          />
-          <button className="absolute right-0 top-1/2 -translate-y-1/2 text-gray-400 hover:text-amber-800 transition-colors p-4" aria-label="Search">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
-        </div>
-
-        {/* Minimal Tags */}
-        <div className="flex flex-wrap justify-center gap-4">
-          {tags.map((tag, index) => (
-            <button
-              key={index}
-              className="text-gray-500 hover:text-gray-900 transition-colors text-sm uppercase tracking-widest pb-1 border-b border-transparent hover:border-amber-800"
+        <div className="mt-12 flex flex-wrap justify-center gap-3 md:gap-4">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-stone-300 bg-white px-5 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-stone-700 shadow-sm transition-colors hover:border-stone-900 hover:text-stone-950"
             >
               {tag}
-            </button>
+            </span>
           ))}
         </div>
       </div>

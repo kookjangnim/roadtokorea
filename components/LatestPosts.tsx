@@ -20,6 +20,10 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
           <h2 className="text-4xl md:text-6xl text-gray-900 font-serif leading-tight">
             Travel <span className="italic text-gray-500">Notes</span>
           </h2>
+          <p className="mt-5 max-w-2xl text-base leading-8 text-stone-600 md:text-lg">
+            Fresh story pages, route fragments, and city notes that show where the project is
+            actively digging right now.
+          </p>
           <div className="w-16 h-[1px] bg-gray-300 mt-8"></div>
         </div>
 

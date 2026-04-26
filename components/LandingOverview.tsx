@@ -83,7 +83,8 @@ export default function LandingOverview({ stats, tags }: LandingOverviewProps) {
               </p>
               <p className="mt-4 text-sm leading-7 text-stone-200">
                 If this is your first trip, start with Icons. If you want a Korea that feels less
-                templated, move into Hubs. If you want stories worth telling later, take the Detours.
+                templated, move into Hubs. If you want stories worth telling later, take the
+                Detours.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 {quickTags.map((tag) => (
@@ -118,8 +119,8 @@ export default function LandingOverview({ stats, tags }: LandingOverviewProps) {
                   <span className="text-xs font-semibold uppercase tracking-[0.26em] text-amber-100">
                     {mode.cta}
                   </span>
-                  <span className="text-2xl text-white transition-transform duration-300 group-hover:translate-x-1">
-                    →
+                  <span className="text-xs font-semibold uppercase tracking-[0.26em] text-white transition-transform duration-300 group-hover:translate-x-1">
+                    View Route
                   </span>
                 </div>
               </Link>

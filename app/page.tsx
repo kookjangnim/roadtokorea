@@ -9,32 +9,32 @@ import { tier1Cities } from '@/data/tier1Cities';
 import { tier2Cities } from '@/data/tier2Cities';
 import { tier4Cities } from '@/data/tier4Cities';
 
-/**
- * 랜딩페이지 - Server Component (SEO 최적화)
- * WordPress API 연동 완료
- */
+const EXCLUDED_HOME_SLUGS = new Set(['seoul', 'hello-world']);
+
 export default async function Home() {
-  // WordPress에서 카테고리별 포스트 가져오기, 서울 제외
   const rawLatestPosts = await fetchLatestPosts(8);
-  const latestPosts = rawLatestPosts.filter(post => post.slug.toLowerCase() !== 'seoul').slice(0, 6);
-  
+  const latestPosts = rawLatestPosts
+    .filter((post) => !EXCLUDED_HOME_SLUGS.has(post.slug.toLowerCase()))
+    .slice(0, 6);
+
   const tier3Posts = await fetchPostsByTier('tier-3', 4);
-  let tier4Posts = await fetchPostsByTier('tier-4', 4);
-  
-  // 강제로 tier4 포스트에서 seoul 제거
-  tier4Posts = tier4Posts.filter(post => post.slug.toLowerCase() !== 'seoul');
-  
-  // tier3과 4 포스트를 기사 작성일 기준 최신순으로 정렬
+  const tier4Posts = (await fetchPostsByTier('tier-4', 4)).filter(
+    (post) => !EXCLUDED_HOME_SLUGS.has(post.slug.toLowerCase())
+  );
+
   const tier34Posts = [...tier3Posts, ...tier4Posts]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 6);
 
-  // 추출된 포스트 제목에서 도시 이름만 파싱하여 Popular Searches 태그로 활용
-  const searchTags = latestPosts.map(post => {
-    let title = post.title.rendered;
-    title = title.replace('Travel Guide: The Hidden Charms of ', '').trim();
-    return title.charAt(0).toUpperCase() + title.toLowerCase().slice(1);
-  }).slice(0, 8);
+  const searchTags = latestPosts
+    .map((post) => {
+      const stripped = post.title.rendered
+        .replace('Travel Guide: The Hidden Charms of ', '')
+        .trim();
+      return stripped ? stripped.charAt(0).toUpperCase() + stripped.toLowerCase().slice(1) : '';
+    })
+    .filter((tag) => tag && tag.toLowerCase() !== 'hello world!')
+    .slice(0, 8);
 
   const landingStats = {
     featuredCities: Object.keys(tier1Cities).length,
@@ -45,21 +45,11 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen text-foreground font-sans">
-      {/* Hero Section */}
       <HeroSlider />
-
       <LandingOverview stats={landingStats} tags={searchTags} />
-
-      {/* Tier Preview Section */}
       <TierPreview tier34Posts={tier34Posts} />
-
-      {/* Latest Posts Section - API 데이터 사용 */}
-      <LatestPosts posts={latestPosts} />
-
-      {/* Popular Searches Section */}
-      <PopularSearches tags={searchTags} />
-
-      {/* Footer */}
+      {latestPosts.length > 0 && <LatestPosts posts={latestPosts} />}
+      {searchTags.length > 0 && <PopularSearches tags={searchTags} />}
       <Footer />
     </main>
   );
