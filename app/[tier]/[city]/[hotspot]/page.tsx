@@ -2,6 +2,9 @@ import { fetchPostBySlug } from '@/lib/wp-api';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
+
+const siteUrl = getSiteUrl();
 
 export async function generateMetadata(
   { params }: { params: Promise<{ tier: string; city: string; hotspot: string }> }
@@ -22,7 +25,7 @@ export async function generateMetadata(
     openGraph: {
       title,
       description,
-      url: `https://roadtokorea.blog/${tier}/${city}/${hotspot}`,
+      url: `${siteUrl}/${tier}/${city}/${hotspot}`,
       type: 'article',
       images: heroImage ? [{ url: heroImage, width: 1200, height: 630, alt: title }] : [],
     },
@@ -33,10 +36,7 @@ function cleanContent(html: string): string {
   // Remove emoji
   let cleaned = html.replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1FA00}-\u{1FAFF}\u{200D}\u{FE0F}]/gu, '');
   // Fix WP image domain
-  cleaned = cleaned.replace(
-    /https?:\/\/roadtokorea\.blog\/wp-content/g,
-    'https://api.roadtokorea.blog/wp-content'
-  );
+  cleaned = cleaned.replace(/https?:\/\/[^/]+\/wp-content\/[^"' )]+/g, (match) => normalizeWpMediaUrl(match));
   return cleaned;
 }
 
@@ -87,7 +87,7 @@ export default async function HotspotPage(
   const rawContent = post.content?.rendered || '';
   const heroImageUrl = getHeroImage(post);
   const fixedHeroUrl = heroImageUrl
-    ? heroImageUrl.replace(/https?:\/\/roadtokorea\.blog\/wp-content/g, 'https://api.roadtokorea.blog/wp-content')
+    ? normalizeWpMediaUrl(heroImageUrl)
     : null;
   // hero-banner 이후 첫 번째 실제 문단에서 excerpt 추출
   const afterHero = rawContent.replace(/[\s\S]*?class="[^"]*hero[^"]*"[^>]*>[\s\S]*?<\/figure>/i, '');
@@ -109,7 +109,7 @@ export default async function HotspotPage(
     '@type': 'Article',
     headline: title,
     description: excerpt,
-    url: `https://roadtokorea.blog/${tier}/${citySlug}/${hotspotSlug}`,
+    url: `${siteUrl}/${tier}/${citySlug}/${hotspotSlug}`,
     ...(fixedHeroUrl ? { image: fixedHeroUrl } : {}),
   };
 

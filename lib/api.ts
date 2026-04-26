@@ -1,5 +1,7 @@
 // WordPress API 설정
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'https://api.roadtokorea.blog/wp-json/wp/v2';
+import { getApiBase } from './site-config';
+
+const API_BASE = getApiBase();
 
 // WordPress 포스트 타입
 export interface WordPressPost {

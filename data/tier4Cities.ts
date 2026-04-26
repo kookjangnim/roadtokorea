@@ -1,4 +1,17 @@
-export const tier4Cities: Record<string, any> = {
+export type { Hotspot } from './tier2Cities';
+import type { Hotspot } from './tier2Cities';
+
+export interface TierCityData {
+  slug: string;
+  name: string;
+  heroImage: string;
+  headline: string;
+  description: string;
+  culturalInsight: string;
+  hotspots: Hotspot[];
+}
+
+export const tier4Cities: Record<string, TierCityData> = {
   wonju: {
     name: 'Wonju',
     slug: 'wonju',

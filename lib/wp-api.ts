@@ -1,7 +1,11 @@
+
 /**
  * WordPress REST API Client
  * WordPress Headless CMS에서 데이터를 가져오는 클라이언트
  */
+
+
+import { getApiBase } from './site-config';
 
 export interface WPPost {
   id: number;
@@ -42,7 +46,7 @@ export interface WPCategory {
   count: number;
 }
 
-const WP_API_BASE = 'https://api.roadtokorea.blog/wp-json/wp/v2';
+const WP_API_BASE = getApiBase();
 
 /**
  * WordPress REST API 기본 설정

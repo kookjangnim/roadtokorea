@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { WPPost } from '@/lib/wp-api';
 import { VALID_CITY_SLUGS } from '@/constants/cities';
+import { normalizeWpMediaUrl } from '@/lib/site-config';
 
 interface LatestPostsProps {
   posts: WPPost[];
@@ -28,17 +29,11 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
             let imageUrl = `/images/cities/${post.slug.toLowerCase()}.jpg`;
             const featuredUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
             if (featuredUrl) {
-              imageUrl = featuredUrl.replace(
-                /https?:\/\/roadtokorea\.blog\/wp-content/g,
-                'https://api.roadtokorea.blog/wp-content'
-              );
+              imageUrl = normalizeWpMediaUrl(featuredUrl);
             } else if (post.content?.rendered) {
               const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/);
               if (imgMatch?.[1]) {
-                imageUrl = imgMatch[1].replace(
-                  /https?:\/\/roadtokorea\.blog\/wp-content/g,
-                  'https://api.roadtokorea.blog/wp-content'
-                );
+                imageUrl = normalizeWpMediaUrl(imgMatch[1]);
               }
             }
 
@@ -109,10 +104,10 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
 
         <div className="mt-20 flex justify-center">
           <Link
-            href="/blog"
+            href="/tier-1/cities"
             className="px-10 py-4 border border-gray-300 hover:border-gray-900 text-gray-600 hover:text-gray-900 transition-all uppercase tracking-widest text-xs font-semibold rounded-sm"
           >
-            Explore All Notes
+            Browse City Guides
           </Link>
         </div>
       </div>

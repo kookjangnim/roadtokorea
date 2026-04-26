@@ -11,7 +11,8 @@ interface TransportationInfoProps {
 
 export default function TransportationInfo({ transportGuideEn, cityName, cityNameEn }: TransportationInfoProps) {
   // 간단한 가이드 파싱 (실제로는 더 복잡할 수 있음)
-  const guideLines = transportGuideEn.split('\n').filter(line => line.trim());
+  void transportGuideEn;
+  void cityName;
 
   return (
     <section id="how-to-get-there" className="py-16 px-4 bg-gray-900">

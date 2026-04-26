@@ -11,6 +11,8 @@
 @import "./styles/cards.css";         /* 카드 그리드, 카드 바디, CTA */
 @import "./styles/transport.css";     /* 교통 섹션, Tip 카드, 아코디언 */
 @import "./styles/practical.css";     /* 소유물, Good to Know, 축제 */
+@import "./styles/header.css";        /* 사이트 헤더, 모바일 메뉴 */
+@import "./styles/footer.css";        /* 사이트 푸터 */
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    Responsive overrides (global breakpoints)

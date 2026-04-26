@@ -15,17 +15,6 @@ export interface TierData {
   };
 }
 
-interface City {
-  name: string;
-  nameEn: string;
-  category?: string;
-  category_detail?: string;
-  stats?: {
-    annualVisitors?: string;
-    satisfactionRate?: string;
-  };
-}
-
 // 티어별 데이터
 export const tierData: TierData = {
   tier1: {
@@ -76,29 +65,24 @@ export function getTierStats(tier: string): TierData[string] | null {
 
 // 티어별 총 개수 (get 함수)
 export function getTotalCities(): number {
-  const tier1 = tierData.tier1?.total_cities || 0;
-  const tier2 = tierData.tier2?.total_cities || 0;
-  const tier3 = tierData.tier3?.total_cities || 0;
-  const tier4 = tierData.tier4?.total_cities || 0;
-
-  return tier1 + tier2 + tier3 + tier4;
+  return (
+    (tierData.tier1?.total_cities || 0) +
+    (tierData.tier2?.total_cities || 0) +
+    (tierData.tier3?.total_cities || 0) +
+    (tierData.tier4?.total_cities || 0)
+  );
 }
 
 export function getTotalAttractions(): number {
-  const tier1 = tierData.tier1?.total_attractions || 0;
-  const tier2 = tierData.tier2?.total_attractions || 0;
-  const tier3 = tierData.tier3?.total_attractions || 0;
-  const tier4 = tierData.tier4?.total_attractions || 0;
-
-  return tier1 + tier2 + tier3 + tier4;
+  return (
+    (tierData.tier1?.total_attractions || 0) +
+    (tierData.tier2?.total_attractions || 0) +
+    (tierData.tier3?.total_attractions || 0) +
+    (tierData.tier4?.total_attractions || 0)
+  );
 }
 
 export function getTotalVisitors(): number {
-  const tier1 = tierData.tier1?.annual_visitors || '0';
-  const tier2 = tierData.tier2?.annual_visitors || '0';
-  const tier3 = tierData.tier3?.annual_visitors || '0';
-  const tier4 = tierData.tier4?.annual_visitors || '0';
-
   const t1 = parseInt(tierData.tier1?.annual_visitors?.replace(/[^0-9]/g, '') || '0', 10);
   const t2 = parseInt(tierData.tier2?.annual_visitors?.replace(/[^0-9]/g, '') || '0', 10);
   const t3 = parseInt(tierData.tier3?.annual_visitors?.replace(/[^0-9]/g, '') || '0', 10);

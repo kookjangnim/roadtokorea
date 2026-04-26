@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 import { fetchPosts } from '@/lib/api';
+import { getSiteUrl } from '@/lib/site-config';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://roadtokorea.blog';
+    const baseUrl = getSiteUrl();
 
     // Static routes
     const staticRoutes: MetadataRoute.Sitemap = [

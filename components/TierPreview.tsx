@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { VALID_CITY_SLUGS } from '@/constants/cities';
 import { destinations } from '@/data/destinations';
 import { tier1Cities } from '@/data/tier1Cities';
 import { tier2Cities } from '@/data/tier2Cities';
 import { tier4Cities } from '@/data/tier4Cities';
+import type { Tier1CityData } from '@/data/tier1Cities';
+import type { TierCityData } from '@/data/tier2Cities';
 
 interface WPPost {
   id: number;
@@ -22,29 +23,9 @@ interface TierPreviewProps {
   tier34Posts: WPPost[];
 }
 
-function extractImageData(post: WPPost): string {
-  const embeddedImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-  const fallbackImagePattern = /<img[^>]+src="([^">]+)"/;
-  const match = post.excerpt?.rendered?.match(fallbackImagePattern) || post.content?.rendered?.match(fallbackImagePattern);
-  
-  if (embeddedImage) return embeddedImage;
-  
-  if (match && match[1]) {
-    return match[1].replace(
-      /https?:\/\/roadtokorea\.blog\/wp-content/g,
-      'https://api.roadtokorea.blog/wp-content'
-    );
-  }
-  
-  return '/images/placeholder.jpg';
-}
+type CityCardSource = Tier1CityData | TierCityData;
 
-function formatCityNameFromSlug(slug: string): string {
-  if (!slug) return '';
-  return slug.charAt(0).toUpperCase() + slug.toLowerCase().slice(1);
-}
-
-const getCityCardData = (citySlug: string, tier: number, cityData: any) => {
+const getCityCardData = (citySlug: string, tier: number, cityData: CityCardSource) => {
   let preferredImage = cityData.heroImage;
   const localDests = destinations.filter(d => d.tier === tier && d.city.toLowerCase() === citySlug.toLowerCase());
   
@@ -68,6 +49,7 @@ const getCityCardData = (citySlug: string, tier: number, cityData: any) => {
 };
 
 export default function TierPreview({ tier34Posts }: TierPreviewProps) {
+  void tier34Posts;
   const t1Cities = Object.keys(tier1Cities).map(slug => getCityCardData(slug, 1, tier1Cities[slug]));
   const t2Cities = Object.keys(tier2Cities).map(slug => getCityCardData(slug, 2, tier2Cities[slug]));
 
@@ -146,7 +128,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
             </div>
             
             <div className="mt-12 text-center md:text-right">
-              <Link href="/tier-1" className="inline-block text-gray-500 hover:text-gray-900 transition-colors border-b border-gray-300 hover:border-gray-900 pb-1 uppercase tracking-widest text-xs font-semibold">
+              <Link href="/tier-1/cities" className="inline-block text-gray-500 hover:text-gray-900 transition-colors border-b border-gray-300 hover:border-gray-900 pb-1 uppercase tracking-widest text-xs font-semibold">
                 Explore All Icons
               </Link>
             </div>
@@ -188,6 +170,12 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                 </Link>
               ))}
             </div>
+
+            <div className="mt-12 text-center md:text-right">
+              <Link href="/tier-2/cities" className="inline-block text-gray-500 hover:text-gray-900 transition-colors border-b border-gray-300 hover:border-gray-900 pb-1 uppercase tracking-widest text-xs font-semibold">
+                Explore All Hubs
+              </Link>
+            </div>
           </div>
         )}
 
@@ -222,6 +210,12 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                   </div>
                 </Link>
               ))}
+            </div>
+
+            <div className="mt-12 text-center md:text-right">
+              <Link href="/tier-4/cities" className="inline-block text-gray-500 hover:text-gray-900 transition-colors border-b border-gray-300 hover:border-gray-900 pb-1 uppercase tracking-widest text-xs font-semibold">
+                Explore All Detours
+              </Link>
             </div>
           </div>
         )}

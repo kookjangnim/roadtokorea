@@ -1,22 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google";
+import Header from "@/components/Header";
+import { getSiteUrl } from "@/lib/site-config";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   title: {
@@ -28,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://roadtokorea.blog",
+    url: siteUrl,
     title: "RoadToKorea - Discover the Best Cities in South Korea",
     description: "Find your next destination in South Korea. Explore must-visit cities, hidden gems, and local secrets with RoadToKorea.",
     siteName: "RoadToKorea",
@@ -39,7 +26,7 @@ export const metadata: Metadata = {
     description: "Find your next destination in South Korea. Explore must-visit cities, hidden gems, and local secrets with RoadToKorea.",
   },
   alternates: {
-    canonical: "https://roadtokorea.blog",
+    canonical: siteUrl,
   },
 };
 
@@ -52,19 +39,18 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "RoadToKorea",
-    "url": "https://roadtokorea.blog",
+    "url": siteUrl,
     "description": "Find your next destination in South Korea. Explore must-visit cities, hidden gems, and local secrets with RoadToKorea."
   };
 
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} antialiased bg-mesh-dark`}
-      >
+      <body className="antialiased bg-mesh-dark">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Header />
         {children}
       </body>
     </html>

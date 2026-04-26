@@ -4,19 +4,12 @@
  */
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface TierPageProps {
   params: {
     tier: string;
   };
-}
-
-interface CityCard {
-  name: string;
-  nameEn?: string;
-  tier: string;
-  image: string;
-  category?: string;
 }
 
 // 티어별 도시 데이터
@@ -179,7 +172,7 @@ export default function TierPage({ params }: TierPageProps) {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {cities.map((city, index) => (
-              <a
+              <Link
                 key={index}
                 href={`/${city.name.toLowerCase()}`}
                 className={`group bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 border-2 border-gray-700 transition-all`}
@@ -206,7 +199,7 @@ export default function TierPage({ params }: TierPageProps) {
                     {city.category || 'Destination'}
                   </p>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -217,12 +210,12 @@ export default function TierPage({ params }: TierPageProps) {
         <p className="text-xl text-gray-400 mb-4">
           Looking for more cities?
         </p>
-        <a
+        <Link
           href="/regions"
           className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-semibold hover:from-orange-600 transition-all hover:shadow-lg"
         >
           Browse All Cities
-        </a>
+        </Link>
       </section>
 
       {/* Footer */}

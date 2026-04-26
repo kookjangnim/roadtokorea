@@ -1,9 +1,13 @@
 import { fetchLatestPosts, fetchPostsByTier } from '@/lib/wp-api';
 import HeroSlider from '@/components/HeroSlider';
+import LandingOverview from '@/components/LandingOverview';
 import TierPreview from '@/components/TierPreview';
 import LatestPosts from '@/components/LatestPosts';
 import PopularSearches from '@/components/PopularSearches';
 import Footer from '@/components/Footer';
+import { tier1Cities } from '@/data/tier1Cities';
+import { tier2Cities } from '@/data/tier2Cities';
+import { tier4Cities } from '@/data/tier4Cities';
 
 /**
  * 랜딩페이지 - Server Component (SEO 최적화)
@@ -32,10 +36,19 @@ export default async function Home() {
     return title.charAt(0).toUpperCase() + title.toLowerCase().slice(1);
   }).slice(0, 8);
 
+  const landingStats = {
+    featuredCities: Object.keys(tier1Cities).length,
+    culturalStops: Object.keys(tier2Cities).length,
+    hiddenGems: Object.keys(tier4Cities).length,
+    latestStories: latestPosts.length,
+  };
+
   return (
     <main className="min-h-screen text-foreground font-sans">
       {/* Hero Section */}
       <HeroSlider />
+
+      <LandingOverview stats={landingStats} tags={searchTags} />
 
       {/* Tier Preview Section */}
       <TierPreview tier34Posts={tier34Posts} />

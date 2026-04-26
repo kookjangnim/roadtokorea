@@ -4,6 +4,23 @@ import Image from 'next/image';
 import { tier1Cities } from '@/data/tier1Cities';
 import { fetchPostsByCityTag } from '@/lib/wp-api';
 import { destinations, districtToEnglish } from '@/data/destinations';
+import type { Destination } from '@/data/destinations';
+import type { Hotspot } from '@/data/tier1Cities';
+import type { WPPost } from '@/lib/wp-api';
+import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
+
+const siteUrl = getSiteUrl();
+
+type EnrichedHotspot = Hotspot & {
+  slug: string;
+  dynamicImage: string;
+};
+
+type WPTerm = {
+  name: string;
+  slug: string;
+  taxonomy: string;
+};
 
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
   const { city } = await params;
@@ -22,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     openGraph: {
       title: `${cityData.name} - RoadToKorea`,
       description: cityData.description,
-      url: `https://roadtokorea.blog/tier-1/${cityData.slug}`,
+      url: `${siteUrl}/tier-1/${cityData.slug}`,
       images: [{ url: heroImage }],
     }
   };
@@ -56,7 +73,7 @@ export default async function Tier1CityPage({ params }: { params: Promise<{ city
   }
 
   // Deduplicate hotspots by district to show one hero shot per district for the gallery
-  const uniqueDistrictsMap = new Map<string, any>();
+  const uniqueDistrictsMap = new Map<string, Destination>();
   for (const dest of cityDestinations) {
     if (dest.district && !uniqueDistrictsMap.has(dest.district)) {
       uniqueDistrictsMap.set(dest.district, dest);
@@ -75,7 +92,7 @@ export default async function Tier1CityPage({ params }: { params: Promise<{ city
           tags: [cityData.name, `Tier ${dest.tier}`]
         };
       })
-    : cityData.hotspots.map((spot: any) => {
+    : cityData.hotspots.map((spot: Hotspot): EnrichedHotspot => {
         const englishName = spot.name;
         const slug = englishName.toLowerCase().replace(/\s+/g, '-');
         return { ...spot, slug, dynamicImage: spot.image };
@@ -225,16 +242,13 @@ export default async function Tier1CityPage({ params }: { params: Promise<{ city
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {dynamicPosts.map((post, index) => {
+              {dynamicPosts.map((post: WPPost) => {
                 // Image fallback logic
                 let imageUrl = `/images/cities/${post.slug.toLowerCase()}.jpg`;
                 if (post.slug.toLowerCase() !== 'wonju' && post.content?.rendered) {
                   const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/);
                   if (imgMatch && imgMatch[1]) {
-                    imageUrl = imgMatch[1].replace(
-                      /https?:\/\/roadtokorea\.blog\/wp-content/g,
-                      'https://api.roadtokorea.blog/wp-content'
-                    );
+                    imageUrl = normalizeWpMediaUrl(imgMatch[1]);
                   }
                 }
 
@@ -242,7 +256,7 @@ export default async function Tier1CityPage({ params }: { params: Promise<{ city
                 let tierSlug = 'tier-1';
                 const wpTerms = post._embedded?.['wp:term'] || [];
                 for (const taxonomyArray of wpTerms) {
-                  const cat = taxonomyArray.find((t: any) => t.taxonomy === 'category');
+                  const cat = taxonomyArray.find((t: WPTerm) => t.taxonomy === 'category');
                   if (cat) {
                     if (cat.slug && cat.slug.startsWith('tier-')) tierSlug = cat.slug;
                     categoryLabel = cat.name || categoryLabel;

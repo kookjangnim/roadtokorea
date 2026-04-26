@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { WordPressPost } from '@/lib/api';
 
 interface CityListProps {
@@ -43,7 +44,7 @@ export default function CityList({ cities, tier }: CityListProps) {
         return images[slug.toLowerCase()] || `/images/cities/${slug.toLowerCase()}.jpg`;
     };
 
-    const formatCityTitle = (slug: string, originalTitle: string) => {
+    const formatCityTitle = (slug: string) => {
         // Force English capitalized name from slug
         return slug.charAt(0).toUpperCase() + slug.toLowerCase().slice(1);
     };
@@ -109,7 +110,7 @@ export default function CityList({ cities, tier }: CityListProps) {
             {filteredAndSortedCities.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {filteredAndSortedCities.map((city) => (
-                        <a
+                        <Link
                             key={city.id}
                             href={`/tier-${tier}/${city.slug}`}
                             className="group relative bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 border border-gray-700 block"
@@ -125,7 +126,7 @@ export default function CityList({ cities, tier }: CityListProps) {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                                 <div className="relative z-10 p-6 h-full flex flex-col justify-end">
                                     <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-md">
-                                        {formatCityTitle(city.slug, city.title.rendered)}
+                                        {formatCityTitle(city.slug)}
                                     </h3>
                                     <div className="flex flex-wrap items-center gap-2">
                                         <span className="text-sm text-amber-500 bg-amber-950/80 px-2 py-1 rounded font-medium border border-amber-500/30">
@@ -137,7 +138,7 @@ export default function CityList({ cities, tier }: CityListProps) {
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             ) : (

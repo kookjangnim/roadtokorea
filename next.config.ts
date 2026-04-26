@@ -1,5 +1,15 @@
 import type { NextConfig } from "next";
 
+const uploadHost = process.env.NEXT_PUBLIC_WP_UPLOAD_HOST
+  || process.env.WP_UPLOAD_HOST
+  || (() => {
+    try {
+      return new URL(process.env.NEXT_PUBLIC_API_BASE || 'https://api.roadtokorea.blog/wp-json/wp/v2').hostname;
+    } catch {
+      return 'api.roadtokorea.blog';
+    }
+  })();
+
 const nextConfig: NextConfig = {
   async redirects() {
     return [
@@ -29,7 +39,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'api.roadtokorea.blog',
+        hostname: uploadHost,
         pathname: '/wp-content/uploads/**',
       },
       {

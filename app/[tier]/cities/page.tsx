@@ -1,6 +1,18 @@
 import { fetchCitiesByTier } from '@/lib/api';
 import CityList from './CityList';
 import { Metadata } from 'next';
+import Link from 'next/link';
+import type { WordPressPost } from '@/lib/api';
+import { getSiteUrl } from '@/lib/site-config';
+
+const siteUrl = getSiteUrl();
+
+type CityPreviewPost = WordPressPost & {
+  categories: Array<{ id: number; name: string }>;
+  meta?: {
+    popularity_score?: number;
+  };
+};
 
 export async function generateMetadata({ params }: { params: Promise<{ tier: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
@@ -15,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ tier: str
     openGraph: {
       title,
       description,
-      url: `https://roadtokorea.blog/${resolvedParams.tier}/cities`,
+      url: `${siteUrl}/${resolvedParams.tier}/cities`,
     }
   };
 }
@@ -34,7 +46,7 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
   // Inject gyeongju for tier 1
   if (tier === 1) {
     if (!cities.find(c => c.slug === 'gyeongju')) {
-      cities.push({
+      const gyeongjuCity: CityPreviewPost = {
         id: 9999,
         title: { rendered: 'Gyeongju' },
         content: { rendered: 'The ancient capital of the Silla Kingdom' },
@@ -44,7 +56,8 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
         slug: 'gyeongju',
         categories: [{ id: 1, name: 'Tier 1' }],
         meta: { popularity_score: 95 }
-      } as any);
+      };
+      cities.push(gyeongjuCity);
     }
   }
 
@@ -58,12 +71,12 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
           <p className="text-gray-400">
             Cities for this tier are coming soon...
           </p>
-          <a
+          <Link
             href="/"
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105"
           >
             Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -75,7 +88,7 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
     "@type": "CollectionPage",
     "name": `Tier ${tier} Cities in South Korea`,
     "description": `Explore the best Tier ${tier} cities in South Korea. Find popular destinations and hidden gems.`,
-    "url": `https://roadtokorea.blog/tier-${tier}/cities`
+    "url": `${siteUrl}/tier-${tier}/cities`
   };
 
   return (
@@ -89,9 +102,9 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <a href="/" className="text-2xl font-bold text-white hover:text-orange-500 transition-colors">
+              <Link href="/" className="text-2xl font-bold text-white hover:text-orange-500 transition-colors">
                 RoadToKorea
-              </a>
+              </Link>
             </div>
             <div>
               <h1 className="text-4xl font-bold text-white">
@@ -100,12 +113,12 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
             </div>
           </div>
           <div>
-            <a
+            <Link
               href="/"
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105"
             >
               Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </section>

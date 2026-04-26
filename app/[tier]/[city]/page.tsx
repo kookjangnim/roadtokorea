@@ -4,6 +4,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import PopularSearches from '@/components/PopularSearches';
+import type { WPPost } from '@/lib/wp-api';
+import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
+
+const siteUrl = getSiteUrl();
+
+type WPTerm = {
+  name: string;
+  slug: string;
+  taxonomy: string;
+};
 
 export async function generateMetadata({ params }: { params: Promise<{ tier: string, city: string }> }): Promise<Metadata> {
   const { tier, city } = await params;
@@ -19,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ tier: str
     openGraph: {
       title,
       description,
-      url: `https://roadtokorea.blog/${tier}/${city}`,
+      url: `${siteUrl}/${tier}/${city}`,
       type: 'article',
     }
   };
@@ -30,10 +40,7 @@ function cleanContent(html: string): string {
   // 1) 이모지 제거 (Unicode Emoji ranges)
   let cleaned = html.replace(/[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1FA00}-\u{1FAFF}\u{200D}\u{FE0F}]/gu, '');
   // 2) 이미지 URL 도메인 변환
-  cleaned = cleaned.replace(
-    /https?:\/\/roadtokorea\.blog\/wp-content/g,
-    'https://api.roadtokorea.blog/wp-content'
-  );
+  cleaned = cleaned.replace(/https?:\/\/[^/]+\/wp-content\/[^"' )]+/g, (match) => normalizeWpMediaUrl(match));
   return cleaned;
 }
 
@@ -74,7 +81,7 @@ export default async function CityPage({ params }: { params: Promise<{ tier: str
     "@type": "TouristDestination",
     "name": cityInfo.name,
     "description": cityInfo.description.replace(/<[^>]+>/g, '').trim(),
-    "url": `https://roadtokorea.blog/${citySlug}`
+    "url": `${siteUrl}/${citySlug}`
   };
 
   // Optional: Extract some tags for popular searches related to the province if needed
@@ -112,16 +119,13 @@ export default async function CityPage({ params }: { params: Promise<{ tier: str
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {dynamicPosts.map((post: any, index: number) => {
+              {dynamicPosts.map((post: WPPost) => {
                 // Image fallback logic
                 let imageUrl = `/images/cities/${post.slug.toLowerCase()}.jpg`;
                 if (post.slug.toLowerCase() !== 'wonju' && post.content?.rendered) {
                   const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/);
                   if (imgMatch && imgMatch[1]) {
-                    imageUrl = imgMatch[1].replace(
-                      /https?:\/\/roadtokorea\.blog\/wp-content/g,
-                      'https://api.roadtokorea.blog/wp-content'
-                    );
+                    imageUrl = normalizeWpMediaUrl(imgMatch[1]);
                   }
                 }
 
@@ -129,7 +133,7 @@ export default async function CityPage({ params }: { params: Promise<{ tier: str
                 let tierSlug = tier; // Default to current tier
                 const wpTerms = post._embedded?.['wp:term'] || [];
                 for (const taxonomyArray of wpTerms) {
-                  const cat = taxonomyArray.find((t: any) => t.taxonomy === 'category');
+                  const cat = taxonomyArray.find((t: WPTerm) => t.taxonomy === 'category');
                   if (cat) {
                     if (cat.slug && cat.slug.startsWith('tier-')) tierSlug = cat.slug;
                     categoryLabel = cat.name || categoryLabel;

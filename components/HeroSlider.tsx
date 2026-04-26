@@ -53,7 +53,7 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <section className="relative w-full bg-white pt-24 pb-16 px-4 md:px-12 flex flex-col items-center">
+    <section className="relative w-full bg-white pt-12 pb-16 px-4 md:px-12 flex flex-col items-center">
       
       {/* Editorial Header */}
       <div className="w-full max-w-7xl mx-auto mb-10 flex flex-col items-center text-center">
