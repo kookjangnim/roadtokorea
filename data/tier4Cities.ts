@@ -12,6 +12,46 @@ export interface TierCityData {
 }
 
 export const tier4Cities: Record<string, TierCityData> = {
+  cheonan: {
+    name: 'Cheonan',
+    slug: 'cheonan',
+    headline: 'The First Low-Stakes Break',
+    heroImage: '/images/placeholder.png',
+    description: 'An easy early route pause where the Seoul departure softens before the corridor asks for bigger decisions.',
+    culturalInsight:
+      'Cheonan matters because not every stop on Route 1 needs to carry heavy narrative weight. It is the kind of city that makes the first southbound block feel paced rather than endured.',
+    hotspots: []
+  },
+  gumi: {
+    name: 'Gumi',
+    slug: 'gumi',
+    headline: 'The Mid-Corridor Breather',
+    heroImage: '/images/placeholder.png',
+    description: 'A practical industrial-riverside city that helps the direct corridor stay flexible without turning into a major detour.',
+    culturalInsight:
+      'Gumi is useful when the route needs an honest middle pause instead of a destination city. Its value is service, timing, and the ability to keep the corridor calm.',
+    hotspots: []
+  },
+  changnyeong: {
+    name: 'Changnyeong',
+    slug: 'changnyeong',
+    headline: 'The Lower-River Calm',
+    heroImage: '/images/placeholder.png',
+    description: 'A quieter Nakdong-side chapter where the route regains calm before the final approach to Busan.',
+    culturalInsight:
+      'Changnyeong matters when the late inland or cycling route needs to exhale. It gives the southern half of Route 1 a lower-pressure reset before the final city energy returns.',
+    hotspots: []
+  },
+  uljin: {
+    name: 'Uljin',
+    slug: 'uljin',
+    headline: 'The Long-Coast Continuity',
+    heroImage: '/images/placeholder.png',
+    description: 'A quieter east-coast county that keeps the shoreline route broad, open, and less dependent on only larger port cities.',
+    culturalInsight:
+      'Uljin earns route space because it protects the continuity of the coast. It keeps the east-sea line feeling expansive rather than collapsing into just Gangneung and Pohang.',
+    hotspots: []
+  },
   sangju: {
     name: 'Sangju',
     slug: 'sangju',
