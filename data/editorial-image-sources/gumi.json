@@ -1,0 +1,55 @@
+{
+  "citySlug": "gumi",
+  "outputDir": "public/images/editorial/gumi-real",
+  "status": "draft-needs-source",
+  "images": [
+    {
+      "id": "gumi-middle-corridor-real",
+      "fileName": "gumi-middle-corridor-real.jpg",
+      "title": "Gumi Middle Corridor",
+      "alt": "A real photograph showing Gumi as a practical middle-corridor city on Route 1",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["gumi", "middle-corridor", "route-1", "hero", "real-photo"]
+    },
+    {
+      "id": "gumi-riverside-breather-real",
+      "fileName": "gumi-riverside-breather-real.jpg",
+      "title": "Gumi Riverside Breather",
+      "alt": "A real photograph of a calmer riverside edge in Gumi",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["gumi", "riverside", "breather", "route-support", "real-photo"]
+    },
+    {
+      "id": "gumi-practical-stay-real",
+      "fileName": "gumi-practical-stay-real.jpg",
+      "title": "Gumi Practical Stay",
+      "alt": "A real photograph of a practical central stay zone in Gumi",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["gumi", "stay-zone", "practical", "corridor-hotel", "real-photo"]
+    },
+    {
+      "id": "gumi-daegu-handoff-real",
+      "fileName": "gumi-daegu-handoff-real.jpg",
+      "title": "Gumi Daegu Handoff",
+      "alt": "A real photograph suggesting the southbound handoff from Gumi toward Daegu",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["gumi", "handoff", "daegu", "southbound", "real-photo"]
+    }
+  ]
+}

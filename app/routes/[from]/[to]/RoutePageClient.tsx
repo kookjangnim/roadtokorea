@@ -6,7 +6,6 @@ import { RouteData, TransportMode, TransportRouteVariant } from '@/data/routeSto
 import TransportModeTabs from '@/components/routes/TransportModeTabs';
 import RouteMapSection from '@/components/routes/RouteMapSection';
 import StopoverCitiesCard from '@/components/routes/StopoverCitiesCard';
-import HotelBookingCard from '@/components/routes/HotelBookingCard';
 import RouteJourneyHero from '@/components/routes/RouteJourneyHero';
 
 interface RoutePageClientProps {
@@ -40,9 +39,6 @@ export default function RoutePageClient({
     setSelectedMode(mode);
     setSelectedVariantId(nextTransport.variants?.[0]?.id ?? nextTransport.id);
   };
-
-  const supportCity =
-    currentVariant.stopovers[currentVariant.stopovers.length - 1] ?? currentVariant.stopovers[0];
 
   return (
     <main className="min-h-screen bg-[linear-gradient(180deg,#f7f3ec_0%,#f3ede4_44%,#efe7db_100%)] px-6 py-8 text-stone-900 md:px-8 md:py-10">
@@ -286,8 +282,6 @@ export default function RoutePageClient({
                 </div>
               </div>
             </section>
-
-            {supportCity && <HotelBookingCard cityName={supportCity.city} />}
           </div>
         </section>
 

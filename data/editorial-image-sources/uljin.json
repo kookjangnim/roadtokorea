@@ -1,0 +1,55 @@
+{
+  "citySlug": "uljin",
+  "outputDir": "public/images/editorial/uljin-real",
+  "status": "draft-needs-source",
+  "images": [
+    {
+      "id": "uljin-open-coast-real",
+      "fileName": "uljin-open-coast-real.jpg",
+      "title": "Uljin Open Coast",
+      "alt": "A real photograph of the long open coast near Uljin",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["uljin", "east-coast", "open-coast", "hero", "real-photo"]
+    },
+    {
+      "id": "uljin-quiet-shoreline-stay-real",
+      "fileName": "uljin-quiet-shoreline-stay-real.jpg",
+      "title": "Uljin Shoreline Stay",
+      "alt": "A real photograph of a quiet shoreline stay area in Uljin",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["uljin", "stay-zone", "shoreline", "quiet-coast", "real-photo"]
+    },
+    {
+      "id": "uljin-coastal-meal-real",
+      "fileName": "uljin-coastal-meal-real.jpg",
+      "title": "Uljin Coastal Meal",
+      "alt": "A real photograph of a modest coastal meal setting or harbor street in Uljin",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["uljin", "food", "harbor", "route-support", "real-photo"]
+    },
+    {
+      "id": "uljin-southbound-handoff-real",
+      "fileName": "uljin-southbound-handoff-real.jpg",
+      "title": "Uljin Southbound Handoff",
+      "alt": "A real photograph that conveys the southbound handoff from Uljin toward the lower east coast",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["uljin", "handoff", "route-7", "continuity", "real-photo"]
+    }
+  ]
+}

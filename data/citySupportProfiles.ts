@@ -91,7 +91,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Chungju, the route can commit. The next chapter points toward Mungyeong Saejae, inland climbing logic, and a trip that feels authored instead of simply transferred.',
     accommodationNote:
-      'Best future affiliate fit: one practical city-core stay group and one recovery-led Suanbo stay group.',
+      'Strongest stay-planning angle: one practical city-core stay group and one recovery-led Suanbo stay group.',
     sections: [
       {
         title: 'Why Chungju earns a night',
@@ -164,35 +164,35 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Recovery mood',
         title: 'Suanbo should feel warm before it feels efficient',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Suanbo_Hills.JPG',
-        alt: 'A real landscape view over Suanbo in Chungju',
+        image: '/images/routes/route-1/chungju/support-1-generated-v1.png',
+        alt: 'Generated editorial recovery image for Suanbo in Chungju',
         body:
           'Suanbo is useful because it is an actual recovery town in the mountains, not just a hotel cluster. Even before you choose a bath or a room, the terrain itself signals a slower reset.',
-        sourceLabel: 'Suanbo from Park Hotel by Jpatokal via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Suanbo_Hills.JPG',
-        licenseLabel: 'CC BY-SA 4.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/chungju/support-1-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Route atmosphere',
         title: 'Riverside night gives the stop emotional weight',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Korea-Chungju-Mountain-01.jpg',
-        alt: 'A real mountain landscape in Chungju',
+        image: '/images/routes/route-1/chungju/support-2-generated-v1.png',
+        alt: 'Generated editorial night-river image for Chungju',
         body:
           'Chungju reads better as part of a journey when the page shows its real inland texture. The value is not spectacle alone, but the feeling of entering a slower mountain-and-water chapter.',
-        sourceLabel: 'Korea-Chungju-Mountain-01 by Jared Broad via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Korea-Chungju-Mountain-01.jpg',
-        licenseLabel: 'CC BY 2.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/chungju/support-2-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Landscape anchor',
         title: 'Lake-and-fortress imagery explains why this is not just a transit town',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Chungjuho_Lake.jpg',
-        alt: 'A real photograph of Chungju Lake',
+        image: '/images/routes/route-1/chungju/support-3-generated-v1.png',
+        alt: 'Generated editorial landscape image for Chungju Lake',
         body:
           'If the city needs one visual argument, it is this inland breadth. The stop works because it feels spatially different from Seoul before the route narrows again.',
-        sourceLabel: 'Chungjuho Lake by Ashy Minivet via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Chungjuho_Lake.jpg',
-        licenseLabel: 'CC0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/chungju/support-3-generated-v1.png',
+        licenseLabel: 'Internal',
       },
     ],
     points: [
@@ -331,7 +331,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Mungyeong, the inland route descends into a more committed southbound logic. The next chapter should feel less like approach and more like continuation.',
     accommodationNote:
-      'Best future affiliate fit: one town-core practical stay cluster and one pass-adjacent slower stay cluster near the Saejae approach.',
+      'Strongest stay-planning angle: one town-core practical stay cluster and one pass-adjacent slower stay cluster near the Saejae approach.',
     sections: [
       {
         title: 'Why Mungyeong earns a stop',
@@ -404,35 +404,35 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Threshold image',
         title: 'The gate is the reason Mungyeong does not feel interchangeable',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Mungyeong_Saejae_Second_Gate.JPG',
-        alt: 'The second gate of Mungyeong Saejae',
+        image: '/images/routes/route-1/mungyeong/support-1-generated-v1.png',
+        alt: 'Generated editorial gateway image for Mungyeong Saejae',
         body:
           'Mungyeong becomes memorable when the route visibly passes through something. The gate image matters because it turns abstract inland travel into a concrete threshold.',
-        sourceLabel: 'Mungyeong Saejae Second Gate by hyolee2 via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Mungyeong_Saejae_Second_Gate.JPG',
-        licenseLabel: 'CC BY-SA 3.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/mungyeong/support-1-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Pass-country atmosphere',
         title: 'The open film-set edge makes the crossing feel spatial, not symbolic only',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Mungyeong_Saejae_Open_Film_Set.jpg',
-        alt: 'Mungyeong Saejae open film set landscape',
+        image: '/images/routes/route-1/mungyeong/support-2-generated-v1.png',
+        alt: 'Generated editorial pass-country image for Mungyeong',
         body:
           'The city works best when the pass has visual breadth. This is what helps the overnight feel like a chapter in the land rather than a random place to stop the car.',
-        sourceLabel: 'Mungyeong Saejae Open Film Set by Choi2451 via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Mungyeong_Saejae_Open_Film_Set.jpg',
-        licenseLabel: 'CC BY-SA 4.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/mungyeong/support-2-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Slow-route detail',
         title: 'Small civic details help the crossing feel inhabited',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Mungyeong_Saejae_Post_office.JPG',
-        alt: 'Mungyeong Saejae post office building',
+        image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
+        alt: 'Generated editorial civic-detail image for Mungyeong',
         body:
           'Not every useful image has to be monumental. Smaller details keep Mungyeong from reading like a scenic backdrop and make it feel like a place where a route can actually pause.',
-        sourceLabel: 'Mungyeong Saejae Post office by hyolee2 via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Mungyeong_Saejae_Post_office.JPG',
-        licenseLabel: 'CC BY-SA 3.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
+        licenseLabel: 'Internal',
       },
     ],
     points: [
@@ -525,7 +525,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Andong, the route can either continue south with more confidence or bend toward the southeast with a stronger sense of having passed through inland Korea properly.',
     accommodationNote:
-      'Best future affiliate fit: one city-core practical stay group and one slower heritage-leaning stay group tied to the Hahoe-side cultural logic.',
+      'Strongest stay-planning angle: one city-core practical stay group and one slower heritage-leaning stay group tied to the Hahoe-side cultural logic.',
     sections: [
       {
         title: 'Why Andong is more than a stopover',
@@ -598,34 +598,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Cultural anchor',
         title: 'Andong should feel like the route has gained weight',
-        image: '/images/cities/andong.jpg',
-        alt: 'Editorial city image for Andong',
+        image: '/images/routes/route-1/andong/support-1-generated-v1.png',
+        alt: 'Editorial route image for Andong cultural anchor',
         body:
           'The point of Andong is not speed. It is the moment the inland route stops feeling improvised and begins to feel like a deliberate chapter in Korea.',
-        sourceLabel: 'Local Andong city asset',
-        sourceHref: '/images/cities/andong.jpg',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/andong/support-1-generated-v1.png',
         licenseLabel: 'Project asset',
       },
       {
         eyebrow: 'Stay logic',
         title: 'The overnight matters because the city accumulates value slowly',
-        image: '/images/cities/andong.jpg',
-        alt: 'Editorial city image for Andong',
+        image: '/images/routes/route-1/andong/support-2-generated-v1.png',
+        alt: 'Editorial route image for Andong overnight mood',
         body:
           'Andong is strongest when you let the stay breathe. Its value does not land all at once like a viewpoint city; it builds through evening, dinner, and a slower next morning.',
-        sourceLabel: 'Local Andong city asset',
-        sourceHref: '/images/cities/andong.jpg',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/andong/support-2-generated-v1.png',
         licenseLabel: 'Project asset',
       },
       {
         eyebrow: 'Food identity',
         title: 'Dinner should be part of the route logic here',
-        image: '/images/cities/andong.jpg',
-        alt: 'Editorial city image for Andong',
+        image: '/images/routes/route-1/andong/support-3-generated-v1.png',
+        alt: 'Editorial route image for Andong food identity',
         body:
           'Andong is one of the inland cities where a meal can justify the stop instead of merely servicing it. That is why the food layer deserves dedicated commercial space later.',
-        sourceLabel: 'Local Andong city asset',
-        sourceHref: '/images/cities/andong.jpg',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/andong/support-3-generated-v1.png',
         licenseLabel: 'Project asset',
       },
     ],
@@ -719,7 +719,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Yeongdeok, the coast starts bending toward a more controlled southeastern finish. The mood becomes less open-ended and more like a handoff.',
     accommodationNote:
-      'Best future affiliate fit: one compact port-side stay group and one quieter coast-road stay group for travelers who want flavor without a big-city handoff yet.',
+      'Strongest stay-planning angle: one compact port-side stay group and one quieter coast-road stay group for travelers who want flavor without a big-city handoff yet.',
     sections: [
       {
         title: 'Why Yeongdeok earns time',
@@ -792,35 +792,35 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Flavor image',
         title: 'Yeongdeok earns space when the route should taste local',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/%EC%98%81%EB%8D%95_%EB%8C%80%EA%B2%8C.jpg',
-        alt: 'Yeongdeok crab',
+        image: '/images/routes/route-1/yeongdeok/support-1-generated-v1.png',
+        alt: 'Generated editorial flavor image for Yeongdeok',
         body:
           'This stop matters because the coast should sometimes become edible, not just scenic. Crab identity is one of the clearest reasons Yeongdeok belongs on the route at all.',
-        sourceLabel: 'Yeongdeok crab by jbl4430 via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:%EC%98%81%EB%8D%95_%EB%8C%80%EA%B2%8C.jpg',
-        licenseLabel: 'Panoramio / Wikimedia Commons',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/yeongdeok/support-1-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Smaller-town mood',
         title: 'The route gets lighter here before it gets heavier again',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Korea-Yeongdeok_County-Mountain-01.jpg',
-        alt: 'A town view in Yeongdeok County',
+        image: '/images/routes/route-1/yeongdeok/support-2-generated-v1.png',
+        alt: 'Generated editorial small-town coastal image for Yeongdeok',
         body:
           'Yeongdeok is useful precisely because it does not feel like a large hinge city yet. It gives the coast one smaller-scale chapter before the south tightens up.',
-        sourceLabel: 'Yeongdeok County view by Robert via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Korea-Yeongdeok_County-Mountain-01.jpg',
-        licenseLabel: 'Wikimedia Commons',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/yeongdeok/support-2-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Coast-road atmosphere',
         title: 'A quiet road can justify a night as much as a major landmark can',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/%EB%B0%B1%EC%95%94%EC%98%A8%EC%B2%9C_%EA%B0%80%EB%8A%94_%EA%B8%B8%EC%97%90%EC%84%9C.jpg',
-        alt: 'Roadside landscape in Yeongdeok County',
+        image: '/images/routes/route-1/yeongdeok/support-3-generated-v1.png',
+        alt: 'Generated editorial coast-road image for Yeongdeok',
         body:
           'The editorial value of Yeongdeok is not spectacle. It is the sensation of remaining on the coast long enough for the route to gain one more local chapter before the final hinge.',
-        sourceLabel: 'Road in Yeongdeok-gun by jbl4430 via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:%EB%B0%B1%EC%95%94%EC%98%A8%EC%B2%9C_%EA%B0%80%EB%8A%94_%EA%B8%B8%EC%97%90%EC%84%9C.jpg',
-        licenseLabel: 'Panoramio / Wikimedia Commons',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/yeongdeok/support-3-generated-v1.png',
+        licenseLabel: 'Internal',
       },
     ],
     points: [
@@ -902,7 +902,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Pohang, the route no longer needs another big identity shift. The logic is to finish well, not to keep opening new chapters.',
     accommodationNote:
-      'Best future affiliate fit: one practical central-stay group and one sea-facing reset group for travelers who want Busan to start fresh the next day.',
+      'Strongest stay-planning angle: one practical central-stay group and one sea-facing reset group for travelers who want Busan to start fresh the next day.',
     sections: [
       {
         title: 'Why Pohang matters late',
@@ -975,35 +975,35 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Hinge image',
         title: 'Homigot is where the coast still feels open even as the route tightens',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Homigot_20240113_007.jpg',
-        alt: 'Homigot in Pohang',
+        image: '/images/routes/route-1/pohang/support-1-generated-v1.png',
+        alt: 'Generated editorial hinge image for Pohang',
         body:
           'Pohang works because it is not a pure inland service city. The sea is still visible, which helps the route close one coastal chapter before Busan begins another.',
-        sourceLabel: 'Homigot by Mobius6 via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Homigot_20240113_007.jpg',
-        licenseLabel: 'CC BY-SA',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/pohang/support-1-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Late-route reset',
         title: 'A beach-facing city can still function like a practical handoff',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Hwajin_Beach%2C_Pohang.jpg',
-        alt: 'Hwajin Beach in Pohang',
+        image: '/images/routes/route-1/pohang/support-2-generated-v1.png',
+        alt: 'Generated editorial late-route reset image for Pohang',
         body:
           'Pohang’s advantage is that it can restore control without killing the coastal mood. That combination is what makes it such a useful final overnight candidate.',
-        sourceLabel: 'Hwajin Beach, Pohang by Choi2451 via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Hwajin_Beach,_Pohang.jpg',
-        licenseLabel: 'CC BY-SA 4.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/pohang/support-2-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Arrival strategy',
         title: 'The final southbound day should start cleaner than it ends',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Pohang_Homigot2.jpg',
-        alt: 'Homigot sculpture in Pohang',
+        image: '/images/routes/route-1/pohang/support-3-generated-v1.png',
+        alt: 'Generated editorial arrival-strategy image for Pohang',
         body:
           'Pohang becomes valuable when it protects the final approach. The point is not one more stop for its own sake, but a better launch into Busan.',
-        sourceLabel: 'Pohang Homigot2 by Lswhandsome via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Pohang_Homigot2.jpg',
-        licenseLabel: 'CC BY-SA 3.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/pohang/support-3-generated-v1.png',
+        licenseLabel: 'Internal',
       },
     ],
     points: [
@@ -1085,7 +1085,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Sangju, the route should feel more settled. The next chapter becomes less about crossing a threshold and more about carrying a rhythm south with confidence.',
     accommodationNote:
-      'Best future affiliate fit: one low-friction city-core stay group and one riverside corridor stay group for travelers who want to wake up already aligned with the next southbound leg.',
+      'Strongest stay-planning angle: one low-friction city-core stay group and one riverside corridor stay group for travelers who want to wake up already aligned with the next southbound leg.',
     sections: [
       {
         title: 'Why Sangju earns a night',
@@ -1158,35 +1158,35 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Corridor image',
         title: 'The river is what makes Sangju legible',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Nakdong_River_%28southeast_of_the_Dongjeom_railway_station%2C_Gangwon_Province%2C_South_Korea%29_%2820039344681%29.jpg',
-        alt: 'Nakdong River landscape in South Korea',
+        image: '/images/routes/route-1/sangju/support-1-generated-v1.png',
+        alt: 'Generated editorial corridor image for Sangju',
         body:
           'Sangju gets stronger when the route is read through the Nakdong corridor. The visual argument is not urban spectacle, but the long continuity of the river chapter that starts to dominate here.',
-        sourceLabel: 'Nakdong River by James St. John via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Nakdong_River_(southeast_of_the_Dongjeom_railway_station,_Gangwon_Province,_South_Korea)_(20039344681).jpg',
-        licenseLabel: 'CC BY 2.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/sangju/support-1-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Route continuity',
         title: 'Sangju matters because the route stops feeling fragmented',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Nakdong_River_%28southeast_of_the_Dongjeom_railway_station%2C_Gangwon_Province%2C_South_Korea%29_%2820039344681%29.jpg',
-        alt: 'Nakdong River landscape in South Korea',
+        image: '/images/routes/route-1/sangju/support-2-generated-v1.png',
+        alt: 'Generated editorial route-continuity image for Sangju',
         body:
           'The city does not need a monumental image to justify itself. Its value is in the way the corridor begins to feel long, stable, and southbound from here.',
-        sourceLabel: 'Nakdong River by James St. John via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Nakdong_River_(southeast_of_the_Dongjeom_railway_station,_Gangwon_Province,_South_Korea)_(20039344681).jpg',
-        licenseLabel: 'CC BY 2.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/sangju/support-2-generated-v1.png',
+        licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Pacing logic',
         title: 'A useful city can be worth more than a dramatic one',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Nakdong_River_%28southeast_of_the_Dongjeom_railway_station%2C_Gangwon_Province%2C_South_Korea%29_%2820039344681%29.jpg',
-        alt: 'Nakdong River landscape in South Korea',
+        image: '/images/routes/route-1/sangju/support-3-generated-v1.png',
+        alt: 'Generated editorial pacing image for Sangju',
         body:
           'Sangju earns its space because it helps tomorrow work better. That kind of practical value is exactly what makes it commercially and editorially useful on a route-first site.',
-        sourceLabel: 'Nakdong River by James St. John via Wikimedia Commons',
-        sourceHref: 'https://commons.wikimedia.org/wiki/File:Nakdong_River_(southeast_of_the_Dongjeom_railway_station,_Gangwon_Province,_South_Korea)_(20039344681).jpg',
-        licenseLabel: 'CC BY 2.0',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/sangju/support-3-generated-v1.png',
+        licenseLabel: 'Internal',
       },
     ],
     points: [
@@ -1279,7 +1279,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Jecheon, the route can turn more decisively toward Chungju and the later pass-country chapter. The purpose of the stop is to make that shift feel natural rather than abrupt.',
     accommodationNote:
-      'Best future affiliate fit: one city-core practical stay group and one lake-facing slower stay group that sells the inland threshold feeling.',
+      'Strongest stay-planning angle: one city-core practical stay group and one lake-facing slower stay group that sells the inland threshold feeling.',
     sections: [
       {
         title: 'Why Jecheon matters early',
@@ -1470,7 +1470,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Cheonan the route usually sharpens. The next chapter either stays practical toward Daejeon or starts to feel more purposefully southbound.',
     accommodationNote:
-      'Best future affiliate fit: practical station-side stays for late arrivals and low-friction first overnights.',
+      'Strongest stay-planning angle: practical station-side stays for late arrivals and low-friction first overnights.',
     sections: [
       {
         title: 'Why Cheonan deserves a short stop',
@@ -1610,7 +1610,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Daejeon, the route usually becomes more committed. The next major handoff often points toward Daegu or a deeper inland chapter.',
     accommodationNote:
-      'Best future affiliate fit: station-core business stays and Yuseong-side recovery stays.',
+      'Strongest stay-planning angle: station-core business stays and Yuseong-side recovery stays.',
     sections: [
       {
         title: 'Why Daejeon stays useful',
@@ -1750,7 +1750,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Daegu, the route either sharpens toward Gyeongju and Busan or calms back down along the river line. Either way, the stop usually changes the trip for the better.',
     accommodationNote:
-      'Best future affiliate fit: central walkable stays plus station-side practical hotels.',
+      'Strongest stay-planning angle: central walkable stays plus station-side practical hotels.',
     sections: [
       {
         title: 'Why Daegu earns a proper night',
@@ -1802,34 +1802,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Southern reset',
         title: 'Daegu should feel denser than the inland chapters before it',
-        image: '/images/cities/daegu.jpg',
-        alt: 'Daegu city image',
+        image: '/images/routes/route-1/daegu/support-1-generated-v1.png',
+        alt: 'Editorial route image for Daegu southern reset',
         body:
           'This stop works because the route suddenly picks up city heat, markets, and food again before the final descent.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/daegu/support-1-generated-v1.png',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Food logic',
         title: 'Dinner matters more here than in most other Route 1 cities',
-        image: '/images/cities/daegu.jpg',
-        alt: 'Daegu food and city atmosphere',
+        image: '/images/routes/route-1/daegu/support-2-generated-v1.png',
+        alt: 'Editorial route image for Daegu food-led urban evening',
         body:
           'Daegu is where the route can stop being purely geographic and become urban again.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/daegu/support-2-generated-v1.png',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Final momentum',
         title: 'A strong reset here makes Busan land better',
-        image: '/images/cities/daegu.jpg',
-        alt: 'Daegu route reset image',
+        image: '/images/routes/route-1/daegu/support-3-generated-v1.png',
+        alt: 'Editorial route image for Daegu station-side handoff',
         body:
           'Used well, Daegu strengthens the end of Route 1 instead of delaying it.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/daegu/support-3-generated-v1.png',
         licenseLabel: 'Internal',
       },
     ],
@@ -1890,7 +1890,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Gumi the route usually intensifies toward Daegu. That is why the city works best as a calmer prelude rather than a climax.',
     accommodationNote:
-      'Best future affiliate fit: straightforward corridor hotels for one-night practical stops.',
+      'Strongest stay-planning angle: straightforward corridor hotels for one-night practical stops.',
     sections: [
       {
         title: 'Why Gumi can still be valuable',
@@ -2030,7 +2030,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Changnyeong, Busan is close enough that the route should feel like a finish rather than a search for another identity.',
     accommodationNote:
-      'Best future affiliate fit: quiet practical stays for riders and lower-river route users.',
+      'Strongest stay-planning angle: quiet practical stays for riders and lower-river route users.',
     sections: [
       {
         title: 'Why keep a quieter southern city',
@@ -2170,7 +2170,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Gangneung, the coast route cannot pretend to be practical anymore. It must start delivering shoreline continuity all the way south.',
     accommodationNote:
-      'Best future affiliate fit: beach-front stays and cafe-street adjacent hotels.',
+      'Strongest stay-planning angle: beach-front stays and cafe-street adjacent hotels.',
     sections: [
       {
         title: 'Why Gangneung changes the whole route',
@@ -2222,34 +2222,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Coast-entry',
         title: 'Gangneung is where the east coast line stops looking optional',
-        image: '/images/cities/gangneung.jpg',
-        alt: 'Gangneung coast image',
+        image: '/images/routes/route-1/gangneung/support-1-generated-v1.png',
+        alt: 'Editorial route image for Gangneung coast entry',
         body:
           'This city gives the east-coast Route 1 line its first convincing shoreline identity.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gangneung/support-1-generated-v1.png',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Morning logic',
         title: 'The overnight only works if the next morning belongs to the sea',
-        image: '/images/cities/gangneung.jpg',
-        alt: 'Gangneung beach and morning mood',
+        image: '/images/routes/route-1/gangneung/support-2-generated-v1.png',
+        alt: 'Editorial route image for Gangneung coastal overnight mood',
         body:
           'Gangneung earns time because the route changes most clearly at breakfast and first light, not only at arrival.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gangneung/support-2-generated-v1.png',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Route commitment',
         title: 'After this city the coastline has to keep delivering',
-        image: '/images/cities/gangneung.jpg',
-        alt: 'Gangneung route commitment image',
+        image: '/images/routes/route-1/gangneung/support-3-generated-v1.png',
+        alt: 'Editorial route image for Gangneung shoreline commitment',
         body:
           'Used well, Gangneung makes every later east-coast stop feel more coherent.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gangneung/support-3-generated-v1.png',
         licenseLabel: 'Internal',
       },
     ],
@@ -2310,7 +2310,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Uljin, the route can sharpen again toward Yeongdeok and Pohang without losing the feeling of having traveled a real coast.',
     accommodationNote:
-      'Best future affiliate fit: simple shoreline stays for slower east-coast users.',
+      'Strongest stay-planning angle: simple shoreline stays for slower east-coast users.',
     sections: [
       {
         title: 'Why Uljin belongs on the map',
@@ -2450,7 +2450,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     nextLegSummary:
       'After Gyeongju the route no longer needs another big identity shift. Busan becomes an arrival, not an unresolved search.',
     accommodationNote:
-      'Best future affiliate fit: heritage-core boutique stays and Bomun-lake resort hotels.',
+      'Strongest stay-planning angle: heritage-core boutique stays and Bomun-lake resort hotels.',
     sections: [
       {
         title: 'Why Gyeongju changes the endgame',
@@ -2502,34 +2502,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Historic handoff',
         title: 'Gyeongju gives the final route chapter real weight',
-        image: '/images/cities/gyeongju.jpg',
-        alt: 'Gyeongju city image',
+        image: '/images/routes/route-1/gyeongju/support-1-generated-v1.png',
+        alt: 'Editorial route image for Gyeongju historic handoff',
         body:
           'Used well, this city makes the end of Route 1 feel authored instead of simply completed.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gyeongju/support-1-generated-v1.png',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Stay logic',
         title: 'The difference between heritage core and Bomun matters here',
-        image: '/images/cities/gyeongju.jpg',
-        alt: 'Gyeongju heritage and stay mood',
+        image: '/images/routes/route-1/gyeongju/support-2-generated-v1.png',
+        alt: 'Editorial route image for Gyeongju stay logic',
         body:
           'Gyeongju is stronger when the user understands which style of overnight they are actually choosing.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gyeongju/support-2-generated-v1.png',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Busan setup',
         title: 'A strong Gyeongju stop makes Busan arrive cleanly',
-        image: '/images/cities/gyeongju.jpg',
-        alt: 'Gyeongju route handoff image',
+        image: '/images/routes/route-1/gyeongju/support-3-generated-v1.png',
+        alt: 'Editorial route image for Gyeongju Busan setup',
         body:
           'This is the last major place on Route 1 where one overnight can still reshape the finish.',
-        sourceLabel: 'RoadToKorea local city image',
-        sourceHref: '/',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gyeongju/support-3-generated-v1.png',
         licenseLabel: 'Internal',
       },
     ],

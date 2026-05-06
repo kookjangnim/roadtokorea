@@ -592,10 +592,10 @@ export default async function CityPage({
                 {supportProfile.accommodationNote ? (
                   <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-[0_20px_60px_rgba(34,30,25,0.05)]">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                      Accommodation Slot
+                      Stay Planning Fit
                     </p>
                     <h3 className="mt-4 font-serif text-3xl leading-tight text-stone-950">
-                      This city can support stay links without feeling bolted on.
+                      This city supports overnight guidance naturally.
                     </h3>
                     <p className="mt-4 text-sm leading-7 text-stone-700 md:text-base md:leading-8">
                       {supportProfile.accommodationNote}

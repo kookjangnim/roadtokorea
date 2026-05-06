@@ -1,0 +1,55 @@
+{
+  "citySlug": "daejeon",
+  "outputDir": "public/images/editorial/daejeon-real",
+  "status": "draft-needs-source",
+  "images": [
+    {
+      "id": "daejeon-central-split-real",
+      "fileName": "daejeon-central-split-real.jpg",
+      "title": "Daejeon Central Split",
+      "alt": "A real photograph showing Daejeon as a clean central Route 1 split",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["daejeon", "route-1", "central-split", "hero", "real-photo"]
+    },
+    {
+      "id": "daejeon-yuseong-recovery-real",
+      "fileName": "daejeon-yuseong-recovery-real.jpg",
+      "title": "Yuseong Recovery Belt",
+      "alt": "A real photograph of the Yuseong side of Daejeon showing recovery and overnight mood",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["daejeon", "yuseong", "recovery", "stay-zone", "real-photo"]
+    },
+    {
+      "id": "daejeon-central-meal-real",
+      "fileName": "daejeon-central-meal-real.jpg",
+      "title": "Daejeon Meal Corridor",
+      "alt": "A real photograph of a central Daejeon street useful for route meals and reset timing",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["daejeon", "food", "central-city", "route-support", "real-photo"]
+    },
+    {
+      "id": "daejeon-clean-restart-real",
+      "fileName": "daejeon-clean-restart-real.jpg",
+      "title": "Daejeon Clean Restart",
+      "alt": "A real photograph that conveys a clean southbound restart from Daejeon",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["daejeon", "restart", "mobility", "route-1", "real-photo"]
+    }
+  ]
+}

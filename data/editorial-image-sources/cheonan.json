@@ -1,0 +1,55 @@
+{
+  "citySlug": "cheonan",
+  "outputDir": "public/images/editorial/cheonan-real",
+  "status": "draft-needs-source",
+  "images": [
+    {
+      "id": "cheonan-first-break-real",
+      "fileName": "cheonan-first-break-real.jpg",
+      "title": "Cheonan First Break",
+      "alt": "A real photograph showing Cheonan as an easy first break after Seoul",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["cheonan", "first-break", "route-1", "hero", "real-photo"]
+    },
+    {
+      "id": "cheonan-snack-identity-real",
+      "fileName": "cheonan-snack-identity-real.jpg",
+      "title": "Cheonan Snack Identity",
+      "alt": "A real photograph of local snack or light food culture in Cheonan",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["cheonan", "food", "snack", "local-identity", "real-photo"]
+    },
+    {
+      "id": "cheonan-station-stay-real",
+      "fileName": "cheonan-station-stay-real.jpg",
+      "title": "Cheonan Easy Overnight",
+      "alt": "A real photograph of the station-side or central stay grid in Cheonan",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["cheonan", "stay-zone", "station", "overnight", "real-photo"]
+    },
+    {
+      "id": "cheonan-southbound-reset-real",
+      "fileName": "cheonan-southbound-reset-real.jpg",
+      "title": "Cheonan Southbound Reset",
+      "alt": "A real photograph that conveys an easy southbound reset from Cheonan",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["cheonan", "reset", "mobility", "corridor", "real-photo"]
+    }
+  ]
+}

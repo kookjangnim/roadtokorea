@@ -16,7 +16,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Cheonan',
     slug: 'cheonan',
     headline: 'The First Low-Stakes Break',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/cheonan/hero-generated-v1.png',
     description: 'An easy early route pause where the Seoul departure softens before the corridor asks for bigger decisions.',
     culturalInsight:
       'Cheonan matters because not every stop on Route 1 needs to carry heavy narrative weight. It is the kind of city that makes the first southbound block feel paced rather than endured.',
@@ -26,7 +26,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Gumi',
     slug: 'gumi',
     headline: 'The Mid-Corridor Breather',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/gumi/hero-generated-v1.png',
     description: 'A practical industrial-riverside city that helps the direct corridor stay flexible without turning into a major detour.',
     culturalInsight:
       'Gumi is useful when the route needs an honest middle pause instead of a destination city. Its value is service, timing, and the ability to keep the corridor calm.',
@@ -36,7 +36,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Changnyeong',
     slug: 'changnyeong',
     headline: 'The Lower-River Calm',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
     description: 'A quieter Nakdong-side chapter where the route regains calm before the final approach to Busan.',
     culturalInsight:
       'Changnyeong matters when the late inland or cycling route needs to exhale. It gives the southern half of Route 1 a lower-pressure reset before the final city energy returns.',
@@ -46,7 +46,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Uljin',
     slug: 'uljin',
     headline: 'The Long-Coast Continuity',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/uljin/hero-generated-v1.png',
     description: 'A quieter east-coast county that keeps the shoreline route broad, open, and less dependent on only larger port cities.',
     culturalInsight:
       'Uljin earns route space because it protects the continuity of the coast. It keeps the east-sea line feeling expansive rather than collapsing into just Gangneung and Pohang.',
@@ -56,7 +56,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Sangju',
     slug: 'sangju',
     headline: 'The River-Corridor Hinge',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/sangju/hero-generated-v1.png',
     description: 'A practical inland city where pass-country effort relaxes into the broader Nakdong southbound flow.',
     culturalInsight:
       'Sangju matters less as a stand-alone headline city and more as a route hinge. It is where the Seoul-to-Busan inland line stops feeling like a sequence of thresholds and begins to read clearly as a longer river-led corridor.',
@@ -66,7 +66,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Yeongdeok',
     slug: 'yeongdeok',
     headline: 'The Coastal Flavor Anchor',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/yeongdeok/hero-generated-v1.png',
     description: 'A smaller east-coast town where seafood identity, port texture, and shoreline air make the route feel regionally specific.',
     culturalInsight:
       'Yeongdeok is less about major-city concentration and more about clarity of flavor. It gives the east coast line a local face, especially when the route needs food, fishing-port character, and one smaller-town chapter before larger southeastern cities take over.',
@@ -76,7 +76,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Pohang',
     slug: 'pohang',
     headline: 'The Late-Coast Hinge',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/pohang/hero-generated-v1.png',
     description: 'A sea-facing industrial city that works as the strongest hinge between the long east coast and the final Busan approach.',
     culturalInsight:
       'Pohang matters because it turns the last stretch of the coast into a controlled handoff instead of a rushed descent. It combines service infrastructure, shoreline mood, and late-route practicality better than smaller coastal stops can.',
@@ -86,7 +86,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Mungyeong',
     slug: 'mungyeong',
     headline: 'The Pass-Country Threshold',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/mungyeong/hero-generated-v1.png',
     description: 'A mountain-pass city where the route narrows, the terrain becomes meaningful, and crossing the peninsula starts to feel earned.',
     culturalInsight:
       'Mungyeong is less about urban density and more about transition. The city carries the logic of gates, passes, and crossings, so staying here makes sense when the route should feel shaped by geography rather than only by transfer time.',

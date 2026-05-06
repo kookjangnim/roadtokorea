@@ -1,0 +1,55 @@
+{
+  "citySlug": "changnyeong",
+  "outputDir": "public/images/editorial/changnyeong-real",
+  "status": "draft-needs-source",
+  "images": [
+    {
+      "id": "changnyeong-lower-river-real",
+      "fileName": "changnyeong-lower-river-real.jpg",
+      "title": "Changnyeong Lower River Calm",
+      "alt": "A real photograph showing Changnyeong as a calm lower-river chapter before Busan",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["changnyeong", "lower-river", "route-1", "hero", "real-photo"]
+    },
+    {
+      "id": "changnyeong-late-route-recovery-real",
+      "fileName": "changnyeong-late-route-recovery-real.jpg",
+      "title": "Changnyeong Late-Route Recovery",
+      "alt": "A real photograph of a quiet restorative zone in Changnyeong",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["changnyeong", "recovery", "late-route", "stay-zone", "real-photo"]
+    },
+    {
+      "id": "changnyeong-practical-meal-real",
+      "fileName": "changnyeong-practical-meal-real.jpg",
+      "title": "Changnyeong Practical Meal",
+      "alt": "A real photograph of a simple meal corridor or town-center food setting in Changnyeong",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["changnyeong", "food", "town-core", "route-support", "real-photo"]
+    },
+    {
+      "id": "changnyeong-final-push-real",
+      "fileName": "changnyeong-final-push-real.jpg",
+      "title": "Changnyeong Final Push",
+      "alt": "A real photograph that conveys the final push mood from Changnyeong toward Busan",
+      "url": "",
+      "sourceLabel": "",
+      "sourceHref": "",
+      "licenseLabel": "",
+      "credit": "",
+      "tags": ["changnyeong", "final-push", "southbound", "route-1", "real-photo"]
+    }
+  ]
+}

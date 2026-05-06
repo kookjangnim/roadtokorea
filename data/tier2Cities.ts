@@ -23,7 +23,7 @@ export const tier2Cities: Record<string, TierCityData> = {
   daejeon: {
     slug: 'daejeon',
     name: 'Daejeon',
-    heroImage: '/images/placeholder.png',
+    heroImage: '/images/routes/route-1/daejeon/hero-generated-v1.png',
     headline: 'The Clean Central Split',
     description: 'A practical central-city chapter where hot-spring calm, research-district rhythm, and easy transport make the route easier to manage.',
     culturalInsight:
