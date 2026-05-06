@@ -1258,6 +1258,200 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  jecheon: {
+    slug: 'jecheon',
+    city: 'Jecheon',
+    mapTitle: 'Where Jecheon tells you the inland route has really started',
+    mapIntro:
+      'Jecheon is not the main inland destination. It is the first city that proves the route has chosen a different Korea. The map should help decide where to pause, where to sleep, and where the mountain-and-lake mood becomes clear enough to matter.',
+    mapCenter: {
+      lat: 37.13,
+      lng: 128.19,
+    },
+    supportSummary:
+      'Jecheon works as the inland threshold. It is where the default corridor starts falling away and the route begins to feel more mountain-edged, slower, and deliberately interior.',
+    roleSummary:
+      'On the inland line, Jecheon is the first clean declaration that the trip is no longer following the easiest national corridor. It helps the route commit to a different atmosphere early.',
+    staySummary:
+      'A stay here is useful when the route should begin inland softly rather than lurch into a deeper southern push too fast. It is a threshold overnight more than a destination climax.',
+    foodSummary:
+      'Food here is about settling into the inland mood and refueling without noise. Jecheon should feel calmer, more lake-and-hill oriented, and less like an urban interruption.',
+    nextLegSummary:
+      'After Jecheon, the route can turn more decisively toward Chungju and the later pass-country chapter. The purpose of the stop is to make that shift feel natural rather than abrupt.',
+    accommodationNote:
+      'Best future affiliate fit: one city-core practical stay group and one lake-facing slower stay group that sells the inland threshold feeling.',
+    sections: [
+      {
+        title: 'Why Jecheon matters early',
+        body:
+          'Jecheon is valuable because it lets the inland route announce itself early. It is the first place where the trip can feel consciously interior instead of merely slower than the highway default.',
+      },
+      {
+        title: 'Why this is a threshold city and not a climax city',
+        body:
+          'The page should not oversell Jecheon as if it has to carry the whole route. Its real job is to introduce a new atmosphere and make the next cities feel coherent afterward.',
+      },
+      {
+        title: 'Why a night here can improve the inland sequence',
+        body:
+          'When the route is trying to avoid becoming one long transfer, Jecheon is a useful place to flatten the emotional curve, sleep early, and begin the rest of the inland line with more intention.',
+      },
+      {
+        title: 'Why lake-and-reservoir logic matters',
+        body:
+          'The route gets more believable when Jecheon is read through water and mountain edges rather than just through road geography. Uirimji and the broader lake atmosphere give the inland line its first real spatial contrast.',
+      },
+      {
+        title: 'Why accommodation links can work here',
+        body:
+          'Jecheon supports stay intent because the threshold feeling is strongest when you let the first inland night register. A practical bed or a slower lake-facing stay can both make that choice feel worthwhile.',
+      },
+      {
+        title: 'Why Jecheon should remain gentle in tone',
+        body:
+          'This city works best when the editorial voice stays calm. It is not a dramatic hinge like Mungyeong or a recovery node like Chungju. It is the city that quietly tells the traveler they have turned inland for real.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Use Jecheon to begin inland softly',
+        bestFor: 'Travelers who want the route to feel intentionally interior from the beginning instead of abruptly different later.',
+        why:
+          'Jecheon helps the route commit early and gives the rest of the inland sequence more continuity.',
+      },
+      {
+        title: 'Keep the stay practical, but atmospheric',
+        bestFor: 'Travelers who want one light early overnight without asking the first stop to carry the entire trip.',
+        why:
+          'The value of Jecheon is in its threshold atmosphere, so a practical stay still works if it preserves that shift in mood.',
+      },
+      {
+        title: 'Lean toward the lake-facing read',
+        bestFor: 'Travelers who want the first inland chapter to feel more scenic and spatial before the denser route logic develops further south.',
+        why:
+          'A quieter, water-oriented overnight helps the inland route register emotionally before it becomes more demanding.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Keep the practical city-core stay',
+        areaLabel: 'Jecheon center',
+        bestFor: 'Travelers who want the simplest first-night inland logistics.',
+        why:
+          'The city core is best when the goal is to pivot inland cleanly without overcomplicating the first evening.',
+      },
+      {
+        title: 'Use the lake-facing slower stay',
+        areaLabel: 'Uirimji / lake edge',
+        bestFor: 'Travelers who want the first inland night to feel visibly different from the Seoul departure rhythm.',
+        why:
+          'A slower stay near the water makes the threshold feel real and strengthens the route’s early editorial identity.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Threshold image',
+        title: 'Uirimji gives the inland route its first real calm',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Uirimji_Reservoir_%284%29_%2833526672911%29.jpg',
+        alt: 'Uirimji reservoir in Jecheon',
+        body:
+          'Jecheon works because the inland route stops feeling improvised and begins to feel spatial. Uirimji is one of the clearest images for that first quiet shift.',
+        sourceLabel: 'Uirimji Reservoir (4) by Kyle Magnuson via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(4)_(33526672911).jpg',
+        licenseLabel: 'Creative Commons',
+      },
+      {
+        eyebrow: 'Lake atmosphere',
+        title: 'The water-and-hill edge explains why this stop is different from the corridor',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Uirimji_Reservoir_%288%29_%2832812997394%29.jpg',
+        alt: 'Uirimji reservoir landscape in Jecheon',
+        body:
+          'The point of Jecheon is not only transport. The city gives the route a slower physical mood before the more purposeful southbound sequence takes over.',
+        sourceLabel: 'Uirimji Reservoir (8) by Kyle Magnuson via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(8)_(32812997394).jpg',
+        licenseLabel: 'Creative Commons',
+      },
+      {
+        eyebrow: 'Inland calm',
+        title: 'A gentle first inland night can be more valuable than a louder stop',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Uirimji_Reservoir_%286%29_%2833526671581%29.jpg',
+        alt: 'Uirimji reservoir in Jecheon',
+        body:
+          'Jecheon earns its place when it helps the traveler settle into the route rather than rush through it. That quietness is part of the value, not a weakness.',
+        sourceLabel: 'Uirimji Reservoir (6) by Kyle Magnuson via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(6)_(33526671581).jpg',
+        licenseLabel: 'Creative Commons',
+      },
+    ],
+    points: [
+      {
+        id: 'jecheon-center-stay',
+        name: 'Central stay grid',
+        kind: 'stay',
+        areaLabel: 'Jecheon center',
+        coordinates: { lat: 37.1326, lng: 128.1905 },
+        summary:
+          'The easiest overnight area when the route needs a clean first inland pause with low friction and simple onward movement.',
+        note:
+          'Best for practical first nights when the point is to begin the inland route clearly, not dramatically.',
+      },
+      {
+        id: 'jecheon-uirimji-edge',
+        name: 'Uirimji edge',
+        kind: 'checkpoint',
+        areaLabel: 'Lake threshold',
+        coordinates: { lat: 37.1561, lng: 128.2121 },
+        summary:
+          'The strongest zone for understanding why Jecheon belongs to the inland line through water, calm, and mountain-edge atmosphere.',
+        note:
+          'Use this as the main visual and emotional argument for why the route should turn inward here at all.',
+      },
+      {
+        id: 'jecheon-lake-stay',
+        name: 'Lake-facing slower stay zone',
+        kind: 'stay',
+        areaLabel: 'Uirimji side',
+        coordinates: { lat: 37.1544, lng: 128.2134 },
+        summary:
+          'A slower overnight option for travelers who want the first inland chapter to register through quiet, water, and less urban energy.',
+        note:
+          'This works best when the route should begin with softness before it becomes more directional further south.',
+      },
+      {
+        id: 'jecheon-refuel-line',
+        name: 'Threshold refuel line',
+        kind: 'food',
+        areaLabel: 'Meal corridor',
+        coordinates: { lat: 37.1338, lng: 128.1941 },
+        summary:
+          'A practical dinner and breakfast line for turning the first inland stop into a controlled reset instead of a vague pause.',
+        note:
+          'This is where future stay-and-meal linking can support route users without forcing destination-style dining expectations.',
+      },
+      {
+        id: 'jecheon-mountain-reset',
+        name: 'Mountain-edge reset point',
+        kind: 'recovery',
+        areaLabel: 'Interior edge',
+        coordinates: { lat: 37.1468, lng: 128.2035 },
+        summary:
+          'A lighter reset point for travelers who need the route to calm down and feel internalized before continuing deeper inland.',
+        note:
+          'Useful when the stop is more about emotional pacing than about one big attraction or one hard ride chapter.',
+      },
+      {
+        id: 'jecheon-chungju-handoff',
+        name: 'Chungju handoff line',
+        kind: 'mobility',
+        areaLabel: 'Southbound inland line',
+        coordinates: { lat: 37.0739, lng: 128.1412 },
+        summary:
+          'A directional point that frames Jecheon as the soft opening of the inland route before the stronger recovery logic of Chungju begins.',
+        note:
+          'This helps the page close with continuation and keeps the city’s role anchored in the route rather than in itself alone.',
+      },
+    ],
+  },
 };
 
 export function getCitySupportProfile(citySlug: string): CitySupportProfile | null {

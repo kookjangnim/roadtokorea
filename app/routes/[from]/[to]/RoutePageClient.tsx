@@ -7,6 +7,7 @@ import TransportModeTabs from '@/components/routes/TransportModeTabs';
 import RouteMapSection from '@/components/routes/RouteMapSection';
 import StopoverCitiesCard from '@/components/routes/StopoverCitiesCard';
 import HotelBookingCard from '@/components/routes/HotelBookingCard';
+import RouteJourneyHero from '@/components/routes/RouteJourneyHero';
 
 interface RoutePageClientProps {
   routeData: RouteData;
@@ -52,6 +53,17 @@ export default function RoutePageClient({
               <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
                 Route guide
               </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-stone-700">
+                  Route {routeData.routeCode}
+                </span>
+                <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-stone-600">
+                  Route {currentVariant.routeGroupCode} {currentVariant.routeGroupLabel}
+                </span>
+                <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-stone-600">
+                  Route {currentVariant.routeCode}
+                </span>
+              </div>
               <h1 className="mt-4 font-serif text-5xl leading-[0.95] text-stone-950 md:text-7xl">
                 {fromCity} to {toCity}
               </h1>
@@ -95,6 +107,15 @@ export default function RoutePageClient({
             </div>
           </div>
         </header>
+
+        <section className="mt-8">
+          <RouteJourneyHero
+            routeCode={routeData.routeCode}
+            transportRoute={currentVariant}
+            fromCity={fromCity}
+            toCity={toCity}
+          />
+        </section>
 
         <section className="mt-8 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[2rem] border border-stone-200 bg-white p-6 shadow-sm md:p-8">
@@ -141,6 +162,13 @@ export default function RoutePageClient({
                     }`}
                   >
                     {transport.totalTravelTime}
+                  </p>
+                  <p
+                    className={`mt-2 text-[10px] font-semibold uppercase tracking-[0.24em] ${
+                      selectedMode === transport.mode ? 'text-stone-300' : 'text-stone-500'
+                    }`}
+                  >
+                    Route {transport.routeGroupCode} {transport.routeGroupLabel}
                   </p>
                   <h3 className="mt-2 font-serif text-3xl">{transport.label}</h3>
                   <p
@@ -195,6 +223,13 @@ export default function RoutePageClient({
                   >
                     {variant.totalTravelTime}
                   </p>
+                  <p
+                    className={`mt-2 text-[10px] font-semibold uppercase tracking-[0.24em] ${
+                      selectedVariantId === variant.id ? 'text-stone-300' : 'text-stone-500'
+                    }`}
+                  >
+                    Route {variant.routeCode}
+                  </p>
                   <h3 className="mt-2 font-serif text-3xl">{variant.label}</h3>
                   <p
                     className={`mt-4 text-sm leading-7 ${
@@ -217,6 +252,14 @@ export default function RoutePageClient({
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-stone-500">
                 Current mode
               </p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-600">
+                  Route {currentVariant.routeGroupCode}
+                </span>
+                <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-600">
+                  Route {currentVariant.routeCode}
+                </span>
+              </div>
               <h2 className="mt-2 font-serif text-3xl text-stone-950">
                 {currentTransport.label} via {currentVariant.routeName}
               </h2>

@@ -25,6 +25,9 @@ export interface RouteStopover {
 
 export interface TransportRouteVariant {
   id: string;
+  routeCode: string;
+  routeGroupCode: string;
+  routeGroupLabel: string;
   label: string;
   routeName: string;
   totalTravelTime: string;
@@ -47,6 +50,7 @@ export interface TransportRoute extends TransportRouteVariant {
 }
 
 export interface RouteData {
+  routeCode: string;
   from: string;
   fromSlug: string;
   to: string;
@@ -69,6 +73,9 @@ export interface RouteData {
 
 const carGyeongbuRoute: TransportRouteVariant = {
   id: 'gyeongbu',
+  routeCode: '1-0-c',
+  routeGroupCode: '1-0',
+  routeGroupLabel: 'Direct Corridor',
   label: 'Gyeongbu Axis',
   routeName: 'Gyeongbu Expressway',
   totalTravelTime: '4h - 4h 30m',
@@ -158,6 +165,9 @@ const carGyeongbuRoute: TransportRouteVariant = {
 
 const carJungangRoute: TransportRouteVariant = {
   id: 'jungang',
+  routeCode: '1-1-a',
+  routeGroupCode: '1-1',
+  routeGroupLabel: 'Inland Axis',
   label: 'Central Inland Axis',
   routeName: 'Jungang Expressway Corridor',
   totalTravelTime: '5h 30m - 6h 30m',
@@ -311,6 +321,9 @@ const carJungangRoute: TransportRouteVariant = {
 
 const carRoute7Route: TransportRouteVariant = {
   id: 'route-7-east-coast',
+  routeCode: '1-2-a',
+  routeGroupCode: '1-2',
+  routeGroupLabel: 'East Coast Axis',
   label: 'Gangneung + Route 7 Coast',
   routeName: 'East Coast via Gangneung and Route 7',
   totalTravelTime: '8h - 10h',
@@ -426,6 +439,9 @@ const carRoute7Route: TransportRouteVariant = {
 
 const bicycleJungangRoute: TransportRouteVariant = {
   id: 'bicycle-cross-country',
+  routeCode: '1-1-b',
+  routeGroupCode: '1-1',
+  routeGroupLabel: 'Inland Axis',
   label: 'Cross-Country via Saejae + Nakdong',
   routeName: 'Hangang, Saejae, and Nakdong Bicycle Paths',
   totalTravelTime: '5-7 days',
@@ -593,6 +609,9 @@ const bicycleJungangRoute: TransportRouteVariant = {
 
 const bicycleNakdongRoute: TransportRouteVariant = {
   id: 'bicycle-nakdong',
+  routeCode: '1-1-c',
+  routeGroupCode: '1-1',
+  routeGroupLabel: 'Inland Axis',
   label: 'Nakdong River Emphasis',
   routeName: 'Lead-in to Nakdonggang Bicycle Path',
   totalTravelTime: '4-6 days',
@@ -698,6 +717,9 @@ const bicycleNakdongRoute: TransportRouteVariant = {
 
 const bicycleEastCoastRoute: TransportRouteVariant = {
   id: 'bicycle-east-coast',
+  routeCode: '1-2-b',
+  routeGroupCode: '1-2',
+  routeGroupLabel: 'East Coast Axis',
   label: 'East Coast Line',
   routeName: 'Seoul to Busan via Gangneung and the East Coast',
   totalTravelTime: '6-8 days',
@@ -838,6 +860,7 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
 };
 
 export const seoulToBusanRoute: RouteData = {
+  routeCode: '1',
   from: 'Seoul',
   fromSlug: 'seoul',
   to: 'Busan',
@@ -869,6 +892,9 @@ export const seoulToBusanRoute: RouteData = {
     KTX: {
       mode: 'KTX',
       id: 'ktx-main',
+      routeCode: '1-0-a',
+      routeGroupCode: '1-0',
+      routeGroupLabel: 'Direct Corridor',
       label: 'KTX',
       routeName: 'Gyeongbu Line',
       totalTravelTime: '2h 40m - 3h 15m',
@@ -956,6 +982,9 @@ export const seoulToBusanRoute: RouteData = {
     bus: {
       mode: 'bus',
       id: 'bus-main',
+      routeCode: '1-0-b',
+      routeGroupCode: '1-0',
+      routeGroupLabel: 'Direct Corridor',
       label: 'Bus',
       routeName: 'Express Bus Route',
       totalTravelTime: '4h 30m - 5h',

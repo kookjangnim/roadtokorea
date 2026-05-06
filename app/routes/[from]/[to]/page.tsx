@@ -23,7 +23,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${routeData.routeLabel} | RoadToKorea`,
+    title: `Route ${routeData.routeCode}: ${routeData.routeLabel} | RoadToKorea`,
     description: `${routeData.headline} Compare transport modes, understand the stopover logic, and decide how the route should unfold.`,
   };
 }
