@@ -1,11 +1,39 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { TransportRoute } from '@/data/routeStopovers';
+import { TransportRouteVariant } from '@/data/routeStopovers';
 import 'leaflet/dist/leaflet.css';
 
 interface RouteMapSectionProps {
-  transportRoute: TransportRoute;
+  transportRoute: TransportRouteVariant & { mode?: string };
+}
+
+const routeGeometryCache = new Map<string, [number, number][]>();
+
+function buildRouteGeometryKey(transportRoute: TransportRouteVariant & { mode?: string }) {
+  return `${transportRoute.mode ?? 'unknown'}:${transportRoute.id}:${transportRoute.routePath
+    .map((coord) => coord.join(','))
+    .join(';')}`;
+}
+
+function buildRoutingUrl(transportRoute: TransportRouteVariant & { mode?: string }) {
+  const coordinates = transportRoute.routePath
+    .map(([lat, lng]) => `${lng},${lat}`)
+    .join(';');
+
+  if (transportRoute.mode === 'car' || transportRoute.mode === 'bus') {
+    return `https://routing.openstreetmap.de/routed-car/route/v1/driving/${coordinates}?overview=full&geometries=geojson&steps=false`;
+  }
+
+  if (transportRoute.mode === 'bicycle') {
+    return `https://routing.openstreetmap.de/routed-bike/route/v1/driving/${coordinates}?overview=full&geometries=geojson&steps=false`;
+  }
+
+  return null;
+}
+
+function getFallbackGeometry(transportRoute: TransportRouteVariant) {
+  return transportRoute.routePath.map((coord) => [coord[0], coord[1]]) as [number, number][];
 }
 
 export default function RouteMapSection({
@@ -16,6 +44,48 @@ export default function RouteMapSection({
 
   useEffect(() => {
     let mapInstance: { remove: () => void } | null = null;
+    let cancelled = false;
+
+    async function resolveGeometry() {
+      const cacheKey = buildRouteGeometryKey(transportRoute);
+      const cached = routeGeometryCache.get(cacheKey);
+      if (cached) return cached;
+
+      const routingUrl = buildRoutingUrl(transportRoute);
+      if (!routingUrl) return getFallbackGeometry(transportRoute);
+
+      try {
+        const response = await fetch(routingUrl, {
+          headers: {
+            Accept: 'application/json',
+          },
+        });
+
+        if (!response.ok) {
+          return getFallbackGeometry(transportRoute);
+        }
+
+        const data = (await response.json()) as {
+          code?: string;
+          routes?: Array<{
+            geometry?: {
+              coordinates?: number[][];
+            };
+          }>;
+        };
+
+        const coordinates = data.routes?.[0]?.geometry?.coordinates;
+        if (!coordinates?.length) {
+          return getFallbackGeometry(transportRoute);
+        }
+
+        const geometry = coordinates.map(([lng, lat]) => [lat, lng]) as [number, number][];
+        routeGeometryCache.set(cacheKey, geometry);
+        return geometry;
+      } catch {
+        return getFallbackGeometry(transportRoute);
+      }
+    }
 
     async function mountMap() {
       if (!mapRef.current || typeof window === 'undefined') return;
@@ -23,18 +93,16 @@ export default function RouteMapSection({
       setIsClient(true);
 
       const L = await import('leaflet');
-      const firstPoint = transportRoute.routePath[0];
+      const routeCoordinates = await resolveGeometry();
+      if (cancelled || !mapRef.current) return;
+
+      const firstPoint = routeCoordinates[0] ?? transportRoute.routePath[0];
       const map = L.map(mapRef.current).setView([firstPoint[0], firstPoint[1]], 7);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution:
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }).addTo(map);
-
-      const routeCoordinates = transportRoute.routePath.map((coord) => [
-        coord[0],
-        coord[1],
-      ]) as [number, number][];
 
       L.polyline(routeCoordinates, {
         color: '#1f2937',
@@ -61,6 +129,7 @@ export default function RouteMapSection({
     mountMap();
 
     return () => {
+      cancelled = true;
       if (mapInstance) {
         mapInstance.remove();
       }

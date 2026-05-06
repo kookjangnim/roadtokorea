@@ -210,7 +210,7 @@ export default function RoutePageClient({
         )}
 
         <section className="mt-8 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-          <RouteMapSection transportRoute={currentVariant} />
+          <RouteMapSection transportRoute={{ ...currentVariant, mode: currentTransport.mode }} />
 
           <div className="space-y-6">
             <section className="rounded-[2rem] border border-stone-200 bg-white p-6 shadow-sm">
