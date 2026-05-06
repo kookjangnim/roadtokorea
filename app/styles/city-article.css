@@ -89,6 +89,97 @@
   margin: 2rem 0;
 }
 
+.city-article--feature {
+  color: #3f3a34;
+  font-size: 1.08rem;
+  line-height: 1.95;
+}
+
+.city-article--feature > *:first-child {
+  margin-top: 0;
+}
+
+.city-article--feature p {
+  margin-bottom: 1.3rem;
+  color: #4f463e;
+}
+
+.city-article--feature h2,
+.city-article--feature h3,
+.city-article--feature h4 {
+  color: #171411;
+}
+
+.city-article--feature h2 {
+  margin-top: 4rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(120, 112, 99, 0.25);
+  font-size: clamp(2rem, 3.8vw, 3.15rem);
+  line-height: 1.02;
+  font-weight: 600;
+  scroll-margin-top: 7rem;
+}
+
+.city-article--feature h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1.2;
+}
+
+.city-article--feature h4 {
+  margin-top: 1.75rem;
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+}
+
+.city-article--feature a {
+  color: #8f5b2e;
+  text-decoration-color: rgba(143, 91, 46, 0.35);
+  text-underline-offset: 0.22em;
+}
+
+.city-article--feature a:hover {
+  color: #6f431f;
+}
+
+.city-article--feature ul,
+.city-article--feature ol {
+  margin: 1.25rem 0 1.5rem;
+  padding-left: 1.25rem;
+}
+
+.city-article--feature li {
+  margin-bottom: 0.65rem;
+  padding-left: 0.2rem;
+}
+
+.city-article--feature figure {
+  margin: 2.5rem 0;
+}
+
+.city-article--feature img {
+  border-radius: 1.5rem;
+  box-shadow: 0 24px 60px rgba(34, 30, 25, 0.12);
+}
+
+.city-article--feature figcaption {
+  margin-top: 0.85rem;
+  color: #8a8073;
+  font-size: 0.92rem;
+}
+
+.city-article--feature blockquote {
+  margin: 2rem 0;
+  border-left: 0;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(191, 153, 107, 0.12), rgba(17, 17, 17, 0.03));
+  padding: 1.4rem 1.5rem;
+  color: #302a25;
+  font-style: normal;
+}
+
 /* Section headings shared style */
 .about-section h2, .attractions-section h2, .food-section h2,
 .festivals-section h2, .tips-section h2, .accommodation-section h2,

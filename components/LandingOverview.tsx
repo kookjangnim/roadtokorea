@@ -13,22 +13,22 @@ interface LandingOverviewProps {
 const travelerModes = [
   {
     label: 'Mode 01',
-    title: 'I need a first Korea route that will not miss.',
-    body: 'Go straight into Tier 1. These are the cities that can carry a short trip, a first visit, or a high-stakes itinerary.',
+    title: 'I want a first Korea trip that does not feel rushed.',
+    body: 'Start with Tier 1. These are the anchor cities that can carry a first trip without forcing you into frantic movement.',
     href: '/tier-1/cities',
-    cta: 'Open Icons',
+    cta: 'Open Anchors',
   },
   {
     label: 'Mode 02',
-    title: 'I have already seen the headline stops.',
-    body: 'Tier 2 is where the trip starts feeling more personal. These cities reward slower pacing and deeper neighborhood curiosity.',
+    title: 'I want to stay longer and read Korea more closely.',
+    body: 'Tier 2 is where the route gets richer. These hubs reward slower pacing, repeat meals, and deeper neighborhood curiosity.',
     href: '/tier-2/cities',
     cta: 'Open Hubs',
   },
   {
     label: 'Mode 03',
-    title: 'I want the side of Korea people usually skip.',
-    body: 'Tier 4 is for texture, atmosphere, and places that feel like discoveries instead of social-media obligations.',
+    title: 'I want the Korea that appears when the itinerary relaxes.',
+    body: 'Tier 4 is for texture, atmosphere, and smaller cities that only make sense when you stop optimizing every hour.',
     href: '/tier-4/cities',
     cta: 'Open Detours',
   },
@@ -43,26 +43,27 @@ export default function LandingOverview({ stats, tags }: LandingOverviewProps) {
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur md:p-10">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-stone-400">
-              Start Here
+              Slow Travel Logic
             </p>
             <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-tight text-white md:text-6xl">
-              Use the site like a route editor, not a content feed.
+              Start in Seoul, then use the site like a slower route editor.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-8 text-stone-300 md:text-lg">
-              The point is not to scroll every city. The point is to pick the version of Korea that
-              fits your trip energy, then let the city guides and stories sharpen the route.
+              The goal is not to stack as many cities as possible. The goal is to choose the right
+              next stop from Seoul, then let the city guides and route logic shape a trip with more
+              staying, less scrambling, and better memory.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-[1.5rem] border border-white/10 bg-black/20 p-5">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-stone-500">
-                  What You Get
+                  Route Depth
                 </p>
                 <p className="mt-4 font-serif text-3xl text-white">
                   {stats.featuredCities + stats.culturalStops + stats.hiddenGems}
                 </p>
                 <p className="mt-3 text-sm leading-7 text-stone-300">
-                  curated city entry points, grouped by travel depth instead of popularity alone.
+                  curated city entry points, organized by pace and trip depth instead of popularity alone.
                 </p>
               </div>
 
@@ -72,7 +73,7 @@ export default function LandingOverview({ stats, tags }: LandingOverviewProps) {
                 </p>
                 <p className="mt-4 font-serif text-3xl text-white">{stats.latestStories}</p>
                 <p className="mt-3 text-sm leading-7 text-stone-300">
-                  recent story pages that show where the editorial attention is active right now.
+                  recent route stories that show where the editorial attention is moving right now.
                 </p>
               </div>
             </div>
@@ -82,9 +83,9 @@ export default function LandingOverview({ stats, tags }: LandingOverviewProps) {
                 Quick Read
               </p>
               <p className="mt-4 text-sm leading-7 text-stone-200">
-                If this is your first trip, start with Icons. If you want a Korea that feels less
-                templated, move into Hubs. If you want stories worth telling later, take the
-                Detours.
+                If this is your first trip, choose a stronger second city from the Anchors. If you
+                want a Korea that reveals more over time, move into Longer Stays. If you want a
+                route that feels personal instead of optimized, take the Quiet Detours.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 {quickTags.map((tag) => (

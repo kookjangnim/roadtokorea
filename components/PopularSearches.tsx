@@ -9,16 +9,16 @@ export default function PopularSearches({ tags = [] }: PopularSearchesProps) {
     <section className="border-t border-gray-200 bg-stone-50 px-4 py-20 md:px-8 md:py-24">
       <div className="mx-auto max-w-5xl text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.35em] text-stone-500">
-          Editorial Pulse
+          Slow Travel Signals
         </p>
         <h2 className="mt-5 font-serif text-4xl leading-tight text-stone-900 md:text-6xl">
           Places shaping the current
-          <span className="block text-stone-500">editorial map.</span>
+          <span className="block text-stone-500">slow route map.</span>
         </h2>
         <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-stone-600 md:text-lg">
-          These are the names surfacing most often across recent guides, route experiments, and
-          new story drafts. Use them as fast entry points when you want to jump straight into the
-          live edge of the site.
+          These are the cities and place names surfacing most often across recent guides, route
+          experiments, and newer drafts. Use them when you want a quick way into the parts of the
+          site where the route thinking is most active.
         </p>
 
         <div className="mt-12 flex flex-wrap justify-center gap-3 md:gap-4">

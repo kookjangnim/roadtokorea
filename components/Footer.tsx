@@ -1,23 +1,23 @@
 import Link from 'next/link';
 
 const footerExplore = [
-  { name: 'Tier 1 Icons', href: '/tier-1/cities' },
-  { name: 'Tier 2 Hubs', href: '/tier-2/cities' },
-  { name: 'Tier 4 Detours', href: '/tier-4/cities' },
-  { name: 'Latest Stories', href: '#journal' },
+  { name: 'Seoul to Busan', href: '/routes/seoul/busan' },
+  { name: 'Tier 1 Anchors', href: '/tier-1/cities' },
+  { name: 'Tier 2 Longer Stays', href: '/tier-2/cities' },
+  { name: 'Quiet Detours', href: '/tier-4/cities' },
 ];
 
-const footerCities = [
-  { name: 'Seoul', href: '/tier-1/seoul' },
-  { name: 'Busan', href: '/tier-1/busan' },
-  { name: 'Jeju', href: '/tier-1/jeju' },
-  { name: 'Gyeongju', href: '/tier-2/gyeongju' },
+const footerRoutes = [
+  { name: 'KTX route logic', href: '/routes/seoul/busan' },
+  { name: 'Drive south with stopovers', href: '/routes/seoul/busan' },
+  { name: 'Budget bus version', href: '/routes/seoul/busan' },
+  { name: 'Slow bicycle corridor', href: '/routes/seoul/busan' },
 ];
 
 const footerGuidance = [
-  'Start with flagship cities if this is your first Korea trip.',
-  'Use cultural hubs for slower neighborhood-based itineraries.',
-  'Use detours when you want local texture beyond standard lists.',
+  'Start with a route, not a city list.',
+  'Choose the transport mode that matches the trip pace you actually want.',
+  'Promote cities into the itinerary only when they improve the route.',
 ];
 
 export default function Footer() {
@@ -28,15 +28,16 @@ export default function Footer() {
           <Link href="/" className="footer-logo">
             RoadToKorea
           </Link>
-          <p className="footer-kicker">Field guide for modern Korea travel</p>
+          <p className="footer-kicker">Travel Korea Slowly</p>
           <p className="footer-about-text">
-            Built to help travelers move from obvious first stops to places that feel
-            more lived-in, local, and memorable.
+            Built for travelers who want Korea to feel deeper, calmer, and more lived-in than a
+            fast itinerary usually allows.
           </p>
           <div className="footer-highlight-card">
             <p className="footer-highlight-label">Best use of this site</p>
             <p className="footer-highlight-text">
-              Pick a trip tier, compare the cities, then use story pages to shape the route.
+              Choose a corridor first, compare the transport logic, then open city guides only for
+              the stops that deserve time.
             </p>
           </div>
         </div>
@@ -51,8 +52,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-section">
-          <h4 className="footer-heading">Featured Cities</h4>
-          {footerCities.map((item) => (
+          <h4 className="footer-heading">Route Modes</h4>
+          {footerRoutes.map((item) => (
             <Link key={item.name} href={item.href} className="footer-link">
               {item.name}
             </Link>
@@ -136,8 +137,8 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p className="footer-copyright">
-          Copyright 2026 RoadToKorea. Curated routes, regional context, and local-first city
-          guides.
+          Copyright 2026 RoadToKorea. Route-first Korea travel guides built around pace, sequence,
+          and stopover logic.
         </p>
         <div className="footer-bottom-links">
           <a href="#about" className="footer-policy-link">

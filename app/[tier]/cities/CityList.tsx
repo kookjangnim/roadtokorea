@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { WordPressPost } from '@/lib/api';
+import { getPostDisplayTitle } from '@/lib/content-utils';
 
 interface CityListProps {
     cities: WordPressPost[];
@@ -42,11 +43,6 @@ export default function CityList({ cities, tier }: CityListProps) {
         };
         // Use generic downloaded city image if available, else fallback
         return images[slug.toLowerCase()] || `/images/cities/${slug.toLowerCase()}.jpg`;
-    };
-
-    const formatCityTitle = (slug: string) => {
-        // Force English capitalized name from slug
-        return slug.charAt(0).toUpperCase() + slug.toLowerCase().slice(1);
     };
 
     const availableRegions = ['all', ...Array.from(new Set(cities.map(c => getRegionForCity(c.slug))))].sort();
@@ -126,7 +122,7 @@ export default function CityList({ cities, tier }: CityListProps) {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                                 <div className="relative z-10 p-6 h-full flex flex-col justify-end">
                                     <h3 className="text-2xl font-bold text-white mb-3 drop-shadow-md">
-                                        {formatCityTitle(city.slug)}
+                                        {getPostDisplayTitle({ title: city.title, slug: city.slug })}
                                     </h3>
                                     <div className="flex flex-wrap items-center gap-2">
                                         <span className="text-sm text-amber-500 bg-amber-950/80 px-2 py-1 rounded font-medium border border-amber-500/30">

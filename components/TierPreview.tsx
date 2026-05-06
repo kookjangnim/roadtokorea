@@ -8,6 +8,7 @@ import type { Tier1CityData } from '@/data/tier1Cities';
 import type { TierCityData } from '@/data/tier2Cities';
 import { VALID_CITY_SLUGS } from '@/constants/cities';
 import { normalizeWpMediaUrl } from '@/lib/site-config';
+import { getFirstImageFromHtml, getPostDisplayTitle } from '@/lib/content-utils';
 
 interface WPPost {
   id: number;
@@ -65,9 +66,9 @@ function getEditorialCard(post: WPPost): EditorialCard | null {
   let imageUrl = featuredUrl ? normalizeWpMediaUrl(featuredUrl) : '/images/placeholder.jpg';
 
   if (!featuredUrl && post.content?.rendered) {
-    const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/);
-    if (imgMatch?.[1]) {
-      imageUrl = normalizeWpMediaUrl(imgMatch[1]);
+    const imgMatch = getFirstImageFromHtml(post.content.rendered);
+    if (imgMatch) {
+      imageUrl = normalizeWpMediaUrl(imgMatch);
     }
   }
 
@@ -91,7 +92,7 @@ function getEditorialCard(post: WPPost): EditorialCard | null {
 
   return {
     id: post.id,
-    title: post.title.rendered,
+    title: getPostDisplayTitle(post),
     citySlug,
     imageUrl,
     categoryLabel,
@@ -111,15 +112,15 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
         <div className="mb-20 flex flex-col items-start justify-between gap-8 border-b border-gray-200 pb-12 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
-              Destinations
+              Slow Travel Atlas
             </p>
             <h2 className="font-serif text-5xl leading-tight text-gray-900 md:text-7xl">
-              Curated <span className="italic text-gray-500">Journeys</span>
+              Routes with <span className="italic text-gray-500">breathing room</span>
             </h2>
           </div>
           <p className="max-w-sm text-left text-lg font-light leading-relaxed text-gray-600 md:text-right">
-            Explore South Korea by travel depth, from obvious anchors to places that quietly
-            reshape the whole trip.
+            Travel South Korea by pace and depth, from the cities that can hold a first stay to the
+            quieter stops that slow the whole route down in the best way.
           </p>
         </div>
 
@@ -130,7 +131,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                 Chapter I
               </span>
               <div className="h-[1px] flex-grow bg-gray-200" />
-              <h3 className="font-serif text-3xl italic text-gray-900">The Icons</h3>
+              <h3 className="font-serif text-3xl italic text-gray-900">Slow Anchors</h3>
             </div>
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-8">
@@ -196,7 +197,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                 href="/tier-1/cities"
                 className="inline-block border-b border-gray-300 pb-1 text-xs font-semibold uppercase tracking-widest text-gray-500 transition-colors hover:border-gray-900 hover:text-gray-900"
               >
-                Explore All Icons
+                Explore All Anchors
               </Link>
             </div>
           </div>
@@ -205,7 +206,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
         {t2Cities.length > 0 && (
           <div className="mb-24">
             <div className="mb-12 flex items-center gap-4">
-              <h3 className="font-serif text-3xl italic text-gray-900">Cultural Hubs</h3>
+              <h3 className="font-serif text-3xl italic text-gray-900">Longer Stays</h3>
               <div className="h-[1px] flex-grow bg-gray-200" />
               <span className="text-sm font-semibold uppercase tracking-widest text-gray-500">
                 Chapter II
@@ -243,7 +244,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                 href="/tier-2/cities"
                 className="inline-block border-b border-gray-300 pb-1 text-xs font-semibold uppercase tracking-widest text-gray-500 transition-colors hover:border-gray-900 hover:text-gray-900"
               >
-                Explore All Hubs
+                Explore All Longer Stays
               </Link>
             </div>
           </div>
@@ -251,12 +252,12 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
 
         <div className="mb-24">
           <div className="mb-12 flex items-center gap-4">
-            <span className="text-sm font-semibold uppercase tracking-widest text-gray-500">
-              Chapter III
-            </span>
-            <div className="h-[1px] flex-grow bg-gray-200" />
-              <h3 className="font-serif text-3xl italic text-gray-900">Route Logic</h3>
-          </div>
+              <span className="text-sm font-semibold uppercase tracking-widest text-gray-500">
+                Chapter III
+              </span>
+              <div className="h-[1px] flex-grow bg-gray-200" />
+              <h3 className="font-serif text-3xl italic text-gray-900">Inside the Route</h3>
+            </div>
 
           {t3Posts.length > 0 ? (
           <div className="mb-24">
@@ -340,7 +341,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                 Chapter IV
               </span>
               <div className="h-[1px] flex-grow bg-gray-200" />
-              <h3 className="font-serif text-3xl italic text-gray-900">Hidden Gems</h3>
+              <h3 className="font-serif text-3xl italic text-gray-900">Quiet Detours</h3>
             </div>
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -376,7 +377,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                 href="/tier-4/cities"
                 className="inline-block border-b border-gray-300 pb-1 text-xs font-semibold uppercase tracking-widest text-gray-500 transition-colors hover:border-gray-900 hover:text-gray-900"
               >
-                Explore All Detours
+                Explore All Quiet Detours
               </Link>
             </div>
           </div>
