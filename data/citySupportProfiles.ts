@@ -718,6 +718,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Food is central to why Yeongdeok matters. Seafood identity is not a side benefit here; it is one of the clearest reasons to keep the stop.',
     nextLegSummary:
       'After Yeongdeok, the coast starts bending toward a more controlled southeastern finish. The mood becomes less open-ended and more like a handoff.',
+    accommodationNote:
+      'Best future affiliate fit: one compact port-side stay group and one quieter coast-road stay group for travelers who want flavor without a big-city handoff yet.',
     sections: [
       {
         title: 'Why Yeongdeok earns time',
@@ -733,6 +735,21 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         title: 'How to use the stop well',
         body:
           'Keep it for a seafood meal, a compact overnight, or one last lower-scale coastal pause before the route turns toward stronger infrastructure further south.',
+      },
+      {
+        title: 'Why Yeongdeok can convert into stay intent',
+        body:
+          'Yeongdeok is a small town, but it is not a weak overnight. The point is that a compact port stay here changes how the rest of the coast feels before Pohang starts taking over with bigger-city logic.',
+      },
+      {
+        title: 'Why the seafood line matters commercially',
+        body:
+          'This is one of the places where food is not just support. It is one of the route’s arguments for stopping, which means restaurant and stay intent can sit together naturally on the page.',
+      },
+      {
+        title: 'Why the town should stay small in the editorial frame',
+        body:
+          'If Yeongdeok is written like a second-tier city guide, it loses its value. It works best as a smaller fishing-port chapter with sharper flavor and lower scale than the places south of it.',
       },
     ],
     decisions: [
@@ -755,7 +772,57 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'A short meal-and-air stop can still preserve Yeongdeok’s value if the route acknowledges why the town matters.',
       },
     ],
-    visuals: [],
+    stayZones: [
+      {
+        title: 'Keep the compact port-side stay',
+        areaLabel: 'Port edge',
+        bestFor: 'Travelers who want a low-friction night with direct access to the seafood identity of the stop.',
+        why:
+          'This is the cleanest sleep decision when Yeongdeok should remain small, edible, and close to the waterfront mood that justifies it.',
+      },
+      {
+        title: 'Use the quieter coast-road stay',
+        areaLabel: 'Coast road edge',
+        bestFor: 'Travelers who want a softer shoreline night before the route firms up toward Pohang.',
+        why:
+          'This choice preserves the air and slower rhythm of the coast while still keeping the final southbound push manageable.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Flavor image',
+        title: 'Yeongdeok earns space when the route should taste local',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/%EC%98%81%EB%8D%95_%EB%8C%80%EA%B2%8C.jpg',
+        alt: 'Yeongdeok crab',
+        body:
+          'This stop matters because the coast should sometimes become edible, not just scenic. Crab identity is one of the clearest reasons Yeongdeok belongs on the route at all.',
+        sourceLabel: 'Yeongdeok crab by jbl4430 via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:%EC%98%81%EB%8D%95_%EB%8C%80%EA%B2%8C.jpg',
+        licenseLabel: 'Panoramio / Wikimedia Commons',
+      },
+      {
+        eyebrow: 'Smaller-town mood',
+        title: 'The route gets lighter here before it gets heavier again',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Korea-Yeongdeok_County-Mountain-01.jpg',
+        alt: 'A town view in Yeongdeok County',
+        body:
+          'Yeongdeok is useful precisely because it does not feel like a large hinge city yet. It gives the coast one smaller-scale chapter before the south tightens up.',
+        sourceLabel: 'Yeongdeok County view by Robert via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Korea-Yeongdeok_County-Mountain-01.jpg',
+        licenseLabel: 'Wikimedia Commons',
+      },
+      {
+        eyebrow: 'Coast-road atmosphere',
+        title: 'A quiet road can justify a night as much as a major landmark can',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/7/75/%EB%B0%B1%EC%95%94%EC%98%A8%EC%B2%9C_%EA%B0%80%EB%8A%94_%EA%B8%B8%EC%97%90%EC%84%9C.jpg',
+        alt: 'Roadside landscape in Yeongdeok County',
+        body:
+          'The editorial value of Yeongdeok is not spectacle. It is the sensation of remaining on the coast long enough for the route to gain one more local chapter before the final hinge.',
+        sourceLabel: 'Road in Yeongdeok-gun by jbl4430 via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:%EB%B0%B1%EC%95%94%EC%98%A8%EC%B2%9C_%EA%B0%80%EB%8A%94_%EA%B8%B8%EC%97%90%EC%84%9C.jpg',
+        licenseLabel: 'Panoramio / Wikimedia Commons',
+      },
+    ],
     points: [
       {
         id: 'yeongdeok-port-zone',
@@ -778,6 +845,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'A practical overnight area for a low-friction coast stay that does not overcomplicate the final southbound push.',
         note:
           'Best when the stop should stay simple but still hold one genuine coastal chapter.',
+      },
+      {
+        id: 'yeongdeok-coast-stay',
+        name: 'Quiet coast-road stay zone',
+        kind: 'stay',
+        areaLabel: 'Coast road',
+        coordinates: { lat: 36.4304, lng: 129.4032 },
+        summary:
+          'A softer overnight option for travelers who want sea air and one more low-scale coast chapter before larger cities take over.',
+        note:
+          'This works best when the point is atmosphere first and pure efficiency second.',
       },
       {
         id: 'yeongdeok-seafood-line',
@@ -823,6 +901,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Food here works as both reset and reward. It is a stronger service-and-meal city than the smaller coastal towns just north of it.',
     nextLegSummary:
       'After Pohang, the route no longer needs another big identity shift. The logic is to finish well, not to keep opening new chapters.',
+    accommodationNote:
+      'Best future affiliate fit: one practical central-stay group and one sea-facing reset group for travelers who want Busan to start fresh the next day.',
     sections: [
       {
         title: 'Why Pohang matters late',
@@ -838,6 +918,21 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         title: 'How to use the overnight',
         body:
           'The best Pohang stay is one that protects the next day. That can mean better dinner, better sleep, easier departure, and less emotional drag entering Busan.',
+      },
+      {
+        title: 'Why Pohang can hold stronger accommodation intent',
+        body:
+          'Unlike the smaller coastal towns before it, Pohang has enough scale to justify a more deliberate stay choice. That makes hotel linking feel practical rather than opportunistic.',
+      },
+      {
+        title: 'Why the city should not erase the sea',
+        body:
+          'Pohang works best when it still feels sea-facing. If the page only sells city convenience, it loses the hinge quality that makes it meaningful before Busan.',
+      },
+      {
+        title: 'Why this stop improves the final day',
+        body:
+          'A good Pohang overnight does not just rest the traveler. It shortens the emotional distance to Busan and helps the final arrival feel chosen rather than endured.',
       },
     ],
     decisions: [
@@ -860,7 +955,57 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'Pohang is a useful place to close one route chapter before opening the final destination chapter.',
       },
     ],
-    visuals: [],
+    stayZones: [
+      {
+        title: 'Use the practical central stay',
+        areaLabel: 'Central stay zone',
+        bestFor: 'Travelers who want the cleanest final-night logistics before Busan.',
+        why:
+          'This is the most useful option when the route needs a real reset with stronger services, easier dinner, and a cleaner departure.',
+      },
+      {
+        title: 'Keep the sea-facing reset',
+        areaLabel: 'Bay-side edge',
+        bestFor: 'Travelers who still want the coast to be emotionally present even during the final reset.',
+        why:
+          'This preserves the route’s shoreline identity while still giving the stop more urban control than the smaller towns to the north.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Hinge image',
+        title: 'Homigot is where the coast still feels open even as the route tightens',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Homigot_20240113_007.jpg',
+        alt: 'Homigot in Pohang',
+        body:
+          'Pohang works because it is not a pure inland service city. The sea is still visible, which helps the route close one coastal chapter before Busan begins another.',
+        sourceLabel: 'Homigot by Mobius6 via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Homigot_20240113_007.jpg',
+        licenseLabel: 'CC BY-SA',
+      },
+      {
+        eyebrow: 'Late-route reset',
+        title: 'A beach-facing city can still function like a practical handoff',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/5/57/Hwajin_Beach%2C_Pohang.jpg',
+        alt: 'Hwajin Beach in Pohang',
+        body:
+          'Pohang’s advantage is that it can restore control without killing the coastal mood. That combination is what makes it such a useful final overnight candidate.',
+        sourceLabel: 'Hwajin Beach, Pohang by Choi2451 via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Hwajin_Beach,_Pohang.jpg',
+        licenseLabel: 'CC BY-SA 4.0',
+      },
+      {
+        eyebrow: 'Arrival strategy',
+        title: 'The final southbound day should start cleaner than it ends',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Pohang_Homigot2.jpg',
+        alt: 'Homigot sculpture in Pohang',
+        body:
+          'Pohang becomes valuable when it protects the final approach. The point is not one more stop for its own sake, but a better launch into Busan.',
+        sourceLabel: 'Pohang Homigot2 by Lswhandsome via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Pohang_Homigot2.jpg',
+        licenseLabel: 'CC BY-SA 3.0',
+      },
+    ],
     points: [
       {
         id: 'pohang-yeongil-zone',
@@ -883,6 +1028,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'The best low-friction overnight area for a late-route stop with better city services than the smaller coast towns to the north.',
         note:
           'Use this when the next day matters and the point is to arrive in Busan cleaner.',
+      },
+      {
+        id: 'pohang-bay-stay',
+        name: 'Sea-facing stay edge',
+        kind: 'stay',
+        areaLabel: 'Bay-side reset',
+        coordinates: { lat: 36.0487, lng: 129.3761 },
+        summary:
+          'A softer stay choice for travelers who want one last coastal night before the route turns decisively toward Busan.',
+        note:
+          'This is strongest when maintaining mood matters almost as much as pure convenience.',
       },
       {
         id: 'pohang-meal-zone',
