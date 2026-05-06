@@ -53,6 +53,27 @@ export default function StopoverCitiesCard({
             {stopover.pitch}
           </p>
 
+          <div className="mt-5 grid gap-3 md:grid-cols-3">
+            <div className="rounded-[1.25rem] bg-stone-50 p-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
+                Route role
+              </p>
+              <p className="mt-2 text-sm leading-7 text-stone-700">{stopover.routeRole}</p>
+            </div>
+            <div className="rounded-[1.25rem] bg-stone-50 p-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
+                If you keep it
+              </p>
+              <p className="mt-2 text-sm leading-7 text-stone-700">{stopover.stayAdvice}</p>
+            </div>
+            <div className="rounded-[1.25rem] bg-stone-50 p-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
+                Why it matters
+              </p>
+              <p className="mt-2 text-sm leading-7 text-stone-700">{stopover.whyItEarnsTime}</p>
+            </div>
+          </div>
+
           <ul className="mt-5 flex flex-wrap gap-2">
             {stopover.highlights.map((highlight) => (
               <li
