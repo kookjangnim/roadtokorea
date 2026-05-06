@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import type { TransportRouteVariant } from '@/data/routeStopovers';
+import type { RouteStopover, TransportRouteVariant } from '@/data/routeStopovers';
 
 interface RouteJourneyHeroProps {
   routeCode: string;
@@ -15,6 +15,9 @@ type PlotPoint = {
   x: number;
   y: number;
   role?: string;
+  detail?: string;
+  supportNote?: string;
+  chapterNote?: string;
 };
 
 const VIEWBOX_WIDTH = 1000;
@@ -31,18 +34,27 @@ function buildPlotPoints(transportRoute: TransportRouteVariant, fromCity: string
       lat: transportRoute.routePath[0]?.[0] ?? 37.5665,
       lng: transportRoute.routePath[0]?.[1] ?? 126.978,
       role: 'Departure',
+      detail: `The line leaves ${fromCity} and starts reading like ${transportRoute.routeGroupLabel.toLowerCase()}.`,
+      supportNote: transportRoute.chooseWhen,
+      chapterNote: 'The first question is not where to stop, but which southbound logic you want to keep.',
     },
     ...transportRoute.stopovers.map((stopover) => ({
       city: stopover.city,
       lat: stopover.coordinates.lat,
       lng: stopover.coordinates.lng,
       role: stopover.routeRole,
+      detail: stopover.whyItEarnsTime,
+      supportNote: stopover.decisionReason ?? stopover.stayAdvice,
+      chapterNote: stopover.nextLegLogic ?? stopover.terrainTransition ?? stopover.pitch,
     })),
     {
       city: toCity,
       lat: transportRoute.routePath[transportRoute.routePath.length - 1]?.[0] ?? 35.1796,
       lng: transportRoute.routePath[transportRoute.routePath.length - 1]?.[1] ?? 129.0756,
       role: 'Arrival',
+      detail: `${toCity} is where this line cashes out. The value depends on how much shape you kept on the way down.`,
+      supportNote: transportRoute.bestFor,
+      chapterNote: transportRoute.tradeoff,
     },
   ];
 
@@ -104,6 +116,20 @@ function getPointAtProgress(points: PlotPoint[], progress: number) {
   };
 }
 
+function getActiveIndex(points: PlotPoint[], progress: number) {
+  if (points.length <= 1) return 0;
+  const scaled = progress * (points.length - 1);
+  return clamp(Math.round(scaled), 0, points.length - 1);
+}
+
+function getUpcomingStopover(stopovers: RouteStopover[], activeCity: string) {
+  const activeIndex = stopovers.findIndex((stopover) => stopover.city === activeCity);
+  if (activeIndex >= 0) {
+    return stopovers[activeIndex + 1] ?? null;
+  }
+  return stopovers[0] ?? null;
+}
+
 export default function RouteJourneyHero({
   routeCode,
   transportRoute,
@@ -118,6 +144,9 @@ export default function RouteJourneyHero({
   );
   const pathData = useMemo(() => buildSmoothPath(plotPoints), [plotPoints]);
   const activeDot = getPointAtProgress(plotPoints, progress);
+  const activeIndex = getActiveIndex(plotPoints, progress);
+  const activePoint = plotPoints[activeIndex];
+  const upcomingStopover = getUpcomingStopover(transportRoute.stopovers, activePoint?.city ?? '');
 
   useEffect(() => {
     const startTime = window.performance.now();
@@ -167,17 +196,25 @@ export default function RouteJourneyHero({
             </div>
             <div className="rounded-[1.5rem] border border-white/10 bg-white/5 px-5 py-4">
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-400">
-                Progress cue
+                Live chapter
               </p>
-              <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-white/10">
+              <p className="mt-3 font-serif text-3xl text-white">
+                {activePoint?.city ?? fromCity}
+              </p>
+              <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-400">
+                {activePoint?.role ?? 'Route chapter'}
+              </p>
+              <p className="mt-4 text-sm leading-7 text-stone-300">
+                {activePoint?.detail ?? transportRoute.summary}
+              </p>
+              <div className="mt-5 h-2.5 overflow-hidden rounded-full bg-white/10">
                 <div
                   className="h-full rounded-full bg-[linear-gradient(90deg,#f59e0b_0%,#fcd34d_100%)] transition-[width] duration-200"
                   style={{ width: progressWidth }}
                 />
               </div>
               <p className="mt-3 text-sm leading-7 text-stone-300">
-                The animation loops so the route keeps reading like a living corridor instead of a
-                static line.
+                {activePoint?.supportNote ?? 'The animation loops so the corridor keeps reading like an active route, not a static line.'}
               </p>
             </div>
           </div>
@@ -223,15 +260,15 @@ export default function RouteJourneyHero({
                 <circle
                   cx={point.x}
                   cy={point.y}
-                  r={index === 0 || index === plotPoints.length - 1 ? 10 : 7}
+                  r={index === activeIndex ? 11 : index === 0 || index === plotPoints.length - 1 ? 10 : 7}
                   fill={index === 0 || index === plotPoints.length - 1 ? '#fcd34d' : '#ffffff'}
                   opacity={0.95}
                 />
                 <circle
                   cx={point.x}
                   cy={point.y}
-                  r={index === 0 || index === plotPoints.length - 1 ? 20 : 16}
-                  fill="rgba(252,211,77,0.12)"
+                  r={index === activeIndex ? 28 : index === 0 || index === plotPoints.length - 1 ? 20 : 16}
+                  fill={index === activeIndex ? 'rgba(251,191,36,0.24)' : 'rgba(252,211,77,0.12)'}
                 />
                 <text
                   x={point.x}
@@ -260,6 +297,28 @@ export default function RouteJourneyHero({
               <circle cx={activeDot.x} cy={activeDot.y} r={36} fill="rgba(245,158,11,0.08)" />
             </g>
           </svg>
+
+          <div className="mt-5 grid gap-4 md:grid-cols-[1.1fr_0.9fr]">
+            <div className="rounded-[1.5rem] border border-white/10 bg-white/5 px-5 py-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-400">
+                Why this chapter matters
+              </p>
+              <p className="mt-3 text-sm leading-7 text-stone-200">
+                {activePoint?.chapterNote ?? transportRoute.pacingNote}
+              </p>
+            </div>
+            <div className="rounded-[1.5rem] border border-white/10 bg-white/5 px-5 py-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-400">
+                Next handoff
+              </p>
+              <p className="mt-3 font-serif text-2xl text-white">
+                {upcomingStopover?.city ?? toCity}
+              </p>
+              <p className="mt-2 text-sm leading-7 text-stone-300">
+                {upcomingStopover?.routeRole ?? 'Arrival chapter'}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
