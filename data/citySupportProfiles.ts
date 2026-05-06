@@ -29,6 +29,13 @@ export interface CitySupportProfileDecision {
   why: string;
 }
 
+export interface CitySupportStayZone {
+  title: string;
+  areaLabel: string;
+  bestFor: string;
+  why: string;
+}
+
 export interface CitySupportProfileVisual {
   title: string;
   eyebrow: string;
@@ -54,8 +61,10 @@ export interface CitySupportProfile {
   staySummary: string;
   foodSummary: string;
   nextLegSummary: string;
+  accommodationNote?: string;
   sections: CitySupportProfileSection[];
   decisions: CitySupportProfileDecision[];
+  stayZones?: CitySupportStayZone[];
   visuals: CitySupportProfileVisual[];
   points: CitySupportPoint[];
 }
@@ -81,6 +90,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Food here is less about headline dining and more about function: warm soups, hearty evening meals, and a clean breakfast before an early departure or a harder cycling day.',
     nextLegSummary:
       'After Chungju, the route can commit. The next chapter points toward Mungyeong Saejae, inland climbing logic, and a trip that feels authored instead of simply transferred.',
+    accommodationNote:
+      'Best future affiliate fit: one practical city-core stay group and one recovery-led Suanbo stay group.',
     sections: [
       {
         title: 'Why Chungju earns a night',
@@ -131,6 +142,22 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         bestFor: 'Travelers who want one grounded local read without turning Chungju into a full sightseeing chapter.',
         why:
           'Tangeumdae helps the stop feel rooted in place. It is a good short checkpoint when you want the city to register as more than a bed between transfers.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Keep the terminal-side grid',
+        areaLabel: 'City core',
+        bestFor: 'Late arrivals, transit users, and low-friction overnights.',
+        why:
+          'This is the most practical sleep decision when you want a stable night and an easy departure instead of a fully recovery-led detour.',
+      },
+      {
+        title: 'Move down to Suanbo',
+        areaLabel: 'Suanbo',
+        bestFor: 'Cyclists, inland drivers, and travelers who want the overnight itself to repair the route.',
+        why:
+          'Suanbo works because accommodation, baths, and recovery mood all line up with the next day’s terrain demands.',
       },
     ],
     visuals: [
@@ -303,6 +330,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Food is functional here in the best sense: warm meals, simple reset dining, and enough fuel to make the pass feel prepared rather than improvised.',
     nextLegSummary:
       'After Mungyeong, the inland route descends into a more committed southbound logic. The next chapter should feel less like approach and more like continuation.',
+    accommodationNote:
+      'Best future affiliate fit: one town-core practical stay cluster and one pass-adjacent slower stay cluster near the Saejae approach.',
     sections: [
       {
         title: 'Why Mungyeong earns a stop',
@@ -318,6 +347,21 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         title: 'How to use the overnight well',
         body:
           'A night here is most useful when it breaks the route into before-the-pass and after-the-pass logic. That separation helps both drivers and riders keep the terrain meaningful instead of exhausting.',
+      },
+      {
+        title: 'Why the town core and the pass edge are different decisions',
+        body:
+          'Mungyeong becomes clearer when you stop treating it like one flat city. The town core is the practical sleep choice, while the Saejae edge is for travelers who want the crossing itself to dominate the stay.',
+      },
+      {
+        title: 'Why this city can convert into lodging intent',
+        body:
+          'Unlike a generic middle stop, Mungyeong can justify a night because sleeping here changes how tomorrow feels. That makes accommodation content more natural than in a purely logistical pause.',
+      },
+      {
+        title: 'Why riders and drivers both keep it',
+        body:
+          'Cyclists use Mungyeong to isolate the hardest chapter. Drivers use it to preserve terrain meaning instead of flattening the inland route into one long easy descent. The logic differs, but the overnight value is real for both.',
       },
     ],
     decisions: [
@@ -340,7 +384,57 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'An overnight in pass country can reduce decision fatigue and keep the southbound line from becoming one blurred transfer.',
       },
     ],
-    visuals: [],
+    stayZones: [
+      {
+        title: 'Stay in town for control',
+        areaLabel: 'Mungyeong town core',
+        bestFor: 'Travelers who want the easiest dinner-sleep-depart sequence.',
+        why:
+          'The city core is the practical choice when the stop is about pacing and route management more than immersion in the pass itself.',
+      },
+      {
+        title: 'Stay near the Saejae approach',
+        areaLabel: 'Pass edge',
+        bestFor: 'Cyclists and inland-route travelers who want the crossing chapter to define the night.',
+        why:
+          'Sleeping closer to the pass makes the route feel authored and keeps the next morning aligned with the terrain logic that brought you here.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Threshold image',
+        title: 'The gate is the reason Mungyeong does not feel interchangeable',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Mungyeong_Saejae_Second_Gate.JPG',
+        alt: 'The second gate of Mungyeong Saejae',
+        body:
+          'Mungyeong becomes memorable when the route visibly passes through something. The gate image matters because it turns abstract inland travel into a concrete threshold.',
+        sourceLabel: 'Mungyeong Saejae Second Gate by hyolee2 via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Mungyeong_Saejae_Second_Gate.JPG',
+        licenseLabel: 'CC BY-SA 3.0',
+      },
+      {
+        eyebrow: 'Pass-country atmosphere',
+        title: 'The open film-set edge makes the crossing feel spatial, not symbolic only',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Mungyeong_Saejae_Open_Film_Set.jpg',
+        alt: 'Mungyeong Saejae open film set landscape',
+        body:
+          'The city works best when the pass has visual breadth. This is what helps the overnight feel like a chapter in the land rather than a random place to stop the car.',
+        sourceLabel: 'Mungyeong Saejae Open Film Set by Choi2451 via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Mungyeong_Saejae_Open_Film_Set.jpg',
+        licenseLabel: 'CC BY-SA 4.0',
+      },
+      {
+        eyebrow: 'Slow-route detail',
+        title: 'Small civic details help the crossing feel inhabited',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Mungyeong_Saejae_Post_office.JPG',
+        alt: 'Mungyeong Saejae post office building',
+        body:
+          'Not every useful image has to be monumental. Smaller details keep Mungyeong from reading like a scenic backdrop and make it feel like a place where a route can actually pause.',
+        sourceLabel: 'Mungyeong Saejae Post office by hyolee2 via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Mungyeong_Saejae_Post_office.JPG',
+        licenseLabel: 'CC BY-SA 3.0',
+      },
+    ],
     points: [
       {
         id: 'mungyeong-saejae-gate',
@@ -365,6 +459,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'Best when the stop is more about pacing than about building a resort-style recovery chapter.',
       },
       {
+        id: 'mungyeong-saejae-stay',
+        name: 'Saejae-edge stay zone',
+        kind: 'stay',
+        areaLabel: 'Pass-adjacent',
+        coordinates: { lat: 36.6736, lng: 128.0802 },
+        summary:
+          'A slower stay logic near the pass for travelers who want the threshold itself to define the overnight.',
+        note:
+          'This is stronger for authored inland travel than for purely practical late arrivals.',
+      },
+      {
         id: 'mungyeong-pass-meal',
         name: 'Pass-country meal zone',
         kind: 'food',
@@ -374,6 +479,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'A functional eating zone for warming up, fueling up, and resetting before or after the crossing.',
         note:
           'Treat this as route fuel, not as a city where destination dining has to carry the narrative.',
+      },
+      {
+        id: 'mungyeong-reset-cafe',
+        name: 'Before-the-pass reset zone',
+        kind: 'recovery',
+        areaLabel: 'Saejae lead-in',
+        coordinates: { lat: 36.6669, lng: 128.0898 },
+        summary:
+          'A lighter reset point for reorganizing the route before or after the threshold instead of turning every stop into a full meal or full stay.',
+        note:
+          'Useful when the route needs a psychological break even more than a long physical recovery.',
       },
       {
         id: 'mungyeong-southbound-line',
@@ -408,6 +524,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Food is part of the reason to keep Andong. Dinner here should not feel like routine route maintenance; it should make the inland line taste different from the corridors around it.',
     nextLegSummary:
       'After Andong, the route can either continue south with more confidence or bend toward the southeast with a stronger sense of having passed through inland Korea properly.',
+    accommodationNote:
+      'Best future affiliate fit: one city-core practical stay group and one slower heritage-leaning stay group tied to the Hahoe-side cultural logic.',
     sections: [
       {
         title: 'Why Andong is more than a stopover',
@@ -423,6 +541,21 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         title: 'What Andong does to the route',
         body:
           'After Andong, the traveler is no longer just passing through interior Korea. The route has already acquired depth, so the southern continuation lands with more texture.',
+      },
+      {
+        title: 'Why the city core and the heritage side are different stays',
+        body:
+          'Andong becomes easier to use when you separate the practical overnight from the slower cultural overnight. The city core helps with friction, while the Hahoe-facing side helps the route feel more authored.',
+      },
+      {
+        title: 'Why this city supports accommodation links naturally',
+        body:
+          'Andong is not a forced overnight. It already carries enough dinner, culture, and emotional weight to justify stay intent, which makes lodging blocks feel earned instead of bolted on.',
+      },
+      {
+        title: 'Why food matters here more than in a generic inland pause',
+        body:
+          'Some cities on the route are about recovery or tempo only. Andong is different because food helps explain why the stop belongs to the route at all, not just how to survive it.',
       },
     ],
     decisions: [
@@ -445,6 +578,22 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'Andong is one of the better places on this corridor to connect food directly to why the stop matters.',
       },
     ],
+    stayZones: [
+      {
+        title: 'Keep the central stay grid',
+        areaLabel: 'City core',
+        bestFor: 'Travelers who want the easiest dinner-sleep-depart sequence without losing Andong’s cultural value.',
+        why:
+          'The city core is the most practical overnight and works well when the route needs one deep stop without adding too much lodging friction.',
+      },
+      {
+        title: 'Lean toward the heritage side',
+        areaLabel: 'Hahoe-facing cultural zone',
+        bestFor: 'Travelers who want the stop itself to feel slower, more atmospheric, and more memory-rich.',
+        why:
+          'This choice works when Andong should feel like a chapter of the route, not just a place to sleep before moving southeast.',
+      },
+    ],
     visuals: [
       {
         eyebrow: 'Cultural anchor',
@@ -453,6 +602,28 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         alt: 'Editorial city image for Andong',
         body:
           'The point of Andong is not speed. It is the moment the inland route stops feeling improvised and begins to feel like a deliberate chapter in Korea.',
+        sourceLabel: 'Local Andong city asset',
+        sourceHref: '/images/cities/andong.jpg',
+        licenseLabel: 'Project asset',
+      },
+      {
+        eyebrow: 'Stay logic',
+        title: 'The overnight matters because the city accumulates value slowly',
+        image: '/images/cities/andong.jpg',
+        alt: 'Editorial city image for Andong',
+        body:
+          'Andong is strongest when you let the stay breathe. Its value does not land all at once like a viewpoint city; it builds through evening, dinner, and a slower next morning.',
+        sourceLabel: 'Local Andong city asset',
+        sourceHref: '/images/cities/andong.jpg',
+        licenseLabel: 'Project asset',
+      },
+      {
+        eyebrow: 'Food identity',
+        title: 'Dinner should be part of the route logic here',
+        image: '/images/cities/andong.jpg',
+        alt: 'Editorial city image for Andong',
+        body:
+          'Andong is one of the inland cities where a meal can justify the stop instead of merely servicing it. That is why the food layer deserves dedicated commercial space later.',
         sourceLabel: 'Local Andong city asset',
         sourceHref: '/images/cities/andong.jpg',
         licenseLabel: 'Project asset',
@@ -480,6 +651,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'A practical lodging zone that keeps dinner, transit, and the next morning easy without losing access to the city’s identity.',
         note:
           'Best when you want a real overnight with lower friction than a fully dispersed heritage stay.',
+      },
+      {
+        id: 'andong-heritage-stay',
+        name: 'Heritage-side stay zone',
+        kind: 'stay',
+        areaLabel: 'Hahoe-facing side',
+        coordinates: { lat: 36.5446, lng: 128.5452 },
+        summary:
+          'A slower stay logic for travelers who want Andong to land as a cultural chapter, not just a convenient inland bed.',
+        note:
+          'This is best when the route can afford a little more softness and atmosphere in exchange for less frictionless logistics.',
       },
       {
         id: 'andong-river-edge',
