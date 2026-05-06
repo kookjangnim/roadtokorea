@@ -16,7 +16,7 @@ const primaryLinks = [
   { name: 'Hubs', href: '/tier-2/cities' },
   { name: 'Detours', href: '/tier-4/cities' },
   { name: 'Latest Stories', href: '#journal' },
-  { name: 'About', href: '#about' },
+  { name: 'About', href: '/about' },
 ];
 
 export default function Header() {

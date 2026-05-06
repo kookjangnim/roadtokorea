@@ -77,6 +77,9 @@ function buildPlotPoints(transportRoute: TransportRouteVariant, fromCity: string
       x: clamp(x, 72, VIEWBOX_WIDTH - 72),
       y: clamp(yBase + wave, 72, VIEWBOX_HEIGHT - 72),
       role: point.role,
+      detail: point.detail,
+      supportNote: point.supportNote,
+      chapterNote: point.chapterNote,
     } satisfies PlotPoint;
   });
 }
@@ -248,9 +251,9 @@ export default function RouteJourneyHero({
               stroke="url(#routeHeroLine)"
               strokeWidth="8"
               strokeLinecap="round"
+              pathLength={1}
               strokeDasharray="1"
               style={{
-                pathLength: 1,
                 strokeDashoffset: 1 - progress,
               }}
             />

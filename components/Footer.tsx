@@ -22,7 +22,7 @@ const footerGuidance = [
 
 export default function Footer() {
   return (
-    <footer className="footer-wrap" id="about">
+    <footer className="footer-wrap">
       <div className="footer-inner">
         <div className="footer-about">
           <Link href="/" className="footer-logo">
@@ -141,12 +141,15 @@ export default function Footer() {
           and stopover logic.
         </p>
         <div className="footer-bottom-links">
-          <a href="#about" className="footer-policy-link">
+          <Link href="/about" className="footer-policy-link">
             About
-          </a>
-          <a href="#" className="footer-policy-link">
+          </Link>
+          <Link href="/privacy" className="footer-policy-link">
             Privacy Policy
-          </a>
+          </Link>
+          <Link href="/contact" className="footer-policy-link">
+            Contact
+          </Link>
         </div>
       </div>
     </footer>
