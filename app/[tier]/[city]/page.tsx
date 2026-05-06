@@ -11,6 +11,8 @@ import { tier1Cities } from '@/data/tier1Cities';
 import { tier2Cities } from '@/data/tier2Cities';
 import { tier4Cities } from '@/data/tier4Cities';
 import { destinations, districtToEnglish, type Destination } from '@/data/destinations';
+import CitySupportMap from '@/components/city-detail/CitySupportMap';
+import { getCitySupportProfile } from '@/data/citySupportProfiles';
 import {
   buildOpenStreetMapDirectionsUrl,
   buildOpenStreetMapEmbedUrl,
@@ -73,6 +75,10 @@ function formatCityLabel(citySlug: string): string {
     .split('-')
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(' ');
+}
+
+function buildPointDirectionsUrl(lat: number, lng: number) {
+  return `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=14/${lat}/${lng}`;
 }
 
 function getHeroImageFromHtml(html: string): string | null {
@@ -216,6 +222,7 @@ export default async function CityPage({
     ? normalizeWpMediaUrl(heroImage)
     : localDestinations[0]?.imagePath || localCityData?.heroImage || null;
   const routeOption = getSeoulRouteOptionBySlug(citySlug);
+  const supportProfile = getCitySupportProfile(citySlug);
   const transportGuidance = buildTransportGuidance(routeOption?.transport);
   const tags = [cityName, 'Korea route', 'Neighborhood guide', 'Travel notes'];
   const mapEmbedUrl = routeOption
@@ -422,6 +429,9 @@ export default async function CityPage({
               <div className="mt-5 grid gap-3 text-sm text-stone-600">
                 <span className="rounded-full bg-stone-100 px-4 py-2">Why this city</span>
                 <span className="rounded-full bg-stone-100 px-4 py-2">From Seoul</span>
+                {supportProfile && (
+                  <span className="rounded-full bg-stone-100 px-4 py-2">Local support map</span>
+                )}
                 <span className="rounded-full bg-stone-100 px-4 py-2">Related hotspots</span>
               </div>
             </div>
@@ -507,6 +517,127 @@ export default async function CityPage({
                 </div>
               </div>
             </section>
+
+            {supportProfile && (
+              <section className="mb-12 border-b border-stone-200 pb-10">
+                <CitySupportMap profile={supportProfile} />
+
+                <div className="mt-8 grid gap-4 xl:grid-cols-2">
+                  <div className="rounded-[1.5rem] border border-stone-200 bg-stone-50/90 p-6">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                      Route Role
+                    </p>
+                    <p className="mt-4 text-sm leading-7 text-stone-700 md:text-base md:leading-8">
+                      {supportProfile.roleSummary}
+                    </p>
+                  </div>
+                  <div className="rounded-[1.5rem] border border-stone-200 bg-white p-6">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                      Support Summary
+                    </p>
+                    <p className="mt-4 text-sm leading-7 text-stone-700 md:text-base md:leading-8">
+                      {supportProfile.supportSummary}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8 grid gap-4 xl:grid-cols-3">
+                  <div className="rounded-[1.5rem] border border-stone-200 bg-white p-6">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                      Stay Logic
+                    </p>
+                    <p className="mt-4 text-sm leading-7 text-stone-700">{supportProfile.staySummary}</p>
+                  </div>
+                  <div className="rounded-[1.5rem] border border-stone-200 bg-white p-6">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                      Food Logic
+                    </p>
+                    <p className="mt-4 text-sm leading-7 text-stone-700">{supportProfile.foodSummary}</p>
+                  </div>
+                  <div className="rounded-[1.5rem] border border-stone-200 bg-white p-6">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                      Next Leg
+                    </p>
+                    <p className="mt-4 text-sm leading-7 text-stone-700">
+                      {supportProfile.nextLegSummary}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8 grid gap-4 xl:grid-cols-3">
+                  {supportProfile.decisions.map((decision) => (
+                    <article
+                      key={decision.title}
+                      className="rounded-[1.5rem] border border-stone-200 bg-[linear-gradient(180deg,rgba(250,245,238,0.92),rgba(255,255,255,0.98))] p-6"
+                    >
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                        Decision Pattern
+                      </p>
+                      <h3 className="mt-4 font-serif text-2xl leading-tight text-stone-950">
+                        {decision.title}
+                      </h3>
+                      <p className="mt-4 text-sm leading-7 text-stone-700">{decision.bestFor}</p>
+                      <p className="mt-3 text-sm leading-7 text-stone-600">{decision.why}</p>
+                    </article>
+                  ))}
+                </div>
+
+                <div className="mt-8 grid gap-4 xl:grid-cols-3">
+                  {supportProfile.sections.map((section) => (
+                    <article
+                      key={section.title}
+                      className="rounded-[1.5rem] border border-stone-200 bg-[linear-gradient(180deg,rgba(248,242,234,0.88),rgba(255,255,255,0.95))] p-6"
+                    >
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                        Local Reading
+                      </p>
+                      <h3 className="mt-4 font-serif text-2xl leading-tight text-stone-950">
+                        {section.title}
+                      </h3>
+                      <p className="mt-4 text-sm leading-7 text-stone-700">{section.body}</p>
+                    </article>
+                  ))}
+                </div>
+
+                <div className="mt-8 grid gap-4">
+                  {supportProfile.points.map((point) => (
+                    <article
+                      key={point.id}
+                      className="rounded-[1.5rem] border border-stone-200 bg-white p-6"
+                    >
+                      <div className="flex flex-wrap items-center gap-3">
+                        <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-600">
+                          {point.kind}
+                        </span>
+                        {point.areaLabel && (
+                          <span className="rounded-full border border-stone-200 bg-white px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                            {point.areaLabel}
+                          </span>
+                        )}
+                        <h3 className="font-serif text-2xl leading-tight text-stone-950">
+                          {point.name}
+                        </h3>
+                      </div>
+                      <p className="mt-4 text-sm leading-7 text-stone-700">{point.summary}</p>
+                      <p className="mt-3 text-sm leading-7 text-stone-600">{point.note}</p>
+                      <div className="mt-5">
+                        <a
+                          href={buildPointDirectionsUrl(
+                            point.coordinates.lat,
+                            point.coordinates.lng
+                          )}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex rounded-full border border-stone-300 bg-stone-50 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-stone-700 transition-transform duration-300 hover:-translate-y-0.5 hover:border-stone-900 hover:bg-white"
+                        >
+                          Open Area In Map
+                        </a>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {rawContent ? (
               <div
