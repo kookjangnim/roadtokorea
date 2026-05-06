@@ -20,6 +20,16 @@ export interface TierCityData {
 }
 
 export const tier2Cities: Record<string, TierCityData> = {
+  andong: {
+    slug: 'andong',
+    name: 'Andong',
+    heroImage: '/images/cities/andong.jpg',
+    headline: 'The Inland Cultural Anchor',
+    description: 'A slow, weighty inland city where Confucian memory, river geography, and regional food make the route feel authored instead of accidental.',
+    culturalInsight:
+      'Andong matters because it adds cultural gravity to inland travel. The city does not just break a journey south; it deepens it, turning the route into a chapter about memory, ritual, food, and the logic of staying with purpose.',
+    hotspots: []
+  },
   gyeongju: {
     slug: 'gyeongju',
     name: 'Gyeongju',

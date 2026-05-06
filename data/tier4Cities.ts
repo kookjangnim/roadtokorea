@@ -12,6 +12,36 @@ export interface TierCityData {
 }
 
 export const tier4Cities: Record<string, TierCityData> = {
+  yeongdeok: {
+    name: 'Yeongdeok',
+    slug: 'yeongdeok',
+    headline: 'The Coastal Flavor Anchor',
+    heroImage: '/images/placeholder.png',
+    description: 'A smaller east-coast town where seafood identity, port texture, and shoreline air make the route feel regionally specific.',
+    culturalInsight:
+      'Yeongdeok is less about major-city concentration and more about clarity of flavor. It gives the east coast line a local face, especially when the route needs food, fishing-port character, and one smaller-town chapter before larger southeastern cities take over.',
+    hotspots: []
+  },
+  pohang: {
+    name: 'Pohang',
+    slug: 'pohang',
+    headline: 'The Late-Coast Hinge',
+    heroImage: '/images/placeholder.png',
+    description: 'A sea-facing industrial city that works as the strongest hinge between the long east coast and the final Busan approach.',
+    culturalInsight:
+      'Pohang matters because it turns the last stretch of the coast into a controlled handoff instead of a rushed descent. It combines service infrastructure, shoreline mood, and late-route practicality better than smaller coastal stops can.',
+    hotspots: []
+  },
+  mungyeong: {
+    name: 'Mungyeong',
+    slug: 'mungyeong',
+    headline: 'The Pass-Country Threshold',
+    heroImage: '/images/placeholder.png',
+    description: 'A mountain-pass city where the route narrows, the terrain becomes meaningful, and crossing the peninsula starts to feel earned.',
+    culturalInsight:
+      'Mungyeong is less about urban density and more about transition. The city carries the logic of gates, passes, and crossings, so staying here makes sense when the route should feel shaped by geography rather than only by transfer time.',
+    hotspots: []
+  },
   wonju: {
     name: 'Wonju',
     slug: 'wonju',

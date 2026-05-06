@@ -89,6 +89,42 @@ const routeMeta: Record<
     nextMove: 'Fits best when the trip values atmosphere over landmark count.',
     coordinates: { lat: 36.991, lng: 127.926 },
   },
+  mungyeong: {
+    routePitch: 'A threshold city for travelers who want the inland line to feel topographic, historic, and clearly different from the default Seoul-to-Busan corridor.',
+    transport: 'Intercity bus or car',
+    travelTime: 'About 2.5 to 3 hours',
+    idealStay: '1 night',
+    bestFor: 'Inland route travelers, cyclists, and pass-country pacing',
+    nextMove: 'Pairs naturally with Chungju before it or Andong after it.',
+    coordinates: { lat: 36.5866, lng: 128.1868 },
+  },
+  andong: {
+    routePitch: 'One of the strongest inland city chapters after Seoul if the route should gain cultural depth instead of staying purely logistical.',
+    transport: 'KTX plus transfer, intercity bus, or car',
+    travelTime: 'About 2.5 to 3.5 hours',
+    idealStay: '1 to 2 nights',
+    bestFor: 'Culture-first inland routes and slower Seoul-to-Busan sequences',
+    nextMove: 'Often gets stronger when paired with Mungyeong before it or Gyeongju after it.',
+    coordinates: { lat: 36.5715, lng: 128.7269 },
+  },
+  yeongdeok: {
+    routePitch: 'A route-first east coast stop for travelers who want seafood identity, smaller-port texture, and a coast that feels regionally specific before Busan.',
+    transport: 'Car or bus',
+    travelTime: 'About 4.5 to 5.5 hours',
+    idealStay: '1 night',
+    bestFor: 'Coastal self-drive routes, fishing-port atmosphere, and food-led stopovers',
+    nextMove: 'Pairs naturally with Pohang before the final Busan descent.',
+    coordinates: { lat: 36.4151, lng: 129.3654 },
+  },
+  pohang: {
+    routePitch: 'A late-coast hinge city that helps the long eastbound line land cleanly before Busan.',
+    transport: 'KTX plus transfer, bus, or car',
+    travelTime: 'About 3 to 4 hours by rail mix, longer by coast drive',
+    idealStay: '1 night',
+    bestFor: 'Late-route resets and controlled southeast handoffs into Busan',
+    nextMove: 'Best used as the final major coast-facing chapter before Busan.',
+    coordinates: { lat: 36.0113, lng: 129.3642 },
+  },
 };
 
 export function getSeoulRouteOptions(): SeoulRouteOption[] {

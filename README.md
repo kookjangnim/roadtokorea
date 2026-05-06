@@ -34,3 +34,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Editorial Images
+
+Editorial city pages should prefer locally owned assets over hotlinked images.
+
+1. Create a manifest in `data/editorial-image-sources/<city>.json`
+2. Add source URL, credit, license, alt text, and target filename for each image
+3. Run:
+
+```bash
+npm run images:ingest -- data/editorial-image-sources/chungju.json
+```
+
+Use `--force` when you need to re-download and overwrite existing files:
+
+```bash
+npm run images:ingest -- data/editorial-image-sources/chungju.json --force
+```
+
+Downloaded files are stored under `public/images/editorial/<city>-real/`, and a `_sources.json` file is generated beside them so image provenance stays attached to the asset set.

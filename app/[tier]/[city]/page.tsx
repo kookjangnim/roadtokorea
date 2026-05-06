@@ -582,6 +582,43 @@ export default async function CityPage({
                   ))}
                 </div>
 
+                <div className="mt-8 grid gap-6 xl:grid-cols-3">
+                  {supportProfile.visuals.map((visual) => (
+                    <article
+                      key={visual.title}
+                      className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_20px_60px_rgba(34,30,25,0.06)]"
+                    >
+                      <div className="relative aspect-[4/5]">
+                        <Image
+                          src={visual.image}
+                          alt={visual.alt}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                          className="object-cover"
+                        />
+                        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.04),rgba(17,17,17,0.48))]" />
+                        <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.26em] text-white backdrop-blur">
+                          {visual.eyebrow}
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <h3 className="font-serif text-2xl leading-tight text-stone-950">
+                          {visual.title}
+                        </h3>
+                      <p className="mt-4 text-sm leading-7 text-stone-600">{visual.body}</p>
+                        <a
+                          href={visual.sourceHref}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.22em] text-stone-500 transition-colors hover:text-stone-800"
+                        >
+                          {visual.licenseLabel} · {visual.sourceLabel}
+                        </a>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+
                 <div className="mt-8 grid gap-4 xl:grid-cols-3">
                   {supportProfile.sections.map((section) => (
                     <article

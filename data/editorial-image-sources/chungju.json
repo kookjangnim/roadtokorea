@@ -1,0 +1,42 @@
+{
+  "citySlug": "chungju",
+  "outputDir": "public/images/editorial/chungju-real",
+  "images": [
+    {
+      "id": "chungjuho-lake-real",
+      "fileName": "chungjuho-lake-real.jpg",
+      "title": "Chungjuho Lake",
+      "alt": "A real photograph of Chungju Lake",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Chungjuho_Lake.jpg",
+      "sourceLabel": "Chungjuho Lake by Ashy Minivet via Wikimedia Commons",
+      "sourceHref": "https://commons.wikimedia.org/wiki/File:Chungjuho_Lake.jpg",
+      "licenseLabel": "CC0",
+      "credit": "Ashy Minivet",
+      "tags": ["lake", "landscape", "real-photo", "chungju"]
+    },
+    {
+      "id": "suanbo-hills-real",
+      "fileName": "suanbo-hills-real.jpg",
+      "title": "Suanbo Hills",
+      "alt": "A real landscape view over Suanbo in Chungju",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Suanbo_Hills.JPG",
+      "sourceLabel": "Suanbo from Park Hotel by Jpatokal via Wikimedia Commons",
+      "sourceHref": "https://commons.wikimedia.org/wiki/File:Suanbo_Hills.JPG",
+      "licenseLabel": "CC BY-SA 4.0",
+      "credit": "Jpatokal",
+      "tags": ["suanbo", "hot-spring-town", "real-photo", "chungju"]
+    },
+    {
+      "id": "chungju-mountain-real",
+      "fileName": "chungju-mountain-real.jpg",
+      "title": "Chungju Mountain",
+      "alt": "A real mountain landscape in Chungju",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Korea-Chungju-Mountain-01.jpg",
+      "sourceLabel": "Korea-Chungju-Mountain-01 by Jared Broad via Wikimedia Commons",
+      "sourceHref": "https://commons.wikimedia.org/wiki/File:Korea-Chungju-Mountain-01.jpg",
+      "licenseLabel": "CC BY 2.0",
+      "credit": "Jared Broad",
+      "tags": ["mountain", "inland", "real-photo", "chungju"]
+    }
+  ]
+}
