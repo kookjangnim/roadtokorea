@@ -7,6 +7,15 @@ interface StopoverCitiesCardProps {
   isLast: boolean;
 }
 
+function getCityGuideHref(stopover: RouteStopover) {
+  // Tier 3 route nodes often reuse the quieter city-guide layer in tier-4.
+  if (stopover.tier === 3) {
+    return `/tier-4/${stopover.citySlug}`;
+  }
+
+  return `/tier-${stopover.tier}/${stopover.citySlug}`;
+}
+
 function getFallbackDecision(stopover: RouteStopover) {
   return stopover.whyItEarnsTime;
 }
@@ -135,7 +144,7 @@ export default function StopoverCitiesCard({
 
           <div className="mt-6">
             <Link
-              href={`/tier-${stopover.tier}/${stopover.citySlug}`}
+              href={getCityGuideHref(stopover)}
               className="inline-flex rounded-full border border-stone-300 px-5 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-stone-800 transition-colors hover:border-stone-950 hover:bg-stone-950 hover:text-white"
             >
               Open {stopover.city}

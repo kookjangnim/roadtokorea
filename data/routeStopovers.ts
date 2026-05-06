@@ -200,24 +200,26 @@ const carJungangRoute: TransportRouteVariant = {
       coordinates: { lat: 36.991, lng: 127.926 },
       travelTimeFromPrevious: '1h 45m',
       cumulativeTime: '1h 45m',
-      pitch: 'Lake-city retreat where slower landscapes begin to replace capital momentum.',
-      routeRole: 'Inland reset',
-      stayAdvice: 'Keep Chungju when you want the route to visibly leave the standard metro corridor behind early.',
+      pitch:
+        'A lake-and-hot-spring inland city where the route finally stops behaving like an extension of Seoul and starts preparing for the harder country ahead.',
+      routeRole: 'Pre-pass recovery base',
+      stayAdvice:
+        'Keep Chungju when you want one stable inland night before the route starts asking for more terrain awareness and a clearer southbound commitment.',
       whyItEarnsTime:
-        'It marks the point where this drive starts feeling intentionally inland rather than merely indirect.',
+        'It is one of the first places on the inland line where stopping actually improves the next day instead of merely interrupting the drive.',
       decisionReason:
-        'Choose Chungju when the inland route needs a real reset before it starts asking for more terrain awareness.',
+        'Choose Chungju when the inland route needs a real reset before Mungyeong Saejae and the deeper pass-country chapter begin to matter.',
       recoveryValue:
-        'Less about luxury recovery and more about calming the transition out of Seoul tempo before deeper inland driving.',
+        'Its value is recovery through tempo and comfort: a place to loosen the body, slow the pulse, and avoid carrying Seoul urgency into the next inland leg.',
       sleepValue:
-        'A sensible overnight when the inland route should be split before the road begins feeling more mountainous and editorial.',
+        'A very sensible overnight because it works as the last comfortable base before the route starts feeling more like a crossing than a transfer.',
       foodValue:
-        'Useful for a quieter meal-and-reset stop rather than a market-led food chapter.',
+        'Best treated as fortifying inland food before the route tightens: warm soups, substantial meals, and an easy breakfast before departure matter more here than destination dining.',
       terrainTransition:
-        'This is where the route stops feeling like an extension of the capital region and starts leaning inland.',
+        'Geographically Chungju sits before the Saejae gate logic, so it works as the last easy reset before the route begins climbing into a more meaningful inland threshold.',
       nextLegLogic:
-        'After Chungju, the route can point more clearly toward pass-country and cultural inland chapters.',
-      highlights: ['Chungju Lake', 'Tangeumdae Park', 'Taktanjeong Pavilion'],
+        'After Chungju, the route can stop pretending it is only drifting south. The next chapter starts aiming decisively toward pass-country, Mungyeong, and a stronger inland identity.',
+      highlights: ['Suanbo Hot Springs', 'Chungju Lake', 'Tangeumdae Park'],
     },
     {
       city: 'Andong',
@@ -452,24 +454,26 @@ const bicycleJungangRoute: TransportRouteVariant = {
       coordinates: { lat: 36.991, lng: 127.926 },
       travelTimeFromPrevious: '4-5h',
       cumulativeTime: '4-5h',
-      pitch: 'Lake-city retreat where slow travel and mountain temples define the rhythm.',
-      routeRole: 'Recovery opener',
-      stayAdvice: 'Keep Chungju if the ride should settle into its own cadence instead of staying in Seoul tempo too long.',
+      pitch:
+        'A lake-and-hot-spring recovery city where long-distance riders can finally stop riding on capital momentum and prepare properly for the Saejae crossing ahead.',
+      routeRole: 'Pre-Saejae recovery base',
+      stayAdvice:
+        'Keep Chungju if you want one of the most credible rider overnights before Mungyeong Saejae rather than forcing the next day on tired legs.',
       whyItEarnsTime:
-        'It softens the first long day and confirms that this route is about rhythm, not just distance.',
+        'It softens the first serious day and gives riders a genuine chance to recover before the route turns into a more committed inland crossing.',
       decisionReason:
-        'Chungju matters because it is one of the first places where long-distance riders can choose recovery over stubborn momentum.',
+        'Chungju matters because it is where riders can choose recovery over stubborn momentum before the Saejae gate becomes the next big geographic question.',
       recoveryValue:
-        'A strong recovery node with hot-spring logic and a reputation among riders for breaking the first serious stretch well.',
+        'This is one of the clearest recovery nodes on the route: hot-spring logic, easier lodging, and a reputation among riders for being a smart place to reset the body.',
       sleepValue:
-        'A natural overnight before Mungyeong Saejae if the rider wants fresher legs for the more meaningful inland crossing.',
+        'A natural overnight because sleeping here lets the rider face Mungyeong Saejae with fresher legs instead of carrying the fatigue of the first major push.',
       foodValue:
-        'Useful for replenishing properly before the pass rather than chasing destination dining as the main point.',
+        'Useful for replenishing before the pass: the goal is not foodie prestige but a warm dinner, a proper breakfast, and enough recovery to ride well the next day.',
       terrainTransition:
-        'Geographically it sits before the Saejae gate logic, which makes it a preparation town as much as a lake town.',
+        'Geographically it sits before the Mungyeong Saejae gate logic, which makes it a preparation town as much as a lakeside town.',
       nextLegLogic:
-        'After Chungju, the ride starts aiming at Mungyeong Saejae and a more demanding cross-country identity.',
-      highlights: ['Chungju Lake', 'Taktanjeong Pavilion', 'Beopjusa Temple'],
+        'After Chungju, the ride starts aiming at Mungyeong Saejae and a more demanding cross-country identity, so the city works less like a sightseeing stop and more like a launch platform.',
+      highlights: ['Suanbo Hot Springs', 'Chungju Lake', 'Taktanjeong Pavilion'],
     },
     {
       city: 'Mungyeong',
