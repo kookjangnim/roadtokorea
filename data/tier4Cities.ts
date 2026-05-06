@@ -12,6 +12,16 @@ export interface TierCityData {
 }
 
 export const tier4Cities: Record<string, TierCityData> = {
+  sangju: {
+    name: 'Sangju',
+    slug: 'sangju',
+    headline: 'The River-Corridor Hinge',
+    heroImage: '/images/placeholder.png',
+    description: 'A practical inland city where pass-country effort relaxes into the broader Nakdong southbound flow.',
+    culturalInsight:
+      'Sangju matters less as a stand-alone headline city and more as a route hinge. It is where the Seoul-to-Busan inland line stops feeling like a sequence of thresholds and begins to read clearly as a longer river-led corridor.',
+    hotspots: []
+  },
   yeongdeok: {
     name: 'Yeongdeok',
     slug: 'yeongdeok',

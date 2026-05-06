@@ -125,6 +125,15 @@ const routeMeta: Record<
     nextMove: 'Best used as the final major coast-facing chapter before Busan.',
     coordinates: { lat: 36.0113, lng: 129.3642 },
   },
+  sangju: {
+    routePitch: 'An inland corridor city for travelers who want the route logic to stay legible after the mountain chapter and before the longer Nakdong descent begins.',
+    transport: 'Car or intercity bus',
+    travelTime: 'About 2.5 to 3 hours',
+    idealStay: '1 night',
+    bestFor: 'Cyclists, inland-route travelers, and practical river-corridor pacing',
+    nextMove: 'Pairs naturally with Mungyeong before it and Daegu after it.',
+    coordinates: { lat: 36.4109, lng: 128.1591 },
+  },
 };
 
 export function getSeoulRouteOptions(): SeoulRouteOption[] {

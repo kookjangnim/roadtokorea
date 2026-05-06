@@ -1064,6 +1064,200 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  sangju: {
+    slug: 'sangju',
+    city: 'Sangju',
+    mapTitle: 'Where Sangju turns the inland crossing into a river corridor',
+    mapIntro:
+      'Sangju is not a spectacle stop. It is a support map for understanding where the Saejae effort settles, where the Nakdong rhythm becomes obvious, and where a practical overnight can keep the southbound line clean.',
+    mapCenter: {
+      lat: 36.41,
+      lng: 128.16,
+    },
+    supportSummary:
+      'Sangju works as the route-convergence city. It is where mountain-pass logic relaxes, the Nakdong corridor becomes legible, and the next phase of the ride or drive can feel continuous instead of broken.',
+    roleSummary:
+      'On the inland route, Sangju is the hinge between threshold and corridor. It gives the trip continuity after Mungyeong and prepares it for the longer southbound flow toward Daegu and beyond.',
+    staySummary:
+      'A stay here is useful when you want to separate pass effort from corridor mileage. It is not the most romantic stop, but it is one of the clearest pacing stops on the inland line.',
+    foodSummary:
+      'Food in Sangju is practical in a high-value way: refuel, reset, and keep the route moving without asking the city to perform like a destination-first chapter.',
+    nextLegSummary:
+      'After Sangju, the route should feel more settled. The next chapter becomes less about crossing a threshold and more about carrying a rhythm south with confidence.',
+    accommodationNote:
+      'Best future affiliate fit: one low-friction city-core stay group and one riverside corridor stay group for travelers who want to wake up already aligned with the next southbound leg.',
+    sections: [
+      {
+        title: 'Why Sangju earns a night',
+        body:
+          'Sangju earns a night when the route needs continuity more than drama. It helps the traveler absorb the pass-country effort and begin the Nakdong chapter with less fragmentation.',
+      },
+      {
+        title: 'Why this stop matters after Mungyeong',
+        body:
+          'If Mungyeong is the threshold, Sangju is the first city that makes the route feel sustainably connected afterward. It keeps the trip from falling back into a loose collection of segments.',
+      },
+      {
+        title: 'Why this city is useful for cyclists',
+        body:
+          'For riders, Sangju is where the route starts behaving like a corridor. That means a night here can help reset the body while also clarifying the mental map of the days ahead.',
+      },
+      {
+        title: 'Why a practical city can still be valuable editorially',
+        body:
+          'Sangju does not need to compete with cultural anchors or port cities. Its value is structural: it helps the route flow better, which is exactly why it can still support stay intent.',
+      },
+      {
+        title: 'Why accommodation links make sense here',
+        body:
+          'A city does not need romance to justify an overnight. Sangju can support stay links because a bed here improves the next leg and reduces the feeling of one overlong inland push.',
+      },
+      {
+        title: 'Why the river logic should stay visible',
+        body:
+          'The city gets stronger when it is framed through the Nakdong corridor. That keeps it from feeling like a random refuel stop and turns it into a meaningful handoff in the journey.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Use Sangju as the corridor reset',
+        bestFor: 'Cyclists and inland-route travelers who want the post-pass chapter to feel organized.',
+        why:
+          'Sangju is one of the clearest places to let the route settle after Mungyeong and before the longer southbound continuation.',
+      },
+      {
+        title: 'Keep the stop practical, not theatrical',
+        bestFor: 'Travelers who value sleep, fuel, and route continuity more than a heavy sightseeing chapter here.',
+        why:
+          'The city becomes strongest when it is allowed to do what it is good at: stabilizing the route without overpromising destination drama.',
+      },
+      {
+        title: 'Sleep before the longer river run',
+        bestFor: 'Anyone who wants the Daegu-side continuation to begin sharper and with less leftover fatigue from the threshold chapter.',
+        why:
+          'A night here separates mountain effort from corridor mileage and keeps the next day more even.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Keep the central stay grid',
+        areaLabel: 'City core',
+        bestFor: 'Travelers who want the easiest dinner-sleep-depart sequence with minimal route friction.',
+        why:
+          'This is the most efficient overnight when the point is to reset well and keep the next morning mechanically easy.',
+      },
+      {
+        title: 'Lean toward the riverside corridor',
+        areaLabel: 'Nakdong-side edge',
+        bestFor: 'Cyclists and slow-route travelers who want the next leg to begin already aligned with the river logic.',
+        why:
+          'This choice keeps the corridor visible and makes the overnight feel like part of the route instead of outside it.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Corridor image',
+        title: 'The river is what makes Sangju legible',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Nakdong_River_%28southeast_of_the_Dongjeom_railway_station%2C_Gangwon_Province%2C_South_Korea%29_%2820039344681%29.jpg',
+        alt: 'Nakdong River landscape in South Korea',
+        body:
+          'Sangju gets stronger when the route is read through the Nakdong corridor. The visual argument is not urban spectacle, but the long continuity of the river chapter that starts to dominate here.',
+        sourceLabel: 'Nakdong River by James St. John via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Nakdong_River_(southeast_of_the_Dongjeom_railway_station,_Gangwon_Province,_South_Korea)_(20039344681).jpg',
+        licenseLabel: 'CC BY 2.0',
+      },
+      {
+        eyebrow: 'Route continuity',
+        title: 'Sangju matters because the route stops feeling fragmented',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Nakdong_River_%28southeast_of_the_Dongjeom_railway_station%2C_Gangwon_Province%2C_South_Korea%29_%2820039344681%29.jpg',
+        alt: 'Nakdong River landscape in South Korea',
+        body:
+          'The city does not need a monumental image to justify itself. Its value is in the way the corridor begins to feel long, stable, and southbound from here.',
+        sourceLabel: 'Nakdong River by James St. John via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Nakdong_River_(southeast_of_the_Dongjeom_railway_station,_Gangwon_Province,_South_Korea)_(20039344681).jpg',
+        licenseLabel: 'CC BY 2.0',
+      },
+      {
+        eyebrow: 'Pacing logic',
+        title: 'A useful city can be worth more than a dramatic one',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Nakdong_River_%28southeast_of_the_Dongjeom_railway_station%2C_Gangwon_Province%2C_South_Korea%29_%2820039344681%29.jpg',
+        alt: 'Nakdong River landscape in South Korea',
+        body:
+          'Sangju earns its space because it helps tomorrow work better. That kind of practical value is exactly what makes it commercially and editorially useful on a route-first site.',
+        sourceLabel: 'Nakdong River by James St. John via Wikimedia Commons',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Nakdong_River_(southeast_of_the_Dongjeom_railway_station,_Gangwon_Province,_South_Korea)_(20039344681).jpg',
+        licenseLabel: 'CC BY 2.0',
+      },
+    ],
+    points: [
+      {
+        id: 'sangju-corridor-checkpoint',
+        name: 'Nakdong corridor checkpoint',
+        kind: 'checkpoint',
+        areaLabel: 'River logic entry',
+        coordinates: { lat: 36.4109, lng: 128.1591 },
+        summary:
+          'The point where the city starts reading as part of a longer corridor instead of a post-pass leftover stop.',
+        note:
+          'Use this area to explain why the route’s identity changes after Mungyeong and settles into a clearer southern line.',
+      },
+      {
+        id: 'sangju-city-stay',
+        name: 'Central stay grid',
+        kind: 'stay',
+        areaLabel: 'City core',
+        coordinates: { lat: 36.4151, lng: 128.1608 },
+        summary:
+          'A practical overnight area for riders and inland travelers who want a low-drama but high-value reset before continuing south.',
+        note:
+          'This is strongest when the stop is about pacing and route continuity rather than destination atmosphere.',
+      },
+      {
+        id: 'sangju-riverside-stay',
+        name: 'Riverside corridor stay zone',
+        kind: 'stay',
+        areaLabel: 'Nakdong-side edge',
+        coordinates: { lat: 36.4283, lng: 128.1679 },
+        summary:
+          'A softer stay choice for travelers who want the river logic to stay visible through the night and into the next departure.',
+        note:
+          'Useful when the route should feel like one long connected line rather than a series of city blocks.',
+      },
+      {
+        id: 'sangju-refuel-zone',
+        name: 'Corridor refuel line',
+        kind: 'food',
+        areaLabel: 'Meal corridor',
+        coordinates: { lat: 36.4134, lng: 128.1642 },
+        summary:
+          'A practical eating zone for turning Sangju into a clean reset instead of a stop that drains more energy than it restores.',
+        note:
+          'This is where future stay-and-meal linking can naturally support route users without feeling forced.',
+      },
+      {
+        id: 'sangju-river-reset',
+        name: 'River-edge reset point',
+        kind: 'recovery',
+        areaLabel: 'Nakdong edge',
+        coordinates: { lat: 36.4337, lng: 128.1703 },
+        summary:
+          'A lighter recovery point for riders and slower travelers who need the route to calm down after the threshold chapter.',
+        note:
+          'Useful for psychological reset even when the stop is not a full sightseeing pause.',
+      },
+      {
+        id: 'sangju-daegu-handoff',
+        name: 'Daegu handoff line',
+        kind: 'mobility',
+        areaLabel: 'Southbound corridor',
+        coordinates: { lat: 36.3152, lng: 128.2334 },
+        summary:
+          'A directional point that frames Sangju as the settled beginning of the longer southern run rather than the end of the pass story.',
+        note:
+          'This helps the page conclude with continuation and gives the next city more logic before arrival.',
+      },
+    ],
+  },
 };
 
 export function getCitySupportProfile(citySlug: string): CitySupportProfile | null {
