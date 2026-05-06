@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Header from "@/components/Header";
 import { getSiteUrl } from "@/lib/site-config";
 import "./globals.css";
 
 const siteUrl = getSiteUrl();
+const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 export const metadata: Metadata = {
   title: {
@@ -45,6 +47,17 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        {adsenseClient ? (
+          <Script
+            id="adsense-script"
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        ) : null}
+      </head>
       <body className="antialiased bg-mesh-dark">
         <script
           type="application/ld+json"
