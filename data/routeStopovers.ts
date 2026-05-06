@@ -14,6 +14,12 @@ export interface RouteStopover {
   routeRole: string;
   stayAdvice: string;
   whyItEarnsTime: string;
+  decisionReason?: string;
+  recoveryValue?: string;
+  sleepValue?: string;
+  foodValue?: string;
+  terrainTransition?: string;
+  nextLegLogic?: string;
   highlights: string[];
 }
 
@@ -199,6 +205,18 @@ const carJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Keep Chungju when you want the route to visibly leave the standard metro corridor behind early.',
       whyItEarnsTime:
         'It marks the point where this drive starts feeling intentionally inland rather than merely indirect.',
+      decisionReason:
+        'Choose Chungju when the inland route needs a real reset before it starts asking for more terrain awareness.',
+      recoveryValue:
+        'Less about luxury recovery and more about calming the transition out of Seoul tempo before deeper inland driving.',
+      sleepValue:
+        'A sensible overnight when the inland route should be split before the road begins feeling more mountainous and editorial.',
+      foodValue:
+        'Useful for a quieter meal-and-reset stop rather than a market-led food chapter.',
+      terrainTransition:
+        'This is where the route stops feeling like an extension of the capital region and starts leaning inland.',
+      nextLegLogic:
+        'After Chungju, the route can point more clearly toward pass-country and cultural inland chapters.',
       highlights: ['Chungju Lake', 'Tangeumdae Park', 'Taktanjeong Pavilion'],
     },
     {
@@ -213,6 +231,18 @@ const carJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Andong is one of the best reasons to choose this route at all, especially if the trip wants historical and regional depth.',
       whyItEarnsTime:
         'It gives the inland axis a strong identity that the more direct corridor cannot replicate.',
+      decisionReason:
+        'Keep Andong when the route should gain cultural gravity, not just another logistical pause between Seoul and Busan.',
+      recoveryValue:
+        'Recovery here is more mental and narrative than thermal or purely physical; it slows the trip into a deeper inland chapter.',
+      sleepValue:
+        'A strong overnight when the inland route should become a real stay rather than a sequence of utilitarian stops.',
+      foodValue:
+        'Andong is one of the better places on this corridor to make dinner and local identity part of the route itself.',
+      terrainTransition:
+        'By Andong, the route stops feeling exploratory and starts feeling fully committed to inland Korea.',
+      nextLegLogic:
+        'After Andong, the trip can either lean into historic continuity or start handing off toward the southeast.',
       highlights: ['Hahoe Folk Village', 'Dosan Seowon', 'Andong Jjimdak Streets'],
     },
     {
@@ -227,6 +257,18 @@ const carJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Useful when you want the route to feel topographically distinct, not just culturally inland.',
       whyItEarnsTime:
         'Mungyeong gives the inland axis a stronger sense of pass-crossing and geographic progression.',
+      decisionReason:
+        'Keep Mungyeong when the route should visibly cross a threshold rather than glide south on pure convenience.',
+      recoveryValue:
+        'More of a preparation and pacing node than a soft recovery city; it helps you reset before or after the pass logic.',
+      sleepValue:
+        'A strategic overnight if you want to separate the easier inland buildup from the more meaningful terrain transition.',
+      foodValue:
+        'Best treated as fortifying pass-country fuel rather than a destination food stop.',
+      terrainTransition:
+        'Mungyeong is the chapter where the inland route starts reading like a real crossing, not just a detour.',
+      nextLegLogic:
+        'From here the route can descend into broader river logic and more sustained southbound momentum.',
       highlights: ['Mungyeong Saejae', 'Mountain roads', 'Historic pass atmosphere'],
     },
     {
@@ -241,6 +283,18 @@ const carJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Use Gyeongju if you want the inland route to reconnect with a classic southern anchor before Busan.',
       whyItEarnsTime:
         'It bridges inland cultural depth with the final southeastern chapter better than a simple highway finish.',
+      decisionReason:
+        'Keep Gyeongju when the route needs a historically weighted southern landing before the coast.',
+      recoveryValue:
+        'More reflective than restorative; the value is in slowing the route into culture rather than pure physical recovery.',
+      sleepValue:
+        'A high-quality overnight if the trip should feel authored and not merely driven through.',
+      foodValue:
+        'Useful for turning the southern half of the route into a stay with evening texture, not just a pass-through meal.',
+      terrainTransition:
+        'Gyeongju turns the inland line into a southeast heritage corridor before Busan.',
+      nextLegLogic:
+        'After Gyeongju, the route no longer needs another heavy inland identity shift before Busan.',
       highlights: ['Bulguksa Temple', 'Donggung and Wolji', 'Daereungwon Tomb Complex'],
     },
   ],
@@ -288,6 +342,18 @@ const carRoute7Route: TransportRouteVariant = {
       stayAdvice: 'Keep Gangneung if you want the trip to become an east-coast journey, not just a southbound transfer with a small scenic add-on.',
       whyItEarnsTime:
         'It is the point of no return that turns the route into a shoreline trip with a different emotional vocabulary.',
+      decisionReason:
+        'Choose Gangneung when the route should pivot decisively toward the coast and stop pretending Busan is the only destination that matters.',
+      recoveryValue:
+        'Recovery here is atmospheric as much as physical; sea air, easier pacing, and a calmer coast mood reset the whole trip.',
+      sleepValue:
+        'A very natural overnight because it often works as the city that converts a transfer into a full east-coast chapter.',
+      foodValue:
+        'Food matters here because cafes, seafood, and coast-adjacent meals reinforce the identity shift into the shoreline route.',
+      terrainTransition:
+        'Gangneung is the city where the geometry of the trip changes from crossing Korea to descending its east coast.',
+      nextLegLogic:
+        'After Gangneung, the route should be read as a chain of coastal chapters rather than one long direct push south.',
       highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
     },
     {
@@ -391,6 +457,18 @@ const bicycleJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Keep Chungju if the ride should settle into its own cadence instead of staying in Seoul tempo too long.',
       whyItEarnsTime:
         'It softens the first long day and confirms that this route is about rhythm, not just distance.',
+      decisionReason:
+        'Chungju matters because it is one of the first places where long-distance riders can choose recovery over stubborn momentum.',
+      recoveryValue:
+        'A strong recovery node with hot-spring logic and a reputation among riders for breaking the first serious stretch well.',
+      sleepValue:
+        'A natural overnight before Mungyeong Saejae if the rider wants fresher legs for the more meaningful inland crossing.',
+      foodValue:
+        'Useful for replenishing properly before the pass rather than chasing destination dining as the main point.',
+      terrainTransition:
+        'Geographically it sits before the Saejae gate logic, which makes it a preparation town as much as a lake town.',
+      nextLegLogic:
+        'After Chungju, the ride starts aiming at Mungyeong Saejae and a more demanding cross-country identity.',
       highlights: ['Chungju Lake', 'Taktanjeong Pavilion', 'Beopjusa Temple'],
     },
     {
@@ -405,6 +483,18 @@ const bicycleJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Keep Mungyeong if you want the ride to visibly earn its crossing through the middle of the peninsula.',
       whyItEarnsTime:
         'It is one of the places that makes this route feel like a real cross-country line rather than a collection of flat connectors.',
+      decisionReason:
+        'Mungyeong is the city that justifies the route’s cross-country claim because the Saejae crossing changes the ride physically and mentally.',
+      recoveryValue:
+        'Not a soft recovery town first; its value is in how it breaks the route into before-the-pass and after-the-pass chapters.',
+      sleepValue:
+        'Useful if you want to isolate the pass effort or keep the mountain chapter from bleeding into an overlong next day.',
+      foodValue:
+        'Think of it as a fuel-and-reset stop around the pass, not a destination food capital.',
+      terrainTransition:
+        'This is the clearest terrain threshold on the inland bicycle line.',
+      nextLegLogic:
+        'Once past Mungyeong, the ride starts turning toward broader river logic and longer southbound flow.',
       highlights: ['Mungyeong Saejae', 'Mountain pass scenery', 'Historic road atmosphere'],
     },
     {
@@ -419,6 +509,18 @@ const bicycleJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Useful as the point where riders mentally shift from mountain-pass crossing into river-led progression.',
       whyItEarnsTime:
         'Sangju is where the route becomes recognizably connected to the Nakdong bike-path idea.',
+      decisionReason:
+        'Keep Sangju when you want the route logic to feel connected rather than fragmented after the Saejae effort.',
+      recoveryValue:
+        'A moderate reset point where the strain of the pass can settle before the longer river-led continuation.',
+      sleepValue:
+        'Works if the rider wants to separate the mountain crossing from the longer Nakdong-oriented run south.',
+      foodValue:
+        'Useful for a practical refuel with less pressure to turn the stop into a sightseeing chapter.',
+      terrainTransition:
+        'Sangju is where the ride stops feeling like pass-country and starts feeling like a corridor.',
+      nextLegLogic:
+        'From here the rider can lean into the rhythm of the Nakdong system rather than isolated inland segments.',
       highlights: ['Sangpung Bridge area', 'Nakdong corridor transition', 'Cycling-route continuity'],
     },
     {
@@ -433,6 +535,18 @@ const bicycleJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Daegu helps when the route needs an easier resupply and a more energetic city break before the final push south.',
       whyItEarnsTime:
         'It keeps the long cross-country ride from becoming only rural scenery and effort.',
+      decisionReason:
+        'Daegu matters when the rider needs a larger service city that still belongs to the route rather than feeling like a generic interruption.',
+      recoveryValue:
+        'Strong for urban recovery because supplies, food, and sleep options are broader than on smaller inland nodes.',
+      sleepValue:
+        'A practical overnight if the final southern push should start from a more resourced base.',
+      foodValue:
+        'One of the better places on this route to turn recovery into a real meal chapter before heading south again.',
+      terrainTransition:
+        'Daegu loosens the ride out of pure inland effort and starts shifting it into a southern metropolitan rhythm.',
+      nextLegLogic:
+        'After Daegu, the route can either stay disciplined and efficient or soften into quieter lower-river stops.',
       highlights: ['Seomun Market', 'Urban services', 'Riverside access'],
     },
     {
@@ -447,6 +561,18 @@ const bicycleJungangRoute: TransportRouteVariant = {
       stayAdvice: 'Keep Changnyeong if you want a softer late-stage stop between the big city reset and the Busan finish.',
       whyItEarnsTime:
         'It preserves the river-route identity deeper into the south before the final metropolitan arrival.',
+      decisionReason:
+        'Changnyeong matters when the rider wants one more calm southern chapter before the finish tightens toward Busan.',
+      recoveryValue:
+        'A quieter recovery node that lowers the tempo again after Daegu’s bigger urban reset.',
+      sleepValue:
+        'Useful as a final softer overnight if the rider does not want the last run to Busan to begin from a larger city mood.',
+      foodValue:
+        'Less about destination dining and more about simple, dependable pre-finish fuel.',
+      terrainTransition:
+        'This is where the route keeps its lower-river softness before the metropolitan southeast starts to gather.',
+      nextLegLogic:
+        'From Changnyeong, the ride can finish with a calmer psychological runway into Busan.',
       highlights: ['Nakdong riverside', 'Rural southern pacing', 'Quiet corridor feel'],
     },
   ],
@@ -629,6 +755,18 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
       stayAdvice: 'Keep Uljin if the ride should lean into smaller seaside rhythm rather than only larger destination towns.',
       whyItEarnsTime:
         'It supports the coast route’s strongest quality: repeated shoreline atmosphere over a long descent south.',
+      decisionReason:
+        'Keep Uljin when the coast route should feel expansive and lived-in rather than compressed into only famous anchor points.',
+      recoveryValue:
+        'A strong quiet-reset town where lower-intensity coast rhythm can recover the body better than a denser city stop.',
+      sleepValue:
+        'Useful as a smaller overnight if the east-coast route should preserve calm before the lower coast picks up more regional flavor.',
+      foodValue:
+        'Best as straightforward seaside fuel and local seafood rather than a destination dining chapter.',
+      terrainTransition:
+        'Uljin helps the east coast route stay open and continuous instead of jumping too quickly into the southeastern urban orbit.',
+      nextLegLogic:
+        'From here the route can keep stretching in smaller shoreline beats before richer food-and-port towns appear.',
       highlights: ['Seaside roads', 'Smaller harbors', 'Coastal pacing'],
     },
     {
@@ -643,6 +781,18 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
       stayAdvice: 'Use Yeongdeok if the east coast route should include food and fishing-port texture, not just scenery.',
       whyItEarnsTime:
         'It gives the coastal line a stronger local identity before the urban southeast begins to take over.',
+      decisionReason:
+        'Keep Yeongdeok when the coast route should gain flavor, not just mileage, before the final southern cities start dominating the mood.',
+      recoveryValue:
+        'More useful as a lighter sensory reset than a deep recovery base; the value is in local character and air rather than facilities.',
+      sleepValue:
+        'A good overnight if the route should include one smaller fishing-port chapter before larger southeastern hubs take over.',
+      foodValue:
+        'One of the clearest food stops on this coastal line because seafood identity is part of why the town matters.',
+      terrainTransition:
+        'Yeongdeok marks the point where the coast route starts feeling more specifically southeastern rather than generically east-coast.',
+      nextLegLogic:
+        'After Yeongdeok, the route begins preparing for the bigger hinge cities that set up the Busan finish.',
       highlights: ['Snow crab culture', 'Port atmosphere', 'Route 7 coastal roads'],
     },
     {
@@ -657,6 +807,18 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
       stayAdvice: 'Keep Pohang when you want one last meaningful coast chapter before entering the Busan orbit.',
       whyItEarnsTime:
         'It turns the last part of the coast ride into a transition rather than an abrupt ending.',
+      decisionReason:
+        'Choose Pohang when the route needs a proper hinge city before Busan rather than an abrupt final descent straight into the metro finish.',
+      recoveryValue:
+        'Useful as a stronger service reset after many smaller coast chapters, especially when the next step is the urban Busan landing.',
+      sleepValue:
+        'A very practical late overnight because it lets the coast route end with control instead of fatigue.',
+      foodValue:
+        'Works well for turning the last coastal chapter into a more substantial meal and resupply stop before Busan.',
+      terrainTransition:
+        'Pohang is where the route stops being an open-ended coast ride and starts becoming the approach to Busan.',
+      nextLegLogic:
+        'After Pohang, the route no longer needs more small coast chapters; it needs a clean or intentional handoff into Busan.',
       highlights: ['Homigot Sunrise Plaza', 'Yeongil Beach', 'Space Walk'],
     },
   ],

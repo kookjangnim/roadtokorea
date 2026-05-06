@@ -7,6 +7,22 @@ interface StopoverCitiesCardProps {
   isLast: boolean;
 }
 
+function getFallbackDecision(stopover: RouteStopover) {
+  return stopover.whyItEarnsTime;
+}
+
+function getFallbackRecovery(stopover: RouteStopover) {
+  return `Recovery value depends on route pace, but ${stopover.city} is most useful when you want the stop to improve the next leg rather than simply break distance.`;
+}
+
+function getFallbackSleepFood(stopover: RouteStopover) {
+  return stopover.stayAdvice;
+}
+
+function getFallbackNextLeg(stopover: RouteStopover) {
+  return `After ${stopover.city}, the route starts leaning more clearly into the next chapter rather than the previous one.`;
+}
+
 export default function StopoverCitiesCard({
   stopover,
   isLast,
@@ -62,15 +78,47 @@ export default function StopoverCitiesCard({
             </div>
             <div className="rounded-[1.25rem] bg-stone-50 p-4">
               <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
-                If you keep it
+                Why keep it
               </p>
-              <p className="mt-2 text-sm leading-7 text-stone-700">{stopover.stayAdvice}</p>
+              <p className="mt-2 text-sm leading-7 text-stone-700">
+                {stopover.decisionReason ?? getFallbackDecision(stopover)}
+              </p>
             </div>
             <div className="rounded-[1.25rem] bg-stone-50 p-4">
               <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
                 Why it matters
               </p>
               <p className="mt-2 text-sm leading-7 text-stone-700">{stopover.whyItEarnsTime}</p>
+            </div>
+          </div>
+
+          <div className="mt-3 grid gap-3 md:grid-cols-3">
+            <div className="rounded-[1.25rem] border border-stone-200 bg-white p-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
+                Recovery value
+              </p>
+              <p className="mt-2 text-sm leading-7 text-stone-700">
+                {stopover.recoveryValue ?? getFallbackRecovery(stopover)}
+              </p>
+            </div>
+            <div className="rounded-[1.25rem] border border-stone-200 bg-white p-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
+                Sleep and food
+              </p>
+              <p className="mt-2 text-sm leading-7 text-stone-700">
+                {stopover.sleepValue ?? getFallbackSleepFood(stopover)}
+                {stopover.foodValue ? ` ${stopover.foodValue}` : ''}
+              </p>
+            </div>
+            <div className="rounded-[1.25rem] border border-stone-200 bg-white p-4">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
+                Next chapter
+              </p>
+              <p className="mt-2 text-sm leading-7 text-stone-700">
+                {stopover.terrainTransition ?? ''}
+                {stopover.terrainTransition && stopover.nextLegLogic ? ' ' : ''}
+                {stopover.nextLegLogic ?? getFallbackNextLeg(stopover)}
+              </p>
             </div>
           </div>
 
