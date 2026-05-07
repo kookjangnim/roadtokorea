@@ -218,10 +218,14 @@ export default async function CityPage({
   const rawContent = cityData?.content.rendered || '';
   const heroImage = cityData ? getHeroImageFromHtml(rawContent) : null;
   const localDestinations = destinations.filter((dest) => dest.city.toLowerCase() === citySlug.toLowerCase());
+  const routeOption = getSeoulRouteOptionBySlug(citySlug);
+  const prefersGeneratedRouteHero =
+    Boolean(routeOption) && localCityData?.heroImage?.startsWith('/images/routes/route-1/');
   const heroImageUrl = heroImage
     ? normalizeWpMediaUrl(heroImage)
-    : localDestinations[0]?.imagePath || localCityData?.heroImage || null;
-  const routeOption = getSeoulRouteOptionBySlug(citySlug);
+    : prefersGeneratedRouteHero
+      ? localCityData?.heroImage || localDestinations[0]?.imagePath || null
+      : localDestinations[0]?.imagePath || localCityData?.heroImage || null;
   const supportProfile = getCitySupportProfile(citySlug);
   const transportGuidance = buildTransportGuidance(routeOption?.transport);
   const tags = [cityName, 'Korea route', 'Neighborhood guide', 'Travel notes'];
