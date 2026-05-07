@@ -15,7 +15,7 @@ const primaryLinks = [
   { name: 'Icons', href: '/tier-1/cities' },
   { name: 'Hubs', href: '/tier-2/cities' },
   { name: 'Detours', href: '/tier-4/cities' },
-  { name: 'Latest Stories', href: '#journal' },
+  { name: 'Route Guide', href: '/routes/seoul/busan' },
   { name: 'About', href: '/about' },
 ];
 
