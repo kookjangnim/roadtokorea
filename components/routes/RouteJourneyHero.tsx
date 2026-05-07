@@ -140,6 +140,7 @@ export default function RouteJourneyHero({
   toCity,
 }: RouteJourneyHeroProps) {
   const [progress, setProgress] = useState(0);
+  const chapterCount = Math.max(transportRoute.stopovers.length + 2, 2);
 
   const plotPoints = useMemo(
     () => buildPlotPoints(transportRoute, fromCity, toCity),
@@ -153,7 +154,7 @@ export default function RouteJourneyHero({
 
   useEffect(() => {
     const startTime = window.performance.now();
-    const duration = 5200;
+    const duration = Math.max(9600, chapterCount * 2200);
     let frameId = 0;
 
     const tick = (now: number) => {
@@ -165,7 +166,7 @@ export default function RouteJourneyHero({
 
     frameId = window.requestAnimationFrame(tick);
     return () => window.cancelAnimationFrame(frameId);
-  }, [transportRoute.id]);
+  }, [chapterCount, transportRoute.id]);
 
   const progressWidth = `${Math.max(8, progress * 100)}%`;
 
