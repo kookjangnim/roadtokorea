@@ -12,6 +12,7 @@ import { tier2Cities } from '@/data/tier2Cities';
 import { tier4Cities } from '@/data/tier4Cities';
 import { destinations, districtToEnglish, type Destination } from '@/data/destinations';
 import CitySupportMap from '@/components/city-detail/CitySupportMap';
+import CityMediaReferences from '@/components/city-detail/CityMediaReferences';
 import { getCitySupportProfile } from '@/data/citySupportProfiles';
 import {
   buildOpenStreetMapDirectionsUrl,
@@ -661,6 +662,11 @@ export default async function CityPage({
                     </article>
                   ))}
                 </div>
+
+                <CityMediaReferences
+                  officialReferences={supportProfile.officialReferences}
+                  videoReferences={supportProfile.videoReferences}
+                />
 
                 <div className="mt-8 grid gap-4 xl:grid-cols-3">
                   {supportProfile.sections.map((section) => (

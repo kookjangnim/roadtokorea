@@ -468,8 +468,8 @@ const bicycleJungangRoute: TransportRouteVariant = {
       citySlug: 'chungju',
       tier: 3,
       coordinates: { lat: 36.991, lng: 127.926 },
-      travelTimeFromPrevious: '4-5h',
-      cumulativeTime: '4-5h',
+      travelTimeFromPrevious: '8-10h',
+      cumulativeTime: '8-10h',
       pitch:
         'A lake-and-hot-spring recovery city where long-distance riders can finally stop riding on capital momentum and prepare properly for the Saejae crossing ahead.',
       routeRole: 'Pre-Saejae recovery base',

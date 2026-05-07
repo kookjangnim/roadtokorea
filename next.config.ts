@@ -56,6 +56,16 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'upload.wikimedia.org',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'tong.visitkorea.or.kr',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+        pathname: '/**',
       }
     ],
   },

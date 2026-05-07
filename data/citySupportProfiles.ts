@@ -47,6 +47,28 @@ export interface CitySupportProfileVisual {
   licenseLabel: string;
 }
 
+export interface CitySupportOfficialReference {
+  title: string;
+  eyebrow: string;
+  image: string;
+  alt: string;
+  body: string;
+  sourceLabel: string;
+  sourceHref: string;
+  licenseLabel: string;
+  usageNote: string;
+}
+
+export interface CitySupportVideoReference {
+  title: string;
+  eyebrow: string;
+  youtubeId: string;
+  href: string;
+  body: string;
+  channelLabel: string;
+  whyWatch: string;
+}
+
 export interface CitySupportProfile {
   slug: string;
   city: string;
@@ -66,6 +88,8 @@ export interface CitySupportProfile {
   decisions: CitySupportProfileDecision[];
   stayZones?: CitySupportStayZone[];
   visuals: CitySupportProfileVisual[];
+  officialReferences?: CitySupportOfficialReference[];
+  videoReferences?: CitySupportVideoReference[];
   points: CitySupportPoint[];
 }
 
@@ -193,6 +217,47 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/chungju/support-3-generated-v1.png',
         licenseLabel: 'Internal',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official image',
+        title: 'Suanbo footbath is the clearest recovery proof point',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/51/3343351_image2_1.jpg',
+        alt: 'Official VisitKorea image of Suanbo footbath in Chungju',
+        body:
+          'This is the most direct official image for the recovery logic on this page. It shows why Suanbo is more than a generic inland overnight: the stop is built around warm-reset culture.',
+        sourceLabel: 'VisitKorea tourism data page',
+        sourceHref: 'https://data.visitkorea.or.kr/resource/3343355',
+        licenseLabel: 'KTO Open API',
+        usageNote:
+          'Korea Tourism Organization says its tourism OpenAPI provides only information selected for free use without copyright restrictions.',
+      },
+      {
+        eyebrow: 'Official image',
+        title: 'Tangeumho gives Chungju a slower outdoor edge',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/00/3494900_image2_1.jpg',
+        alt: 'Official VisitKorea image of Tangeumho Rainbow Road in Chungju',
+        body:
+          'This official lakeside image supports the second half of the Chungju story: not just baths and sleep, but a calmer waterside chapter that lets the city register before the route tightens again.',
+        sourceLabel: 'VisitKorea tourism data page',
+        sourceHref: 'https://data.visitkorea.or.kr/resource/2666753',
+        licenseLabel: 'KTO Open API',
+        usageNote:
+          'Best treated as a directly credited tourism-data image rather than a decorative generic hero. Keep the source link visible.',
+      },
+    ],
+    videoReferences: [
+      {
+        eyebrow: 'Local video reference',
+        title: 'Tangeum Lake bike path gives the rider view of Chungju',
+        youtubeId: '2wywFCzEubU',
+        href: 'https://www.youtube.com/watch?v=2wywFCzEubU',
+        body:
+          'This video is useful because it shows how Chungju actually reads to riders: river edge, certification logic, and the feel of the transition before the Saejae side starts to matter.',
+        channelLabel: '동네노는형TV',
+        whyWatch:
+          'Watch this when you want the city to feel real before deciding whether the stop should be practical only or part of the trip identity.',
       },
     ],
     points: [

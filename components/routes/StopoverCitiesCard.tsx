@@ -1,10 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { RouteStopover } from '@/data/routeStopovers';
+import { tier2Cities } from '@/data/tier2Cities';
+import { tier4Cities } from '@/data/tier4Cities';
 
 interface StopoverCitiesCardProps {
   stopover: RouteStopover;
   isLast: boolean;
+}
+
+function getStopoverImage(stopover: RouteStopover) {
+  const tier2Hero = tier2Cities[stopover.citySlug]?.heroImage;
+  const tier4Hero = tier4Cities[stopover.citySlug]?.heroImage;
+  return tier2Hero || tier4Hero || '/images/placeholder.png';
 }
 
 function getCityGuideHref(stopover: RouteStopover) {
@@ -36,12 +44,14 @@ export default function StopoverCitiesCard({
   stopover,
   isLast,
 }: StopoverCitiesCardProps) {
+  const stopoverImage = getStopoverImage(stopover);
+
   return (
     <article className="border-b border-stone-100 p-6 last:border-0">
       <div className="flex flex-col gap-6 md:flex-row">
         <div className="relative h-44 w-full overflow-hidden rounded-[1.5rem] bg-stone-100 md:h-32 md:w-40">
           <Image
-            src="/images/placeholder.png"
+            src={stopoverImage}
             alt={stopover.city}
             fill
             sizes="(max-width: 768px) 100vw, 160px"
