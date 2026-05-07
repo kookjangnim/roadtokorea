@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
 import StaticPageShell from '@/components/StaticPageShell';
+import { getSiteUrl } from '@/lib/site-config';
+
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'About RoadToKorea',
   description:
     'Learn what RoadToKorea covers, who it is for, and how the site approaches Korea travel planning.',
+  alternates: {
+    canonical: `${siteUrl}/about`,
+  },
 };
 
 export default function AboutPage() {

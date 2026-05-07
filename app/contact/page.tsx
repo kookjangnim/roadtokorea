@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
 import StaticPageShell from '@/components/StaticPageShell';
+import { getSiteUrl } from '@/lib/site-config';
+
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'Contact RoadToKorea',
   description:
     'Contact RoadToKorea for travel feedback, corrections, partnerships, and editorial questions.',
+  alternates: {
+    canonical: `${siteUrl}/contact`,
+  },
 };
 
 export default function ContactPage() {

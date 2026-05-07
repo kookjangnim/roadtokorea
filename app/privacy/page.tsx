@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
 import StaticPageShell from '@/components/StaticPageShell';
+import { getSiteUrl } from '@/lib/site-config';
+
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
     'Read the RoadToKorea privacy policy, including cookie use, advertising disclosures, and contact details.',
+  alternates: {
+    canonical: `${siteUrl}/privacy`,
+  },
 };
 
 export default function PrivacyPage() {
