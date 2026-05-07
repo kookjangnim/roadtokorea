@@ -122,7 +122,7 @@ function getPointAtProgress(points: PlotPoint[], progress: number) {
 function getActiveIndex(points: PlotPoint[], progress: number) {
   if (points.length <= 1) return 0;
   const scaled = progress * (points.length - 1);
-  return clamp(Math.round(scaled), 0, points.length - 1);
+  return clamp(Math.floor(scaled + 0.0001), 0, points.length - 1);
 }
 
 function getUpcomingStopover(stopovers: RouteStopover[], activeCity: string) {
