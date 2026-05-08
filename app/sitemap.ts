@@ -5,7 +5,6 @@ import { getSiteUrl } from '@/lib/site-config';
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = getSiteUrl();
 
-    // Static routes
     const staticRoutes: MetadataRoute.Sitemap = [
         {
             url: `${baseUrl}`,
@@ -13,30 +12,35 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             changeFrequency: 'daily',
             priority: 1,
         },
-        // Tier pages
         {
-            url: `${baseUrl}/tier-1/cities`,
+            url: `${baseUrl}/updated-cities`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
-            priority: 0.8,
+            priority: 0.9,
         },
         {
-            url: `${baseUrl}/tier-2/cities`,
+            url: `${baseUrl}/routes/seoul/busan`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
-            priority: 0.8,
+            priority: 0.9,
         },
         {
-            url: `${baseUrl}/tier-3/cities`,
+            url: `${baseUrl}/about`,
             lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
+            changeFrequency: 'monthly',
+            priority: 0.5,
         },
         {
-            url: `${baseUrl}/tier-4/cities`,
+            url: `${baseUrl}/contact`,
             lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
+            changeFrequency: 'monthly',
+            priority: 0.4,
+        },
+        {
+            url: `${baseUrl}/privacy`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.3,
         },
     ];
 

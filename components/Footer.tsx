@@ -3,9 +3,9 @@ import Link from 'next/link';
 const footerExplore = [
   { name: 'Updated Cities', href: '/updated-cities' },
   { name: 'Seoul to Busan', href: '/routes/seoul/busan' },
-  { name: 'Tier 1 Anchors', href: '/tier-1/cities' },
-  { name: 'Tier 2 Longer Stays', href: '/tier-2/cities' },
-  { name: 'Quiet Detours', href: '/tier-4/cities' },
+  { name: 'Daejeon', href: '/tier-2/daejeon' },
+  { name: 'Gangneung', href: '/tier-1/gangneung' },
+  { name: 'Uljin', href: '/tier-4/uljin' },
 ];
 
 const footerRoutes = [
