@@ -1595,28 +1595,6 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         sourceHref: '/images/routes/route-1/cheonan/hero-generated-v1.png',
         licenseLabel: 'Project editorial asset',
       },
-      {
-        eyebrow: 'First-night logic',
-        title: 'The smartest early overnight is often the least dramatic one',
-        image: '/images/routes/route-1/cheonan/hero-generated-v1.png',
-        alt: 'Editorial route image for Cheonan first-night logic',
-        body:
-          'Cheonan works best when the user can solve dinner, sleep, and the next morning restart without burning more planning energy.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/cheonan/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
-      {
-        eyebrow: 'Corridor discipline',
-        title: 'A controlled first break makes the rest of the route easier',
-        image: '/images/routes/route-1/cheonan/hero-generated-v1.png',
-        alt: 'Editorial route image for Cheonan corridor discipline',
-        body:
-          'The point is not to linger. The point is to keep the route organized enough that the bigger chapters farther south land better.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/cheonan/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
     ],
     points: [
       {
@@ -1749,28 +1727,6 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         alt: 'Editorial route image for Daejeon central corridor split',
         body:
           'The city earns its place when the user can immediately tell whether this is a tight station night or a more restorative Yuseong night.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/daejeon/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
-      {
-        eyebrow: 'Recovery option',
-        title: 'The better version of Daejeon is transit plus recovery',
-        image: '/images/routes/route-1/daejeon/hero-generated-v1.png',
-        alt: 'Editorial route image for Daejeon recovery split',
-        body:
-          'Yuseong matters because it turns a functional midpoint into a city that can actually return energy to the route.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/daejeon/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
-      {
-        eyebrow: 'Southbound commitment',
-        title: 'After Daejeon, Route 1 usually stops improvising',
-        image: '/images/routes/route-1/daejeon/hero-generated-v1.png',
-        alt: 'Editorial route image for Daejeon southbound commitment',
-        body:
-          'This is the controlled midpoint where the corridor starts feeling committed toward the stronger southern chapters rather than loosely paced between them.',
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/daejeon/hero-generated-v1.png',
         licenseLabel: 'Project editorial asset',
@@ -2051,28 +2007,6 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         sourceHref: '/images/routes/route-1/gumi/hero-generated-v1.png',
         licenseLabel: 'Project editorial asset',
       },
-      {
-        eyebrow: 'Last easy exhale',
-        title: 'The southern corridor lands better when this stop stays honest',
-        image: '/images/routes/route-1/gumi/hero-generated-v1.png',
-        alt: 'Editorial route image for Gumi pre-Daegu breather',
-        body:
-          'This is where the direct line steadies itself so the next city can land with more force instead of arriving half-spent.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gumi/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
-      {
-        eyebrow: 'Protected tomorrow',
-        title: 'A simpler night here can make Daegu feel like a real chapter',
-        image: '/images/routes/route-1/gumi/hero-generated-v1.png',
-        alt: 'Editorial route image for Gumi southbound handoff',
-        body:
-          'Gumi is worth keeping when the stop improves tomorrow, not because it competes with the bigger city after it.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gumi/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
     ],
     points: [
       {
@@ -2205,28 +2139,6 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         alt: 'Editorial route image for Changnyeong lower-river recovery',
         body:
           'This stop matters because the route can get stronger by quieting down. It is a late-stage reset, not a missed climax.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
-      {
-        eyebrow: 'Finish discipline',
-        title: 'A calmer night here makes Busan arrive better',
-        image: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
-        alt: 'Editorial route image for Changnyeong finish discipline',
-        body:
-          'Sleep, restore, and let the final metropolitan chapter land with cleaner energy than a dragged-out late route would allow.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
-      {
-        eyebrow: 'No last test',
-        title: 'The route does not need another big-city challenge before the finish',
-        image: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
-        alt: 'Editorial route image for Changnyeong late-route logic',
-        body:
-          'One quieter lower-river stop can turn the last stretch from tired continuation into composed arrival.',
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
         licenseLabel: 'Project editorial asset',
@@ -2521,28 +2433,6 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         alt: 'Editorial route image for Uljin coast continuity',
         body:
           'This is not the loudest east-coast stop, but it may be one of the most important for route shape because it keeps the shoreline from collapsing into only famous names.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/uljin/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
-      {
-        eyebrow: 'Quiet chapter',
-        title: 'The route benefits from one stretch that is more open than performative',
-        image: '/images/routes/route-1/uljin/hero-generated-v1.png',
-        alt: 'Editorial route image for Uljin quiet coast',
-        body:
-          'Uljin is where the east-sea line can simply be long, calm, and maritime without needing to prove itself through spectacle.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/uljin/hero-generated-v1.png',
-        licenseLabel: 'Project editorial asset',
-      },
-      {
-        eyebrow: 'Southward spacing',
-        title: 'A calmer chapter makes later coastal anchors land harder',
-        image: '/images/routes/route-1/uljin/hero-generated-v1.png',
-        alt: 'Editorial route image for Uljin southbound handoff',
-        body:
-          'The route becomes clearer when the bigger names do not arrive all at once and one coast chapter is allowed to do spacing work.',
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/uljin/hero-generated-v1.png',
         licenseLabel: 'Project editorial asset',
