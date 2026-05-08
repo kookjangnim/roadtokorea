@@ -112,6 +112,22 @@ export const updatedCities: UpdatedCity[] = [
     reason: 'Late-route hinge page now cleanly turns the long coast into a controlled final approach.',
     role: 'Late-coast hinge city',
   },
+  {
+    name: 'Jecheon',
+    slug: 'jecheon',
+    tier: 'tier-2',
+    href: '/tier-2/jecheon',
+    reason: 'Early inland threshold page now clearly explains why the route turns inward and how the first night should work.',
+    role: 'Inland threshold city',
+  },
+  {
+    name: 'Sangju',
+    slug: 'sangju',
+    tier: 'tier-2',
+    href: '/tier-2/sangju',
+    reason: 'Post-pass corridor page now gives the inland line a stable river-led handoff instead of a vague continuation.',
+    role: 'Nakdong corridor hinge',
+  },
 ];
 
 export const featuredUpdatedCities = updatedCities.slice(0, 6);
