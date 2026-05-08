@@ -10,6 +10,8 @@ Define `Route 2` as the second core route family on the site:
 This route should not behave like a shorter version of `Route 1`.
 It should behave like a different kind of trip: one where the route reaches Gangneung and opens the east coast rather than simply finishing at a destination.
 
+`Wonju` should be treated as part of this structure, not as an afterthought. It is the first meaningful inland junction hub on the eastbound side of Seoul and gives Route 2 stronger branching potential than a pure capital-to-coast line.
+
 ## Primary Route Identity
 
 `Seoul -> Gangneung` should be framed as a `Gangneung-opening` route, not just a `Gangneung-arrival` route.
@@ -17,6 +19,7 @@ It should behave like a different kind of trip: one where the route reaches Gang
 That means the editorial promise is:
 
 - Seoul gives the route a clear departure logic
+- Wonju provides the first eastbound inland release and junction logic
 - Gangneung is the first real east-coast threshold
 - the trip reads as a route that can stop at Gangneung or keep unfolding south along the shoreline
 
@@ -84,6 +87,9 @@ the easiest way to open the coast without overcomplicating the route
 Editorial frame:
 use this when Gangneung is the intended chapter and the route should feel elegant rather than exploratory
 
+Wonju treatment:
+not a mandatory stop, but an optional route-logic note that acknowledges where the inland eastbound line starts becoming structurally useful.
+
 ### Car
 
 Role:
@@ -94,6 +100,9 @@ Gangneung is the gateway to a longer shoreline sequence, not merely a single end
 
 Editorial frame:
 use this when the route should reach Gangneung and then remain open to Samcheok or deeper coast chapters
+
+Wonju treatment:
+primary early stopover and eastbound junction hub
 
 ### Bicycle
 
@@ -106,12 +115,16 @@ not one perfect official Seoul-to-Gangneung certification line, but a believable
 Editorial frame:
 use this when the ride should be understood as a route assembly rather than a single seamless official branded path
 
+Wonju treatment:
+optional inland setup city and practical junction before the ride commits more decisively toward the Gangwon eastbound line.
+
 ## City Strategy
 
 ### Cities already available and reusable
 
 These cities already have enough support depth to be useful for Route 2:
 
+- `Wonju`
 - `Gangneung`
 - `Samcheok`
 - `Uljin`
@@ -128,7 +141,6 @@ These may be useful later but are not required to ship Route 2:
 - `Sokcho`
 - `Yangyang`
 - `Goseong`
-- `Wonju`
 - `Yangpyeong`
 
 They are expansion candidates, not blockers.
@@ -141,6 +153,7 @@ Expected first-release behavior:
 
 - user can open a dedicated `Seoul -> Gangneung` route page
 - user can compare `KTX`, `car`, and `bicycle`
+- user can understand why `Wonju` matters as the first inland junction on the eastbound side
 - the route copy explains why Gangneung is a route threshold
 - the route can point forward into existing east-coast support cities
 
@@ -167,18 +180,26 @@ The KTX page should feel like:
 - an eastbound commitment
 - the least friction version of Route 2
 
+If Wonju appears here, it should appear lightly:
+
+- as a junction note
+- not as a required stopover
+- not as a false promise of a richer rail-stop route than this variant is meant to be
+
 ## Car Design
 
 The car version should be the editorial center of Route 2.
 
 It should answer:
 
+- why Wonju is the first meaningful inland junction rather than just another road city
 - why Gangneung is not just the destination but the point where the coast starts
 - when should the user stop at Gangneung and when should they continue toward Samcheok
 - why the route should remain open-ended after arrival
 
 This version should naturally reuse:
 
+- `Wonju`
 - `Gangneung`
 - `Samcheok`
 - optionally `Uljin` as a longer extension note
@@ -196,6 +217,7 @@ It should explicitly avoid claiming:
 Instead, it should explain:
 
 - Seoul-side official path logic exists
+- Wonju is a reasonable inland setup or junction city even if the full line is not one seamless official certification route
 - Gangwon east-coast path logic exists
 - the Seoul-to-Gangneung ride is a stitched corridor between those systems
 
@@ -213,6 +235,11 @@ The distinction should stay clear:
 
 Route 2 is shorter, cleaner, and more threshold-oriented.
 Route 1 is larger, more layered, and more terminally structured around Busan.
+
+Wonju is one of the clearest structural differences between them:
+
+- in Route 1, inland structure is about southbound crossing depth
+- in Route 2, Wonju gives the eastbound route its first branch-capable inland hinge
 
 ## Data And Architecture Design
 
@@ -237,9 +264,10 @@ Planned verification for the eventual implementation:
 
 1. confirm `Seoul -> Gangneung` resolves through the current route page system
 2. verify all three variants render
-3. verify reused east-coast stopover city links are correct
-4. verify bicycle copy does not overclaim official route continuity
-5. run frontend lint
+3. verify `Wonju` is framed correctly as a junction hub and not overclaimed in the KTX version
+4. verify reused east-coast stopover city links are correct
+5. verify bicycle copy does not overclaim official route continuity
+6. run frontend lint
 
 ## Risks
 
@@ -253,7 +281,12 @@ make Gangneung a route-threshold, not just an endpoint, and let the car version 
 Mitigation:
 frame Route 2 as a Gangneung-opening route family, while Route 1 east coast remains a Busan-ending route family.
 
-### Risk 3: bicycle language becomes inaccurate
+### Risk 3: Wonju gets reduced to a generic middle stop
+
+Mitigation:
+frame Wonju explicitly as an inland junction hub and eastbound release point, not just a convenience pause.
+
+### Risk 4: bicycle language becomes inaccurate
 
 Mitigation:
 state clearly that this is a stitched corridor using official and practical linking segments rather than one single official certification line.
@@ -262,10 +295,11 @@ state clearly that this is a stitched corridor using official and practical link
 
 1. inspect the current `RouteData` structure in `routeStopovers.ts`
 2. define the new `Seoul -> Gangneung` route object
-3. create `KTX`, `car`, and `bicycle` variants
-4. reuse existing east-coast support cities where appropriate
-5. verify route-page rendering
-6. run lint
+3. define `Wonju` as the eastbound inland junction hub inside the route family
+4. create `KTX`, `car`, and `bicycle` variants
+5. reuse existing east-coast support cities where appropriate
+6. verify route-page rendering
+7. run lint
 
 ## Definition Of Done
 
@@ -273,6 +307,7 @@ Route 2 phase 1 is done when:
 
 - `Seoul -> Gangneung` exists as a first-class route family
 - `KTX`, `car`, and `bicycle` variants render inside the current route system
+- `Wonju` is clearly legible as the first inland junction hub on the route
 - Gangneung is framed as the coast-opening threshold
 - existing east-coast support cities can be reused naturally from this route
 - no major renderer or lint regressions remain
