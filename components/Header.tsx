@@ -12,9 +12,6 @@ const featuredCities = [
 
 const primaryLinks = [
   { name: 'Start Here', href: '/' },
-  { name: 'Icons', href: '/tier-1/cities' },
-  { name: 'Hubs', href: '/tier-2/cities' },
-  { name: 'Detours', href: '/tier-4/cities' },
   { name: 'Route Guide', href: '/routes/seoul/busan' },
   { name: 'About', href: '/about' },
 ];
