@@ -1045,7 +1045,383 @@ export const seoulToBusanRoute: RouteData = {
   },
 };
 
-const allRoutes: RouteData[] = [seoulToBusanRoute];
+const carSeoulGangneungRoute: TransportRouteVariant = {
+  id: 'yeongdong-eastbound',
+  routeCode: '2-0-b',
+  routeGroupCode: '2-0',
+  routeGroupLabel: 'Eastbound Opening',
+  label: 'Wonju Junction + Coast Opening',
+  routeName: 'Yeongdong Expressway via Wonju',
+  totalTravelTime: '2h 40m - 3h 30m',
+  totalDistance: '230 km',
+  summary:
+    'The strongest editorial version of Route 2: Seoul urgency loosens in Wonju, then the trip opens fully once Gangneung reaches the sea.',
+  bestFor:
+    'Self-drive trips that want a real eastbound shape instead of a simple destination transfer.',
+  tradeoff:
+    'It is still efficient, but the point is to let the route breathe through Wonju and stay open to a coastal second act.',
+  stopPattern:
+    'Best with one strong inland pause in Wonju and one decision point in Gangneung about whether to stop or keep rolling south.',
+  chooseWhen:
+    'Choose this when Gangneung should feel like the beginning of the coast and Wonju should matter as more than a highway blur.',
+  avoidWhen:
+    'Skip it if the only goal is to arrive in Gangneung as fast as possible without giving the route any structure of its own.',
+  pacingNote:
+    'This version works best when Wonju handles the inland release and Gangneung handles the coastal threshold, with Samcheok as the optional second act rather than a requirement.',
+  planningNotes: [
+    'Wonju is the route-defining city here because it is the first place the eastbound line starts feeling branch-capable instead of Seoul-adjacent.',
+    'Gangneung should be treated as a threshold city: users can stop there, but the route copy should leave the coast visibly open beyond it.',
+    'Samcheok is useful when the drive should prove that the eastbound route is not only about reaching one beach city and stopping.',
+  ],
+  stopovers: [
+    {
+      city: 'Wonju',
+      citySlug: 'wonju',
+      tier: 1,
+      coordinates: { lat: 37.3422, lng: 127.9202 },
+      travelTimeFromPrevious: '1h 20m',
+      cumulativeTime: '1h 20m',
+      pitch: 'An inland junction city where the route finally stops feeling like greater Seoul and starts pointing decisively east.',
+      routeRole: 'Eastbound inland hinge',
+      stayAdvice:
+        'Keep Wonju when you want the route to gain structure early, split the drive cleanly, or set up a more intentional eastbound run toward Gangneung.',
+      whyItEarnsTime:
+        'Wonju earns its place because it is not only a rest stop. It is the first city that can redirect the route north, south, or east without breaking the logic of the trip.',
+      decisionReason:
+        'Choose Wonju when you want Route 2 to feel authored from the interior rather than read like a straight blast from Seoul to the coast.',
+      recoveryValue:
+        'Its value is practical recovery through reset and reorientation: enough city function to soften the departure pace before the road starts committing to Gangwon.',
+      sleepValue:
+        'A strong early overnight if the route begins late, if weather complicates the eastbound move, or if the trip should treat Gangneung as a fresher day-two coast opening.',
+      foodValue:
+        'Best used for a substantial inland meal or dependable resupply before the route shifts from junction logic into destination logic.',
+      terrainTransition:
+        'Wonju is where the route moves out of capital gravity and starts behaving like a true eastbound corridor with multiple onward possibilities.',
+      nextLegLogic:
+        'After Wonju, the route no longer needs to justify itself as a transfer. It can aim cleanly at Gangneung or stay mentally open to a longer coast sequence.',
+      highlights: ['Eastbound junction logic', 'Dependable city services', 'Inland-to-Gangwon threshold'],
+    },
+    {
+      city: 'Gangneung',
+      citySlug: 'gangneung',
+      tier: 1,
+      coordinates: { lat: 37.7519, lng: 128.8761 },
+      travelTimeFromPrevious: '1h 30m',
+      cumulativeTime: '2h 50m',
+      pitch: 'The first real sea-facing threshold where the route stops being inland movement and starts reading like an east coast chapter.',
+      routeRole: 'Coast-opening threshold',
+      stayAdvice:
+        'Keep Gangneung if the route should land softly at the coast, but do not write it like a hard ending when the shoreline can still keep unfolding.',
+      whyItEarnsTime:
+        'Gangneung earns time because it changes the geometry of the trip. After this point, the route can become a chain of sea-facing choices instead of a single arrival.',
+      decisionReason:
+        'Choose Gangneung when the route needs a true threshold city rather than a simple endpoint with no onward story.',
+      recoveryValue:
+        'Sea air, easier pacing, and a calmer shoreline mood make Gangneung one of the clearest emotional resets on the eastbound line.',
+      sleepValue:
+        'A natural overnight because it lets the coast begin with energy instead of being squeezed into the exhausted tail of a transfer day.',
+      foodValue:
+        'Coffee, seafood, and coast-adjacent meals matter here because they reinforce the route identity shift from inland hinge to shoreline chapter.',
+      terrainTransition:
+        'Gangneung is the place where Route 2 fully crosses over from interior positioning into east coast presence.',
+      nextLegLogic:
+        'From Gangneung, the route can stop honorably or continue south into Samcheok if the user wants proof that the coast is really open.',
+      highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
+    },
+    {
+      city: 'Samcheok',
+      citySlug: 'samcheok',
+      tier: 4,
+      coordinates: { lat: 37.4499, lng: 129.1652 },
+      travelTimeFromPrevious: '1h 10m',
+      cumulativeTime: '4h',
+      pitch: 'A quieter shoreline continuation that proves Gangneung was the opening of the coast, not just the end of the road.',
+      routeRole: 'Optional second act',
+      stayAdvice:
+        'Use Samcheok if you want the coast to unfold in chapters and avoid making Gangneung carry the entire identity of Route 2 by itself.',
+      whyItEarnsTime:
+        'It confirms that the route can keep breathing after Gangneung and gives the eastbound family more than one sea-facing beat.',
+      highlights: ['Jangho Port', 'Hwanseon Cave', 'Samcheok Ocean Rail Bike'],
+    },
+  ],
+  routePath: [
+    [37.5665, 126.978],
+    [37.3422, 127.9202],
+    [37.7519, 128.8761],
+    [37.4499, 129.1652],
+  ],
+};
+
+const bicycleSeoulGangneungRoute: TransportRouteVariant = {
+  id: 'bicycle-wonju-gangneung',
+  routeCode: '2-0-c',
+  routeGroupCode: '2-0',
+  routeGroupLabel: 'Eastbound Opening',
+  label: 'Wonju Junction Ride',
+  routeName: 'Seoul to Gangneung via Wonju',
+  totalTravelTime: '2-4 days',
+  totalDistance: '220-260 km',
+  summary:
+    'A stitched eastbound bicycle corridor that uses Seoul-side path logic, practical inland connections through Wonju, and a coast-opening finish in Gangneung.',
+  bestFor:
+    'Riders who want an honest eastbound route concept rather than a false promise of one perfectly continuous certified line.',
+  tradeoff:
+    'It takes more planning discipline than a single official path, but it produces a much clearer Seoul-to-coast narrative.',
+  stopPattern:
+    'Best with Wonju as the setup hinge and Gangneung as the coast-opening finish, with Samcheok optional if the ride continues south.',
+  chooseWhen:
+    'Choose this when the ride should feel assembled with intention and when Wonju matters as a true inland branch city before the coast.',
+  avoidWhen:
+    'Skip it if the bike plan must be explained as one seamless official Seoul-to-Gangneung certification route.',
+  pacingNote:
+    'The route works best when Wonju absorbs setup and resupply pressure so the final move into Gangneung can feel like an arrival into a new chapter rather than a survival push.',
+  planningNotes: [
+    'Be explicit that this is a stitched corridor using official path logic where available and practical linking segments where necessary.',
+    'Wonju is the most useful inland hinge because it can absorb setup, weather, fatigue, and route-choice adjustments before the final eastbound commitment.',
+    'If the rider still has energy after Gangneung, Samcheok is the cleanest first proof that the route can convert into an east-coast sequence.',
+  ],
+  stopovers: [
+    {
+      city: 'Wonju',
+      citySlug: 'wonju',
+      tier: 1,
+      coordinates: { lat: 37.3422, lng: 127.9202 },
+      travelTimeFromPrevious: 'day 1 setup',
+      cumulativeTime: 'inland hinge',
+      pitch: 'The inland branch city that makes an eastbound ride plausible, adjustable, and easier to pace before the coast move.',
+      routeRole: 'Setup hinge',
+      stayAdvice:
+        'Keep Wonju when the ride needs a real setup city for food, rest, weather decisions, or route adjustments before the Gangwon push.',
+      whyItEarnsTime:
+        'Wonju earns time because it turns a vague eastbound idea into a manageable staged ride with real onward options.',
+      decisionReason:
+        'Choose Wonju when the bicycle version of Route 2 should feel deliberate and resilient instead of improvised end to end.',
+      recoveryValue:
+        'It is one of the better places on this line to recover from Seoul departure energy without giving up the eastbound momentum.',
+      sleepValue:
+        'A very sensible overnight if the ride should split into a setup day and a coast-opening day rather than force too much distance up front.',
+      foodValue:
+        'Practical resupply matters more than destination dining here; the point is to leave stocked, steady, and ready for the harder directional commitment.',
+      terrainTransition:
+        'Wonju marks the point where the route stops being capital escape and starts behaving like a targeted inland-to-coast ride.',
+      nextLegLogic:
+        'After Wonju, the rider can commit cleanly to Gangneung instead of carrying unresolved route choices deep into the day.',
+      highlights: ['Setup flexibility', 'Resupply strength', 'Eastbound branch logic'],
+    },
+    {
+      city: 'Gangneung',
+      citySlug: 'gangneung',
+      tier: 1,
+      coordinates: { lat: 37.7519, lng: 128.8761 },
+      travelTimeFromPrevious: '1 long day or 1.5 days',
+      cumulativeTime: 'coast opening',
+      pitch: 'The coast-opening finish where the ride finally reaches sea-facing air and changes from inland effort to shoreline reward.',
+      routeRole: 'Coastal finish',
+      stayAdvice:
+        'Keep Gangneung as the emotional payoff of the ride even if the trip later continues south, because this is where the eastbound concept fully lands.',
+      whyItEarnsTime:
+        'It is the city that makes the stitched corridor worth building in the first place by delivering a clean and legible arrival into the east coast.',
+      highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
+    },
+    {
+      city: 'Samcheok',
+      citySlug: 'samcheok',
+      tier: 4,
+      coordinates: { lat: 37.4499, lng: 129.1652 },
+      travelTimeFromPrevious: '3-4h',
+      cumulativeTime: 'optional coast continuation',
+      pitch: 'A small but useful continuation chapter if the rider wants Gangneung to open the coast rather than close the route.',
+      routeRole: 'Optional continuation',
+      stayAdvice:
+        'Use Samcheok only when the ride should convert into an east coast sequence; it is not required to make the Route 2 concept work.',
+      whyItEarnsTime:
+        'It gives the bicycle version a believable second act without pretending the whole trip must keep running south.',
+      highlights: ['Jangho Port', 'Shoreline roads', 'Smaller coast rhythm'],
+    },
+  ],
+  routePath: [
+    [37.5665, 126.978],
+    [37.3422, 127.9202],
+    [37.7519, 128.8761],
+    [37.4499, 129.1652],
+  ],
+};
+
+export const seoulToGangneungRoute: RouteData = {
+  routeCode: '2',
+  from: 'Seoul',
+  fromSlug: 'seoul',
+  to: 'Gangneung',
+  toSlug: 'gangneung',
+  href: '/routes/seoul/gangneung',
+  routeLabel: 'Seoul to Gangneung',
+  headline: 'An eastbound route that hinges on Wonju before the coast opens.',
+  overview:
+    'Route 2 is not a smaller Seoul-to-Busan. It is the cleanest Seoul-origin eastbound line on the site: Wonju releases the route inland, then Gangneung turns it toward the sea.',
+  destinationPitch:
+    'Use this route when Gangneung should feel like a threshold city and when the trip might stop there or keep unfolding into the east coast.',
+  bestUseCases: [
+    'Trips that want a shorter flagship route without losing clear stopover logic.',
+    'Eastbound itineraries where Wonju should matter as a real junction city, not just a pass-through.',
+    'Travelers choosing between direct arrival, coast-opening driving, or an honest stitched bicycle corridor.',
+  ],
+  routePromise: [
+    'Wonju gives the route a real inland hinge before Gangneung changes the geometry into a sea-facing chapter.',
+    'You can keep this route elegant and direct or let it open into Samcheok and the wider east coast.',
+    'Route 2 stays Seoul-first while feeling clearly different from the long southbound logic of Route 1.',
+  ],
+  editorialNotes: [
+    'Wonju is the structural difference-maker here; if it disappears from the route logic, Route 2 gets flatter and less memorable.',
+    'Treat Gangneung as a threshold, not only a destination, so the route still feels open after arrival.',
+    'For cycling, credibility matters more than romance: describe the line as stitched, practical, and worth doing for the coast payoff.',
+  ],
+  transports: {
+    KTX: {
+      mode: 'KTX',
+      id: 'ktx-eastbound',
+      routeCode: '2-0-a',
+      routeGroupCode: '2-0',
+      routeGroupLabel: 'Eastbound Opening',
+      label: 'KTX',
+      routeName: 'Gangneung Line',
+      totalTravelTime: '1h 50m - 2h 10m',
+      totalDistance: '229 km',
+      summary:
+        'The cleanest eastbound route when the main goal is to reach the coast elegantly and start the Gangneung chapter with full energy.',
+      bestFor: 'Short trips, simple route logic, and travelers who want Gangneung to open quickly without adding road complexity.',
+      tradeoff:
+        'It keeps the route beautiful and simple, but Wonju stays mostly a planning hinge rather than a fully activated stop.',
+      stopPattern:
+        'Best fully direct or with one optional Wonju pause only if the trip needs a softer inland split before the coast.',
+      chooseWhen:
+        'Choose KTX when the eastbound move should stay light, fast, and easy to understand while still belonging to a real route family.',
+      avoidWhen:
+        'Skip KTX as the main plan if Wonju should be deeply inhabited or if the route needs flexible onward movement into Samcheok and the lower coast.',
+      pacingNote:
+        'Rail keeps Route 2 elegant. Let Wonju stay as a route-logic note unless the trip truly benefits from dividing the move before Gangneung.',
+      planningNotes: [
+        'This is the least complicated way to make Gangneung the opening chapter of the trip.',
+        'Wonju matters here more as a structural reference point on the eastbound line than as a mandatory stop everyone should force into the rail plan.',
+        'If the route continues south after arrival, preserve enough energy in Gangneung to treat the coast as a second chapter instead of a rushed add-on.',
+      ],
+      stopovers: [
+        {
+          city: 'Wonju',
+          citySlug: 'wonju',
+          tier: 1,
+          coordinates: { lat: 37.3422, lng: 127.9202 },
+          travelTimeFromPrevious: '50m',
+          cumulativeTime: '50m',
+          pitch: 'A meaningful inland junction on the eastbound side of Seoul, best treated on rail as an optional split rather than a required chapter.',
+          routeRole: 'Optional junction note',
+          stayAdvice:
+            'Only keep Wonju on KTX if the route needs a calmer inland break before Gangneung or if the trip specifically wants to activate the junction-city logic.',
+          whyItEarnsTime:
+            'Wonju earns mention because it explains the route structure, even when the fastest rail version does not need to stop there for everyone.',
+          highlights: ['Inland hinge logic', 'Optional rail split', 'Practical city reset'],
+        },
+        {
+          city: 'Gangneung',
+          citySlug: 'gangneung',
+          tier: 1,
+          coordinates: { lat: 37.7519, lng: 128.8761 },
+          travelTimeFromPrevious: '1h',
+          cumulativeTime: '1h 50m',
+          pitch: 'The clean east-coast threshold where the route can finally trade inland movement for sea-facing calm.',
+          routeRole: 'Coast-opening arrival',
+          stayAdvice:
+            'Gangneung is the main event on rail, so keep the arrival day light enough to let the coast feel like the start of something, not the exhausted end of transit.',
+          whyItEarnsTime:
+            'It is the city that makes the direct train worth it by converting a simple transfer into a clear and memorable eastbound opening.',
+          highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
+        },
+      ],
+      routePath: [
+        [37.5665, 126.978],
+        [37.3422, 127.9202],
+        [37.7519, 128.8761],
+      ],
+    },
+    car: {
+      mode: 'car',
+      variants: [carSeoulGangneungRoute],
+      ...carSeoulGangneungRoute,
+    },
+    bicycle: {
+      mode: 'bicycle',
+      variants: [bicycleSeoulGangneungRoute],
+      ...bicycleSeoulGangneungRoute,
+    },
+    bus: {
+      mode: 'bus',
+      id: 'bus-eastbound',
+      routeCode: '2-0-d',
+      routeGroupCode: '2-0',
+      routeGroupLabel: 'Eastbound Opening',
+      label: 'Bus',
+      routeName: 'Express + Intercity Eastbound',
+      totalTravelTime: '3h 10m - 3h 50m',
+      totalDistance: '229 km',
+      summary:
+        'A practical eastbound middle path that keeps the route understandable while still letting Wonju matter as the inland hinge before Gangneung.',
+      bestFor: 'Budget-conscious eastbound trips and travelers who want more flexibility than KTX without committing to a full self-drive plan.',
+      tradeoff:
+        'It is slower and less elegant than rail, but it can express the Wonju hinge more clearly while staying simpler than driving.',
+      stopPattern:
+        'Best fully direct or with one Wonju split when the trip should break the move into inland hinge then coast threshold.',
+      chooseWhen:
+        'Choose the bus when cost and simple route logic matter more than speed, but you still want Route 2 to feel like a sequence and not just transportation.',
+      avoidWhen:
+        'Avoid it if the trip needs maximum spontaneity after Gangneung or if the coast continuation is central to the day.',
+      pacingNote:
+        'The bus version is strongest when it keeps one clean hinge in Wonju and then lets Gangneung carry the route payoff.',
+      planningNotes: [
+        'Wonju is the most useful stop if the eastbound ride should be split into something humane instead of forced all at once.',
+        'Gangneung should still read as the threshold city, not just the place where the bus happens to stop.',
+        'If the route will continue south afterward, do not waste all flexibility before reaching the coast.',
+      ],
+      stopovers: [
+        {
+          city: 'Wonju',
+          citySlug: 'wonju',
+          tier: 1,
+          coordinates: { lat: 37.3422, lng: 127.9202 },
+          travelTimeFromPrevious: '1h 20m',
+          cumulativeTime: '1h 20m',
+          pitch: 'The inland hinge that makes the eastbound line feel staged and manageable instead of one long utilitarian sit.',
+          routeRole: 'Practical hinge',
+          stayAdvice:
+            'Use Wonju when the bus route should gain a real middle chapter and a more breathable transition before Gangneung.',
+          whyItEarnsTime:
+            'It gives the lower-cost version of Route 2 genuine structure instead of leaving it as a compromise transport mode.',
+          highlights: ['Inland split', 'Strong services', 'Eastbound reset'],
+        },
+        {
+          city: 'Gangneung',
+          citySlug: 'gangneung',
+          tier: 1,
+          coordinates: { lat: 37.7519, lng: 128.8761 },
+          travelTimeFromPrevious: '1h 40m',
+          cumulativeTime: '3h',
+          pitch: 'The sea-facing threshold where the practical eastbound route finally cashes out into coast atmosphere.',
+          routeRole: 'Threshold arrival',
+          stayAdvice:
+            'Keep Gangneung as the proper coast-opening city and do not overload the day so the shoreline still feels like a reward on arrival.',
+          whyItEarnsTime:
+            'It lets the bus version end with a clear destination payoff rather than only a cheaper transfer.',
+          highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
+        },
+      ],
+      routePath: [
+        [37.5665, 126.978],
+        [37.3422, 127.9202],
+        [37.7519, 128.8761],
+      ],
+    },
+  },
+};
+
+const allRoutes: RouteData[] = [seoulToBusanRoute, seoulToGangneungRoute];
 
 export function getAllRouteData(): RouteData[] {
   return allRoutes;
