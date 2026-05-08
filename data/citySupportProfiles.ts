@@ -1525,17 +1525,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Cheonan is not a major destination map here. It is a first-break map for understanding where to pause, snack, or split the early corridor without overcomplicating the route.',
     mapCenter: { lat: 36.8157, lng: 127.1138 },
     supportSummary:
-      'Cheonan works best as an easy first reset. The station-and-terminal grid makes the stop simple, while temple-side or museum-side pauses add just enough local grounding to keep the route from feeling mechanical.',
+      'Cheonan works best as the route’s first control point. The station-and-terminal grid makes the first night easy, while a softer outer-corridor option keeps the opening chapter from feeling rushed or mechanical.',
     roleSummary:
-      'On Route 1, Cheonan is the low-stakes first break. It earns space because it softens the first southbound block before bigger route decisions arrive further down the corridor.',
+      'On Route 1, Cheonan is the best early-break city. It earns space because it turns a hurried Seoul departure into an organized route with cleaner pacing and lower first-day friction.',
     staySummary:
-      'Most travelers do not need a long Cheonan stay, but the city becomes useful when you want an uncomplicated first night or a first meal that breaks the Seoul momentum cleanly.',
+      'Most travelers do not need a long Cheonan stay, but the city becomes highly useful when you want late-start forgiveness, an uncomplicated first night, or a clean relaunch toward the central corridor the next morning.',
     foodSummary:
-      'This is a snack-and-reset city more than a destination dining city. Walnut-cookie logic, practical meals, and quick turnaround timing matter more than a headline restaurant hunt.',
+      'This is practical first-day eating at its best: walnut-cookie pickups, quick Korean comfort meals, and dependable breakfast-before-departure logic rather than destination dining theatrics.',
     nextLegSummary:
-      'After Cheonan the route usually sharpens. The next chapter either stays practical toward Daejeon or starts to feel more purposefully southbound.',
+      'After Cheonan the route usually stops improvising. The next move into Daejeon or the deeper direct corridor feels cleaner because the opening block has already been settled properly.',
     accommodationNote:
-      'Strongest stay-planning angle: practical station-side stays for late arrivals and low-friction first overnights.',
+      'Strongest stay-planning angle: station-side low-friction stays for late Seoul departures and simple first-night resets.',
     sections: [
       {
         title: 'Why Cheonan deserves a short stop',
@@ -1555,67 +1555,67 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     ],
     decisions: [
       {
-        title: 'Keep it quick',
-        bestFor: 'Travelers who only need a first coffee, snack, or low-stakes pause.',
+        title: 'Break the first day here',
+        bestFor: 'Late Seoul departures, families, nervous first-time route users, and anyone who wants the trip to settle fast.',
         why:
-          'Cheonan works well when the stop is short and functional. It lets the route breathe without trying to become a full chapter.',
+          'Cheonan is the easiest place to convert a shaky departure day into a clean overnight without losing momentum.',
       },
       {
-        title: 'Sleep once and move on',
-        bestFor: 'Late departures from Seoul or travelers who want the first night to be calm and cheap.',
+        title: 'Use it as a meal-and-reset checkpoint',
+        bestFor: 'Travelers who do not need a sleep stop but do need one real pause before Daejeon logic begins.',
         why:
-          'A short overnight here can be cleaner than forcing the route deeper on a tired first day.',
+          'It gives Route 1 a structured first exhale without asking for a major detour or extra planning energy.',
       },
     ],
     stayZones: [
       {
-        title: 'Keep the station-side grid',
-        areaLabel: 'Station core',
-        bestFor: 'Late arrivals and short overnights.',
+        title: 'Hold the station-and-terminal grid',
+        areaLabel: 'Cheonan Station / terminal side',
+        bestFor: 'Late arrivals, short overnights, and the best first-night insurance policy on the route.',
         why:
-          'The station and terminal area keeps the stop simple and protects the next morning departure.',
+          'This side keeps dinner, check-in, and the next morning departure tightly organized when the first day has already run long.',
       },
       {
-        title: 'Touch the slower outer edge',
-        areaLabel: 'Temple side',
-        bestFor: 'Travelers who want one softer local note before returning to the corridor.',
+        title: 'Use the slower outer corridor',
+        areaLabel: 'Asan / Onyang side pocket',
+        bestFor: 'Travelers who want one calmer overnight before rejoining the corridor.',
         why:
-          'A brief detour here gives the stop more texture without turning it into a separate destination.',
+          'This is the softer version of the stop when you want less station-core energy but still need an easy handoff back into Route 1.',
       },
     ],
     visuals: [
       {
-        eyebrow: 'First break',
-        title: 'Cheonan works best when the first pause stays simple',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Cheonan route support',
+        eyebrow: 'Early reset',
+        title: 'Cheonan is where Route 1 becomes manageable',
+        image: '/images/routes/route-1/cheonan/hero-generated-v1.png',
+        alt: 'Editorial route image for Cheonan early reset',
         body:
-          'This city earns time by reducing pressure early. Its usefulness comes from rhythm, not spectacle.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'This city earns time by turning the rushed Seoul exit into a calmer, more legible route opening.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/cheonan/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
-        eyebrow: 'Corridor calm',
-        title: 'A low-drama first stop can strengthen the whole route',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Cheonan corridor stop',
+        eyebrow: 'First-night logic',
+        title: 'The smartest early overnight is often the least dramatic one',
+        image: '/images/routes/route-1/cheonan/hero-generated-v1.png',
+        alt: 'Editorial route image for Cheonan first-night logic',
         body:
-          'Cheonan is where Route 1 can stop feeling like a rush out of Seoul and start feeling paced.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'Cheonan works best when the user can solve dinner, sleep, and the next morning restart without burning more planning energy.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/cheonan/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
-        eyebrow: 'Practical overnight',
-        title: 'The value is in staying easy, not staying long',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Cheonan overnight logic',
+        eyebrow: 'Corridor discipline',
+        title: 'A controlled first break makes the rest of the route easier',
+        image: '/images/routes/route-1/cheonan/hero-generated-v1.png',
+        alt: 'Editorial route image for Cheonan corridor discipline',
         body:
-          'The city is strongest when it protects energy for the bigger chapters further south.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'The point is not to linger. The point is to keep the route organized enough that the bigger chapters farther south land better.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/cheonan/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
     ],
     points: [
@@ -1638,13 +1638,31 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         note: 'This is the kind of stop that lightens the route without slowing it down much.',
       },
       {
-        id: 'cheonan-temple-edge',
-        name: 'Temple-side checkpoint',
+        id: 'cheonan-purpose-stop',
+        name: 'Independence Hall side checkpoint',
         kind: 'checkpoint',
-        areaLabel: 'Outer edge',
-        coordinates: { lat: 36.8712, lng: 127.2158 },
-        summary: 'A softer outer-city pause when the first stop should feel a little more grounded.',
-        note: 'Useful if the route needs calm before dropping back into the direct corridor.',
+        areaLabel: 'Eastern edge',
+        coordinates: { lat: 36.7818, lng: 127.2299 },
+        summary: 'A short purpose stop when the first break should feel meaningful without becoming a major detour.',
+        note: 'Useful for travelers who want the opening pause to carry a little more weight than a meal-only stop.',
+      },
+      {
+        id: 'cheonan-asan-soft-overnight',
+        name: 'Asan-side softer overnight pocket',
+        kind: 'recovery',
+        areaLabel: 'Asan / Onyang side',
+        coordinates: { lat: 36.7896, lng: 127.0037 },
+        summary: 'A calmer side-pocket for travelers who want to stay early without sleeping directly in the station grid.',
+        note: 'This is the better choice when the first night should feel quieter before the route sharpens again.',
+      },
+      {
+        id: 'cheonan-supplies-belt',
+        name: 'Terminal meal and supply belt',
+        kind: 'food',
+        areaLabel: 'Terminal side',
+        coordinates: { lat: 36.8196, lng: 127.1567 },
+        summary: 'The easiest place to solve dinner, supplies, coffee, and a fast next-morning restart in one compact zone.',
+        note: 'Use this when the route needs efficient first-day logistics more than atmosphere.',
       },
       {
         id: 'cheonan-daejeon-handoff',
@@ -1665,17 +1683,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Daejeon is a support map for central overnights, hot-spring-adjacent stays, and practical onward movement. It matters because the route can split here cleanly without becoming dramatic.',
     mapCenter: { lat: 36.3504, lng: 127.3845 },
     supportSummary:
-      'Daejeon works as the cleanest central split on Route 1. Station access, Yuseong-side recovery, and straightforward food zones make it one of the easiest cities to use well.',
+      'Daejeon works as the corridor’s cleanest choose-your-version overnight. Station-core efficiency and Yuseong-side recovery both serve Route 1 well, which makes the city one of the easiest places to use with real intention.',
     roleSummary:
-      'This is the central stabilizer. Daejeon gives the direct corridor structure and protects energy without forcing a big editorial detour.',
+      'This is the central corridor decision city. Daejeon rebalances Route 1 before the stronger southern chapters begin and lets the user choose between pure logistics and a warmer body-reset version of the same stop.',
     staySummary:
-      'Station-core stays keep the transfer efficient. Yuseong-side stays make more sense when the overnight should feel more restorative and less purely logistical.',
+      'Station-core stays are for sleep-fast, eat-fast, leave-cleanly timing. Yuseong-side stays are for travelers who want the overnight to restore energy instead of merely storing it until morning.',
     foodSummary:
-      'The city is strongest when used for uncomplicated dinner, breakfast, and central-city reset culture rather than destination dining theatrics.',
+      'Food matters here in a concrete, route-support way: reliable dinners after late arrivals, easy breakfasts before departure, and uncomplicated meal zones that keep the split monetizable without becoming theatrical.',
     nextLegSummary:
-      'After Daejeon, the route usually becomes more committed. The next major handoff often points toward Daegu or a deeper inland chapter.',
+      'After Daejeon, Route 1 usually stops improvising. The next major move commits more clearly toward Daegu or the deeper south, which is why the quality of the split matters so much here.',
     accommodationNote:
-      'Strongest stay-planning angle: station-core business stays and Yuseong-side recovery stays.',
+      'Strongest stay-planning angle: station-core business stays for clean departures and Yuseong-side recovery stays for slower or fatigue-led overnights.',
     sections: [
       {
         title: 'Why Daejeon stays useful',
@@ -1695,67 +1713,67 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     ],
     decisions: [
       {
-        title: 'Stay by the station',
-        bestFor: 'Tight timing, rail travelers, and low-friction central splits.',
+        title: 'Keep the split tight at Daejeon Station',
+        bestFor: 'Rail users, one-night corridor travelers, and anyone trying to preserve next-day speed.',
         why:
-          'This is the cleanest choice when the overnight is there to preserve momentum rather than add a new chapter.',
+          'This is the strongest sleep-eat-leave-cleanly play in the middle of Route 1 when momentum matters more than atmosphere.',
       },
       {
-        title: 'Sleep toward Yuseong',
-        bestFor: 'Drivers, cyclists, and travelers who want recovery to matter more.',
+        title: 'Turn the overnight into recovery in Yuseong',
+        bestFor: 'Drivers, cyclists, longer itineraries, and travelers arriving worn down rather than simply late.',
         why:
-          'Yuseong helps the route feel warmer and more restorative without giving up the practical benefits of a central city.',
+          'Yuseong upgrades Daejeon from a transit stop into a body-reset stop without breaking corridor efficiency.',
       },
     ],
     stayZones: [
       {
-        title: 'Keep the station grid',
-        areaLabel: 'Daejeon Station',
-        bestFor: 'Fast handoffs and simple overnight timing.',
+        title: 'Hold the station-and-Jungang-ro grid',
+        areaLabel: 'Daejeon Station / Jungang-ro',
+        bestFor: 'Arrival control, short walks, fast dinners, and early departures.',
         why:
-          'This area protects route momentum and keeps the split clean.',
+          'This is the pure logistics zone when the route needs one clean central overnight and nothing wasted around it.',
       },
       {
-        title: 'Move west to Yuseong',
+        title: 'Move west to the Yuseong hot-spring belt',
         areaLabel: 'Yuseong',
-        bestFor: 'Recovery-led central overnights.',
+        bestFor: 'Recovery-led central overnights with better next-day energy.',
         why:
-          'This zone gives the city a stronger overnight personality and improves the next-day start.',
+          'This side gives Daejeon its warmer version through baths, broader hotel choice, and a more restorative evening without abandoning route efficiency.',
       },
     ],
     visuals: [
       {
         eyebrow: 'Central split',
-        title: 'Daejeon earns trust by staying easy',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Daejeon central split',
+        title: 'Daejeon is the route’s cleanest divide-and-continue city',
+        image: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+        alt: 'Editorial route image for Daejeon central corridor split',
         body:
-          'The city is useful because it stabilizes the route rather than fighting for attention.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'The city earns its place when the user can immediately tell whether this is a tight station night or a more restorative Yuseong night.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
         eyebrow: 'Recovery option',
-        title: 'Yuseong gives the central corridor a softer overnight',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Yuseong-side route stay',
+        title: 'The better version of Daejeon is transit plus recovery',
+        image: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+        alt: 'Editorial route image for Daejeon recovery split',
         body:
-          'The stronger version of Daejeon is not just transit. It is transit plus easier recovery.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'Yuseong matters because it turns a functional midpoint into a city that can actually return energy to the route.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
-        eyebrow: 'Route discipline',
-        title: 'A good split city protects energy for the southbound chapters',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Daejeon route discipline',
+        eyebrow: 'Southbound commitment',
+        title: 'After Daejeon, Route 1 usually stops improvising',
+        image: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+        alt: 'Editorial route image for Daejeon southbound commitment',
         body:
-          'Daejeon is where Route 1 can stay controlled before the stronger southern cities take over.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'This is the controlled midpoint where the corridor starts feeling committed toward the stronger southern chapters rather than loosely paced between them.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
     ],
     points: [
@@ -1785,6 +1803,24 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         coordinates: { lat: 36.3492, lng: 127.3848 },
         summary: 'A practical dinner-and-breakfast zone for keeping the city easy to use.',
         note: 'The point is dependable timing and low friction, not destination-style dining.',
+      },
+      {
+        id: 'daejeon-expo-orientation',
+        name: 'Expo-bridge orientation edge',
+        kind: 'checkpoint',
+        areaLabel: 'Riverside axis',
+        coordinates: { lat: 36.3744, lng: 127.3861 },
+        summary: 'A short orientation point that gives Daejeon one clear spatial memory beyond stations and road logic.',
+        note: 'Useful when the city should feel intentionally chosen rather than treated as a pure transit calculation.',
+      },
+      {
+        id: 'daejeon-yuseong-launch',
+        name: 'Yuseong launch pocket',
+        kind: 'mobility',
+        areaLabel: 'West-side departure pocket',
+        coordinates: { lat: 36.3559, lng: 127.3417 },
+        summary: 'A strong onward staging area for drivers who want to sleep in Yuseong and still launch south cleanly the next morning.',
+        note: 'This is where the recovery version of Daejeon proves it does not have to sacrifice practical route control.',
       },
       {
         id: 'daejeon-daegu-handoff',
@@ -1945,17 +1981,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Gumi is a middle-corridor support map. It matters when the route needs a stable break, a practical sleep, or a calm pause before Daegu without becoming a destination detour.',
     mapCenter: { lat: 36.1195, lng: 128.3446 },
     supportSummary:
-      'Gumi works as a low-drama corridor breather. It gives the direct line service, timing flexibility, and just enough river-edge calm to keep the middle stretch from flattening out.',
+      'Gumi works as a purposeful middle-corridor reset. It gives the direct line service, timing flexibility, and just enough riverside calm to keep the route from flattening out before Daegu arrives.',
     roleSummary:
-      'This is the middle-corridor breather. Gumi is useful because it helps the route rest without changing what kind of route it is.',
+      'This is the corridor decompression node. Gumi protects energy, clears mental clutter, and keeps Daegu from arriving too early or too tired.',
     staySummary:
-      'The best use is usually a practical central stay or a short break before continuing to Daegu.',
+      'The best use is a practical one-night stay when you want a quieter, cheaper, lighter overnight before the route thickens into a stronger southern chapter.',
     foodSummary:
-      'Food matters here in a functional way: easy dinner, easy breakfast, easy restart. The route does not need a spectacle city every time it stops.',
+      'Food matters here in a steadying way: warm dinner, unfussy breakfast, and reliable refuel before the route stops coasting and starts gathering southern momentum.',
     nextLegSummary:
-      'After Gumi the route usually intensifies toward Daegu. That is why the city works best as a calmer prelude rather than a climax.',
+      'After Gumi the route usually intensifies toward Daegu. The stop works best when it turns that next chapter into something sharper and more earned rather than half-spent.',
     accommodationNote:
-      'Strongest stay-planning angle: straightforward corridor hotels for one-night practical stops.',
+      'Strongest stay-planning angle: quiet corridor hotels that preserve energy before Daegu becomes the bigger southern chapter.',
     sections: [
       {
         title: 'Why Gumi can still be valuable',
@@ -1975,67 +2011,67 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     ],
     decisions: [
       {
-        title: 'Use it as a breather only',
-        bestFor: 'Drivers who just need a clean middle break.',
+        title: 'Keep Gumi as the pre-Daegu breather',
+        bestFor: 'Travelers who want Daegu to feel sharper, more walkable, and more earned the next day.',
         why:
-          'Gumi is strong when it stops the direct corridor from becoming numb without demanding a full chapter.',
+          'A quieter overnight here turns Daegu into a real chapter instead of one more stop reached half-spent.',
       },
       {
-        title: 'Sleep and hand off to Daegu',
-        bestFor: 'Travelers who want a cheaper, quieter split before the route gets denser.',
+        title: 'Use Gumi instead of forcing Daegu late',
+        bestFor: 'Drivers, cyclists, and budget-conscious users arriving tired in the corridor.',
         why:
-          'This works when Daegu is still the bigger southern chapter but the current day is already full enough.',
+          'Gumi works when the smarter move is to end the day early, sleep cleanly, and enter Daegu with actual energy.',
       },
     ],
     stayZones: [
       {
         title: 'Keep the central business grid',
         areaLabel: 'Central Gumi',
-        bestFor: 'Low-friction one-night stays.',
+        bestFor: 'Sleep-fast, leave-strong one-night stays.',
         why:
-          'The city core is useful when the point is simply to preserve energy and continue well.',
+          'This is the right zone when the point is to solve dinner, lodging, and the next morning restart within one tight radius.',
       },
       {
         title: 'Touch the river-side edge',
         areaLabel: 'Nakdong side',
-        bestFor: 'Travelers who want one lighter atmospheric cue before heading south.',
+        bestFor: 'Travelers who want one softer landing before rejoining the corridor.',
         why:
-          'A brief river-side pause keeps the stop from feeling purely industrial or anonymous.',
+          'A brief riverside reset keeps the middle stop from feeling purely industrial while still preserving the route’s calm-before-Daegu function.',
       },
     ],
     visuals: [
       {
         eyebrow: 'Middle corridor',
-        title: 'Gumi matters because the middle of the route still needs care',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Gumi route support',
+        title: 'Gumi works best when the route chooses calm on purpose',
+        image: '/images/routes/route-1/gumi/hero-generated-v1.png',
+        alt: 'Editorial route image for Gumi middle-corridor reset',
         body:
-          'A practical city can still improve Route 1 when it keeps the long direct line from going flat.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'Not every useful stop has to perform loudly. Gumi improves Route 1 by lowering the route’s noise before Daegu raises it again.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gumi/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
-        eyebrow: 'Breather city',
-        title: 'The route sometimes needs calm more than drama',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Gumi corridor breather',
+        eyebrow: 'Last easy exhale',
+        title: 'The southern corridor lands better when this stop stays honest',
+        image: '/images/routes/route-1/gumi/hero-generated-v1.png',
+        alt: 'Editorial route image for Gumi pre-Daegu breather',
         body:
-          'Gumi is strongest when it makes the direct line easier to sustain rather than trying to overpower it.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'This is where the direct line steadies itself so the next city can land with more force instead of arriving half-spent.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gumi/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
-        eyebrow: 'Southbound setup',
-        title: 'Used well, this city sets up the stronger southern chapter after it',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Gumi handoff',
+        eyebrow: 'Protected tomorrow',
+        title: 'A simpler night here can make Daegu feel like a real chapter',
+        image: '/images/routes/route-1/gumi/hero-generated-v1.png',
+        alt: 'Editorial route image for Gumi southbound handoff',
         body:
-          'Think of Gumi as a stabilizer that helps Daegu and the final route chapters land better.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'Gumi is worth keeping when the stop improves tomorrow, not because it competes with the bigger city after it.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/gumi/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
     ],
     points: [
@@ -2058,6 +2094,15 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         note: 'The point is to refuel and continue with less friction.',
       },
       {
+        id: 'gumi-station-arrival-grid',
+        name: 'Station-side arrival grid',
+        kind: 'mobility',
+        areaLabel: 'Arrival side',
+        coordinates: { lat: 36.1281, lng: 128.3313 },
+        summary: 'A clean first pin for late arrivals who need a fast hotel-and-meal decision without burning more time.',
+        note: 'This is where Gumi proves useful as a practical stop rather than a romanticized one.',
+      },
+      {
         id: 'gumi-river-edge',
         name: 'Nakdong-side edge',
         kind: 'checkpoint',
@@ -2075,6 +2120,15 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         summary: 'The corridor line where the middle breather starts turning into the southern reset chapter.',
         note: 'This is why Gumi works best as a prelude and not as the endpoint of the route story.',
       },
+      {
+        id: 'gumi-resupply-pocket',
+        name: 'Light resupply pocket',
+        kind: 'checkpoint',
+        areaLabel: 'Convenience belt',
+        coordinates: { lat: 36.116, lng: 128.3414 },
+        summary: 'A small reset zone for snacks, pharmacy needs, and morning-launch basics before the denser southbound leg.',
+        note: 'Useful when the right move is simply to simplify the corridor and leave stronger the next day.',
+      },
     ],
   },
   changnyeong: {
@@ -2085,17 +2139,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Changnyeong is a late-route support map. It matters when the lower Nakdong chapter needs one more calm overnight, a practical meal, or a reset before the final push.',
     mapCenter: { lat: 35.5438, lng: 128.4923 },
     supportSummary:
-      'Changnyeong works as a lower-river calm node. It is quieter than Daegu and more useful when the route needs one more restorative chapter before Busan.',
+      'Changnyeong works as a late lower-river recovery node. It is quieter than Daegu and more useful when the route needs one more body-and-route reset before Busan.',
     roleSummary:
-      'This is the late river chapter. Its role is to reduce pressure and hold the route together before the final finish.',
+      'This is the place where Route 1 sheds final fatigue and stops searching for one more big city. Its job is to keep the finish composed rather than overworked.',
     staySummary:
-      'Most stays here should be simple and calm rather than urban and ambitious. The city is valuable when it keeps the route unforced.',
+      'Most stays here should be simple, quiet, and recovery-led rather than urban and ambitious. The city is valuable when it keeps the finish cleaner and less forced.',
     foodSummary:
-      'Use Changnyeong for practical meals that support rest and continuation. The appeal is route steadiness, not destination dining.',
+      'Use Changnyeong for restorative meals that support rest and continuation: simple dinners, easy breakfasts, and warmer low-friction fuel before the last push.',
     nextLegSummary:
-      'After Changnyeong, Busan is close enough that the route should feel like a finish rather than a search for another identity.',
+      'After Changnyeong, the route should feel resolved enough to let Busan arrive as arrival rather than rescue. This stop is strongest when it converts recovery into finish momentum.',
     accommodationNote:
-      'Strongest stay-planning angle: quiet practical stays for riders and lower-river route users.',
+      'Strongest stay-planning angle: calm practical stays for riders and slower lower-river users who want Busan to begin from a rested position.',
     sections: [
       {
         title: 'Why keep a quieter southern city',
@@ -2115,67 +2169,67 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     ],
     decisions: [
       {
-        title: 'Keep it calm',
-        bestFor: 'Cyclists and slower inland travelers.',
+        title: 'Keep Changnyeong for recovery, not excitement',
+        bestFor: 'Cyclists, slower self-drives, and travelers who want to reach Busan with composure instead of drag.',
         why:
-          'Changnyeong works best when it is allowed to stay simple and restorative.',
+          'This stop earns its place when the finish needs quieter sleep, easier legs, and less final-day friction.',
       },
       {
-        title: 'Skip if you still want city energy',
-        bestFor: 'Travelers who would get more value from a final Daegu or Busan-heavy night.',
+        title: 'Use Changnyeong instead of one more major-city night',
+        bestFor: 'Users who already got their city energy earlier and now want the route to taper intelligently.',
         why:
-          'The city is not trying to replace a major urban chapter. Its value is in the opposite direction.',
+          'It gives the lower river one final restorative chapter before the metropolitan finish takes over.',
       },
     ],
     stayZones: [
       {
-        title: 'Hold a quiet central stay',
+        title: 'Hold a quiet town-core stay',
         areaLabel: 'Town core',
-        bestFor: 'Simple one-night resets.',
+        bestFor: 'Late-route recovery stays with the easiest dinner-sleep-breakfast sequence.',
         why:
-          'A straightforward center stay keeps the late route light and manageable.',
+          'This is the cleanest place to shut the day down early and protect the Busan finish with the least mental friction.',
       },
       {
         title: 'Lean into the lower-river edge',
         areaLabel: 'Nakdong side',
-        bestFor: 'Riders and slower late-route users.',
+        bestFor: 'Riders and slower late-route users who want a body-reset version of the finish setup.',
         why:
-          'This side of the route emphasizes the calm that makes Changnyeong valuable at all.',
+          'This side emphasizes spaciousness and quiet, which is exactly what makes Changnyeong useful before the metropolitan finish.',
       },
     ],
     visuals: [
       {
         eyebrow: 'Late calm',
-        title: 'The route does not need a climax at every stop',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Changnyeong late-route calm',
+        title: 'Changnyeong is where the lower river chooses recovery over one last performance',
+        image: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
+        alt: 'Editorial route image for Changnyeong lower-river recovery',
         body:
-          'Changnyeong matters because it keeps the southern finish from becoming noisy or overworked.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
-      },
-      {
-        eyebrow: 'River logic',
-        title: 'This is where the lower corridor exhales',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Changnyeong river reset',
-        body:
-          'If Daegu sharpened the route, Changnyeong can soften it again before Busan.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'This stop matters because the route can get stronger by quieting down. It is a late-stage reset, not a missed climax.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
         eyebrow: 'Finish discipline',
-        title: 'A cleaner rest here can make the final arrival stronger',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Changnyeong finish logic',
+        title: 'A calmer night here makes Busan arrive better',
+        image: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
+        alt: 'Editorial route image for Changnyeong finish discipline',
         body:
-          'This is a support city for preserving the finish, not competing with it.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'Sleep, restore, and let the final metropolitan chapter land with cleaner energy than a dragged-out late route would allow.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
+      },
+      {
+        eyebrow: 'No last test',
+        title: 'The route does not need another big-city challenge before the finish',
+        image: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
+        alt: 'Editorial route image for Changnyeong late-route logic',
+        body:
+          'One quieter lower-river stop can turn the last stretch from tired continuation into composed arrival.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
     ],
     points: [
@@ -2215,6 +2269,24 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         summary: 'The line where the late calm turns into the final metropolitan finish.',
         note: 'After this point, Route 1 should feel like it is arriving rather than searching.',
       },
+      {
+        id: 'changnyeong-bath-reset',
+        name: 'Wellness-adjacent reset pocket',
+        kind: 'recovery',
+        areaLabel: 'Recovery side pocket',
+        coordinates: { lat: 35.5499, lng: 128.5006 },
+        summary: 'A stronger proof point for users who need more than a meal and a bed before the final push.',
+        note: 'This helps explain why Changnyeong can function as a body-reset stop rather than only a quiet town on the map.',
+      },
+      {
+        id: 'changnyeong-morning-launch',
+        name: 'Morning departure pocket',
+        kind: 'mobility',
+        areaLabel: 'Southbound launch side',
+        coordinates: { lat: 35.5284, lng: 128.5112 },
+        summary: 'A simple launch area for an unfussy early start when the final approach to Busan should feel spacious and controlled.',
+        note: 'Useful when the right move is to turn a restful night directly into cleaner finish momentum.',
+      },
     ],
   },
   gangneung: {
@@ -2225,15 +2297,15 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Gangneung is a coast-support map for deciding where to stay, where to take in the shoreline mood, and where the east coast route stops being a detour and starts being its own journey.',
     mapCenter: { lat: 37.7519, lng: 128.8761 },
     supportSummary:
-      'Gangneung is the point of no return for the east-coast Route 1 line. Once you keep it, the trip stops being a direct Seoul-to-Busan transfer and becomes a coastal sequence with its own rhythm.',
+      'Gangneung is the point of no return for the east-coast Route 1 line. Once you keep it, the trip stops being a direct Seoul-to-Busan transfer and becomes a deliberately coastal sequence with its own rhythm, mornings, and sleep logic.',
     roleSummary:
-      'This is the coast-entry anchor. Gangneung is where the east sea line gains identity fast through beach, cafe, and shoreline timing.',
+      'This is the coast-entry anchor. Gangneung is where the east-sea line stops looking optional and starts reading like a distinct route product built around shoreline timing, coffee, and sea-facing resets.',
     staySummary:
-      'Beach-side stays favor atmosphere and a slower coastal morning. Station-side or central stays work better when the route needs easier onward timing.',
+      'Beach-side stays favor atmosphere, sunrise, and a slower coastal morning. Central stays work better when the route needs cleaner onward timing without giving up the first real sense of coastal commitment.',
     foodSummary:
-      'Gangneung should be used for coffee, breakfast, and the first clear coastal change in daily rhythm. It is less about efficiency and more about resetting the route to the sea.',
+      'Gangneung should be used for coffee, breakfast, and the first unmistakable change in daily rhythm. It is less about efficiency than about proving that the route has pivoted to the sea for real.',
     nextLegSummary:
-      'After Gangneung, the coast route cannot pretend to be practical anymore. It must start delivering shoreline continuity all the way south.',
+      'After Gangneung, the coast route can no longer act like a practical add-on. It has to keep delivering shoreline continuity, spacing, and atmosphere all the way south.',
     accommodationNote:
       'Strongest stay-planning angle: beach-front stays and cafe-street adjacent hotels.',
     sections: [
@@ -2255,16 +2327,16 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     ],
     decisions: [
       {
-        title: 'Stay by the beach',
-        bestFor: 'Travelers who want the east-coast route to feel visibly committed.',
+        title: 'Stay by the beach and let the coast take over',
+        bestFor: 'Travelers who want the east-coast route to feel visibly committed from the first overnight.',
         why:
-          'This is the version of Gangneung that makes the route unmistakably coastal.',
+          'This is the version of Gangneung that makes the route unmistakably maritime at night and again at first light.',
       },
       {
-        title: 'Stay central and move on',
-        bestFor: 'Travelers who want the coastal mood without slowing the route too much.',
+        title: 'Stay central and keep the coast efficient',
+        bestFor: 'Travelers who want coastal mood without letting the next shoreline day become sloppy.',
         why:
-          'A more central stay keeps the city useful while protecting the longer coast-day ahead.',
+          'A more central stay keeps Gangneung useful while protecting the longer coast chapter that begins after it.',
       },
     ],
     stayZones: [
@@ -2355,6 +2427,24 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         summary: 'The line where the first coastal anchor starts handing the route to its longer shoreline chapters.',
         note: 'After this point, the route should stay convincingly maritime.',
       },
+      {
+        id: 'gangneung-breakfast-launch',
+        name: 'Breakfast launch strip',
+        kind: 'food',
+        areaLabel: 'Beach-to-core transition',
+        coordinates: { lat: 37.7676, lng: 128.9142 },
+        summary: 'A practical morning zone for coffee, bakery stops, and the first clean launch into the long coast day.',
+        note: 'This is where Gangneung proves its overnight value by making the next chapter feel started, not merely resumed.',
+      },
+      {
+        id: 'gangneung-sea-reset',
+        name: 'Sea-facing reset edge',
+        kind: 'recovery',
+        areaLabel: 'Shoreline edge',
+        coordinates: { lat: 37.7713, lng: 128.9488 },
+        summary: 'A short sea-facing reset point that explains why Gangneung belongs as an actual overnight anchor instead of only a scenic stop.',
+        note: 'Useful when the route should feel changed by air, pace, and morning light rather than by distance alone.',
+      },
     ],
   },
   uljin: {
@@ -2365,17 +2455,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Uljin is a continuity map for the east coast. It matters when the route should keep breathing between bigger shoreline anchors instead of jumping only between headline cities.',
     mapCenter: { lat: 36.9931, lng: 129.4005 },
     supportSummary:
-      'Uljin works because it preserves openness. It gives the east coast route room, continuity, and a quieter chapter before the stronger flavor and city nodes return further south.',
+      'Uljin works because it preserves openness. It gives the east coast route room, continuity, and a quieter maritime chapter before the stronger flavor and city nodes return further south.',
     roleSummary:
-      'This is the long-coast continuity node. Uljin prevents the shoreline route from feeling compressed or over-edited.',
+      'This is the long-coast continuity node. Uljin prevents the shoreline route from feeling compressed, over-edited, or too dependent on only the most famous coastal anchors.',
     staySummary:
-      'The best stays are sea-facing and simple. The city does not need to be overbuilt to be useful.',
+      'The best stays are sea-facing, simple, and low-friction. Uljin is valuable when the overnight protects the coast’s spaciousness instead of trying to become a resort performance.',
     foodSummary:
-      'Food here is part of the coast rhythm rather than a major destination claim. Freshness, timing, and shoreline calm matter more than spectacle.',
+      'Food here belongs to the coast rhythm rather than a major destination claim. Fresh seafood, practical breakfasts, and calm timing matter more than spectacle.',
     nextLegSummary:
-      'After Uljin, the route can sharpen again toward Yeongdeok and Pohang without losing the feeling of having traveled a real coast.',
+      'After Uljin, the route can sharpen again toward Yeongdeok and Pohang without losing the feeling of having traveled a long, believable coast instead of a sequence of named highlights.',
     accommodationNote:
-      'Strongest stay-planning angle: simple shoreline stays for slower east-coast users.',
+      'Strongest stay-planning angle: simple shoreline stays and quiet coast-core overnights for slower east-coast users.',
     sections: [
       {
         title: 'Why Uljin belongs on the map',
@@ -2396,66 +2486,66 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     decisions: [
       {
         title: 'Keep it if the coast should breathe',
-        bestFor: 'Slower drivers and riders who want the east sea line to feel spacious.',
+        bestFor: 'Slower drivers and riders who want the east-sea line to feel spacious, calm, and convincingly traveled.',
         why:
-          'Uljin helps the route feel traveled rather than merely optimized.',
+          'Uljin helps the route feel inhabited and continuous rather than compressed into only the loudest stops.',
       },
       {
-        title: 'Skip it if only anchor cities matter',
-        bestFor: 'Travelers who only want the strongest named coastal hubs.',
+        title: 'Use it as a quiet reset between anchors',
+        bestFor: 'Travelers who want one simpler shoreline night before Yeongdeok and Pohang start concentrating the coast again.',
         why:
-          'Its value is continuity, not concentration.',
+          'Its value is not concentration. Its value is spacing, recovery, and keeping the maritime line believable.',
       },
     ],
     stayZones: [
       {
         title: 'Hold a simple shoreline stay',
         areaLabel: 'Sea-facing strip',
-        bestFor: 'One-night coast continuity stays.',
+        bestFor: 'One-night coast continuity stays with the least itinerary friction.',
         why:
-          'This is the cleanest way to let Uljin do its job without forcing too much itinerary weight onto it.',
+          'This is the cleanest way to let Uljin do its job without forcing too much itinerary weight or destination pressure onto it.',
       },
       {
-        title: 'Use the central support grid',
+        title: 'Use the coast-core support grid',
         areaLabel: 'Uljin core',
-        bestFor: 'Practical stops with easier meal and onward-movement logic.',
+        bestFor: 'Practical stops with easier meals, resupply, and onward-movement logic.',
         why:
-          'This version keeps the route usable while still preserving the long-coast chapter.',
+          'This version keeps the route usable while still preserving the long-coast chapter and its lower-pressure rhythm.',
       },
     ],
     visuals: [
       {
         eyebrow: 'Open shoreline',
         title: 'Uljin keeps the coast broad and believable',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Uljin coast continuity',
+        image: '/images/routes/route-1/uljin/hero-generated-v1.png',
+        alt: 'Editorial route image for Uljin coast continuity',
         body:
-          'This is not the loudest east-coast stop, but it may be one of the most important for route shape.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'This is not the loudest east-coast stop, but it may be one of the most important for route shape because it keeps the shoreline from collapsing into only famous names.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/uljin/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
         eyebrow: 'Quiet chapter',
         title: 'The route benefits from one stretch that is more open than performative',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Uljin quiet coast',
+        image: '/images/routes/route-1/uljin/hero-generated-v1.png',
+        alt: 'Editorial route image for Uljin quiet coast',
         body:
-          'Uljin is where the east sea line can simply be long, calm, and maritime.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'Uljin is where the east-sea line can simply be long, calm, and maritime without needing to prove itself through spectacle.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/uljin/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
       {
         eyebrow: 'Southward spacing',
         title: 'A calmer chapter makes later coastal anchors land harder',
-        image: '/images/placeholder.png',
-        alt: 'Placeholder view for Uljin southbound handoff',
+        image: '/images/routes/route-1/uljin/hero-generated-v1.png',
+        alt: 'Editorial route image for Uljin southbound handoff',
         body:
-          'The route becomes clearer when the big names do not arrive all at once.',
-        sourceLabel: 'RoadToKorea placeholder',
-        sourceHref: '/',
-        licenseLabel: 'Internal',
+          'The route becomes clearer when the bigger names do not arrive all at once and one coast chapter is allowed to do spacing work.',
+        sourceLabel: 'Generated route editorial image',
+        sourceHref: '/images/routes/route-1/uljin/hero-generated-v1.png',
+        licenseLabel: 'Project editorial asset',
       },
     ],
     points: [
@@ -2478,6 +2568,15 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         note: 'Use this zone for timing and freshness rather than destination dining drama.',
       },
       {
+        id: 'uljin-coast-core',
+        name: 'Coast-core support grid',
+        kind: 'mobility',
+        areaLabel: 'Town support core',
+        coordinates: { lat: 36.9924, lng: 129.4042 },
+        summary: 'A simple support pocket for resupply, check-in, coffee, and keeping the long coast chapter easy to use.',
+        note: 'Useful when the route should stay open and calm without becoming under-supported.',
+      },
+      {
         id: 'uljin-open-coast',
         name: 'Open coast checkpoint',
         kind: 'checkpoint',
@@ -2494,6 +2593,15 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         coordinates: { lat: 36.8561, lng: 129.4208 },
         summary: 'The line where the open coast begins sharpening into the stronger flavor chapter further south.',
         note: 'This keeps Uljin framed as continuity, not climax.',
+      },
+      {
+        id: 'uljin-morning-launch',
+        name: 'Shoreline morning launch',
+        kind: 'recovery',
+        areaLabel: 'Sea-facing departure edge',
+        coordinates: { lat: 36.9984, lng: 129.4158 },
+        summary: 'A quieter launch point for early starts when the value of the stop is waking into the coast rather than only sleeping beside it.',
+        note: 'This is where Uljin proves it can improve the next day through pace and space, not only through distance covered.',
       },
     ],
   },

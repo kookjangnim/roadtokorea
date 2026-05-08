@@ -570,41 +570,80 @@ export default async function CityPage({
                 </div>
 
                 {supportProfile.stayZones?.length ? (
-                  <div className="mt-8 grid gap-4 xl:grid-cols-2">
-                    {supportProfile.stayZones.map((zone) => (
-                      <article
-                        key={zone.title}
-                        className="rounded-[1.5rem] border border-stone-200 bg-[linear-gradient(180deg,rgba(245,237,228,0.84),rgba(255,255,255,0.98))] p-6"
-                      >
-                        <div className="flex flex-wrap items-center gap-3">
-                          <span className="rounded-full border border-stone-200 bg-white px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                            Stay Zone
-                          </span>
-                          <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-600">
-                            {zone.areaLabel}
-                          </span>
-                        </div>
-                        <h3 className="mt-4 font-serif text-2xl leading-tight text-stone-950">
-                          {zone.title}
+                  <div className="mt-8">
+                    <div className="mb-5 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                          Where To Stay
+                        </p>
+                        <h3 className="mt-3 font-serif text-3xl leading-tight text-stone-950">
+                          Choose the stay zone that matches the route you want tomorrow.
                         </h3>
-                        <p className="mt-4 text-sm leading-7 text-stone-700">{zone.bestFor}</p>
-                        <p className="mt-3 text-sm leading-7 text-stone-600">{zone.why}</p>
-                      </article>
-                    ))}
+                      </div>
+                      <p className="max-w-xl text-sm leading-7 text-stone-600">
+                        These zones are not generic hotel advice. They are the clearest overnight
+                        shapes for keeping this stop aligned with the rest of Route 1.
+                      </p>
+                    </div>
+
+                    <div className="grid gap-4 xl:grid-cols-2">
+                      {supportProfile.stayZones.map((zone) => (
+                        <article
+                          key={zone.title}
+                          className="rounded-[1.5rem] border border-stone-200 bg-[linear-gradient(180deg,rgba(245,237,228,0.84),rgba(255,255,255,0.98))] p-6"
+                        >
+                          <div className="flex flex-wrap items-center gap-3">
+                            <span className="rounded-full border border-stone-200 bg-white px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                              Stay Zone
+                            </span>
+                            <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-600">
+                              {zone.areaLabel}
+                            </span>
+                          </div>
+                          <h3 className="mt-4 font-serif text-2xl leading-tight text-stone-950">
+                            {zone.title}
+                          </h3>
+                          <div className="mt-4 rounded-[1rem] border border-stone-200/80 bg-white/80 p-4">
+                            <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
+                              Best For
+                            </p>
+                            <p className="mt-2 text-sm leading-7 text-stone-700">{zone.bestFor}</p>
+                          </div>
+                          <p className="mt-4 text-sm leading-7 text-stone-600">{zone.why}</p>
+                        </article>
+                      ))}
+                    </div>
                   </div>
                 ) : null}
 
                 {supportProfile.accommodationNote ? (
-                  <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6 shadow-[0_20px_60px_rgba(34,30,25,0.05)]">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                      Stay Planning Fit
-                    </p>
-                    <h3 className="mt-4 font-serif text-3xl leading-tight text-stone-950">
-                      This city supports overnight guidance naturally.
-                    </h3>
-                    <p className="mt-4 text-sm leading-7 text-stone-700 md:text-base md:leading-8">
-                      {supportProfile.accommodationNote}
-                    </p>
+                  <div className="mt-8 overflow-hidden rounded-[1.75rem] border border-stone-200 bg-[linear-gradient(135deg,rgba(191,153,107,0.12),rgba(255,255,255,0.96))] shadow-[0_20px_60px_rgba(34,30,25,0.05)]">
+                    <div className="border-b border-stone-200/80 px-6 py-5 md:px-8">
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                        Stay Planning Fit
+                      </p>
+                      <h3 className="mt-4 font-serif text-3xl leading-tight text-stone-950">
+                        Where to stay in {cityName} depends on what the next leg needs.
+                      </h3>
+                      <p className="mt-4 max-w-3xl text-sm leading-7 text-stone-700 md:text-base md:leading-8">
+                        {supportProfile.accommodationNote}
+                      </p>
+                    </div>
+
+                    <div className="px-6 py-5 md:px-8">
+                      {supportProfile.stayZones?.length ? (
+                        <div className="flex flex-wrap gap-3">
+                          {supportProfile.stayZones.map((zone) => (
+                            <span
+                              key={`${zone.title}-chip`}
+                              className="rounded-full border border-stone-200 bg-white/90 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-700"
+                            >
+                              {zone.areaLabel}
+                            </span>
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
                   </div>
                 ) : null}
 
