@@ -59,6 +59,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'commons.wikimedia.org',
+        pathname: '/wiki/Special:FilePath/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'tong.visitkorea.or.kr',
         pathname: '/**',
       },

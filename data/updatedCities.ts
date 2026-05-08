@@ -128,6 +128,22 @@ export const updatedCities: UpdatedCity[] = [
     reason: 'Post-pass corridor page now gives the inland line a stable river-led handoff instead of a vague continuation.',
     role: 'Nakdong corridor hinge',
   },
+  {
+    name: 'Samcheok',
+    slug: 'samcheok',
+    tier: 'tier-4',
+    href: '/tier-4/samcheok',
+    reason: 'Scenic continuation page now gives the east coast one more real chapter between Gangneung and Uljin.',
+    role: 'Scenic coastline continuation',
+  },
+  {
+    name: 'Miryang',
+    slug: 'miryang',
+    tier: 'tier-4',
+    href: '/tier-4/miryang',
+    reason: 'Quiet-hinge page now gives the late Route 1 line a calmer final handoff before Busan.',
+    role: 'Quiet southern hinge',
+  },
 ];
 
 export const featuredUpdatedCities = updatedCities.slice(0, 6);

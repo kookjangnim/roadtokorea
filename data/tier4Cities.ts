@@ -52,6 +52,16 @@ export const tier4Cities: Record<string, TierCityData> = {
       'Uljin earns route space because it protects the continuity of the coast. It keeps the east-sea line feeling expansive rather than collapsing into just Gangneung and Pohang.',
     hotspots: []
   },
+  samcheok: {
+    name: 'Samcheok',
+    slug: 'samcheok',
+    headline: 'The Scenic Coastline Continuation',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg',
+    description: 'A smaller east-coast chapter where cliffs, port edges, and open road scenery keep the shoreline route from turning into a sprint between bigger names.',
+    culturalInsight:
+      'Samcheok matters because the east coast gets stronger when it unfolds in chapters. It gives the sea route one more scenic, lower-pressure stretch before Uljin takes over the longer quiet-coast logic.',
+    hotspots: []
+  },
   sangju: {
     name: 'Sangju',
     slug: 'sangju',
@@ -70,6 +80,16 @@ export const tier4Cities: Record<string, TierCityData> = {
     description: 'A smaller east-coast town where seafood identity, port texture, and shoreline air make the route feel regionally specific.',
     culturalInsight:
       'Yeongdeok is less about major-city concentration and more about clarity of flavor. It gives the east coast line a local face, especially when the route needs food, fishing-port character, and one smaller-town chapter before larger southeastern cities take over.',
+    hotspots: []
+  },
+  miryang: {
+    name: 'Miryang',
+    slug: 'miryang',
+    headline: 'The Quiet Southern Hinge',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG',
+    description: 'A calmer late-route city where the inland line bends toward Busan without losing its softer river-side composure too early.',
+    culturalInsight:
+      'Miryang earns route space by keeping the final southern approach measured. It is less about adding one more city chapter and more about helping Busan arrive from a clearer, quieter position.',
     hotspots: []
   },
   pohang: {
