@@ -96,6 +96,22 @@ export const updatedCities: UpdatedCity[] = [
     reason: 'Long-coast support page now explains why the overnight matters.',
     role: 'Coastal continuity node',
   },
+  {
+    name: 'Yeongdeok',
+    slug: 'yeongdeok',
+    tier: 'tier-4',
+    href: '/tier-4/yeongdeok',
+    reason: 'Small-port coast page now has clear seafood identity, stay logic, and a clean handoff into Pohang.',
+    role: 'Coastal flavor anchor',
+  },
+  {
+    name: 'Pohang',
+    slug: 'pohang',
+    tier: 'tier-2',
+    href: '/tier-2/pohang',
+    reason: 'Late-route hinge page now cleanly turns the long coast into a controlled final approach.',
+    role: 'Late-coast hinge city',
+  },
 ];
 
 export const featuredUpdatedCities = updatedCities.slice(0, 6);
