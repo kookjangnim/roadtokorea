@@ -2,6 +2,7 @@ import Link from 'next/link';
 import HeroSlider from '@/components/HeroSlider';
 import Footer from '@/components/Footer';
 import { getAllRouteData } from '@/data/routeStopovers';
+import { featuredUpdatedCities } from '@/data/updatedCities';
 
 export default async function Home() {
   const routes = getAllRouteData();
@@ -150,6 +151,52 @@ export default async function Home() {
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-[linear-gradient(180deg,#f3ede4_0%,#f7f3ec_100%)] px-4 py-8 md:px-8 md:py-12">
+            <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-stone-200/80 bg-white/75 p-8 shadow-[0_30px_90px_rgba(34,30,25,0.08)] backdrop-blur md:p-10">
+              <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                <div className="max-w-3xl">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
+                    Cities Ready Now
+                  </p>
+                  <h2 className="mt-4 font-serif text-4xl leading-tight text-stone-950 md:text-5xl">
+                    Open the city pages that already read like finished support chapters.
+                  </h2>
+                  <p className="mt-5 text-base leading-8 text-stone-600 md:text-lg">
+                    These are the cities we have already brought up to the current Chungju-grade
+                    standard, so you can browse finished stop logic without guessing what is still
+                    thin.
+                  </p>
+                </div>
+                <Link
+                  href="/updated-cities"
+                  className="rounded-full border border-stone-300 bg-white/80 px-5 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-stone-700 transition-colors hover:border-stone-950 hover:text-stone-950"
+                >
+                  View all updated cities
+                </Link>
+              </div>
+
+              <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {featuredUpdatedCities.map((city) => (
+                  <Link
+                    key={city.slug}
+                    href={city.href}
+                    className="group rounded-[1.75rem] border border-stone-200 bg-stone-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-stone-900/15 hover:bg-white"
+                  >
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                      {city.tier.replace('tier-', 'Tier ')}
+                    </p>
+                    <h3 className="mt-3 font-serif text-3xl text-stone-950">{city.name}</h3>
+                    <p className="mt-4 text-sm leading-7 text-stone-700">{city.role}</p>
+                    <p className="mt-3 text-sm leading-7 text-stone-500">{city.reason}</p>
+                    <span className="mt-5 inline-flex text-xs font-semibold uppercase tracking-[0.26em] text-stone-900 transition-transform duration-300 group-hover:translate-x-1">
+                      Open city guide
+                    </span>
+                  </Link>
+                ))}
               </div>
             </div>
           </section>

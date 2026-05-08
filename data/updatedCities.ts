@@ -1,0 +1,101 @@
+export type UpdatedCity = {
+  name: string;
+  slug: string;
+  tier: 'tier-1' | 'tier-2' | 'tier-4';
+  href: string;
+  reason: string;
+  role: string;
+};
+
+export const updatedCities: UpdatedCity[] = [
+  {
+    name: 'Chungju',
+    slug: 'chungju',
+    tier: 'tier-2',
+    href: '/tier-2/chungju',
+    reason: 'Reference-quality inland support page with clear stay and handoff logic.',
+    role: 'Route 1 practical benchmark',
+  },
+  {
+    name: 'Mungyeong',
+    slug: 'mungyeong',
+    tier: 'tier-2',
+    href: '/tier-2/mungyeong',
+    reason: 'Strong inland handoff page with quieter route logic that now reads intentionally.',
+    role: 'Inland transition anchor',
+  },
+  {
+    name: 'Andong',
+    slug: 'andong',
+    tier: 'tier-2',
+    href: '/tier-2/andong',
+    reason: 'Cultural support page with a convincing overnight and onward-route payoff.',
+    role: 'Cultural inland chapter',
+  },
+  {
+    name: 'Daegu',
+    slug: 'daegu',
+    tier: 'tier-2',
+    href: '/tier-2/daegu',
+    reason: 'Southern support page with clear city-scale sleep, food, and route-reset logic.',
+    role: 'Southern route stabilizer',
+  },
+  {
+    name: 'Gyeongju',
+    slug: 'gyeongju',
+    tier: 'tier-2',
+    href: '/tier-2/gyeongju',
+    reason: 'Route-support page now reads like a real stop choice instead of a generic destination card.',
+    role: 'Historic support chapter',
+  },
+  {
+    name: 'Daejeon',
+    slug: 'daejeon',
+    tier: 'tier-2',
+    href: '/tier-2/daejeon',
+    reason: 'Practical corridor sample with a strong station-versus-recovery split.',
+    role: 'Central split city',
+  },
+  {
+    name: 'Cheonan',
+    slug: 'cheonan',
+    tier: 'tier-4',
+    href: '/tier-4/cheonan',
+    reason: 'Early-route break page now has clear first-night and low-friction support value.',
+    role: 'Early corridor reset',
+  },
+  {
+    name: 'Gumi',
+    slug: 'gumi',
+    tier: 'tier-4',
+    href: '/tier-4/gumi',
+    reason: 'Middle-corridor page now clearly supports fatigue control before Daegu.',
+    role: 'Pre-Daegu breather',
+  },
+  {
+    name: 'Changnyeong',
+    slug: 'changnyeong',
+    tier: 'tier-4',
+    href: '/tier-4/changnyeong',
+    reason: 'Late-route recovery stop with a distinct quiet-finish purpose.',
+    role: 'Lower-river recovery node',
+  },
+  {
+    name: 'Gangneung',
+    slug: 'gangneung',
+    tier: 'tier-1',
+    href: '/tier-1/gangneung',
+    reason: 'East-coast entry page now feels intentional and ready for direct discovery.',
+    role: 'Coast-entry anchor',
+  },
+  {
+    name: 'Uljin',
+    slug: 'uljin',
+    tier: 'tier-4',
+    href: '/tier-4/uljin',
+    reason: 'Long-coast support page now explains why the overnight matters.',
+    role: 'Coastal continuity node',
+  },
+];
+
+export const featuredUpdatedCities = updatedCities.slice(0, 6);

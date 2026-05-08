@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 const footerExplore = [
+  { name: 'Updated Cities', href: '/updated-cities' },
   { name: 'Seoul to Busan', href: '/routes/seoul/busan' },
   { name: 'Tier 1 Anchors', href: '/tier-1/cities' },
   { name: 'Tier 2 Longer Stays', href: '/tier-2/cities' },
