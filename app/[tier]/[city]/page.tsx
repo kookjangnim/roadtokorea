@@ -7,6 +7,7 @@ import PopularSearches from '@/components/PopularSearches';
 import type { WPPost } from '@/lib/wp-api';
 import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
 import { getSeoulRouteOptionBySlug } from '@/data/seoulRoutes';
+import { getRouteCityStoryTemplate } from '@/data/routeCityStoryTemplates';
 import { tier1Cities } from '@/data/tier1Cities';
 import { tier2Cities } from '@/data/tier2Cities';
 import { tier4Cities } from '@/data/tier4Cities';
@@ -228,6 +229,7 @@ export default async function CityPage({
       ? localCityData?.heroImage || localDestinations[0]?.imagePath || null
       : localDestinations[0]?.imagePath || localCityData?.heroImage || null;
   const supportProfile = getCitySupportProfile(citySlug);
+  const storyTemplate = getRouteCityStoryTemplate(citySlug);
   const transportGuidance = buildTransportGuidance(routeOption?.transport);
   const tags = [cityName, 'Korea route', 'Neighborhood guide', 'Travel notes'];
   const mapEmbedUrl = routeOption
@@ -546,6 +548,44 @@ export default async function CityPage({
                   </div>
                 </div>
 
+                {storyTemplate && (
+                  <section className="mt-8 rounded-[1.75rem] border border-stone-200 bg-[linear-gradient(135deg,rgba(17,17,17,0.94),rgba(65,52,38,0.94))] p-6 text-white shadow-[0_24px_70px_rgba(34,30,25,0.16)] md:p-8">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-stone-300">
+                      Past and Present
+                    </p>
+                    <h3 className="mt-3 max-w-3xl font-serif text-3xl leading-tight md:text-4xl">
+                      {storyTemplate.city} matters because its older story and present life both
+                      change how this route feels.
+                    </h3>
+                    <div className="mt-6 grid gap-4 xl:grid-cols-3">
+                      <article className="rounded-[1.25rem] border border-white/10 bg-white/7 p-5">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-stone-400">
+                          Historical Weight
+                        </p>
+                        <p className="mt-4 text-sm leading-7 text-stone-200">
+                          {storyTemplate.historicalWeight}
+                        </p>
+                      </article>
+                      <article className="rounded-[1.25rem] border border-white/10 bg-white/7 p-5">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-stone-400">
+                          Modern Identity
+                        </p>
+                        <p className="mt-4 text-sm leading-7 text-stone-200">
+                          {storyTemplate.modernIdentity}
+                        </p>
+                      </article>
+                      <article className="rounded-[1.25rem] border border-white/10 bg-white/7 p-5">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-stone-400">
+                          Route Meaning
+                        </p>
+                        <p className="mt-4 text-sm leading-7 text-stone-200">
+                          {storyTemplate.routeMeaning}
+                        </p>
+                      </article>
+                    </div>
+                  </section>
+                )}
+
                 <div className="mt-8 grid gap-4 xl:grid-cols-3">
                   <div className="rounded-[1.5rem] border border-stone-200 bg-white p-6">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
@@ -849,7 +889,7 @@ export default async function CityPage({
 
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {dynamicPosts.map((post: WPPost) => {
-                let imageUrl = '/images/placeholder.jpg';
+                let imageUrl = '/images/placeholder.png';
                 const featuredUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
 
                 if (featuredUrl) {

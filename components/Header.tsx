@@ -4,15 +4,15 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const featuredCities = [
-  { name: 'Seoul', href: '/tier-1/seoul' },
-  { name: 'Busan', href: '/tier-1/busan' },
-  { name: 'Jeju', href: '/tier-1/jeju' },
-  { name: 'Gyeongju', href: '/tier-2/gyeongju' },
+  { name: 'Route 1', href: '/route-1' },
+  { name: 'Route 2', href: '/route-2' },
+  { name: 'Busan', href: '/route-1/busan' },
+  { name: 'Gangneung', href: '/route-2/gangneung' },
 ];
 
 const primaryLinks = [
   { name: 'Start Here', href: '/' },
-  { name: 'Route Guide', href: '/routes/seoul/busan' },
+  { name: 'Route Guide', href: '/route-1' },
   { name: 'About', href: '/about' },
 ];
 

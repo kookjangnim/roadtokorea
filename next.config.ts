@@ -14,6 +14,36 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/routes/seoul/busan',
+        destination: '/route-1',
+        permanent: true,
+      },
+      {
+        source: '/routes/seoul/gangneung',
+        destination: '/route-2',
+        permanent: true,
+      },
+      {
+        source: '/tier-1/gangneung',
+        destination: '/route-2/gangneung',
+        permanent: true,
+      },
+      {
+        source: '/tier-2/:city(daejeon|daegu|andong|gyeongju)',
+        destination: '/route-1/:city',
+        permanent: true,
+      },
+      {
+        source: '/tier-4/:city(cheonan|chungju|gumi|changnyeong|uljin|sangju|yeongdeok|miryang|pohang|mungyeong)',
+        destination: '/route-1/:city',
+        permanent: true,
+      },
+      {
+        source: '/tier-4/:city(wonju|samcheok)',
+        destination: '/route-2/:city',
+        permanent: true,
+      },
+      {
         source: '/regions/:tier',
         destination: '/:tier/cities',
         permanent: true,

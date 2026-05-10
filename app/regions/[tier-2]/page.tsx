@@ -174,7 +174,7 @@ export default function TierPage({ params }: TierPageProps) {
             {cities.map((city, index) => (
               <Link
                 key={index}
-                href={`/${city.name.toLowerCase()}`}
+                href={`/cities/${city.name.toLowerCase()}`}
                 className={`group bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 border-2 border-gray-700 transition-all`}
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
@@ -211,7 +211,7 @@ export default function TierPage({ params }: TierPageProps) {
           Looking for more cities?
         </p>
         <Link
-          href="/regions"
+          href="/updated-cities"
           className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-semibold hover:from-orange-600 transition-all hover:shadow-lg"
         >
           Browse All Cities

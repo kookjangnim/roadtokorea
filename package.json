@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "images:ingest": "node scripts/ingest-editorial-images.mjs"
+    "images:ingest": "node scripts/ingest-editorial-images.mjs",
+    "check:route-template": "node scripts/validate-route-city-template.mjs",
+    "check:junctions": "node scripts/validate-junction-cities.mjs"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",

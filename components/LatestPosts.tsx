@@ -32,7 +32,7 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {posts.map((post, index) => {
-            let imageUrl = '/images/placeholder.jpg';
+            let imageUrl = '/images/placeholder.png';
             const featuredUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
 
             if (featuredUrl) {
@@ -114,7 +114,7 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
 
         <div className="mt-20 flex justify-center">
           <Link
-            href="/tier-1/cities"
+            href="/route-1"
             className="rounded-sm border border-gray-300 px-10 py-4 text-xs font-semibold uppercase tracking-widest text-gray-600 transition-all hover:border-gray-900 hover:text-gray-900"
           >
             Browse Slow Travel Guides

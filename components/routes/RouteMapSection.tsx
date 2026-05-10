@@ -36,6 +36,17 @@ function getFallbackGeometry(transportRoute: TransportRouteVariant) {
   return transportRoute.routePath.map((coord) => [coord[0], coord[1]]) as [number, number][];
 }
 
+function createStopoverIcon(L: typeof import('leaflet')) {
+  return L.divIcon({
+    className: '',
+    html:
+      '<span class="block h-4 w-4 rounded-full border-2 border-white bg-stone-950 shadow-[0_2px_8px_rgba(0,0,0,0.35)]"></span>',
+    iconSize: [16, 16],
+    iconAnchor: [8, 8],
+    popupAnchor: [0, -8],
+  });
+}
+
 export default function RouteMapSection({
   transportRoute,
 }: RouteMapSectionProps) {
@@ -110,8 +121,10 @@ export default function RouteMapSection({
         opacity: 0.8,
       }).addTo(map);
 
+      const stopoverIcon = createStopoverIcon(L);
+
       transportRoute.stopovers.forEach((stopover) => {
-        L.marker([stopover.coordinates.lat, stopover.coordinates.lng])
+        L.marker([stopover.coordinates.lat, stopover.coordinates.lng], { icon: stopoverIcon })
           .addTo(map)
           .bindPopup(
             `<div><strong>${stopover.city}</strong><br/>${stopover.travelTimeFromPrevious} from previous stop</div>`

@@ -101,24 +101,6 @@ function buildSmoothPath(points: PlotPoint[]) {
   return path;
 }
 
-function getPointAtProgress(points: PlotPoint[], progress: number) {
-  if (points.length <= 1) {
-    return points[0] ?? { city: '', x: 0, y: 0 };
-  }
-
-  const segmentCount = points.length - 1;
-  const scaled = progress * segmentCount;
-  const segmentIndex = Math.min(Math.floor(scaled), segmentCount - 1);
-  const localProgress = scaled - segmentIndex;
-  const start = points[segmentIndex];
-  const end = points[segmentIndex + 1];
-
-  return {
-    x: start.x + (end.x - start.x) * localProgress,
-    y: start.y + (end.y - start.y) * localProgress,
-  };
-}
-
 function getActiveIndex(points: PlotPoint[], progress: number) {
   if (points.length <= 1) return 0;
   const scaled = progress * (points.length - 1);
@@ -147,7 +129,6 @@ export default function RouteJourneyHero({
     [fromCity, toCity, transportRoute]
   );
   const pathData = useMemo(() => buildSmoothPath(plotPoints), [plotPoints]);
-  const activeDot = getPointAtProgress(plotPoints, progress);
   const activeIndex = getActiveIndex(plotPoints, progress);
   const activePoint = plotPoints[activeIndex];
   const upcomingStopover = getUpcomingStopover(transportRoute.stopovers, activePoint?.city ?? '');
@@ -294,12 +275,6 @@ export default function RouteJourneyHero({
                 ) : null}
               </g>
             ))}
-
-            <g>
-              <circle cx={activeDot.x} cy={activeDot.y} r={13} fill="#fff7ed" opacity={0.95} />
-              <circle cx={activeDot.x} cy={activeDot.y} r={24} fill="rgba(245,158,11,0.18)" />
-              <circle cx={activeDot.x} cy={activeDot.y} r={36} fill="rgba(245,158,11,0.08)" />
-            </g>
           </svg>
 
           <div className="mt-5 grid gap-4 md:grid-cols-[1.1fr_0.9fr]">

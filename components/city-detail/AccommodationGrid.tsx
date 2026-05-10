@@ -88,7 +88,9 @@ export default function AccommodationGrid({ accommodation }: AccommodationGridPr
 
                 {/* CTA Button */}
                 <a
-                  href="#"
+                  href={`https://www.booking.com/searchresults.html?ss=${encodeURIComponent(item.nameEn || item.name)}`}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-block w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-center font-semibold transition-all hover:scale-105"
                 >
                   Check Availability →

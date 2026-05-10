@@ -7,6 +7,7 @@ import TransportModeTabs from '@/components/routes/TransportModeTabs';
 import RouteMapSection from '@/components/routes/RouteMapSection';
 import StopoverCitiesCard from '@/components/routes/StopoverCitiesCard';
 import RouteJourneyHero from '@/components/routes/RouteJourneyHero';
+import { getRouteSlugForRoute } from '@/data/routeRegistry';
 
 interface RoutePageClientProps {
   routeData: RouteData;
@@ -24,6 +25,7 @@ export default function RoutePageClient({
   const [selectedMode, setSelectedMode] = useState<TransportMode>('KTX');
   const [selectedVariantId, setSelectedVariantId] = useState(routeData.transports.KTX.id);
   const currentTransport = routeData.transports[selectedMode];
+  const routeSlug = getRouteSlugForRoute(routeData);
   const transportCards = TRANSPORT_ORDER.map((mode) => routeData.transports[mode]);
   const variantOptions = useMemo(() => currentTransport.variants ?? [], [currentTransport]);
 
@@ -355,6 +357,7 @@ export default function RoutePageClient({
                 key={`${selectedMode}-${currentVariant.id}-${stopover.citySlug}`}
                 stopover={stopover}
                 isLast={index === currentVariant.stopovers.length - 1}
+                routeSlug={routeSlug}
               />
             ))}
           </div>

@@ -1,6 +1,7 @@
 import { tier1Cities } from '@/data/tier1Cities';
 import { tier2Cities } from '@/data/tier2Cities';
 import { tier4Cities } from '@/data/tier4Cities';
+import { getCanonicalCityHref } from '@/data/routeRegistry';
 
 export interface SeoulRouteOption {
   slug: string;
@@ -202,7 +203,7 @@ export function getSeoulRouteOptions(): SeoulRouteOption[] {
     .map((city) => ({
       slug: city.slug,
       name: city.name,
-      href: `/tier-${city.tier}/${city.slug}`,
+      href: getCanonicalCityHref(city.slug),
       tier: city.tier,
       image: city.heroImage,
       headline: city.headline,

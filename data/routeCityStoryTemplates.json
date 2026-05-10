@@ -1,0 +1,44 @@
+{
+  "chungju": {
+    "city": "Chungju",
+    "routeSlug": "route-1",
+    "historicalWeight": "Chungju has long mattered because Korea moves through its interior, not only around its coasts. Rivers, lake country, hot-spring movement, and mountain approaches made the city useful as a place of passage, regrouping, and recovery before harder terrain.",
+    "modernIdentity": "Today Chungju reads as a calmer inland city with lakeside outdoor travel, Suanbo recovery culture, and practical services that make the stop feel useful without needing big-city spectacle. Its present value is quiet function with enough atmosphere to justify a night.",
+    "routeMeaning": "On Route 1, Chungju is the place where the trip stops feeling like an extension of greater Seoul and starts becoming inland Korea. It prepares the body and the route for Mungyeong, pass country, and a more authored southbound sequence.",
+    "imageBrief": "Use a mix of lake or riverside imagery, Suanbo hot-spring recovery visuals, a practical city-core stay cue, and one route-facing image that explains why the next leg toward Mungyeong feels different after sleeping here.",
+    "qualityBar": [
+      "The page must explain why Chungju earns a night, not only a stop.",
+      "The page must separate city-core convenience from Suanbo recovery logic.",
+      "The page must connect the stop to the next inland leg toward Mungyeong.",
+      "The images must make Chungju feel like lake, recovery, and route preparation, not generic countryside."
+    ]
+  },
+  "wonju": {
+    "city": "Wonju",
+    "routeSlug": "route-2",
+    "historicalWeight": "Wonju should not be reduced to a mountain gateway. Its inland position made it strategically important during the Korean War, and the later presence of U.S. military facilities gave the city a modern history shaped by defense, logistics, and movement through Gangwon-bound corridors.",
+    "modernIdentity": "Wonju also belongs to contemporary Korea. The city is tied to global food culture through Buldak Bokkeummyeon production, while its everyday identity still mixes mountains, hospitals, universities, industry, and practical transport links.",
+    "routeMeaning": "On Route 2, Wonju is the hinge where Seoul loosens its grip and the trip gathers itself before Gangneung and the coast. Its past and present both point to the same idea: this is a city built around passage, pressure, production, and onward movement.",
+    "imageBrief": "Use images that show the mountain gateway, city infrastructure, military or memorial context where appropriate, modern industrial food-culture cues, and a route map that makes Wonju feel like the inland hinge before the east coast opens.",
+    "qualityBar": [
+      "The page must mention Korean War or military-logistics context without becoming a war article.",
+      "The page must include Buldak or modern food-production identity as proof that regional Korea produces global culture.",
+      "The page must connect Wonju to Gangneung as an eastbound hinge, not a random side trip.",
+      "The images must balance mountains, city function, and modern industrial identity."
+    ]
+  },
+  "andong": {
+    "city": "Andong",
+    "routeSlug": "route-1",
+    "historicalWeight": "Andong carries one of Korea's clearest Joseon-era cultural memories. Hahoe, seowon academies, clan villages, ritual culture, and the scholar-official world make the city feel like a place where Confucian Korea is still legible in the landscape.",
+    "modernIdentity": "Andong is not only preserved heritage. It remains alive through food identity, festivals, local markets, river life, tourism infrastructure, universities, and the way dishes like Andong jjimdak turn regional memory into something travelers can taste now.",
+    "routeMeaning": "On Route 1, Andong is the inland cultural anchor. After the practical reset of Chungju and the threshold logic of Mungyeong, Andong gives the route memory, food, ritual, and enough emotional weight to make the southbound line feel authored.",
+    "imageBrief": "Use images that show Hahoe or a heritage village, a seowon or scholar-culture reference, a food or market cue for modern Andong, a river or stay-zone image, and one route-facing map visual that connects Andong to the next southeast handoff.",
+    "qualityBar": [
+      "The page must explain Andong as a living cultural city, not a static museum stop.",
+      "The page must connect Hahoe, seowon, food, and overnight logic into one route argument.",
+      "The page must show why Route 1 becomes deeper after Andong.",
+      "The images must balance heritage, dinner, river mood, and practical stay logic."
+    ]
+  }
+}

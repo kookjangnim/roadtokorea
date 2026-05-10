@@ -63,7 +63,7 @@ function getEditorialCard(post: WPPost): EditorialCard | null {
   let citySlug = '';
 
   const featuredUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-  let imageUrl = featuredUrl ? normalizeWpMediaUrl(featuredUrl) : '/images/placeholder.jpg';
+  let imageUrl = featuredUrl ? normalizeWpMediaUrl(featuredUrl) : '/images/placeholder.png';
 
   if (!featuredUrl && post.content?.rendered) {
     const imgMatch = getFirstImageFromHtml(post.content.rendered);
@@ -137,7 +137,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:gap-8">
               {t1Cities[0] && (
                 <Link
-                  href={`/tier-1/${t1Cities[0].slug}`}
+                  href={`/route-1/${t1Cities[0].slug}`}
                   className="group relative block h-[500px] overflow-hidden rounded-sm shadow-xl md:col-span-8 md:h-[700px] lg:col-span-7"
                 >
                   <Image
@@ -167,7 +167,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
                 {t1Cities.slice(1).map((city) => (
                   <Link
                     key={city.slug}
-                    href={`/tier-1/${city.slug}`}
+                    href={`/route-1/${city.slug}`}
                     className="group relative block h-full overflow-hidden rounded-sm shadow-lg"
                   >
                     <Image
@@ -194,7 +194,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
 
             <div className="mt-12 text-center md:text-right">
               <Link
-                href="/tier-1/cities"
+                href="/route-1"
                 className="inline-block border-b border-gray-300 pb-1 text-xs font-semibold uppercase tracking-widest text-gray-500 transition-colors hover:border-gray-900 hover:text-gray-900"
               >
                 Explore All Anchors
@@ -215,7 +215,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
 
             <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
               {t2Cities.map((city) => (
-                <Link key={city.slug} href={`/tier-2/${city.slug}`} className="group block">
+                <Link key={city.slug} href={`/route-1/${city.slug}`} className="group block">
                   <div className="relative mb-5 aspect-[3/4] overflow-hidden rounded-sm shadow-md">
                     <Image
                       src={city.src}
@@ -241,7 +241,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
 
             <div className="mt-12 text-center md:text-right">
               <Link
-                href="/tier-2/cities"
+                href="/route-1"
                 className="inline-block border-b border-gray-300 pb-1 text-xs font-semibold uppercase tracking-widest text-gray-500 transition-colors hover:border-gray-900 hover:text-gray-900"
               >
                 Explore All Longer Stays
@@ -348,7 +348,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
               {t4Cities.map((city) => (
                 <Link
                   key={city.slug}
-                  href={`/tier-4/${city.slug}`}
+                  href={`/route-1/${city.slug}`}
                   className="group relative block h-[400px] overflow-hidden rounded-sm shadow-md md:h-[500px]"
                 >
                   <Image
@@ -374,7 +374,7 @@ export default function TierPreview({ tier34Posts }: TierPreviewProps) {
 
             <div className="mt-12 text-center md:text-right">
               <Link
-                href="/tier-4/cities"
+                href="/updated-cities"
                 className="inline-block border-b border-gray-300 pb-1 text-xs font-semibold uppercase tracking-widest text-gray-500 transition-colors hover:border-gray-900 hover:text-gray-900"
               >
                 Explore All Quiet Detours

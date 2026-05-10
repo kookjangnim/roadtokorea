@@ -3,10 +3,12 @@ import Link from 'next/link';
 import { RouteStopover } from '@/data/routeStopovers';
 import { tier2Cities } from '@/data/tier2Cities';
 import { tier4Cities } from '@/data/tier4Cities';
+import { getRouteCityHref, type RouteSlug } from '@/data/routeRegistry';
 
 interface StopoverCitiesCardProps {
   stopover: RouteStopover;
   isLast: boolean;
+  routeSlug: RouteSlug;
 }
 
 function getStopoverImage(stopover: RouteStopover) {
@@ -15,13 +17,8 @@ function getStopoverImage(stopover: RouteStopover) {
   return tier2Hero || tier4Hero || '/images/placeholder.png';
 }
 
-function getCityGuideHref(stopover: RouteStopover) {
-  // Tier 3 route nodes often reuse the quieter city-guide layer in tier-4.
-  if (stopover.tier === 3) {
-    return `/tier-4/${stopover.citySlug}`;
-  }
-
-  return `/tier-${stopover.tier}/${stopover.citySlug}`;
+function getCityGuideHref(routeSlug: RouteSlug, stopover: RouteStopover) {
+  return getRouteCityHref(routeSlug, stopover.citySlug);
 }
 
 function getFallbackDecision(stopover: RouteStopover) {
@@ -43,6 +40,7 @@ function getFallbackNextLeg(stopover: RouteStopover) {
 export default function StopoverCitiesCard({
   stopover,
   isLast,
+  routeSlug,
 }: StopoverCitiesCardProps) {
   const stopoverImage = getStopoverImage(stopover);
 
@@ -154,7 +152,7 @@ export default function StopoverCitiesCard({
 
           <div className="mt-6">
             <Link
-              href={getCityGuideHref(stopover)}
+              href={getCityGuideHref(routeSlug, stopover)}
               className="inline-flex rounded-full border border-stone-300 px-5 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-stone-800 transition-colors hover:border-stone-950 hover:bg-stone-950 hover:text-white"
             >
               Open {stopover.city}

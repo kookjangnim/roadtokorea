@@ -22,6 +22,16 @@ export const tier4Cities: Record<string, TierCityData> = {
       'Cheonan matters because not every stop on Route 1 needs to carry heavy narrative weight. It is the kind of city that makes the first southbound block feel paced rather than endured.',
     hotspots: []
   },
+  yeoju: {
+    name: 'Yeoju',
+    slug: 'yeoju',
+    headline: 'The First Inland Split',
+    heroImage: '/images/placeholder.png',
+    description: 'A Namhan River city where Seoul loosens and the route can split toward Chungju or Wonju.',
+    culturalInsight:
+      'Yeoju matters because it is both historical and directional. King Sejong’s royal memory, Silleuksa, ceramics, riverside leisure, and modern outlet culture all sit at the point where the trip can bend south toward Chungju or east toward Wonju.',
+    hotspots: []
+  },
   gumi: {
     name: 'Gumi',
     slug: 'gumi',
@@ -121,11 +131,21 @@ export const tier4Cities: Record<string, TierCityData> = {
     culturalInsight: 'Wonju is defined by its deep connection to nature, offering a spiritual retreat away from the bustling city life. The harmony between ancient traditions and untouched landscapes creates an atmosphere of profound stillness.',
     hotspots: [] // Dynamic hotspots will be loaded from destinations.ts
   },
+  jecheon: {
+    name: 'Jecheon',
+    slug: 'jecheon',
+    headline: 'The Inland Threshold',
+    heroImage: '/images/placeholder.png',
+    description: 'A mountain-edged inland city that helps Route 1 turn away from the default corridor and prepare for deeper country.',
+    culturalInsight:
+      'Jecheon belongs on the route as a threshold city. Its value is not only scenery, but the feeling that the trip is leaving the capital corridor and entering a more interior Korea shaped by lakes, mountain approaches, and slower movement.',
+    hotspots: []
+  },
   chungju: {
     name: 'Chungju',
     slug: 'chungju',
     headline: 'The Lakeside Retreat',
-    heroImage: '/images/destinations/Chungju_Lake_ferry_gliding_through_morning_mist_ae1d0cf8dc.jpeg',
+    heroImage: '/images/destinations/Chungju_Traveler_at_lake_fortress_wall_6374ceab8e.jpeg',
     description: 'Surrounded by calm waters and lush landscapes, Chungju is a hidden gem for relaxation and natural beauty.',
     culturalInsight: 'The tranquil waters of Chungju inspire a slower pace of life, reflecting the harmonious balance of Korea\'s inland beauty. From misty morning lakes to quiet forest trails, Chungju offers a perfect sanctuary for those seeking stillness.',
     hotspots: [] // Dynamic hotspots will be loaded from destinations.ts

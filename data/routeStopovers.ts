@@ -190,26 +190,12 @@ const carJungangRoute: TransportRouteVariant = {
   ],
   stopovers: [
     {
-      city: 'Jecheon',
-      citySlug: 'jecheon',
-      tier: 4,
-      coordinates: { lat: 37.1326, lng: 128.191 },
-      travelTimeFromPrevious: '1h 40m',
-      cumulativeTime: '1h 40m',
-      pitch: 'A mountain-edged inland city that announces the shift away from the default highway corridor.',
-      routeRole: 'Inland threshold',
-      stayAdvice: 'Keep Jecheon if you want the road to feel noticeably more interior before the deeper southbound push.',
-      whyItEarnsTime:
-        'It helps the inland route declare its own character early instead of feeling like a delayed detour.',
-      highlights: ['Cheongpungho Lake', 'Uirimji Reservoir', 'Mountain views'],
-    },
-    {
       city: 'Chungju',
       citySlug: 'chungju',
       tier: 3,
       coordinates: { lat: 36.991, lng: 127.926 },
-      travelTimeFromPrevious: '1h 45m',
-      cumulativeTime: '1h 45m',
+      travelTimeFromPrevious: '1h 50m',
+      cumulativeTime: '1h 50m',
       pitch:
         'A lake-and-hot-spring inland city where the route finally stops behaving like an extension of Seoul and starts preparing for the harder country ahead.',
       routeRole: 'Pre-pass recovery base',
@@ -230,32 +216,6 @@ const carJungangRoute: TransportRouteVariant = {
       nextLegLogic:
         'After Chungju, the route can stop pretending it is only drifting south. The next chapter starts aiming decisively toward pass-country, Mungyeong, and a stronger inland identity.',
       highlights: ['Suanbo Hot Springs', 'Chungju Lake', 'Tangeumdae Park'],
-    },
-    {
-      city: 'Andong',
-      citySlug: 'andong',
-      tier: 2,
-      coordinates: { lat: 36.5715, lng: 128.7269 },
-      travelTimeFromPrevious: '2h',
-      cumulativeTime: '3h 45m',
-      pitch: 'Confucian heartland where traditional Korea and village life remain intact.',
-      routeRole: 'Cultural anchor',
-      stayAdvice: 'Andong is one of the best reasons to choose this route at all, especially if the trip wants historical and regional depth.',
-      whyItEarnsTime:
-        'It gives the inland axis a strong identity that the more direct corridor cannot replicate.',
-      decisionReason:
-        'Keep Andong when the route should gain cultural gravity, not just another logistical pause between Seoul and Busan.',
-      recoveryValue:
-        'Recovery here is more mental and narrative than thermal or purely physical; it slows the trip into a deeper inland chapter.',
-      sleepValue:
-        'A strong overnight when the inland route should become a real stay rather than a sequence of utilitarian stops.',
-      foodValue:
-        'Andong is one of the better places on this corridor to make dinner and local identity part of the route itself.',
-      terrainTransition:
-        'By Andong, the route stops feeling exploratory and starts feeling fully committed to inland Korea.',
-      nextLegLogic:
-        'After Andong, the trip can either lean into historic continuity or start handing off toward the southeast.',
-      highlights: ['Hahoe Folk Village', 'Dosan Seowon', 'Andong Jjimdak Streets'],
     },
     {
       city: 'Mungyeong',
@@ -282,6 +242,32 @@ const carJungangRoute: TransportRouteVariant = {
       nextLegLogic:
         'From here the route can descend into broader river logic and more sustained southbound momentum.',
       highlights: ['Mungyeong Saejae', 'Mountain roads', 'Historic pass atmosphere'],
+    },
+    {
+      city: 'Andong',
+      citySlug: 'andong',
+      tier: 2,
+      coordinates: { lat: 36.5715, lng: 128.7269 },
+      travelTimeFromPrevious: '1h 10m',
+      cumulativeTime: '4h',
+      pitch: 'Confucian heartland where traditional Korea and village life remain intact.',
+      routeRole: 'Cultural anchor',
+      stayAdvice: 'Andong is one of the best reasons to choose this route at all, especially if the trip wants historical and regional depth.',
+      whyItEarnsTime:
+        'It gives the inland axis a strong identity that the more direct corridor cannot replicate.',
+      decisionReason:
+        'Keep Andong when the route should gain cultural gravity, not just another logistical pause between Seoul and Busan.',
+      recoveryValue:
+        'Recovery here is more mental and narrative than thermal or purely physical; it slows the trip into a deeper inland chapter.',
+      sleepValue:
+        'A strong overnight when the inland route should become a real stay rather than a sequence of utilitarian stops.',
+      foodValue:
+        'Andong is one of the better places on this corridor to make dinner and local identity part of the route itself.',
+      terrainTransition:
+        'By Andong, the route stops feeling exploratory and starts feeling fully committed to inland Korea.',
+      nextLegLogic:
+        'After Andong, the trip can either lean into historic continuity or start handing off toward the southeast.',
+      highlights: ['Hahoe Folk Village', 'Dosan Seowon', 'Andong Jjimdak Streets'],
     },
     {
       city: 'Gyeongju',
@@ -312,7 +298,9 @@ const carJungangRoute: TransportRouteVariant = {
   ],
   routePath: [
     [37.5665, 126.978],
+    [37.298, 127.637],
     [36.991, 127.926],
+    [36.5866, 128.1868],
     [36.5715, 128.7269],
     [35.8562, 129.2247],
     [35.1796, 129.0756],
@@ -865,7 +853,7 @@ export const seoulToBusanRoute: RouteData = {
   fromSlug: 'seoul',
   to: 'Busan',
   toSlug: 'busan',
-  href: '/routes/seoul/busan',
+  href: '/route-1',
   routeLabel: 'Seoul to Busan',
   headline: 'One route, four very different ways to cross Korea.',
   overview:
@@ -1146,6 +1134,7 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
   ],
   routePath: [
     [37.5665, 126.978],
+    [37.298, 127.637],
     [37.3422, 127.9202],
     [37.7519, 128.8761],
     [37.4499, 129.1652],
@@ -1253,7 +1242,7 @@ export const seoulToGangneungRoute: RouteData = {
   fromSlug: 'seoul',
   to: 'Gangneung',
   toSlug: 'gangneung',
-  href: '/routes/seoul/gangneung',
+  href: '/route-2',
   routeLabel: 'Seoul to Gangneung',
   headline: 'An eastbound route that hinges on Wonju before the coast opens.',
   overview:
@@ -1338,6 +1327,7 @@ export const seoulToGangneungRoute: RouteData = {
       ],
       routePath: [
         [37.5665, 126.978],
+        [37.298, 127.637],
         [37.3422, 127.9202],
         [37.7519, 128.8761],
       ],
@@ -1414,6 +1404,7 @@ export const seoulToGangneungRoute: RouteData = {
       ],
       routePath: [
         [37.5665, 126.978],
+        [37.298, 127.637],
         [37.3422, 127.9202],
         [37.7519, 128.8761],
       ],

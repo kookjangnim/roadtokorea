@@ -25,9 +25,9 @@ export default function ThemePreviewPage() {
             RoadToKorea<span className="text-sm align-top">&copy;</span>
           </div>
           <div className="hidden md:flex gap-12 text-sm font-medium tracking-wide">
-            <Link href="#" className="hover:text-[#8C2727] transition-colors">Destinations</Link>
-            <Link href="#" className="hover:text-[#8C2727] transition-colors">Experiences</Link>
-            <Link href="#" className="hover:text-[#8C2727] transition-colors">Journal</Link>
+            <Link href="/updated-cities" className="hover:text-[#8C2727] transition-colors">Destinations</Link>
+            <Link href="/route-1" className="hover:text-[#8C2727] transition-colors">Experiences</Link>
+            <Link href="/about" className="hover:text-[#8C2727] transition-colors">Journal</Link>
           </div>
           <div className="w-8 h-8 rounded-full border border-[#EFEAE1] flex items-center justify-center">
             <div className="w-1 h-1 bg-[#EFEAE1] rounded-full"></div>
@@ -79,7 +79,7 @@ export default function ThemePreviewPage() {
             <h2 className="text-xs font-bold tracking-[0.3em] text-[#8C2727] uppercase mb-4">Chapter 01</h2>
             <h3 className="text-4xl md:text-5xl font-light tracking-tight" style={{ fontFamily: "var(--font-cormorant), serif" }}>Curated Destinations</h3>
           </div>
-          <Link href="#" className="hidden md:block text-xs tracking-widest uppercase hover:text-[#8C2727] transition-colors border-b border-transparent hover:border-[#8C2727] pb-1">
+          <Link href="/updated-cities" className="hidden md:block text-xs tracking-widest uppercase hover:text-[#8C2727] transition-colors border-b border-transparent hover:border-[#8C2727] pb-1">
             View All Regions &rarr;
           </Link>
         </div>

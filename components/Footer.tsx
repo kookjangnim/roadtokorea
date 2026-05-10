@@ -2,17 +2,18 @@ import Link from 'next/link';
 
 const footerExplore = [
   { name: 'Updated Cities', href: '/updated-cities' },
-  { name: 'Seoul to Busan', href: '/routes/seoul/busan' },
-  { name: 'Daejeon', href: '/tier-2/daejeon' },
-  { name: 'Gangneung', href: '/tier-1/gangneung' },
-  { name: 'Uljin', href: '/tier-4/uljin' },
+  { name: 'Route 1', href: '/route-1' },
+  { name: 'Route 2', href: '/route-2' },
+  { name: 'Daejeon', href: '/route-1/daejeon' },
+  { name: 'Gangneung', href: '/route-2/gangneung' },
+  { name: 'Uljin', href: '/route-1/uljin' },
 ];
 
 const footerRoutes = [
-  { name: 'KTX route logic', href: '/routes/seoul/busan' },
-  { name: 'Drive south with stopovers', href: '/routes/seoul/busan' },
-  { name: 'Budget bus version', href: '/routes/seoul/busan' },
-  { name: 'Slow bicycle corridor', href: '/routes/seoul/busan' },
+  { name: 'KTX route logic', href: '/route-1' },
+  { name: 'Drive south with stopovers', href: '/route-1' },
+  { name: 'Budget bus version', href: '/route-1' },
+  { name: 'Eastbound coast route', href: '/route-2' },
 ];
 
 const footerGuidance = [
