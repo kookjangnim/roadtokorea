@@ -6,6 +6,8 @@ export interface RouteNetworkCity {
   kind: RouteNetworkCityKind;
   x: number;
   y: number;
+  lat: number;
+  lng: number;
   href: string;
 }
 
@@ -21,24 +23,24 @@ export interface RouteNetworkRoute {
 }
 
 export const routeNetworkCities: Record<string, RouteNetworkCity> = {
-  seoul: { slug: 'seoul', name: 'Seoul', kind: 'anchor', x: 43, y: 13, href: '/cities/seoul' },
-  yeoju: { slug: 'yeoju', name: 'Yeoju', kind: 'junction', x: 49, y: 22, href: '/cities/yeoju' },
-  gapyeong: { slug: 'gapyeong', name: 'Gapyeong', kind: 'route', x: 49, y: 15, href: '/route-3/gapyeong' },
-  chuncheon: { slug: 'chuncheon', name: 'Chuncheon', kind: 'route', x: 55, y: 15, href: '/route-3/chuncheon' },
-  yanggu: { slug: 'yanggu', name: 'Yanggu', kind: 'route', x: 62, y: 13, href: '/route-3/yanggu' },
-  inje: { slug: 'inje', name: 'Inje', kind: 'junction', x: 67, y: 18, href: '/route-3/inje' },
-  goseong: { slug: 'goseong', name: 'Goseong', kind: 'route', x: 76, y: 15, href: '/route-3/goseong' },
-  sokcho: { slug: 'sokcho', name: 'Sokcho', kind: 'anchor', x: 77, y: 20, href: '/route-3/sokcho' },
-  chungju: { slug: 'chungju', name: 'Chungju', kind: 'route', x: 47, y: 35, href: '/route-1/chungju' },
-  mungyeong: { slug: 'mungyeong', name: 'Mungyeong', kind: 'route', x: 52, y: 47, href: '/route-1/mungyeong' },
-  andong: { slug: 'andong', name: 'Andong', kind: 'route', x: 62, y: 50, href: '/route-1/andong' },
-  gyeongju: { slug: 'gyeongju', name: 'Gyeongju', kind: 'route', x: 72, y: 72, href: '/route-1/gyeongju' },
-  busan: { slug: 'busan', name: 'Busan', kind: 'anchor', x: 75, y: 88, href: '/route-1/busan' },
-  wonju: { slug: 'wonju', name: 'Wonju', kind: 'junction', x: 57, y: 24, href: '/route-2/wonju' },
-  gangneung: { slug: 'gangneung', name: 'Gangneung', kind: 'anchor', x: 76, y: 24, href: '/route-2/gangneung' },
-  samcheok: { slug: 'samcheok', name: 'Samcheok', kind: 'route', x: 79, y: 38, href: '/route-2/samcheok' },
-  jecheon: { slug: 'jecheon', name: 'Jecheon', kind: 'branch', x: 56, y: 36, href: '/cities/jecheon' },
-  yeongwol: { slug: 'yeongwol', name: 'Yeongwol', kind: 'branch', x: 62, y: 39, href: '/cities/yeongwol' },
+  seoul: { slug: 'seoul', name: 'Seoul', kind: 'anchor', x: 43, y: 13, lat: 37.5665, lng: 126.978, href: '/cities/seoul' },
+  yeoju: { slug: 'yeoju', name: 'Yeoju', kind: 'junction', x: 49, y: 22, lat: 37.298, lng: 127.637, href: '/cities/yeoju' },
+  gapyeong: { slug: 'gapyeong', name: 'Gapyeong', kind: 'route', x: 49, y: 15, lat: 37.8315, lng: 127.5107, href: '/route-3/gapyeong' },
+  chuncheon: { slug: 'chuncheon', name: 'Chuncheon', kind: 'route', x: 55, y: 15, lat: 37.8813, lng: 127.7298, href: '/route-3/chuncheon' },
+  yanggu: { slug: 'yanggu', name: 'Yanggu', kind: 'route', x: 62, y: 13, lat: 38.1101, lng: 127.9895, href: '/route-3/yanggu' },
+  inje: { slug: 'inje', name: 'Inje', kind: 'junction', x: 67, y: 18, lat: 38.0695, lng: 128.1707, href: '/route-3/inje' },
+  goseong: { slug: 'goseong', name: 'Goseong', kind: 'route', x: 76, y: 15, lat: 38.3806, lng: 128.4676, href: '/route-3/goseong' },
+  sokcho: { slug: 'sokcho', name: 'Sokcho', kind: 'anchor', x: 77, y: 20, lat: 38.2045, lng: 128.5918, href: '/route-3/sokcho' },
+  chungju: { slug: 'chungju', name: 'Chungju', kind: 'route', x: 47, y: 35, lat: 36.991, lng: 127.9259, href: '/route-1/chungju' },
+  mungyeong: { slug: 'mungyeong', name: 'Mungyeong', kind: 'route', x: 52, y: 47, lat: 36.5866, lng: 128.1868, href: '/route-1/mungyeong' },
+  andong: { slug: 'andong', name: 'Andong', kind: 'route', x: 62, y: 50, lat: 36.5684, lng: 128.7294, href: '/route-1/andong' },
+  gyeongju: { slug: 'gyeongju', name: 'Gyeongju', kind: 'route', x: 72, y: 72, lat: 35.8562, lng: 129.2247, href: '/route-1/gyeongju' },
+  busan: { slug: 'busan', name: 'Busan', kind: 'anchor', x: 75, y: 88, lat: 35.1796, lng: 129.0756, href: '/route-1/busan' },
+  wonju: { slug: 'wonju', name: 'Wonju', kind: 'junction', x: 57, y: 24, lat: 37.3422, lng: 127.9202, href: '/route-2/wonju' },
+  gangneung: { slug: 'gangneung', name: 'Gangneung', kind: 'anchor', x: 76, y: 24, lat: 37.7519, lng: 128.8761, href: '/route-2/gangneung' },
+  samcheok: { slug: 'samcheok', name: 'Samcheok', kind: 'route', x: 79, y: 38, lat: 37.4499, lng: 129.1652, href: '/route-2/samcheok' },
+  jecheon: { slug: 'jecheon', name: 'Jecheon', kind: 'branch', x: 56, y: 36, lat: 37.1326, lng: 128.1905, href: '/cities/jecheon' },
+  yeongwol: { slug: 'yeongwol', name: 'Yeongwol', kind: 'branch', x: 62, y: 39, lat: 37.1838, lng: 128.4617, href: '/cities/yeongwol' },
 };
 
 export const routeNetworkRoutes: RouteNetworkRoute[] = [

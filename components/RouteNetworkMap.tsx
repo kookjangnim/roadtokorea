@@ -1,65 +1,14 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
+import 'leaflet/dist/leaflet.css';
 import {
   routeNetworkCities,
   routeNetworkRoutes,
   type RouteNetworkCity,
   type RouteNetworkRoute,
 } from '@/data/routeNetwork';
-
-function getCityMarkerClass(city: RouteNetworkCity, isActive: boolean) {
-  if (city.kind === 'anchor') {
-    return isActive ? 'fill-stone-950 stroke-white' : 'fill-stone-700 stroke-white';
-  }
-
-  if (city.kind === 'junction') {
-    return isActive ? 'fill-amber-500 stroke-white' : 'fill-amber-300 stroke-white';
-  }
-
-  if (city.kind === 'branch') {
-    return isActive ? 'fill-stone-500 stroke-white' : 'fill-stone-300 stroke-white';
-  }
-
-  return isActive ? 'fill-stone-950 stroke-white' : 'fill-white stroke-stone-500';
-}
-
-function CityMarker({
-  city,
-  isActive,
-}: {
-  city: RouteNetworkCity;
-  isActive: boolean;
-}) {
-  const markerClass = getCityMarkerClass(city, isActive);
-
-  if (city.kind === 'junction') {
-    return (
-      <g className="transition-opacity duration-300">
-        <rect
-          x={city.x - 2.2}
-          y={city.y - 2.2}
-          width="4.4"
-          height="4.4"
-          transform={`rotate(45 ${city.x} ${city.y})`}
-          className={`${markerClass} stroke-[0.75] transition-all duration-300`}
-        />
-      </g>
-    );
-  }
-
-  const radius = city.kind === 'anchor' ? 2.6 : city.kind === 'branch' ? 1.8 : 2.1;
-
-  return (
-    <circle
-      cx={city.x}
-      cy={city.y}
-      r={radius}
-      className={`${markerClass} stroke-[0.75] transition-all duration-300`}
-    />
-  );
-}
 
 function getKindLabel(kind: RouteNetworkCity['kind']) {
   if (kind === 'anchor') return 'Terminal';
@@ -75,9 +24,39 @@ function getKindChipClass(kind: RouteNetworkCity['kind']) {
   return 'border-white/10 bg-black/15 text-stone-300';
 }
 
+function getMarkerHtml(city: RouteNetworkCity, isActive: boolean) {
+  const base =
+    'display:flex;align-items:center;justify-content:center;border:2px solid white;box-shadow:0 8px 24px rgba(0,0,0,.22);';
+  const size = city.kind === 'anchor' ? 18 : city.kind === 'branch' ? 12 : 15;
+  const radius = city.kind === 'junction' ? '3px' : '999px';
+  const transform = city.kind === 'junction' ? 'rotate(45deg)' : 'none';
+  const background = isActive
+    ? city.kind === 'junction'
+      ? '#d69b2d'
+      : '#171411'
+    : city.kind === 'anchor'
+      ? '#6b6258'
+      : city.kind === 'junction'
+        ? '#f0c36b'
+        : city.kind === 'branch'
+          ? '#a8a29a'
+          : '#ffffff';
+
+  return `<span style="${base}width:${size}px;height:${size}px;border-radius:${radius};background:${background};transform:${transform};"></span>`;
+}
+
+function getRouteCoordinates(route: RouteNetworkRoute) {
+  return route.citySlugs
+    .map((slug) => routeNetworkCities[slug])
+    .filter(Boolean)
+    .map((city) => [city.lat, city.lng] as [number, number]);
+}
+
 export default function RouteNetworkMap() {
   const [hoveredRouteId, setHoveredRouteId] = useState<string | null>(null);
   const [expandedRouteId, setExpandedRouteId] = useState(routeNetworkRoutes[0]?.id ?? '');
+  const [isClient, setIsClient] = useState(false);
+  const mapRef = useRef<HTMLDivElement | null>(null);
 
   const activeRouteId = hoveredRouteId ?? expandedRouteId;
   const expandedRoute = routeNetworkRoutes.find((route) => route.id === expandedRouteId);
@@ -93,6 +72,81 @@ export default function RouteNetworkMap() {
   const expandedJunctions = expandedRouteCities.filter((city) => city.kind === 'junction');
   const expandedBranches = expandedRouteCities.filter((city) => city.kind === 'branch');
 
+  useEffect(() => {
+    let mapInstance: { remove: () => void } | null = null;
+    let cancelled = false;
+
+    async function mountMap() {
+      if (!mapRef.current || typeof window === 'undefined') return;
+
+      const L = await import('leaflet');
+      if (cancelled || !mapRef.current) return;
+
+      setIsClient(true);
+
+      const map = L.map(mapRef.current, {
+        center: [36.7, 127.95],
+        zoom: 7,
+        zoomControl: false,
+        scrollWheelZoom: false,
+      });
+
+      L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+
+      routeNetworkRoutes.forEach((route) => {
+        const isActive = route.id === activeRouteId;
+        L.polyline(getRouteCoordinates(route), {
+          color: route.color,
+          weight: isActive ? 6 : 3,
+          opacity: isActive ? 0.95 : 0.25,
+          dashArray: route.id.startsWith('branch-') ? '6 8' : undefined,
+        }).addTo(map);
+      });
+
+      Object.values(routeNetworkCities).forEach((city) => {
+        const isActive = activeCitySlugs.has(city.slug);
+        const icon = L.divIcon({
+          className: '',
+          html: `<div style="display:flex;align-items:center;gap:6px;opacity:${isActive ? 1 : 0.46};">
+            ${getMarkerHtml(city, isActive)}
+            <span style="font-size:12px;font-weight:800;color:#171411;text-shadow:0 1px 0 #fff,0 -1px 0 #fff,1px 0 0 #fff,-1px 0 0 #fff;">${city.name}</span>
+          </div>`,
+          iconSize: [112, 24],
+          iconAnchor: [8, 12],
+        });
+
+        L.marker([city.lat, city.lng], { icon })
+          .addTo(map)
+          .bindPopup(
+            `<div><strong>${city.name}</strong><br/>${getKindLabel(city.kind)}<br/><a href="${city.href}">Open city</a></div>`
+          );
+      });
+
+      const activeRoute = routeNetworkRoutes.find((route) => route.id === activeRouteId);
+      const activeCoords = activeRoute ? getRouteCoordinates(activeRoute) : [];
+
+      if (activeCoords.length) {
+        map.fitBounds(L.latLngBounds(activeCoords.map(([lat, lng]) => L.latLng(lat, lng))), {
+          padding: [42, 42],
+        });
+      }
+
+      mapInstance = map;
+    }
+
+    mountMap();
+
+    return () => {
+      cancelled = true;
+      if (mapInstance) mapInstance.remove();
+    };
+  }, [activeCitySlugs, activeRouteId]);
+
   return (
     <section className="bg-[linear-gradient(180deg,#efe7db_0%,#f7f3ec_100%)] px-4 py-10 md:px-8 md:py-14">
       <div className="mx-auto max-w-7xl">
@@ -103,16 +157,17 @@ export default function RouteNetworkMap() {
                 Route Network
               </p>
               <h2 className="mt-3 max-w-3xl font-serif text-4xl leading-tight text-stone-950 md:text-5xl">
-                See Korea as connected routes, not isolated pins.
+                See the routes on the real map of Korea.
               </h2>
               <p className="mt-4 max-w-3xl text-sm leading-7 text-stone-600 md:text-base">
-                Hover a route to highlight its line. Click a card to open the cities that shape
-                that journey, including junctions where one trip can branch into another.
+                Hover a route to highlight it on OpenStreetMap. Click a card to open the cities
+                that shape that journey, including junctions where one trip can branch into
+                another.
               </p>
               <div className="mt-5 flex flex-wrap gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-500">
                 <span className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-2">
                   <span className="h-2 w-2 rounded-full bg-stone-700" />
-                  Anchor
+                  Terminal
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-2">
                   <span className="h-2 w-2 rotate-45 bg-amber-400" />
@@ -125,61 +180,9 @@ export default function RouteNetworkMap() {
               </div>
             </div>
 
-            <div className="relative aspect-[4/3] bg-[radial-gradient(circle_at_70%_20%,rgba(37,111,143,0.13),transparent_34%),linear-gradient(145deg,#fbf7ef,#efe5d8)] md:aspect-[16/9]">
-              <svg
-                viewBox="0 0 100 100"
-                role="img"
-                aria-label="Editorial route map of Korea"
-                className="h-full w-full"
-              >
-                <path
-                  d="M39 7 C31 17, 31 33, 36 45 C40 55, 39 68, 48 78 C57 89, 69 96, 78 91 C88 85, 86 69, 82 55 C78 43, 84 30, 76 18 C68 6, 51 1, 39 7 Z"
-                  className="fill-white/82 stroke-stone-300"
-                  strokeWidth="0.6"
-                />
-                <path
-                  d="M74 22 C82 28, 84 38, 80 46"
-                  className="fill-none stroke-sky-200/80"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                />
-
-                {routeNetworkRoutes.map((route: RouteNetworkRoute) => {
-                  const isActive = route.id === activeRouteId;
-                  return (
-                    <path
-                      key={route.id}
-                      d={route.path}
-                      fill="none"
-                      stroke={route.color}
-                      strokeWidth={isActive ? 2.35 : 1.05}
-                      strokeLinecap="round"
-                      strokeDasharray={route.id.startsWith('branch-') ? '2 2' : undefined}
-                      className={`transition-all duration-300 ${
-                        isActive ? 'opacity-100 drop-shadow-sm' : 'opacity-25'
-                      }`}
-                    />
-                  );
-                })}
-
-                {Object.values(routeNetworkCities).map((city) => {
-                  const isActive = activeCitySlugs.has(city.slug);
-                  return (
-                    <g key={city.slug} className={isActive ? 'opacity-100' : 'opacity-45'}>
-                      <CityMarker city={city} isActive={isActive} />
-                      <text
-                        x={city.x + 3}
-                        y={city.y + 1.3}
-                        className={`select-none text-[3px] font-semibold ${
-                          isActive ? 'fill-stone-950' : 'fill-stone-500'
-                        }`}
-                      >
-                        {city.name}
-                      </text>
-                    </g>
-                  );
-                })}
-              </svg>
+            <div className="relative h-[32rem] bg-stone-100 md:h-[38rem]">
+              {!isClient && <div className="h-full w-full animate-pulse bg-stone-100" />}
+              <div ref={mapRef} className={`${isClient ? 'block' : 'hidden'} h-full w-full`} />
             </div>
           </div>
 
@@ -261,24 +264,22 @@ export default function RouteNetworkMap() {
                   </Link>
                 </div>
                 <div className="mt-4 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
-                  {expandedRouteCities.map((city) => {
-                    return (
-                      <Link
-                        key={`${expandedRoute.id}-${city.slug}`}
-                        href={city.href}
-                        className="flex items-center justify-between rounded-[1rem] border border-white/10 bg-black/15 px-4 py-3 text-sm text-stone-200 transition-colors hover:border-white/24 hover:bg-white/8"
+                  {expandedRouteCities.map((city) => (
+                    <Link
+                      key={`${expandedRoute.id}-${city.slug}`}
+                      href={city.href}
+                      className="flex items-center justify-between rounded-[1rem] border border-white/10 bg-black/15 px-4 py-3 text-sm text-stone-200 transition-colors hover:border-white/24 hover:bg-white/8"
+                    >
+                      <span>{city.name}</span>
+                      <span
+                        className={`rounded-full border px-2 py-1 text-[9px] font-semibold uppercase tracking-[0.18em] ${getKindChipClass(
+                          city.kind
+                        )}`}
                       >
-                        <span>{city.name}</span>
-                        <span
-                          className={`rounded-full border px-2 py-1 text-[9px] font-semibold uppercase tracking-[0.18em] ${getKindChipClass(
-                            city.kind
-                          )}`}
-                        >
-                          {getKindLabel(city.kind)}
-                        </span>
-                      </Link>
-                    );
-                  })}
+                        {getKindLabel(city.kind)}
+                      </span>
+                    </Link>
+                  ))}
                 </div>
                 {(expandedJunctions.length > 0 || expandedBranches.length > 0) && (
                   <div className="mt-4 rounded-[1rem] border border-white/10 bg-black/15 p-4 text-xs leading-6 text-stone-300">
