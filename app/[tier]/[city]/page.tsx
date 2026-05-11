@@ -15,6 +15,7 @@ import { destinations, districtToEnglish, type Destination } from '@/data/destin
 import CitySupportMap from '@/components/city-detail/CitySupportMap';
 import CityMediaReferences from '@/components/city-detail/CityMediaReferences';
 import { getCitySupportProfile } from '@/data/citySupportProfiles';
+import { getCitySeoKeywordProfile } from '@/data/citySeoKeywords';
 import {
   buildOpenStreetMapDirectionsUrl,
   buildOpenStreetMapEmbedUrl,
@@ -155,6 +156,7 @@ export async function generateMetadata({
   const { tier, city } = await params;
   const cityData = await fetchCity(city);
   const localCityData = getLocalCityData(tier, city);
+  const seoProfile = getCitySeoKeywordProfile(city);
   if (!cityData && !localCityData) return { title: 'Not Found' };
 
   const title = cityData ? stripHtml(cityData.title.rendered) : localCityData?.name ?? 'City Guide';
@@ -167,6 +169,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    keywords: seoProfile?.metaKeywords,
     openGraph: {
       title,
       description,
@@ -230,8 +233,15 @@ export default async function CityPage({
       : localDestinations[0]?.imagePath || localCityData?.heroImage || null;
   const supportProfile = getCitySupportProfile(citySlug);
   const storyTemplate = getRouteCityStoryTemplate(citySlug);
+  const seoProfile = getCitySeoKeywordProfile(citySlug);
   const transportGuidance = buildTransportGuidance(routeOption?.transport);
-  const tags = [cityName, 'Korea route', 'Neighborhood guide', 'Travel notes'];
+  const tags = [
+    cityName,
+    'Korea route',
+    'Neighborhood guide',
+    'Travel notes',
+    ...(seoProfile?.metaKeywords.slice(0, 4) ?? []),
+  ];
   const mapEmbedUrl = routeOption
     ? buildOpenStreetMapEmbedUrl(SEOUL_COORDS, routeOption.coordinates)
     : null;
@@ -265,6 +275,7 @@ export default async function CityPage({
     name: cityName,
     description,
     url: `${siteUrl}/${tier}/${citySlug}`,
+    keywords: seoProfile?.metaKeywords,
   };
 
   return (
@@ -805,12 +816,116 @@ export default async function CityPage({
             )}
 
             {rawContent ? (
-              <div
-                className="city-article city-article--feature"
-                dangerouslySetInnerHTML={{ __html: cleanContent(rawContent) }}
-              />
+              <>
+                {seoProfile && (
+                  <section className="mb-12 border-b border-stone-200 pb-10">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
+                      Trip Questions
+                    </p>
+                    <h2 className="mt-4 max-w-3xl font-serif text-3xl leading-tight text-stone-950 md:text-5xl">
+                      What travelers usually mean when they search for {cityName}.
+                    </h2>
+                    <p className="mt-5 max-w-3xl text-sm leading-7 text-stone-600 md:text-base md:leading-8">
+                      {seoProfile.primaryIntent}
+                    </p>
+
+                    <div className="mt-8 grid gap-4 xl:grid-cols-3">
+                      {seoProfile.clusters.map((cluster) => (
+                        <article
+                          key={cluster.label}
+                          className="rounded-[1.5rem] border border-stone-200 bg-stone-50/90 p-6"
+                        >
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                            {cluster.label}
+                          </p>
+                          <div className="mt-4 flex flex-wrap gap-2">
+                            {cluster.terms.map((term) => (
+                              <span
+                                key={term}
+                                className="rounded-full border border-stone-200 bg-white px-3 py-1.5 text-xs leading-5 text-stone-700"
+                              >
+                                {term}
+                              </span>
+                            ))}
+                          </div>
+                        </article>
+                      ))}
+                    </div>
+
+                    <div className="mt-8 grid gap-4 xl:grid-cols-2">
+                      {seoProfile.questions.map((item) => (
+                        <article
+                          key={item.question}
+                          className="rounded-[1.5rem] border border-stone-200 bg-white p-6"
+                        >
+                          <h3 className="font-serif text-2xl leading-tight text-stone-950">
+                            {item.question}
+                          </h3>
+                          <p className="mt-4 text-sm leading-7 text-stone-700">{item.answer}</p>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
+                )}
+
+                <div
+                  className="city-article city-article--feature"
+                  dangerouslySetInnerHTML={{ __html: cleanContent(rawContent) }}
+                />
+              </>
             ) : localCityData ? (
               <div className="space-y-10">
+                {seoProfile && (
+                  <section className="border-b border-stone-200 pb-10">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
+                      Trip Questions
+                    </p>
+                    <h3 className="mt-4 font-serif text-3xl leading-tight text-stone-950 md:text-4xl">
+                      What travelers usually mean when they search for {cityName}.
+                    </h3>
+                    <p className="mt-5 max-w-3xl text-sm leading-7 text-stone-600 md:text-base md:leading-8">
+                      {seoProfile.primaryIntent}
+                    </p>
+
+                    <div className="mt-8 grid gap-4 xl:grid-cols-3">
+                      {seoProfile.clusters.map((cluster) => (
+                        <article
+                          key={cluster.label}
+                          className="rounded-[1.5rem] border border-stone-200 bg-stone-50/90 p-6"
+                        >
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                            {cluster.label}
+                          </p>
+                          <div className="mt-4 flex flex-wrap gap-2">
+                            {cluster.terms.map((term) => (
+                              <span
+                                key={term}
+                                className="rounded-full border border-stone-200 bg-white px-3 py-1.5 text-xs leading-5 text-stone-700"
+                              >
+                                {term}
+                              </span>
+                            ))}
+                          </div>
+                        </article>
+                      ))}
+                    </div>
+
+                    <div className="mt-8 grid gap-4 xl:grid-cols-2">
+                      {seoProfile.questions.map((item) => (
+                        <article
+                          key={item.question}
+                          className="rounded-[1.5rem] border border-stone-200 bg-white p-6"
+                        >
+                          <h3 className="font-serif text-2xl leading-tight text-stone-950">
+                            {item.question}
+                          </h3>
+                          <p className="mt-4 text-sm leading-7 text-stone-700">{item.answer}</p>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
+                )}
+
                 <section>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
                     Cultural Insight

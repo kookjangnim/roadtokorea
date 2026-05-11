@@ -1164,6 +1164,468 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  inje: {
+    slug: 'inje',
+    city: 'Inje',
+    mapTitle: 'Where Inje decides how Route 3 sees Seoraksan',
+    mapIntro:
+      'Inje is the Route 3 hinge that should never be flattened into a generic mountain stop. This is where the traveler chooses Jinburyeong, Hangyeryeong, or Misiryeong before Sokcho and the East Sea arrive.',
+    mapCenter: {
+      lat: 38.0695,
+      lng: 128.1707,
+    },
+    supportSummary:
+      'Inje works best as a Seorak decision city. Naerincheon rafting and valley travel give it a current outdoor identity, while the surrounding mountain roads make it the place where Route 3 chooses its final view logic: Jinburyeong, Hangyeryeong, or Misiryeong.',
+    roleSummary:
+      'On Route 3, Inje is the structural decision point. Yanggu brings borderland memory, but Inje turns that northern story into an actual mountain crossing before Sokcho releases the route into sea air.',
+    staySummary:
+      'Stay in or near Inje when the pass should be chosen calmly rather than improvised late in the day. A practical town stay works for weather checks, while a valley-side stay makes the route feel more outdoors-led.',
+    foodSummary:
+      'Food here should be practical and restorative: a warm meal, coffee, rafting-base food, or simple dinner before the pass matters more than destination dining. The point is to leave steady for the chosen Seorak approach.',
+    nextLegSummary:
+      'After Inje, the route splits into personality: Jinburyeong gives the northern Goseong handoff, Hangyeryeong gives the most dramatic Seoraksan mood, and Misiryeong gives the cleanest practical pass-to-Sokcho move.',
+    accommodationNote:
+      'Strongest stay-planning angle: one town-core weather-and-food stay group, one Naerincheon outdoor stay group, and one pre-pass rest pattern for travelers choosing the final Seorak approach the next morning.',
+    sections: [
+      {
+        title: 'Why Inje is the Route 3 hinge',
+        body:
+          'Inje is the last inland place where Route 3 can still choose its mountain logic. After this point, the road stops being only a northern journey and becomes a specific Seoraksan crossing.',
+      },
+      {
+        title: 'Why the three passes should stay separate',
+        body:
+          'Jinburyeong, Hangyeryeong, and Misiryeong are not interchangeable. Jinburyeong pulls the route north through Goseong, Hangyeryeong gives a stronger classic Seorak-view drama, and Misiryeong keeps the cleanest handoff into Sokcho.',
+      },
+      {
+        title: 'Why Naerincheon matters now',
+        body:
+          'Inje is not only a pass prelude. Naerincheon rafting, river sports, camping, valleys, and mountain travel give the county a present-day outdoor identity that makes the stop feel active, seasonal, and useful.',
+      },
+      {
+        title: 'How to use Inje without overcomplicating the route',
+        body:
+          'Travelers do not need every pass. The page should help them choose one: northern atmosphere, dramatic mountain view, or practical directness. That makes Inje a decision tool as much as a destination.',
+      },
+      {
+        title: 'Why weather belongs in the story',
+        body:
+          'Pass roads are emotional when conditions are good and stressful when conditions are not. Inje should be written with weather, timing, and road-readiness in mind, especially for winter or heavy rain.',
+      },
+      {
+        title: 'Why Sokcho lands better after Inje',
+        body:
+          'Sokcho becomes more meaningful when the traveler has actually chosen how to cross the mountains. Inje gives the sea arrival tension, relief, and a sense of earned geography.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Choose Jinburyeong for the northern handoff',
+        bestFor: 'Travelers who want Route 3 to keep its borderland and northern-coast identity through Goseong before Sokcho.',
+        why:
+          'This variant feels quieter and more expansive. It lets the coast arrive from the north rather than dropping straight into Sokcho.',
+      },
+      {
+        title: 'Choose Hangyeryeong for the view-led crossing',
+        bestFor: 'Drivers who want the strongest classic Seoraksan mountain drama and are willing to respect road and weather conditions.',
+        why:
+          'Hangyeryeong should be treated as the scenic event. It is not the easiest choice, but it gives the route the most explicit mountain-view payoff.',
+      },
+      {
+        title: 'Choose Misiryeong for the clean handoff',
+        bestFor: 'Travelers who want Inje, Seorak, and Sokcho to stay connected without turning the final leg into a long pass study.',
+        why:
+          'Misiryeong is the practical balance: still mountain-aware, still tied to Seorak, but easier to explain as the main pass-to-coast move.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay in the town core',
+        areaLabel: 'Inje town',
+        bestFor: 'Weather checks, food, fuel, and an easy next-morning pass decision.',
+        why:
+          'The town core is the practical base when the route should stay flexible until the pass choice is clear.',
+      },
+      {
+        title: 'Stay by Naerincheon',
+        areaLabel: 'Naerincheon side',
+        bestFor: 'Outdoor travelers, summer trips, rafting plans, and a more active Inje chapter.',
+        why:
+          'This makes Inje feel present tense: water, valley, sport, and mountain air before the road turns toward Seorak.',
+      },
+      {
+        title: 'Stay before the pass',
+        areaLabel: 'Seorak approach',
+        bestFor: 'Drivers who want to begin the final crossing early and with less decision fatigue.',
+        why:
+          'A pre-pass stay turns the final leg into a deliberate morning choice instead of a tired late-day gamble.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Outdoor present',
+        title: 'Naerincheon makes Inje active before it becomes scenic',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg',
+        alt: 'Official tourism image for Naerincheon rafting in Inje',
+        body:
+          'The river image matters because Inje is not only a mountain-road node. Naerincheon gives it a current outdoor identity before Route 3 asks the traveler to choose a pass.',
+        sourceLabel: 'VisitKorea Naerincheon Stream Rafting',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=587&vcontsId=89980',
+        licenseLabel: 'Official reference',
+      },
+      {
+        eyebrow: 'Pass decision',
+        title: 'Inje should show the choice before Sokcho',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg',
+        alt: 'Inje valley image used as a placeholder for Route 3 pass decision',
+        body:
+          'This slot should eventually become a pass map or road view. The page needs one visual that separates Jinburyeong, Hangyeryeong, and Misiryeong at a glance.',
+        sourceLabel: 'Inje County tourism reference',
+        sourceHref: 'https://tour.inje.go.kr/en/tour/tour_leports',
+        licenseLabel: 'Official reference',
+      },
+      {
+        eyebrow: 'Seorak approach',
+        title: 'The coast should feel earned after the ridge',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg',
+        alt: 'Inje mountain-valley context before Seoraksan pass roads',
+        body:
+          'Even before the page gets dedicated pass photography, the visual logic should point forward: valley, road, ridge, and then Sokcho. That is the emotional grammar of Route 3.',
+        sourceLabel: 'VisitKorea Naerincheon Stream Rafting',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=587&vcontsId=89980',
+        licenseLabel: 'Official reference',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Naerincheon is one of Korea’s major rafting rivers',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg',
+        alt: 'Naerincheon rafting in Inje',
+        body:
+          'VisitKorea describes Naerincheon Stream as one of Korea’s top rafting spots, with rapids, narrow water, pointed rocks, and a course that gives Inje a strong present-day outdoor identity.',
+        sourceLabel: 'VisitKorea Naerincheon Stream Rafting',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=587&vcontsId=89980',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the core present-day source for Inje outdoor/leports identity.',
+      },
+      {
+        eyebrow: 'County tourism source',
+        title: 'Inje County frames Naerincheon as all-year leports infrastructure',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg',
+        alt: 'Inje outdoor leisure reference image',
+        body:
+          'Inje County’s English tourism page lists Naerincheon rafting, Speedium, zip track, river bugging, and other leports, supporting the city as an active travel base rather than a passive pass town.',
+        sourceLabel: 'Inje County Tourism Leports',
+        sourceHref: 'https://tour.inje.go.kr/en/tour/tour_leports',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use to support the broader outdoor-sports layer beyond rafting alone.',
+      },
+      {
+        eyebrow: 'Recent season source',
+        title: 'Rafting season keeps Inje current',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg',
+        alt: 'Naerincheon rafting seasonal context',
+        body:
+          'Korean news reported in June 2025 that Naerincheon rafting had entered the summer season, with local safety preparation and continued demand for rafting and water sports.',
+        sourceLabel: 'Yonhap News, June 17 2025',
+        sourceHref: 'https://www.yna.co.kr/view/AKR20250617102700062',
+        licenseLabel: 'News reference',
+        usageNote:
+          'Use only for timely seasonal context; recheck before publication because current-year operating details change.',
+      },
+    ],
+    points: [
+      {
+        id: 'inje-town-core',
+        name: 'Inje town core',
+        kind: 'stay',
+        areaLabel: 'Town base',
+        coordinates: { lat: 38.0695, lng: 128.1707 },
+        summary:
+          'The practical base for food, fuel, weather checks, and deciding which pass to take toward Sokcho.',
+        note:
+          'Use this when Route 3 needs flexibility more than scenery at the overnight point.',
+      },
+      {
+        id: 'naerincheon-rafting',
+        name: 'Naerincheon rafting zone',
+        kind: 'recovery',
+        areaLabel: 'River sports',
+        coordinates: { lat: 38.0424, lng: 128.2188 },
+        summary:
+          'The outdoor identity point that makes Inje feel active and present tense before the route turns toward Seorak.',
+        note:
+          'Best for summer route versions and travelers who want the stop to be more than a road decision.',
+      },
+      {
+        id: 'jinburyeong-choice',
+        name: 'Jinburyeong choice',
+        kind: 'mobility',
+        areaLabel: 'Northern pass',
+        coordinates: { lat: 38.268, lng: 128.398 },
+        summary:
+          'The northern variant that keeps the route moving through Goseong before Sokcho.',
+        note:
+          'Use this when the traveler wants the quiet northern coast-side handoff.',
+      },
+      {
+        id: 'hangyeryeong-choice',
+        name: 'Hangyeryeong choice',
+        kind: 'mobility',
+        areaLabel: 'View-led pass',
+        coordinates: { lat: 38.082, lng: 128.376 },
+        summary:
+          'The most dramatic Seoraksan-view choice, best treated as a scenic crossing rather than a shortcut.',
+        note:
+          'Weather and road comfort matter. This is the emotional pass, not the default for everyone.',
+      },
+      {
+        id: 'misiryeong-choice',
+        name: 'Misiryeong choice',
+        kind: 'mobility',
+        areaLabel: 'Direct Seorak handoff',
+        coordinates: { lat: 38.2106, lng: 128.459 },
+        summary:
+          'The cleanest practical route from Inje toward Sokcho while keeping the Seorak threshold visible.',
+        note:
+          'Use this as the default when the traveler wants balance between scenery and simplicity.',
+      },
+    ],
+  },
+  goseong: {
+    slug: 'goseong',
+    city: 'Goseong',
+    mapTitle: 'Where Goseong turns Route 3 into the northern East Sea',
+    mapIntro:
+      'Goseong should read as more than the last quiet place before Sokcho. It is where Jinburyeong releases the route into the far northern coast, with DMZ memory, Hwajinpo lagoon, Songjiho beach, fishing villages, and Seoraksan still close behind the traveler.',
+    mapCenter: {
+      lat: 38.3806,
+      lng: 128.4676,
+    },
+    supportSummary:
+      'Goseong works best as Route 3\'s border-and-sea chapter. The DMZ Museum and Unification Observatory area carry modern historical weight, while Hwajinpo, Songjiho, Gajin, beach roads, seafood, and coastal stays make the city feel present, soft, and useful before Sokcho.',
+    roleSummary:
+      'On Route 3, Goseong belongs most clearly to the Jinburyeong variant. Inje chooses the northern pass, Goseong proves why that choice mattered, and Sokcho then arrives as the final city rather than the only coastal payoff.',
+    staySummary:
+      'Stay in Goseong when the trip should slow down before Sokcho or when the traveler wants the East Sea to arrive through a quieter northern coast. Beach, lagoon, and village stays can make the route feel less rushed and more local.',
+    foodSummary:
+      'Food should stay coastal and practical: seafood near ports, simple beach-road meals, coffee after the DMZ or Hwajinpo chapter, and an early dinner before the route moves into Sokcho.',
+    nextLegSummary:
+      'After Goseong, Sokcho should feel like a bigger urban release. Keep the final leg short, coastal, and easy so the traveler understands Goseong as the northern prelude, not a detour that competes with Sokcho.',
+    accommodationNote:
+      'Strongest stay-planning angle: one Hwajinpo or northern-history stay pattern, one Songjiho or beach leisure stay pattern, and one south Goseong handoff pattern for travelers who want Sokcho next morning without losing the quiet coast.',
+    sections: [
+      {
+        title: 'Why Goseong belongs after Jinburyeong',
+        body:
+          'If Route 3 chooses Jinburyeong, it should not immediately collapse into Sokcho. Goseong is the reason that northern choice exists: the route gets a borderland coast, not just another mountain descent.',
+      },
+      {
+        title: 'Why the DMZ layer changes the mood',
+        body:
+          'The DMZ Museum and Unification Observatory area give Goseong a modern-history weight that ordinary beach towns do not have. The page should treat this carefully: memory, division, ecology, and future hope all belong in the same frame.',
+      },
+      {
+        title: 'Why Hwajinpo is not just scenery',
+        body:
+          'Hwajinpo holds lagoon ecology and modern political memory together. That makes it useful for the site\'s core thesis: small Korean cities often carry deeper stories than travelers expect from the map alone.',
+      },
+      {
+        title: 'Why Songjiho makes the present softer',
+        body:
+          'Songjiho and nearby beaches move the page out of only security-history mode. They show the present-day Goseong of summer water, camping, families, shallow beach play, and a calmer coastal rhythm before Sokcho.',
+      },
+      {
+        title: 'How to avoid overcomplicating the route',
+        body:
+          'Goseong should appear as the named coastal chapter for the Jinburyeong variant. Hangyeryeong and Misiryeong can skip it, but Jinburyeong needs it so the route logic stays clear.',
+      },
+      {
+        title: 'Why Sokcho works better after Goseong',
+        body:
+          'Sokcho feels richer when it is not forced to carry every coastal idea alone. Goseong handles the northern coast, DMZ memory, lagoons, and quiet beach texture, letting Sokcho become the lively final arrival.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Keep Goseong on the Jinburyeong variant',
+        bestFor: 'Travelers who want Route 3 to preserve its northern identity before Sokcho.',
+        why:
+          'This makes the pass choice legible. Jinburyeong leads to Goseong, and Goseong gives the final coast a borderland atmosphere.',
+      },
+      {
+        title: 'Use Hwajinpo for the past-and-present story',
+        bestFor: 'Travelers who want ecology, modern history, and coastal scenery in one compact chapter.',
+        why:
+          'Hwajinpo can carry lagoon nature and political memory without turning the page into a purely military-history article.',
+      },
+      {
+        title: 'Use Songjiho when the trip needs ease',
+        bestFor: 'Families, summer road trips, beach stays, and travelers who want a softer day before Sokcho.',
+        why:
+          'Songjiho gives Goseong a living present: water, beach, nearby lake, and simple coastal recovery.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay near Hwajinpo',
+        areaLabel: 'Northern history and lagoon',
+        bestFor: 'Travelers who want DMZ memory, lagoon scenery, and a slower northern-coast mood.',
+        why:
+          'This stay zone makes Goseong feel distinct from Sokcho because the night is tied to ecology and modern history.',
+      },
+      {
+        title: 'Stay near Songjiho',
+        areaLabel: 'Beach and lagoon leisure',
+        bestFor: 'Families, beach days, camping-style pacing, and easy coastal recovery.',
+        why:
+          'Songjiho is the softer present-day answer to the heavy DMZ layer: shallow water, beach rhythm, and relaxed travel.',
+      },
+      {
+        title: 'Stay in south Goseong',
+        areaLabel: 'Sokcho handoff',
+        bestFor: 'Travelers who want a quiet coast night but still need Sokcho close the next morning.',
+        why:
+          'This keeps the route simple. The traveler gets Goseong\'s quiet coast without losing the practical finish into Sokcho.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Border memory',
+        title: 'The DMZ layer gives Goseong its gravity',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/87/763487_image2_1.jpg',
+        alt: 'Official tourism image for Goseong DMZ Museum',
+        body:
+          'This visual should make Goseong feel like the northern coast with memory attached. It is the piece that prevents the page from becoming only beaches and seafood.',
+        sourceLabel: 'VisitKorea Goseong DMZ Museum',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=71062',
+        licenseLabel: 'Official reference',
+      },
+      {
+        eyebrow: 'Coastal present',
+        title: 'Songjiho turns the route back toward leisure',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/21/2714121_image2_1.jpg',
+        alt: 'Official tourism image for Songjiho Beach in Goseong',
+        body:
+          'After the border-memory layer, Songjiho gives Goseong air, water, and present-day ease. The contrast is the point: the same city can hold both heaviness and rest.',
+        sourceLabel: 'VisitKorea Songjiho Beach',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=188462',
+        licenseLabel: 'Official reference',
+      },
+      {
+        eyebrow: 'Lagoon and route',
+        title: 'Hwajinpo explains why the coast should slow down',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/21/2714121_image2_1.jpg',
+        alt: 'Goseong coast image used as a placeholder for Hwajinpo lagoon context',
+        body:
+          'The Hwajinpo slot should eventually use a lagoon-specific image. For now, the content brief keeps the visual requirement clear: Goseong needs water, ecology, and history in one frame.',
+        sourceLabel: 'VisitKorea Hwajinpo Beach National Geopark',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=107566',
+        licenseLabel: 'Official reference',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Goseong DMZ Museum anchors the border-memory chapter',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/87/763487_image2_1.jpg',
+        alt: 'Goseong DMZ Museum reference image',
+        body:
+          'VisitKorea describes the DMZ Museum as being near the civilian control line on the northern East Sea, with exhibitions about the historical significance and meaning of the DMZ, its aftermath, and ecosystem.',
+        sourceLabel: 'VisitKorea Goseong DMZ Museum',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=71062',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the main support source for Goseong\'s modern-border history and DMZ-memory layer.',
+      },
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Hwajinpo combines lagoon ecology and modern history',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/21/2714121_image2_1.jpg',
+        alt: 'Hwajinpo lagoon reference image',
+        body:
+          'VisitKorea frames Hwajinpo as Korea\'s largest lagoon, with ecological value created by ocean-formed sand spits and a mixed fresh-salt water environment.',
+        sourceLabel: 'VisitKorea Hwajinpo Beach National Geopark',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=107566',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use to support the ecology side of Goseong and avoid reducing the city to security tourism alone.',
+      },
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Songjiho proves the softer modern coast',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/21/2714121_image2_1.jpg',
+        alt: 'Songjiho Beach reference image',
+        body:
+          'VisitKorea describes Songjiho Beach as a two-kilometer beach near Songjiho Lake and Seoraksan, with clear shallow water and Jukdo Island just offshore.',
+        sourceLabel: 'VisitKorea Songjiho Beach',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=188462',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the main present-day leisure source for Goseong beach, lagoon, and family-travel context.',
+      },
+    ],
+    points: [
+      {
+        id: 'goseong-dmz-museum',
+        name: 'Goseong DMZ Museum',
+        kind: 'checkpoint',
+        areaLabel: 'DMZ memory',
+        coordinates: { lat: 38.5835, lng: 128.3649 },
+        summary:
+          'The clearest source-backed anchor for Goseong as a border-memory city rather than only a beach stop.',
+        note:
+          'Use this as the history checkpoint when the Jinburyeong variant needs emotional and geopolitical weight.',
+      },
+      {
+        id: 'hwajinpo-lagoon',
+        name: 'Hwajinpo lagoon and history area',
+        kind: 'checkpoint',
+        areaLabel: 'Lagoon and modern history',
+        coordinates: { lat: 38.4732, lng: 128.4381 },
+        summary:
+          'The place where ecology, villa-era modern history, and the northern coast can sit in one compact story.',
+        note:
+          'Best used as the bridge between the heavy DMZ layer and the softer beach layer.',
+      },
+      {
+        id: 'songjiho-beach',
+        name: 'Songjiho Beach',
+        kind: 'recovery',
+        areaLabel: 'Beach and lake',
+        coordinates: { lat: 38.3378, lng: 128.5231 },
+        summary:
+          'The present-day leisure anchor that gives Goseong family travel, beach rest, and summer pacing.',
+        note:
+          'Use this when the page needs to show that Goseong is also a living coastal stay, not only memory.',
+      },
+      {
+        id: 'gajin-coast',
+        name: 'Gajin coastal village',
+        kind: 'food',
+        areaLabel: 'Village coast',
+        coordinates: { lat: 38.3732, lng: 128.5082 },
+        summary:
+          'A smaller beach and port-side texture point for seafood, cafes, and a more local road-trip feel.',
+        note:
+          'Useful for street-level copy and lodging intent when the route needs human scale.',
+      },
+      {
+        id: 'goseong-sokcho-handoff',
+        name: 'Goseong to Sokcho coastal handoff',
+        kind: 'mobility',
+        areaLabel: 'Final coast leg',
+        coordinates: { lat: 38.2484, lng: 128.563 },
+        summary:
+          'The short final move that lets Sokcho arrive after the route has already touched the northern East Sea.',
+        note:
+          'Keep this leg simple so Goseong supports Sokcho rather than competing with it.',
+      },
+    ],
+  },
   mungyeong: {
     slug: 'mungyeong',
     city: 'Mungyeong',

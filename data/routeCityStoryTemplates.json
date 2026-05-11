@@ -55,6 +55,34 @@
       "The images must balance exile history, river geography, modern film interest, and preservation caution."
     ]
   },
+  "inje": {
+    "city": "Inje",
+    "routeSlug": "route-3",
+    "historicalWeight": "Inje sits in the mountain-and-borderland zone where movement toward Seoraksan has always required terrain awareness. Its valleys, military geography, and pass roads make it feel like the last inland decision point before the East Sea.",
+    "modernIdentity": "Modern Inje is strongly tied to outdoor travel: Naerincheon rafting, river sports, valleys, motorsport, camping, and mountain tourism. The county feels active rather than sleepy because travelers use it to test water, road, and mountain conditions.",
+    "routeMeaning": "On Route 3, Inje is the structural hinge. From here the traveler chooses Jinburyeong and Goseong, Hangyeryeong's dramatic Seorak view, or Misiryeong's cleaner Sokcho handoff. That choice is the route's highlight, not a footnote.",
+    "imageBrief": "Use Naerincheon rafting or valley imagery, one mountain road/pass image, a Seoraksan view cue, one practical town/rest stop image before the pass, and a route graphic that separates Jinburyeong, Hangyeryeong, and Misiryeong.",
+    "qualityBar": [
+      "The page must explain Inje as the Seoraksan pass decision point.",
+      "The page must compare Jinburyeong, Hangyeryeong, and Misiryeong in plain travel language.",
+      "The page must include Naerincheon or outdoor sport as the present-day identity.",
+      "The images must make valley, pass, and Seoraksan view logic visible."
+    ]
+  },
+  "goseong": {
+    "city": "Goseong",
+    "routeSlug": "route-3",
+    "historicalWeight": "Goseong carries one of Korea's clearest modern-border stories. The DMZ Museum, Unification Observatory area, Hwajinpo history sites, and northern East Sea coastline make the city feel like a place where war memory, division, ecology, and sea travel overlap.",
+    "modernIdentity": "Modern Goseong is not only a security-history stop. Songjiho, Hwajinpo, Gajin, fishing villages, lagoons, beaches, resorts, camping, and seafood give it a softer coastal present that can hold families, road trippers, and slow East Sea travelers.",
+    "routeMeaning": "On Route 3, Goseong is the Jinburyeong variant's coastal proof. After Inje chooses the northern pass, Goseong lets the route touch the far northern sea before Sokcho, making the final arrival feel broader than a direct pass-to-city drop.",
+    "imageBrief": "Use one DMZ or Unification Observatory cue, one Hwajinpo lagoon or history-security cue, one Songjiho or beach cue, one fishing-village or seafood cue, and one route image that explains why Goseong belongs specifically to the Jinburyeong branch before Sokcho.",
+    "qualityBar": [
+      "The page must explain Goseong as a northern-coast and DMZ-memory city, not only a beach stop.",
+      "The page must connect Jinburyeong, Goseong, and Sokcho so the branch feels intentional.",
+      "The page must balance modern coastal leisure with war-memory and borderland context.",
+      "The images must show sea, lagoon, DMZ/history, and the handoff toward Sokcho."
+    ]
+  },
   "mungyeong": {
     "city": "Mungyeong",
     "routeSlug": "route-1",

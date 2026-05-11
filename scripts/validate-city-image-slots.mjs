@@ -7,7 +7,7 @@ const projectRoot = join(scriptDir, '..');
 const slotPath = join(projectRoot, 'data', 'cityImageSlots.json');
 const imageSlots = JSON.parse(readFileSync(slotPath, 'utf8'));
 
-const requiredCities = ['chungju', 'yeoju', 'wonju', 'yeongwol', 'mungyeong', 'andong'];
+const requiredCities = ['chungju', 'yeoju', 'wonju', 'yeongwol', 'inje', 'goseong', 'mungyeong', 'andong'];
 const requiredSlots = ['hero', 'history', 'present', 'route', 'street'];
 const allowedStatuses = new Set(['ready', 'briefed', 'missing']);
 const failures = [];

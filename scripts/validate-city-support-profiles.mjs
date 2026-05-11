@@ -38,6 +38,14 @@ const requiredCities = [
     slug: 'yeongwol',
     requiredTerms: ['Danjong', 'Cheongnyeongpo', 'film', 'Yeongwol', 'supportSummary'],
   },
+  {
+    slug: 'inje',
+    requiredTerms: ['Seorak', 'Jinburyeong', 'Hangyeryeong', 'Misiryeong', 'supportSummary'],
+  },
+  {
+    slug: 'goseong',
+    requiredTerms: ['DMZ', 'Hwajinpo', 'Songjiho', 'Jinburyeong', 'Sokcho', 'supportSummary'],
+  },
 ];
 
 const failures = [];

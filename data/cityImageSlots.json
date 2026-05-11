@@ -139,6 +139,76 @@
       }
     }
   },
+  "inje": {
+    "city": "Inje",
+    "slots": {
+      "hero": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=587&vcontsId=89980",
+        "brief": "Hero should show Naerincheon or valley water as Inje's active outdoor identity before the pass."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg",
+        "sourceHref": "https://tour.inje.go.kr/en/tour/tour_leports",
+        "brief": "History slot should eventually show borderland or mountain-road memory, tying Inje to terrain-aware movement."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=587&vcontsId=89980",
+        "brief": "Naerincheon rafting and leports should prove Inje's current identity as active mountain-and-river travel."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg",
+        "sourceHref": "https://tour.inje.go.kr/en/tour/tour_leports",
+        "brief": "Route slot should become a map or road image separating Jinburyeong, Hangyeryeong, and Misiryeong choices."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg",
+        "sourceHref": "https://tour.inje.go.kr/en/tour/tour_leports",
+        "brief": "Street slot should show a town rest stop, rafting base, or pre-pass service area before Seoraksan."
+      }
+    }
+  },
+  "goseong": {
+    "city": "Goseong",
+    "slots": {
+      "hero": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/87/763487_image2_1.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=71062",
+        "brief": "Hero should show the far-northern coast or DMZ edge so Goseong feels like Route 3's border-and-sea arrival."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/87/763487_image2_1.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=71062",
+        "brief": "History slot should anchor Goseong in DMZ memory, division, ecology, and the Unification Observatory area."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/21/2714121_image2_1.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=188462",
+        "brief": "Present slot should show Songjiho, beach leisure, camping, family travel, or the softer modern East Sea side."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/87/763487_image2_1.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=156588",
+        "brief": "Route slot should explain why Jinburyeong leads naturally to Goseong before Sokcho instead of skipping the northern coast."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/21/2714121_image2_1.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=107566",
+        "brief": "Street slot should show lagoon, beach-road, seafood, or village-level texture that keeps Goseong human after the DMZ layer."
+      }
+    }
+  },
   "mungyeong": {
     "city": "Mungyeong",
     "slots": {

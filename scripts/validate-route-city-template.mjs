@@ -19,6 +19,8 @@ const requiredCities = [
   'yeoju',
   'wonju',
   'yeongwol',
+  'inje',
+  'goseong',
   'mungyeong',
   'andong',
 ];
