@@ -626,6 +626,48 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
       { question: 'Is Gyeongju only an ancient-history city?', answer: 'No. Bomun Lake, cafes, night walks, markets, hotels, and food streets make it a living stay city too.' },
     ],
   },
+  yangyang: {
+    city: 'Yangyang',
+    primaryIntent: 'Yangyang Korea surf beach and Naksansa stop on National Route 7',
+    metaKeywords: ['Yangyang Korea', 'Yangyang travel guide', 'Yangyang Surfyy Beach', 'Naksansa Temple', 'Hajodae Beach', 'Sokcho to Yangyang', 'Korea east coast surfing', 'National Route 7 Korea'],
+    clusters: [
+      { label: 'Route intent', terms: ['Sokcho to Yangyang', 'Yangyang to Gangneung', 'National Route 7 Korea'] },
+      { label: 'Surf intent', terms: ['Yangyang Surfyy Beach', 'Korea east coast surfing', 'Yangyang surf school'] },
+      { label: 'Heritage intent', terms: ['Naksansa Temple', 'Uisangdae Pavilion', 'Hajodae Beach'] },
+    ],
+    questions: [
+      { question: 'Why stop in Yangyang on Korea Route 7?', answer: 'Yangyang is where surf culture, Naksansa temple heritage, Hajodae views, and the Sokcho-to-Gangneung handoff come together.' },
+      { question: 'Is Yangyang only for surfers?', answer: 'No. Surfyy Beach is a strong modern hook, but Naksansa, Uisangdae, Hajodae, cafes, beaches, and coastal stays make it broader than surfing alone.' },
+    ],
+  },
+  donghae: {
+    city: 'Donghae',
+    primaryIntent: 'Donghae Korea Mukho Lighthouse and Chuam stop on the east coast route',
+    metaKeywords: ['Donghae Korea', 'Donghae travel guide', 'Mukho Lighthouse', 'Nongoldam-gil', 'Chuam Chotdaebawi Rock', 'Mureunggyegok Valley', 'Gangneung to Donghae', 'Korea east coast road trip'],
+    clusters: [
+      { label: 'Route intent', terms: ['Gangneung to Donghae', 'Donghae to Samcheok', 'Korea east coast road trip'] },
+      { label: 'Port intent', terms: ['Mukho Lighthouse', 'Mukho Port', 'Nongoldam-gil'] },
+      { label: 'Scenery intent', terms: ['Chuam Chotdaebawi Rock', 'Chuam sunrise', 'Mureunggyegok Valley'] },
+    ],
+    questions: [
+      { question: 'Why include Donghae between Gangneung and Samcheok?', answer: 'Donghae adds working-port memory, lighthouse walks, Chuam sunrise scenery, and Mureung Valley recovery before the route continues south.' },
+      { question: 'What is Donghae known for?', answer: 'Mukho Lighthouse, Nongoldam-gil, Mukho Port, Chuam Chotdaebawi Rock, Chuam Beach, and Mureunggyegok Valley.' },
+    ],
+  },
+  ulsan: {
+    city: 'Ulsan',
+    primaryIntent: 'Ulsan Korea industrial coast and Daewangam stop before Busan',
+    metaKeywords: ['Ulsan Korea', 'Ulsan travel guide', 'Daewangam Park', 'Taehwagang National Garden', 'Jangsaengpo Whale Culture Village', 'Ulsan to Busan', 'Korea industrial city', 'National Route 7 Korea'],
+    clusters: [
+      { label: 'Route intent', terms: ['Gyeongju to Ulsan', 'Ulsan to Busan', 'National Route 7 Korea'] },
+      { label: 'Coast intent', terms: ['Daewangam Park', 'Ulsan coast', 'Daewangam suspension bridge'] },
+      { label: 'Modern intent', terms: ['Taehwagang National Garden', 'Jangsaengpo Whale Culture Village', 'Korea industrial city'] },
+    ],
+    questions: [
+      { question: 'Why stop in Ulsan before Busan?', answer: 'Ulsan gives Route 4 a modern coastal chapter through industry, Daewangam Park, Taehwagang National Garden, and Jangsaengpo whale memory.' },
+      { question: 'Is Ulsan only an industrial city?', answer: 'No. Industry matters, but Daewangam cliffs, Taehwagang river recovery, whale-culture sites, markets, and coastal walks make it a real travel stop.' },
+    ],
+  },
 };
 
 export function getCitySeoKeywordProfile(citySlug: string): CitySeoKeywordProfile | null {

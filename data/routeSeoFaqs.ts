@@ -45,6 +45,23 @@ export const routeSeoFaqsByCode: Record<string, RouteSeoFaq[]> = {
         'Use Jinburyeong for the northern Goseong handoff, Hangyeryeong for stronger Seoraksan drama, and Misiryeong for the cleanest practical mountain-to-coast move.',
     },
   ],
+  '4': [
+    {
+      question: 'What is Korea National Route 7 best for?',
+      answer:
+        'National Route 7 is best for a long east coast road trip, linking Goseong, Sokcho, Yangyang, Gangneung, Donghae, Samcheok, Uljin, Yeongdeok, Pohang, Gyeongju, Ulsan, and Busan.',
+    },
+    {
+      question: 'Is Goseong to Busan a realistic Korea east coast itinerary?',
+      answer:
+        'Yes, but it should be treated as a multi-day coastal route rather than a single transfer. The value is the sequence of surf towns, ports, seafood, heritage, industrial coast, and Busan.',
+    },
+    {
+      question: 'Why include Ulsan before Busan?',
+      answer:
+        'Ulsan shows modern coastal Korea through industry, Daewangam Park, Jangsaengpo whale memory, and the restored Taehwa River before the final Busan arrival.',
+    },
+  ],
 };
 
 export function getRouteSeoFaqs(routeCode: string) {

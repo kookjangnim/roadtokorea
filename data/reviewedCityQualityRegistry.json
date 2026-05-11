@@ -24,8 +24,11 @@
     "miryang",
     "gangneung",
     "samcheok",
+    "yangyang",
+    "donghae",
     "uljin",
-    "gyeongju"
+    "gyeongju",
+    "ulsan"
   ],
   "supportTerms": {
     "chungju": ["supportSummary", "roleSummary", "staySummary", "foodSummary", "nextLegSummary"],
@@ -52,7 +55,10 @@
     "miryang": ["Yeongnamru", "supportSummary"],
     "gangneung": ["coast", "supportSummary"],
     "samcheok": ["coast", "supportSummary"],
+    "yangyang": ["Surfyy", "Naksansa", "Hajodae", "Gangneung", "supportSummary"],
+    "donghae": ["Mukho", "Chuam", "Mureung", "Samcheok", "supportSummary"],
     "uljin": ["coast", "supportSummary"],
-    "gyeongju": ["heritage", "supportSummary"]
+    "gyeongju": ["heritage", "supportSummary"],
+    "ulsan": ["Daewangam", "Taehwagang", "Jangsaengpo", "Busan", "supportSummary"]
   }
 }

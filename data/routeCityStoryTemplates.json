@@ -292,5 +292,32 @@
       "The page must show why Route 1 becomes deeper after Andong.",
       "The images must balance heritage, dinner, river mood, and practical stay logic."
     ]
+  },
+  "yangyang": {
+    "city": "Yangyang",
+    "routeSlug": "route-4",
+    "historicalWeight": "Yangyang should hold Naksansa, Uisangdae, Hajodae, and the older pilgrimage-and-view culture of the East Sea before the page turns to surf. Naksansa gives the coast Silla-era memory and makes the stop more than a beach trend.",
+    "modernIdentity": "Modern Yangyang is one of Korea's clearest surf-and-youth coast brands. Surfyy Beach, Hajodae, Jukdo, beach stays, cafes, and airport access make it a present-tense stop English-speaking travelers can search for and understand quickly.",
+    "routeMeaning": "On Route 4, Yangyang is the hinge between Sokcho/Seoraksan memory and Gangneung's larger coast-city reset. It proves the East Sea line can be historic, youthful, and useful in the same short stretch.",
+    "imageBrief": "Use one surf or beach-culture image, one Naksansa or Uisangdae heritage cue, one Hajodae coast view, one stay or cafe texture, and one route image that explains the Sokcho-to-Gangneung handoff.",
+    "qualityBar": ["The page must explain Yangyang as surf plus temple heritage, not only a beach stop.", "The page must connect Sokcho, Yangyang, and Gangneung as one readable coast sequence.", "The page must include current surf/search intent while keeping older Naksansa context visible.", "The images must show surf, temple/cliff, beach stay, and route handoff."]
+  },
+  "donghae": {
+    "city": "Donghae",
+    "routeSlug": "route-4",
+    "historicalWeight": "Donghae carries port and lighthouse memory through Mukho, a working harbor landscape, and the steep village lanes around Nongoldam-gil. It also has older scenic memory at Chuam and mountain-water memory at Mureunggyegok Valley.",
+    "modernIdentity": "Modern Donghae works as a smaller port-city stay with sunrise viewpoints, seafood, murals, cafes, lighthouse walks, Chuam photo stops, and valley recovery. It is practical but still distinctive.",
+    "routeMeaning": "On Route 4, Donghae keeps the coast grounded after Gangneung. It prevents the line from becoming only famous beaches by adding harbor work, sunrise rocks, and local hill-town texture before Samcheok.",
+    "imageBrief": "Use Mukho Lighthouse or Nongoldam-gil, Chuam Chotdaebawi sunrise rocks, Mureunggyegok Valley, one seafood or port cue, and one route image that makes Donghae the connector before Samcheok.",
+    "qualityBar": ["The page must explain Mukho and Donghae as working-coast memory.", "The page must connect Gangneung, Donghae, and Samcheok clearly.", "The page must balance port, sunrise, valley, and stay logic.", "The images must show lighthouse/port, Chuam, Mureung, and Route 4 continuation."]
+  },
+  "ulsan": {
+    "city": "Ulsan",
+    "routeSlug": "route-4",
+    "historicalWeight": "Ulsan should carry older coastal and whale memory through Jangsaengpo, maritime life, Daewangam, and the long river-to-bay geography of Taehwagang. Its past is not only industrial; it is a sea-and-river city.",
+    "modernIdentity": "Modern Ulsan is the Route 4 chapter where Korea's industrial present becomes visible: shipbuilding, automotive production, port scale, restored Taehwagang National Garden, Daewangam coastal walks, and metropolitan services.",
+    "routeMeaning": "On Route 4, Ulsan is the final modern-metropolitan coast chapter before Busan. It makes the finish feel like Korea today, not only a scenic descent from Gyeongju into the south.",
+    "imageBrief": "Use Daewangam Park, Taehwagang National Garden, Jangsaengpo whale culture, one industrial or port-scale cue if available, and one route image toward Busan.",
+    "qualityBar": ["The page must explain Ulsan as modern Korea before Busan.", "The page must hold Daewangam, Taehwagang, Jangsaengpo, and industry together.", "The page must connect Gyeongju, Ulsan, and Busan as the final southeast sequence.", "The images must show coast, river recovery, whale memory, and metropolitan scale."]
   }
 }

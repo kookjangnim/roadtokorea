@@ -44,6 +44,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tier-4/:city(yangyang|donghae|ulsan)',
+        destination: '/route-4/:city',
+        permanent: true,
+      },
+      {
         source: '/regions/:tier',
         destination: '/:tier/cities',
         permanent: true,

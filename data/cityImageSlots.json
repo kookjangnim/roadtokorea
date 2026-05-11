@@ -483,5 +483,35 @@
         "brief": "Market, jjimdak, and evening stay texture still need dedicated visuals."
       }
     }
+  },
+  "yangyang": {
+    "city": "Yangyang",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "brief": "Hero should lead with Yangyang as an East Sea surf-and-temple hinge, ideally Surfyy Beach with Naksansa close in the story." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111119", "brief": "History slot should show Naksansa or Uisangdae so Yangyang keeps older pilgrimage and Gwandong view culture visible." },
+      "present": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "brief": "Present slot should show Surfyy Beach, surf schools, beach stays, and the youthful coast culture travelers search for." },
+      "route": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111020", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111020", "brief": "Route slot should show Hajodae or open coast as the Sokcho-to-Gangneung handoff along National Route 7." },
+      "street": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "brief": "Street slot should eventually capture cafes, beach roads, surf rentals, or stay-zone texture around Hajodae and Jukdo." }
+    }
+  },
+  "donghae": {
+    "city": "Donghae",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91465", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91465", "brief": "Hero should show Mukho Lighthouse or port-height views so Donghae reads as a working coastal city, not only scenery." },
+      "history": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451", "brief": "History slot should show Nongoldam-gil or Mukho port storytelling, linking the village lanes to harbor life and memory." },
+      "present": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94231", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94231", "brief": "Present slot should show Chuam Chotdaebawi, sunrise viewing, beach paths, and the photo-stop logic travelers understand quickly." },
+      "route": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=95394", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=95394", "brief": "Route slot should show Mureunggyegok Valley or mountain-water recovery as the inland counterpoint to the coastal road." },
+      "street": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451", "brief": "Street slot should eventually show Nongoldam-gil murals, cafes, seafood lanes, and port-side walking texture." }
+    }
+  },
+  "ulsan": {
+    "city": "Ulsan",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963", "brief": "Hero should show Daewangam Park or its coastal rocks so Ulsan enters as a dramatic East Sea metropolis before Busan." },
+      "history": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68966", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68966", "brief": "History slot should show Jangsaengpo whale memory so Ulsan is not reduced to industry alone." },
+      "present": { "status": "briefed", "asset": "https://tong.visitkorea.or.kr/cms/resource/44/3422844_image2_1.png", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=80718", "brief": "Present slot should show Taehwagang National Garden and river recovery as Ulsan's modern ecological identity." },
+      "route": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963", "brief": "Route slot should show Daewangam or the southeast coastal edge that prepares the final Ulsan-to-Busan handoff." },
+      "street": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=140322", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=140322", "brief": "Street slot should eventually capture city-scale Ulsan: whale district, cafes, port mood, river walks, or industrial coast texture." }
+    }
   }
 }

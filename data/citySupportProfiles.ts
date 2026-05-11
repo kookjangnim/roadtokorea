@@ -4657,6 +4657,408 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  yangyang: {
+    slug: 'yangyang',
+    city: 'Yangyang',
+    mapTitle: 'Where surf culture and Naksansa heritage share the coast',
+    mapIntro:
+      'Yangyang is a Route 4 support map for choosing between surf-led stays, temple-and-cliff context, and the clean handoff from Sokcho toward Gangneung.',
+    mapCenter: { lat: 38.0754, lng: 128.619 },
+    supportSummary:
+      'Yangyang works as the surf-and-temple hinge of Route 4. Surfyy Beach gives it modern search demand, while Naksansa, Uisangdae, and Hajodae keep older East Sea memory visible.',
+    roleSummary:
+      'This is where the northern coast shifts from Seoraksan/Sokcho energy into a younger beach-culture chapter before Gangneung.',
+    staySummary:
+      'Stay near Hajodae or Jukdo for beach and surf rhythm; stay closer to Naksan when the temple and sunrise side should lead.',
+    foodSummary:
+      'Food should be written as beach-town practical rather than prestige dining: seafood, cafes, simple late meals, and easy breakfast before the next coast leg.',
+    nextLegSummary:
+      'After Yangyang, Route 4 should arrive in Gangneung feeling broader: surf, temple, cliff, and then a full-service coffee-and-beach city.',
+    accommodationNote:
+      'Strongest stay-planning angle: surf-side pensions and beach hotels, with Naksan as the heritage/sunrise alternative.',
+    sections: [
+      {
+        title: 'Why Yangyang is not just a surf stop',
+        body:
+          'Surfyy Beach is the modern hook, but Naksansa and Uisangdae make the place older and more meaningful. The page should let those identities sit together instead of choosing only one.',
+      },
+      {
+        title: 'How it fits between Sokcho and Gangneung',
+        body:
+          'Yangyang keeps Route 4 from jumping straight from Sokcho to Gangneung. It gives the line a compact middle beat where coast culture changes temperature.',
+      },
+      {
+        title: 'Where the stay decision sits',
+        body:
+          'A surf-side stay makes the city feel young and social. A Naksan-side stay makes the stop quieter, more sunrise-led, and more connected to temple memory.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Stay near the surf beaches',
+        bestFor: 'Surf lessons, casual beach nights, and younger Route 4 energy.',
+        why:
+          'Hajodae, Surfyy, and Jukdo give Yangyang the modern identity English-speaking travelers are likely to search first.',
+      },
+      {
+        title: 'Use Naksan for heritage and sunrise',
+        bestFor: 'Travelers who want temple context, quieter mornings, and a stronger past-present story.',
+        why:
+          'Naksansa gives the stop historical gravity and keeps the page from reading like a disposable beach trend.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Keep the surf-side stay',
+        areaLabel: 'Hajodae / Jukdo coast',
+        bestFor: 'Beach-first travelers and surf lessons.',
+        why:
+          'This zone makes Yangyang feel contemporary and helps the route explain why the city is trending now.',
+      },
+      {
+        title: 'Use the Naksan side',
+        areaLabel: 'Naksan / Naksansa',
+        bestFor: 'Sunrise, temple walks, and quieter coast pacing.',
+        why:
+          'This side brings the older East Sea story into the overnight instead of leaving it as a quick detour.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Modern coast',
+        title: 'Surfyy Beach gives Yangyang its present-tense search hook',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg',
+        alt: 'Yangyang Surfyy Beach reference',
+        body:
+          'Yangyang should lean into surf culture because it is real travel intent, but the page must keep it tied to the route instead of writing a generic beach guide.',
+        sourceLabel: 'VISITKOREA Surfyy Beach',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Older coast',
+        title: 'Naksansa keeps the stop from feeling shallow',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg',
+        alt: 'Naksansa Uisangdae pavilion on the Yangyang coast',
+        body:
+          'The temple and cliff-view story gives Yangyang a past-present line that fits the site strategy: local places deserve more than a waypoint label.',
+        sourceLabel: 'Wikimedia Commons / VISITKOREA Naksansa reference',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111119',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Route handoff',
+        title: 'Hajodae makes the Sokcho-to-Gangneung link visible',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg',
+        alt: 'Hajodae Beach reference for Yangyang route handoff',
+        body:
+          'Hajodae is useful because it reads as scenery, stay logic, and route continuity at once.',
+        sourceLabel: 'VISITKOREA Hajodae Beach',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111020',
+        licenseLabel: 'External reference',
+      },
+    ],
+    points: [
+      {
+        id: 'yangyang-surf-side',
+        name: 'Surf-side stay zone',
+        kind: 'stay',
+        areaLabel: 'Hajodae / Jukdo',
+        coordinates: { lat: 38.018, lng: 128.718 },
+        summary: 'The strongest zone for surf, beach cafes, and the modern Yangyang identity.',
+        note: 'Use this when the route needs current travel demand and a younger coast mood.',
+      },
+      {
+        id: 'yangyang-naksansa',
+        name: 'Naksansa heritage side',
+        kind: 'checkpoint',
+        areaLabel: 'Naksan coast',
+        coordinates: { lat: 38.124, lng: 128.627 },
+        summary: 'The temple-and-cliff side that gives Yangyang historical and scenic weight.',
+        note: 'This keeps the city from becoming only a surf keyword.',
+      },
+      {
+        id: 'yangyang-gangneung-handoff',
+        name: 'Gangneung handoff line',
+        kind: 'mobility',
+        areaLabel: 'Southbound Route 7',
+        coordinates: { lat: 37.965, lng: 128.76 },
+        summary: 'The southbound edge where Yangyang gives the coast to Gangneung.',
+        note: 'This is where the route should shift from surf-and-temple to full coast-city services.',
+      },
+    ],
+  },
+  donghae: {
+    slug: 'donghae',
+    city: 'Donghae',
+    mapTitle: 'Where Mukho port memory, sunrise rocks, and valley recovery meet',
+    mapIntro:
+      'Donghae is a Route 4 support map for deciding whether the stop should focus on Mukho, Chuam, Mureung Valley, or a practical overnight between Gangneung and Samcheok.',
+    mapCenter: { lat: 37.5247, lng: 129.1143 },
+    supportSummary:
+      'Donghae works as the port-and-sunrise connector. Mukho Lighthouse and Nongoldam-gil hold working-coast memory, while Chuam and Mureunggyegok Valley give the stop scenery and recovery.',
+    roleSummary:
+      'This is the place that keeps the coast grounded after Gangneung and before Samcheok.',
+    staySummary:
+      'Stay around Mukho for port texture and lighthouse walks; stay closer to Chuam or central Donghae when the route needs simpler movement.',
+    foodSummary:
+      'Write Donghae through seafood, port meals, simple market texture, and the practicality of eating well without turning the stop into a luxury food chapter.',
+    nextLegSummary:
+      'After Donghae, Route 4 can continue into Samcheok cliffs and caves with a stronger sense of working-coast continuity.',
+    accommodationNote:
+      'Strongest stay-planning angle: Mukho for atmosphere, central Donghae for logistics, Chuam for sunrise-first pacing.',
+    sections: [
+      {
+        title: 'Why Mukho matters',
+        body:
+          'Mukho keeps Donghae rooted in port work, lighthouse safety, steep village lanes, and fishing-town memory. That is the difference between a real city stop and a generic sea view.',
+      },
+      {
+        title: 'Why Chuam changes the mood',
+        body:
+          'Chuam gives the page a fast visual win through sunrise rocks and the ocean bridge, but it should be treated as one part of Donghae rather than the whole city.',
+      },
+      {
+        title: 'Why Mureung is useful',
+        body:
+          'Mureunggyegok Valley adds a mountain-water recovery option. That matters on a long coast route because not every useful stop has to be on the beach.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Base around Mukho',
+        bestFor: 'Port texture, lighthouse walks, cafes, and a stronger local story.',
+        why:
+          'Mukho turns Donghae from a map label into a working coastal place with memory.',
+      },
+      {
+        title: 'Use Chuam as the visual checkpoint',
+        bestFor: 'Sunrise, short stops, and travelers who need one immediate scenic proof point.',
+        why:
+          'Chuam Chotdaebawi is legible quickly and helps the route stay visually memorable.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Keep Mukho atmospheric',
+        areaLabel: 'Mukho / Nongoldam-gil',
+        bestFor: 'Travelers who want port and hill-village texture.',
+        why:
+          'This is the strongest zone when Donghae should feel like a lived coastal city.',
+      },
+      {
+        title: 'Use Chuam for sunrise',
+        areaLabel: 'Chuam',
+        bestFor: 'Early mornings and scenic short stops.',
+        why:
+          'This zone makes the visual case quickly before the route continues south.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Port memory',
+        title: 'Mukho Lighthouse makes the working coast visible',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chuam%20Chotdaebawi%20Rock.jpg',
+        alt: 'Mukho Lighthouse reference in Donghae',
+        body:
+          'The lighthouse and port story give Donghae a practical maritime identity that should anchor the page.',
+        sourceLabel: 'VISITKOREA Mukho Lighthouse',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91465',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Sunrise proof',
+        title: 'Chuam gives the stop its immediate visual hook',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chuam%20Chotdaebawi%20Rock.jpg',
+        alt: 'Chuam Chotdaebawi Rock reference in Donghae',
+        body:
+          'Chuam is useful because users understand it fast: rocks, sunrise, coast, and a clear reason to pause.',
+        sourceLabel: 'VISITKOREA Chuam Chotdaebawi Rock',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94231',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Recovery option',
+        title: 'Mureunggyegok keeps Donghae from being only a port',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chuam%20Chotdaebawi%20Rock.jpg',
+        alt: 'Mureunggyegok Valley reference in Donghae',
+        body:
+          'The valley lets Donghae support a different kind of pause: cool water, walking, and mountain-edge reset before Samcheok.',
+        sourceLabel: 'VISITKOREA Mureunggyegok Valley',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=95394',
+        licenseLabel: 'External reference',
+      },
+    ],
+    points: [
+      {
+        id: 'donghae-mukho',
+        name: 'Mukho Lighthouse and port side',
+        kind: 'checkpoint',
+        areaLabel: 'Mukho',
+        coordinates: { lat: 37.55, lng: 129.116 },
+        summary: 'The strongest place to read Donghae through lighthouse, port, and hill-village memory.',
+        note: 'Use this for the past-present working coast story.',
+      },
+      {
+        id: 'donghae-chuam',
+        name: 'Chuam sunrise checkpoint',
+        kind: 'checkpoint',
+        areaLabel: 'Chuam',
+        coordinates: { lat: 37.477, lng: 129.158 },
+        summary: 'The quick scenic proof point for sunrise rocks and ocean-edge walking.',
+        note: 'Best for travelers who need Donghae to justify itself in one image.',
+      },
+      {
+        id: 'donghae-mureung',
+        name: 'Mureung Valley recovery',
+        kind: 'recovery',
+        areaLabel: 'Mureunggyegok',
+        coordinates: { lat: 37.462, lng: 129.021 },
+        summary: 'The mountain-water reset that gives Donghae a non-beach recovery option.',
+        note: 'Useful on longer Route 4 pacing days before Samcheok.',
+      },
+    ],
+  },
+  ulsan: {
+    slug: 'ulsan',
+    city: 'Ulsan',
+    mapTitle: 'Where industrial Korea, whale memory, river recovery, and coast meet',
+    mapIntro:
+      'Ulsan is a Route 4 support map for deciding how to use the final major city before Busan: Daewangam coast, Taehwagang recovery, Jangsaengpo memory, or metropolitan logistics.',
+    mapCenter: { lat: 35.5384, lng: 129.3114 },
+    supportSummary:
+      'Ulsan works as the industrial coast metropolis before Busan. Daewangam gives the sea drama, Taehwagang gives river recovery, and Jangsaengpo gives whale memory beside modern city scale.',
+    roleSummary:
+      'This is Route 4 in the present tense: production, port scale, ecology recovery, coast walks, and a clean metropolitan handoff into Busan.',
+    staySummary:
+      'Stay near the city core for logistics, near Taehwagang for river walks, or toward Dong-gu when Daewangam and the coast should lead.',
+    foodSummary:
+      'Food should support the metropolitan chapter: market meals, seafood, Korean barbecue, and easy city dining before the Busan finish.',
+    nextLegSummary:
+      'After Ulsan, Busan should feel like a finale rather than the first real city after a long coast.',
+    accommodationNote:
+      'Strongest stay-planning angle: river/city-core convenience versus Daewangam-side coast mood.',
+    sections: [
+      {
+        title: 'Why Ulsan belongs before Busan',
+        body:
+          'Ulsan gives Route 4 a modern Korea chapter at real scale. Without it, the final section jumps too quickly from heritage into Busan without showing the industrial coast that shaped the southeast.',
+      },
+      {
+        title: 'Why Daewangam leads visually',
+        body:
+          'Daewangam is the easiest visual argument for the city: cliffs, pine paths, lighthouse memory, and open East Sea views.',
+      },
+      {
+        title: 'Why Taehwagang changes the story',
+        body:
+          'Taehwagang National Garden lets the page talk about recovery and ecological repair, giving Ulsan more depth than a pure industry label.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Lead with Daewangam',
+        bestFor: 'Coast-first travelers and users who need immediate visual appeal.',
+        why:
+          'Daewangam makes Ulsan feel like a travel stop before the industrial story asks for more attention.',
+      },
+      {
+        title: 'Use Taehwagang for the overnight',
+        bestFor: 'Travelers who want city comfort, river walks, and a calmer evening.',
+        why:
+          'The river garden gives Ulsan a recovery identity and keeps the stay from feeling purely logistical.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay around Taehwagang or the city core',
+        areaLabel: 'Central Ulsan',
+        bestFor: 'Hotels, food, transport, and river walks.',
+        why:
+          'This zone makes Ulsan easy to use as the last full service reset before Busan.',
+      },
+      {
+        title: 'Move toward Daewangam',
+        areaLabel: 'Dong-gu coast',
+        bestFor: 'Coastal walks and East Sea atmosphere.',
+        why:
+          'This side lets the route keep its coast-first identity even inside a major industrial city.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Coastal drama',
+        title: 'Daewangam gives Ulsan its East Sea face',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Daewangam%20Park.jpg',
+        alt: 'Daewangam Park reference in Ulsan',
+        body:
+          'Lead with Daewangam because it lets English-speaking travelers understand Ulsan as coast before they process the industrial layer.',
+        sourceLabel: 'VISITKOREA Daewangam Park',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'River recovery',
+        title: 'Taehwagang shows the city in recovery mode',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/44/3422844_image2_1.png',
+        alt: 'Taehwagang National Garden bamboo path in Ulsan',
+        body:
+          'The garden makes Ulsan feel current and layered: a city of industry, but also a city rebuilding river life into public space.',
+        sourceLabel: 'VISITKOREA Taehwagang National Garden',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=80718',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Whale memory',
+        title: 'Jangsaengpo keeps the older sea story visible',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Daewangam%20Park.jpg',
+        alt: 'Jangsaengpo Whale Culture Village reference in Ulsan',
+        body:
+          'The whale district gives Ulsan a maritime memory line that balances the modern production story.',
+        sourceLabel: 'VISITKOREA Jangsaengpo Whale Culture Village',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68966',
+        licenseLabel: 'External reference',
+      },
+    ],
+    points: [
+      {
+        id: 'ulsan-daewangam',
+        name: 'Daewangam coast checkpoint',
+        kind: 'checkpoint',
+        areaLabel: 'Dong-gu',
+        coordinates: { lat: 35.491, lng: 129.438 },
+        summary: 'The coast-first visual anchor for Ulsan before Busan.',
+        note: 'Use this to make Ulsan feel immediately travel-worthy.',
+      },
+      {
+        id: 'ulsan-taehwagang',
+        name: 'Taehwagang recovery zone',
+        kind: 'recovery',
+        areaLabel: 'Central Ulsan',
+        coordinates: { lat: 35.548, lng: 129.297 },
+        summary: 'The river-garden side where the city becomes easier to slow down in.',
+        note: 'This supports the past-present story and gives the overnight a calmer shape.',
+      },
+      {
+        id: 'ulsan-jangsaengpo',
+        name: 'Jangsaengpo whale memory',
+        kind: 'checkpoint',
+        areaLabel: 'Nam-gu',
+        coordinates: { lat: 35.505, lng: 129.38 },
+        summary: 'The maritime-memory district that keeps Ulsan from reading only as industry.',
+        note: 'Use it as the older sea story inside a modern industrial metropolis.',
+      },
+      {
+        id: 'ulsan-busan-handoff',
+        name: 'Busan handoff line',
+        kind: 'mobility',
+        areaLabel: 'Southbound corridor',
+        coordinates: { lat: 35.36, lng: 129.25 },
+        summary: 'The final corridor where Route 4 releases into Busan.',
+        note: 'After this, Busan should feel like a finale, not the first major stop.',
+      },
+    ],
+  },
 };
 
 export function getCitySupportProfile(citySlug: string): CitySupportProfile | null {

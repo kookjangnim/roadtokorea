@@ -1825,7 +1825,343 @@ export const seoulToSokchoRoute: RouteData = {
   },
 };
 
-const allRoutes: RouteData[] = [seoulToBusanRoute, seoulToGangneungRoute, seoulToSokchoRoute];
+const nationalRoute7Stopovers: RouteStopover[] = [
+  {
+    city: 'Sokcho',
+    citySlug: 'sokcho',
+    tier: 4,
+    coordinates: { lat: 38.2045, lng: 128.5918 },
+    travelTimeFromPrevious: '35m',
+    cumulativeTime: '35m',
+    pitch: 'A compact East Sea city where Seoraksan, Abai Village, markets, and harbor food turn the northern coast into a real arrival.',
+    routeRole: 'Northern coast anchor',
+    stayAdvice: 'Use Sokcho as the first full overnight if Route 4 begins with Seoraksan or if Goseong is treated as a quieter prelude.',
+    whyItEarnsTime: 'It gives the line immediate traveler recognition while still keeping the route tied to northern landscape and migration memory.',
+    highlights: ['Seoraksan access', 'Abai Village', 'Sokcho Tourist & Fishery Market'],
+  },
+  {
+    city: 'Yangyang',
+    citySlug: 'yangyang',
+    tier: 4,
+    coordinates: { lat: 38.0754, lng: 128.619 },
+    travelTimeFromPrevious: '25m',
+    cumulativeTime: '1h',
+    pitch: 'Surf culture, Naksansa heritage, Hajodae views, and airport access make Yangyang the coast where old pilgrimage and young beach energy overlap.',
+    routeRole: 'Surf-and-temple hinge',
+    stayAdvice: 'Keep Yangyang when the route needs a younger coastal stay or a softer handoff between Sokcho and Gangneung.',
+    whyItEarnsTime: 'It proves the east coast is not only scenic road; it has present-tense culture, temple history, and beach identity in one compact stop.',
+    highlights: ['Surfyy Beach', 'Naksansa Temple', 'Hajodae Beach'],
+  },
+  {
+    city: 'Gangneung',
+    citySlug: 'gangneung',
+    tier: 4,
+    coordinates: { lat: 37.7519, lng: 128.8761 },
+    travelTimeFromPrevious: '45m',
+    cumulativeTime: '1h 45m',
+    pitch: 'Coffee streets, beaches, markets, and rail access make Gangneung the most complete urban coast chapter in Gangwon.',
+    routeRole: 'Major coast-city reset',
+    stayAdvice: 'Use Gangneung as the easiest full-service overnight before Route 4 becomes more road-trip oriented again.',
+    whyItEarnsTime: 'It gives travelers enough infrastructure to reset without losing the East Sea mood.',
+    highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Jungang Market'],
+  },
+  {
+    city: 'Donghae',
+    citySlug: 'donghae',
+    tier: 4,
+    coordinates: { lat: 37.5247, lng: 129.1143 },
+    travelTimeFromPrevious: '40m',
+    cumulativeTime: '2h 25m',
+    pitch: 'A port city where Mukho Lighthouse, Nongoldam-gil, Chuam rocks, and Mureung Valley pull maritime work, sunrise scenery, and mountain water together.',
+    routeRole: 'Port-and-sunrise connector',
+    stayAdvice: 'Use Donghae when the itinerary wants a smaller port-city chapter before Samcheok and the quieter coast south.',
+    whyItEarnsTime: 'It keeps the road grounded in working-harbor history instead of letting Route 4 become a sequence of beaches only.',
+    highlights: ['Mukho Lighthouse', 'Chuam Chotdaebawi Rock', 'Mureunggyegok Valley'],
+  },
+  {
+    city: 'Samcheok',
+    citySlug: 'samcheok',
+    tier: 4,
+    coordinates: { lat: 37.4499, lng: 129.1652 },
+    travelTimeFromPrevious: '25m',
+    cumulativeTime: '2h 50m',
+    pitch: 'Cliffs, caves, beaches, and rail-bike scenery stretch the coast into a slower road-trip rhythm after Donghae.',
+    routeRole: 'Scenic continuation',
+    stayAdvice: 'Keep Samcheok for travelers who want the line to stay visual before Uljin opens the long coast.',
+    whyItEarnsTime: 'It adds texture and prevents the route from jumping too quickly from Gangneung into the far southeast.',
+    highlights: ['Samcheok beaches', 'Cave country', 'Coastal rail-bike scenery'],
+  },
+  {
+    city: 'Uljin',
+    citySlug: 'uljin',
+    tier: 4,
+    coordinates: { lat: 36.9931, lng: 129.4005 },
+    travelTimeFromPrevious: '1h 35m',
+    cumulativeTime: '4h 25m',
+    pitch: 'A spacious East Sea county where beaches, forest edges, seafood, and recovery logic keep the long middle coast open.',
+    routeRole: 'Long-coast breather',
+    stayAdvice: 'Use Uljin as the quiet overnight if the route needs air and recovery between Gangwon and Gyeongsang coast chapters.',
+    whyItEarnsTime: 'It protects Route 4 from becoming only a chain of bigger city names.',
+    highlights: ['Open East Sea coast', 'Seafood', 'Forest-road recovery'],
+  },
+  {
+    city: 'Yeongdeok',
+    citySlug: 'yeongdeok',
+    tier: 4,
+    coordinates: { lat: 36.415, lng: 129.365 },
+    travelTimeFromPrevious: '1h',
+    cumulativeTime: '5h 25m',
+    pitch: 'A seafood-forward coast town where crab identity, ports, and sea roads make the route taste more local.',
+    routeRole: 'Coastal flavor anchor',
+    stayAdvice: 'Stop here when Route 4 needs a food chapter rather than another scenery-only pause.',
+    whyItEarnsTime: 'It turns the coast into a region you can eat, not just photograph.',
+    highlights: ['Yeongdeok crab', 'Fishing ports', 'Blue Road coastline'],
+  },
+  {
+    city: 'Pohang',
+    citySlug: 'pohang',
+    tier: 4,
+    coordinates: { lat: 36.019, lng: 129.3435 },
+    travelTimeFromPrevious: '55m',
+    cumulativeTime: '6h 20m',
+    pitch: 'A steel-and-sea city where industrial Korea and open coast sit side by side before the route turns toward Gyeongju and Ulsan.',
+    routeRole: 'Late-coast hinge',
+    stayAdvice: 'Use Pohang when the route needs services, stronger city scale, or a modern-industry chapter before the heritage handoff.',
+    whyItEarnsTime: 'It makes Route 4 feel contemporary, not only scenic or nostalgic.',
+    highlights: ['Homigot', 'Jukdo Market', 'Steel-city coastline'],
+  },
+  {
+    city: 'Gyeongju',
+    citySlug: 'gyeongju',
+    tier: 2,
+    coordinates: { lat: 35.8562, lng: 129.2247 },
+    travelTimeFromPrevious: '45m',
+    cumulativeTime: '7h 05m',
+    pitch: 'Korea’s Silla-era capital turns the coast route inward for one major heritage chapter before the final metropolitan south.',
+    routeRole: 'Heritage handoff',
+    stayAdvice: 'Use Gyeongju as the highest-value cultural overnight before Ulsan and Busan.',
+    whyItEarnsTime: 'It gives Route 4 historical depth instead of letting the final third become only ports and expressway logic.',
+    highlights: ['Silla heritage', 'Royal tombs', 'Bomun Lake'],
+  },
+  {
+    city: 'Ulsan',
+    citySlug: 'ulsan',
+    tier: 4,
+    coordinates: { lat: 35.5384, lng: 129.3114 },
+    travelTimeFromPrevious: '45m',
+    cumulativeTime: '7h 50m',
+    pitch: 'Industrial power, whale memory, Daewangam cliffs, and the restored Taehwa River make Ulsan the modern Korea chapter before Busan.',
+    routeRole: 'Industrial coast metropolis',
+    stayAdvice: 'Keep Ulsan when the route should show present-day Korea at scale before the Busan finish.',
+    whyItEarnsTime: 'It proves the east coast is also production, ecology recovery, and metropolitan life, not just resort scenery.',
+    highlights: ['Daewangam Park', 'Taehwagang National Garden', 'Jangsaengpo Whale Culture Village'],
+  },
+  {
+    city: 'Busan',
+    citySlug: 'busan',
+    tier: 1,
+    coordinates: { lat: 35.1796, lng: 129.0756 },
+    travelTimeFromPrevious: '1h',
+    cumulativeTime: '8h 50m',
+    pitch: 'Korea’s major southern port closes the route with beaches, markets, hillsides, rail, ferries, and full-city arrival energy.',
+    routeRole: 'Southern finish',
+    stayAdvice: 'End with at least two nights if Route 4 has been paced slowly; Busan should feel like a finale, not a checkout point.',
+    whyItEarnsTime: 'It resolves the full east coast line into Korea’s strongest port-city finish.',
+    highlights: ['Haeundae', 'Jagalchi Market', 'Gamcheon Culture Village'],
+  },
+];
+
+const carNationalRoute7Route: TransportRouteVariant = {
+  id: 'national-route-7',
+  routeCode: '4-0-c',
+  routeGroupCode: '4-0',
+  routeGroupLabel: 'National Route 7 Coast',
+  label: 'National Route 7',
+  routeName: 'Goseong to Busan East Coast Drive',
+  totalTravelTime: '9h - 11h driving time',
+  totalDistance: '520-560 km',
+  summary:
+    'The long-form East Sea route: start at the northern coast, follow National Route 7 logic south, and let surf towns, port cities, heritage, industry, and Busan build in sequence.',
+  bestFor: 'Self-drive travelers, repeat visitors, coast-focused itineraries, and users who want Korea beyond the Seoul-Busan default.',
+  tradeoff:
+    'It is not the fastest way to reach Busan, but it is one of the clearest ways to make the east coast itself the destination.',
+  stopPattern:
+    'Best with two to five overnights depending on whether the traveler wants a fast coastal sampler or a proper east-coast road trip.',
+  chooseWhen:
+    'Choose this when the journey is the product: Seoraksan edge, surf, ports, seafood, heritage, industrial coast, and Busan all need room.',
+  avoidWhen:
+    'Avoid it when the user only needs a direct Seoul-to-Busan transfer or cannot handle a long coastal route with many tempting stops.',
+  pacingNote:
+    'The route works best when every day has one clear city role rather than trying to collect all twelve stops equally.',
+  planningNotes: [
+    'Goseong and Sokcho overlap with Route 3, so the page should explain that Route 4 begins after the northern mountain-to-sea arrival.',
+    'Yangyang, Donghae, and Ulsan are the new quality-control cities because they carry surf, port, and industrial-metropolitan identity.',
+    'Gyeongju should remain a heritage handoff before Ulsan and Busan rather than being flattened into a coastal service stop.',
+  ],
+  stopovers: nationalRoute7Stopovers,
+  routePath: [
+    [38.3806, 128.4676],
+    [38.2045, 128.5918],
+    [38.0754, 128.619],
+    [37.7519, 128.8761],
+    [37.5247, 129.1143],
+    [37.4499, 129.1652],
+    [36.9931, 129.4005],
+    [36.415, 129.365],
+    [36.019, 129.3435],
+    [35.8562, 129.2247],
+    [35.5384, 129.3114],
+    [35.1796, 129.0756],
+  ],
+};
+
+export const goseongToBusanRoute: RouteData = {
+  routeCode: '4',
+  from: 'Goseong',
+  fromSlug: 'goseong',
+  to: 'Busan',
+  toSlug: 'busan',
+  href: '/route-4',
+  routeLabel: 'Goseong to Busan',
+  headline: 'Korea’s long East Sea line through National Route 7, surf towns, ports, heritage, industry, and Busan.',
+  overview:
+    'Route 4 is the coastal counterweight to the inland and mountain routes. It begins where the northern coast meets DMZ and Seoraksan memory, then follows the East Sea through Yangyang, Gangneung, Donghae, Samcheok, Uljin, Yeongdeok, Pohang, Gyeongju, Ulsan, and finally Busan.',
+  destinationPitch:
+    'Use this route when Korea’s east coast should be the main story, not a scenery strip beside the road.',
+  bestUseCases: [
+    'Travelers planning a Korea east coast road trip from Goseong or Sokcho toward Busan.',
+    'Repeat visitors who already know Seoul and Busan but want the towns and cities between them to matter.',
+    'Itineraries that need surf culture, ports, seafood, Silla heritage, industrial Korea, and Busan in one long line.',
+  ],
+  routePromise: [
+    'The north starts with Seoraksan, DMZ-adjacent coast, and Sokcho market energy.',
+    'The middle coast turns through Yangyang surf, Gangneung coffee, Donghae port life, Samcheok cliffs, and Uljin openness.',
+    'The southeast closes with Yeongdeok seafood, Pohang industry, Gyeongju heritage, Ulsan modernity, and Busan arrival.',
+  ],
+  editorialNotes: [
+    'Route 4 should be written as a long-form coastal itinerary, not as a shortcut between famous cities.',
+    'Shared cities are intentional: Goseong and Sokcho overlap with Route 3, while Gangneung and Samcheok overlap with Route 2.',
+    'The strongest page angle is past and present together: temples, ports, industry, ecology recovery, and living coast culture.',
+  ],
+  transports: {
+    KTX: {
+      mode: 'KTX',
+      id: 'rail-bus-east-coast',
+      routeCode: '4-0-a',
+      routeGroupCode: '4-0',
+      routeGroupLabel: 'National Route 7 Coast',
+      label: 'Rail + Bus',
+      routeName: 'East Coast rail and intercity bus interpretation',
+      totalTravelTime: '2-5 days recommended',
+      totalDistance: '520-560 km',
+      summary:
+        'A public-transport interpretation of Route 4 using rail where it helps and buses where the coastal line needs local access.',
+      bestFor: 'Travelers who want the east-coast story without driving every segment.',
+      tradeoff:
+        'It is less seamless than a car because the coast is a network of cities, not one continuous high-speed line.',
+      stopPattern:
+        'Best with Gangneung, Donghae or Samcheok, Pohang or Gyeongju, and Busan as the main planning anchors.',
+      chooseWhen:
+        'Choose this when the user values coast chapters and can accept transfers.',
+      avoidWhen:
+        'Avoid it if the user wants every small coastal stop on a rigid timetable.',
+      pacingNote:
+        'Keep the public-transport version selective so it feels intentional rather than exhausting.',
+      planningNotes: [
+        'Use rail for major anchors and buses for the places where Route 7 coastal texture matters.',
+        'Do not overpromise directness; this version should be honest about transfers.',
+        'The route page should still explain why the coastal sequence matters, even when not every stop is used.',
+      ],
+      stopovers: [
+        nationalRoute7Stopovers[2],
+        nationalRoute7Stopovers[3],
+        nationalRoute7Stopovers[7],
+        nationalRoute7Stopovers[8],
+        nationalRoute7Stopovers[10],
+      ],
+      routePath: carNationalRoute7Route.routePath,
+    },
+    car: {
+      mode: 'car',
+      ...carNationalRoute7Route,
+    },
+    bicycle: {
+      mode: 'bicycle',
+      id: 'bike-east-coast-concept',
+      routeCode: '4-0-b',
+      routeGroupCode: '4-0',
+      routeGroupLabel: 'National Route 7 Coast',
+      label: 'East Coast Bike Concept',
+      routeName: 'East Coast bicycle route concept',
+      totalTravelTime: '6-10 days',
+      totalDistance: '520-600 km',
+      summary:
+        'A serious coastal cycling concept that treats the East Sea as the route identity and uses city stops for recovery, weather decisions, and food.',
+      bestFor: 'Experienced riders who want a long Korean coast ride with real planning discipline.',
+      tradeoff:
+        'The romance is strong, but wind, traffic, road choice, and weather need careful handling.',
+      stopPattern:
+        'Best with shorter daily stages and recovery anchors in Gangneung, Donghae/Samcheok, Uljin, Pohang/Gyeongju, and Ulsan/Busan.',
+      chooseWhen:
+        'Choose this when the rider wants a coast-first journey rather than a transfer route.',
+      avoidWhen:
+        'Avoid it for casual cyclists unless detailed local safety planning is added.',
+      pacingNote:
+        'The bicycle version should read as aspirational but honest: beautiful, long, and not frictionless.',
+      planningNotes: [
+        'Future work should add safety notes, certification points, and route-surface guidance before this becomes a primary product.',
+        'Weather and wind matter more here than on short inland rides.',
+        'Cities should be presented as recovery systems, not only scenic milestones.',
+      ],
+      stopovers: nationalRoute7Stopovers,
+      routePath: carNationalRoute7Route.routePath,
+    },
+    bus: {
+      mode: 'bus',
+      id: 'bus-east-coast',
+      routeCode: '4-0-d',
+      routeGroupCode: '4-0',
+      routeGroupLabel: 'National Route 7 Coast',
+      label: 'Intercity Bus',
+      routeName: 'East Coast intercity bus line',
+      totalTravelTime: '2-5 days recommended',
+      totalDistance: '520-560 km',
+      summary:
+        'A bus-led version for travelers who want the East Sea corridor with fewer rental-car decisions.',
+      bestFor: 'Budget travelers, solo travelers, and users who prefer city-to-city coastal movement.',
+      tradeoff:
+        'It keeps costs down but makes small scenic detours harder than driving.',
+      stopPattern:
+        'Best when the traveler chooses fewer anchor cities rather than trying to bus-hop every coastal town.',
+      chooseWhen:
+        'Choose bus when simplicity and price matter more than reaching every viewpoint.',
+      avoidWhen:
+        'Avoid it when the plan depends on remote beaches, sunrise points, or flexible photo stops.',
+      pacingNote:
+        'Bus Route 4 should privilege city anchors and keep minor stops optional.',
+      planningNotes: [
+        'Gangneung, Donghae/Samcheok, Pohang/Gyeongju, Ulsan, and Busan make the clearest bus anchors.',
+        'The route needs future schedule-aware guidance before being sold as a strict plan.',
+        'Use this mode to make the coast accessible, not to pretend it is as flexible as driving.',
+      ],
+      stopovers: [
+        nationalRoute7Stopovers[2],
+        nationalRoute7Stopovers[3],
+        nationalRoute7Stopovers[7],
+        nationalRoute7Stopovers[9],
+        nationalRoute7Stopovers[10],
+      ],
+      routePath: carNationalRoute7Route.routePath,
+    },
+  },
+};
+
+const allRoutes: RouteData[] = [
+  seoulToBusanRoute,
+  seoulToGangneungRoute,
+  seoulToSokchoRoute,
+  goseongToBusanRoute,
+];
 
 export function getAllRouteData(): RouteData[] {
   return allRoutes;

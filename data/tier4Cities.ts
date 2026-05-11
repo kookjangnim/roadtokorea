@@ -72,6 +72,26 @@ export const tier4Cities: Record<string, TierCityData> = {
       'Samcheok matters because the east coast gets stronger when it unfolds in chapters. It gives the sea route one more scenic, lower-pressure stretch before Uljin takes over the longer quiet-coast logic.',
     hotspots: []
   },
+  yangyang: {
+    name: 'Yangyang',
+    slug: 'yangyang',
+    headline: 'The Surf-and-Temple Hinge',
+    heroImage: 'https://tong.visitkorea.or.kr/cms/resource/50/3393450_image2_1.jpg',
+    description: 'A compact East Sea stop where Surfyy Beach, Hajodae, Naksansa, and airport access make old coast and young beach culture meet.',
+    culturalInsight:
+      'Yangyang matters on Route 4 because it proves the east coast has present-tense culture, not only scenery. Surf schools, beach stays, Naksansa temple memory, and the Sokcho-to-Gangneung handoff all sit close together.',
+    hotspots: []
+  },
+  donghae: {
+    name: 'Donghae',
+    slug: 'donghae',
+    headline: 'The Port-and-Sunrise Connector',
+    heroImage: 'https://tong.visitkorea.or.kr/cms/resource/56/3363856_image2_1.jpg',
+    description: 'A smaller port city where Mukho Lighthouse, Nongoldam-gil, Chuam rocks, and Mureung Valley keep the coast grounded and local.',
+    culturalInsight:
+      'Donghae matters because Route 4 should not become a chain of beaches. Mukho port memory, lighthouse views, fishing-town storytelling, sunrise rocks, and mountain-valley water all make the stop feel lived-in.',
+    hotspots: []
+  },
   sangju: {
     name: 'Sangju',
     slug: 'sangju',
@@ -110,6 +130,16 @@ export const tier4Cities: Record<string, TierCityData> = {
     description: 'A sea-facing industrial city that works as the strongest hinge between the long east coast and the final Busan approach.',
     culturalInsight:
       'Pohang matters because it turns the last stretch of the coast into a controlled handoff instead of a rushed descent. It combines service infrastructure, shoreline mood, and late-route practicality better than smaller coastal stops can.',
+    hotspots: []
+  },
+  ulsan: {
+    name: 'Ulsan',
+    slug: 'ulsan',
+    headline: 'The Industrial Coast Metropolis',
+    heroImage: 'https://tong.visitkorea.or.kr/cms/resource/44/3422844_image2_1.png',
+    description: 'A metropolitan coast chapter where Daewangam cliffs, Taehwagang National Garden, whale memory, and industrial Korea sit before Busan.',
+    culturalInsight:
+      'Ulsan matters on Route 4 because it shows Korea in the present tense at scale. The city holds shipbuilding and automotive identity, restored river ecology, Daewangam coastal drama, and Jangsaengpo whale memory before the Busan finale.',
     hotspots: []
   },
   mungyeong: {
