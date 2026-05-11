@@ -58,5 +58,15 @@ export const tier2Cities: Record<string, TierCityData> = {
     description: 'Step back in time in the ancient capital of the Silla Kingdom, where royal tombs, millennia-old temples, and timeless relics seamlessly blend with modern Korean life.',
     culturalInsight: 'Gyeongju is a living testament to Korea\'s golden age. Here, history is not confined to museums but is breathed in the air, walked upon in the streets, and felt in the shadows of the monumental burial mounds that dot the landscape.',
     hotspots: [] // Hotspots are derived dynamically from destinations.ts
+  },
+  gwangju: {
+    slug: 'gwangju',
+    name: 'Gwangju',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gwangju%20Asia%20Culture%20Center.jpg',
+    headline: 'The Modern History Anchor',
+    description: 'A major Jeolla city where May 18 democratic memory, contemporary art, food, markets, and Mudeungsan give Route 5 its civic center.',
+    culturalInsight:
+      'Gwangju belongs on Route 5 because the Jeolla story needs Korea\'s modern democratic history at its center. May 18 memory comes first, then Asia Culture Center culture, Yangnim-dong craft streets, markets, food, and Mudeungsan make the city one of Korea\'s strongest past-present urban chapters.',
+    hotspots: []
   }
 };

@@ -4,7 +4,7 @@ import { tier2Cities } from '@/data/tier2Cities';
 import { tier4Cities } from '@/data/tier4Cities';
 import { getJunctionCity, getJunctionRouteSlugs, junctionCityRegistry } from '@/data/junctionCities';
 
-export type RouteSlug = 'route-1' | 'route-2' | 'route-3' | 'route-4';
+export type RouteSlug = 'route-1' | 'route-2' | 'route-3' | 'route-4' | 'route-5';
 
 export type RouteCityLink = {
   citySlug: string;
@@ -17,6 +17,7 @@ export const routeSlugByCode: Record<string, RouteSlug> = {
   '2': 'route-2',
   '3': 'route-3',
   '4': 'route-4',
+  '5': 'route-5',
 };
 
 export const routePairBySlug: Record<RouteSlug, { from: string; to: string }> = {
@@ -24,6 +25,7 @@ export const routePairBySlug: Record<RouteSlug, { from: string; to: string }> = 
   'route-2': { from: 'seoul', to: 'gangneung' },
   'route-3': { from: 'seoul', to: 'sokcho' },
   'route-4': { from: 'goseong', to: 'busan' },
+  'route-5': { from: 'seoul', to: 'yeosu' },
 };
 
 const localCityTierBySlug: Record<string, string> = {
@@ -62,6 +64,13 @@ const preferredRouteByCitySlug: Record<string, RouteSlug> = {
   yangyang: 'route-4',
   donghae: 'route-4',
   ulsan: 'route-4',
+  gongju: 'route-5',
+  jeonju: 'route-5',
+  gwangju: 'route-5',
+  imsil: 'route-5',
+  namwon: 'route-5',
+  suncheon: 'route-5',
+  yeosu: 'route-5',
 };
 
 export function getRouteSlugForRoute(routeData: RouteData): RouteSlug {

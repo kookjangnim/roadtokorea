@@ -347,6 +347,69 @@
     "imageBrief": "Use Mukho Lighthouse or Nongoldam-gil, Chuam Chotdaebawi sunrise rocks, Mureunggyegok Valley, one seafood or port cue, and one route image that makes Donghae the connector before Samcheok.",
     "qualityBar": ["The page must explain Mukho and Donghae as working-coast memory.", "The page must connect Gangneung, Donghae, and Samcheok clearly.", "The page must balance port, sunrise, valley, and stay logic.", "The images must show lighthouse/port, Chuam, Mureung, and Route 4 continuation."]
   },
+  "gongju": {
+    "city": "Gongju",
+    "routeSlug": "route-5",
+    "historicalWeight": "Gongju carries Baekje memory before Route 5 reaches Jeolla. Gongsanseong, royal tomb context, Magoksa, and the Geumgang river setting make the city feel like an old capital gateway rather than a minor central stop.",
+    "modernIdentity": "Modern Gongju works through heritage walks, riverside pacing, temple access, small-city stays, cafes, and a calmer travel rhythm before the more famous Jeonju chapter.",
+    "routeMeaning": "On Route 5, Gongju gives the southbound line an opening argument: Korea's regional cities are not filler between Seoul and the coast, but places where older state memory still shapes the route.",
+    "imageBrief": "Use one Gongsanseong or fortress image, one Baekje royal-memory cue, one Magoksa temple image, one Geumgang or riverside stay image, and one route image toward Jeonju.",
+    "qualityBar": ["The page must explain Gongju as Route 5's Baekje gateway.", "The page must connect Gongju to Jeonju without making it a disposable stop.", "The page must balance old-capital memory with modern small-city travel.", "The images must show fortress, Baekje memory, temple, river, and Jeonju handoff."]
+  },
+  "jeonju": {
+    "city": "Jeonju",
+    "routeSlug": "route-5",
+    "historicalWeight": "Jeonju should carry old-city and Joseon-rooted cultural memory through hanok streets, local craft, shrine context, market life, and the feeling of a city where regional identity remains visible.",
+    "modernIdentity": "Modern Jeonju is one of Korea's clearest food-and-stay cities for English-speaking travelers: Hanok Village, bibimbap, makgeolli alleys, street snacks, markets, guesthouses, and easy overnight logic.",
+    "routeMeaning": "On Route 5, Jeonju is the confidence anchor. It proves the route can satisfy recognizable search intent while still opening a deeper Jeolla line toward Namwon, Suncheon, and Yeosu.",
+    "imageBrief": "Use one Hanok Village image, one bibimbap or market food image, one makgeolli or evening street cue, one stay-zone image, and one route image toward Namwon.",
+    "qualityBar": ["The page must make Jeonju the strongest inland overnight on Route 5.", "The page must combine Hanok, bibimbap, makgeolli, and living old-city texture.", "The page must lead naturally into Namwon rather than ending the story.", "The images must show hanok, food, evening streets, stay texture, and Namwon handoff."]
+  },
+  "namwon": {
+    "city": "Namwon",
+    "routeSlug": "route-5",
+    "historicalWeight": "Namwon carries Chunhyang memory, Gwanghalluwon Garden, old romance storytelling, river atmosphere, and the Jirisan edge. Its history is intimate rather than monumental, which makes it valuable between Jeonju and Suncheon.",
+    "modernIdentity": "Modern Namwon works as a slower story stop with gardens, walking routes, local food, festival potential, Jirisan access, and a quieter overnight option for travelers who want emotional texture.",
+    "routeMeaning": "On Route 5, Namwon turns the line from famous Jeonju into a more personal regional journey before Suncheon shifts the route into ecology and the south coast.",
+    "imageBrief": "Use one Gwanghalluwon image, one Chunhyang or festival cue, one Jirisan or mountain-edge image, one local-street or food image, and one route image toward Suncheon.",
+    "qualityBar": ["The page must explain Namwon through Chunhyang, Gwanghalluwon, and Jirisan.", "The page must make the stop feel meaningful between Jeonju and Suncheon.", "The page must balance romance, mountain edge, and practical overnight logic.", "The images must show garden, story, mountain edge, local texture, and Suncheon handoff."]
+  },
+  "gwangju": {
+    "city": "Gwangju",
+    "routeSlug": "route-5",
+    "historicalWeight": "Gwangju carries one of the defining memories of modern Korean history through the May 18 Democratic Uprising. The city should be written as a place where Korea's democratic struggle, civic grief, and public memory remain visible, not as a generic cultural stop.",
+    "modernIdentity": "Modern Gwangju is also the Honam metropolitan anchor: Asia Culture Center, contemporary art, design, food, markets, university energy, Mudeungsan access, and a city-scale stay before Suncheon and Yeosu.",
+    "routeMeaning": "On Route 5, Gwangju fixes the missing center of the Jeolla line. Without it, the route skips the city that most clearly connects regional travel with Korea's modern democratic history and present-day Honam culture.",
+    "imageBrief": "Use one May 18 National Cemetery or memorial-space image, one Asia Culture Center or contemporary art cue, one Yangnim-dong street image, one Mudeungsan landscape image, and one route image toward Suncheon.",
+    "qualityBar": ["The page must make Gwangju the Korean modern-history anchor of Route 5.", "The page must treat May 18 Democratic Uprising memory with clear, respectful weight before moving into art, food, and city life.", "The page must connect Jeonju, Gwangju, Suncheon, and Yeosu clearly.", "The images must show civic memory, contemporary culture, mountain access, street texture, and Suncheon handoff."]
+  },
+  "imsil": {
+    "city": "Imsil",
+    "routeSlug": "route-5",
+    "historicalWeight": "Imsil's route value comes from a modern local-production story: Korea's cheese history, rural dairy development, and the way a small Jeolla county built a recognizable food identity.",
+    "modernIdentity": "Modern Imsil works through Imsil Cheese Theme Park, cheese products, family travel, Okjeongho lake scenery, rural cafes, and a light branch-stop rhythm between Jeonju and Namwon.",
+    "routeMeaning": "On Route 5, Imsil closes the Jeonju-to-Namwon gap in the inland story variant. It gives the middle of the route a present-day food hook before Chunhyang and Jirisan take over.",
+    "imageBrief": "Use one Cheese Theme Park image, one cheese or dairy-production cue, one Okjeongho lake image, one rural cafe or family-travel image, and one route image toward Namwon.",
+    "qualityBar": ["The page must explain Imsil as Korea's cheese-country stop.", "The page must make the Jeonju-to-Namwon gap feel intentional.", "The page must balance playful food identity with real rural Jeolla context.", "The images must show cheese, lake, rural texture, and Namwon handoff."]
+  },
+  "suncheon": {
+    "city": "Suncheon",
+    "routeSlug": "route-5",
+    "historicalWeight": "Suncheon carries old-town, bay, village, and agricultural memory, but its strongest route value is how that older landscape has become a modern ecological identity through wetlands and garden planning.",
+    "modernIdentity": "Modern Suncheon is a wetland-and-garden city: Suncheon Bay Wetland, Suncheon Bay National Garden, reeds, bird habitat, slower stays, cafes, old town pockets, and easy access toward Yeosu.",
+    "routeMeaning": "On Route 5, Suncheon is the ecological hinge. It gives the route a calm south-coast threshold so Yeosu arrives as a finale after nature, not only after road distance.",
+    "imageBrief": "Use one Suncheon Bay reed or wetland image, one National Garden image, one bird or sunset cue, one old-town or stay image, and one route image toward Yeosu.",
+    "qualityBar": ["The page must explain Suncheon as Route 5's ecological hinge.", "The page must connect wetlands, gardens, and Yeosu arrival.", "The page must make a slower stop feel valuable.", "The images must show wetland, garden, reed or bird habitat, stay texture, and Yeosu handoff."]
+  },
+  "yeosu": {
+    "city": "Yeosu",
+    "routeSlug": "route-5",
+    "historicalWeight": "Yeosu carries south-coast maritime memory, island geography, temple-view culture at Hyangiram, Expo-era change, and harbor life that makes the city more than a beach ending.",
+    "modernIdentity": "Modern Yeosu is a high-emotion coastal finale through Odongdo, Dolsan views, seafood, romantic night sea, cafes, cable-car and harbor experiences, and the feeling of reaching Korea's southern edge.",
+    "routeMeaning": "On Route 5, Yeosu is the payoff. It turns Gongju, Jeonju, Gwangju, Suncheon, and the optional Imsil-Namwon inland variant into an arrival story where the traveler reaches the sea with cultural context behind them.",
+    "imageBrief": "Use one Odongdo or island image, one Hyangiram or temple-view image, one night-sea or harbor image, one seafood or street image, and one finale image that feels unmistakably south coast.",
+    "qualityBar": ["The page must make Yeosu the Route 5 finale.", "The page must connect Odongdo, Hyangiram, night sea, seafood, and harbor life.", "The page must explain the arrival payoff after Suncheon.", "The images must show island, temple view, night sea, food, and south-coast finish."]
+  },
   "ulsan": {
     "city": "Ulsan",
     "routeSlug": "route-4",

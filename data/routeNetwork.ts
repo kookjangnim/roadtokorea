@@ -24,6 +24,7 @@ export interface RouteNetworkRoute {
 
 export const routeNetworkCities: Record<string, RouteNetworkCity> = {
   seoul: { slug: 'seoul', name: 'Seoul', kind: 'anchor', x: 43, y: 13, lat: 37.5665, lng: 126.978, href: '/cities/seoul' },
+  cheonan: { slug: 'cheonan', name: 'Cheonan', kind: 'junction', x: 40, y: 33, lat: 36.8157, lng: 127.1138, href: '/cities/cheonan' },
   yeoju: { slug: 'yeoju', name: 'Yeoju', kind: 'junction', x: 49, y: 22, lat: 37.298, lng: 127.637, href: '/cities/yeoju' },
   gapyeong: { slug: 'gapyeong', name: 'Gapyeong', kind: 'route', x: 49, y: 15, lat: 37.8315, lng: 127.5107, href: '/route-3/gapyeong' },
   chuncheon: { slug: 'chuncheon', name: 'Chuncheon', kind: 'route', x: 55, y: 15, lat: 37.8813, lng: 127.7298, href: '/route-3/chuncheon' },
@@ -51,6 +52,13 @@ export const routeNetworkCities: Record<string, RouteNetworkCity> = {
   yeongwol: { slug: 'yeongwol', name: 'Yeongwol', kind: 'branch', x: 62, y: 39, lat: 37.1838, lng: 128.4617, href: '/cities/yeongwol' },
   jeongseon: { slug: 'jeongseon', name: 'Jeongseon', kind: 'branch', x: 68, y: 36, lat: 37.3806, lng: 128.6609, href: '/cities/jeongseon' },
   taebaek: { slug: 'taebaek', name: 'Taebaek', kind: 'branch', x: 75, y: 43, lat: 37.1641, lng: 128.9856, href: '/cities/taebaek' },
+  gongju: { slug: 'gongju', name: 'Gongju', kind: 'route', x: 39, y: 47, lat: 36.4465, lng: 127.119, href: '/route-5/gongju' },
+  jeonju: { slug: 'jeonju', name: 'Jeonju', kind: 'route', x: 42, y: 60, lat: 35.8242, lng: 127.148, href: '/route-5/jeonju' },
+  gwangju: { slug: 'gwangju', name: 'Gwangju', kind: 'route', x: 42, y: 74, lat: 35.1595, lng: 126.8526, href: '/route-5/gwangju' },
+  imsil: { slug: 'imsil', name: 'Imsil', kind: 'branch', x: 45, y: 65, lat: 35.6179, lng: 127.2891, href: '/route-5/imsil' },
+  namwon: { slug: 'namwon', name: 'Namwon', kind: 'branch', x: 49, y: 69, lat: 35.4164, lng: 127.3906, href: '/route-5/namwon' },
+  suncheon: { slug: 'suncheon', name: 'Suncheon', kind: 'route', x: 55, y: 79, lat: 34.9506, lng: 127.4872, href: '/route-5/suncheon' },
+  yeosu: { slug: 'yeosu', name: 'Yeosu', kind: 'anchor', x: 60, y: 86, lat: 34.7604, lng: 127.6622, href: '/route-5/yeosu' },
 };
 
 export const routeNetworkRoutes: RouteNetworkRoute[] = [
@@ -93,6 +101,26 @@ export const routeNetworkRoutes: RouteNetworkRoute[] = [
     color: '#0f766e',
     citySlugs: ['goseong', 'sokcho', 'yangyang', 'gangneung', 'donghae', 'samcheok', 'uljin', 'yeongdeok', 'pohang', 'gyeongju', 'ulsan', 'busan'],
     path: 'M76 15 C77 17, 77 19, 77 20 C77 22, 77 23, 77 24 C77 28, 78 31, 78 33 C79 35, 79 37, 79 38 C80 42, 80 46, 80 50 C80 54, 80 56, 80 58 C79 61, 78 64, 78 66 C76 69, 73 72, 72 72 C74 75, 75 77, 76 79 C76 83, 75 86, 75 88',
+  },
+  {
+    id: 'route-5',
+    label: 'Route 5',
+    title: 'Seoul to Yeosu, Jeolla inland to south coast',
+    summary: 'Cheonan softens the Seoul jump before Gongju, Jeonju, Gwangju, Suncheon, and Yeosu turn the line into food, city culture, ecology, and island-night-sea arrival.',
+    href: '/route-5',
+    color: '#9f2f52',
+    citySlugs: ['seoul', 'cheonan', 'gongju', 'jeonju', 'gwangju', 'suncheon', 'yeosu'],
+    path: 'M43 13 C41 21, 40 28, 40 33 C39 38, 39 43, 39 47 C40 52, 41 56, 42 60 C41 65, 41 70, 42 74 C47 76, 51 78, 55 79 C57 82, 59 84, 60 86',
+  },
+  {
+    id: 'branch-5a',
+    label: 'Branch 5A',
+    title: 'Jeonju to Suncheon, Imsil and Namwon inland story variant',
+    summary: 'A slower Jeolla branch where Jeonju moves through Imsil cheese country and Namwon Chunhyang/Jirisan memory before rejoining Route 5 at Suncheon.',
+    href: '/route-5',
+    color: '#a16207',
+    citySlugs: ['jeonju', 'imsil', 'namwon', 'suncheon'],
+    path: 'M42 60 C43 62, 44 64, 45 65 C46 67, 48 68, 49 69 C51 73, 53 76, 55 79',
   },
   {
     id: 'branch-2a',

@@ -52,8 +52,25 @@ for (const term of requiredRoute4Terms) {
   if (!routeNetwork.includes(term)) failures.push(`routeNetwork.ts missing "${term}"`);
 }
 
+const requiredRoute5Terms = [
+  "id: 'route-5'",
+  "href: '/route-5'",
+  'Gongju',
+  'Jeonju',
+  'Gwangju',
+  'Imsil',
+  'Namwon',
+  'Suncheon',
+  'Yeosu',
+];
+
+for (const term of requiredRoute5Terms) {
+  if (!routeNetwork.includes(term)) failures.push(`routeNetwork.ts missing "${term}"`);
+}
+
 if (!routeRegistry.includes("'3': 'route-3'")) failures.push('routeRegistry.ts missing route-3 slug mapping');
 if (!routeRegistry.includes("'4': 'route-4'")) failures.push('routeRegistry.ts missing route-4 slug mapping');
+if (!routeRegistry.includes("'5': 'route-5'")) failures.push('routeRegistry.ts missing route-5 slug mapping');
 if (!routeRegistry.includes("'route-3': { from: 'seoul', to: 'sokcho' }")) {
   failures.push('routeRegistry.ts missing route-3 route pair');
 }
@@ -62,6 +79,9 @@ if (!routeRegistry.includes("'route-2': { from: 'seoul', to: 'gangneung' }")) {
 }
 if (!routeRegistry.includes("'route-4': { from: 'goseong', to: 'busan' }")) {
   failures.push('routeRegistry.ts missing route-4 route pair');
+}
+if (!routeRegistry.includes("'route-5': { from: 'seoul', to: 'yeosu' }")) {
+  failures.push('routeRegistry.ts missing route-5 route pair');
 }
 
 const route3CitySlugs = ['gapyeong', 'chuncheon', 'yanggu', 'inje', 'goseong', 'sokcho'];
@@ -81,6 +101,13 @@ for (const slug of route2CitySlugs) {
 const route4CitySlugs = ['yangyang', 'donghae', 'samcheok', 'ulsan'];
 for (const slug of route4CitySlugs) {
   if (!routeRegistry.includes(`${slug}: 'route-4'`)) {
+    failures.push(`routeRegistry.ts missing preferred route for ${slug}`);
+  }
+}
+
+const route5CitySlugs = ['gongju', 'jeonju', 'gwangju', 'imsil', 'namwon', 'suncheon', 'yeosu'];
+for (const slug of route5CitySlugs) {
+  if (!routeRegistry.includes(`${slug}: 'route-5'`)) {
     failures.push(`routeRegistry.ts missing preferred route for ${slug}`);
   }
 }
@@ -126,6 +153,21 @@ for (const term of requiredRoute4StopoverTerms) {
   if (!routeStopovers.includes(term)) failures.push(`routeStopovers.ts missing "${term}"`);
 }
 
+const requiredRoute5StopoverTerms = [
+  'seoulToYeosuRoute',
+  'Baekje',
+  'Hanok Village',
+  'Gwangju',
+  'Imsil Cheese Theme Park',
+  'Chunhyang',
+  'Suncheon Bay',
+  'Yeosu night sea',
+];
+
+for (const term of requiredRoute5StopoverTerms) {
+  if (!routeStopovers.includes(term)) failures.push(`routeStopovers.ts missing "${term}"`);
+}
+
 if (failures.length > 0) {
   console.error('Route network validation failed:');
   for (const failure of failures) {
@@ -134,4 +176,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log('Route network validation passed for Route 2, Route 3, and Route 4.');
+console.log('Route network validation passed for Route 2, Route 3, Route 4, and Route 5.');

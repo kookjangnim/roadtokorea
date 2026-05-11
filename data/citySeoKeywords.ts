@@ -714,6 +714,104 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
       { question: 'What is Donghae known for?', answer: 'Mukho Lighthouse, Nongoldam-gil, Mukho Port, Chuam Chotdaebawi Rock, Chuam Beach, and Mureunggyegok Valley.' },
     ],
   },
+  gongju: {
+    city: 'Gongju',
+    primaryIntent: 'Gongju Korea Baekje heritage stop before Jeonju',
+    metaKeywords: ['Gongju Korea', 'Gongju travel guide', 'Gongsanseong Fortress', 'Baekje Historic Areas', 'Magoksa Temple', 'Gongju to Jeonju', 'Seoul to Gongju', 'Route 5 Korea'],
+    clusters: [
+      { label: 'Route intent', terms: ['Seoul to Gongju', 'Gongju to Jeonju', 'Route 5 Korea'] },
+      { label: 'Heritage intent', terms: ['Gongsanseong Fortress', 'Baekje Historic Areas', 'Gongju royal tombs'] },
+      { label: 'Temple intent', terms: ['Magoksa Temple', 'Geumgang River Gongju', 'Gongju day trip'] },
+    ],
+    questions: [
+      { question: 'Why stop in Gongju before Jeonju?', answer: 'Gongju gives Route 5 Baekje heritage depth through Gongsanseong, royal memory, Magoksa, and the Geumgang river before Jeonju opens the Jeolla food chapter.' },
+      { question: 'Is Gongju worth visiting from Seoul?', answer: 'Yes. It works as a quieter heritage stop where Baekje history makes the southbound route feel meaningful before the better-known Jeonju overnight.' },
+    ],
+  },
+  jeonju: {
+    city: 'Jeonju',
+    primaryIntent: 'Jeonju Korea Hanok Village bibimbap and Jeolla food route anchor',
+    metaKeywords: ['Jeonju Korea', 'Jeonju travel guide', 'Jeonju Hanok Village', 'Jeonju bibimbap', 'Jeonju makgeolli', 'Jeonju to Namwon', 'Seoul to Jeonju', 'Jeolla food trip'],
+    clusters: [
+      { label: 'Route intent', terms: ['Seoul to Jeonju', 'Jeonju to Namwon', 'Jeolla food trip'] },
+      { label: 'Food intent', terms: ['Jeonju bibimbap', 'Jeonju makgeolli', 'Jeonju street food'] },
+      { label: 'Stay intent', terms: ['Jeonju Hanok Village', 'Jeonju hanok stay', 'Jeonju night market'] },
+    ],
+    questions: [
+      { question: 'Why is Jeonju important on Route 5?', answer: 'Jeonju is the strongest inland overnight on Route 5 because Hanok Village, bibimbap, makgeolli, markets, and stay options make the Jeolla story easy to understand.' },
+      { question: 'Can Jeonju be more than a day trip?', answer: 'Yes. Jeonju works best as an overnight because evening food streets, hanok stays, makgeolli alleys, and slower old-city walks are part of the appeal.' },
+    ],
+  },
+  namwon: {
+    city: 'Namwon',
+    primaryIntent: 'Namwon Korea Chunhyang Gwanghalluwon and Jirisan route stop',
+    metaKeywords: ['Namwon Korea', 'Namwon travel guide', 'Gwanghalluwon Garden', 'Chunhyang story', 'Jirisan Namwon', 'Jeonju to Namwon', 'Namwon to Suncheon', 'Korea romance city'],
+    clusters: [
+      { label: 'Route intent', terms: ['Jeonju to Namwon', 'Namwon to Suncheon', 'Route 5 Korea'] },
+      { label: 'Story intent', terms: ['Chunhyang story', 'Gwanghalluwon Garden', 'Namwon romance city'] },
+      { label: 'Mountain intent', terms: ['Jirisan Namwon', 'Namwon food', 'Namwon festival'] },
+    ],
+    questions: [
+      { question: 'Why include Namwon between Jeonju and Suncheon?', answer: 'Namwon adds Chunhyang, Gwanghalluwon, and Jirisan edge context so the route gains story and landscape before the ecological Suncheon chapter.' },
+      { question: 'What is Namwon known for?', answer: 'Namwon is known for the Chunhyang story, Gwanghalluwon Garden, Jirisan access, local food, and a quieter romance-city identity.' },
+    ],
+  },
+  gwangju: {
+    city: 'Gwangju',
+    primaryIntent: 'Gwangju Korea May 18 Democratic Uprising modern Korean history route anchor',
+    metaKeywords: ['Gwangju Korea', 'Gwangju travel guide', 'May 18 Gwangju', 'May 18 Democratic Uprising', 'modern Korean history', 'Asia Culture Center', 'Mudeungsan National Park', 'Yangnim-dong Penguin Village', 'Jeonju to Gwangju', 'Gwangju to Suncheon', 'Honam travel'],
+    clusters: [
+      { label: 'Route intent', terms: ['Jeonju to Gwangju', 'Gwangju to Suncheon', 'Honam travel'] },
+      { label: 'Modern history intent', terms: ['May 18 Gwangju', 'May 18 Democratic Uprising', 'May 18 National Cemetery', 'Gwangju democracy', 'modern Korean history'] },
+      { label: 'Culture intent', terms: ['Asia Culture Center', 'Yangnim-dong Penguin Village', 'Mudeungsan National Park'] },
+    ],
+    questions: [
+      { question: 'Why should Gwangju be on Route 5?', answer: 'Gwangju is essential because it gives Route 5 a defining modern Korean history chapter through May 18 memory before the route continues to Suncheon and Yeosu.' },
+      { question: 'What is Gwangju known for?', answer: 'Gwangju is known for the May 18 Democratic Uprising, May 18 National Cemetery, Asia Culture Center, Mudeungsan National Park, Yangnim-dong, food, markets, and contemporary art.' },
+    ],
+  },
+  imsil: {
+    city: 'Imsil',
+    primaryIntent: 'Imsil Korea cheese theme park Okjeongho stop between Jeonju and Namwon',
+    metaKeywords: ['Imsil Korea', 'Imsil travel guide', 'Imsil Cheese Theme Park', 'Imsil cheese', 'Okjeongho Lake', 'Jeonju to Imsil', 'Imsil to Namwon', 'Korea cheese', 'Jeolla food trip'],
+    clusters: [
+      { label: 'Route intent', terms: ['Jeonju to Imsil', 'Imsil to Namwon', 'Route 5 Korea'] },
+      { label: 'Food intent', terms: ['Imsil Cheese Theme Park', 'Imsil cheese', 'Korea cheese'] },
+      { label: 'Nature intent', terms: ['Okjeongho Lake', 'Imsil rural travel', 'Jeolla food trip'] },
+    ],
+    questions: [
+      { question: 'Why include Imsil between Jeonju and Namwon?', answer: 'Imsil closes the gap with Korea cheese identity, the Cheese Theme Park, rural Jeolla scenery, and Okjeongho before Namwon adds Chunhyang and Jirisan.' },
+      { question: 'What is Imsil known for?', answer: 'Imsil is known for Imsil cheese, Imsil Cheese Theme Park, dairy production, Okjeongho Lake, and rural Jeolla food travel.' },
+    ],
+  },
+  suncheon: {
+    city: 'Suncheon',
+    primaryIntent: 'Suncheon Korea Bay Wetland National Garden before Yeosu',
+    metaKeywords: ['Suncheon Korea', 'Suncheon travel guide', 'Suncheon Bay Wetland', 'Suncheon Bay National Garden', 'Suncheon reeds', 'Suncheon to Yeosu', 'Namwon to Suncheon', 'Korea eco travel'],
+    clusters: [
+      { label: 'Route intent', terms: ['Namwon to Suncheon', 'Suncheon to Yeosu', 'Route 5 Korea'] },
+      { label: 'Nature intent', terms: ['Suncheon Bay Wetland', 'Suncheon reeds', 'Korea eco travel'] },
+      { label: 'Garden intent', terms: ['Suncheon Bay National Garden', 'Suncheon garden', 'Suncheon sunset'] },
+    ],
+    questions: [
+      { question: 'Is Suncheon worth stopping before Yeosu?', answer: 'Yes. Suncheon Bay Wetland and Suncheon Bay National Garden make the south-coast approach feel ecological and calm before Yeosu becomes the sea finale.' },
+      { question: 'What is Suncheon known for?', answer: 'Suncheon is known for wetlands, reed fields, migratory-bird scenery, Suncheon Bay National Garden, and a slower eco-travel rhythm.' },
+    ],
+  },
+  yeosu: {
+    city: 'Yeosu',
+    primaryIntent: 'Yeosu Korea Odongdo Hyangiram night sea south coast finale',
+    metaKeywords: ['Yeosu Korea', 'Yeosu travel guide', 'Yeosu night sea', 'Odongdo Island', 'Hyangiram Hermitage', 'Suncheon to Yeosu', 'Seoul to Yeosu route', 'Korea south coast trip'],
+    clusters: [
+      { label: 'Route intent', terms: ['Suncheon to Yeosu', 'Seoul to Yeosu route', 'Korea south coast trip'] },
+      { label: 'Coast intent', terms: ['Yeosu night sea', 'Odongdo Island', 'Dolsan Bridge'] },
+      { label: 'Culture intent', terms: ['Hyangiram Hermitage', 'Yeosu seafood', 'Yeosu Expo'] },
+    ],
+    questions: [
+      { question: 'Why end Route 5 in Yeosu?', answer: 'Yeosu gives the route an emotional coastal finish with Odongdo, Hyangiram, seafood, Expo memory, harbor walks, and the famous night-sea atmosphere.' },
+      { question: 'Should Yeosu be a final night?', answer: 'Yes. Yeosu works best as a final overnight because its night views, seafood, islands, and harbor mood are the payoff after Gongju, Jeonju, Gwangju, Suncheon, and the optional Imsil-Namwon variant.' },
+    ],
+  },
   ulsan: {
     city: 'Ulsan',
     primaryIntent: 'Ulsan Korea industrial coast and Daewangam stop before Busan',

@@ -2213,11 +2213,349 @@ export const goseongToBusanRoute: RouteData = {
   },
 };
 
+const jeollaSouthCoastStopovers: RouteStopover[] = [
+  {
+    city: 'Cheonan',
+    citySlug: 'cheonan',
+    tier: 4,
+    coordinates: { lat: 36.8157, lng: 127.1138 },
+    travelTimeFromPrevious: '1h - 1h 20m',
+    cumulativeTime: '1h 10m',
+    pitch: 'A practical first southern reset where the Seoul departure becomes manageable before Gongju and the Jeolla line.',
+    routeRole: 'First southbound reset',
+    stayAdvice: 'Use Cheonan when the Seoul-to-Gongju jump feels too long, especially for late starts or travelers who need a simple station-side pause.',
+    whyItEarnsTime:
+      'Cheonan closes the first gap on Route 5 and works as a junction-capable city because it already supports Route 1 while also softening the move toward Gongju.',
+    decisionReason: 'Keep it when the traveler needs the first hour out of Seoul to feel humane.',
+    nextLegLogic: 'After Cheonan, Gongju becomes the Baekje gateway rather than a large first leap from Seoul.',
+    highlights: ['Station-side reset', 'Walnut snack identity', 'Cheonan-Asan mobility'],
+  },
+  {
+    city: 'Gongju',
+    citySlug: 'gongju',
+    tier: 4,
+    coordinates: { lat: 36.4465, lng: 127.119 },
+    travelTimeFromPrevious: '1h 50m - 2h 20m',
+    cumulativeTime: '2h',
+    pitch: 'A Baekje gateway where fortress walls, royal memory, and riverside pacing give the Jeolla line a deeper first chapter.',
+    routeRole: 'Baekje threshold',
+    stayAdvice: 'Use Gongju as the first heritage pause if the traveler wants history before Jeonju, or a light overnight when Seoul departure is late.',
+    whyItEarnsTime:
+      'Gongju prevents Route 5 from becoming only a food-and-coast line. Gongsanseong, Baekje royal memory, Magoksa, and the Geumgang setting make the southbound turn feel authored.',
+    decisionReason: 'Keep it when the route needs Baekje context before the Jeolla identity opens.',
+    nextLegLogic: 'After Gongju, the route turns from central Korea into Jeonju, where food, hanok streets, and stay logic become stronger.',
+    highlights: ['Gongsanseong Fortress', 'Baekje royal memory', 'Magoksa Temple'],
+  },
+  {
+    city: 'Jeonju',
+    citySlug: 'jeonju',
+    tier: 2,
+    coordinates: { lat: 35.8242, lng: 127.148 },
+    travelTimeFromPrevious: '1h 10m - 1h 30m',
+    cumulativeTime: '3h 30m',
+    pitch: 'A hanok, bibimbap, makgeolli, and street-food city that gives Route 5 its most searchable inland overnight.',
+    routeRole: 'Jeolla food-and-hanok anchor',
+    stayAdvice: 'Treat Jeonju as the most obvious overnight on Route 5, especially for first-time travelers who need a clear cultural reward.',
+    whyItEarnsTime:
+      'Jeonju makes the route legible to English-speaking travelers through Hanok Village, bibimbap, makgeolli alleys, markets, and a living old-city texture.',
+    decisionReason: 'Keep it when the route needs a high-confidence food and stay anchor before the deeper southern chapters.',
+    nextLegLogic: 'After Jeonju, the main Route 5 line turns toward Gwangju, while the inland story variant can move through Imsil and Namwon.',
+    highlights: ['Jeonju Hanok Village', 'Jeonju bibimbap', 'Makgeolli alley'],
+  },
+  {
+    city: 'Imsil',
+    citySlug: 'imsil',
+    tier: 4,
+    coordinates: { lat: 35.6179, lng: 127.2891 },
+    travelTimeFromPrevious: '35m - 45m',
+    cumulativeTime: '4h 10m',
+    pitch: 'A small Jeolla food-production chapter where Korea\'s cheese story gives the Jeonju-to-Namwon gap a present-day hook.',
+    routeRole: 'Jeolla cheese and lake pause',
+    stayAdvice: 'Use Imsil as a short family-friendly or food-story pause rather than a required overnight.',
+    whyItEarnsTime:
+      'Imsil Cheese Theme Park, local dairy memory, Okjeongho lake scenery, and rural Jeolla pacing turn a blank transfer into a memorable modern local-food chapter.',
+    decisionReason: 'Keep it when the Namwon variant needs a lighter present-day stop between Jeonju and Chunhyang country.',
+    nextLegLogic: 'After Imsil, Namwon takes over with Chunhyang, Gwanghalluwon, and the Jirisan edge.',
+    highlights: ['Imsil Cheese Theme Park', 'Korea cheese story', 'Okjeongho lake scenery'],
+  },
+  {
+    city: 'Namwon',
+    citySlug: 'namwon',
+    tier: 4,
+    coordinates: { lat: 35.4164, lng: 127.3906 },
+    travelTimeFromPrevious: '55m - 1h 20m',
+    cumulativeTime: '4h 40m',
+    pitch: 'A romance-and-mountain threshold where Chunhyang, Gwanghalluwon, and Jirisan make the past feel close to the road.',
+    routeRole: 'Chunhyang and Jirisan handoff',
+    stayAdvice: 'Best as a half-day story stop or a slower overnight when the traveler wants Jirisan-adjacent depth instead of rushing to the coast.',
+    whyItEarnsTime:
+      'Namwon gives the route a literary and landscape chapter. Chunhyang memory, Gwanghalluwon Garden, river walks, and Jirisan access keep the line from becoming only urban.',
+    decisionReason: 'Keep it when Route 5 should carry story, garden atmosphere, and mountain proximity before Suncheon.',
+    nextLegLogic: 'After Namwon, Suncheon shifts the route from romance and mountain edge into ecology and coastal wetland logic.',
+    highlights: ['Gwanghalluwon Garden', 'Chunhyang story', 'Jirisan access'],
+  },
+  {
+    city: 'Suncheon',
+    citySlug: 'suncheon',
+    tier: 4,
+    coordinates: { lat: 34.9506, lng: 127.4872 },
+    travelTimeFromPrevious: '1h - 1h 20m',
+    cumulativeTime: '5h 50m',
+    pitch: 'A wetland and garden city where Suncheon Bay turns the route from inland culture into ecological south-coast travel.',
+    routeRole: 'Ecology gateway',
+    stayAdvice: 'Use Suncheon as a calm overnight when Yeosu would be too compressed, or as the ecological highlight before the island city finish.',
+    whyItEarnsTime:
+      'Suncheon Bay Wetland, Suncheon Bay National Garden, reed fields, migratory-bird scenery, and old-town pockets make the city a strong present-tense reason to slow down.',
+    decisionReason: 'Keep it when Route 5 needs nature, gardens, and a slower ecological identity before Yeosu.',
+    nextLegLogic: 'After Suncheon, Yeosu becomes the sea-facing finale with islands, night views, seafood, and harbor energy.',
+    highlights: ['Suncheon Bay Wetland', 'Suncheon Bay National Garden', 'Reed-field walks'],
+  },
+  {
+    city: 'Yeosu',
+    citySlug: 'yeosu',
+    tier: 1,
+    coordinates: { lat: 34.7604, lng: 127.6622 },
+    travelTimeFromPrevious: '35m - 50m',
+    cumulativeTime: '6h 30m',
+    pitch: 'A south-coast arrival where islands, seafood, Expo memory, Odongdo, Hyangiram, and night-sea atmosphere complete Route 5.',
+    routeRole: 'South coast finale',
+    stayAdvice: 'Give Yeosu the final night whenever possible; it is the emotional payoff after the inland sequence.',
+    whyItEarnsTime:
+      'Yeosu turns the route into an arrival rather than a transfer. Odongdo, Hyangiram, Dolsan views, seafood, romantic night sea, and harbor walks make the finish memorable.',
+    decisionReason: 'Choose Yeosu when the traveler wants the route to end with the sea, not another inland connection.',
+    highlights: ['Odongdo Island', 'Hyangiram Hermitage', 'Yeosu night sea'],
+  },
+];
+
+const jeollaHonamMainStopovers: RouteStopover[] = [
+  jeollaSouthCoastStopovers[0],
+  jeollaSouthCoastStopovers[1],
+  jeollaSouthCoastStopovers[2],
+  {
+    city: 'Gwangju',
+    citySlug: 'gwangju',
+    tier: 2,
+    coordinates: { lat: 35.1595, lng: 126.8526 },
+    travelTimeFromPrevious: '1h 10m - 1h 30m',
+    cumulativeTime: '4h 50m',
+    pitch: 'A city central to Korea\'s modern democratic history, where May 18 memory, civic courage, art, food, Mudeungsan, and contemporary culture make Route 5 feel complete.',
+    routeRole: 'Korean modern-history anchor',
+    stayAdvice: 'Give Gwangju an overnight when Route 5 needs the seriousness of modern Korean history, not only city scale and culture, before Suncheon.',
+    whyItEarnsTime:
+      'Gwangju should not be missing from the Jeolla route because it is one of the places where Korea\'s modern democratic story becomes visible. May 18 memory, Asia Culture Center energy, Yangnim-dong texture, markets, food, and Mudeungsan make it a major chapter.',
+    decisionReason: 'Keep it on the main line because Route 5 needs Korea\'s modern civic history as much as food, heritage, and coastal scenery.',
+    nextLegLogic: 'After Gwangju, Suncheon shifts the route from modern civic memory and city culture into wetland and garden ecology before Yeosu.',
+    highlights: ['May 18 Democratic Uprising memory', 'Asia Culture Center', 'Mudeungsan National Park'],
+  },
+  jeollaSouthCoastStopovers[5],
+  jeollaSouthCoastStopovers[6],
+];
+
+const carJeollaSouthCoastRoute: TransportRouteVariant = {
+  id: 'jeolla-inland-to-south-coast',
+  routeCode: '5-0-c',
+  routeGroupCode: '5-0',
+  routeGroupLabel: 'Jeolla Inland to South Coast',
+  label: 'Jeolla Southbound Drive',
+  routeName: 'Seoul to Yeosu via Cheonan, Gongju, Jeonju, Gwangju, and Suncheon',
+  totalTravelTime: '7h - 8h 30m driving, 4-5 days recommended',
+  totalDistance: '430-470 km',
+  summary:
+    'A southbound route that treats Jeolla as a sequence: first reset, Baekje memory, hanok food culture, Gwangju as a Korean modern-history anchor, wetland ecology, and Yeosu sea arrival.',
+  bestFor: 'Travelers who want Korea beyond the Seoul-Busan default and need each stop to justify its own overnight logic.',
+  tradeoff:
+    'It is less direct than a fast rail transfer, but the payoff is a much richer regional story.',
+  stopPattern:
+    'Best with Jeonju, Gwangju, and Yeosu as anchor nights, then Cheonan, Gongju, and Suncheon added according to pacing.',
+  chooseWhen:
+    'Choose Route 5 when the traveler wants food, heritage, ecology, and south-coast mood in one readable line.',
+  avoidWhen:
+    'Avoid it when the user only wants the fastest Seoul-to-Yeosu transfer with no inland context.',
+  pacingNote:
+    'The route should feel like chapters, not a checklist. Jeonju, Gwangju, and Yeosu hold the main structure; Gongju and Suncheon add depth.',
+  planningNotes: [
+    'Keep Gongju as a Baekje gateway, not just a convenient central stop.',
+    'Make Jeonju the strongest inland overnight because search intent and traveler confidence are high.',
+    'Keep Gwangju on the main line so the Jeolla route carries Korea\'s modern democratic memory with enough weight.',
+    'Use Suncheon to slow the route before Yeosu so the final sea arrival feels earned.',
+  ],
+  stopovers: jeollaHonamMainStopovers,
+  routePath: [
+    [37.5665, 126.978],
+    [36.8157, 127.1138],
+    [36.4465, 127.119],
+    [35.8242, 127.148],
+    [35.1595, 126.8526],
+    [34.9506, 127.4872],
+    [34.7604, 127.6622],
+  ],
+};
+
+const carJeollaInlandStoryRoute: TransportRouteVariant = {
+  ...carJeollaSouthCoastRoute,
+  id: 'jeolla-imsil-namwon-story',
+  routeCode: '5-1-c',
+  routeGroupCode: '5-1',
+  routeGroupLabel: 'Jeolla Inland Story Variant',
+  label: 'Imsil-Namwon Story Variant',
+  routeName: 'Seoul to Yeosu via Cheonan, Gongju, Jeonju, Imsil, Namwon, and Suncheon',
+  totalTravelTime: '7h 30m - 9h driving, 4-6 days recommended',
+  totalDistance: '440-500 km',
+  summary:
+    'A more intimate Jeolla variant that uses Imsil and Namwon to turn the Jeonju-to-Suncheon middle into cheese, Chunhyang, Gwanghalluwon, and Jirisan-edge storytelling.',
+  bestFor: 'Travelers who want small-city Jeolla texture after Jeonju rather than moving straight to Gwangju.',
+  tradeoff:
+    'It gives more local color but makes Gwangju a separate add-on rather than the main metropolitan chapter.',
+  stopPattern:
+    'Best when Jeonju is the food night, Imsil is a short daytime pause, Namwon is the story stop, and Suncheon resets the route before Yeosu.',
+  chooseWhen:
+    'Choose this variant when the traveler wants Chunhyang, Gwanghalluwon, and Imsil cheese to carry the middle of the route.',
+  avoidWhen:
+    'Avoid it when the route must include Gwangju as the main Honam metropolitan anchor.',
+  pacingNote:
+    'This is the slower, more local variant. It should read as a deliberate choice, not the default path.',
+  planningNotes: [
+    'Use Imsil to close the Jeonju-to-Namwon gap with a modern local-food story.',
+    'Let Namwon carry romance, garden memory, and Jirisan edge before Suncheon.',
+    'Offer Gwangju as the main-line alternative when city scale matters more.',
+  ],
+  stopovers: jeollaSouthCoastStopovers,
+  routePath: [
+    [37.5665, 126.978],
+    [36.8157, 127.1138],
+    [36.4465, 127.119],
+    [35.8242, 127.148],
+    [35.6179, 127.2891],
+    [35.4164, 127.3906],
+    [34.9506, 127.4872],
+    [34.7604, 127.6622],
+  ],
+};
+
+export const seoulToYeosuRoute: RouteData = {
+  routeCode: '5',
+  from: 'Seoul',
+  fromSlug: 'seoul',
+  to: 'Yeosu',
+  toSlug: 'yeosu',
+  href: '/route-5',
+  routeLabel: 'Route 5',
+  headline: 'Seoul to Yeosu through Baekje memory, Jeolla food, Gwangju modern history, wetlands, and south-coast night sea.',
+  overview:
+    'Route 5 opens the Jeolla direction as a deliberate travel line rather than a transfer. Cheonan softens the first jump, Gongju gives Baekje depth, Jeonju gives hanok food culture, Gwangju brings Korea\'s modern democratic history into the route, Suncheon adds wetlands and gardens, and Yeosu finishes with islands, seafood, and night-sea atmosphere.',
+  destinationPitch:
+    'Yeosu works as the finale because the traveler arrives with context: not just a harbor city, but the south-coast reward after inland Korea has unfolded in chapters.',
+  bestUseCases: [
+    'English-speaking travelers who want a Korea route beyond Seoul-Busan.',
+    'Food and culture trips that need Jeonju and Gwangju but should not stop there.',
+    'Travelers who want a south-coast finish with Yeosu, islands, seafood, and night views.',
+  ],
+  routePromise: [
+    'The route will keep past and present visible in every city.',
+    'It will make smaller cities feel like meaningful chapters, not filler.',
+    'It will support future festival and theme updates without rewriting the route logic.',
+  ],
+  editorialNotes: [
+    'Cheonan should now be treated as the first Route 1 / Route 5 junction-capable reset.',
+    'Gongju should be treated as a Baekje gateway and future central-west junction candidate.',
+    'Jeonju may become a future junction when the Jeolla network expands west and south.',
+    'Gwangju belongs on the main Route 5 line as the Korean modern-history anchor, not only as a Honam metropolis.',
+    'Imsil and Namwon should be presented as the inland story variant, not as replacements for Gwangju.',
+    'Suncheon is the ecological hinge before Yeosu; do not collapse it into a short pre-Yeosu note.',
+  ],
+  transports: {
+    KTX: {
+      mode: 'KTX',
+      id: 'rail-bus-jeolla-south-coast',
+      routeCode: '5-0-r',
+      routeGroupCode: '5-0',
+      routeGroupLabel: 'Jeolla Inland to South Coast',
+      label: 'Rail + Local Transit',
+      routeName: 'Seoul to Yeosu rail-led itinerary',
+      totalTravelTime: '3h-4h direct rail, 3-5 days as a route',
+      totalDistance: '390-430 km',
+      summary:
+        'A rail-led version that uses Jeonju, Gwangju, Suncheon, and Yeosu as the easiest anchors while keeping Gongju and the Imsil-Namwon variant as selective story additions.',
+      bestFor: 'Travelers without a car who still want the Jeolla narrative.',
+      tradeoff: 'Rail keeps the line efficient, but smaller story stops need more timetable care.',
+      stopPattern: 'Best as Jeonju plus Suncheon/Yeosu, with Gongju or Namwon added when the itinerary has slack.',
+      chooseWhen: 'Choose this when public transport matters more than detour freedom.',
+      avoidWhen: 'Avoid it when the traveler expects remote viewpoints and flexible countryside stops.',
+      pacingNote: 'Keep the rail version honest: fewer stops, stronger nights, less overpacking.',
+      planningNotes: [
+        'Use Jeonju and Yeosu as the easiest public-transport confidence anchors.',
+        'Add Namwon when Chunhyang, Gwanghalluwon, or Jirisan context matters.',
+        'Use Suncheon as a full ecological stop rather than a transfer before Yeosu.',
+      ],
+      stopovers: jeollaHonamMainStopovers,
+      routePath: carJeollaSouthCoastRoute.routePath,
+    },
+    car: {
+      mode: 'car',
+      ...carJeollaSouthCoastRoute,
+      variants: [carJeollaSouthCoastRoute, carJeollaInlandStoryRoute],
+    },
+    bicycle: {
+      mode: 'bicycle',
+      id: 'bike-jeolla-south-coast-concept',
+      routeCode: '5-0-b',
+      routeGroupCode: '5-0',
+      routeGroupLabel: 'Jeolla Inland to South Coast',
+      label: 'Jeolla Bicycle Concept',
+      routeName: 'Seoul to Yeosu bicycle concept',
+      totalTravelTime: '6-9 days',
+      totalDistance: '420-500 km',
+      summary:
+        'A serious long-distance concept where the route becomes a slow reading of central Korea, Jeolla food cities, river towns, wetlands, and the south coast.',
+      bestFor: 'Experienced riders who want a cultural southbound ride rather than a speed route.',
+      tradeoff: 'The rewards are strong, but urban exits, summer heat, and daily stage design need careful planning.',
+      stopPattern: 'Use Cheonan, Gongju, Jeonju, Gwangju, Suncheon, and Yeosu as recovery anchors rather than racing checkpoints.',
+      chooseWhen: 'Choose this when the journey itself is the product.',
+      avoidWhen: 'Avoid it for casual riders until detailed safety and surface guidance is added.',
+      pacingNote: 'The bicycle version is aspirational and should remain clearly marked as a planning concept.',
+      planningNotes: [
+        'Future work should add bike-path, road-safety, and luggage guidance.',
+        'Summer heat and rain season need explicit warnings.',
+        'City pages should support recovery, laundry, food, and simple stays.',
+      ],
+      stopovers: jeollaHonamMainStopovers,
+      routePath: carJeollaSouthCoastRoute.routePath,
+    },
+    bus: {
+      mode: 'bus',
+      id: 'bus-jeolla-south-coast',
+      routeCode: '5-0-d',
+      routeGroupCode: '5-0',
+      routeGroupLabel: 'Jeolla Inland to South Coast',
+      label: 'Intercity Bus',
+      routeName: 'Seoul to Yeosu intercity bus-led route',
+      totalTravelTime: '4h-5h direct bus, 3-5 days as a route',
+      totalDistance: '390-430 km',
+      summary:
+        'A bus-friendly Jeolla route that works best when the traveler chooses fewer but stronger city chapters.',
+      bestFor: 'Budget travelers and people who prefer city-center arrivals.',
+      tradeoff: 'Bus movement is practical, but small detours and nature timing are less flexible than driving.',
+      stopPattern: 'Best with Jeonju, Gwangju, Suncheon, and Yeosu as the main bus anchors, plus Gongju or the Imsil-Namwon variant by theme.',
+      chooseWhen: 'Choose bus when price and simplicity matter.',
+      avoidWhen: 'Avoid it when the itinerary depends on remote temples, sunrise viewpoints, or flexible wetlands timing.',
+      pacingNote: 'Bus Route 5 should privilege quality stops over trying to touch every city in one day.',
+      planningNotes: [
+        'Use fewer stopovers for first-time travelers so the route stays readable.',
+        'Frame Gwangju as the main modern-history and Honam city anchor, and Imsil-Namwon as the slower story variant.',
+        'Keep Yeosu as a final night, not a same-day exit.',
+      ],
+      stopovers: jeollaHonamMainStopovers,
+      routePath: carJeollaSouthCoastRoute.routePath,
+    },
+  },
+};
+
 const allRoutes: RouteData[] = [
   seoulToBusanRoute,
   seoulToGangneungRoute,
   seoulToSokchoRoute,
   goseongToBusanRoute,
+  seoulToYeosuRoute,
 ];
 
 export function getAllRouteData(): RouteData[] {

@@ -32,7 +32,14 @@
     "donghae",
     "uljin",
     "gyeongju",
-    "ulsan"
+    "ulsan",
+    "gongju",
+    "jeonju",
+    "gwangju",
+    "imsil",
+    "namwon",
+    "suncheon",
+    "yeosu"
   ],
   "supportTerms": {
     "chungju": ["supportSummary", "roleSummary", "staySummary", "foodSummary", "nextLegSummary"],
@@ -67,6 +74,13 @@
     "donghae": ["Mukho", "Chuam", "Mureung", "Samcheok", "supportSummary"],
     "uljin": ["coast", "supportSummary"],
     "gyeongju": ["heritage", "supportSummary"],
-    "ulsan": ["Daewangam", "Taehwagang", "Jangsaengpo", "Busan", "supportSummary"]
+    "ulsan": ["Daewangam", "Taehwagang", "Jangsaengpo", "Busan", "supportSummary"],
+    "gongju": ["Baekje", "Gongsanseong", "Magoksa", "Jeonju", "supportSummary"],
+    "jeonju": ["Hanok", "bibimbap", "makgeolli", "Namwon", "supportSummary"],
+    "gwangju": ["May 18", "Asia Culture Center", "Mudeungsan", "Suncheon", "supportSummary"],
+    "imsil": ["cheese", "Cheese Theme Park", "Okjeongho", "Namwon", "supportSummary"],
+    "namwon": ["Chunhyang", "Gwanghalluwon", "Jirisan", "Suncheon", "supportSummary"],
+    "suncheon": ["Bay", "Wetland", "Garden", "Yeosu", "supportSummary"],
+    "yeosu": ["Odongdo", "Hyangiram", "night sea", "supportSummary"]
   }
 }

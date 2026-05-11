@@ -62,6 +62,28 @@ export const routeSeoFaqsByCode: Record<string, RouteSeoFaq[]> = {
         'Ulsan shows modern coastal Korea through industry, Daewangam Park, Jangsaengpo whale memory, and the restored Taehwa River before the final Busan arrival.',
     },
   ],
+  '5': [
+    {
+      question: 'What is the best Seoul to Yeosu route for culture and food?',
+      answer:
+        'Route 5 works best as Seoul, Cheonan, Gongju, Jeonju, Gwangju, Suncheon, and Yeosu, with an Imsil-Namwon inland variant for travelers who want cheese, Chunhyang, and Jirisan depth.',
+    },
+    {
+      question: 'Why include Gwangju on Route 5?',
+      answer:
+        'Gwangju is essential on Route 5 because it carries a defining chapter of modern Korean history through May 18 memory, then adds Asia Culture Center, food, Mudeungsan, and city-scale Honam culture before Suncheon and Yeosu.',
+    },
+    {
+      question: 'Why include Jeonju before Yeosu?',
+      answer:
+        'Jeonju gives the route its strongest inland overnight through Hanok Village, bibimbap, makgeolli, markets, and Jeolla food culture before the trip turns toward the southern coast.',
+    },
+    {
+      question: 'Is Suncheon worth stopping before Yeosu?',
+      answer:
+        'Yes. Suncheon Bay Wetland and Suncheon Bay National Garden add an ecological chapter that makes Yeosu feel like an earned sea arrival rather than a simple end point.',
+    },
+  ],
 };
 
 export function getRouteSeoFaqs(routeCode: string) {

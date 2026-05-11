@@ -281,6 +281,56 @@ export const tier4Cities: Record<string, TierCityData> = {
       'Taebaek matters because Branch 2A needs more than scenery before it reaches the coast. Coal mining decline, population pressure, the Taebaek Coal Museum, Hwangji Pond as the Nakdonggang source, Taebaeksan, highland weather, and Taebaek Hanwoo make it one of Korea\'s strongest past-present mountain cities.',
     hotspots: []
   },
+  gongju: {
+    name: 'Gongju',
+    slug: 'gongju',
+    headline: 'The Baekje Gateway',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg',
+    description: 'A Geumgang riverside heritage city where Baekje royal memory gives Route 5 its first deep historical chapter.',
+    culturalInsight:
+      'Gongju matters because Route 5 should not begin only as a food trip. Gongsanseong, Baekje royal tomb memory, Magoksa, and the old capital atmosphere make the southbound turn feel rooted before Jeonju opens the Jeolla chapter.',
+    hotspots: []
+  },
+  jeonju: {
+    name: 'Jeonju',
+    slug: 'jeonju',
+    headline: 'The Jeolla Food And Hanok Anchor',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg',
+    description: 'A high-confidence inland overnight where hanok streets, bibimbap, markets, and makgeolli make regional Korea easy to love.',
+    culturalInsight:
+      'Jeonju is the city that makes Route 5 immediately understandable to English-speaking travelers. Hanok Village, bibimbap, makgeolli alleys, street food, and old-city texture turn the route into a cultural stay rather than a transfer toward Yeosu.',
+    hotspots: []
+  },
+  namwon: {
+    name: 'Namwon',
+    slug: 'namwon',
+    headline: 'The Chunhyang And Jirisan Handoff',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg',
+    description: 'A romance, garden, and mountain-edge city where Chunhyang memory and Jirisan proximity add emotional depth before Suncheon.',
+    culturalInsight:
+      'Namwon keeps Route 5 from becoming only famous names. Gwanghalluwon, the Chunhyang story, riverside walks, local food, and the Jirisan edge make it a smaller city with a clear past-present reason to stop.',
+    hotspots: []
+  },
+  suncheon: {
+    name: 'Suncheon',
+    slug: 'suncheon',
+    headline: 'The Wetland Garden Gateway',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg',
+    description: 'A south-coast ecology city where wetlands, gardens, reeds, and slower stays prepare the Yeosu finale.',
+    culturalInsight:
+      'Suncheon matters because Jeolla travel should include landscape intelligence, not only food and heritage. Suncheon Bay Wetland, Suncheon Bay National Garden, reed fields, bird habitat, and old-town pockets turn Route 5 toward the coast with calm authority.',
+    hotspots: []
+  },
+  imsil: {
+    name: 'Imsil',
+    slug: 'imsil',
+    headline: 'The Jeolla Cheese Country Pause',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg',
+    description: 'A small Jeolla county where Korea\'s cheese story, rural dairy identity, and Okjeongho lake scenery close the Jeonju-to-Namwon gap.',
+    culturalInsight:
+      'Imsil matters because it proves Route 5 can hold modern local production stories, not only ancient heritage. Imsil cheese, the Cheese Theme Park, rural dairy memory, Okjeongho, and the Namwon handoff make it a useful branch stop after Jeonju.',
+    hotspots: []
+  },
   chungju: {
     name: 'Chungju',
     slug: 'chungju',

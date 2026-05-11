@@ -16,5 +16,14 @@
     "modernIdentity": "Today Gangneung is also coffee streets, rail access, hotels, beaches, seafood, festivals, and one of Korea's strongest coast-city brands for English-speaking travelers.",
     "routeMeaning": "Gangneung is a junction city because Route 2 can end here as the mountain-to-sea payoff, while Route 4 can continue south along National Route 7 toward Donghae, Samcheok, and Busan.",
     "imageBrief": "Use one mountain-to-sea arrival cue, one coffee or beach cue, one Ojukheon or Gyeongpo memory cue, and a map that shows the split between stopping in Gangneung and continuing down Route 4."
+  },
+  "cheonan": {
+    "city": "Cheonan",
+    "canonicalHref": "/cities/cheonan",
+    "routeSlugs": ["route-1", "route-5"],
+    "historicalWeight": "Cheonan works as the first southern control point out of Seoul. Independence-memory sites, station movement, and its long corridor role make it useful before routes split into different versions of central and southern Korea.",
+    "modernIdentity": "Modern Cheonan is a practical junction city with station hotels, Cheonan-Asan mobility, university energy, walnut snack identity, and enough services to soften the first hour out of Seoul.",
+    "routeMeaning": "Cheonan is a junction city because it can support Route 1 as the first southbound reset toward Busan and Route 5 as the first pacing stop before Gongju, Jeonju, Gwangju, Suncheon, and Yeosu. It closes the Seoul departure gap without stealing attention from the deeper regional chapters.",
+    "imageBrief": "Use station or Cheonan-Asan mobility, walnut snack or local food, independence-memory cues, and a map that shows the split toward Route 1 and Route 5."
   }
 }
