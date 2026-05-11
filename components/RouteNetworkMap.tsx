@@ -61,6 +61,20 @@ function CityMarker({
   );
 }
 
+function getKindLabel(kind: RouteNetworkCity['kind']) {
+  if (kind === 'anchor') return 'Terminal';
+  if (kind === 'junction') return 'Junction';
+  if (kind === 'branch') return 'Branch';
+  return 'Route city';
+}
+
+function getKindChipClass(kind: RouteNetworkCity['kind']) {
+  if (kind === 'anchor') return 'border-white/10 bg-white/12 text-white';
+  if (kind === 'junction') return 'border-amber-200/30 bg-amber-300/12 text-amber-100';
+  if (kind === 'branch') return 'border-white/10 bg-white/8 text-stone-300';
+  return 'border-white/10 bg-black/15 text-stone-300';
+}
+
 export default function RouteNetworkMap() {
   const [hoveredRouteId, setHoveredRouteId] = useState<string | null>(null);
   const [expandedRouteId, setExpandedRouteId] = useState(routeNetworkRoutes[0]?.id ?? '');
@@ -72,6 +86,12 @@ export default function RouteNetworkMap() {
     const activeRoute = routeNetworkRoutes.find((route) => route.id === activeRouteId);
     return new Set(activeRoute?.citySlugs ?? []);
   }, [activeRouteId]);
+
+  const expandedRouteCities = expandedRoute
+    ? expandedRoute.citySlugs.map((slug) => routeNetworkCities[slug]).filter(Boolean)
+    : [];
+  const expandedJunctions = expandedRouteCities.filter((city) => city.kind === 'junction');
+  const expandedBranches = expandedRouteCities.filter((city) => city.kind === 'branch');
 
   return (
     <section className="bg-[linear-gradient(180deg,#efe7db_0%,#f7f3ec_100%)] px-4 py-10 md:px-8 md:py-14">
@@ -209,10 +229,30 @@ export default function RouteNetworkMap() {
 
             {expandedRoute && (
               <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-white/6 p-5">
-                <div className="flex items-center justify-between gap-4">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-400">
-                    Expanded cities
-                  </p>
+                <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                  <div>
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-400">
+                      Expanded cities
+                    </p>
+                    <h3 className="mt-2 font-serif text-3xl leading-tight text-white">
+                      {expandedRoute.title}
+                    </h3>
+                    <div className="mt-3 flex flex-wrap gap-2 text-[10px] font-semibold uppercase tracking-[0.2em]">
+                      <span className="rounded-full border border-white/10 bg-black/20 px-3 py-2 text-stone-300">
+                        {expandedRouteCities.length} cities
+                      </span>
+                      {expandedJunctions.length > 0 && (
+                        <span className="rounded-full border border-amber-200/30 bg-amber-300/12 px-3 py-2 text-amber-100">
+                          {expandedJunctions.length} junction
+                        </span>
+                      )}
+                      {expandedBranches.length > 0 && (
+                        <span className="rounded-full border border-white/10 bg-white/8 px-3 py-2 text-stone-300">
+                          {expandedBranches.length} branch
+                        </span>
+                      )}
+                    </div>
+                  </div>
                   <Link
                     href={expandedRoute.href}
                     className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white transition-colors hover:text-amber-100"
@@ -221,22 +261,45 @@ export default function RouteNetworkMap() {
                   </Link>
                 </div>
                 <div className="mt-4 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
-                  {expandedRoute.citySlugs.map((slug) => {
-                    const city = routeNetworkCities[slug];
+                  {expandedRouteCities.map((city) => {
                     return (
                       <Link
-                        key={`${expandedRoute.id}-${slug}`}
+                        key={`${expandedRoute.id}-${city.slug}`}
                         href={city.href}
                         className="flex items-center justify-between rounded-[1rem] border border-white/10 bg-black/15 px-4 py-3 text-sm text-stone-200 transition-colors hover:border-white/24 hover:bg-white/8"
                       >
                         <span>{city.name}</span>
-                        <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-500">
-                          {city.kind}
+                        <span
+                          className={`rounded-full border px-2 py-1 text-[9px] font-semibold uppercase tracking-[0.18em] ${getKindChipClass(
+                            city.kind
+                          )}`}
+                        >
+                          {getKindLabel(city.kind)}
                         </span>
                       </Link>
                     );
                   })}
                 </div>
+                {(expandedJunctions.length > 0 || expandedBranches.length > 0) && (
+                  <div className="mt-4 rounded-[1rem] border border-white/10 bg-black/15 p-4 text-xs leading-6 text-stone-300">
+                    {expandedJunctions.length > 0 && (
+                      <p>
+                        Junction cities on this line:{' '}
+                        <span className="text-white">
+                          {expandedJunctions.map((city) => city.name).join(', ')}
+                        </span>
+                      </p>
+                    )}
+                    {expandedBranches.length > 0 && (
+                      <p className={expandedJunctions.length > 0 ? 'mt-2' : undefined}>
+                        Branch cities currently attached:{' '}
+                        <span className="text-white">
+                          {expandedBranches.map((city) => city.name).join(', ')}
+                        </span>
+                      </p>
+                    )}
+                  </div>
+                )}
               </div>
             )}
           </div>

@@ -179,6 +179,20 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
       },
     ],
   },
+  gapyeong: {
+    city: 'Gapyeong',
+    primaryIntent: 'Gapyeong Korea river and island gateway between Seoul and Chuncheon',
+    metaKeywords: ['Gapyeong Korea', 'Gapyeong travel guide', 'Seoul to Gapyeong', 'Nami Island', 'Jarasum Island', 'Gapyeong Rail Park', 'Bukhangang River', 'Gapyeong to Chuncheon'],
+    clusters: [
+      { label: 'Route intent', terms: ['Seoul to Gapyeong', 'Gapyeong to Chuncheon', 'Route 3 Korea'] },
+      { label: 'Island intent', terms: ['Nami Island', 'Jarasum Island', 'Jarasum Jazz Festival'] },
+      { label: 'Leisure intent', terms: ['Gapyeong Rail Park', 'Bukhangang River', 'Gapyeong camping'] },
+    ],
+    questions: [
+      { question: 'Why does Gapyeong matter before Chuncheon?', answer: 'Gapyeong softens the Seoul departure with river, island, rail-bike, camping, and weekend-leisure energy before Chuncheon becomes the first full city anchor.' },
+      { question: 'Is Gapyeong only for Nami Island?', answer: 'No. Nami Island is the best-known hook, but Jarasum, Bukhangang views, rail bikes, camping, and pensions make Gapyeong a broader route opening.' },
+    ],
+  },
   chuncheon: {
     city: 'Chuncheon',
     primaryIntent: 'Chuncheon Korea lake city anchor between Seoul, Gapyeong, Yanggu, and Sokcho',
@@ -221,6 +235,20 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
       },
     ],
   },
+  yanggu: {
+    city: 'Yanggu',
+    primaryIntent: 'Yanggu Korea Punch Bowl DMZ and Korean War route chapter before Inje',
+    metaKeywords: ['Yanggu Korea', 'Yanggu travel guide', 'Yanggu Punch Bowl', 'Punch Bowl Korea', 'Yanggu DMZ', 'Yanggu Korean War', 'Chuncheon to Yanggu', 'Yanggu to Inje'],
+    clusters: [
+      { label: 'Route intent', terms: ['Chuncheon to Yanggu', 'Yanggu to Inje', 'Route 3 Korea'] },
+      { label: 'History intent', terms: ['Yanggu Korean War', 'Punch Bowl Korea', 'Yanggu War Memorial'] },
+      { label: 'DMZ intent', terms: ['Yanggu DMZ', 'DMZ ecology Korea', 'Yanggu highland basin'] },
+    ],
+    questions: [
+      { question: 'Why include Yanggu on the way to Sokcho?', answer: 'Yanggu gives Route 3 its northern gravity through Punch Bowl, Korean War memory, DMZ-adjacent terrain, and a quieter tone before Inje.' },
+      { question: 'Is Yanggu a normal sightseeing stop?', answer: 'Not really. Its value is deeper and quieter: borderland geography, highland basin views, war memory, and the route transition toward Seoraksan.' },
+    ],
+  },
   inje: {
     city: 'Inje',
     primaryIntent: 'Inje Korea Seoraksan pass decision before Sokcho',
@@ -261,6 +289,20 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
         answer:
           'No. Naerincheon rafting, river sports, valleys, camping, and leports give Inje a strong present-day outdoor identity.',
       },
+    ],
+  },
+  sokcho: {
+    city: 'Sokcho',
+    primaryIntent: 'Sokcho Korea Seoraksan and East Sea arrival after Route 3',
+    metaKeywords: ['Sokcho Korea', 'Sokcho travel guide', 'Seoul to Sokcho', 'Seoraksan National Park', 'Sokcho Tourist Fishery Market', 'Abai Village', 'Sokcho Beach', 'East Sea Korea', 'Inje to Sokcho'],
+    clusters: [
+      { label: 'Route intent', terms: ['Seoul to Sokcho', 'Inje to Sokcho', 'Route 3 Korea'] },
+      { label: 'Mountain intent', terms: ['Seoraksan National Park', 'Seorak Special Tourist Zone', 'Seoraksan cable car'] },
+      { label: 'Coast intent', terms: ['Sokcho Tourist Fishery Market', 'Abai Village', 'Sokcho Beach'] },
+    ],
+    questions: [
+      { question: 'Why is Sokcho the Route 3 payoff?', answer: 'Sokcho is where Seoraksan, the East Sea, markets, harbor food, Abai Village, beaches, and hotels finally resolve the northern mountain-to-sea route.' },
+      { question: 'Should Sokcho be written as a beach city or mountain city?', answer: 'Both. The strongest Sokcho story holds Seoraksan, East Sea arrival, market food, Abai Village memory, and overnight comfort together.' },
     ],
   },
   goseong: {

@@ -1164,6 +1164,56 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  gapyeong: {
+    slug: 'gapyeong',
+    city: 'Gapyeong',
+    mapTitle: 'Where Route 3 first softens after Seoul',
+    mapIntro:
+      'Gapyeong is the first gentle release from Seoul on Route 3. It should feel like river, island, rail, camping, and weekend-leisure air before Chuncheon gives the route a fuller city chapter.',
+    mapCenter: { lat: 37.8315, lng: 127.5107 },
+    supportSummary:
+      'Gapyeong works as the soft opening of Route 3. Jarasum, Nami Island access, Bukhangang River scenery, Gapyeong Rail Park, camping, pensions, and easy Seoul access make it a light but useful first chapter before Chuncheon.',
+    roleSummary:
+      'On Route 3, Gapyeong should not carry the whole route. It loosens the Seoul departure and hands the journey to Chuncheon, where the northern line gets food, lake-city rhythm, and stronger overnight logic.',
+    staySummary:
+      'Stay in Gapyeong when the first day should be slow, romantic, family-friendly, or river-led. Skip the overnight when Chuncheon needs to be the first serious city anchor.',
+    foodSummary:
+      'Food is secondary here. Keep the page focused on river cafes, pension meals, simple station food, camping supplies, and enough comfort before Chuncheon or Yanggu.',
+    nextLegSummary:
+      'After Gapyeong, Chuncheon should feel like the route becomes a real city chapter. Gapyeong opens the scenery; Chuncheon adds dinner, transit, and staying power.',
+    accommodationNote:
+      'Strongest stay-planning angle: river pensions for slow travelers, Jarasum or camping-side stays for leisure, and station-side practicality for travelers continuing to Chuncheon.',
+    sections: [
+      { title: 'Why Gapyeong is the soft opening', body: 'Gapyeong is useful because it changes the mood quickly after Seoul. River, island, and rail-bike movement make the route feel like a trip before it becomes a deeper Gangwon story.' },
+      { title: 'Why Jarasum matters', body: 'Jarasum gives Gapyeong more than Nami Island recognition. Camping, eco-park use, and jazz-festival identity make the county feel active and seasonal.' },
+      { title: 'How to keep it from competing with Chuncheon', body: 'Gapyeong should stay light. If the traveler wants dinner, lake-city comfort, and a full overnight, Chuncheon should take that role.' },
+    ],
+    decisions: [
+      { title: 'Use Gapyeong as a first breath', bestFor: 'Travelers leaving Seoul who want the route to begin gently.', why: 'It provides river views, islands, and low-friction leisure before the route asks for deeper choices.' },
+      { title: 'Stay only when the leisure mood matters', bestFor: 'Couples, families, camping trips, and slow starts.', why: 'Gapyeong lodging makes sense when the night itself is part of the river escape.' },
+      { title: 'Move on to Chuncheon for city weight', bestFor: 'Travelers who want food, station convenience, and stronger city rhythm.', why: 'Chuncheon carries the first serious overnight better.' },
+    ],
+    stayZones: [
+      { title: 'Stay near Jarasum', areaLabel: 'Island and camping', bestFor: 'Camping, festival, river walks, and soft first-day leisure.', why: 'This makes Gapyeong feel like a river-island stop rather than only a transfer.' },
+      { title: 'Stay near Nami Island access', areaLabel: 'Island gateway', bestFor: 'Families, couples, first-time visitors, and Nami-focused trips.', why: 'It captures the best-known international search intent without letting it swallow the route.' },
+      { title: 'Stay near Gapyeong Station', areaLabel: 'Transit base', bestFor: 'Travelers continuing to Chuncheon or using public transport.', why: 'This keeps the stop light and practical.' },
+    ],
+    visuals: [
+      { eyebrow: 'River opening', title: 'Bukhangang makes the Seoul departure visible', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Nami Island and river scenery near Gapyeong', body: 'The image should make Gapyeong feel like water and island escape, not a deep inland stop.', sourceLabel: 'Wikimedia Commons Nami Island reference', sourceHref: 'https://commons.wikimedia.org/wiki/File:Nami_Island,_Korea.jpg', licenseLabel: 'Open reference' },
+      { eyebrow: 'Seasonal present', title: 'Jarasum gives Gapyeong more than one famous island', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Gapyeong river island leisure reference', body: 'Jarasum, camping, and jazz culture make Gapyeong broader than only Nami Island search traffic.', sourceLabel: 'VisitKorea Jara Island', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091', licenseLabel: 'Official reference' },
+      { eyebrow: 'Route handoff', title: 'Gapyeong should hand the route to Chuncheon', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Gapyeong route opening before Chuncheon', body: 'This slot should eventually become a river-road or rail-bike handoff visual toward Chuncheon.', sourceLabel: 'VisitKorea Gapyeong Rail Park', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=69675', licenseLabel: 'Official reference' },
+    ],
+    officialReferences: [
+      { eyebrow: 'Official tourism source', title: 'Jarasum is a camping and festival island', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Jarasum reference image', body: 'VisitKorea frames Jarasum as a multi-island leisure area with camping and Jarasum International Jazz Festival identity.', sourceLabel: 'VisitKorea Jara Island', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091', licenseLabel: 'Official reference', usageNote: 'Use for Gapyeong seasonal and leisure identity.' },
+      { eyebrow: 'Official tourism source', title: 'Gapyeong Rail Park turns the old rail line into leisure', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Gapyeong Rail Park reference', body: 'VisitKorea describes a rail-bike route through Gapyeongcheon, Bukhangang Bridge, and tree tunnel scenery.', sourceLabel: 'VisitKorea Gapyeong Rail Park', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=69675', licenseLabel: 'Official reference', usageNote: 'Use for rail and river movement identity.' },
+      { eyebrow: 'County source', title: 'Jarasum Jazz gives Gapyeong a cultural season', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Jarasum Jazz Festival reference', body: 'Gapyeong County describes Jarasum International Jazz Festival as a mid-October event with performances, workshops, and festival programming.', sourceLabel: 'Gapyeong County English site', sourceHref: 'https://www.gp.go.kr/eng/contents.do?key=909', licenseLabel: 'Official reference', usageNote: 'Use for seasonal cultural positioning.' },
+    ],
+    points: [
+      { id: 'gapyeong-jarasum', name: 'Jarasum Island', kind: 'recovery', areaLabel: 'River island', coordinates: { lat: 37.8198, lng: 127.5267 }, summary: 'The camping, festival, and river-island anchor that gives Gapyeong seasonal depth.', note: 'Use this when Gapyeong should be more than Nami access.' },
+      { id: 'gapyeong-nami-access', name: 'Nami Island access', kind: 'checkpoint', areaLabel: 'Island gateway', coordinates: { lat: 37.791, lng: 127.525 }, summary: 'The internationally recognizable hook that brings many travelers into Gapyeong searches.', note: 'Keep it useful but do not let it replace Route 3 logic.' },
+      { id: 'gapyeong-rail-park', name: 'Gapyeong Rail Park', kind: 'mobility', areaLabel: 'Rail leisure', coordinates: { lat: 37.8296, lng: 127.5156 }, summary: 'A light movement activity that turns old rail and river scenery into a route-friendly stop.', note: 'Good for families, couples, and soft starts from Seoul.' },
+    ],
+  },
   chuncheon: {
     slug: 'chuncheon',
     city: 'Chuncheon',
@@ -1393,6 +1443,56 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         note:
           'This is the planning point that keeps Chuncheon connected to the deeper Route 3 story.',
       },
+    ],
+  },
+  yanggu: {
+    slug: 'yanggu',
+    city: 'Yanggu',
+    mapTitle: 'Where Route 3 turns quiet, northern, and serious',
+    mapIntro:
+      'Yanggu is the tonal turn on Route 3. After Chuncheon gives the journey food and lake-city comfort, Yanggu brings Punch Bowl terrain, Korean War memory, DMZ-adjacent ecology, and the silence that makes Inje and Sokcho feel earned.',
+    mapCenter: { lat: 38.1101, lng: 127.9895 },
+    supportSummary:
+      'Yanggu works best as the hidden differentiator on Route 3. Punch Bowl, Korean War memory, DMZ geography, highland basin scenery, and quiet local travel keep the route from becoming only a pretty way to reach Sokcho.',
+    roleSummary:
+      'On Route 3, Yanggu is where the route leaves the easy lake-city mood and begins to carry northern memory. It prepares the traveler emotionally and geographically before Inje chooses the Seoraksan pass.',
+    staySummary:
+      'Stay in Yanggu only when the route should slow into borderland silence. Otherwise, use it as a meaningful day chapter between Chuncheon and Inje.',
+    foodSummary:
+      'Food should be local and modest: simple meals, market stops, mountain-town cafes, and enough fuel before the road turns toward Inje.',
+    nextLegSummary:
+      'After Yanggu, Inje becomes more meaningful because the route has already entered serious northern terrain. The transition should feel like memory turning into mountain threshold.',
+    accommodationNote:
+      'Strongest stay-planning angle: quiet town stays for thoughtful travelers, Punch Bowl-area planning for landscape memory, and practical onward pacing toward Inje.',
+    sections: [
+      { title: 'Why Yanggu changes the mood', body: 'Yanggu gives Route 3 silence and gravity. Without it, the line risks becoming a pleasant but thinner path from lake country to Sokcho.' },
+      { title: 'Why Punch Bowl matters', body: 'Punch Bowl is both landscape and memory: a highland basin, Korean War battlefield context, DMZ-adjacent ecology, and a visual reason the route feels northern.' },
+      { title: 'How to keep the tone respectful', body: 'The page should explain war memory and DMZ geography without turning into a military article. The travel value is quiet attention, not spectacle.' },
+    ],
+    decisions: [
+      { title: 'Keep Yanggu for northern gravity', bestFor: 'Travelers who want Route 3 to feel different from the faster eastbound routes.', why: 'It adds Punch Bowl, Korean War memory, and DMZ-adjacent landscape before Inje.' },
+      { title: 'Use it as a day chapter', bestFor: 'Travelers staying in Chuncheon or Inje but wanting a meaningful stop between them.', why: 'Yanggu does not always need a night, but it deserves a clear chapter.' },
+      { title: 'Stay when quiet is the point', bestFor: 'Slow travelers, history-minded visitors, and drivers who want the route to breathe.', why: 'A night here changes the emotional weight of the next leg.' },
+    ],
+    stayZones: [
+      { title: 'Stay in Yanggu town', areaLabel: 'Practical base', bestFor: 'Simple food, lodging, and a quiet restart toward Inje.', why: 'This is the least complicated way to keep Yanggu in the route.' },
+      { title: 'Stay near Punch Bowl access', areaLabel: 'Highland memory', bestFor: 'Travelers prioritizing Punch Bowl, DMZ ecology, and landscape reading.', why: 'This makes the stop more specific and less like a generic town night.' },
+      { title: 'Use Yanggu as a pause', areaLabel: 'Day chapter', bestFor: 'Chuncheon-to-Inje pacing without committing to an overnight.', why: 'This keeps the route efficient while preserving its northern story.' },
+    ],
+    visuals: [
+      { eyebrow: 'Borderland terrain', title: 'Punch Bowl gives Yanggu its shape', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Punch Bowl highland basin in Yanggu', body: 'The basin image is central because Yanggu is a landscape argument as much as a stop.', sourceLabel: 'VisitKorea Yanggu Punch Bowl Village', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341', licenseLabel: 'Official reference' },
+      { eyebrow: 'Korean War memory', title: 'Yanggu should stay quiet and serious', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Yanggu Punch Bowl battlefield landscape reference', body: 'War memory belongs in the page, but the tone should be measured and route-aware.', sourceLabel: 'VisitKorea Yanggu Punch Bowl Village', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341', licenseLabel: 'Official reference' },
+      { eyebrow: 'Route turn', title: 'Yanggu prepares the road for Inje', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Yanggu highland terrain before Inje', body: 'The visual should make clear that Chuncheon comfort is behind the traveler and Seorak threshold is ahead.', sourceLabel: 'Yanggu tourism reference', sourceHref: 'https://www.ygtour.kr/Home/index', licenseLabel: 'Official reference' },
+    ],
+    officialReferences: [
+      { eyebrow: 'Official tourism source', title: 'Punch Bowl is Yanggu’s core landscape and memory source', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Yanggu Punch Bowl reference', body: 'VisitKorea describes Punch Bowl as a highland basin inside the Civilian Access Control Line and a former Korean War battlefield near Daeamsan.', sourceLabel: 'VisitKorea Yanggu Punch Bowl Village', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341', licenseLabel: 'Official reference', usageNote: 'Use as the core source for Yanggu terrain, Korean War memory, and DMZ-adjacent ecology.' },
+      { eyebrow: 'County tourism source', title: 'Yanggu tourism keeps the local route context grounded', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Yanggu county tourism reference', body: 'Yanggu county tourism references support the local museum, ecological, and travel-planning layer around the county.', sourceLabel: 'Yanggu Tourism', sourceHref: 'https://www.ygtour.kr/Home/index', licenseLabel: 'Official reference', usageNote: 'Use for future official local image and detail replacement.' },
+      { eyebrow: 'Route source', title: 'Yanggu connects the lake city and Seorak threshold', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Yanggu route handoff reference', body: 'The route source role is editorial: Yanggu makes the move from Chuncheon to Inje feel like a northern crossing, not a shortcut.', sourceLabel: 'Route editorial source', sourceHref: '/route-3', licenseLabel: 'Internal', usageNote: 'Use for route logic, not external factual claims.' },
+    ],
+    points: [
+      { id: 'yanggu-town-core', name: 'Yanggu town core', kind: 'stay', areaLabel: 'Practical base', coordinates: { lat: 38.1101, lng: 127.9895 }, summary: 'The simplest lodging and food base before the road turns toward Inje.', note: 'Use for practical pacing rather than spectacle.' },
+      { id: 'yanggu-punch-bowl', name: 'Punch Bowl area', kind: 'checkpoint', areaLabel: 'Highland basin', coordinates: { lat: 38.2884, lng: 128.131 }, summary: 'The landscape and memory anchor that gives Yanggu its Route 3 weight.', note: 'Access and security context should be checked before publication.' },
+      { id: 'yanggu-inje-handoff', name: 'Yanggu to Inje handoff', kind: 'mobility', areaLabel: 'Northern route', coordinates: { lat: 38.164, lng: 128.072 }, summary: 'The transition from borderland memory into Seoraksan pass planning.', note: 'This is the route reason Yanggu stays in the line.' },
     ],
   },
   inje: {
@@ -1855,6 +1955,57 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         note:
           'Keep this leg simple so Goseong supports Sokcho rather than competing with it.',
       },
+    ],
+  },
+  sokcho: {
+    slug: 'sokcho',
+    city: 'Sokcho',
+    mapTitle: 'Where Route 3 finally releases into Seoraksan and the East Sea',
+    mapIntro:
+      'Sokcho is the payoff of Route 3. The city should feel like the release after Gapyeong, Chuncheon, Yanggu, Inje, and the Seoraksan pass choice: mountain, sea, market, harbor, Abai Village memory, and enough hotels to land well.',
+    mapCenter: { lat: 38.2045, lng: 128.5918 },
+    supportSummary:
+      'Sokcho works best as the final mountain-to-sea arrival. Seoraksan National Park access, Sokcho Tourist and Fishery Market, Abai Village, Sokcho Beach, harbor seafood, cafes, and seaside hotels let the route resolve with both drama and comfort.',
+    roleSummary:
+      'On Route 3, Sokcho should not be treated as a generic coastal endpoint. It is where the Seoraksan pass choice becomes emotional, where the East Sea opens, and where local market and Abai Village memory make the arrival human.',
+    staySummary:
+      'Stay in Sokcho when the route needs a real finish. Choose beach and hotel zones for ease, market/harbor zones for food and local texture, or Seoraksan-side access when the next morning belongs to the mountain.',
+    foodSummary:
+      'Food should be central: Sokcho Tourist and Fishery Market, seafood, squid, Abai sundae, harbor meals, and casual coastal snacks make the final city feel earned after mountain roads.',
+    nextLegSummary:
+      'After Sokcho, the route can either rest, loop north through Goseong, or continue along the East Sea. But the first job is to let the traveler arrive properly.',
+    accommodationNote:
+      'Strongest stay-planning angle: one beach/hotel stay group, one market-and-harbor food stay group, and one Seoraksan access stay pattern for travelers prioritizing the mountain next morning.',
+    sections: [
+      { title: 'Why Sokcho is the payoff', body: 'Sokcho works because the route has earned it. After lakes, borderland memory, and Seorak pass choices, the East Sea arrival feels like release rather than a simple destination.' },
+      { title: 'Why Seoraksan and the city must stay together', body: 'Sokcho should not become only a mountain base or only a beach town. The best page keeps Seoraksan, the harbor, market food, and coastal hotels in one story.' },
+      { title: 'Why Abai Village matters', body: 'Abai Village gives the city postwar human memory and northern-displacement context. It adds emotional texture to the market-and-sea arrival.' },
+    ],
+    decisions: [
+      { title: 'Stay near the beach', bestFor: 'Travelers who want an easy final night, hotels, cafes, and sea air.', why: 'This makes the route finish feel restful after the mountain crossing.' },
+      { title: 'Stay near market and harbor', bestFor: 'Food-focused travelers and people who want Sokcho to feel local.', why: 'Market, seafood, Abai sundae, and harbor streets make the city more human.' },
+      { title: 'Stay toward Seoraksan access', bestFor: 'Travelers planning an early mountain morning.', why: 'This keeps Sokcho tied to the pass-and-peak logic that made Route 3 distinct.' },
+    ],
+    stayZones: [
+      { title: 'Stay by Sokcho Beach', areaLabel: 'Sea arrival', bestFor: 'Hotels, cafes, easy walks, and a soft final night.', why: 'The beach zone lets the route exhale.' },
+      { title: 'Stay near the market and harbor', areaLabel: 'Food core', bestFor: 'Seafood, Abai sundae, local streets, and evening energy.', why: 'This is where Sokcho feels like a living city rather than only scenery.' },
+      { title: 'Stay toward Seoraksan', areaLabel: 'Mountain access', bestFor: 'Early hikes, cable-car plans, and travelers prioritizing Seorak.', why: 'This keeps the final city connected to the pass choice.' },
+    ],
+    visuals: [
+      { eyebrow: 'Final release', title: 'Sokcho turns the pass into sea air', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho Beach and East Sea reference', body: 'The sea image matters because Route 3 should end with relief after the mountain logic.', sourceLabel: 'VisitKorea Seorak Special Tourist Zone', sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222', licenseLabel: 'Official reference' },
+      { eyebrow: 'Food arrival', title: 'The market makes Sokcho human', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho market and harbor food reference placeholder', body: 'The page needs a market visual because food converts the endpoint into a lived arrival.', sourceLabel: 'Sokcho Tourist and Fishery Market', sourceHref: 'https://sokcho-central.co.kr', licenseLabel: 'Official reference' },
+      { eyebrow: 'Postwar memory', title: 'Abai Village adds memory to the coast', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho Abai Village memory reference placeholder', body: 'Abai Village keeps Sokcho from becoming generic: the final city holds migration memory as well as seafood and beach stays.', sourceLabel: 'Abai Village reference', sourceHref: 'https://en.wikipedia.org/wiki/Abai_Village', licenseLabel: 'Reference' },
+    ],
+    officialReferences: [
+      { eyebrow: 'Official tourism source', title: 'Seorak Special Tourist Zone ties Sokcho to mountain and sea', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho and Seoraksan reference', body: 'VisitKorea frames the Seorak Special Tourist Zone around Seoraksan, Sokcho, beaches, and nearby coastal attractions, supporting Sokcho as a mountain-to-sea arrival.', sourceLabel: 'VisitKorea Seorak Special Tourist Zone', sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222', licenseLabel: 'Official reference', usageNote: 'Use as the core source for Seoraksan and East Sea arrival logic.' },
+      { eyebrow: 'Market source', title: 'Sokcho market supports the food-arrival layer', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho market reference', body: 'The central market source supports Sokcho as seafood, snack, and local evening city rather than only a scenic endpoint.', sourceLabel: 'Sokcho Tourist and Fishery Market', sourceHref: 'https://sokcho-central.co.kr', licenseLabel: 'Official reference', usageNote: 'Use for market, food, and street-level arrival.' },
+      { eyebrow: 'Memory source', title: 'Abai Village keeps postwar memory visible', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Abai Village reference', body: 'Abai Village is associated with displaced people from Hamgyong Province after the Korean War and gives Sokcho a human memory layer beyond tourism.', sourceLabel: 'Abai Village reference', sourceHref: 'https://en.wikipedia.org/wiki/Abai_Village', licenseLabel: 'Reference', usageNote: 'Replace with stronger official/local source when available.' },
+    ],
+    points: [
+      { id: 'sokcho-beach', name: 'Sokcho Beach', kind: 'stay', areaLabel: 'Sea arrival', coordinates: { lat: 38.1894, lng: 128.6031 }, summary: 'The simplest final-night zone for travelers who want the sea to be visible and easy.', note: 'Use this for comfort-led endings.' },
+      { id: 'sokcho-market', name: 'Sokcho Tourist and Fishery Market', kind: 'food', areaLabel: 'Market core', coordinates: { lat: 38.2042, lng: 128.5907 }, summary: 'The food and street-level anchor that makes Sokcho feel local.', note: 'This is the strongest conversion point for dinner and evening intent.' },
+      { id: 'abai-village', name: 'Abai Village', kind: 'checkpoint', areaLabel: 'Postwar memory', coordinates: { lat: 38.2012, lng: 128.5958 }, summary: 'The memory layer that connects Sokcho to displacement, harbor life, and Abai sundae.', note: 'Handle with respect; this is not just a food stop.' },
+      { id: 'seoraksan-access', name: 'Seoraksan access side', kind: 'mobility', areaLabel: 'Mountain morning', coordinates: { lat: 38.17, lng: 128.485 }, summary: 'The mountain-side planning zone for travelers who want Seorak early the next day.', note: 'Use when Sokcho should remain tied to the pass and mountain story.' },
     ],
   },
   mungyeong: {

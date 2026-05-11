@@ -8,6 +8,7 @@ import RouteMapSection from '@/components/routes/RouteMapSection';
 import StopoverCitiesCard from '@/components/routes/StopoverCitiesCard';
 import RouteJourneyHero from '@/components/routes/RouteJourneyHero';
 import { getRouteSlugForRoute } from '@/data/routeRegistry';
+import { getRouteSeoFaqs } from '@/data/routeSeoFaqs';
 
 interface RoutePageClientProps {
   routeData: RouteData;
@@ -26,6 +27,7 @@ export default function RoutePageClient({
   const [selectedVariantId, setSelectedVariantId] = useState(routeData.transports.KTX.id);
   const currentTransport = routeData.transports[selectedMode];
   const routeSlug = getRouteSlugForRoute(routeData);
+  const routeFaqs = getRouteSeoFaqs(routeData.routeCode);
   const transportCards = TRANSPORT_ORDER.map((mode) => routeData.transports[mode]);
   const variantOptions = useMemo(() => currentTransport.variants ?? [], [currentTransport]);
 
@@ -362,6 +364,30 @@ export default function RoutePageClient({
             ))}
           </div>
         </section>
+
+        {routeFaqs.length > 0 && (
+          <section className="mt-8 rounded-[2rem] border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-stone-500">
+              Route Search Questions
+            </p>
+            <h2 className="mt-2 font-serif text-4xl text-stone-950">
+              What travelers usually mean when they search this route.
+            </h2>
+            <div className="mt-6 grid gap-4 lg:grid-cols-3">
+              {routeFaqs.map((item) => (
+                <article
+                  key={item.question}
+                  className="rounded-[1.5rem] border border-stone-200 bg-stone-50/80 p-5"
+                >
+                  <h3 className="font-serif text-2xl leading-tight text-stone-950">
+                    {item.question}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-stone-700">{item.answer}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="mt-8 flex justify-between gap-4 rounded-[2rem] border border-stone-200 bg-white px-6 py-5 shadow-sm">
           <div>

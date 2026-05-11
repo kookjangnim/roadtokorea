@@ -55,6 +55,20 @@
       "The images must balance exile history, river geography, modern film interest, and preservation caution."
     ]
   },
+  "gapyeong": {
+    "city": "Gapyeong",
+    "routeSlug": "route-3",
+    "historicalWeight": "Gapyeong sits on the Bukhangang river edge where Seoul starts to loosen into lake, island, rail, and weekend movement. It is not the deepest historical chapter on Route 3, but it is the first place where the route visibly leaves the capital mood.",
+    "modernIdentity": "Modern Gapyeong is built around leisure that English-speaking travelers already search for: Nami Island access, Jarasum camping and jazz culture, rail bikes, river views, pensions, and easy short escapes from Seoul.",
+    "routeMeaning": "On Route 3, Gapyeong is the soft opening. It should not compete with Chuncheon, Yanggu, Inje, or Sokcho; it prepares the traveler with water, islands, and light movement before Chuncheon gives the route its first full city anchor.",
+    "imageBrief": "Use one Bukhangang or Jarasum water image, one Nami Island or island-access cue, one rail-bike or leisure image, one pension/camping stay cue, and one route image that shows Gapyeong handing off to Chuncheon.",
+    "qualityBar": [
+      "The page must explain Gapyeong as Route 3's soft opening after Seoul.",
+      "The page must balance Nami Island, Jarasum, rail bike, river, and stay logic without overpromising depth.",
+      "The page must connect Gapyeong to Chuncheon so it does not feel like a disconnected day trip.",
+      "The images must show river, island, leisure, and Seoul-to-Chuncheon handoff."
+    ]
+  },
   "chuncheon": {
     "city": "Chuncheon",
     "routeSlug": "route-3",
@@ -69,6 +83,20 @@
       "The images must make lake city, food street, and onward northern route logic visible."
     ]
   },
+  "yanggu": {
+    "city": "Yanggu",
+    "routeSlug": "route-3",
+    "historicalWeight": "Yanggu gives Route 3 its northern gravity. Punch Bowl, Korean War battlefield memory, DMZ-adjacent geography, and highland basin terrain make the county feel quiet, serious, and different from a scenic shortcut to Sokcho.",
+    "modernIdentity": "Modern Yanggu works through Punch Bowl views, war memorial travel, DMZ ecology, mountain villages, local museums, and a slower inland rhythm. It is not a mass-tourism city, which is exactly why it changes the tone of the route.",
+    "routeMeaning": "On Route 3, Yanggu is the tonal turn after Chuncheon. The line moves from food and lake-city comfort into borderland memory before Inje turns the route toward Seoraksan pass choices.",
+    "imageBrief": "Use one Punch Bowl basin image, one Korean War or memorial cue, one DMZ ecology or highland road image, one quiet village/stay cue, and one route image showing Chuncheon to Yanggu to Inje.",
+    "qualityBar": [
+      "The page must explain Yanggu through Punch Bowl, Korean War memory, and DMZ-adjacent geography.",
+      "The page must keep the tone respectful without becoming a military-history article.",
+      "The page must connect Chuncheon, Yanggu, and Inje as a clear tonal progression.",
+      "The images must show basin, borderland, memory, and the route turn toward Inje."
+    ]
+  },
   "inje": {
     "city": "Inje",
     "routeSlug": "route-3",
@@ -81,6 +109,20 @@
       "The page must compare Jinburyeong, Hangyeryeong, and Misiryeong in plain travel language.",
       "The page must include Naerincheon or outdoor sport as the present-day identity.",
       "The images must make valley, pass, and Seoraksan view logic visible."
+    ]
+  },
+  "sokcho": {
+    "city": "Sokcho",
+    "routeSlug": "route-3",
+    "historicalWeight": "Sokcho carries mountain, sea, market, and migration memory in one compact city. Seoraksan gives it dramatic geography, Abai Village keeps postwar northern-displacement memory visible, and the harbor ties the city to the East Sea.",
+    "modernIdentity": "Modern Sokcho is one of Korea's strongest coastal arrivals: Seoraksan access, Sokcho Tourist and Fishery Market, Abai sundae, beaches, harbor food, seaside hotels, cafes, and easy urban services after the mountain route.",
+    "routeMeaning": "On Route 3, Sokcho is the release after the northern mountain-to-sea sequence. Gapyeong and Chuncheon soften the start, Yanggu and Inje add memory and terrain, Goseong can widen the northern coast, and Sokcho gives the final payoff.",
+    "imageBrief": "Use one Seoraksan cue, one Sokcho market or seafood image, one Abai Village or gaetbae cue, one beach/harbor stay image, and one route image that makes the sea feel earned after Inje and the pass choice.",
+    "qualityBar": [
+      "The page must explain Sokcho as Route 3's final payoff, not only a beach city.",
+      "The page must balance Seoraksan, East Sea, market, Abai Village, and overnight logic.",
+      "The page must make Sokcho feel earned after Yanggu, Inje, and the pass choice.",
+      "The images must show mountain, market, sea, and postwar local memory."
     ]
   },
   "goseong": {

@@ -139,6 +139,16 @@
       }
     }
   },
+  "gapyeong": {
+    "city": "Gapyeong",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091", "brief": "Hero should show Gapyeong as a river, island, and leisure gateway after Seoul." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://www.gp.go.kr/eng/contents.do?key=909", "brief": "History slot should show Jarasum's transformation from flood-prone river island to jazz and leisure culture." },
+      "present": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091", "brief": "Present slot should show Jarasum, Nami Island access, camping, jazz, and river leisure identity." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=69675", "brief": "Route slot should show rail bike, Bukhangang, or a gentle handoff from Seoul toward Chuncheon." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=55555", "brief": "Street slot should show pensions, camping, station access, or local leisure texture near the river." }
+    }
+  },
   "chuncheon": {
     "city": "Chuncheon",
     "slots": {
@@ -174,6 +184,16 @@
       }
     }
   },
+  "yanggu": {
+    "city": "Yanggu",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341", "brief": "Hero should show Punch Bowl basin as Yanggu's DMZ-adjacent landscape identity." },
+      "history": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341", "brief": "History slot should anchor Yanggu in Korean War battlefield memory and Punch Bowl geography." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://www.ygtour.kr/Home/index", "brief": "Present slot should show quieter highland villages, DMZ ecology, museums, and local travel rhythm." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341", "brief": "Route slot should explain Chuncheon to Yanggu to Inje as the move from lake city to borderland to Seorak threshold." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://www.ygtour.kr/Home/index", "brief": "Street slot should show a quiet town, museum visit, highland road, or respectful local-stay texture." }
+    }
+  },
   "inje": {
     "city": "Inje",
     "slots": {
@@ -207,6 +227,16 @@
         "sourceHref": "https://tour.inje.go.kr/en/tour/tour_leports",
         "brief": "Street slot should show a town rest stop, rafting base, or pre-pass service area before Seoraksan."
       }
+    }
+  },
+  "sokcho": {
+    "city": "Sokcho",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222", "brief": "Hero should show Sokcho as the East Sea release after Seoraksan and Route 3's pass choice." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://en.wikipedia.org/wiki/Abai_Village", "brief": "History slot should eventually show Abai Village, gaetbae, and postwar northern-displacement memory." },
+      "present": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222", "brief": "Present slot should show Sokcho Beach, market, harbor food, cafes, hotels, and summer coastal energy." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222", "brief": "Route slot should show how Seoraksan, Inje, Goseong, and the pass choices make Sokcho feel earned." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://sokcho-central.co.kr", "brief": "Street slot should show Sokcho Tourist and Fishery Market, seafood, Abai sundae, or harbor-street texture." }
     }
   },
   "goseong": {

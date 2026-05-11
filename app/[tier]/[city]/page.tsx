@@ -16,6 +16,8 @@ import CitySupportMap from '@/components/city-detail/CitySupportMap';
 import CityMediaReferences from '@/components/city-detail/CityMediaReferences';
 import { getCitySupportProfile } from '@/data/citySupportProfiles';
 import { getCitySeoKeywordProfile } from '@/data/citySeoKeywords';
+import { getCityImagePipeline } from '@/data/cityImagePipeline';
+import { getCityQualityPackStatus } from '@/data/reviewedCityQualityRegistry';
 import {
   buildOpenStreetMapDirectionsUrl,
   buildOpenStreetMapEmbedUrl,
@@ -234,6 +236,8 @@ export default async function CityPage({
   const supportProfile = getCitySupportProfile(citySlug);
   const storyTemplate = getRouteCityStoryTemplate(citySlug);
   const seoProfile = getCitySeoKeywordProfile(citySlug);
+  const imagePipeline = getCityImagePipeline(citySlug);
+  const qualityPackStatus = getCityQualityPackStatus(citySlug);
   const transportGuidance = buildTransportGuidance(routeOption?.transport);
   const tags = [
     cityName,
@@ -357,6 +361,24 @@ export default async function CityPage({
                   </p>
                 </div>
               </div>
+
+              {qualityPackStatus.length > 0 && (
+                <div className="mt-8 rounded-[1.5rem] border border-stone-200 bg-stone-50/80 p-5">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                    Reviewed City Quality Pack
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {qualityPackStatus.map((item) => (
+                      <span
+                        key={item.label}
+                        className="rounded-full border border-stone-200 bg-white px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600"
+                      >
+                        {item.label}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="overflow-hidden rounded-[2rem] border border-stone-200/80 bg-white/80 shadow-[0_30px_90px_rgba(34,30,25,0.08)] backdrop-blur">
@@ -757,6 +779,38 @@ export default async function CityPage({
                   officialReferences={supportProfile.officialReferences}
                   videoReferences={supportProfile.videoReferences}
                 />
+
+                {imagePipeline.length > 0 && (
+                  <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                      Image Pipeline
+                    </p>
+                    <h3 className="mt-3 font-serif text-3xl leading-tight text-stone-950">
+                      Every image slot has a production purpose.
+                    </h3>
+                    <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+                      {imagePipeline.map((item) => (
+                        <a
+                          key={item.slot}
+                          href={item.sourceHref}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="rounded-[1rem] border border-stone-200 bg-stone-50/80 p-4 transition-colors hover:border-stone-400 hover:bg-white"
+                        >
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-500">
+                            {item.slot}
+                          </p>
+                          <p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-stone-700">
+                            {item.priority}
+                          </p>
+                          <p className="mt-3 line-clamp-4 text-xs leading-5 text-stone-600">
+                            {item.brief}
+                          </p>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="mt-8 grid gap-4 xl:grid-cols-3">
                   {supportProfile.sections.map((section) => (
