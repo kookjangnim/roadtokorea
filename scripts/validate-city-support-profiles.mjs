@@ -30,6 +30,14 @@ const requiredCities = [
     slug: 'wonju',
     requiredTerms: ['Korean War', 'Buldak', 'Gangneung', 'supportSummary'],
   },
+  {
+    slug: 'mungyeong',
+    requiredTerms: ['Saejae', 'pass', 'threshold', 'Andong', 'supportSummary'],
+  },
+  {
+    slug: 'yeongwol',
+    requiredTerms: ['Danjong', 'Cheongnyeongpo', 'film', 'Yeongwol', 'supportSummary'],
+  },
 ];
 
 const failures = [];

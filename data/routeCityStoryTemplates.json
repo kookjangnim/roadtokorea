@@ -41,6 +41,34 @@
       "The images must balance mountains, city function, and modern industrial identity."
     ]
   },
+  "yeongwol": {
+    "city": "Yeongwol",
+    "routeSlug": "future-inland",
+    "historicalWeight": "Yeongwol carries one of Joseon history's most emotional stories: King Danjong's exile at Cheongnyeongpo, his death in Yeongwol, Jangneung Royal Tomb, and the loyalty memory around figures such as Eom Heung-do. The landscape itself explains the sorrow.",
+    "modernIdentity": "Modern Yeongwol is being re-read through film, festival energy, river landscapes, observatory travel, and renewed attention to Danjong sites after the success of Wang-gwa Saneun Namja. The city now sits where history, screen culture, and preservation pressure meet.",
+    "routeMeaning": "On the short inland branch, Yeongwol is the emotional climax after Wonju and Jecheon. Wonju provides the hinge, Jecheon gives lake-and-mountain transition, and Yeongwol turns the trip into a story about exile, rivers, memory, and how popular culture can reactivate a local place.",
+    "imageBrief": "Use Cheongnyeongpo or Gwangeumsong exile imagery, Jangneung royal tomb, Donggang or Seogang river landscape, Byeolmaro Observatory or Korean Peninsula-shaped terrain, and one contemporary film-tourism cue that also respects heritage preservation.",
+    "qualityBar": [
+      "The page must explain Danjong and Cheongnyeongpo clearly without becoming a textbook.",
+      "The page must mention the 2026 film trend as a revival of existing history, not as a disposable viral hook.",
+      "The page must connect Wonju, Jecheon, and Yeongwol into a believable short inland branch.",
+      "The images must balance exile history, river geography, modern film interest, and preservation caution."
+    ]
+  },
+  "mungyeong": {
+    "city": "Mungyeong",
+    "routeSlug": "route-1",
+    "historicalWeight": "Mungyeong carries the old-road memory of crossing Korea. Mungyeongsaejae Pass, its three gates, and the Great Yeongnam Road make the city feel like the place where Seoul-to-Busan movement becomes a real threshold rather than a line on a map.",
+    "modernIdentity": "Modern Mungyeong keeps that threshold alive through Saejae tourism, old-road museums, filming sets, omija products, chasabal pottery, and coal-mining heritage. It is not only a scenic pass; it is a city that turns old movement into present-day culture.",
+    "routeMeaning": "On Route 1, Mungyeong is the threshold/pass sample. After Yeoju explains the split and Chungju explains recovery, Mungyeong explains why the inland route has drama: the traveler crosses a historic gate before Andong gives the line cultural weight.",
+    "imageBrief": "Use one Saejae gate or old-road image, one broad pass-country landscape, one present-day craft or omija cue, one coal or tunnel heritage cue, and one route image that shows Mungyeong as the handoff between Chungju and Andong.",
+    "qualityBar": [
+      "The page must explain Mungyeong as threshold/pass country, not a generic mountain stop.",
+      "The page must connect Saejae, Great Yeongnam Road, gates, and modern tourism without becoming a history article.",
+      "The page must show why Route 1 becomes more dramatic after Chungju and before Andong.",
+      "The images must balance gate, pass, craft/omija, industrial memory, and onward-route logic."
+    ]
+  },
   "andong": {
     "city": "Andong",
     "routeSlug": "route-1",

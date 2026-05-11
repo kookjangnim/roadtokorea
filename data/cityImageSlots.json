@@ -1,0 +1,212 @@
+{
+  "chungju": {
+    "city": "Chungju",
+    "slots": {
+      "hero": {
+        "status": "ready",
+        "asset": "/images/destinations/Chungju_Traveler_at_lake_fortress_wall_6374ceab8e.jpeg",
+        "sourceHref": "/images/destinations/Chungju_Traveler_at_lake_fortress_wall_6374ceab8e.jpeg",
+        "brief": "Lake and fortress identity for the city hero."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/chungju/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/chungju/support-3-generated-v1.png",
+        "brief": "Lake, fortress, and inland-route memory."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/chungju/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/chungju/support-2-generated-v1.png",
+        "brief": "Riverside and local present-day stopover mood."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/chungju/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/chungju/support-1-generated-v1.png",
+        "brief": "Recovery route cue before Mungyeong pass country."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/51/3343351_image2_1.jpg",
+        "sourceHref": "https://data.visitkorea.or.kr/resource/3343355",
+        "brief": "Suanbo footbath as street-level recovery proof."
+      }
+    }
+  },
+  "yeoju": {
+    "city": "Yeoju",
+    "slots": {
+      "hero": {
+        "status": "ready",
+        "asset": "http://tong.visitkorea.or.kr/cms/resource/11/3072711_image2_1.jpg",
+        "sourceHref": "https://data.visitkorea.or.kr/resource/128926",
+        "brief": "Silleuksa and Namhan River as the first visual identity."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "http://tong.visitkorea.or.kr/cms/resource/09/3072709_image2_1.jpg",
+        "sourceHref": "https://www.yeoju.go.kr/english/contents.do?key=1830",
+        "brief": "King Sejong and royal memory; replace with direct tomb image when ingested."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "http://tong.visitkorea.or.kr/cms/resource/45/2532845_image2_1.jpg",
+        "sourceHref": "https://data.visitkorea.or.kr/page/690557",
+        "brief": "Yeoju Premium Outlets as modern leisure and service cue."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "http://tong.visitkorea.or.kr/cms/resource/10/3072710_image2_1.jpg",
+        "sourceHref": "https://data.visitkorea.or.kr/resource/128926",
+        "brief": "River pause before the split toward Chungju or Wonju."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "http://tong.visitkorea.or.kr/cms/resource/03/3072703_image2_1.jpg",
+        "sourceHref": "https://www.yeoju.go.kr/english/contents.do?key=1840",
+        "brief": "Gangcheonseom or riverside leisure texture; replace with dedicated local-life image."
+      }
+    }
+  },
+  "wonju": {
+    "city": "Wonju",
+    "slots": {
+      "hero": {
+        "status": "ready",
+        "asset": "/images/destinations/Wonju_Hiker_on_mountain_overlooking_city_1b7177f12b.jpeg",
+        "sourceHref": "/images/destinations/Wonju_Hiker_on_mountain_overlooking_city_1b7177f12b.jpeg",
+        "brief": "Mountain gateway and inland hinge, showing why Wonju prepares the eastbound move before Gangneung."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "/images/destinations/Wonju_Hiker_dwarfed_by_stone_pagodas_88c2c81acf.jpeg",
+        "sourceHref": "https://www.army.mil/article/28398/eighth_u_s_army_to_return_camps_eagle_long",
+        "brief": "Military and Korean War context; replace with suitable memorial or archival visual."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "/images/destinations/Wonju_Friends_relaxing_with_coffee_cafe_bcb924ac4f.jpeg",
+        "sourceHref": "https://www.samyangfoods.com/eng/information/factory/index.do",
+        "brief": "Present-day city life and Buldak/Samyang production story."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/destinations/Wonju_Train_station_with_cherry_blossoms_918188e3e2.jpeg",
+        "sourceHref": "/images/destinations/Wonju_Train_station_with_cherry_blossoms_918188e3e2.jpeg",
+        "brief": "Station and eastbound handoff toward Gangneung."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "/images/destinations/Wonju_Woman_admiring_water_reflection_66e693eb77.jpeg",
+        "sourceHref": "/images/destinations/Wonju_Woman_admiring_water_reflection_66e693eb77.jpeg",
+        "brief": "Soft local reset before the coast opens."
+      }
+    }
+  },
+  "yeongwol": {
+    "city": "Yeongwol",
+    "slots": {
+      "hero": {
+        "status": "ready",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG",
+        "sourceHref": "https://www.yw.go.kr/eng/selectBbsNttView.do?bbsNo=103&integrDeptCode=&key=1003&nttNo=817&pageIndex=2&searchCnd=all&searchCtgry=&searchKrwd=",
+        "brief": "Cheongnyeongpo exile landscape should introduce Yeongwol as beautiful, enclosed, and historically charged."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/78/3375078_image2_1.JPG",
+        "sourceHref": "https://www.yw.go.kr/tour/contents.do?key=575",
+        "brief": "Danjong, Jangneung, and festival memory should keep the film trend grounded in heritage."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG",
+        "sourceHref": "https://www.hankyung.com/article/2026030867587",
+        "brief": "The 2026 Wang-gwa Saneun Namja travel trend should be shown as renewed attention to real Danjong sites."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG",
+        "sourceHref": "https://www.yw.go.kr/tour/index.do",
+        "brief": "Route visual should connect Wonju, Jecheon, and Yeongwol as hinge, terrain threshold, and emotional payoff."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/78/3375078_image2_1.JPG",
+        "sourceHref": "https://www.yw.go.kr/tour/contents.do?key=607",
+        "brief": "Street-level slot should show respectful guided heritage travel, town food, or an observatory-night stay texture."
+      }
+    }
+  },
+  "mungyeong": {
+    "city": "Mungyeong",
+    "slots": {
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/mungyeong/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/mungyeong/hero-generated-v1.png",
+        "brief": "Hero image should read as pass-country threshold."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/mungyeong/support-1-generated-v1.png",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111158",
+        "brief": "Saejae gates, old road, and defense history."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/mungyeong/support-3-generated-v1.png",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=228&vcontsId=104962",
+        "brief": "Chasabal pottery, omija, coal heritage, and contemporary tourism."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/mungyeong/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/mungyeong/support-2-generated-v1.png",
+        "brief": "Pass-country spatial cue between Chungju and Andong."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/mungyeong/support-3-generated-v1.png",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=193535",
+        "brief": "Omija tunnel, cafes, meals, and local reset details."
+      }
+    }
+  },
+  "andong": {
+    "city": "Andong",
+    "slots": {
+      "hero": {
+        "status": "ready",
+        "asset": "/images/cities/andong.jpg",
+        "sourceHref": "/images/cities/andong.jpg",
+        "brief": "Heritage city hero that establishes Andong as the inland cultural anchor rather than a generic old-town stop."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "/images/cities/andong.jpg",
+        "sourceHref": "https://whc.unesco.org/en/list/1324/",
+        "brief": "Hahoe and Joseon cultural memory, with the image slot standing in until a more specific UNESCO heritage visual is ingested."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "/images/cities/andong.jpg",
+        "sourceHref": "https://whc.unesco.org/en/list/1498/",
+        "brief": "Seowon, food, festival, and living culture need richer future images."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "/images/cities/andong.jpg",
+        "sourceHref": "/images/cities/andong.jpg",
+        "brief": "Inland cultural anchor before the southeast handoff."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "/images/cities/andong.jpg",
+        "sourceHref": "/images/cities/andong.jpg",
+        "brief": "Market, jjimdak, and evening stay texture still need dedicated visuals."
+      }
+    }
+  }
+}

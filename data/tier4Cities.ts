@@ -141,6 +141,16 @@ export const tier4Cities: Record<string, TierCityData> = {
       'Jecheon belongs on the route as a threshold city. Its value is not only scenery, but the feeling that the trip is leaving the capital corridor and entering a more interior Korea shaped by lakes, mountain approaches, and slower movement.',
     hotspots: []
   },
+  yeongwol: {
+    name: 'Yeongwol',
+    slug: 'yeongwol',
+    headline: 'The Exile River Revival',
+    heroImage: 'http://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
+    description: 'A river-locked history city where King Danjong memory, film-driven travel, and Gangwon inland scenery converge.',
+    culturalInsight:
+      'Yeongwol matters because it shows how a local story can become current again. Cheongnyeongpo, Jangneung, Danjong Culture Festival, river geography, and the film revival around Wang-gwa Saneun Namja turn the city into a powerful short-branch destination after Wonju and Jecheon.',
+    hotspots: []
+  },
   chungju: {
     name: 'Chungju',
     slug: 'chungju',

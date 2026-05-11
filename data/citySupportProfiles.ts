@@ -909,6 +909,261 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  yeongwol: {
+    slug: 'yeongwol',
+    city: 'Yeongwol',
+    mapTitle: 'Where Yeongwol turns the inland branch into a story',
+    mapIntro:
+      'Yeongwol is the emotional payoff of the short inland branch. Wonju gives the line a hinge, Jecheon gives it lake-and-mountain transition, and Yeongwol gives it Danjong, rivers, film attention, and preservation tension.',
+    mapCenter: {
+      lat: 37.1838,
+      lng: 128.4617,
+    },
+    supportSummary:
+      'Yeongwol works best as an emotional history stop. Cheongnyeongpo, Jangneung, Danjong Culture Festival, Donggang and Seogang scenery, Byeolmaro Observatory, and the 2026 Wang-gwa Saneun Namja film trend make it feel current without erasing the older sorrow.',
+    roleSummary:
+      'On the Wonju-Jecheon-Yeongwol short branch, Yeongwol is where the route stops being only scenic inland movement and becomes a story about exile, memory, river geography, and how pop culture can send people back into a real historical place.',
+    staySummary:
+      'Stay near the Yeongwol town core when the goal is Cheongnyeongpo, Jangneung, food, and easy movement. Push toward the river and observatory side when the overnight should feel more landscape-led and reflective.',
+    foodSummary:
+      'Food should support the heritage walk rather than dominate the page. Keep it local, practical, and slow enough for travelers who may be moving between Danjong sites, riverside views, and evening observatory plans.',
+    nextLegSummary:
+      'After Yeongwol, the branch can either loop back toward Jecheon or become a deeper Gangwon inland journey. The important thing is that Yeongwol should feel like the emotional high point, not just the final dot on a side route.',
+    accommodationNote:
+      'Strongest stay-planning angle: one town-core history stay group, one riverside landscape group, and one observatory-night group for travelers who want the branch to end under a darker sky.',
+    sections: [
+      {
+        title: 'Why Yeongwol is more than a scenic detour',
+        body:
+          'Yeongwol carries the final chapter of King Danjong. Cheongnyeongpo was his exile place, Jangneung holds the royal tomb, and the surrounding river geography makes the history feel physically enclosed rather than abstract.',
+      },
+      {
+        title: 'Why the film trend belongs here',
+        body:
+          'Wang-gwa Saneun Namja matters because it did not invent Yeongwol; it reactivated a story already embedded in the county. The trend gives modern travelers a reason to revisit Danjong sites, but the page should keep the real heritage in front.',
+      },
+      {
+        title: 'How to write the crowding issue honestly',
+        body:
+          'A film boom can help a local city, but it can also pressure fragile heritage sites. Yeongwol content should mention respectful pacing, official guides, and preservation awareness so the trend does not turn into careless consumption.',
+      },
+      {
+        title: 'Why Jecheon should sit before Yeongwol',
+        body:
+          'Jecheon gives the branch a natural lake-and-mountain threshold before the route lands in Yeongwol. That order makes the short route feel staged: hinge, terrain, memory.',
+      },
+      {
+        title: 'Why rivers are part of the story',
+        body:
+          'Donggang, Seogang, Cheongnyeongpo, Seondol, and the Korean Peninsula-shaped terrain all make Yeongwol feel shaped by water and rock. The landscape is not background; it explains why the history lands so strongly.',
+      },
+      {
+        title: 'Why the night sky should stay in the page',
+        body:
+          'Byeolmaro Observatory gives Yeongwol a present-day travel reason beyond Danjong. It lets the city shift from daytime heritage to nightscape, which is useful for a short branch that should justify an overnight.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Follow the Danjong sites',
+        bestFor: 'Travelers coming because of history, the film trend, or a desire to understand why Yeongwol feels emotionally heavy.',
+        why:
+          'Cheongnyeongpo and Jangneung are the core. They make the branch meaningful in a way scenery alone cannot.',
+      },
+      {
+        title: 'Use Yeongwol as the branch climax',
+        bestFor: 'Trips that want Wonju and Jecheon to build toward one stronger endpoint.',
+        why:
+          'The city gives the short branch a narrative finish: hinge in Wonju, mountain-lake transition in Jecheon, exile memory in Yeongwol.',
+      },
+      {
+        title: 'Stay for the observatory night',
+        bestFor: 'Slow travelers who want the day to move from heritage to river landscape and then to night-sky atmosphere.',
+        why:
+          'Byeolmaro makes Yeongwol more than a day-trip stop and gives the route a softer ending after the heavier Danjong story.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Keep the town-core history stay',
+        areaLabel: 'Yeongwol town / Jangneung side',
+        bestFor: 'Danjong sites, practical food, and low-friction movement.',
+        why:
+          'This is the cleanest base when the page is built around Cheongnyeongpo, Jangneung, and the film-revival route.',
+      },
+      {
+        title: 'Move toward river scenery',
+        areaLabel: 'Donggang / Seogang side',
+        bestFor: 'Travelers who want the branch to feel like landscape as much as history.',
+        why:
+          'The river side makes the exile geography easier to feel and gives the route a slower visual register.',
+      },
+      {
+        title: 'Plan around the observatory',
+        areaLabel: 'Byeolmaro side',
+        bestFor: 'Overnight travelers, photographers, and anyone using Yeongwol as a reflective branch ending.',
+        why:
+          'The observatory gives the stop a reason to stay after the history sites close and turns the branch into a full day-to-night chapter.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Exile landscape',
+        title: 'Cheongnyeongpo should feel beautiful and trapped at the same time',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
+        alt: 'Official tourism image of Cheongnyeongpo in Yeongwol',
+        body:
+          'Cheongnyeongpo is the strongest visual argument for Yeongwol. Three sides of river and the enclosed terrain make Danjong history easier to understand without overexplaining it.',
+        sourceLabel: 'Korea Tourism Organization data',
+        sourceHref: 'https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=01e9d584-7dbd-4ff9-89e8-0066b9d81062',
+        licenseLabel: 'KTO reference',
+      },
+      {
+        eyebrow: 'Royal memory',
+        title: 'Jangneung keeps the film trend anchored in actual history',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/78/3375078_image2_1.JPG',
+        alt: 'Official tourism image associated with Yeongwol Danjong heritage',
+        body:
+          'The page needs the royal-tomb layer because film attention should point back to the real historical site rather than float as a pop-culture reference alone.',
+        sourceLabel: 'Yeongwol County tourism reference',
+        sourceHref: 'https://www.yw.go.kr/tour/index.do',
+        licenseLabel: 'Official reference',
+      },
+      {
+        eyebrow: 'Modern revival',
+        title: 'The film wave is a current lens, not the whole city',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
+        alt: 'Cheongnyeongpo landscape connected to the 2026 film-driven Yeongwol travel trend',
+        body:
+          'Wang-gwa Saneun Namja belongs on the page because it sent travelers back into an older story. The visual treatment should stay respectful, emphasizing place and memory over fandom alone.',
+        sourceLabel: 'Hankyung trend report',
+        sourceHref: 'https://www.hankyung.com/article/2026030867587',
+        licenseLabel: 'Trend reference',
+      },
+      {
+        eyebrow: 'River geography',
+        title: 'Yeongwol needs water and stone to explain its mood',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
+        alt: 'Yeongwol river landscape around Cheongnyeongpo',
+        body:
+          'The rivers are not decoration here. They give the exile story its physical grammar and help the short branch feel more remote than the map distance suggests.',
+        sourceLabel: 'Yeongwol County English tourism',
+        sourceHref: 'https://www.yw.go.kr/eng/selectBbsNttView.do?bbsNo=103&integrDeptCode=&key=1003&nttNo=817&pageIndex=2&searchCnd=all&searchCtgry=&searchKrwd=',
+        licenseLabel: 'Official reference',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official county source',
+        title: 'Cheongnyeongpo is the core exile site',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
+        alt: 'Cheongnyeongpo in Yeongwol',
+        body:
+          'Yeongwol County describes Cheongnyeongpo as the place where King Danjong stayed after being deposed and exiled, surrounded on three sides by deep river and reachable by ferry.',
+        sourceLabel: 'Yeongwol County English cultural properties',
+        sourceHref: 'https://www.yw.go.kr/eng/selectBbsNttView.do?bbsNo=103&integrDeptCode=&key=1003&nttNo=817&pageIndex=2&searchCnd=all&searchCtgry=&searchKrwd=',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the primary historical source for Cheongnyeongpo and Danjong exile geography.',
+      },
+      {
+        eyebrow: 'Official festival source',
+        title: 'Danjong Culture Festival keeps the memory public',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/78/3375078_image2_1.JPG',
+        alt: 'Yeongwol Danjong heritage reference image',
+        body:
+          'Yeongwol County describes Danjong Culture Festival as a local cultural festival that sublimates the spirit of Danjong and loyal subjects, with 2026 events at Jangneung, Gwanpungheon, Donggang riverside, and Cheongnyeongpo.',
+        sourceLabel: 'Yeongwol County Danjong Culture Festival',
+        sourceHref: 'https://www.yw.go.kr/tour/contents.do?key=575',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use to connect Danjong history to present-day festival and community memory.',
+      },
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Byeolmaro gives Yeongwol a night chapter',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
+        alt: 'Yeongwol landscape reference for observatory travel',
+        body:
+          'Yeongwol County tourism describes Byeolmaro Observatory as located on Bongnaesan, where Donggang and Seogang meet, giving the city a present-day nightscape reason to stay.',
+        sourceLabel: 'Yeongwol County tourism index',
+        sourceHref: 'https://www.yw.go.kr/tour/index.do',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the modern stay-extension layer alongside Danjong heritage.',
+      },
+      {
+        eyebrow: 'Trend source',
+        title: 'The film trend has already changed visitor behavior',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
+        alt: 'Cheongnyeongpo landscape used as context for film-driven visitor growth',
+        body:
+          'Korean business press reported that Cheongnyeongpo and Jangneung visitor counts surged in March 2026 as Wang-gwa Saneun Namja became a major box-office event.',
+        sourceLabel: 'Hankyung visitor trend report',
+        sourceHref: 'https://www.hankyung.com/article/2026030867587',
+        licenseLabel: 'News reference',
+        usageNote:
+          'Use as a time-sensitive trend source. Recheck before publishing refreshed copy because film and visitor-count figures change quickly.',
+      },
+    ],
+    points: [
+      {
+        id: 'yeongwol-cheongnyeongpo',
+        name: 'Cheongnyeongpo',
+        kind: 'checkpoint',
+        areaLabel: 'Danjong exile site',
+        coordinates: { lat: 37.1726, lng: 128.4449 },
+        summary:
+          'The exile landscape that gives Yeongwol its emotional core and explains why the film trend lands here.',
+        note:
+          'Treat this as a respect-first heritage site, especially during high-traffic film-tourism periods.',
+      },
+      {
+        id: 'yeongwol-jangneung',
+        name: 'Jangneung Royal Tomb',
+        kind: 'checkpoint',
+        areaLabel: 'Royal memory',
+        coordinates: { lat: 37.1834, lng: 128.4624 },
+        summary:
+          'The tomb site that keeps Danjong memory grounded in actual place rather than only screen emotion.',
+        note:
+          'Best paired with Cheongnyeongpo when the page needs one clear historical itinerary.',
+      },
+      {
+        id: 'yeongwol-town-stay',
+        name: 'Yeongwol town stay grid',
+        kind: 'stay',
+        areaLabel: 'Town core',
+        coordinates: { lat: 37.1838, lng: 128.4617 },
+        summary:
+          'The easiest base for food, transit, Cheongnyeongpo, Jangneung, and practical movement around the county.',
+        note:
+          'Use this when the branch needs a stable overnight rather than a remote scenic stay.',
+      },
+      {
+        id: 'yeongwol-byeolmaro',
+        name: 'Byeolmaro Observatory',
+        kind: 'recovery',
+        areaLabel: 'Night-sky chapter',
+        coordinates: { lat: 37.1976, lng: 128.4822 },
+        summary:
+          'The nightscape anchor that lets Yeongwol move beyond daytime heritage into an overnight-worthy stop.',
+        note:
+          'Weather and access matter here, so position it as a stay enhancer rather than a guaranteed payoff.',
+      },
+      {
+        id: 'yeongwol-route-branch',
+        name: 'Wonju-Jecheon-Yeongwol branch handoff',
+        kind: 'mobility',
+        areaLabel: 'Short branch logic',
+        coordinates: { lat: 37.1623, lng: 128.3067 },
+        summary:
+          'The route concept that makes Yeongwol the emotional end of a compact inland branch instead of a disconnected side trip.',
+        note:
+          'This is the planning layer: Wonju as hinge, Jecheon as terrain threshold, Yeongwol as history and film revival.',
+      },
+    ],
+  },
   mungyeong: {
     slug: 'mungyeong',
     city: 'Mungyeong',
@@ -920,13 +1175,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       lng: 128.19,
     },
     supportSummary:
-      'Mungyeong is strongest as a chapter marker. Its value comes from gate logic, pass preparation, and the feeling that the route is moving through terrain with history instead of simply drifting south.',
+      'Mungyeong is strongest as a chapter marker. Its value comes from gate logic, pass preparation, old-road memory, craft culture, omija identity, and the feeling that the route is moving through terrain with history instead of simply drifting south.',
     roleSummary:
       'On the inland line, Mungyeong is the city that turns geography into editorial meaning. This is where the route visibly crosses a threshold and begins to feel earned.',
     staySummary:
       'Use a stay here when you want to isolate the pass-country chapter, avoid overloading the next day, or give the crossing its own rhythm instead of flattening it into one long transfer.',
     foodSummary:
-      'Food is functional here in the best sense: warm meals, simple reset dining, and enough fuel to make the pass feel prepared rather than improvised.',
+      'Food is functional here in the best sense, but Mungyeong also has a distinct local flavor through omija. Warm meals, omija products, simple reset dining, and enough fuel make the pass feel prepared rather than improvised.',
     nextLegSummary:
       'After Mungyeong, the inland route descends into a more committed southbound logic. The next chapter should feel less like approach and more like continuation.',
     accommodationNote:
@@ -941,6 +1196,11 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         title: 'Why pass-country should remain visible',
         body:
           'If the city is reduced to one sightseeing note, the route loses its strongest topographic chapter. Keeping the pass visible is what makes Mungyeong distinct from a routine inland pause.',
+      },
+      {
+        title: 'Why the present belongs beside the old road',
+        body:
+          'Mungyeong is not only old gates and mountain paths. Omija products, chasabal pottery, filming sets, and coal-museum memory keep the city active in the present, turning old movement into craft, food, tourism, and industrial remembrance.',
       },
       {
         title: 'How to use the overnight well',
@@ -1024,14 +1284,81 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
       {
         eyebrow: 'Slow-route detail',
-        title: 'Small civic details help the crossing feel inhabited',
+        title: 'Craft, omija, and mining memory keep the crossing present tense',
         image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
         alt: 'Generated editorial civic-detail image for Mungyeong',
         body:
-          'Not every useful image has to be monumental. Smaller details keep Mungyeong from reading like a scenic backdrop and make it feel like a place where a route can actually pause.',
+          'Not every useful image has to be monumental. Smaller details keep Mungyeong from reading like a scenic backdrop and make room for chasabal pottery, omija, old tunnels, and the working memory behind the route.',
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
         licenseLabel: 'Internal',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Mungyeongsaejae is the proof that this is pass country',
+        image: '/images/routes/route-1/mungyeong/support-1-generated-v1.png',
+        alt: 'Generated editorial gateway image for Mungyeong Saejae',
+        body:
+          'VisitKorea describes Mungyeongsaejae Pass as crossing Joryeongsan Mountain, with three gates designated together as Historic Site No. 147. This is the source that anchors the threshold story.',
+        sourceLabel: 'VisitKorea Mungyeongsaejae Provincial Park',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111158',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the core historical and route-logic source for gates, pass terrain, and old-road positioning.',
+      },
+      {
+        eyebrow: 'Official city source',
+        title: 'Mungyeong City frames Saejae as cultural assets and natural heritage',
+        image: '/images/routes/route-1/mungyeong/support-2-generated-v1.png',
+        alt: 'Generated editorial pass-country image for Mungyeong',
+        body:
+          'Mungyeong City lists Mungyeong Gwanmun, the Mungyeongsaejae old road, Yeongnamdaero, temples, mountain peaks, and Baekdudaegan Range as part of the Saejae landscape.',
+        sourceLabel: 'Mungyeong City Culture & Tourism',
+        sourceHref: 'https://www.gbmg.go.kr/eng/contents.do?mId=0100000000',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use to keep the pass story locally grounded rather than relying only on broad travel summaries.',
+      },
+      {
+        eyebrow: 'Present-day craft source',
+        title: 'Chasabal keeps Mungyeong in the present',
+        image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
+        alt: 'Generated editorial civic-detail image for Mungyeong',
+        body:
+          'VisitKorea describes the Mungyeong Chasabal Festival as honoring traditional Korean pottery and ancestral craftsmanship, with exhibitions, hands-on programs, and tea-bowl culture.',
+        sourceLabel: 'VisitKorea Mungyeong Chasabal Festival',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=228&vcontsId=104962',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the craft/present-day layer so the page does not become only mountain-pass history.',
+      },
+      {
+        eyebrow: 'Present-day food source',
+        title: 'Omija gives the pass a local flavor',
+        image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
+        alt: 'Generated editorial local-detail image for Mungyeong',
+        body:
+          'VisitKorea describes the Omija Theme Tunnel as a former coal-transport tunnel reborn for tourism, with omija products and pottery available inside the space.',
+        sourceLabel: 'VisitKorea Mungyeong Omija Theme Tunnel',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=193535',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as a bridge source for modern tourism, omija specialty products, pottery, and coal-route memory.',
+      },
+      {
+        eyebrow: 'Industrial memory source',
+        title: 'Coal history gives Mungyeong a second modern layer',
+        image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
+        alt: 'Generated editorial civic-detail image for Mungyeong',
+        body:
+          'VisitKorea describes the Mungyeong Coal Museum as showing coal history and the lives of miners in what was once one of Korea’s productive coalfields.',
+        sourceLabel: 'VisitKorea Mungyeong Coal Museum',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91079',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use when expanding the present/industrial-memory layer or requesting more authentic imagery later.',
       },
     ],
     points: [
@@ -1070,14 +1397,36 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
       {
         id: 'mungyeong-pass-meal',
-        name: 'Pass-country meal zone',
+        name: 'Pass-country meal and omija zone',
         kind: 'food',
         areaLabel: 'Near pass approach',
         coordinates: { lat: 36.6592, lng: 128.1114 },
         summary:
-          'A functional eating zone for warming up, fueling up, and resetting before or after the crossing.',
+          'A functional eating zone for warming up, fueling up, tasting local omija, and resetting before or after the crossing.',
         note:
-          'Treat this as route fuel, not as a city where destination dining has to carry the narrative.',
+          'Treat this as route fuel with local identity, not as a city where destination dining has to carry the whole narrative.',
+      },
+      {
+        id: 'mungyeong-omija-theme-tunnel',
+        name: 'Omija Theme Tunnel',
+        kind: 'checkpoint',
+        areaLabel: 'Gomosanseong side',
+        coordinates: { lat: 36.6388, lng: 128.1705 },
+        summary:
+          'A former coal-transport tunnel turned tourism space where omija, pottery, and tunnel memory sit together.',
+        note:
+          'This is useful for the page because it connects modern local products to industrial route memory in one place.',
+      },
+      {
+        id: 'mungyeong-coal-museum',
+        name: 'Mungyeong Coal Museum',
+        kind: 'checkpoint',
+        areaLabel: 'Gaeun side',
+        coordinates: { lat: 36.6545, lng: 128.0648 },
+        summary:
+          'An industrial-memory anchor that keeps Mungyeong from being only gates and scenery.',
+        note:
+          'Use this when the story needs to show how the region changed from old roads to resource extraction to tourism.',
       },
       {
         id: 'mungyeong-reset-cafe',

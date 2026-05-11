@@ -10,7 +10,8 @@
     "images:ingest": "node scripts/ingest-editorial-images.mjs",
     "check:route-template": "node scripts/validate-route-city-template.mjs",
     "check:junctions": "node scripts/validate-junction-cities.mjs",
-    "check:city-support": "node scripts/validate-city-support-profiles.mjs"
+    "check:city-support": "node scripts/validate-city-support-profiles.mjs",
+    "check:city-images": "node scripts/validate-city-image-slots.mjs"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",

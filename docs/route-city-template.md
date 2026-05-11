@@ -31,6 +31,12 @@ Junction cities need one extra responsibility: they must explain the branch. The
 
 Yeoju is the first sample: Route 1 can move Seoul -> Yeoju -> Chungju, while Route 2 can move Seoul -> Yeoju -> Wonju. The page must make that choice visible without making two duplicate Yeoju pages.
 
+## Trend Layer
+
+Modern trends can be part of a city page when they revive a durable local story. Treat film, drama, food, festival, or social-media attention as a current lens, not as the whole identity of the city.
+
+Yeongwol is the sample: the film trend around `Wang-gwa Saneun Namja` matters because it reactivates Danjong's exile story, Cheongnyeongpo, Jangneung, and Danjong Culture Festival. The page should also mention crowding and preservation pressure when a trend sends large numbers of visitors into a heritage site.
+
 ## Image Production Slots
 
 Every city brief should request five slots before publication:
@@ -42,6 +48,15 @@ Every city brief should request five slots before publication:
 - `street`: food, stay zone, recovery, riverside, or everyday local texture.
 
 If a slot is missing, keep the page publishable only when the source-backed reference list names the missing image target. Do not hide missing imagery behind generic atmosphere.
+
+The machine-readable registry lives in `data/cityImageSlots.json`. Each required city needs:
+
+- all five slots: `hero`, `history`, `present`, `route`, `street`
+- a real local asset or external URL
+- a `sourceHref`
+- a production brief long enough to guide the next image pass
+
+Run `npm.cmd run check:city-images` before considering a city content pass complete.
 
 ## Chungju-Grade QA
 

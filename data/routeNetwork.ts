@@ -32,6 +32,7 @@ export const routeNetworkCities: Record<string, RouteNetworkCity> = {
   gangneung: { slug: 'gangneung', name: 'Gangneung', kind: 'anchor', x: 76, y: 24, href: '/route-2/gangneung' },
   samcheok: { slug: 'samcheok', name: 'Samcheok', kind: 'route', x: 79, y: 38, href: '/route-2/samcheok' },
   jecheon: { slug: 'jecheon', name: 'Jecheon', kind: 'future', x: 56, y: 36, href: '/cities/jecheon' },
+  yeongwol: { slug: 'yeongwol', name: 'Yeongwol', kind: 'future', x: 62, y: 39, href: '/cities/yeongwol' },
 };
 
 export const routeNetworkRoutes: RouteNetworkRoute[] = [
@@ -58,11 +59,11 @@ export const routeNetworkRoutes: RouteNetworkRoute[] = [
   {
     id: 'future-inland',
     label: 'Future',
-    title: 'Wonju to Andong, deeper inland branch',
-    summary: 'A future branch concept for Yeoju, Wonju, Jecheon, and Andong as the inland network grows.',
-    href: '/cities/jecheon',
+    title: 'Wonju to Yeongwol, short inland branch',
+    summary: 'A compact Gangwon inland line where Wonju hands off to Jecheon, then Yeongwol turns history and film interest into the payoff.',
+    href: '/cities/yeongwol',
     color: '#6f6a5f',
-    citySlugs: ['yeoju', 'wonju', 'jecheon', 'andong'],
-    path: 'M49 22 C52 23, 55 24, 57 24 C58 29, 57 33, 56 36 C58 42, 60 46, 62 50',
+    citySlugs: ['wonju', 'jecheon', 'yeongwol'],
+    path: 'M57 24 C58 29, 57 33, 56 36 C58 38, 60 39, 62 39',
   },
 ];

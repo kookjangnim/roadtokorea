@@ -98,6 +98,11 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
+        protocol: 'http',
+        hostname: 'tong.visitkorea.or.kr',
+        pathname: '/**',
+      },
+      {
         protocol: 'https',
         hostname: 'i.ytimg.com',
         pathname: '/**',
