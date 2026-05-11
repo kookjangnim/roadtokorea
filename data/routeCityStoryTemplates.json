@@ -55,6 +55,20 @@
       "The images must balance exile history, river geography, modern film interest, and preservation caution."
     ]
   },
+  "chuncheon": {
+    "city": "Chuncheon",
+    "routeSlug": "route-3",
+    "historicalWeight": "Chuncheon has long read as a northern lake-and-river city rather than a simple suburb of Seoul. Its position around Soyanggang, Uiamho, and the Gangwon approach made it a practical and emotional gateway before the route turns toward quieter borderland counties.",
+    "modernIdentity": "Modern Chuncheon is one of Route 3's strongest present-tense cities: dakgalbi, makguksu, Myeongdong Dakgalbi Street, Soyanggang Skywalk, Samaksan Mountain Lake Cable Car, riverside paths, lake views, universities, and weekend travel energy all make it feel active.",
+    "routeMeaning": "On Route 3, Chuncheon is the first real city anchor after Seoul and Gapyeong. It gives the northern line food, lake culture, transit practicality, and overnight logic before Yanggu, Inje, and the Seoraksan pass choices make the route more remote.",
+    "imageBrief": "Use one Soyanggang or Uiamho lake image, one dakgalbi or Myeongdong food-street cue, one Samaksan cable car or skywalk image, one city-core stay cue, and one route image that explains why Chuncheon prepares the line for Yanggu and Inje.",
+    "qualityBar": [
+      "The page must explain Chuncheon as Route 3's first real city anchor, not only a day trip from Seoul.",
+      "The page must balance dakgalbi and makguksu food identity with lake, river, and mountain-leisure identity.",
+      "The page must connect Chuncheon to Yanggu, Inje, and Sokcho so it does not feel like a disconnected weekend escape.",
+      "The images must make lake city, food street, and onward northern route logic visible."
+    ]
+  },
   "inje": {
     "city": "Inje",
     "routeSlug": "route-3",
@@ -96,6 +110,132 @@
       "The page must show why Route 1 becomes more dramatic after Chungju and before Andong.",
       "The images must balance gate, pass, craft/omija, industrial memory, and onward-route logic."
     ]
+  },
+  "yeongdeok": {
+    "city": "Yeongdeok",
+    "routeSlug": "route-1",
+    "historicalWeight": "Yeongdeok gives the coastal version of Route 1 a smaller-port memory before the route reaches larger southeast cities. Its fishing villages, crab identity, and open shoreline make the East Sea feel specific rather than decorative.",
+    "modernIdentity": "Modern Yeongdeok is strongest through snow crab, port markets, blue-road walking, quiet coastal stays, and small harbor texture. It gives travelers a food-and-sea chapter that does not need a large city frame.",
+    "routeMeaning": "On Route 1, Yeongdeok keeps the east-coast alternative from becoming only Gangneung, Pohang, and Busan. It slows the coast into seafood, villages, and open-road rhythm before Pohang and Gyeongju take over.",
+    "imageBrief": "Use crab-market or port imagery, one open East Sea road cue, one quieter stay or village image, one food cue, and one route-facing image that links Yeongdeok to Pohang and the lower coast.",
+    "qualityBar": ["The page must explain Yeongdeok through seafood specificity, not as a generic stop.", "The page must connect Yeongdeok to the surrounding route so it earns its position.", "The page must balance older memory with present-day travel usefulness.", "The images must show seafood specificity, port texture, blue-road coast, and Yeongdeok-to-Pohang logic."]
+  },
+  "pohang": {
+    "city": "Pohang",
+    "routeSlug": "route-1",
+    "historicalWeight": "Pohang carries industrial, port, and sunrise memory on the southeast coast. It is not only a beach city; steel, harbor movement, Homigot sunrise culture, and city-scale services make it a serious late-route hinge.",
+    "modernIdentity": "Modern Pohang mixes beaches, seafood, cafes, market streets, coastal parks, industry, and practical accommodation. It is large enough to reset the traveler before Gyeongju or Busan without losing sea identity.",
+    "routeMeaning": "On Route 1, Pohang is the late coastal hinge. Yeongdeok opens the smaller coast, Pohang gives urban services and sunrise scale, and Gyeongju can then add heritage before Busan.",
+    "imageBrief": "Use Homigot or sunrise imagery, one harbor or seafood cue, one city-service or beach image, one industry/port context cue, and one route image toward Gyeongju and Busan.",
+    "qualityBar": ["The page must explain Pohang through port-city and sunrise identity, not as a generic beach stop.", "The page must connect Pohang to Yeongdeok, Gyeongju, and Busan.", "The page must balance industrial memory with present-day coastal travel.", "The images must show port city, sunrise, seafood, and Gyeongju handoff."]
+  },
+  "sangju": {
+    "city": "Sangju",
+    "routeSlug": "route-1",
+    "historicalWeight": "Sangju sits where inland route logic relaxes into the Nakdong corridor. Its older role as a road, river, and agricultural city makes it useful when the journey needs continuity after mountain-pass country.",
+    "modernIdentity": "Modern Sangju is quieter than major corridor cities, but that is part of its value. Cycling routes, river edges, local agriculture, simple food, and practical resets give it a calm middle-route purpose.",
+    "routeMeaning": "On Route 1, Sangju is the convergence and recovery chapter after Mungyeong. It lets the route breathe before Gumi, Daegu, or the lower southeast corridor becomes more urban.",
+    "imageBrief": "Use one Nakdong or cycling cue, one town-core stay image, one agricultural or food texture, one calm recovery visual, and one route image showing Mungyeong to Sangju to Gumi.",
+    "qualityBar": ["The page must explain Sangju through Nakdong corridor and recovery logic.", "The page must connect Mungyeong, Sangju, Gumi, and Daegu.", "The page must keep quiet agricultural identity useful rather than dull.", "The images must show Nakdong corridor, cycling, recovery, and Mungyeong handoff."]
+  },
+  "jecheon": {
+    "city": "Jecheon",
+    "routeSlug": "branch-2a",
+    "historicalWeight": "Jecheon carries reservoir, mountain, and inland-threshold memory. Uirimji, Cheongpungho, and surrounding ridges make the city feel like the point where the route leaves the easy corridor and becomes more interior.",
+    "modernIdentity": "Modern Jecheon works through lake travel, cable-car views, herbal-market identity, mountain scenery, and a quieter stay pattern. It is a useful bridge between Wonju and Yeongwol rather than a random detour.",
+    "routeMeaning": "On Branch 2A, Jecheon is the terrain threshold. Wonju gives the hinge, Jecheon gives lake-and-mountain transition, and Yeongwol turns the branch into history and emotional payoff.",
+    "imageBrief": "Use Uirimji or Cheongpungho water imagery, one mountain or cable-car cue, one herbal-market or town texture, one stay-zone image, and one branch map cue toward Yeongwol.",
+    "qualityBar": ["The page must explain Jecheon as the lake-and-mountain threshold between Wonju and Yeongwol.", "The page must make Branch 2A feel intentional.", "The page must balance Uirimji/Cheongpungho with modern stay logic.", "The images must show water, mountains, town texture, and branch logic."]
+  },
+  "cheonan": {
+    "city": "Cheonan",
+    "routeSlug": "route-1",
+    "historicalWeight": "Cheonan has long worked as a first southern control point out of Seoul. Its station, terminal, independence-memory sites, and corridor position make it more than a quick snack stop.",
+    "modernIdentity": "Modern Cheonan is practical, food-friendly, and easy to use. Walnut snacks, station hotels, transit links, university energy, and nearby historical sites make it a strong first break before deeper Route 1 decisions.",
+    "routeMeaning": "On Route 1, Cheonan is the first humane reset after Seoul. It lets the traveler leave the capital cleanly before Daejeon, Chungju, or the inland alternatives start asking bigger choices.",
+    "imageBrief": "Use one station or terminal cue, one walnut snack or food image, one independence-memory or heritage cue, one hotel-core image, and one route image that shows Seoul softening south.",
+    "qualityBar": ["The page must explain Cheonan as the first practical break after Seoul.", "The page must connect Cheonan to Daejeon, Chungju, and Route 1 choice logic.", "The page must include food and station usefulness.", "The images must show first break, station reset, walnut snack, and Seoul departure."]
+  },
+  "daejeon": {
+    "city": "Daejeon",
+    "routeSlug": "route-1",
+    "historicalWeight": "Daejeon carries central-corridor memory as one of Korea's most important transport and science cities. Rail, highways, research districts, and hot-spring movement make it a strategic inland pause.",
+    "modernIdentity": "Modern Daejeon is a clean overnight decision: station-core efficiency, Yuseong recovery, science-city identity, bakeries, markets, and strong transport links all make it easy to use.",
+    "routeMeaning": "On Route 1, Daejeon is the cleanest choose-your-version overnight. It can support the direct corridor, the inland route, or a recovery-focused reset before the southbound line tightens.",
+    "imageBrief": "Use one station or city-core image, one Yuseong hot-spring cue, one science or civic identity image, one food/street cue, and one route image showing central Korea branching south.",
+    "qualityBar": ["The page must explain Daejeon through central transport, science-city, and Yuseong recovery logic.", "The page must connect Daejeon to Route 1 branching.", "The page must balance efficiency with rest.", "The images must show station, Yuseong, science/city, and corridor choice."]
+  },
+  "daegu": {
+    "city": "Daegu",
+    "routeSlug": "route-1",
+    "historicalWeight": "Daegu carries one of Korea's strongest inland urban histories through markets, medicine streets, textile memory, and a basin-city identity shaped by heat, trade, and movement.",
+    "modernIdentity": "Modern Daegu is a major city reset: Seomun Market, medicine-quarter streets, food alleys, shopping, hotels, and transit make it a useful urban chapter before the southeast finish.",
+    "routeMeaning": "On Route 1, Daegu is the strongest urban reset outside Seoul and Busan. It gives the route density and services before Gyeongju, Miryang, Changnyeong, or Busan take the final role.",
+    "imageBrief": "Use Seomun Market or food-street imagery, one medicine-quarter or historic street cue, one city-night or hotel-zone visual, one transit cue, and one route image toward the southeast.",
+    "qualityBar": ["The page must explain Daegu as the strongest urban reset before Busan.", "The page must connect Daegu to Gyeongju, Miryang, Changnyeong, and Busan options.", "The page must balance market/medicine-street memory with present city usefulness.", "The images must show urban reset, market streets, medicine quarter, and southeast handoff."]
+  },
+  "gumi": {
+    "city": "Gumi",
+    "routeSlug": "route-1",
+    "historicalWeight": "Gumi represents Korea's industrial corridor memory: manufacturing, river movement, and practical inland services. It is not a romantic stop, but it explains how modern Korea moves and produces.",
+    "modernIdentity": "Modern Gumi works as a purposeful middle-corridor reset with riverside calm, hotels, business infrastructure, food, and timing flexibility before Daegu or the lower corridor.",
+    "routeMeaning": "On Route 1, Gumi keeps the direct line usable without forcing every traveler into a large-city overnight. It is a service-and-rhythm stop between Sangju, Daegu, and the final southeast.",
+    "imageBrief": "Use one industrial or city-service cue, one riverside image, one central stay-zone visual, one food or street texture, and one route image toward Daegu.",
+    "qualityBar": ["The page must explain Gumi through industrial-corridor and service logic.", "The page must connect Gumi to Sangju, Daegu, and Route 1 pacing.", "The page must make practical usefulness feel intentional.", "The images must show industrial corridor, riverside reset, direct-line service, and Daegu setup."]
+  },
+  "changnyeong": {
+    "city": "Changnyeong",
+    "routeSlug": "route-1",
+    "historicalWeight": "Changnyeong carries lower-river and wetland memory in a quieter part of the southbound line. Upo Wetland and small-town pacing make it a calm ecological counterpoint before Busan.",
+    "modernIdentity": "Modern Changnyeong works through Upo Wetland, hot-spring recovery, simple food, modest stays, and a lower-pressure rhythm that helps the route avoid one loud city after another.",
+    "routeMeaning": "On Route 1, Changnyeong is a late recovery node before Busan. It gives the traveler a softer nature-and-rest chapter after Daegu and before the route becomes fully urban again.",
+    "imageBrief": "Use Upo Wetland or river imagery, one recovery or hot-spring cue, one small-town food image, one quiet stay-zone visual, and one route image toward Busan.",
+    "qualityBar": ["The page must explain Changnyeong through wetland recovery and lower-river calm.", "The page must connect Changnyeong to Daegu, Miryang, and Busan pacing.", "The page must make quietness feel like value.", "The images must show wetland recovery, lower-river route, quiet stay, and Busan preparation."]
+  },
+  "miryang": {
+    "city": "Miryang",
+    "routeSlug": "route-1",
+    "historicalWeight": "Miryang carries southern river, pavilion, and rail-corridor memory. Yeongnamru and the Miryang River make it feel like a quieter cultural hinge before the Busan finish.",
+    "modernIdentity": "Modern Miryang works through river views, old pavilion scenery, market food, modest stays, and low-pressure movement. It gives the route a composed final inland pause.",
+    "routeMeaning": "On Route 1, Miryang is the quiet southern hinge. It can soften the final approach when the traveler wants one more authored stop before Busan rather than a direct urban arrival.",
+    "imageBrief": "Use Yeongnamru or river imagery, one town-core food cue, one rail or corridor visual, one quiet stay-zone image, and one route cue toward Busan.",
+    "qualityBar": ["The page must explain Miryang through Yeongnamru, river, and southern-hinge logic.", "The page must connect Miryang to Busan as a final composed pause.", "The page must balance older pavilion memory with present-day route usefulness.", "The images must show river pavilion, southern hinge, quiet route, and Busan approach."]
+  },
+  "gangneung": {
+    "city": "Gangneung",
+    "routeSlug": "route-2",
+    "historicalWeight": "Gangneung carries east-coast cultural memory through Gyeongpo, coffee streets, old pavilions, beach mornings, and the feeling of arriving at the sea after crossing Gangwon.",
+    "modernIdentity": "Modern Gangneung is one of Korea's strongest coastal city brands: coffee, beaches, markets, seafood, hotels, festivals, and rail access make it a full destination rather than a waypoint.",
+    "routeMeaning": "On Route 2, Gangneung is the coast-entry payoff after Wonju. It proves the eastbound route has earned the sea before Samcheok or any longer coastline continuation begins.",
+    "imageBrief": "Use one beach or Gyeongpo image, one coffee-street cue, one market or seafood visual, one rail/coast arrival image, and one route cue from Wonju to the East Sea.",
+    "qualityBar": ["The page must explain Gangneung as Route 2's coast-entry payoff.", "The page must connect Wonju, Gangneung, and Samcheok.", "The page must balance coffee/beach identity with older east-coast memory.", "The images must show coast entry, coffee city, Gyeongpo, and Wonju payoff."]
+  },
+  "samcheok": {
+    "city": "Samcheok",
+    "routeSlug": "route-2",
+    "historicalWeight": "Samcheok carries cliff, cave, port, and open-road memory on the deeper east coast. It keeps the shoreline from ending too quickly after Gangneung.",
+    "modernIdentity": "Modern Samcheok works through beaches, coastal rail-bike scenery, caves, ports, seafood, and slower road-trip pacing. It is a scenic continuation city more than a major urban anchor.",
+    "routeMeaning": "On Route 2, Samcheok extends the coast after Gangneung. It is strongest when the route wants cliffs, ports, and open-road atmosphere instead of stopping at the first famous beach city.",
+    "imageBrief": "Use one cliff or beach image, one cave or rail-bike cue, one port/seafood visual, one stay-zone image, and one route cue continuing south along the East Sea.",
+    "qualityBar": ["The page must explain Samcheok as the scenic continuation after Gangneung.", "The page must connect Samcheok to Route 2's longer coast logic.", "The page must balance cave/cliff memory with modern coastal travel.", "The images must show scenic continuation, east-coast road, caves and cliffs, and Gangneung extension."]
+  },
+  "uljin": {
+    "city": "Uljin",
+    "routeSlug": "route-1",
+    "historicalWeight": "Uljin carries long-coast openness, forested mountain edges, and maritime quiet. It gives the east-coast alternative a wide, unhurried chapter between bigger names.",
+    "modernIdentity": "Modern Uljin works through beaches, seafood, hot-spring recovery, forest roads, modest stays, and a sense of spacious coastline that is rare near major cities.",
+    "routeMeaning": "On Route 1, Uljin preserves openness before the route turns toward stronger southeastern nodes. It keeps the coast broad rather than compressing it into only famous stops.",
+    "imageBrief": "Use one long shoreline image, one seafood or harbor cue, one hot-spring or forest-road visual, one quiet stay image, and one route cue toward Yeongdeok or Pohang.",
+    "qualityBar": ["The page must explain Uljin through open-coast and maritime quiet.", "The page must connect Uljin to Yeongdeok, Pohang, and the broader east-coast route.", "The page must make spaciousness and recovery feel valuable.", "The images must show open coast, maritime quiet, hot-spring recovery, and Yeongdeok handoff."]
+  },
+  "gyeongju": {
+    "city": "Gyeongju",
+    "routeSlug": "route-1",
+    "historicalWeight": "Gyeongju carries Korea's Silla-era memory at a scale few cities can match. Royal tombs, temples, old capital streets, and historic landscapes give the final southeast route serious weight.",
+    "modernIdentity": "Modern Gyeongju is not only an outdoor museum. Bomun Lake, cafes, hotels, night walks, markets, and food streets make it a living stay city before Busan.",
+    "routeMeaning": "On Route 1, Gyeongju is the heritage handoff before Busan. It gives the route a final authored chapter so the finish feels cultural, not only logistical.",
+    "imageBrief": "Use one royal tomb or temple image, one Bomun or stay-zone cue, one night street or food visual, one heritage-core image, and one route cue toward Busan.",
+    "qualityBar": ["The page must explain Gyeongju through Silla heritage and final cultural handoff.", "The page must connect Gyeongju to Busan as a meaningful finish setup.", "The page must balance ancient capital memory with modern stay logic.", "The images must show Silla heritage, Bomun stay, final cultural handoff, and Busan setup."]
   },
   "andong": {
     "city": "Andong",

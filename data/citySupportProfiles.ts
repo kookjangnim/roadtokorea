@@ -1164,6 +1164,237 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  chuncheon: {
+    slug: 'chuncheon',
+    city: 'Chuncheon',
+    mapTitle: 'Where Chuncheon gives Route 3 its first real city rhythm',
+    mapIntro:
+      'Chuncheon should not be treated as a light day trip once it enters Route 3. It is the first city after Seoul and Gapyeong where lake scenery, food identity, transit practicality, and overnight pacing can all hold the journey before Yanggu, Inje, and Sokcho.',
+    mapCenter: {
+      lat: 37.8813,
+      lng: 127.7298,
+    },
+    supportSummary:
+      'Chuncheon works best as Route 3\'s first full city anchor. Soyanggang, Uiamho, Samaksan, dakgalbi, makguksu, Myeongdong Dakgalbi Street, and a manageable city core give English-speaking travelers a clear reason to stop before the route turns quieter toward Yanggu and more mountainous toward Inje.',
+    roleSummary:
+      'On Route 3, Chuncheon changes the trip from Seoul-side leisure into a real Gangwon journey. Gapyeong softens the departure, but Chuncheon gives the route food, lake culture, public-transport logic, and a credible first overnight.',
+    staySummary:
+      'Stay in Chuncheon when the traveler wants the northern route to begin without exhaustion. A city-core night makes dinner easy, a lake-side stay makes the trip feel scenic, and a Samaksan or Uiamho-facing plan gives the next morning a stronger sense of place.',
+    foodSummary:
+      'Chuncheon food should be treated as route infrastructure, not decoration. Dakgalbi, makguksu, and the Myeongdong food street give the stop a reason to happen at dinner time, which naturally supports overnight intent.',
+    nextLegSummary:
+      'After Chuncheon, the route should become quieter and more northern. Yanggu adds borderland and Korean War memory, Inje becomes the Seoraksan pass decision, and Sokcho arrives better when Chuncheon has already carried the city-and-food chapter.',
+    accommodationNote:
+      'Strongest stay-planning angle: one Myeongdong or station-side city stay for food and transit, one Uiamho or Soyanggang lake-view stay for slower travelers, and one west/south Chuncheon stay for drivers who want an easy morning exit.',
+    sections: [
+      {
+        title: 'Why Chuncheon cannot be skipped lightly',
+        body:
+          'Chuncheon is the first Route 3 city that can stand on its own. It has enough food, water, urban rhythm, and transport logic to make the traveler feel they have entered Gangwon rather than only passed through a scenic corridor.',
+      },
+      {
+        title: 'Why food belongs at the center',
+        body:
+          'Dakgalbi and makguksu are not throwaway food keywords here. They are the reason Chuncheon naturally fits dinner, which makes the overnight decision feel practical instead of forced.',
+      },
+      {
+        title: 'Why lake city is the right visual identity',
+        body:
+          'Soyanggang, Uiamho, and lake-facing leisure keep Chuncheon distinct from a generic city stop. Water is what makes the route soften before it becomes borderland and mountain road.',
+      },
+      {
+        title: 'Why Samaksan changes the scale',
+        body:
+          'Samaksan Mountain Lake Cable Car lets the page show Chuncheon from above: city, lake, and mountain in one visual argument. That is stronger for English-speaking travelers than only naming restaurants.',
+      },
+      {
+        title: 'How to connect Chuncheon to Yanggu',
+        body:
+          'The next leg should feel like a tonal change. Chuncheon is social and lakeside; Yanggu becomes quiet, historical, and border-adjacent. That contrast makes Route 3 feel authored.',
+      },
+      {
+        title: 'Why Sokcho is better when Chuncheon is included',
+        body:
+          'If Sokcho carries every coastal and mountain desire alone, Route 3 becomes too thin. Chuncheon gives the opening act enough weight so the final sea arrival can feel earned.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Use Chuncheon as the first overnight',
+        bestFor: 'Travelers leaving Seoul late, first-time Gangwon travelers, and people who want Route 3 to begin with food and comfort.',
+        why:
+          'This keeps the first day humane. Dinner, an easy hotel, lake air, and a clean next morning make the route feel composed.',
+      },
+      {
+        title: 'Use Chuncheon as the food anchor',
+        bestFor: 'Travelers who care about dakgalbi, makguksu, markets, and city texture more than only mountain views.',
+        why:
+          'Route 3 needs one strong food city before the northern landscape gets quieter. Chuncheon does that job better than any other early stop.',
+      },
+      {
+        title: 'Use Chuncheon as the public-transit anchor',
+        bestFor: 'Travelers who do not drive but still want a meaningful northern route before Sokcho.',
+        why:
+          'Chuncheon is the easiest Route 3 city to understand by train or bus from Seoul, so it keeps the route usable beyond self-driving itineraries.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay near Myeongdong and the station',
+        areaLabel: 'Food and transit core',
+        bestFor: 'Dakgalbi dinner, simple transit, first-night comfort, and travelers arriving from Seoul without a car.',
+        why:
+          'This is the cleanest practical base because the city stop becomes food, sleep, and an easy morning restart.',
+      },
+      {
+        title: 'Stay near Soyanggang or Uiamho',
+        areaLabel: 'Lake-side Chuncheon',
+        bestFor: 'Slow travelers, couples, photo-led trips, and anyone who wants Chuncheon to feel like a water city.',
+        why:
+          'The lake-side stay makes the city visually memorable instead of only functional.',
+      },
+      {
+        title: 'Stay near Samaksan or the west side',
+        areaLabel: 'Mountain-lake exit',
+        bestFor: 'Drivers who want Samaksan, cable-car views, or a quieter start before continuing north and east.',
+        why:
+          'This stay pattern makes the next leg feel like it begins from lake and mountain rather than from traffic.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Lake city',
+        title: 'Soyanggang makes Chuncheon feel like arrival, not transfer',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/92/2392892_image2_1.jpg',
+        alt: 'Official tourism image for Soyanggang Skywalk in Chuncheon',
+        body:
+          'The river image matters because Chuncheon needs to read as water, city, and pause. Soyanggang gives Route 3 its first visual stop after the Seoul-side departure.',
+        sourceLabel: 'VisitKorea Soyanggang Skywalk',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68510',
+        licenseLabel: 'Official reference',
+      },
+      {
+        eyebrow: 'Food anchor',
+        title: 'Dakgalbi makes the overnight feel natural',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/43/3578143_image2_1.jpg',
+        alt: 'Official tourism image for Chuncheon Myeongdong Dakgalbi Street',
+        body:
+          'Food is the conversion point. When travelers understand Chuncheon as dakgalbi and makguksu territory, staying the night feels like a reward rather than a delay.',
+        sourceLabel: 'VisitKorea Chuncheon Myeongdong Dakgalbi Street',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=108005',
+        licenseLabel: 'Official reference',
+      },
+      {
+        eyebrow: 'Lake and mountain',
+        title: 'Samaksan gives Chuncheon the route-scale view',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/00/3578100_image2_1.jpg',
+        alt: 'Official tourism image for Chuncheon Samaksan Mountain Lake Cable Car',
+        body:
+          'The cable car lets the city become a landscape argument: lake below, mountains around, and the route preparing to leave the easy city chapter.',
+        sourceLabel: 'VisitKorea Chuncheon Samaksan Mountain Lake Cable Car',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=112537',
+        licenseLabel: 'Official reference',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Soyanggang Skywalk anchors Chuncheon as a water city',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/92/2392892_image2_1.jpg',
+        alt: 'Soyanggang Skywalk reference image',
+        body:
+          'VisitKorea describes Soyanggang Skywalk as extending over the river, with a long transparent glass-floor section, an observatory, and panoramic sunset views.',
+        sourceLabel: 'VisitKorea Soyanggang Skywalk',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68510',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the core water-city and lake-arrival source for Chuncheon.',
+      },
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Myeongdong Dakgalbi Street gives Chuncheon food gravity',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/43/3578143_image2_1.jpg',
+        alt: 'Chuncheon dakgalbi street reference image',
+        body:
+          'VisitKorea frames the alley as Chuncheon\'s main dakgalbi street and explains the dish\'s history, popularity, and pairing with Chuncheon buckwheat noodles.',
+        sourceLabel: 'VisitKorea Chuncheon Myeongdong Dakgalbi Street',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=108005',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as the main source for Chuncheon dakgalbi, makguksu, and dinner-led overnight intent.',
+      },
+      {
+        eyebrow: 'Official tourism source',
+        title: 'Samaksan cable car proves the lake-and-mountain scale',
+        image: 'https://tong.visitkorea.or.kr/cms/resource/00/3578100_image2_1.jpg',
+        alt: 'Samaksan Mountain Lake Cable Car reference image',
+        body:
+          'VisitKorea describes the Samaksan Mountain Lake Cable Car as crossing Uiamho Lake toward Samaksan Mountain, with crystal cabins and views over Chuncheon.',
+        sourceLabel: 'VisitKorea Chuncheon Samaksan Mountain Lake Cable Car',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=112537',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use to support Chuncheon as more than a food stop: a city where lake, mountain, and route view meet.',
+      },
+    ],
+    points: [
+      {
+        id: 'chuncheon-myeongdong',
+        name: 'Chuncheon Myeongdong Dakgalbi Street',
+        kind: 'food',
+        areaLabel: 'Food core',
+        coordinates: { lat: 37.8797, lng: 127.7287 },
+        summary:
+          'The strongest dinner anchor for turning Chuncheon from a pass-through city into a natural overnight.',
+        note:
+          'Use this when the page needs immediate traveler intent: eat, walk, sleep, and restart cleanly.',
+      },
+      {
+        id: 'soyanggang-skywalk',
+        name: 'Soyanggang Skywalk',
+        kind: 'checkpoint',
+        areaLabel: 'River view',
+        coordinates: { lat: 37.8942, lng: 127.7244 },
+        summary:
+          'The easy visual proof that Chuncheon is a river-and-lake city, not just a food stop.',
+        note:
+          'Best for first-time visitors who need one simple image of why Chuncheon belongs on Route 3.',
+      },
+      {
+        id: 'samaksan-cable-car',
+        name: 'Samaksan Mountain Lake Cable Car',
+        kind: 'recovery',
+        areaLabel: 'Lake and mountain',
+        coordinates: { lat: 37.8614, lng: 127.6896 },
+        summary:
+          'The elevated view that puts Uiamho, the city, and surrounding mountains into one route-scale frame.',
+        note:
+          'Use when the page needs to make Chuncheon feel scenic enough for a stay, not only dinner.',
+      },
+      {
+        id: 'chuncheon-station-core',
+        name: 'Chuncheon station and city core',
+        kind: 'stay',
+        areaLabel: 'Transit base',
+        coordinates: { lat: 37.8853, lng: 127.7177 },
+        summary:
+          'The practical base for train arrivals, hotel access, food, and a low-friction next morning.',
+        note:
+          'Use this for non-driving travelers and Seoul-to-Chuncheon public transport versions of Route 3.',
+      },
+      {
+        id: 'chuncheon-yanggu-handoff',
+        name: 'Chuncheon to Yanggu handoff',
+        kind: 'mobility',
+        areaLabel: 'Northern route turn',
+        coordinates: { lat: 38.0032, lng: 127.8658 },
+        summary:
+          'The moment Route 3 leaves lake-city comfort and turns toward quieter borderland country.',
+        note:
+          'This is the planning point that keeps Chuncheon connected to the deeper Route 3 story.',
+      },
+    ],
+  },
   inje: {
     slug: 'inje',
     city: 'Inje',

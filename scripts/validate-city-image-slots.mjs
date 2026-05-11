@@ -5,9 +5,11 @@ import { fileURLToPath } from 'node:url';
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(scriptDir, '..');
 const slotPath = join(projectRoot, 'data', 'cityImageSlots.json');
+const registryPath = join(projectRoot, 'data', 'reviewedCityQualityRegistry.json');
 const imageSlots = JSON.parse(readFileSync(slotPath, 'utf8'));
+const qualityRegistry = JSON.parse(readFileSync(registryPath, 'utf8'));
 
-const requiredCities = ['chungju', 'yeoju', 'wonju', 'yeongwol', 'inje', 'goseong', 'mungyeong', 'andong'];
+const requiredCities = qualityRegistry.reviewedCities;
 const requiredSlots = ['hero', 'history', 'present', 'route', 'street'];
 const allowedStatuses = new Set(['ready', 'briefed', 'missing']);
 const failures = [];

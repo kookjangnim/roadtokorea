@@ -4,7 +4,9 @@ import { fileURLToPath } from 'node:url';
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const templatePath = join(scriptDir, '..', 'data', 'routeCityStoryTemplates.json');
+const registryPath = join(scriptDir, '..', 'data', 'reviewedCityQualityRegistry.json');
 const routeCityStoryTemplates = JSON.parse(readFileSync(templatePath, 'utf8'));
+const qualityRegistry = JSON.parse(readFileSync(registryPath, 'utf8'));
 
 const REQUIRED_FIELDS = [
   'historicalWeight',
@@ -14,16 +16,7 @@ const REQUIRED_FIELDS = [
   'qualityBar',
 ];
 
-const requiredCities = [
-  'chungju',
-  'yeoju',
-  'wonju',
-  'yeongwol',
-  'inje',
-  'goseong',
-  'mungyeong',
-  'andong',
-];
+const requiredCities = qualityRegistry.reviewedCities;
 
 const failures = [];
 

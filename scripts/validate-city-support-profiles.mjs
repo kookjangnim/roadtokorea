@@ -4,49 +4,14 @@ import { fileURLToPath } from 'node:url';
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const profilePath = join(scriptDir, '..', 'data', 'citySupportProfiles.ts');
+const registryPath = join(scriptDir, '..', 'data', 'reviewedCityQualityRegistry.json');
 const profileSource = readFileSync(profilePath, 'utf8');
+const qualityRegistry = JSON.parse(readFileSync(registryPath, 'utf8'));
 
-const requiredCities = [
-  {
-    slug: 'chungju',
-    requiredTerms: ['supportSummary', 'roleSummary', 'staySummary', 'foodSummary', 'nextLegSummary'],
-  },
-  {
-    slug: 'yeoju',
-    requiredTerms: [
-      'supportSummary',
-      'roleSummary',
-      'staySummary',
-      'foodSummary',
-      'nextLegSummary',
-      'King Sejong',
-      'Namhan',
-      'junction',
-      'Chungju',
-      'Wonju',
-    ],
-  },
-  {
-    slug: 'wonju',
-    requiredTerms: ['Korean War', 'Buldak', 'Gangneung', 'supportSummary'],
-  },
-  {
-    slug: 'mungyeong',
-    requiredTerms: ['Saejae', 'pass', 'threshold', 'Andong', 'supportSummary'],
-  },
-  {
-    slug: 'yeongwol',
-    requiredTerms: ['Danjong', 'Cheongnyeongpo', 'film', 'Yeongwol', 'supportSummary'],
-  },
-  {
-    slug: 'inje',
-    requiredTerms: ['Seorak', 'Jinburyeong', 'Hangyeryeong', 'Misiryeong', 'supportSummary'],
-  },
-  {
-    slug: 'goseong',
-    requiredTerms: ['DMZ', 'Hwajinpo', 'Songjiho', 'Jinburyeong', 'Sokcho', 'supportSummary'],
-  },
-];
+const requiredCities = qualityRegistry.reviewedCities.map((slug) => ({
+  slug,
+  requiredTerms: qualityRegistry.supportTerms[slug] ?? ['supportSummary'],
+}));
 
 const failures = [];
 
@@ -81,11 +46,11 @@ for (const city of requiredCities) {
     }
   }
 
-  const visualCount = (cityBlock.match(/eyebrow:/g) ?? []).length;
-  const referenceCount = (cityBlock.match(/sourceHref:/g) ?? []).length;
+  const sectionCount = (cityBlock.match(/title:/g) ?? []).length;
+  const pointCount = (cityBlock.match(/coordinates:/g) ?? []).length;
 
-  if (visualCount < 3) failures.push(`${city.slug}: needs at least 3 visual slots`);
-  if (referenceCount < 3) failures.push(`${city.slug}: needs at least 3 sourced media/reference links`);
+  if (sectionCount < 3) failures.push(`${city.slug}: needs at least 3 support sections or decision entries`);
+  if (pointCount < 3) failures.push(`${city.slug}: needs at least 3 support map points`);
 }
 
 if (failures.length > 0) {

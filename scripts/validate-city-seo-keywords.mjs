@@ -4,18 +4,11 @@ import { fileURLToPath } from 'node:url';
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const profilePath = join(scriptDir, '..', 'data', 'citySeoKeywords.ts');
+const registryPath = join(scriptDir, '..', 'data', 'reviewedCityQualityRegistry.json');
 const profileSource = readFileSync(profilePath, 'utf8');
+const qualityRegistry = JSON.parse(readFileSync(registryPath, 'utf8'));
 
-const requiredCities = [
-  'chungju',
-  'yeoju',
-  'wonju',
-  'yeongwol',
-  'inje',
-  'goseong',
-  'mungyeong',
-  'andong',
-];
+const requiredCities = qualityRegistry.reviewedCities;
 
 const requiredFields = [
   'primaryIntent',
