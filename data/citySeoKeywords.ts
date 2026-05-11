@@ -179,6 +179,38 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
       },
     ],
   },
+  jeongseon: {
+    city: 'Jeongseon',
+    primaryIntent: 'Jeongseon Korea Arirang Market Kangwon Land and Gangwon inland branch travel',
+    metaKeywords: ['Jeongseon Korea', 'Jeongseon travel guide', 'Jeongseon Arirang Market', 'Jeongseon 5-day Market', 'Kangwon Land Casino', 'Korea casino Koreans allowed', 'Jeongseon Railbike', 'Hwaam Cave', 'Jeongseon Arirang', 'Yeongwol to Jeongseon', 'Jeongseon to Taebaek'],
+    clusters: [
+      { label: 'Route intent', terms: ['Yeongwol to Jeongseon', 'Jeongseon to Taebaek', 'Gangwon inland branch route'] },
+      { label: 'Culture intent', terms: ['Jeongseon Arirang Market', 'Jeongseon 5-day Market', 'Jeongseon Arirang'] },
+      { label: 'Casino intent', terms: ['Kangwon Land Casino', 'Korea casino Koreans allowed', 'High1 Resort Jeongseon'] },
+      { label: 'Scenery intent', terms: ['Jeongseon Railbike', 'Hwaam Cave', 'Gangwon mountain valley travel'] },
+    ],
+    questions: [
+      { question: 'Why stop in Jeongseon on Branch 2A?', answer: 'Jeongseon adds Arirang culture, five-day market energy, railbike valleys, and deeper Gangwon interior texture between Yeongwol and Taebaek.' },
+      { question: 'What is Jeongseon known for?', answer: 'Jeongseon is known for Jeongseon Arirang, Arirang Market, the five-day market, railbike routes, Hwaam Cave, Kangwon Land Casino, and mountain valley travel.' },
+      { question: 'Why does Kangwon Land matter in Jeongseon?', answer: 'Kangwon Land is Korea’s only casino open to Korean citizens, and it also explains Jeongseon’s closed-mine-area transition into resort and tourism economy.' },
+    ],
+  },
+  taebaek: {
+    city: 'Taebaek',
+    primaryIntent: 'Taebaek Korea coal history Hanwoo and highland route before Samcheok',
+    metaKeywords: ['Taebaek Korea', 'Taebaek travel guide', 'Taebaek Coal Museum', 'Taebaek Hanwoo', 'Taebaek Eutteum Hanu', 'Hwangji Pond', 'Taebaeksan Mountain', 'Jeongseon to Taebaek', 'Taebaek to Samcheok', 'Korea coal mining history', 'Gangwon highland city'],
+    clusters: [
+      { label: 'Route intent', terms: ['Jeongseon to Taebaek', 'Taebaek to Samcheok', 'Gangwon inland to coast route'] },
+      { label: 'History intent', terms: ['Taebaek Coal Museum', 'Korea coal mining history', 'Taebaek mining city'] },
+      { label: 'Food intent', terms: ['Taebaek Hanwoo', 'Taebaek Eutteum Hanu', 'Korean beef Taebaek'] },
+      { label: 'Mountain intent', terms: ['Hwangji Pond', 'Taebaeksan Mountain', 'Gangwon highland city'] },
+    ],
+    questions: [
+      { question: 'Why include Taebaek before Samcheok?', answer: 'Taebaek gives the branch coal history, Taebaeksan highland identity, Hwangji Pond river-source geography, and a strong final inland threshold before the East Sea.' },
+      { question: 'Is Taebaek only a mining city?', answer: 'No. Coal history is central, but Taebaeksan, Hwangji Pond, highland weather, hiking, winter travel, and Taebaek Hanwoo make Taebaek a broader mountain city.' },
+      { question: 'What should travelers eat in Taebaek?', answer: 'Taebaek Hanwoo is the strongest food hook. VisitKorea lists Taebaek Eutteum Hanu as a Korean beef restaurant known for anchangsal, assorted beef cuts, Hanu yukhoe, and bulgogi hot pot.' },
+    ],
+  },
   gapyeong: {
     city: 'Gapyeong',
     primaryIntent: 'Gapyeong Korea river and island gateway between Seoul and Chuncheon',

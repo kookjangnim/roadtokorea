@@ -3091,6 +3091,344 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  jeongseon: {
+    slug: 'jeongseon',
+    city: 'Jeongseon',
+    mapTitle: 'Where Arirang, railbike valleys, and Kangwon Land deepen Branch 2A',
+    mapIntro:
+      'Jeongseon is a support map for turning the inland branch from Yeongwol history into deeper Gangwon mountain culture, railbike valleys, and Kangwon Land before Taebaek.',
+    mapCenter: { lat: 37.3806, lng: 128.6609 },
+    supportSummary:
+      'Jeongseon works as Branch 2A’s Arirang, mountain-market, and Kangwon Land chapter. Arirang Market, the five-day market rhythm, Jeongseon Railbike, Hwaam Cave, casino-resort transition, and valley travel make it a living Gangwon interior stop before Taebaek.',
+    roleSummary:
+      'This is the cultural valley and casino-transition chapter. Jeongseon keeps the branch from becoming only scenic roads by giving it Arirang, Market life, Railbike reuse, Kangwon Land, and a deeper mountain-town rhythm.',
+    staySummary:
+      'Stay near Jeongseon town for market days, food, and easy movement; use the railbike or valley side when the stop should feel more landscape-led; use Sabuk/High1 when Kangwon Land and resort infrastructure should lead.',
+    foodSummary:
+      'Food should be written through market timing, local mountain produce, simple bowls, and snacks that make the stop feel lived-in rather than curated.',
+    nextLegSummary:
+      'After Jeongseon, Taebaek should feel like the coal-and-highland threshold before the branch drops toward Samcheok and Route 4.',
+    accommodationNote:
+      'Strongest stay-planning angle: town/market stay for culture, valley-side stay for railbike and scenery, Sabuk/High1 stay for Kangwon Land and closed-mine transition.',
+    sections: [
+      {
+        title: 'Why Jeongseon belongs after Yeongwol',
+        body:
+          'Yeongwol gives the branch emotional history. Jeongseon changes the register into living mountain culture through Arirang, the market, railbike valleys, Kangwon Land, and deep Gangwon scenery.',
+      },
+      {
+        title: 'Why the market matters',
+        body:
+          'Jeongseon Arirang Market is not just shopping. VisitKorea notes the market’s coal-era decline and revival through tourist train travel, which makes it a strong past-present story for the site.',
+      },
+      {
+        title: 'Why Kangwon Land changes the present story',
+        body:
+          'Kangwon Land is not just a casino keyword. VisitKorea describes it as the only casino in Korea that allows Korean citizens, and Jeongseon County frames it as part of the closed-mine-area recovery project. That makes it central to the city’s modern identity.',
+      },
+      {
+        title: 'How it hands off to Taebaek',
+        body:
+          'Jeongseon sets up Taebaek by keeping the route inside the mountains. The handoff should feel like Arirang and valley culture giving way to coal, highlands, and the final coast exit.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Time the market day',
+        bestFor: 'Travelers who want the clearest Jeongseon identity and local food texture.',
+        why:
+          'The five-day market makes the city feel active, specific, and tied to both older trade and current tourism.',
+      },
+      {
+        title: 'Use Sabuk and Kangwon Land carefully',
+        bestFor: 'Travelers who want to understand Korea’s casino exception, High1 resort infrastructure, and closed-mine redevelopment.',
+        why:
+          'Kangwon Land gives Jeongseon a modern economic story, but it should be written with context rather than glamour.',
+      },
+      {
+        title: 'Use the railbike and valley side',
+        bestFor: 'Families, slower drivers, and travelers who want scenery with a light activity.',
+        why:
+          'The railbike reuses old rail infrastructure and makes the valley story easy to experience without heavy planning.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay by the market core',
+        areaLabel: 'Jeongseon town',
+        bestFor: 'Market days, food, and town texture.',
+        why:
+          'This zone makes Jeongseon feel cultural first and keeps the branch grounded in local life.',
+      },
+      {
+        title: 'Use Sabuk / High1',
+        areaLabel: 'Sabuk / High1',
+        bestFor: 'Kangwon Land, resort stays, and closed-mine-area transition context.',
+        why:
+          'This zone adds the modern economic layer that makes Jeongseon more than market and scenery.',
+      },
+      {
+        title: 'Stay toward the valley route',
+        areaLabel: 'Gujeol / Auraji side',
+        bestFor: 'Railbike, river scenery, and quieter mountain pacing.',
+        why:
+          'This zone gives the stop a landscape-led rhythm before Taebaek.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Market culture',
+        title: 'Arirang Market is the clearest Jeongseon entry point',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg',
+        alt: 'Jeongseon Arirang Market reference',
+        body:
+          'The market lets the page explain local food, performance, coal-era change, and current travel in one place.',
+        sourceLabel: 'VISITKOREA Jeongseon Arirang Market',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=459&vcontsId=106009',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Valley movement',
+        title: 'Railbike keeps the old line useful',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Rail%20Bike.jpg',
+        alt: 'Jeongseon Railbike reference',
+        body:
+          'The railbike is an easy way to make the valley and railway memory visible to English-speaking travelers.',
+        sourceLabel: 'VISITKOREA Jeongseon Railbike',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=73329',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Casino transition',
+        title: 'Kangwon Land makes Jeongseon’s modern economy visible',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg',
+        alt: 'Jeongseon modern transition reference for Kangwon Land',
+        body:
+          'Kangwon Land should be framed as casino, resort, and closed-mine-area recovery context, not as a shallow gambling hook.',
+        sourceLabel: 'VISITKOREA Kangwon Land Casino',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110606',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Branch handoff',
+        title: 'Jeongseon sends the branch toward coal highlands',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg',
+        alt: 'Jeongseon mountain-market route reference',
+        body:
+          'After Jeongseon, Taebaek should feel like a natural deepening into highland industry and mountain geography.',
+        sourceLabel: 'Route editorial reference',
+        sourceHref: '/route-2/branch-a',
+        licenseLabel: 'Internal',
+      },
+    ],
+    points: [
+      {
+        id: 'jeongseon-market-core',
+        name: 'Jeongseon Arirang Market',
+        kind: 'food',
+        areaLabel: 'Jeongseon town',
+        coordinates: { lat: 37.3804, lng: 128.6618 },
+        summary: 'The strongest cultural and food anchor for reading Jeongseon as a living mountain town.',
+        note: 'Best when the itinerary can hit a five-day market date.',
+      },
+      {
+        id: 'jeongseon-railbike',
+        name: 'Jeongseon Railbike side',
+        kind: 'checkpoint',
+        areaLabel: 'Gujeol / Auraji',
+        coordinates: { lat: 37.472, lng: 128.743 },
+        summary: 'A valley activity that makes old rail infrastructure and scenery visible.',
+        note: 'Use this for a lighter modern travel hook before Taebaek.',
+      },
+      {
+        id: 'jeongseon-kangwon-land',
+        name: 'Kangwon Land / High1',
+        kind: 'stay',
+        areaLabel: 'Sabuk / High1',
+        coordinates: { lat: 37.209, lng: 128.822 },
+        summary: 'The casino-resort zone that makes Jeongseon’s closed-mine transition visible.',
+        note: 'Use this with context: Korea’s only casino open to Korean citizens and a redevelopment story, not just nightlife.',
+      },
+      {
+        id: 'jeongseon-taebaek-handoff',
+        name: 'Taebaek handoff line',
+        kind: 'mobility',
+        areaLabel: 'Southbound mountain road',
+        coordinates: { lat: 37.285, lng: 128.82 },
+        summary: 'The line where Jeongseon’s Arirang and valley story begins handing off to Taebaek’s coal highlands.',
+        note: 'This keeps Branch 2A moving forward rather than ending at the market.',
+      },
+    ],
+  },
+  taebaek: {
+    slug: 'taebaek',
+    city: 'Taebaek',
+    mapTitle: 'Where coal history, Hanwoo, and highland geography prepare the coast exit',
+    mapIntro:
+      'Taebaek is a support map for the final inland chapter of Branch 2A: coal memory, Taebaek Hanwoo, Taebaeksan, Hwangji Pond, highland weather, and the push toward Samcheok.',
+    mapCenter: { lat: 37.1641, lng: 128.9856 },
+    supportSummary:
+      'Taebaek works as Branch 2A’s Coal, Hanwoo, and highland threshold. The Taebaek Coal Museum, Hwangji Pond, Taebaeksan, mining memory, Taebaek Hanwoo, and highland city texture make the final inland stop meaningful before Samcheok.',
+    roleSummary:
+      'This is the coal-highland chapter. Taebaek gives the branch industrial history, mountain air, river-source geography, Hanwoo pride, and a clear Samcheok handoff.',
+    staySummary:
+      'Stay near the city core for Hwangji Pond and logistics; stay closer to Taebaeksan when hiking, snow, coal museum context, or mountain mood should lead.',
+    foodSummary:
+      'Food should support highland pacing and local pride. Taebaek Hanwoo is the strongest meal hook, with warm bowls, simple town food, market stops, and practical breakfasts before the Samcheok exit.',
+    nextLegSummary:
+      'After Taebaek, Samcheok should feel like the East Sea release and the branch’s connection into Route 4.',
+    accommodationNote:
+      'Strongest stay-planning angle: city-core logistics versus Taebaeksan and coal-heritage access.',
+    sections: [
+      {
+        title: 'Why Taebaek is the final inland threshold',
+        body:
+          'Taebaek gives Branch 2A a strong last inland chapter before the coast. Coal history, post-coal pressure, Hanwoo, highland weather, and river-source geography make the transition to Samcheok feel earned.',
+      },
+      {
+        title: 'Why coal history matters',
+        body:
+          'The coal story is not decorative. VisitKorea frames Taebaek Coal Museum around Korea’s coal industry and modernization, which fits the site’s past-present city strategy.',
+      },
+      {
+        title: 'Why Taebaek Hanwoo matters',
+        body:
+          'Taebaek should not be written only as decline after coal. Hanwoo gives the city a current food identity and a reason for travelers to stop, eat well, and understand local pride in the present tense.',
+      },
+      {
+        title: 'How it hands off to Samcheok',
+        body:
+          'Taebaek should not end the branch emotionally. It should point downhill and east, making Samcheok feel like the coast release after a deep mountain crossing.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Lead with coal heritage',
+        bestFor: 'Travelers who want modern Korean industrial history and a less obvious regional story.',
+        why:
+          'Coal makes Taebaek different from scenic mountain towns and gives the page historical weight.',
+      },
+      {
+        title: 'Eat Taebaek Hanwoo',
+        bestFor: 'Travelers who want the city to feel alive in the present instead of only historical.',
+        why:
+          'Hanwoo turns the stop into a meal chapter and gives the page an honest local-pride hook.',
+      },
+      {
+        title: 'Lead with Taebaeksan and Hwangji',
+        bestFor: 'Hikers, winter travelers, and users who want highland geography before the sea.',
+        why:
+          'Taebaeksan and Hwangji Pond make the city feel spatially important as well as historically important.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay near Hwangji and the city core',
+        areaLabel: 'Central Taebaek',
+        bestFor: 'Logistics, river-source walks, and simple meals.',
+        why:
+          'This zone keeps the branch usable before the Samcheok move.',
+      },
+      {
+        title: 'Use a Hanwoo meal as the city-core anchor',
+        areaLabel: 'Central Taebaek',
+        bestFor: 'Dinner stops, local food pride, and a warmer reading of a difficult post-coal city.',
+        why:
+          'A Taebaek Hanwoo meal can make the stop feel current and memorable before the coast exit.',
+      },
+      {
+        title: 'Stay toward Taebaeksan',
+        areaLabel: 'Taebaeksan side',
+        bestFor: 'Mountain access, coal museum context, and highland atmosphere.',
+        why:
+          'This side makes Taebaek feel like a mountain threshold rather than only a city stop.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Coal memory',
+        title: 'The coal museum makes modern Korea visible from the mountains',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taebaek%20Coal%20Museum.jpg',
+        alt: 'Taebaek Coal Museum reference',
+        body:
+          'Taebaek is strongest when the page connects coal labor, modernization, and the city’s current travel identity.',
+        sourceLabel: 'VISITKOREA Taebaek Coal Museum',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=62811',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'River source',
+        title: 'Hwangji Pond gives the city geographic weight',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg',
+        alt: 'Taebaek highland reference',
+        body:
+          'Hwangji Pond helps explain Taebaek as more than a mining city: it is a highland source point before the route turns to sea.',
+        sourceLabel: 'VISITKOREA Hwangji Pond',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=351&vcontsId=80903',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Food pride',
+        title: 'Taebaek Hanwoo keeps the city in the present tense',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg',
+        alt: 'Taebaek highland reference for Hanwoo food identity',
+        body:
+          'The Hanwoo angle matters because it gives travelers something current, warm, and local to do in a city often described only through coal decline.',
+        sourceLabel: 'VISITKOREA Taebaek Eutteum Hanu',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=188477',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Coast handoff',
+        title: 'After Taebaek, Samcheok becomes the release',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg',
+        alt: 'Taebaek highland-to-coast route reference',
+        body:
+          'The route should feel like it has crossed a deep inland mountain story before it reaches Route 4.',
+        sourceLabel: 'Route editorial reference',
+        sourceHref: '/route-2/branch-a',
+        licenseLabel: 'Internal',
+      },
+    ],
+    points: [
+      {
+        id: 'taebaek-coal-museum',
+        name: 'Taebaek Coal Museum',
+        kind: 'checkpoint',
+        areaLabel: 'Taebaeksan side',
+        coordinates: { lat: 37.095, lng: 128.923 },
+        summary: 'The clearest site for coal history and modernization memory.',
+        note: 'Use this to make Taebaek’s past concrete rather than abstract.',
+      },
+      {
+        id: 'taebaek-hwangji',
+        name: 'Hwangji Pond',
+        kind: 'recovery',
+        areaLabel: 'City core',
+        coordinates: { lat: 37.1705, lng: 128.9891 },
+        summary: 'The Nakdonggang source point and easiest city-core geography cue.',
+        note: 'This gives the highland city a river-source story before the coast.',
+      },
+      {
+        id: 'taebaek-hanwoo-meal',
+        name: 'Taebaek Hanwoo meal anchor',
+        kind: 'food',
+        areaLabel: 'Central Taebaek',
+        coordinates: { lat: 37.166, lng: 128.989 },
+        summary: 'The food-pride layer that keeps Taebaek current and warm rather than only post-coal.',
+        note: 'Use this as a dinner hook before the Samcheok handoff.',
+      },
+      {
+        id: 'taebaek-samcheok-handoff',
+        name: 'Samcheok handoff line',
+        kind: 'mobility',
+        areaLabel: 'Eastbound exit',
+        coordinates: { lat: 37.235, lng: 129.09 },
+        summary: 'The final inland-to-coast move where Branch 2A releases into Route 4.',
+        note: 'After this point, Samcheok and National Route 7 take over.',
+      },
+    ],
+  },
   jecheon: {
     slug: 'jecheon',
     city: 'Jecheon',

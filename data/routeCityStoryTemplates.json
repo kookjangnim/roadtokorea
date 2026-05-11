@@ -46,14 +46,32 @@
     "routeSlug": "branch-2a",
     "historicalWeight": "Yeongwol carries one of Joseon history's most emotional stories: King Danjong's exile at Cheongnyeongpo, his death in Yeongwol, Jangneung Royal Tomb, and the loyalty memory around figures such as Eom Heung-do. The landscape itself explains the sorrow.",
     "modernIdentity": "Modern Yeongwol is being re-read through film, festival energy, river landscapes, observatory travel, and renewed attention to Danjong sites after the success of Wang-gwa Saneun Namja. The city now sits where history, screen culture, and preservation pressure meet.",
-    "routeMeaning": "On the short inland branch, Yeongwol is the emotional climax after Wonju and Jecheon. Wonju provides the hinge, Jecheon gives lake-and-mountain transition, and Yeongwol turns the trip into a story about exile, rivers, memory, and how popular culture can reactivate a local place.",
+    "routeMeaning": "On Branch 2A, Yeongwol is the emotional history chapter before the route deepens into Jeongseon and Taebaek. Wonju provides the hinge, Jecheon gives lake-and-mountain transition, and Yeongwol turns the trip into a story about exile, rivers, memory, and how popular culture can reactivate a local place.",
     "imageBrief": "Use Cheongnyeongpo or Gwangeumsong exile imagery, Jangneung royal tomb, Donggang or Seogang river landscape, Byeolmaro Observatory or Korean Peninsula-shaped terrain, and one contemporary film-tourism cue that also respects heritage preservation.",
     "qualityBar": [
       "The page must explain Danjong and Cheongnyeongpo clearly without becoming a textbook.",
       "The page must mention the 2026 film trend as a revival of existing history, not as a disposable viral hook.",
-      "The page must connect Wonju, Jecheon, and Yeongwol into a believable short inland branch.",
+      "The page must connect Wonju, Jecheon, Yeongwol, Jeongseon, Taebaek, and Samcheok into a believable deep inland branch.",
       "The images must balance exile history, river geography, modern film interest, and preservation caution."
     ]
+  },
+  "jeongseon": {
+    "city": "Jeongseon",
+    "routeSlug": "branch-2a",
+    "historicalWeight": "Jeongseon carries mountain-market and Arirang memory in a deep Gangwon interior setting. Its five-day market, old coal-era market revival, valleys, and Jeongseon Arirang make the county feel culturally specific rather than simply scenic.",
+    "modernIdentity": "Modern Jeongseon works through Arirang Market, A-Train travel memory, railbike routes from Gujeol to Auraji, Hwaam Cave, High1/Kangwon Land, local food, and mountain stays that turn inland Gangwon into an active travel chapter.",
+    "routeMeaning": "On Branch 2A, Jeongseon is the culture-and-transition chapter after Yeongwol. It keeps the branch moving deeper into Gangwon through Arirang, railbike valleys, and Kangwon Land before Taebaek turns the story toward coal history and highland exit.",
+    "imageBrief": "Use one Arirang Market image, one railbike or valley image, one Kangwon Land or High1 cue, one Hwaam Cave or mining-memory cue, one local food or town texture, and one route image toward Taebaek.",
+    "qualityBar": ["The page must explain Jeongseon through Arirang, market, railbike, Kangwon Land, and deep Gangwon valley identity.", "The page must connect Yeongwol, Jeongseon, Taebaek, and Samcheok.", "The page must balance cultural memory, closed-mine transition, and current travel hooks.", "The images must show market, valley/railbike, casino or resort transition, mountain town, and branch continuation."]
+  },
+  "taebaek": {
+    "city": "Taebaek",
+    "routeSlug": "branch-2a",
+    "historicalWeight": "Taebaek carries Korea's coal and highland industrial memory. Coal powered modernization, and the Taebaek Coal Museum, mining neighborhoods, Hwangji Pond, and Taebaeksan make that history visible in the landscape. The page should also acknowledge the difficult post-coal shrinkage without flattening the city into decline.",
+    "modernIdentity": "Modern Taebaek works through coal heritage, Taebaeksan hiking, winter festivals, Hwangji Pond as the Nakdonggang source, highland climate, Taebaek Hanwoo, and the feeling of being close to the mountain spine before the coast.",
+    "routeMeaning": "On Branch 2A, Taebaek is the last major inland threshold before Samcheok. It turns Jeongseon's cultural mountain interior into a coal, Hanwoo, and highland chapter, then hands the route to Route 4 at the East Sea.",
+    "imageBrief": "Use one coal museum or mining heritage image, one Hwangji Pond image, one Taebaek Hanwoo or food cue, one Taebaeksan or highland snow cue, one town/stay texture, and one route image toward Samcheok.",
+    "qualityBar": ["The page must explain Taebaek through coal history, post-coal pressure, Taebaek Hanwoo, and highland geography.", "The page must connect Jeongseon, Taebaek, and Samcheok.", "The page must balance industrial past with food pride, hiking, river-source, and current travel identity.", "The images must show coal heritage, Hwangji, Hanwoo or food, Taebaeksan/highland, and coast handoff."]
   },
   "gapyeong": {
     "city": "Gapyeong",

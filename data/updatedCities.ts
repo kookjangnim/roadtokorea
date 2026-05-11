@@ -153,6 +153,22 @@ export const updatedCities: UpdatedCity[] = [
     role: 'Highland pass threshold',
   },
   {
+    name: 'Jeongseon',
+    slug: 'jeongseon',
+    tier: 'tier-4',
+    href: '/cities/jeongseon',
+    reason: 'Branch 2A now uses Jeongseon as the Arirang market, railbike, Kangwon Land, and closed-mine transition chapter.',
+    role: 'Arirang and casino transition',
+  },
+  {
+    name: 'Taebaek',
+    slug: 'taebaek',
+    tier: 'tier-4',
+    href: '/cities/taebaek',
+    reason: 'Branch 2A now uses Taebaek as the coal-history, Hanwoo, and highland threshold before Samcheok.',
+    role: 'Coal and Hanwoo highland',
+  },
+  {
     name: 'Yangyang',
     slug: 'yangyang',
     tier: 'tier-4',

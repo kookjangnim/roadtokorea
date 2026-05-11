@@ -49,6 +49,8 @@ export const routeNetworkCities: Record<string, RouteNetworkCity> = {
   ulsan: { slug: 'ulsan', name: 'Ulsan', kind: 'route', x: 76, y: 79, lat: 35.5384, lng: 129.3114, href: '/route-4/ulsan' },
   jecheon: { slug: 'jecheon', name: 'Jecheon', kind: 'branch', x: 56, y: 36, lat: 37.1326, lng: 128.1905, href: '/cities/jecheon' },
   yeongwol: { slug: 'yeongwol', name: 'Yeongwol', kind: 'branch', x: 62, y: 39, lat: 37.1838, lng: 128.4617, href: '/cities/yeongwol' },
+  jeongseon: { slug: 'jeongseon', name: 'Jeongseon', kind: 'branch', x: 68, y: 36, lat: 37.3806, lng: 128.6609, href: '/cities/jeongseon' },
+  taebaek: { slug: 'taebaek', name: 'Taebaek', kind: 'branch', x: 75, y: 43, lat: 37.1641, lng: 128.9856, href: '/cities/taebaek' },
 };
 
 export const routeNetworkRoutes: RouteNetworkRoute[] = [
@@ -95,11 +97,11 @@ export const routeNetworkRoutes: RouteNetworkRoute[] = [
   {
     id: 'branch-2a',
     label: 'Branch 2A',
-    title: 'Wonju to Yeongwol, short inland branch',
-    summary: 'A compact Gangwon inland line where Wonju hands off to Jecheon, then Yeongwol turns history and film interest into the payoff.',
+    title: 'Wonju to Samcheok, deep Gangwon inland-to-coast branch',
+    summary: 'A deeper Gangwon branch where Wonju leads through Jecheon, Yeongwol, Jeongseon, and Taebaek before joining Route 4 at Samcheok.',
     href: '/route-2/branch-a',
     color: '#6f6a5f',
-    citySlugs: ['wonju', 'jecheon', 'yeongwol'],
-    path: 'M57 24 C58 29, 57 33, 56 36 C58 38, 60 39, 62 39',
+    citySlugs: ['wonju', 'jecheon', 'yeongwol', 'jeongseon', 'taebaek', 'samcheok'],
+    path: 'M57 24 C58 29, 57 33, 56 36 C58 38, 60 39, 62 39 C64 37, 66 36, 68 36 C71 38, 73 41, 75 43 C77 41, 78 39, 79 38',
   },
 ];

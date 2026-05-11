@@ -261,6 +261,26 @@ export const tier4Cities: Record<string, TierCityData> = {
       'Yeongwol matters because it shows how a local story can become current again. Cheongnyeongpo, Jangneung, Danjong Culture Festival, river geography, and the film revival around Wang-gwa Saneun Namja turn the city into a powerful short-branch destination after Wonju and Jecheon.',
     hotspots: []
   },
+  jeongseon: {
+    name: 'Jeongseon',
+    slug: 'jeongseon',
+    headline: 'The Arirang Mountain Market Chapter',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg',
+    description: 'A deep Gangwon county where Arirang, five-day markets, railbike valleys, mining-era revival, and Kangwon Land make the inland branch feel lived-in.',
+    culturalInsight:
+      'Jeongseon matters on Branch 2A because it gives the route a distinctly Gangwon interior voice. Arirang Market, Jeongseon Arirang, A-Train memory, railbike tracks, Hwaam Cave, mountain valleys, and Kangwon Land as Korea’s only casino open to Korean citizens make the stop cultural, scenic, practical, and economically layered at once.',
+    hotspots: []
+  },
+  taebaek: {
+    name: 'Taebaek',
+    slug: 'taebaek',
+    headline: 'The Coal Highland Threshold',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg',
+    description: 'A highland city of coal history, Taebaeksan, Hwangji Pond, Taebaek Hanwoo, river-source geography, and the final mountain push before Samcheok and the East Sea.',
+    culturalInsight:
+      'Taebaek matters because Branch 2A needs more than scenery before it reaches the coast. Coal mining decline, population pressure, the Taebaek Coal Museum, Hwangji Pond as the Nakdonggang source, Taebaeksan, highland weather, and Taebaek Hanwoo make it one of Korea\'s strongest past-present mountain cities.',
+    hotspots: []
+  },
   chungju: {
     name: 'Chungju',
     slug: 'chungju',

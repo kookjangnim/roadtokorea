@@ -139,6 +139,26 @@
       }
     }
   },
+  "jeongseon": {
+    "city": "Jeongseon",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=459&vcontsId=106009", "brief": "Hero should establish Jeongseon through Arirang Market and the living mountain-market identity on Branch 2A." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=459&vcontsId=106009", "brief": "History slot should connect Arirang, five-day market memory, coal-era decline, and market revival through tourist train access." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Rail%20Bike.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110606", "brief": "Present slot should show Jeongseon Railbike and Kangwon Land together as current leisure and resort-economy hooks in the mountain interior." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsViewCid.do?cmsCid=2644815", "brief": "Route slot should show Jeongseon as the culture-and-valley chapter between Yeongwol and Taebaek." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg", "sourceHref": "https://www.jeongseon.go.kr/en/tourist_attractions/famous_sight/kangwonland_casino", "brief": "Street slot should eventually capture market food, local performance, Sabuk/High1 resort texture, or the closed-mine transition around Kangwon Land." }
+    }
+  },
+  "taebaek": {
+    "city": "Taebaek",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=62811", "brief": "Hero should establish Taebaek as the coal-and-highland threshold before the branch exits toward Samcheok." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaek%20Coal%20Museum.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=62811", "brief": "History slot should show Taebaek Coal Museum and Korea's coal industry memory without reducing the city to one museum." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=188477", "brief": "Present slot should show Taebaek Hanwoo, Hwangji Pond, river-source geography, highland walks, and current mountain-city travel." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg", "sourceHref": "https://www.taebaek.go.kr/eng/contents.do?key=980", "brief": "Route slot should show Taebaek as the final inland highland before the Samcheok and Route 4 handoff." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=188477", "brief": "Street slot should eventually capture coal-town texture, Hwangji Pond walks, Taebaek Hanwoo meals, or highland winter streets." }
+    }
+  },
   "gapyeong": {
     "city": "Gapyeong",
     "slots": {

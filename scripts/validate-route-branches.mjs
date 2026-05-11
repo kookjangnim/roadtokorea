@@ -16,6 +16,9 @@ const requiredTerms = [
   'Wonju',
   'Jecheon',
   'Yeongwol',
+  'Jeongseon',
+  'Taebaek',
+  'Samcheok',
   'branch-a',
 ];
 
@@ -28,6 +31,11 @@ if (networkSource.includes("label: 'Future'")) failures.push('routeNetwork.ts mu
 if (!networkSource.includes("id: 'branch-2a'")) failures.push('routeNetwork.ts missing branch-2a');
 if (!networkSource.includes("href: '/route-2/branch-a'")) {
   failures.push('routeNetwork.ts branch must link to /route-2/branch-a');
+}
+for (const slug of ['wonju', 'jecheon', 'yeongwol', 'jeongseon', 'taebaek', 'samcheok']) {
+  if (!networkSource.includes(slug)) {
+    failures.push(`routeNetwork.ts branch missing ${slug}`);
+  }
 }
 
 if (failures.length > 0) {
