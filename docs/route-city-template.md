@@ -37,6 +37,15 @@ Modern trends can be part of a city page when they revive a durable local story.
 
 Yeongwol is the sample: the film trend around `Wang-gwa Saneun Namja` matters because it reactivates Danjong's exile story, Cheongnyeongpo, Jangneung, and Danjong Culture Festival. The page should also mention crowding and preservation pressure when a trend sends large numbers of visitors into a heritage site.
 
+## Branch Routes
+
+Branches are short optional extensions from a flagship route, not new flagship routes. Name them by parent route and letter:
+
+- `Branch 1A`: a short branch from Route 1
+- `Branch 2A`: a short branch from Route 2
+
+Use `/route-[n]/branch-[letter]` for branch URLs. Branch 2A is the sample: `/route-2/branch-a` covers `Wonju -> Jecheon -> Yeongwol`. It exists because Route 2 already uses Wonju as a hinge, and this branch lets travelers deepen inland without confusing the main Seoul-to-Gangneung promise.
+
 ## Image Production Slots
 
 Every city brief should request five slots before publication:

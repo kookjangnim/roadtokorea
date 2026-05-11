@@ -1,4 +1,4 @@
-export type RouteNetworkCityKind = 'anchor' | 'route' | 'junction' | 'future';
+export type RouteNetworkCityKind = 'anchor' | 'route' | 'junction' | 'branch';
 
 export interface RouteNetworkCity {
   slug: string;
@@ -23,6 +23,12 @@ export interface RouteNetworkRoute {
 export const routeNetworkCities: Record<string, RouteNetworkCity> = {
   seoul: { slug: 'seoul', name: 'Seoul', kind: 'anchor', x: 43, y: 13, href: '/cities/seoul' },
   yeoju: { slug: 'yeoju', name: 'Yeoju', kind: 'junction', x: 49, y: 22, href: '/cities/yeoju' },
+  gapyeong: { slug: 'gapyeong', name: 'Gapyeong', kind: 'route', x: 49, y: 15, href: '/route-3/gapyeong' },
+  chuncheon: { slug: 'chuncheon', name: 'Chuncheon', kind: 'route', x: 55, y: 15, href: '/route-3/chuncheon' },
+  yanggu: { slug: 'yanggu', name: 'Yanggu', kind: 'route', x: 62, y: 13, href: '/route-3/yanggu' },
+  inje: { slug: 'inje', name: 'Inje', kind: 'junction', x: 67, y: 18, href: '/route-3/inje' },
+  goseong: { slug: 'goseong', name: 'Goseong', kind: 'route', x: 76, y: 15, href: '/route-3/goseong' },
+  sokcho: { slug: 'sokcho', name: 'Sokcho', kind: 'anchor', x: 77, y: 20, href: '/route-3/sokcho' },
   chungju: { slug: 'chungju', name: 'Chungju', kind: 'route', x: 47, y: 35, href: '/route-1/chungju' },
   mungyeong: { slug: 'mungyeong', name: 'Mungyeong', kind: 'route', x: 52, y: 47, href: '/route-1/mungyeong' },
   andong: { slug: 'andong', name: 'Andong', kind: 'route', x: 62, y: 50, href: '/route-1/andong' },
@@ -31,8 +37,8 @@ export const routeNetworkCities: Record<string, RouteNetworkCity> = {
   wonju: { slug: 'wonju', name: 'Wonju', kind: 'junction', x: 57, y: 24, href: '/route-2/wonju' },
   gangneung: { slug: 'gangneung', name: 'Gangneung', kind: 'anchor', x: 76, y: 24, href: '/route-2/gangneung' },
   samcheok: { slug: 'samcheok', name: 'Samcheok', kind: 'route', x: 79, y: 38, href: '/route-2/samcheok' },
-  jecheon: { slug: 'jecheon', name: 'Jecheon', kind: 'future', x: 56, y: 36, href: '/cities/jecheon' },
-  yeongwol: { slug: 'yeongwol', name: 'Yeongwol', kind: 'future', x: 62, y: 39, href: '/cities/yeongwol' },
+  jecheon: { slug: 'jecheon', name: 'Jecheon', kind: 'branch', x: 56, y: 36, href: '/cities/jecheon' },
+  yeongwol: { slug: 'yeongwol', name: 'Yeongwol', kind: 'branch', x: 62, y: 39, href: '/cities/yeongwol' },
 };
 
 export const routeNetworkRoutes: RouteNetworkRoute[] = [
@@ -57,11 +63,21 @@ export const routeNetworkRoutes: RouteNetworkRoute[] = [
     path: 'M43 13 C46 17, 48 20, 49 22 C52 23, 55 24, 57 24 C64 23, 70 23, 76 24 C77 29, 78 34, 79 38',
   },
   {
-    id: 'future-inland',
-    label: 'Future',
+    id: 'route-3',
+    label: 'Route 3',
+    title: 'Seoul to Sokcho, northern mountain-to-sea',
+    summary: 'Gapyeong and Chuncheon soften Seoul into lake country before Yanggu, Inje, and the Seoraksan pass choices lead to Sokcho.',
+    href: '/route-3',
+    color: '#4f7d5a',
+    citySlugs: ['seoul', 'gapyeong', 'chuncheon', 'yanggu', 'inje', 'goseong', 'sokcho'],
+    path: 'M43 13 C46 14, 48 15, 49 15 C52 15, 54 15, 55 15 C58 14, 60 13, 62 13 C64 15, 66 17, 67 18 C70 16, 73 15, 76 15 C77 17, 77 19, 77 20',
+  },
+  {
+    id: 'branch-2a',
+    label: 'Branch 2A',
     title: 'Wonju to Yeongwol, short inland branch',
     summary: 'A compact Gangwon inland line where Wonju hands off to Jecheon, then Yeongwol turns history and film interest into the payoff.',
-    href: '/cities/yeongwol',
+    href: '/route-2/branch-a',
     color: '#6f6a5f',
     citySlugs: ['wonju', 'jecheon', 'yeongwol'],
     path: 'M57 24 C58 29, 57 33, 56 36 C58 38, 60 39, 62 39',

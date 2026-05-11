@@ -131,6 +131,66 @@ export const tier4Cities: Record<string, TierCityData> = {
     culturalInsight: 'Wonju is defined by its deep connection to nature, offering a spiritual retreat away from the bustling city life. The harmony between ancient traditions and untouched landscapes creates an atmosphere of profound stillness.',
     hotspots: [] // Dynamic hotspots will be loaded from destinations.ts
   },
+  gapyeong: {
+    name: 'Gapyeong',
+    slug: 'gapyeong',
+    headline: 'The River-Lake Escape',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg',
+    description: 'The first leisure gateway where Seoul softens into Bukhangang river air, islands, camping, and lakeside movement.',
+    culturalInsight:
+      'Gapyeong matters on Route 3 because it lets the northern route begin gently. Before DMZ memory and Seoraksan passes arrive, the line first becomes river, lake, and weekend escape.',
+    hotspots: []
+  },
+  chuncheon: {
+    name: 'Chuncheon',
+    slug: 'chuncheon',
+    headline: 'The Northern Lakeside Anchor',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chuncheon%20Soyang%20Bridge.jpg',
+    description: 'A lakeside city of dakgalbi, river islands, Soyang water, and enough urban rhythm to anchor the northern route.',
+    culturalInsight:
+      'Chuncheon gives Route 3 its first real city chapter. It keeps the line from becoming only scenery by adding food identity, lake culture, and a practical overnight before the route turns quieter toward Yanggu.',
+    hotspots: []
+  },
+  yanggu: {
+    name: 'Yanggu',
+    slug: 'yanggu',
+    headline: 'The Quiet Borderland Chapter',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath:Punchbowl%20Korea.jpg',
+    description: 'A DMZ-adjacent mountain county where Punch Bowl geography and war memory give Route 3 its northern gravity.',
+    culturalInsight:
+      'Yanggu is the reason Route 3 feels different from a pretty road to Sokcho. It brings borderland silence, Korean War memory, and the feeling that northern geography is carrying history.',
+    hotspots: []
+  },
+  inje: {
+    name: 'Inje',
+    slug: 'inje',
+    headline: 'The Seorak Pass Decision',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath:Naerincheon%20River.jpg',
+    description: 'A mountain and valley threshold where Route 3 chooses how it will cross toward Seoraksan and Sokcho.',
+    culturalInsight:
+      'Inje matters because it is not just another inland stop. It is the decision point before Jinburyeong, Hangyeryeong, or Misiryeong, where the final arrival into Sokcho changes shape.',
+    hotspots: []
+  },
+  goseong: {
+    name: 'Goseong',
+    slug: 'goseong',
+    headline: 'The Northern Coast Handoff',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath:Goseong%20coast%20Korea.jpg',
+    description: 'A northern East Sea chapter that gives the Jinburyeong route a coastal prelude before Sokcho.',
+    culturalInsight:
+      'Goseong works best as the coast-side handoff after Jinburyeong. It lets Route 3 touch the far northern East Sea before finishing in Sokcho.',
+    hotspots: []
+  },
+  sokcho: {
+    name: 'Sokcho',
+    slug: 'sokcho',
+    headline: 'The Seorak Sea Arrival',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath:Sokcho%20Beach.jpg',
+    description: 'A sea-facing city where Seoraksan views, harbor markets, seafood, and northern coastal memory finish Route 3.',
+    culturalInsight:
+      'Sokcho is strongest when it feels like release after the mountains. On Route 3, the city is not only a beach arrival; it is the payoff for lakes, borderland memory, Inje, and the Seoraksan pass choice.',
+    hotspots: []
+  },
   jecheon: {
     name: 'Jecheon',
     slug: 'jecheon',

@@ -18,7 +18,7 @@ function getCityMarkerClass(city: RouteNetworkCity, isActive: boolean) {
     return isActive ? 'fill-amber-500 stroke-white' : 'fill-amber-300 stroke-white';
   }
 
-  if (city.kind === 'future') {
+  if (city.kind === 'branch') {
     return isActive ? 'fill-stone-500 stroke-white' : 'fill-stone-300 stroke-white';
   }
 
@@ -49,7 +49,7 @@ function CityMarker({
     );
   }
 
-  const radius = city.kind === 'anchor' ? 2.6 : city.kind === 'future' ? 1.8 : 2.1;
+  const radius = city.kind === 'anchor' ? 2.6 : city.kind === 'branch' ? 1.8 : 2.1;
 
   return (
     <circle
@@ -100,7 +100,7 @@ export default function RouteNetworkMap() {
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-2">
                   <span className="h-px w-6 border-t border-dashed border-stone-500" />
-                  Future branch
+                  Branch line
                 </span>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function RouteNetworkMap() {
                       stroke={route.color}
                       strokeWidth={isActive ? 2.35 : 1.05}
                       strokeLinecap="round"
-                      strokeDasharray={route.id === 'future-inland' ? '2 2' : undefined}
+                      strokeDasharray={route.id.startsWith('branch-') ? '2 2' : undefined}
                       className={`transition-all duration-300 ${
                         isActive ? 'opacity-100 drop-shadow-sm' : 'opacity-25'
                       }`}
@@ -167,7 +167,7 @@ export default function RouteNetworkMap() {
             <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
               Choose a route
             </p>
-            <div className="mt-5 grid gap-3 lg:grid-cols-3">
+            <div className="mt-5 grid gap-3 lg:grid-cols-4">
               {routeNetworkRoutes.map((route) => {
                 const isExpanded = expandedRouteId === route.id;
 

@@ -1470,7 +1470,362 @@ export const seoulToGangneungRoute: RouteData = {
   },
 };
 
-const allRoutes: RouteData[] = [seoulToBusanRoute, seoulToGangneungRoute];
+const carJinburyeongSokchoRoute: TransportRouteVariant = {
+  id: 'jinburyeong-goseong',
+  routeCode: '3-0-b',
+  routeGroupCode: '3-0',
+  routeGroupLabel: 'Northern Mountain-to-Sea',
+  label: 'Jinburyeong + Goseong',
+  routeName: 'Northern Seorak approach via Jinburyeong and Goseong',
+  totalTravelTime: '3h 50m - 5h',
+  totalDistance: '215 km',
+  summary:
+    'The northern pass version: a quieter approach where Inje hands the route to Jinburyeong, Goseong, and then Sokcho.',
+  bestFor: 'Travelers who want the Seoraksan view to arrive through borderland mountain atmosphere before the sea.',
+  tradeoff:
+    'It is less direct than a pure expressway-minded arrival, but it gives Route 3 its strongest northern identity.',
+  stopPattern:
+    'Best with Chuncheon as the cultural anchor, Yanggu as the border-memory chapter, Inje as the mountain threshold, and Goseong as the coast-side prelude.',
+  chooseWhen:
+    'Choose this when Route 3 should feel like a northern crossing rather than only a fast Sokcho transfer.',
+  avoidWhen:
+    'Avoid it when weather, time, or winter road conditions make a simpler Sokcho arrival more sensible.',
+  pacingNote:
+    'The value is in the pass sequence. Do not overload the day with too many side stops or the Seorak arrival will feel rushed.',
+  planningNotes: [
+    'Jinburyeong gives the route a northern pass identity before Goseong and Sokcho open the coast.',
+    'Yanggu and Inje should not disappear from the story; they are what keep Route 3 distinct from Route 2.',
+    'This variant is strongest when the traveler wants views, borderland silence, and a slower mountain-to-sea handoff.',
+  ],
+  stopovers: [
+    {
+      city: 'Gapyeong',
+      citySlug: 'gapyeong',
+      tier: 4,
+      coordinates: { lat: 37.8315, lng: 127.5099 },
+      travelTimeFromPrevious: '1h 10m',
+      cumulativeTime: '1h 10m',
+      pitch: 'The first river-and-lake escape where Seoul loosens into the Bukhangang corridor.',
+      routeRole: 'Leisure gateway',
+      stayAdvice:
+        'Use Gapyeong lightly: a riverside pause, island detour, or first breath before Chuncheon gives the route more city structure.',
+      whyItEarnsTime:
+        'It makes the Seoul departure feel scenic early without forcing the route to become a resort itinerary.',
+      highlights: ['Bukhangang River', 'Nami Island access', 'Jarasum leisure'],
+    },
+    {
+      city: 'Chuncheon',
+      citySlug: 'chuncheon',
+      tier: 4,
+      coordinates: { lat: 37.8813, lng: 127.7298 },
+      travelTimeFromPrevious: '35m',
+      cumulativeTime: '1h 45m',
+      pitch: 'A lakeside food-and-culture anchor where dakgalbi, Soyang River, and city services make the northern route feel inhabited.',
+      routeRole: 'Northern cultural anchor',
+      stayAdvice:
+        'Chuncheon is the easiest overnight if the route starts late or if the traveler wants food, lake mood, and a softer setup before Yanggu.',
+      whyItEarnsTime:
+        'It gives Route 3 its first real city chapter rather than letting the line become only scenery and mountain roads.',
+      highlights: ['Dakgalbi streets', 'Soyang River', 'Uiamho Lake'],
+    },
+    {
+      city: 'Yanggu',
+      citySlug: 'yanggu',
+      tier: 4,
+      coordinates: { lat: 38.1101, lng: 127.9897 },
+      travelTimeFromPrevious: '1h 10m',
+      cumulativeTime: '2h 55m',
+      pitch: 'A quiet borderland city where DMZ memory, Punch Bowl geography, and war history deepen the northern line.',
+      routeRole: 'DMZ memory chapter',
+      stayAdvice:
+        'Keep Yanggu when Route 3 should feel like a real northern route, not just a pretty way to reach Sokcho.',
+      whyItEarnsTime:
+        'It gives the route historical gravity and a borderland silence that Gapyeong, Chuncheon, and Sokcho cannot supply by themselves.',
+      decisionReason:
+        'Choose Yanggu when the route should include war memory and DMZ geography without turning into a military-history article.',
+      recoveryValue:
+        'Recovery here is quiet and mental: fewer crowds, slower movement, and space to understand the borderland layer.',
+      terrainTransition:
+        'Yanggu begins shifting the route from lake city rhythm into deeper mountain and DMZ-adjacent terrain.',
+      nextLegLogic:
+        'After Yanggu, Inje becomes the mountain threshold where the Seoraksan pass choice starts to matter.',
+      highlights: ['Punch Bowl geography', 'DMZ memory', 'Borderland landscape'],
+    },
+    {
+      city: 'Inje',
+      citySlug: 'inje',
+      tier: 4,
+      coordinates: { lat: 38.0695, lng: 128.1707 },
+      travelTimeFromPrevious: '45m',
+      cumulativeTime: '3h 40m',
+      pitch: 'The mountain threshold where Naerincheon, valleys, and Seorak approaches turn the route toward the coast.',
+      routeRole: 'Seorak pass decision point',
+      stayAdvice:
+        'Use Inje when the pass choice should be deliberate: Jinburyeong, Hangyeryeong, or Misiryeong each changes how Sokcho arrives.',
+      whyItEarnsTime:
+        'Inje is the last inland place where the route can choose its Seoraksan view logic before reaching the sea.',
+      decisionReason:
+        'Keep Inje when the route should explain the mountain crossing rather than hide it inside one vague final leg to Sokcho.',
+      recoveryValue:
+        'Good for a mountain reset, valley air, and pacing before committing to the pass.',
+      terrainTransition:
+        'This is where Route 3 becomes pass country with a coastal payoff waiting beyond the ridge.',
+      nextLegLogic:
+        'From Inje, the route can go north through Jinburyeong and Goseong, south through Hangyeryeong, or direct through Misiryeong.',
+      highlights: ['Naerincheon Valley', 'Seorak approach', 'Pass decision'],
+    },
+    {
+      city: 'Goseong',
+      citySlug: 'goseong',
+      tier: 4,
+      coordinates: { lat: 38.3806, lng: 128.4676 },
+      travelTimeFromPrevious: '55m',
+      cumulativeTime: '4h 35m',
+      pitch: 'The northern coast-side prelude where Jinburyeong releases the route toward the East Sea before Sokcho.',
+      routeRole: 'Northern coast handoff',
+      stayAdvice:
+        'Use Goseong when the journey should feel like it touched the northern coast before settling into Sokcho.',
+      whyItEarnsTime:
+        'It gives the Jinburyeong variant a clearer identity than simply descending from Inje to Sokcho.',
+      highlights: ['Goseong coast', 'Northern East Sea', 'Seorak-side handoff'],
+    },
+    {
+      city: 'Sokcho',
+      citySlug: 'sokcho',
+      tier: 1,
+      coordinates: { lat: 38.207, lng: 128.5918 },
+      travelTimeFromPrevious: '30m',
+      cumulativeTime: '5h 5m',
+      pitch: 'The sea arrival where Seoraksan views, harbor food, market life, and northern coastal memory finish the line.',
+      routeRole: 'Sea arrival',
+      stayAdvice:
+        'Sokcho should be treated as the release after a mountain route, not just the place where the drive stops.',
+      whyItEarnsTime:
+        'It pays off every inland decision before it: river, lake, DMZ memory, pass choice, and finally the East Sea.',
+      highlights: ['Seoraksan views', 'Sokcho market', 'East Sea arrival'],
+    },
+  ],
+  routePath: [
+    [37.5665, 126.978],
+    [37.8315, 127.5099],
+    [37.8813, 127.7298],
+    [38.1101, 127.9897],
+    [38.0695, 128.1707],
+    [38.3806, 128.4676],
+    [38.207, 128.5918],
+  ],
+};
+
+const carHangyeryeongSokchoRoute: TransportRouteVariant = {
+  ...carJinburyeongSokchoRoute,
+  id: 'hangyeryeong-seorak',
+  routeCode: '3-1-b',
+  label: 'Hangyeryeong Seorak View',
+  routeName: 'Seoraksan approach via Hangyeryeong',
+  totalTravelTime: '4h - 5h 20m',
+  summary:
+    'The dramatic Seoraksan-view version: Inje climbs toward Hangyeryeong before Sokcho arrives through a stronger mountain spectacle.',
+  tradeoff:
+    'It can be slower and more weather-sensitive, but it gives the strongest classic Seoraksan pass mood.',
+  stopPattern:
+    'Best when the traveler cares about the mountain crossing itself and wants Sokcho to feel earned through Seorak views.',
+  chooseWhen:
+    'Choose this when the route should prioritize Seoraksan scenery over the gentler northern Goseong handoff.',
+  avoidWhen:
+    'Avoid it when road conditions, motion sensitivity, or tight timing make the pass feel like stress rather than payoff.',
+  planningNotes: [
+    'Hangyeryeong is the view-led choice: it should be written as a mountain crossing, not a shortcut.',
+    'Inje becomes especially important here because it is the last practical place to pause before the climb.',
+    'Sokcho should land as a release after Seorak, with the coast feeling like the exhale after the ridge.',
+  ],
+  stopovers: carJinburyeongSokchoRoute.stopovers.filter((stop) => stop.citySlug !== 'goseong'),
+  routePath: [
+    [37.5665, 126.978],
+    [37.8315, 127.5099],
+    [37.8813, 127.7298],
+    [38.1101, 127.9897],
+    [38.0695, 128.1707],
+    [38.082, 128.376],
+    [38.207, 128.5918],
+  ],
+};
+
+const carMisiryeongSokchoRoute: TransportRouteVariant = {
+  ...carJinburyeongSokchoRoute,
+  id: 'misiryeong-direct',
+  routeCode: '3-2-b',
+  label: 'Misiryeong Direct',
+  routeName: 'Inje to Sokcho via Misiryeong',
+  totalTravelTime: '3h 30m - 4h 30m',
+  summary:
+    'The cleanest pass-to-coast version: Inje keeps the mountain threshold, then Misiryeong moves quickly toward Sokcho and the sea.',
+  tradeoff:
+    'It is easier to explain and often simpler to drive, but less expansive than the Jinburyeong or Hangyeryeong versions.',
+  stopPattern:
+    'Best when Route 3 should keep the mountain-to-sea logic without becoming a long pass study.',
+  chooseWhen:
+    'Choose this when Sokcho is the main payoff but the route still needs an honest Seorak threshold.',
+  avoidWhen:
+    'Avoid it if the traveler wants the route to linger through Goseong or make Hangyeryeong the scenic event.',
+  planningNotes: [
+    'Misiryeong is the practical Seorak handoff: clean, legible, and still visually tied to the mountains.',
+    'This is likely the default Route 3 driving version for users who want balance.',
+    'Keep Inje prominent or the final leg risks feeling like a generic road to Sokcho.',
+  ],
+  stopovers: carJinburyeongSokchoRoute.stopovers.filter((stop) => stop.citySlug !== 'goseong'),
+  routePath: [
+    [37.5665, 126.978],
+    [37.8315, 127.5099],
+    [37.8813, 127.7298],
+    [38.1101, 127.9897],
+    [38.0695, 128.1707],
+    [38.2106, 128.459],
+    [38.207, 128.5918],
+  ],
+};
+
+export const seoulToSokchoRoute: RouteData = {
+  routeCode: '3',
+  from: 'Seoul',
+  fromSlug: 'seoul',
+  to: 'Sokcho',
+  toSlug: 'sokcho',
+  href: '/route-3',
+  routeLabel: 'Seoul to Sokcho',
+  headline: 'A northern mountain-to-sea line through lakes, border memory, and Seoraksan passes.',
+  overview:
+    'Route 3 is not the fast eastbound logic of Route 2. It leaves Seoul through the Bukhangang and Chuncheon, deepens through Yanggu and Inje, then lets Sokcho arrive through a deliberate Seoraksan pass choice.',
+  destinationPitch:
+    'Use this route when Sokcho should feel earned through northern landscape and memory, not simply reached by highway.',
+  bestUseCases: [
+    'Travelers who want the northern inland line before the East Sea.',
+    'Trips that can turn Yanggu and Inje into meaningful chapters instead of skipping straight to Sokcho.',
+    'Drivers choosing between Jinburyeong, Hangyeryeong, and Misiryeong for different Seoraksan approaches.',
+  ],
+  routePromise: [
+    'Gapyeong and Chuncheon soften Seoul into river and lake country.',
+    'Yanggu and Inje give the route borderland memory and mountain threshold logic.',
+    'The final pass choice changes how Sokcho and Seoraksan arrive.',
+  ],
+  editorialNotes: [
+    'Route 3 should never read as a duplicate Gangneung route. Its identity is northern, quieter, and more pass-led.',
+    'Yanggu is the hidden differentiator because it gives the line DMZ and war-memory depth.',
+    'Inje is the structural decision point: Jinburyeong/Goseong, Hangyeryeong, and Misiryeong are not interchangeable.',
+  ],
+  transports: {
+    KTX: {
+      mode: 'KTX',
+      id: 'rail-bus-northern',
+      routeCode: '3-0-a',
+      routeGroupCode: '3-0',
+      routeGroupLabel: 'Northern Mountain-to-Sea',
+      label: 'Rail + Bus',
+      routeName: 'ITX/Cheongchun + intercity links',
+      totalTravelTime: '4h - 6h',
+      totalDistance: '210 km',
+      summary:
+        'A public-transport interpretation of Route 3 that keeps Chuncheon visible but treats Yanggu and Inje as planning choices rather than a single effortless line.',
+      bestFor: 'Travelers who want the northern route without driving and are comfortable with bus links.',
+      tradeoff:
+        'It is less seamless than driving, but it can still express the river-lake-to-Sokcho story if paced carefully.',
+      stopPattern:
+        'Best with Chuncheon as the easy anchor and Sokcho as the final coast stay.',
+      chooseWhen:
+        'Choose this when the trip wants Route 3 atmosphere but does not need every pass variant to be driven.',
+      avoidWhen:
+        'Avoid it if Yanggu, Inje, and pass selection are the whole point; driving explains those better.',
+      pacingNote:
+        'Public transport should keep the route simpler: Chuncheon first, Sokcho second, and optional inland stops only when timing supports them.',
+      planningNotes: [
+        'Use this as a route family option, not a promise of one perfectly direct rail line.',
+        'Driving remains the clearest way to explain the three pass variants after Inje.',
+        'For first-time users, Chuncheon plus Sokcho may be enough to understand the northern line.',
+      ],
+      stopovers: [
+        carJinburyeongSokchoRoute.stopovers[1],
+        carJinburyeongSokchoRoute.stopovers[5],
+      ],
+      routePath: [
+        [37.5665, 126.978],
+        [37.8813, 127.7298],
+        [38.207, 128.5918],
+      ],
+    },
+    car: {
+      mode: 'car',
+      variants: [carMisiryeongSokchoRoute, carHangyeryeongSokchoRoute, carJinburyeongSokchoRoute],
+      ...carMisiryeongSokchoRoute,
+    },
+    bicycle: {
+      mode: 'bicycle',
+      id: 'bike-northern-concept',
+      routeCode: '3-0-c',
+      routeGroupCode: '3-0',
+      routeGroupLabel: 'Northern Mountain-to-Sea',
+      label: 'Bike Concept',
+      routeName: 'Bukhangang + northern inland concept',
+      totalTravelTime: '3-5 days',
+      totalDistance: '230-280 km',
+      summary:
+        'A concept route for experienced riders who want river path logic, mountain valleys, and a serious final approach toward Sokcho.',
+      bestFor: 'Experienced cyclists with route-planning discipline and weather awareness.',
+      tradeoff:
+        'This should not be sold as a casual ride; the mountain and pass decisions are real.',
+      stopPattern:
+        'Best with Chuncheon, Yanggu or Inje, and Sokcho as the main pacing anchors.',
+      chooseWhen:
+        'Choose this when the rider wants a northern crossing and accepts that some linking segments require judgment.',
+      avoidWhen:
+        'Avoid it for casual users looking for one simple certified path.',
+      pacingNote:
+        'Make Inje the serious planning checkpoint before any pass-side commitment.',
+      planningNotes: [
+        'This needs future detailed route safety work before being promoted heavily.',
+        'The page should be honest about road conditions and weather rather than romanticizing the crossing.',
+        'Sokcho is the payoff, but the route identity depends on reaching it with energy left.',
+      ],
+      stopovers: carMisiryeongSokchoRoute.stopovers,
+      routePath: carMisiryeongSokchoRoute.routePath,
+    },
+    bus: {
+      mode: 'bus',
+      id: 'bus-northern',
+      routeCode: '3-0-d',
+      routeGroupCode: '3-0',
+      routeGroupLabel: 'Northern Mountain-to-Sea',
+      label: 'Bus',
+      routeName: 'Intercity northern line',
+      totalTravelTime: '3h - 5h',
+      totalDistance: '210 km',
+      summary:
+        'A practical version of Route 3 that can keep Chuncheon or Inje in the story without requiring self-driving.',
+      bestFor: 'Budget travelers and users who want Sokcho with a northern inland explanation.',
+      tradeoff:
+        'It is less flexible than driving and cannot express all three pass variants equally.',
+      stopPattern:
+        'Best direct to Sokcho or with one deliberate Chuncheon/Inje break.',
+      chooseWhen:
+        'Choose bus when cost and simplicity matter more than controlling the pass sequence.',
+      avoidWhen:
+        'Avoid it if the pass view itself is the main product.',
+      pacingNote:
+        'Keep the bus version simple and let the driving variant carry the deeper pass logic.',
+      planningNotes: [
+        'Use this as the accessible version of Route 3.',
+        'Do not overpromise Yanggu/Inje links without checking current schedules.',
+        'If the user wants Seoraksan pass control, recommend the car variants instead.',
+      ],
+      stopovers: [carJinburyeongSokchoRoute.stopovers[1], carJinburyeongSokchoRoute.stopovers[5]],
+      routePath: [
+        [37.5665, 126.978],
+        [37.8813, 127.7298],
+        [38.207, 128.5918],
+      ],
+    },
+  },
+};
+
+const allRoutes: RouteData[] = [seoulToBusanRoute, seoulToGangneungRoute, seoulToSokchoRoute];
 
 export function getAllRouteData(): RouteData[] {
   return allRoutes;
