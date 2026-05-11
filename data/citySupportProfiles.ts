@@ -375,6 +375,258 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  yeoju: {
+    slug: 'yeoju',
+    city: 'Yeoju',
+    mapTitle: 'Where Yeoju becomes the first real split after Seoul',
+    mapIntro:
+      'Yeoju is the first junction city in the route system. The map should make one thing obvious: this is where Route 1 can bend toward Chungju while Route 2 can open toward Wonju.',
+    mapCenter: {
+      lat: 37.298,
+      lng: 127.637,
+    },
+    supportSummary:
+      'Yeoju works best as a junction stop: close enough to Seoul to stay easy, but rich enough in royal memory, Namhan River scenery, ceramics, rice culture, and modern outlet leisure to feel like the first true regional chapter.',
+    roleSummary:
+      'On Route 1, Yeoju solves the Seoul-to-Chungju gap by giving the inland line a meaningful first pause. On Route 2, it becomes the same early split before the route continues toward Wonju and the eastbound corridor.',
+    staySummary:
+      'Yeoju is usually a half-day or easy overnight, not a forced long stay. Keep the river-temple side when the city should feel historical and scenic, or use the outlet side when the stop needs parking, services, and a modern leisure rhythm.',
+    foodSummary:
+      'Yeoju food logic should lean local and grounded: rice, riverside meals, simple market eating, and a slower stop that feels different from the Seoul departure without asking travelers to over-plan.',
+    nextLegSummary:
+      'After Yeoju, the traveler must choose a route identity. Southbound movement points toward Chungju and inland recovery; eastbound movement points toward Wonju, Gangwon, and eventually Gangneung.',
+    accommodationNote:
+      'Strongest stay-planning angle: one river-and-heritage stay group near Silleuksa, one practical outlet-side service group, and one light overnight pattern for travelers splitting the Seoul departure into two easier pieces.',
+    sections: [
+      {
+        title: 'Why Yeoju is the first junction model',
+        body:
+          'Yeoju matters because it is not only a place to stop. It is the first place where the route can choose a personality: south toward Chungju and deeper inland travel, or east toward Wonju and the Gangwon-bound line.',
+      },
+      {
+        title: 'Why the past is unusually close to the route',
+        body:
+          'King Sejong gives Yeoju immediate historical weight, but the story does not end at the royal tomb. Silleuksa, Pasaseong, the Namhan River, and river-linked agriculture make the city feel like a compact chapter of Korean history.',
+      },
+      {
+        title: 'Why the present should stay visible',
+        body:
+          'Yeoju also has a current face: ceramics, rice branding, Gangcheonseom walks, and Yeoju Premium Outlets. That contrast is useful because it shows regional Korea as living, commercial, and leisurely, not only preserved.',
+      },
+      {
+        title: 'How to use Yeoju without overloading it',
+        body:
+          'The strongest Yeoju page should not try to make the city carry a full destination burden. It should give travelers one clean historical read, one modern leisure read, and one route decision before they continue.',
+      },
+      {
+        title: 'Why it fixes the Route 1 gap',
+        body:
+          'Seoul to Chungju can feel too wide if the route jumps straight into recovery logic. Yeoju creates a more humane first beat, then lets Chungju arrive as the stronger overnight and inland reset.',
+      },
+      {
+        title: 'Why it also belongs to Route 2',
+        body:
+          'Yeoju should not be locked to one route. Its value grows because the same city can introduce Route 2 before Wonju, proving that junction cities need canonical pages and route-context appearances at the same time.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Use the heritage-river side',
+        bestFor: 'Travelers who want one meaningful cultural stop before committing to Chungju or Wonju.',
+        why:
+          'Silleuksa, King Sejong, the Namhan River, and nearby civic museums make this the clearest way to let Yeoju feel rooted rather than purely practical.',
+      },
+      {
+        title: 'Use the outlet-service side',
+        bestFor: 'Drivers, families, and travelers who need an easy Seoul-side pause with parking, food, and predictable services.',
+        why:
+          'Yeoju Premium Outlets gives the city a modern stopover function that is legible even to travelers who are not ready for a heavier history chapter.',
+      },
+      {
+        title: 'Keep it as a split point',
+        bestFor: 'Route planners deciding between Route 1 southbound depth and Route 2 eastbound opening.',
+        why:
+          'The page is strongest when it helps the user choose the next leg, not when it treats every visitor as if they should stay the same way.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay by Silleuksa and the river',
+        areaLabel: 'Namhan River',
+        bestFor: 'Slow travelers who want Yeoju to register as history, landscape, and river mood.',
+        why:
+          'This side makes the city feel specific: temple edge, river paths, ceramic culture, and a calmer evening before the route branches.',
+      },
+      {
+        title: 'Stay or pause near the outlet corridor',
+        areaLabel: 'Outlet side',
+        bestFor: 'Drivers, family trips, and low-friction Seoul departures.',
+        why:
+          'The outlet side is practical rather than poetic, but that is exactly why it works as a modern junction stop with services and easy onward movement.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'River heritage',
+        title: 'Silleuksa makes the Namhan River part of the route',
+        image: 'http://tong.visitkorea.or.kr/cms/resource/11/3072711_image2_1.jpg',
+        alt: 'Official tourism image of Silleuksa Temple in Yeoju',
+        body:
+          'Yeoju needs river imagery because the city is not only a road decision. Silleuksa gives the page a calm historical edge before the route splits toward Chungju or Wonju.',
+        sourceLabel: 'Korea Tourism Organization data',
+        sourceHref: 'https://data.visitkorea.or.kr/resource/128926',
+        licenseLabel: 'KTO Open Data',
+      },
+      {
+        eyebrow: 'Modern leisure',
+        title: 'The outlet proves Yeoju has a present-tense stopover role',
+        image: 'http://tong.visitkorea.or.kr/cms/resource/45/2532845_image2_1.jpg',
+        alt: 'Official tourism image of Shinsegae Simon Yeoju Premium Outlets',
+        body:
+          'The modern side matters because many travelers will first understand Yeoju through easy parking, food, shopping, and family-scale leisure before they discover the deeper local story.',
+        sourceLabel: 'Korea Tourism Organization data',
+        sourceHref: 'https://data.visitkorea.or.kr/page/690557',
+        licenseLabel: 'KTO Open Data',
+      },
+      {
+        eyebrow: 'Route split',
+        title: 'Yeoju should visually point in two directions',
+        image: 'http://tong.visitkorea.or.kr/cms/resource/10/3072710_image2_1.jpg',
+        alt: 'Official tourism image near Silleuksa Temple and the Yeoju riverside',
+        body:
+          'The third image slot should behave like a route cue: a quieter river scene that gives the traveler a pause before deciding south toward Chungju or east toward Wonju.',
+        sourceLabel: 'Korea Tourism Organization data',
+        sourceHref: 'https://data.visitkorea.or.kr/resource/128926',
+        licenseLabel: 'KTO Open Data',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official source',
+        title: 'King Sejong gives Yeoju its deepest historical anchor',
+        image: 'http://tong.visitkorea.or.kr/cms/resource/09/3072709_image2_1.jpg',
+        alt: 'Official tourism image of Yeoju river heritage near Silleuksa',
+        body:
+          'Yeoju City describes Yeongneung as the royal tomb of King Sejong and Queen Soheon. This is the historical proof point that keeps the page from becoming only a convenient highway stop.',
+        sourceLabel: 'Yeoju City English tourism page',
+        sourceHref: 'https://www.yeoju.go.kr/english/contents.do?key=1830',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use the source for historical verification; pair it with KTO-sourced imagery unless Yeoju City publishes directly reusable media.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'Gangcheonseom adds the softer present-day river layer',
+        image: 'http://tong.visitkorea.or.kr/cms/resource/03/3072703_image2_1.jpg',
+        alt: 'Official tourism image of Yeoju river-side heritage scenery',
+        body:
+          'Gangcheonseom helps the page show Yeoju as a lived leisure landscape. It keeps the city from reading only as a royal-tomb or shopping stop.',
+        sourceLabel: 'Yeoju City English tourism page',
+        sourceHref: 'https://www.yeoju.go.kr/english/contents.do?key=1840',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use as a content source for the riverside leisure layer and as a future image-request target if the page needs a dedicated island visual.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'Ceramics give Yeoju a craft identity between past and present',
+        image: 'http://tong.visitkorea.or.kr/cms/resource/02/3072702_image2_1.jpg',
+        alt: 'Official tourism image of Yeoju cultural scenery near Silleuksa',
+        body:
+          'The Gyeonggi Museum of Contemporary Ceramic Art source supports Yeoju as a craft city, not just a junction. It should be one of the repeatable slots in the city template.',
+        sourceLabel: 'Yeoju City English tourism page',
+        sourceHref: 'https://www.yeoju.go.kr/english/contents.do?key=1843',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use to brief ceramic and craft content; replace the image with a dedicated ceramic visual when one is ingested.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'Yeoju Premium Outlets explains the modern stopover function',
+        image: 'http://tong.visitkorea.or.kr/cms/resource/44/2532844_image2_1.jpg',
+        alt: 'Official tourism image of Yeoju Premium Outlets',
+        body:
+          'VisitKorea and KTO data identify Yeoju Premium Outlets as Korea’s first premium outlet, which makes it useful as a modern leisure and service anchor after leaving Seoul.',
+        sourceLabel: 'Korea Tourism Organization data',
+        sourceHref: 'https://data.visitkorea.or.kr/page/690557',
+        licenseLabel: 'KTO Open Data',
+        usageNote:
+          'Use as the contemporary cue in the Yeoju page so the story does not become only historical.',
+      },
+    ],
+    points: [
+      {
+        id: 'yeongneung-sejong',
+        name: 'Royal Tomb of King Sejong',
+        kind: 'checkpoint',
+        areaLabel: 'Sejongdaewang-myeon',
+        coordinates: {
+          lat: 37.3048,
+          lng: 127.6128,
+        },
+        summary:
+          'The historical anchor that gives Yeoju immediate national weight before the route splits.',
+        note:
+          'Use this when the traveler needs one clear reason Yeoju is not just a convenient exit after Seoul.',
+      },
+      {
+        id: 'silleuksa-river',
+        name: 'Silleuksa and Namhan River side',
+        kind: 'recovery',
+        areaLabel: 'Silleuksa-gil',
+        coordinates: {
+          lat: 37.2972,
+          lng: 127.6597,
+        },
+        summary:
+          'A river-temple zone where Yeoju slows down and becomes visually memorable.',
+        note:
+          'Best for the heritage-river version of the page and for travelers who want one grounded stop before continuing.',
+      },
+      {
+        id: 'yeoju-ceramic-world',
+        name: 'Gyeonggi Museum of Contemporary Ceramic Art',
+        kind: 'checkpoint',
+        areaLabel: 'Ceramic World',
+        coordinates: {
+          lat: 37.296,
+          lng: 127.653,
+        },
+        summary:
+          'The craft anchor that connects old regional identity to a present-day museum and design context.',
+        note:
+          'Useful for making the past-and-present template feel tangible rather than abstract.',
+      },
+      {
+        id: 'yeoju-premium-outlets',
+        name: 'Yeoju Premium Outlets',
+        kind: 'stay',
+        areaLabel: 'Modern service node',
+        coordinates: {
+          lat: 37.2459,
+          lng: 127.6123,
+        },
+        summary:
+          'A contemporary service and leisure anchor that many drivers will understand immediately.',
+        note:
+          'Treat it as the modern counterweight to Sejong and Silleuksa, not as the whole city story.',
+      },
+      {
+        id: 'yeoju-route-split',
+        name: 'Chungju/Wonju split logic',
+        kind: 'mobility',
+        areaLabel: 'Route junction',
+        coordinates: {
+          lat: 37.298,
+          lng: 127.637,
+        },
+        summary:
+          'The route decision point where the site can explain why junction cities need canonical pages.',
+        note:
+          'From here, Route 1 should read south toward Chungju and Route 2 should read east toward Wonju.',
+      },
+    ],
+  },
   wonju: {
     slug: 'wonju',
     city: 'Wonju',

@@ -16,6 +16,7 @@ const REQUIRED_FIELDS = [
 
 const requiredCities = [
   'chungju',
+  'yeoju',
   'wonju',
   'andong',
 ];

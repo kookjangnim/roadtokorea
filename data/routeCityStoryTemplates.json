@@ -13,6 +13,20 @@
       "The images must make Chungju feel like lake, recovery, and route preparation, not generic countryside."
     ]
   },
+  "yeoju": {
+    "city": "Yeoju",
+    "routeSlug": "route-1",
+    "historicalWeight": "Yeoju carries royal, river, and fortress memory in a compact place. King Sejong's Yeongneung gives it Joseon gravity, Silleuksa keeps the Namhan River visible in the story, and Pasaseong explains why this riverside position mattered strategically.",
+    "modernIdentity": "Modern Yeoju is not frozen as heritage. Ceramics, rice, Gangcheonseom leisure, and Korea's first premium outlet give the city a present-tense identity that feels close to Seoul but already clearly regional.",
+    "routeMeaning": "Yeoju is the first true junction after Seoul. Route 1 can bend south toward Chungju from here, while Route 2 can keep opening east toward Wonju. That split makes Yeoju the model for every future junction city on the site.",
+    "imageBrief": "Use a royal-tomb or Sejong cue, Silleuksa or Namhan River scenery, ceramics or rice as local craft/agriculture, the outlet as a contemporary cue, and a map visual that makes the split toward Chungju and Wonju obvious.",
+    "qualityBar": [
+      "The page must explain Yeoju as a junction city, not a generic Seoul day trip.",
+      "The page must hold past and present together: Sejong, river-temple culture, ceramics/rice, and outlet-era leisure.",
+      "The page must show how Yeoju solves the Route 1 Seoul-to-Chungju gap and Route 2 Seoul-to-Wonju gap.",
+      "The images must include at least one river/temple cue, one modern cue, and one route-split cue."
+    ]
+  },
   "wonju": {
     "city": "Wonju",
     "routeSlug": "route-2",

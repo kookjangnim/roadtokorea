@@ -26,7 +26,7 @@ export const tier4Cities: Record<string, TierCityData> = {
     name: 'Yeoju',
     slug: 'yeoju',
     headline: 'The First Inland Split',
-    heroImage: '/images/placeholder.png',
+    heroImage: 'http://tong.visitkorea.or.kr/cms/resource/11/3072711_image2_1.jpg',
     description: 'A Namhan River city where Seoul loosens and the route can split toward Chungju or Wonju.',
     culturalInsight:
       'Yeoju matters because it is both historical and directional. King Sejong’s royal memory, Silleuksa, ceramics, riverside leisure, and modern outlet culture all sit at the point where the trip can bend south toward Chungju or east toward Wonju.',

@@ -21,6 +21,28 @@ Goal: every city page should make the past and present coexist while still helpi
 - One present-day proof image.
 - One stay, food, recovery, or street-level image.
 
+## Junction City Add-On
+
+Junction cities need one extra responsibility: they must explain the branch. The canonical page should stay at `/cities/[city]`, while route cards can still surface the city inside multiple route contexts. The copy must clearly answer:
+
+- Which routes overlap here?
+- What does the traveler choose after this city?
+- Why is the city more than a road split?
+
+Yeoju is the first sample: Route 1 can move Seoul -> Yeoju -> Chungju, while Route 2 can move Seoul -> Yeoju -> Wonju. The page must make that choice visible without making two duplicate Yeoju pages.
+
+## Image Production Slots
+
+Every city brief should request five slots before publication:
+
+- `hero`: the city identity in one image.
+- `history`: royal tomb, temple, fortress, battlefield, old road, market, or heritage proof.
+- `present`: factory, outlet, university, market, festival, industry, craft, or modern lifestyle proof.
+- `route`: map, road, station, river, pass, coast, or junction cue.
+- `street`: food, stay zone, recovery, riverside, or everyday local texture.
+
+If a slot is missing, keep the page publishable only when the source-backed reference list names the missing image target. Do not hide missing imagery behind generic atmosphere.
+
 ## Chungju-Grade QA
 
 - The city has a route role and a city soul.
@@ -29,3 +51,4 @@ Goal: every city page should make the past and present coexist while still helpi
 - The page gives stay/skip judgment.
 - The next leg changes because this city was included.
 - The images make the city easier to believe.
+- Junction cities show every overlapping route without duplicating the city story.

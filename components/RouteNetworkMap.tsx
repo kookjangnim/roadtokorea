@@ -89,6 +89,20 @@ export default function RouteNetworkMap() {
                 Hover a route to highlight its line. Click a card to open the cities that shape
                 that journey, including junctions where one trip can branch into another.
               </p>
+              <div className="mt-5 flex flex-wrap gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-500">
+                <span className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-2">
+                  <span className="h-2 w-2 rounded-full bg-stone-700" />
+                  Anchor
+                </span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-2">
+                  <span className="h-2 w-2 rotate-45 bg-amber-400" />
+                  Junction city
+                </span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-2">
+                  <span className="h-px w-6 border-t border-dashed border-stone-500" />
+                  Future branch
+                </span>
+              </div>
             </div>
 
             <div className="relative aspect-[4/3] bg-[radial-gradient(circle_at_70%_20%,rgba(37,111,143,0.13),transparent_34%),linear-gradient(145deg,#fbf7ef,#efe5d8)] md:aspect-[16/9]">

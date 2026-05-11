@@ -184,18 +184,47 @@ const carJungangRoute: TransportRouteVariant = {
   pacingNote:
     'This route rewards fewer but deeper stops. It works best when you let inland cities change the tone of the trip.',
   planningNotes: [
+    'Yeoju should be treated as the first junction beat after Seoul, especially when the route needs a cleaner handoff before Chungju.',
     'Andong becomes much more valuable on this route than it does on a standard southbound transfer.',
     'This corridor is less about major-metropolis contrast and more about inland continuity and cultural weight.',
     'If you are driving precisely to avoid the default axis, this is usually the strongest alternative.',
   ],
   stopovers: [
     {
+      city: 'Yeoju',
+      citySlug: 'yeoju',
+      tier: 4,
+      coordinates: { lat: 37.298, lng: 127.637 },
+      travelTimeFromPrevious: '1h 10m',
+      cumulativeTime: '1h 10m',
+      pitch:
+        'The first inland junction where Seoul loosens and the route can choose between Chungju depth or Wonju eastbound opening.',
+      routeRole: 'First junction city',
+      stayAdvice:
+        'Use Yeoju as a half-day stop or light overnight when the Seoul-to-Chungju jump feels too blunt and the route needs a more graceful first beat.',
+      whyItEarnsTime:
+        'King Sejong, the Namhan River, Silleuksa, ceramics, rice, and outlet-era leisure give Yeoju enough story to make the route split feel intentional.',
+      decisionReason:
+        'Keep Yeoju when the route should explain why the traveler is choosing an inland sequence rather than simply driving past greater Seoul.',
+      recoveryValue:
+        'Soft recovery through riverside walking, easy food, and a lower-pressure pace before the route asks for a more committed Chungju overnight.',
+      sleepValue:
+        'A useful light overnight when departure from Seoul starts late or when the trip wants to arrive in Chungju fresher the next day.',
+      foodValue:
+        'Best read through local rice, simple riverside meals, and practical outlet-side food rather than destination dining alone.',
+      terrainTransition:
+        'Yeoju is the first place where the route starts feeling regional, even before the inland landscape deepens around Chungju.',
+      nextLegLogic:
+        'After Yeoju, Route 1 bends south toward Chungju while Route 2 can split east toward Wonju, making the city the first real network hinge.',
+      highlights: ['King Sejong Royal Tomb', 'Silleuksa Temple', 'Yeoju Premium Outlets'],
+    },
+    {
       city: 'Chungju',
       citySlug: 'chungju',
       tier: 3,
       coordinates: { lat: 36.991, lng: 127.926 },
-      travelTimeFromPrevious: '1h 50m',
-      cumulativeTime: '1h 50m',
+      travelTimeFromPrevious: '50m',
+      cumulativeTime: '2h',
       pitch:
         'A lake-and-hot-spring inland city where the route finally stops behaving like an extension of Seoul and starts preparing for the harder country ahead.',
       routeRole: 'Pre-pass recovery base',
@@ -1043,13 +1072,13 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
   totalTravelTime: '2h 40m - 3h 30m',
   totalDistance: '230 km',
   summary:
-    'The strongest editorial version of Route 2: Seoul urgency loosens in Wonju, then the trip opens fully once Gangneung reaches the sea.',
+    'The strongest editorial version of Route 2: Seoul urgency loosens through Yeoju, gathers in Wonju, then opens fully once Gangneung reaches the sea.',
   bestFor:
     'Self-drive trips that want a real eastbound shape instead of a simple destination transfer.',
   tradeoff:
     'It is still efficient, but the point is to let the route breathe through Wonju and stay open to a coastal second act.',
   stopPattern:
-    'Best with one strong inland pause in Wonju and one decision point in Gangneung about whether to stop or keep rolling south.',
+    'Best with Yeoju as the first junction cue, one strong inland pause in Wonju, and one decision point in Gangneung about whether to stop or keep rolling south.',
   chooseWhen:
     'Choose this when Gangneung should feel like the beginning of the coast and Wonju should matter as more than a highway blur.',
   avoidWhen:
@@ -1057,18 +1086,47 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
   pacingNote:
     'This version works best when Wonju handles the inland release and Gangneung handles the coastal threshold, with Samcheok as the optional second act rather than a requirement.',
   planningNotes: [
+    'Yeoju gives Route 2 a cleaner first junction cue before Wonju carries the deeper eastbound hinge role.',
     'Wonju is the route-defining city here because it is the first place the eastbound line starts feeling branch-capable instead of Seoul-adjacent.',
     'Gangneung should be treated as a threshold city: users can stop there, but the route copy should leave the coast visibly open beyond it.',
     'Samcheok is useful when the drive should prove that the eastbound route is not only about reaching one beach city and stopping.',
   ],
   stopovers: [
     {
+      city: 'Yeoju',
+      citySlug: 'yeoju',
+      tier: 4,
+      coordinates: { lat: 37.298, lng: 127.637 },
+      travelTimeFromPrevious: '1h 10m',
+      cumulativeTime: '1h 10m',
+      pitch:
+        'The first junction city where Route 2 separates from a plain Seoul escape and starts preparing for Wonju.',
+      routeRole: 'Shared junction cue',
+      stayAdvice:
+        'Use Yeoju when the eastbound trip needs a lighter first pause before Wonju, especially for drivers leaving Seoul later in the day.',
+      whyItEarnsTime:
+        'It lets Route 2 share a meaningful junction with Route 1 without confusing the canonical city page structure.',
+      decisionReason:
+        'Keep Yeoju when the page needs to show that junction cities can belong to more than one route context.',
+      recoveryValue:
+        'Soft riverside recovery and easy services before the trip becomes a more explicit Gangwon-bound movement.',
+      sleepValue:
+        'A light overnight only when the Seoul departure needs to be softened before Wonju; otherwise it works well as a route-context stop.',
+      foodValue:
+        'Simple local rice, riverside food, and outlet-side options make it useful without turning it into the main Route 2 stay.',
+      terrainTransition:
+        'Yeoju marks the shift from Seoul-side movement into the first branch-capable inland corridor.',
+      nextLegLogic:
+        'After Yeoju, the route continues east toward Wonju, where the stronger inland hinge and Gangneung setup begin.',
+      highlights: ['Namhan River', 'Silleuksa Temple', 'Route split toward Wonju'],
+    },
+    {
       city: 'Wonju',
       citySlug: 'wonju',
       tier: 1,
       coordinates: { lat: 37.3422, lng: 127.9202 },
-      travelTimeFromPrevious: '1h 20m',
-      cumulativeTime: '1h 20m',
+      travelTimeFromPrevious: '45m',
+      cumulativeTime: '1h 55m',
       pitch: 'An inland junction city where the route finally stops feeling like greater Seoul and starts pointing decisively east.',
       routeRole: 'Eastbound inland hinge',
       stayAdvice:
@@ -1244,23 +1302,23 @@ export const seoulToGangneungRoute: RouteData = {
   toSlug: 'gangneung',
   href: '/route-2',
   routeLabel: 'Seoul to Gangneung',
-  headline: 'An eastbound route that hinges on Wonju before the coast opens.',
+  headline: 'An eastbound route that uses Yeoju first, then hinges on Wonju before the coast opens.',
   overview:
-    'Route 2 is not a smaller Seoul-to-Busan. It is the cleanest Seoul-origin eastbound line on the site: Wonju releases the route inland, then Gangneung turns it toward the sea.',
+    'Route 2 is not a smaller Seoul-to-Busan. It is the cleanest Seoul-origin eastbound line on the site: Yeoju creates the first branch cue, Wonju releases the route inland, then Gangneung turns it toward the sea.',
   destinationPitch:
     'Use this route when Gangneung should feel like a threshold city and when the trip might stop there or keep unfolding into the east coast.',
   bestUseCases: [
     'Trips that want a shorter flagship route without losing clear stopover logic.',
-    'Eastbound itineraries where Wonju should matter as a real junction city, not just a pass-through.',
+    'Eastbound itineraries where Yeoju and Wonju should matter as real junction cities, not just pass-through names.',
     'Travelers choosing between direct arrival, coast-opening driving, or an honest stitched bicycle corridor.',
   ],
   routePromise: [
-    'Wonju gives the route a real inland hinge before Gangneung changes the geometry into a sea-facing chapter.',
+    'Yeoju gives the route its first split, and Wonju gives it the real inland hinge before Gangneung changes the geometry into a sea-facing chapter.',
     'You can keep this route elegant and direct or let it open into Samcheok and the wider east coast.',
     'Route 2 stays Seoul-first while feeling clearly different from the long southbound logic of Route 1.',
   ],
   editorialNotes: [
-    'Wonju is the structural difference-maker here; if it disappears from the route logic, Route 2 gets flatter and less memorable.',
+    'Yeoju should be visible as the shared junction cue, while Wonju remains the structural difference-maker for the eastbound identity.',
     'Treat Gangneung as a threshold, not only a destination, so the route still feels open after arrival.',
     'For cycling, credibility matters more than romance: describe the line as stitched, practical, and worth doing for the coast payoff.',
   ],
