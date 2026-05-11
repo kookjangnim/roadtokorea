@@ -68,5 +68,35 @@ export const tier2Cities: Record<string, TierCityData> = {
     culturalInsight:
       'Gwangju belongs on Route 5 because the Jeolla story needs Korea\'s modern democratic history at its center. May 18 memory comes first, then Asia Culture Center culture, Yangnim-dong craft streets, markets, food, and Mudeungsan make the city one of Korea\'s strongest past-present urban chapters.',
     hotspots: []
+  },
+  incheon: {
+    slug: 'incheon',
+    name: 'Incheon',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg',
+    headline: 'The Open-Port Gateway',
+    description: 'A West Sea port city where open-port history, Chinatown, Wolmido, ferries, airport scale, and island access make Route 6 begin differently from every inland route.',
+    culturalInsight:
+      'Incheon matters because it lets travelers see Korea through port contact, migration, modern trade, islands, and the West Sea. It is not only Seoul\'s airport city; it is the route\'s open-port beginning.',
+    hotspots: []
+  },
+  suwon: {
+    slug: 'suwon',
+    name: 'Suwon',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg',
+    headline: 'The Fortress Planning City',
+    description: 'A UNESCO fortress city where King Jeongjo, Hwaseong walls, markets, and walkable heritage give Route 6 a strong first inland hinge.',
+    culturalInsight:
+      'Suwon matters on Route 6 because the West Sea line needs a powerful Joseon-era planning chapter before it turns toward coastal Chungcheong. Hwaseong is history, city design, walking, food, and overnight practicality in one place.',
+    hotspots: []
+  },
+  mokpo: {
+    slug: 'mokpo',
+    name: 'Mokpo',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Yudalsan.jpg',
+    headline: 'The Southwest Harbor Finale',
+    description: 'A port city of Yudalsan views, Gatbawi geology, seafood, ferries, modern history streets, and Dadohae sunset.',
+    culturalInsight:
+      'Mokpo matters because Route 6 needs a real finale, not only a last dot. The city gathers West Sea memory, southwest seafood, island departure, modern port history, and mountain-to-harbor views before the network can later expand along the south coast.',
+    hotspots: []
   }
 };

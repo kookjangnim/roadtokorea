@@ -39,6 +39,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tier-2/:city(incheon|suwon|mokpo)',
+        destination: '/route-6/:city',
+        permanent: true,
+      },
+      {
         source: '/tier-4/:city(cheonan|chungju|gumi|changnyeong|uljin|sangju|yeongdeok|miryang|pohang|mungyeong)',
         destination: '/route-1/:city',
         permanent: true,
@@ -56,6 +61,11 @@ const nextConfig: NextConfig = {
       {
         source: '/tier-4/:city(gongju|jeonju|imsil|namwon|suncheon)',
         destination: '/route-5/:city',
+        permanent: true,
+      },
+      {
+        source: '/tier-4/:city(seosan|boryeong|gunsan)',
+        destination: '/route-6/:city',
         permanent: true,
       },
       {

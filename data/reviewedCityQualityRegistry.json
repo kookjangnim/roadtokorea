@@ -40,6 +40,13 @@
     "namwon",
     "suncheon",
     "yeosu"
+    ,
+    "incheon",
+    "suwon",
+    "seosan",
+    "boryeong",
+    "gunsan",
+    "mokpo"
   ],
   "supportTerms": {
     "chungju": ["supportSummary", "roleSummary", "staySummary", "foodSummary", "nextLegSummary"],
@@ -81,6 +88,12 @@
     "imsil": ["cheese", "Cheese Theme Park", "Okjeongho", "Namwon", "supportSummary"],
     "namwon": ["Chunhyang", "Gwanghalluwon", "Jirisan", "Suncheon", "supportSummary"],
     "suncheon": ["Bay", "Wetland", "Garden", "Yeosu", "supportSummary"],
-    "yeosu": ["Odongdo", "Hyangiram", "night sea", "supportSummary"]
+    "yeosu": ["Odongdo", "Hyangiram", "night sea", "supportSummary"],
+    "incheon": ["open-port", "Chinatown", "Wolmido", "Suwon", "supportSummary"],
+    "suwon": ["Hwaseong", "Jeongjo", "UNESCO", "Seosan", "supportSummary"],
+    "seosan": ["Haemi", "Taean", "Naepo", "Boryeong", "supportSummary"],
+    "boryeong": ["Mud Festival", "Daecheon", "Gunsan", "supportSummary"],
+    "gunsan": ["Modern History", "port", "Mokpo", "supportSummary"],
+    "mokpo": ["Yudalsan", "Gatbawi", "harbor", "supportSummary"]
   }
 }

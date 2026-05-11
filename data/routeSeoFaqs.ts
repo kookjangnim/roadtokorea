@@ -84,6 +84,23 @@ export const routeSeoFaqsByCode: Record<string, RouteSeoFaq[]> = {
         'Yes. Suncheon Bay Wetland and Suncheon Bay National Garden add an ecological chapter that makes Yeosu feel like an earned sea arrival rather than a simple end point.',
     },
   ],
+  '6': [
+    {
+      question: 'What is the best Seoul to Mokpo west coast route?',
+      answer:
+        'Route 6 works best as Seoul, Incheon, Suwon, Seosan, Boryeong, Gunsan, and Mokpo, linking open-port history, Hwaseong Fortress, Haemi and Taean access, Daecheon Beach, modern port memory, and a southwest harbor finale.',
+    },
+    {
+      question: 'Why include Gunsan before Mokpo?',
+      answer:
+        'Gunsan gives the west coast a serious modern-history port chapter through museums, old streets, bakeries, seafood, and harbor memory before Mokpo becomes the final southwest arrival.',
+    },
+    {
+      question: 'Is Boryeong only worth visiting during the Mud Festival?',
+      answer:
+        'No. The Boryeong Mud Festival is the strongest hook, but Daecheon Beach, seafood, sunsets, and coastal stays make Boryeong useful beyond festival dates.',
+    },
+  ],
 };
 
 export function getRouteSeoFaqs(routeCode: string) {

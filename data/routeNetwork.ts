@@ -59,6 +59,12 @@ export const routeNetworkCities: Record<string, RouteNetworkCity> = {
   namwon: { slug: 'namwon', name: 'Namwon', kind: 'branch', x: 49, y: 69, lat: 35.4164, lng: 127.3906, href: '/route-5/namwon' },
   suncheon: { slug: 'suncheon', name: 'Suncheon', kind: 'route', x: 55, y: 79, lat: 34.9506, lng: 127.4872, href: '/route-5/suncheon' },
   yeosu: { slug: 'yeosu', name: 'Yeosu', kind: 'anchor', x: 60, y: 86, lat: 34.7604, lng: 127.6622, href: '/route-5/yeosu' },
+  incheon: { slug: 'incheon', name: 'Incheon', kind: 'route', x: 33, y: 16, lat: 37.4563, lng: 126.7052, href: '/route-6/incheon' },
+  suwon: { slug: 'suwon', name: 'Suwon', kind: 'route', x: 42, y: 25, lat: 37.2636, lng: 127.0286, href: '/route-6/suwon' },
+  seosan: { slug: 'seosan', name: 'Seosan', kind: 'route', x: 31, y: 45, lat: 36.7849, lng: 126.45, href: '/route-6/seosan' },
+  boryeong: { slug: 'boryeong', name: 'Boryeong', kind: 'route', x: 30, y: 56, lat: 36.3334, lng: 126.6128, href: '/route-6/boryeong' },
+  gunsan: { slug: 'gunsan', name: 'Gunsan', kind: 'route', x: 35, y: 68, lat: 35.9677, lng: 126.7366, href: '/route-6/gunsan' },
+  mokpo: { slug: 'mokpo', name: 'Mokpo', kind: 'anchor', x: 35, y: 88, lat: 34.8118, lng: 126.3922, href: '/route-6/mokpo' },
 };
 
 export const routeNetworkRoutes: RouteNetworkRoute[] = [
@@ -121,6 +127,16 @@ export const routeNetworkRoutes: RouteNetworkRoute[] = [
     color: '#a16207',
     citySlugs: ['jeonju', 'imsil', 'namwon', 'suncheon'],
     path: 'M42 60 C43 62, 44 64, 45 65 C46 67, 48 68, 49 69 C51 73, 53 76, 55 79',
+  },
+  {
+    id: 'route-6',
+    label: 'Route 6',
+    title: 'Seoul to Mokpo, West Sea modern coast',
+    summary: 'Incheon opens the port-history line before Suwon, Seosan, Boryeong, Gunsan, and Mokpo turn the west coast into fortress, pilgrimage, mud festival, modern port memory, and island-sea arrival.',
+    href: '/route-6',
+    color: '#7c6f2d',
+    citySlugs: ['seoul', 'incheon', 'suwon', 'seosan', 'boryeong', 'gunsan', 'mokpo'],
+    path: 'M43 13 C39 14, 36 15, 33 16 C36 20, 39 23, 42 25 C37 32, 33 39, 31 45 C30 49, 30 53, 30 56 C32 61, 34 65, 35 68 C34 75, 34 82, 35 88',
   },
   {
     id: 'branch-2a',

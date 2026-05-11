@@ -812,6 +812,90 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
       { question: 'Should Yeosu be a final night?', answer: 'Yes. Yeosu works best as a final overnight because its night views, seafood, islands, and harbor mood are the payoff after Gongju, Jeonju, Gwangju, Suncheon, and the optional Imsil-Namwon variant.' },
     ],
   },
+  incheon: {
+    city: 'Incheon',
+    primaryIntent: 'Incheon Korea open port Chinatown Wolmido West Sea route',
+    metaKeywords: ['Incheon Korea', 'Incheon travel guide', 'Incheon Chinatown', 'Wolmido Island', 'Incheon open port', 'Seoul to Incheon', 'Incheon to Suwon', 'West Sea Korea'],
+    clusters: [
+      { label: 'Route intent', terms: ['Seoul to Incheon', 'Incheon to Suwon', 'West Sea Korea'] },
+      { label: 'Port intent', terms: ['Incheon open port', 'Incheon Chinatown', 'Wolmido Island'] },
+      { label: 'Coast intent', terms: ['Incheon ferries', 'Incheon seafood', 'Incheon islands'] },
+    ],
+    questions: [
+      { question: 'Why start Route 6 in Incheon?', answer: 'Incheon gives Route 6 open-port history, Chinatown, Wolmido, ferries, seafood, and West Sea identity before Suwon and the coast.' },
+      { question: 'Is Incheon only an airport city?', answer: 'No. Incheon has open-port streets, Chinatown, Wolmido, island ferries, seafood markets, and modern city scale.' },
+    ],
+  },
+  suwon: {
+    city: 'Suwon',
+    primaryIntent: 'Suwon Korea Hwaseong Fortress UNESCO King Jeongjo route stop',
+    metaKeywords: ['Suwon Korea', 'Suwon travel guide', 'Suwon Hwaseong Fortress', 'King Jeongjo', 'UNESCO Suwon', 'Suwon to Seosan', 'Incheon to Suwon', 'Korea fortress city'],
+    clusters: [
+      { label: 'Route intent', terms: ['Incheon to Suwon', 'Suwon to Seosan', 'Route 6 Korea'] },
+      { label: 'Heritage intent', terms: ['Suwon Hwaseong Fortress', 'King Jeongjo', 'UNESCO Suwon'] },
+      { label: 'Stay intent', terms: ['Paldalmun Market', 'Suwon food street', 'Suwon night walk'] },
+    ],
+    questions: [
+      { question: 'Why include Suwon on a west coast route?', answer: 'Suwon gives Route 6 a UNESCO fortress and King Jeongjo planning chapter before the route turns toward the West Sea coast.' },
+      { question: 'What is Suwon known for?', answer: 'Suwon is known for Hwaseong Fortress, King Jeongjo, city-wall walks, markets, food streets, and easy access from Seoul.' },
+    ],
+  },
+  seosan: {
+    city: 'Seosan',
+    primaryIntent: 'Seosan Korea Haemi Taean Naepo west coast gateway',
+    metaKeywords: ['Seosan Korea', 'Seosan travel guide', 'Haemi Martyrdom Holy Ground', 'Haemieupseong Fortress', 'Taean coast', 'Seosan to Boryeong', 'Suwon to Seosan', 'Naepo Korea'],
+    clusters: [
+      { label: 'Route intent', terms: ['Suwon to Seosan', 'Seosan to Boryeong', 'Route 6 Korea'] },
+      { label: 'Heritage intent', terms: ['Haemi Martyrdom Holy Ground', 'Haemieupseong Fortress', 'Naepo Korea'] },
+      { label: 'Coast intent', terms: ['Taean coast', 'Seosan seafood', 'West Sea tidal flats'] },
+    ],
+    questions: [
+      { question: 'Why include Seosan on Route 6?', answer: 'Seosan adds Haemi, Naepo, Catholic martyr memory, tidal-flat food, and Taean coast access before Boryeong.' },
+      { question: 'Is Seosan a Taean gateway?', answer: 'Yes. Seosan works as a practical inland-coast hinge before Taean beaches, Anmyeondo, and the Boryeong side of Route 6.' },
+    ],
+  },
+  boryeong: {
+    city: 'Boryeong',
+    primaryIntent: 'Boryeong Korea Daecheon Beach Mud Festival west coast stop',
+    metaKeywords: ['Boryeong Korea', 'Boryeong travel guide', 'Boryeong Mud Festival', 'Daecheon Beach', 'Boryeong mud', 'Boryeong to Gunsan', 'Seosan to Boryeong', 'Korea beach festival'],
+    clusters: [
+      { label: 'Route intent', terms: ['Seosan to Boryeong', 'Boryeong to Gunsan', 'Route 6 Korea'] },
+      { label: 'Festival intent', terms: ['Boryeong Mud Festival', 'Boryeong mud', 'Korea beach festival'] },
+      { label: 'Coast intent', terms: ['Daecheon Beach', 'Boryeong seafood', 'West Sea sunset'] },
+    ],
+    questions: [
+      { question: 'Why stop in Boryeong on Route 6?', answer: 'Boryeong gives the west coast a globally legible beach and festival chapter through Daecheon Beach and the Boryeong Mud Festival.' },
+      { question: 'Is Boryeong only for the Mud Festival?', answer: 'No. The festival is the hook, but Daecheon Beach, seafood, sunsets, and coastal stays make Boryeong useful beyond festival dates.' },
+    ],
+  },
+  gunsan: {
+    city: 'Gunsan',
+    primaryIntent: 'Gunsan Korea modern history port old streets west coast route',
+    metaKeywords: ['Gunsan Korea', 'Gunsan travel guide', 'Gunsan Modern History Museum', 'Gunsan old streets', 'Gunsan port', 'Gunsan to Mokpo', 'Boryeong to Gunsan', 'Korea modern history city'],
+    clusters: [
+      { label: 'Route intent', terms: ['Boryeong to Gunsan', 'Gunsan to Mokpo', 'Route 6 Korea'] },
+      { label: 'History intent', terms: ['Gunsan Modern History Museum', 'Gunsan old streets', 'Korea modern history city'] },
+      { label: 'Food intent', terms: ['Gunsan bakery', 'Gunsan seafood', 'Gunsan port'] },
+    ],
+    questions: [
+      { question: 'Why include Gunsan before Mokpo?', answer: 'Gunsan gives Route 6 a serious modern port-history chapter through museums, colonial-era streets, bakeries, seafood, and harbor memory.' },
+      { question: 'What is Gunsan known for?', answer: 'Gunsan is known for modern history streets, the Modern History Museum, old port architecture, bakeries, seafood, and West Sea harbor atmosphere.' },
+    ],
+  },
+  mokpo: {
+    city: 'Mokpo',
+    primaryIntent: 'Mokpo Korea Yudalsan Gatbawi southwest harbor finale',
+    metaKeywords: ['Mokpo Korea', 'Mokpo travel guide', 'Yudalsan Mountain', 'Mokpo Gatbawi', 'Mokpo seafood', 'Gunsan to Mokpo', 'Seoul to Mokpo route', 'Korea southwest coast'],
+    clusters: [
+      { label: 'Route intent', terms: ['Gunsan to Mokpo', 'Seoul to Mokpo route', 'Korea southwest coast'] },
+      { label: 'Harbor intent', terms: ['Mokpo seafood', 'Mokpo ferries', 'Mokpo harbor'] },
+      { label: 'Scenery intent', terms: ['Yudalsan Mountain', 'Mokpo Gatbawi', 'Dadohae sunset'] },
+    ],
+    questions: [
+      { question: 'Why end Route 6 in Mokpo?', answer: 'Mokpo gives the West Sea route a real southwest harbor finale through Yudalsan, Gatbawi, seafood, ferries, modern history, and island views.' },
+      { question: 'What is Mokpo known for?', answer: 'Mokpo is known for Yudalsan Mountain, Gatbawi Rock, seafood, ferries, modern port history, harbor views, and Dadohae access.' },
+    ],
+  },
   ulsan: {
     city: 'Ulsan',
     primaryIntent: 'Ulsan Korea industrial coast and Daewangam stop before Busan',

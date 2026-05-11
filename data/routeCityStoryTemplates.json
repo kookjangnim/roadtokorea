@@ -410,6 +410,60 @@
     "imageBrief": "Use one Odongdo or island image, one Hyangiram or temple-view image, one night-sea or harbor image, one seafood or street image, and one finale image that feels unmistakably south coast.",
     "qualityBar": ["The page must make Yeosu the Route 5 finale.", "The page must connect Odongdo, Hyangiram, night sea, seafood, and harbor life.", "The page must explain the arrival payoff after Suncheon.", "The images must show island, temple view, night sea, food, and south-coast finish."]
   },
+  "incheon": {
+    "city": "Incheon",
+    "routeSlug": "route-6",
+    "historicalWeight": "Incheon carries Korea's open-port memory, migration, maritime trade, Chinatown, Wolmido, and island routes. It should read as the moment Route 6 leaves Seoul's inland gravity and meets the West Sea.",
+    "modernIdentity": "Modern Incheon is also airport scale, ferries, seafood markets, island tourism, Songdo, open-port streets, and a practical first city chapter before Suwon and the west-coast descent.",
+    "routeMeaning": "On Route 6, Incheon opens the entire West Sea logic. It makes the route different from Route 1, Route 5, and the east-coast lines by foregrounding port contact and maritime modernity.",
+    "imageBrief": "Use one Chinatown or open-port street image, one Wolmido or harbor image, one ferry or island cue, one modern Incheon image, and one route image toward Suwon.",
+    "qualityBar": ["The page must explain Incheon as Route 6's open-port first chapter.", "The page must avoid reducing Incheon to airport access.", "The page must connect Incheon to Suwon and the West Sea corridor.", "The images must show open port, harbor, ferry/island, modern city, and Suwon handoff."]
+  },
+  "suwon": {
+    "city": "Suwon",
+    "routeSlug": "route-6",
+    "historicalWeight": "Suwon carries King Jeongjo's planned-city memory through Hwaseong Fortress, city walls, gates, military architecture, and market streets that still sit inside the modern city.",
+    "modernIdentity": "Modern Suwon works as a practical, walkable heritage overnight with fortress walks, Paldalmun market, food streets, transit access, hotels, and enough services before Route 6 turns toward the coast.",
+    "routeMeaning": "On Route 6, Suwon is the fortress-planning hinge. It gives the west-coast route a serious Joseon-era design chapter before Seosan, Boryeong, Gunsan, and Mokpo move the route into maritime memory.",
+    "imageBrief": "Use one Hwaseong wall or gate image, one market or food street cue, one night-wall or walking image, one city-stay cue, and one route image toward Seosan.",
+    "qualityBar": ["The page must explain Suwon through Hwaseong, Jeongjo, and UNESCO context.", "The page must connect Suwon to Route 6 rather than only Seoul day-trip logic.", "The page must balance fortress heritage with present city usefulness.", "The images must show fortress, market, night walk, stay logic, and Seosan handoff."]
+  },
+  "seosan": {
+    "city": "Seosan",
+    "routeSlug": "route-6",
+    "historicalWeight": "Seosan carries Naepo-region memory, Haemi Catholic martyr history, Haemieupseong context, tidal-flat food culture, and the west-coast threshold toward Taean and Anmyeondo.",
+    "modernIdentity": "Modern Seosan works through Haemi pilgrimage, seafood, garlic identity, tidal-flat scenery, local markets, and access to Taean beaches that can later become a Route 6 branch.",
+    "routeMeaning": "On Route 6, Seosan prevents the west coast from becoming only beach leisure. It adds pilgrimage, moral memory, local food, and the Taean gateway before Boryeong brings festival energy.",
+    "imageBrief": "Use one Haemi Martyrdom or Haemieupseong image, one tidal-flat or seafood cue, one Taean gateway image, one local food/market cue, and one route image toward Boryeong.",
+    "qualityBar": ["The page must explain Seosan through Haemi, Naepo, and Taean gateway logic.", "The page must connect Suwon, Seosan, Boryeong, and the West Sea clearly.", "The page must balance pilgrimage memory with food and coast access.", "The images must show Haemi, tidal flats, Taean gateway, local food, and Boryeong handoff."]
+  },
+  "boryeong": {
+    "city": "Boryeong",
+    "routeSlug": "route-6",
+    "historicalWeight": "Boryeong's older west-coast identity comes through fishing villages, beach movement, mudflat resources, and the relationship between local terrain and sea-based leisure.",
+    "modernIdentity": "Modern Boryeong is globally legible through Daecheon Beach, the Boryeong Mud Festival, mud cosmetics, seafood, summer stays, sunset coast, and relaxed West Sea travel.",
+    "routeMeaning": "On Route 6, Boryeong is the beach-and-festival chapter. It gives the west coast a current, playful, searchable hook before Gunsan turns the line back toward modern port history.",
+    "imageBrief": "Use one Daecheon Beach image, one Mud Festival or mud-culture cue, one sunset or seafood image, one stay-zone image, and one route image toward Gunsan.",
+    "qualityBar": ["The page must explain Boryeong through Daecheon Beach and Mud Festival identity.", "The page must make the festival useful without making the city only seasonal.", "The page must connect Seosan, Boryeong, and Gunsan clearly.", "The images must show beach, mud culture, sunset/seafood, stay texture, and Gunsan handoff."]
+  },
+  "gunsan": {
+    "city": "Gunsan",
+    "routeSlug": "route-6",
+    "historicalWeight": "Gunsan carries modern port memory, grain and maritime distribution, colonial-era streets, Japanese-style architecture, museums, and the complicated texture of Korea's modern urban history.",
+    "modernIdentity": "Modern Gunsan works through the Modern History Museum, old-town walking streets, bakeries, seafood, cafes, harbor mood, and a strong overnight before Mokpo.",
+    "routeMeaning": "On Route 6, Gunsan is the serious modern-history port anchor. It deepens the West Sea line after Boryeong and prepares Mokpo to feel like the final harbor rather than a disconnected endpoint.",
+    "imageBrief": "Use one Modern History Museum image, one old Japanese-style street or house cue, one bakery/food street image, one harbor or seafood cue, and one route image toward Mokpo.",
+    "qualityBar": ["The page must explain Gunsan as modern port memory.", "The page must handle colonial-era context with care.", "The page must connect Boryeong, Gunsan, and Mokpo.", "The images must show museum, old streets, food, harbor, and Mokpo handoff."]
+  },
+  "mokpo": {
+    "city": "Mokpo",
+    "routeSlug": "route-6",
+    "historicalWeight": "Mokpo carries southwest port memory, modern history streets, maritime trade, island departure culture, Yudalsan views, and a harbor identity that makes the city feel like a real finale.",
+    "modernIdentity": "Modern Mokpo works through seafood, ferries, cable-car and mountain views, Gatbawi, Dadohae sunsets, old-town cafes, museums, and future south-coast route expansion.",
+    "routeMeaning": "On Route 6, Mokpo is the southwest sea payoff. It turns Incheon, Suwon, Seosan, Boryeong, and Gunsan into a complete West Sea corridor and becomes the future handoff toward Route 7.",
+    "imageBrief": "Use one Yudalsan or harbor-view image, one Gatbawi image, one modern-history street image, one seafood/ferry image, and one future south-coast handoff image.",
+    "qualityBar": ["The page must make Mokpo the Route 6 finale.", "The page must connect Yudalsan, Gatbawi, harbor food, ferries, and modern history.", "The page must prepare future Route 7 south-coast expansion.", "The images must show harbor, mountain, rock, food/ferry, and southwest arrival."]
+  },
   "ulsan": {
     "city": "Ulsan",
     "routeSlug": "route-4",

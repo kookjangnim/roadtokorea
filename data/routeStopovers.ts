@@ -2550,12 +2550,259 @@ export const seoulToYeosuRoute: RouteData = {
   },
 };
 
+const westSeaModernCoastStopovers: RouteStopover[] = [
+  {
+    city: 'Incheon',
+    citySlug: 'incheon',
+    tier: 2,
+    coordinates: { lat: 37.4563, lng: 126.7052 },
+    travelTimeFromPrevious: '45m - 1h',
+    cumulativeTime: '1h',
+    pitch: 'The open-port gateway where Korea meets the West Sea through Chinatown, Wolmido, port history, islands, and modern airport-city scale.',
+    routeRole: 'Open-port first chapter',
+    stayAdvice: 'Use Incheon as the first Route 6 chapter when the traveler wants modern port history before the road turns south.',
+    whyItEarnsTime:
+      'Incheon makes Route 6 feel different from the inland routes immediately. Open-port memory, Chinatown, Wolmido, ferries, fish markets, and airport scale turn the departure from Seoul into a West Sea story.',
+    nextLegLogic: 'After Incheon, Suwon adds Joseon fortress planning before the route drops toward the Chungcheong coast.',
+    highlights: ['Incheon Chinatown', 'Wolmido open-port district', 'West Sea ferry mood'],
+  },
+  {
+    city: 'Suwon',
+    citySlug: 'suwon',
+    tier: 2,
+    coordinates: { lat: 37.2636, lng: 127.0286 },
+    travelTimeFromPrevious: '1h - 1h 20m',
+    cumulativeTime: '2h 10m',
+    pitch: 'A UNESCO fortress city where King Jeongjo, Hwaseong, markets, and city-wall walks give Route 6 a powerful inland hinge before the coast.',
+    routeRole: 'Fortress-planning hinge',
+    stayAdvice: 'Use Suwon as the most reliable first overnight if the traveler wants heritage with easy city services.',
+    whyItEarnsTime:
+      'Suwon Hwaseong brings royal Joseon planning, military architecture, markets, and walkable city-wall energy into the west-coast line.',
+    nextLegLogic: 'After Suwon, Seosan shifts the route toward Haemi, Catholic memory, tidal flats, and Taean-side coast choices.',
+    highlights: ['Suwon Hwaseong Fortress', 'King Jeongjo memory', 'Paldalmun market area'],
+  },
+  {
+    city: 'Seosan',
+    citySlug: 'seosan',
+    tier: 4,
+    coordinates: { lat: 36.7849, lng: 126.45 },
+    travelTimeFromPrevious: '1h 30m - 2h',
+    cumulativeTime: '4h',
+    pitch: 'A west-coast threshold where Haemi Catholic martyr memory, Naepo history, tidal-flat food, and Taean beach access deepen the line.',
+    routeRole: 'Naepo and Taean gateway',
+    stayAdvice: 'Use Seosan when Route 6 should add pilgrimage, local food, and Taean-side coast texture before Boryeong.',
+    whyItEarnsTime:
+      'Seosan gives the route moral and coastal depth through Haemi Martyrdom Holy Ground, Haemieupseong context, garlic and seafood identity, and the ability to branch toward Taean beaches.',
+    nextLegLogic: 'After Seosan, Boryeong turns the west coast into a recognizable beach and festival chapter.',
+    highlights: ['Haemi Martyrdom Holy Ground', 'Taean coast access', 'Naepo region memory'],
+  },
+  {
+    city: 'Boryeong',
+    citySlug: 'boryeong',
+    tier: 4,
+    coordinates: { lat: 36.3334, lng: 126.6128 },
+    travelTimeFromPrevious: '1h - 1h 20m',
+    cumulativeTime: '5h 10m',
+    pitch: 'The West Sea beach chapter where Daecheon Beach, mud culture, summer festival energy, and sunset coast make Route 6 visible to global travelers.',
+    routeRole: 'Mud festival and beach anchor',
+    stayAdvice: 'Give Boryeong a night in summer or when the traveler needs a light coastal pause before Gunsan.',
+    whyItEarnsTime:
+      'Boryeong carries one of Korea\'s most internationally legible festivals through the Mud Festival while still working as a beach, sunset, seafood, and family-travel stop.',
+    nextLegLogic: 'After Boryeong, Gunsan changes the route into modern port history and colonial-era streets.',
+    highlights: ['Daecheon Beach', 'Boryeong Mud Festival', 'Mud Museum'],
+  },
+  {
+    city: 'Gunsan',
+    citySlug: 'gunsan',
+    tier: 4,
+    coordinates: { lat: 35.9677, lng: 126.7366 },
+    travelTimeFromPrevious: '1h - 1h 20m',
+    cumulativeTime: '6h 20m',
+    pitch: 'A modern port-memory city where maritime distribution, colonial-era streets, museums, bakeries, and old-town walks give Route 6 depth.',
+    routeRole: 'Modern port memory',
+    stayAdvice: 'Use Gunsan as the serious history overnight before the route continues toward Mokpo.',
+    whyItEarnsTime:
+      'Gunsan Modern History Museum, old Japanese-style architecture, port streets, bakeries, and seafood make the city a natural Route 6 anchor.',
+    nextLegLogic: 'After Gunsan, Mokpo becomes the southwest sea arrival with Yudalsan, Gatbawi, seafood, islands, and modern harbor memory.',
+    highlights: ['Gunsan Modern History Museum', 'Old port streets', 'West Sea seafood'],
+  },
+  {
+    city: 'Mokpo',
+    citySlug: 'mokpo',
+    tier: 2,
+    coordinates: { lat: 34.8118, lng: 126.3922 },
+    travelTimeFromPrevious: '2h 20m - 3h',
+    cumulativeTime: '9h',
+    pitch: 'The southwest sea arrival where Yudalsan, Gatbawi, modern port history, seafood, ferries, and Dadohae views complete Route 6.',
+    routeRole: 'Southwest coast finale',
+    stayAdvice: 'Give Mokpo the final night; it is the West Sea payoff and the future bridge toward Route 7 south-coast expansion.',
+    whyItEarnsTime:
+      'Mokpo finishes Route 6 with real harbor character: Yudalsan views, Gatbawi geology, modern history districts, seafood, island ferries, and Dadohae sunset.',
+    highlights: ['Yudalsan Mountain', 'Mokpo Gatbawi Rock', 'Modern port district'],
+  },
+];
+
+const carWestSeaModernCoastRoute: TransportRouteVariant = {
+  id: 'west-sea-modern-coast',
+  routeCode: '6-0-c',
+  routeGroupCode: '6-0',
+  routeGroupLabel: 'West Sea Modern Coast',
+  label: 'West Sea Drive',
+  routeName: 'Seoul to Mokpo via Incheon, Suwon, Seosan, Boryeong, and Gunsan',
+  totalTravelTime: '9h - 10h driving, 4-6 days recommended',
+  totalDistance: '520-580 km',
+  summary:
+    'A west-coast route that links open-port history, Joseon fortress planning, Catholic memory, mud-festival coast, modern port streets, and a Mokpo southwest-sea finale.',
+  bestFor: 'Travelers who want Korea through modern history, ports, beaches, festivals, seafood, and the West Sea rather than the inland or east-coast lines.',
+  tradeoff:
+    'It is a longer and more episodic route than the inland lines, but it opens a very different Korea.',
+  stopPattern:
+    'Best with Suwon or Incheon as the first chapter, Boryeong or Gunsan as the middle overnight, and Mokpo as the final night.',
+  chooseWhen:
+    'Choose Route 6 when the traveler wants ports, fortress walls, mud festival energy, modern history, seafood, and a slower west-coast mood.',
+  avoidWhen:
+    'Avoid it when the traveler wants the fastest Seoul-to-Mokpo transfer or only famous headline cities.',
+  pacingNote:
+    'Route 6 should feel like changing coast chapters: open port, fortress, pilgrimage, beach festival, modern port, southwest sea.',
+  planningNotes: [
+    'Keep Incheon as the open-port first chapter, not only an airport note.',
+    'Use Suwon to give the route a strong UNESCO and Joseon planning anchor before the coast widens.',
+    'Use Gunsan and Mokpo together so the modern port story has both middle and final chapters.',
+  ],
+  stopovers: westSeaModernCoastStopovers,
+  routePath: [
+    [37.5665, 126.978],
+    [37.4563, 126.7052],
+    [37.2636, 127.0286],
+    [36.7849, 126.45],
+    [36.3334, 126.6128],
+    [35.9677, 126.7366],
+    [34.8118, 126.3922],
+  ],
+};
+
+export const seoulToMokpoRoute: RouteData = {
+  routeCode: '6',
+  from: 'Seoul',
+  fromSlug: 'seoul',
+  to: 'Mokpo',
+  toSlug: 'mokpo',
+  href: '/route-6',
+  routeLabel: 'Route 6',
+  headline: 'Seoul to Mokpo through open ports, fortress walls, West Sea beaches, modern history, and southwest harbor arrival.',
+  overview:
+    'Route 6 builds the West Sea corridor. Incheon opens the route through Korea\'s open-port memory, Suwon adds UNESCO fortress planning, Seosan brings Haemi and Taean-side coastal choices, Boryeong adds Daecheon Beach and mud festival energy, Gunsan deepens the modern port story, and Mokpo finishes with Yudalsan, Gatbawi, seafood, ferries, and Dadohae views.',
+  destinationPitch:
+    'Mokpo works as the Route 6 finale because it is not only a terminal city. It is a southwest harbor arrival with mountain views, modern port memory, seafood, islands, and future south-coast expansion logic.',
+  bestUseCases: [
+    'Travelers who want a West Sea alternative to the inland and east-coast routes.',
+    'Modern-history trips that can connect Incheon, Gunsan, and Mokpo.',
+    'Summer or shoulder-season coast trips that need Boryeong, beaches, seafood, and sunset pacing.',
+  ],
+  routePromise: [
+    'The route will make the West Sea feel like a coherent travel corridor.',
+    'It will balance modern history, coastal leisure, pilgrimage memory, and port food.',
+    'It will prepare the future Route 7 south-coast expansion from Mokpo eastward.',
+  ],
+  editorialNotes: [
+    'Incheon must be framed through open-port history and West Sea identity, not only airport access.',
+    'Suwon gives the line UNESCO credibility and should stay on the main route even though it is not coastal.',
+    'Seosan can later branch toward Taean and Anmyeondo as the west-coast network grows.',
+    'Mokpo should be treated as the southwest sea finale and Route 7 handoff candidate.',
+  ],
+  transports: {
+    KTX: {
+      mode: 'KTX',
+      id: 'rail-west-sea-modern-coast',
+      routeCode: '6-0-r',
+      routeGroupCode: '6-0',
+      routeGroupLabel: 'West Sea Modern Coast',
+      label: 'Rail + Local Transit',
+      routeName: 'Seoul to Mokpo rail-led itinerary',
+      totalTravelTime: '2h 30m - 3h 30m direct rail, 4-5 days as a route',
+      totalDistance: '520-580 km',
+      summary:
+        'A rail-led version that uses Incheon/Suwon, Gunsan, and Mokpo as strong anchors while keeping Seosan and Boryeong as theme additions.',
+      bestFor: 'Travelers without a car who still want modern port memory and a Mokpo finish.',
+      tradeoff: 'Rail keeps Mokpo easy, but Seosan and Boryeong need more local-transfer planning.',
+      stopPattern: 'Best with Suwon or Incheon, Gunsan, and Mokpo as the clearest public-transport anchors.',
+      chooseWhen: 'Choose this when the traveler wants the West Sea story without driving every coastal segment.',
+      avoidWhen: 'Avoid it when the itinerary depends on Taean beaches, remote mudflat stops, or flexible sunset timing.',
+      pacingNote: 'Keep the public-transport version selective and honest about transfers.',
+      planningNotes: [
+        'Use Suwon and Mokpo as the easiest rail anchors.',
+        'Use Gunsan for modern history when timing allows.',
+        'Keep Seosan and Boryeong optional until schedule-aware guidance is added.',
+      ],
+      stopovers: westSeaModernCoastStopovers,
+      routePath: carWestSeaModernCoastRoute.routePath,
+    },
+    car: {
+      mode: 'car',
+      ...carWestSeaModernCoastRoute,
+    },
+    bicycle: {
+      mode: 'bicycle',
+      id: 'bike-west-sea-concept',
+      routeCode: '6-0-b',
+      routeGroupCode: '6-0',
+      routeGroupLabel: 'West Sea Modern Coast',
+      label: 'West Sea Bicycle Concept',
+      routeName: 'Seoul to Mokpo west-coast bicycle concept',
+      totalTravelTime: '8-12 days',
+      totalDistance: '560-650 km',
+      summary:
+        'A serious long-distance concept using the west coast as a slower line of ports, seawalls, beaches, mudflats, and harbor cities.',
+      bestFor: 'Experienced riders who want a coast-first journey with modern-history stops.',
+      tradeoff: 'Wind, industrial roads, bridges, and local safety planning need careful attention.',
+      stopPattern: 'Use Incheon, Suwon, Seosan/Taean, Boryeong, Gunsan, and Mokpo as recovery anchors.',
+      chooseWhen: 'Choose this when the ride itself is the product and the traveler accepts detailed planning.',
+      avoidWhen: 'Avoid it for casual riders until road-safety and surface guidance is developed.',
+      pacingNote: 'The bicycle version is aspirational and should remain clearly marked as a planning concept.',
+      planningNotes: [
+        'Future work should add certified bike-path, bridge, and industrial-road safety notes.',
+        'Wind and weather matter strongly on exposed west-coast stages.',
+        'City pages should emphasize recovery, supplies, laundry, seafood, and simple stays.',
+      ],
+      stopovers: westSeaModernCoastStopovers,
+      routePath: carWestSeaModernCoastRoute.routePath,
+    },
+    bus: {
+      mode: 'bus',
+      id: 'bus-west-sea-modern-coast',
+      routeCode: '6-0-d',
+      routeGroupCode: '6-0',
+      routeGroupLabel: 'West Sea Modern Coast',
+      label: 'Intercity Bus',
+      routeName: 'Seoul to Mokpo west-coast bus route',
+      totalTravelTime: '4h-5h direct bus, 4-6 days as a route',
+      totalDistance: '520-580 km',
+      summary:
+        'A bus-friendly version for travelers who want city-to-city West Sea chapters without renting a car.',
+      bestFor: 'Budget travelers, solo travelers, and users who want port cities and beach stops.',
+      tradeoff: 'Bus keeps the route accessible but makes remote beaches and sunset timing harder.',
+      stopPattern: 'Best with Incheon/Suwon, Boryeong, Gunsan, and Mokpo as the main bus anchors.',
+      chooseWhen: 'Choose bus when price and simplicity matter more than coastal detour freedom.',
+      avoidWhen: 'Avoid it when the plan depends on Taean-side beaches, remote shrines, or exact tide windows.',
+      pacingNote: 'Bus Route 6 should use fewer anchors and avoid overpacking the coast.',
+      planningNotes: [
+        'Use Boryeong and Gunsan as the practical middle anchors.',
+        'Let Mokpo hold the final night rather than treating it as a same-day exit.',
+        'Keep Seosan/Taean as a themed addition when local transit works.',
+      ],
+      stopovers: westSeaModernCoastStopovers,
+      routePath: carWestSeaModernCoastRoute.routePath,
+    },
+  },
+};
+
 const allRoutes: RouteData[] = [
   seoulToBusanRoute,
   seoulToGangneungRoute,
   seoulToSokchoRoute,
   goseongToBusanRoute,
   seoulToYeosuRoute,
+  seoulToMokpoRoute,
 ];
 
 export function getAllRouteData(): RouteData[] {

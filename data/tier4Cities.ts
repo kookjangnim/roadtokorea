@@ -331,6 +331,36 @@ export const tier4Cities: Record<string, TierCityData> = {
       'Imsil matters because it proves Route 5 can hold modern local production stories, not only ancient heritage. Imsil cheese, the Cheese Theme Park, rural dairy memory, Okjeongho, and the Namwon handoff make it a useful branch stop after Jeonju.',
     hotspots: []
   },
+  seosan: {
+    name: 'Seosan',
+    slug: 'seosan',
+    headline: 'The Naepo And Taean Gateway',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg',
+    description: 'A west-coast threshold where Haemi Catholic memory, Naepo history, tidal-flat food, and Taean beach access deepen Route 6.',
+    culturalInsight:
+      'Seosan matters because Route 6 needs more than beach stops. Haemi Martyrdom Holy Ground, Haemieupseong, Naepo memory, seafood, garlic, and Taean-side coast choices make it the route\'s quieter moral and coastal hinge.',
+    hotspots: []
+  },
+  boryeong: {
+    name: 'Boryeong',
+    slug: 'boryeong',
+    headline: 'The Mud Festival Coast',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg',
+    description: 'A West Sea beach city where Daecheon Beach, mud culture, summer festival energy, seafood, and sunsets make the route globally legible.',
+    culturalInsight:
+      'Boryeong matters because it gives Route 6 a playful but internationally recognizable present-day hook. The Mud Festival, Daecheon Beach, mud cosmetics, seafood, and coastal stays turn the west coast from history into leisure.',
+    hotspots: []
+  },
+  gunsan: {
+    name: 'Gunsan',
+    slug: 'gunsan',
+    headline: 'The Modern Port Memory City',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg',
+    description: 'A West Sea port city where modern history streets, colonial-era architecture, museums, bakeries, seafood, and old harbor memory give Route 6 depth.',
+    culturalInsight:
+      'Gunsan matters because the west coast is also a story of ports, grain, movement, colonial pressure, and modern urban memory. Its old-town streets, Modern History Museum, bakeries, and harbor food make it a serious middle anchor before Mokpo.',
+    hotspots: []
+  },
   chungju: {
     name: 'Chungju',
     slug: 'chungju',

@@ -614,6 +614,66 @@
       "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should eventually capture seafood streets, harbor walks, Dolsan views, and night-market atmosphere." }
     }
   },
+  "incheon": {
+    "city": "Incheon",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should establish Incheon as Route 6's open-port and West Sea first chapter, not only an airport city." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show open-port streets, Chinatown, port contact, or migration-era memory." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Songdo%20Incheon.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show modern Incheon, airport scale, Songdo, ferry terminals, seafood, or island access." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolmido%20Incheon.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Wolmido, harbor, ferry, or West Sea edge before the Suwon handoff." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture Chinatown, open-port lanes, cafes, market food, and harbor walking texture." }
+    }
+  },
+  "suwon": {
+    "city": "Suwon",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg", "sourceHref": "https://whc.unesco.org/en/list/817/", "brief": "Hero should show Hwaseong Fortress as Route 6's UNESCO fortress-planning hinge before the west coast widens." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg", "sourceHref": "https://whc.unesco.org/en/list/817/", "brief": "History slot should show King Jeongjo, Hwaseong walls, gates, or planned-city context." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Paldalmun%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Paldalmun Market, food streets, night walls, or walkable city-stay texture." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Suwon handing Route 6 from Incheon open-port memory toward Seosan and the coast." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Paldalmun%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture markets, fortress-wall walks, food, and evening stay practicality." }
+    }
+  },
+  "seosan": {
+    "city": "Seosan",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Seosan as the Haemi, Naepo, and Taean gateway rather than a generic coast stop." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show Haemi Martyrdom, Haemieupseong, Catholic memory, or Naepo-region context." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taean%20Kkotji%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Taean coast access, seafood, garlic, tidal flats, or local market texture." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Seosan connecting Suwon's fortress chapter to Boryeong's beach and festival chapter." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Seosan%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should eventually capture local food, market, coast-road, and quiet gateway atmosphere." }
+    }
+  },
+  "boryeong": {
+    "city": "Boryeong",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Daecheon Beach or Boryeong Mud Festival energy as Route 6's beach chapter." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show mudflat, fishing-village, or older West Sea resource memory behind the festival." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Boryeong%20Mud%20Festival.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Boryeong Mud Festival, mud cosmetics, summer beach culture, and global search appeal." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Boryeong bridging Seosan's Haemi/Taean chapter and Gunsan's modern port memory." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture beach stays, seafood, sunset streets, festival streets, and light coastal energy." }
+    }
+  },
+  "gunsan": {
+    "city": "Gunsan",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should establish Gunsan as Route 6's modern port-history anchor before Mokpo." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show the Modern History Museum, old port streets, or colonial-era architecture with careful context." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20old%20streets.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show bakeries, cafes, seafood, old-town walking, and living port-city travel." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Port.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Gunsan linking Boryeong beach energy to Mokpo southwest harbor arrival." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20old%20streets.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture old-town lanes, bakeries, museums, seafood streets, and port atmosphere." }
+    }
+  },
+  "mokpo": {
+    "city": "Mokpo",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Yudalsan.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Mokpo as Route 6's southwest harbor finale with Yudalsan, port, and island-sea atmosphere." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Modern%20History%20Museum.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show modern port streets, museum context, maritime trade, or old harbor memory." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Gatbawi.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Gatbawi, seafood, ferries, cable-car views, cafes, or Dadohae sunset." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Harbor.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Mokpo as the West Sea finale and future Route 7 south-coast handoff." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture seafood streets, ferry mood, harbor walks, cafes, and old-town layers." }
+    }
+  },
   "ulsan": {
     "city": "Ulsan",
     "slots": {
