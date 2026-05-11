@@ -26,6 +26,18 @@ for (const term of requiredRoute3Terms) {
   if (!routeNetwork.includes(term)) failures.push(`routeNetwork.ts missing "${term}"`);
 }
 
+const requiredRoute2Terms = [
+  "id: 'route-2'",
+  "href: '/route-2'",
+  'Pyeongchang',
+  'Daegwallyeong',
+  'Gangneung',
+];
+
+for (const term of requiredRoute2Terms) {
+  if (!routeNetwork.includes(term)) failures.push(`routeNetwork.ts missing "${term}"`);
+}
+
 const requiredRoute4Terms = [
   "id: 'route-4'",
   "href: '/route-4'",
@@ -45,6 +57,9 @@ if (!routeRegistry.includes("'4': 'route-4'")) failures.push('routeRegistry.ts m
 if (!routeRegistry.includes("'route-3': { from: 'seoul', to: 'sokcho' }")) {
   failures.push('routeRegistry.ts missing route-3 route pair');
 }
+if (!routeRegistry.includes("'route-2': { from: 'seoul', to: 'gangneung' }")) {
+  failures.push('routeRegistry.ts missing route-2 route pair');
+}
 if (!routeRegistry.includes("'route-4': { from: 'goseong', to: 'busan' }")) {
   failures.push('routeRegistry.ts missing route-4 route pair');
 }
@@ -56,7 +71,14 @@ for (const slug of route3CitySlugs) {
   }
 }
 
-const route4CitySlugs = ['yangyang', 'donghae', 'ulsan'];
+const route2CitySlugs = ['wonju', 'pyeongchang', 'daegwallyeong'];
+for (const slug of route2CitySlugs) {
+  if (!routeRegistry.includes(`${slug}: 'route-2'`)) {
+    failures.push(`routeRegistry.ts missing preferred route for ${slug}`);
+  }
+}
+
+const route4CitySlugs = ['yangyang', 'donghae', 'samcheok', 'ulsan'];
 for (const slug of route4CitySlugs) {
   if (!routeRegistry.includes(`${slug}: 'route-4'`)) {
     failures.push(`routeRegistry.ts missing preferred route for ${slug}`);
@@ -75,6 +97,19 @@ const requiredRoute3StopoverTerms = [
 ];
 
 for (const term of requiredRoute3StopoverTerms) {
+  if (!routeStopovers.includes(term)) failures.push(`routeStopovers.ts missing "${term}"`);
+}
+
+const requiredRoute2StopoverTerms = [
+  'seoulToGangneungRoute',
+  'Pyeongchang',
+  'Daegwallyeong',
+  '2018 Winter Olympics',
+  'Odaesan',
+  'Gangneung should be treated as the Route 2 terminus',
+];
+
+for (const term of requiredRoute2StopoverTerms) {
   if (!routeStopovers.includes(term)) failures.push(`routeStopovers.ts missing "${term}"`);
 }
 
@@ -99,4 +134,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log('Route network validation passed for Route 3 and Route 4.');
+console.log('Route network validation passed for Route 2, Route 3, and Route 4.');

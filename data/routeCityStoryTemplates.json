@@ -248,18 +248,36 @@
     "routeSlug": "route-2",
     "historicalWeight": "Gangneung carries east-coast cultural memory through Gyeongpo, coffee streets, old pavilions, beach mornings, and the feeling of arriving at the sea after crossing Gangwon.",
     "modernIdentity": "Modern Gangneung is one of Korea's strongest coastal city brands: coffee, beaches, markets, seafood, hotels, festivals, and rail access make it a full destination rather than a waypoint.",
-    "routeMeaning": "On Route 2, Gangneung is the coast-entry payoff after Wonju. It proves the eastbound route has earned the sea before Samcheok or any longer coastline continuation begins.",
+    "routeMeaning": "On Route 2, Gangneung is the mountain-to-sea payoff after Wonju, Pyeongchang, and Daegwallyeong. It is also a junction city: the trip can end here cleanly or continue south on Route 4.",
     "imageBrief": "Use one beach or Gyeongpo image, one coffee-street cue, one market or seafood visual, one rail/coast arrival image, and one route cue from Wonju to the East Sea.",
-    "qualityBar": ["The page must explain Gangneung as Route 2's coast-entry payoff.", "The page must connect Wonju, Gangneung, and Samcheok.", "The page must balance coffee/beach identity with older east-coast memory.", "The images must show coast entry, coffee city, Gyeongpo, and Wonju payoff."]
+    "qualityBar": ["The page must explain Gangneung as Route 2's coast-entry payoff and Route 4 junction.", "The page must connect Wonju, Pyeongchang, Daegwallyeong, Gangneung, and Route 4 continuation.", "The page must balance coffee/beach identity with older east-coast memory.", "The images must show coast entry, coffee city, Gyeongpo, and highland-to-sea payoff."]
   },
   "samcheok": {
     "city": "Samcheok",
-    "routeSlug": "route-2",
+    "routeSlug": "route-4",
     "historicalWeight": "Samcheok carries cliff, cave, port, and open-road memory on the deeper east coast. It keeps the shoreline from ending too quickly after Gangneung.",
     "modernIdentity": "Modern Samcheok works through beaches, coastal rail-bike scenery, caves, ports, seafood, and slower road-trip pacing. It is a scenic continuation city more than a major urban anchor.",
-    "routeMeaning": "On Route 2, Samcheok extends the coast after Gangneung. It is strongest when the route wants cliffs, ports, and open-road atmosphere instead of stopping at the first famous beach city.",
+    "routeMeaning": "On Route 4, Samcheok is the first deeper southern coastline chapter after Gangneung and Donghae. It is strongest when the route wants cliffs, ports, caves, and open-road atmosphere on the National Route 7 line.",
     "imageBrief": "Use one cliff or beach image, one cave or rail-bike cue, one port/seafood visual, one stay-zone image, and one route cue continuing south along the East Sea.",
-    "qualityBar": ["The page must explain Samcheok as the scenic continuation after Gangneung.", "The page must connect Samcheok to Route 2's longer coast logic.", "The page must balance cave/cliff memory with modern coastal travel.", "The images must show scenic continuation, east-coast road, caves and cliffs, and Gangneung extension."]
+    "qualityBar": ["The page must explain Samcheok as Route 4's scenic continuation after Gangneung and Donghae.", "The page must connect Samcheok to National Route 7's longer coast logic.", "The page must balance cave/cliff memory with modern coastal travel.", "The images must show scenic continuation, east-coast road, caves and cliffs, and Uljin handoff."]
+  },
+  "pyeongchang": {
+    "city": "Pyeongchang",
+    "routeSlug": "route-2",
+    "historicalWeight": "Pyeongchang now carries one of Korea's clearest modern global memories through the 2018 Winter Olympics, but the place is older than the Games. Odaesan, Woljeongsa, Jinbu, highland villages, and mountain temple culture give the county deeper Korean context.",
+    "modernIdentity": "Modern Pyeongchang works through ski resorts, Olympic venues, Phoenix Snow Park, Alpensia, Yongpyong, KTX Jinbu access, resort stays, and four-season mountain travel.",
+    "routeMeaning": "On Route 2, Pyeongchang fills the gap between Wonju and Gangneung. It turns the route from an expressway jump into a real Olympic highland chapter before Daegwallyeong and the coast.",
+    "imageBrief": "Use one Olympic or ski resort image, one Odaesan or Woljeongsa image, one Jinbu or KTX access cue, one resort/stay image, and one route image toward Daegwallyeong and Gangneung.",
+    "qualityBar": ["The page must explain Pyeongchang through both 2018 Winter Olympics and older mountain/temple depth.", "The page must connect Wonju, Pyeongchang, Daegwallyeong, and Gangneung.", "The page must include ski and Odaesan search intent without becoming only a resort page.", "The images must show Olympic highlands, Odaesan/Woljeongsa, resort stay, and route handoff."]
+  },
+  "daegwallyeong": {
+    "city": "Daegwallyeong",
+    "routeSlug": "route-2",
+    "historicalWeight": "Daegwallyeong should read as a mountain pass and highland threshold before it reads as a resort label. Its wind, snow, ranch landscapes, and old crossing logic explain why Gangneung feels like an arrival after the descent.",
+    "modernIdentity": "Modern Daegwallyeong is tied to Alpensia, Yongpyong, Olympic venue memory, resort infrastructure, sheep ranch scenery, wind farms, winter sports, and quick access into Gangneung.",
+    "routeMeaning": "On Route 2, Daegwallyeong is the last highland beat before the sea. It is the place where the road changes from Olympic mountains into Gangneung coast.",
+    "imageBrief": "Use one ski or Olympic-venue cue, one highland ranch or wind-swept pass image, one resort/stay cue, and one route image showing the descent to Gangneung.",
+    "qualityBar": ["The page must explain Daegwallyeong as the final pass before Gangneung.", "The page must connect Pyeongchang, Daegwallyeong, and Gangneung.", "The page must balance ski resort identity with highland landscape and pass logic.", "The images must show highland, resort, pass, and sea-bound transition."]
   },
   "uljin": {
     "city": "Uljin",

@@ -161,6 +161,26 @@ export const tier4Cities: Record<string, TierCityData> = {
     culturalInsight: 'Wonju is defined by its deep connection to nature, offering a spiritual retreat away from the bustling city life. The harmony between ancient traditions and untouched landscapes creates an atmosphere of profound stillness.',
     hotspots: [] // Dynamic hotspots will be loaded from destinations.ts
   },
+  pyeongchang: {
+    name: 'Pyeongchang',
+    slug: 'pyeongchang',
+    headline: 'The Olympic Highland Gateway',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
+    description: 'A Gangwon highland county where the 2018 Winter Olympics, ski resorts, Jinbu access, and Odaesan turn Route 2 into a true mountain-to-sea crossing.',
+    culturalInsight:
+      'Pyeongchang matters because Route 2 should not jump from Wonju straight to Gangneung. The Olympic mountain cluster, Phoenix Snow Park, Alpensia, Yongpyong, Jinbu Station, Woljeongsa, and Odaesan give the road a highland chapter with both global memory and Korean depth.',
+    hotspots: []
+  },
+  daegwallyeong: {
+    name: 'Daegwallyeong',
+    slug: 'daegwallyeong',
+    headline: 'The Highland Pass Before The Sea',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
+    description: 'A highland pass and resort district where ski venues, ranch scenery, wind, snow, and mountain roads prepare the final descent into Gangneung.',
+    culturalInsight:
+      'Daegwallyeong matters as the last mountain threshold on Route 2. It holds Alpensia, Yongpyong, Olympic venue memory, ranch landscapes, and the physical feeling of crossing from inland Gangwon toward the East Sea.',
+    hotspots: []
+  },
   gapyeong: {
     name: 'Gapyeong',
     slug: 'gapyeong',

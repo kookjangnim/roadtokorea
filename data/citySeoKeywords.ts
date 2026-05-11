@@ -586,16 +586,44 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
   },
   samcheok: {
     city: 'Samcheok',
-    primaryIntent: 'Samcheok Korea scenic East Sea continuation after Gangneung',
-    metaKeywords: ['Samcheok Korea', 'Samcheok travel guide', 'Gangneung to Samcheok', 'Samcheok beaches', 'Samcheok caves', 'Korea east coast road trip', 'Samcheok seafood'],
+    primaryIntent: 'Samcheok Korea scenic National Route 7 coast stop after Donghae',
+    metaKeywords: ['Samcheok Korea', 'Samcheok travel guide', 'Donghae to Samcheok', 'Gangneung to Samcheok', 'Samcheok beaches', 'Samcheok caves', 'Korea east coast road trip', 'National Route 7 Korea'],
     clusters: [
-      { label: 'Route intent', terms: ['Gangneung to Samcheok', 'Korea east coast road trip', 'East Sea continuation'] },
+      { label: 'Route intent', terms: ['Donghae to Samcheok', 'Gangneung to Samcheok', 'National Route 7 Korea'] },
       { label: 'Scenery intent', terms: ['Samcheok beaches', 'Samcheok caves', 'Samcheok cliffs'] },
       { label: 'Local intent', terms: ['Samcheok seafood', 'Samcheok port', 'Samcheok overnight stop'] },
     ],
     questions: [
       { question: 'Why continue to Samcheok after Gangneung?', answer: 'Samcheok keeps the coast open with cliffs, caves, beaches, ports, and a slower road-trip rhythm.' },
       { question: 'Is Samcheok a major city anchor?', answer: 'It works better as a scenic continuation city than a large urban anchor.' },
+    ],
+  },
+  pyeongchang: {
+    city: 'Pyeongchang',
+    primaryIntent: 'Pyeongchang Korea Olympic highland stop between Wonju and Gangneung',
+    metaKeywords: ['Pyeongchang Korea', 'Pyeongchang travel guide', '2018 Winter Olympics Korea', 'Pyeongchang ski resort', 'Alpensia Resort', 'Yongpyong Resort', 'Odaesan National Park', 'Woljeongsa Temple', 'Wonju to Pyeongchang', 'Seoul to Gangneung route'],
+    clusters: [
+      { label: 'Route intent', terms: ['Wonju to Pyeongchang', 'Pyeongchang to Gangneung', 'Seoul to Gangneung route'] },
+      { label: 'Olympic intent', terms: ['2018 Winter Olympics Korea', 'Pyeongchang Olympic venues', 'Alpensia Resort'] },
+      { label: 'Mountain intent', terms: ['Odaesan National Park', 'Woljeongsa Temple', 'Pyeongchang ski resort'] },
+    ],
+    questions: [
+      { question: 'Why stop in Pyeongchang between Wonju and Gangneung?', answer: 'Pyeongchang gives Route 2 its Olympic highland chapter, with ski resorts, Jinbu access, Odaesan, Woljeongsa, and mountain pacing before Gangneung.' },
+      { question: 'Is Pyeongchang only about the 2018 Winter Olympics?', answer: 'No. The Olympics are the global hook, but Odaesan, Woljeongsa, ski resorts, highland stays, and four-season mountain travel make it broader.' },
+    ],
+  },
+  daegwallyeong: {
+    city: 'Daegwallyeong',
+    primaryIntent: 'Daegwallyeong Korea highland pass before Gangneung on Route 2',
+    metaKeywords: ['Daegwallyeong Korea', 'Daegwallyeong travel guide', 'Daegwallyeong sheep ranch', 'Alpensia Resort', 'Yongpyong Resort', 'Pyeongchang to Gangneung', 'Korea highland pass', 'Gangneung mountain route'],
+    clusters: [
+      { label: 'Route intent', terms: ['Pyeongchang to Gangneung', 'Gangneung mountain route', 'Korea highland pass'] },
+      { label: 'Ski intent', terms: ['Alpensia Resort', 'Yongpyong Resort', 'Daegwallyeong ski resort'] },
+      { label: 'Landscape intent', terms: ['Daegwallyeong sheep ranch', 'Daegwallyeong highlands', 'Gangwon winter travel'] },
+    ],
+    questions: [
+      { question: 'Why does Daegwallyeong matter before Gangneung?', answer: 'Daegwallyeong is the final highland pass before the sea, giving Route 2 a mountain threshold before Gangneung arrives.' },
+      { question: 'Is Daegwallyeong part of Pyeongchang or its own route stop?', answer: 'Administratively it belongs to the Pyeongchang highland area, but as a route stop it works as the pass and resort threshold before Gangneung.' },
     ],
   },
   uljin: {

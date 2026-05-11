@@ -7,5 +7,14 @@
     "modernIdentity": "Today Yeoju also works as a Seoul-adjacent escape with ceramics, outlet shopping, riverside leisure, and a softer suburban-to-regional rhythm before the trip commits to deeper inland movement.",
     "routeMeaning": "Yeoju is a junction city because it can send the traveler south-inland toward Chungju or east-inland toward Wonju. It should read as the first place where Seoul loosens and the route has a real choice.",
     "imageBrief": "Use Namhan River, Silleuksa or royal-tomb imagery, ceramics or outlet-present-day cues, and a map that shows the split toward Chungju and Wonju."
+  },
+  "gangneung": {
+    "city": "Gangneung",
+    "canonicalHref": "/cities/gangneung",
+    "routeSlugs": ["route-2", "route-4"],
+    "historicalWeight": "Gangneung carries old east-coast culture through Gyeongpo, Ojukheon, pavilions, markets, and beach-town memory. It is where the mountain crossing from the interior finally becomes a sea-facing city.",
+    "modernIdentity": "Today Gangneung is also coffee streets, rail access, hotels, beaches, seafood, festivals, and one of Korea's strongest coast-city brands for English-speaking travelers.",
+    "routeMeaning": "Gangneung is a junction city because Route 2 can end here as the mountain-to-sea payoff, while Route 4 can continue south along National Route 7 toward Donghae, Samcheok, and Busan.",
+    "imageBrief": "Use one mountain-to-sea arrival cue, one coffee or beach cue, one Ojukheon or Gyeongpo memory cue, and a map that shows the split between stopping in Gangneung and continuing down Route 4."
   }
 }

@@ -4099,27 +4099,27 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   gangneung: {
     slug: 'gangneung',
     city: 'Gangneung',
-    mapTitle: 'Where the east coast line truly begins to commit',
+    mapTitle: 'Where Route 2 finishes and Route 4 can begin',
     mapIntro:
-      'Gangneung is a coast-support map for deciding where to stay, where to take in the shoreline mood, and where the east coast route stops being a detour and starts being its own journey.',
+      'Gangneung is a junction support map for deciding whether Route 2 ends at the sea or Route 4 continues south along National Route 7.',
     mapCenter: { lat: 37.7519, lng: 128.8761 },
     supportSummary:
-      'Gangneung is the point of no return for the east-coast Route 1 line. Once you keep it, the trip stops being a direct Seoul-to-Busan transfer and becomes a deliberately coastal sequence with its own rhythm, mornings, and sleep logic.',
+      'Gangneung works as Route 2\'s mountain-to-sea payoff and Route 4\'s major east-coast junction. It completes the Yeoju-Wonju-Pyeongchang-Daegwallyeong crossing while keeping the coast open toward Donghae and Samcheok.',
     roleSummary:
-      'This is the coast-entry anchor. Gangneung is where the east-sea line stops looking optional and starts reading like a distinct route product built around shoreline timing, coffee, and sea-facing resets.',
+      'This is the junction city. Gangneung can be the end of Route 2 or the point where the traveler chooses the longer National Route 7 line.',
     staySummary:
       'Beach-side stays favor atmosphere, sunrise, and a slower coastal morning. Central stays work better when the route needs cleaner onward timing without giving up the first real sense of coastal commitment.',
     foodSummary:
       'Gangneung should be used for coffee, breakfast, and the first unmistakable change in daily rhythm. It is less about efficiency than about proving that the route has pivoted to the sea for real.',
     nextLegSummary:
-      'After Gangneung, the coast route can no longer act like a practical add-on. It has to keep delivering shoreline continuity, spacing, and atmosphere all the way south.',
+      'After Gangneung, Route 2 is complete. Continuing south should be framed as Route 4, where Donghae and Samcheok take over the coastline story.',
     accommodationNote:
       'Strongest stay-planning angle: beach-front stays and cafe-street adjacent hotels.',
     sections: [
       {
-        title: 'Why Gangneung changes the whole route',
+        title: 'Why Gangneung completes Route 2',
         body:
-          'Gangneung matters because it is not just another stop on the east side. It is the city where the east-coast version of Route 1 starts reading like a distinct product.',
+          'Gangneung matters because it lets the Seoul-to-east route resolve clearly. After Yeoju, Wonju, Pyeongchang, and Daegwallyeong, the sea finally arrives with enough city life to hold the finish.',
       },
       {
         title: 'Why the morning matters here',
@@ -4127,23 +4127,23 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'A coastal stay is not only about arrival. The morning light, breakfast rhythm, and sea-facing start are what justify keeping Gangneung overnight at all.',
       },
       {
-        title: 'How it sets up the long coast',
+        title: 'How it becomes Route 4',
         body:
-          'Once this city lands properly, later places like Uljin, Yeongdeok, and Pohang feel like continuation rather than random pins on a map.',
+          'Once this city lands properly, the traveler can either stop or continue south. That continuation belongs to Route 4, where Donghae, Samcheok, Uljin, Yeongdeok, and Pohang become a separate coastal sequence.',
       },
     ],
     decisions: [
       {
-        title: 'Stay by the beach and let the coast take over',
-        bestFor: 'Travelers who want the east-coast route to feel visibly committed from the first overnight.',
+        title: 'Finish Route 2 at the beach',
+        bestFor: 'Travelers who want the mountain-to-sea route to feel complete in Gangneung.',
         why:
-          'This is the version of Gangneung that makes the route unmistakably maritime at night and again at first light.',
+          'This is the version of Gangneung that makes Route 2 feel fully resolved at night and again at first light.',
       },
       {
-        title: 'Stay central and keep the coast efficient',
-        bestFor: 'Travelers who want coastal mood without letting the next shoreline day become sloppy.',
+        title: 'Stay central before Route 4',
+        bestFor: 'Travelers who want coastal mood while preserving a clean southbound continuation.',
         why:
-          'A more central stay keeps Gangneung useful while protecting the longer coast chapter that begins after it.',
+          'A more central stay keeps Gangneung useful while protecting the Route 4 handoff toward Donghae and Samcheok.',
       },
     ],
     stayZones: [
@@ -4165,11 +4165,11 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     visuals: [
       {
         eyebrow: 'Coast-entry',
-        title: 'Gangneung is where the east coast line stops looking optional',
+        title: 'Gangneung is where Route 2 reaches the sea',
         image: '/images/routes/route-1/gangneung/support-1-generated-v1.png',
         alt: 'Editorial route image for Gangneung coast entry',
         body:
-          'This city gives the east-coast Route 1 line its first convincing shoreline identity.',
+          'This city gives Route 2 its full mountain-to-sea payoff.',
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/gangneung/support-1-generated-v1.png',
         licenseLabel: 'Internal',
@@ -4187,11 +4187,11 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
       {
         eyebrow: 'Route commitment',
-        title: 'After this city the coastline has to keep delivering',
+        title: 'After this city, Route 4 takes over the coastline',
         image: '/images/routes/route-1/gangneung/support-3-generated-v1.png',
         alt: 'Editorial route image for Gangneung shoreline commitment',
         body:
-          'Used well, Gangneung makes every later east-coast stop feel more coherent.',
+          'Used well, Gangneung makes Donghae, Samcheok, and the longer National Route 7 sequence feel intentional.',
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/gangneung/support-3-generated-v1.png',
         licenseLabel: 'Internal',
@@ -4227,12 +4227,12 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
       {
         id: 'gangneung-uljin-handoff',
-        name: 'Southbound coast handoff',
+        name: 'Route 4 southbound handoff',
         kind: 'checkpoint',
         areaLabel: 'Route 7 south',
         coordinates: { lat: 37.6942, lng: 129.0324 },
-        summary: 'The line where the first coastal anchor starts handing the route to its longer shoreline chapters.',
-        note: 'After this point, the route should stay convincingly maritime.',
+        summary: 'The line where Gangneung stops being Route 2 and starts handing the coast to Route 4.',
+        note: 'After this point, Donghae and Samcheok should carry the shoreline story.',
       },
       {
         id: 'gangneung-breakfast-launch',
@@ -4254,12 +4254,274 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
     ],
   },
+  pyeongchang: {
+    slug: 'pyeongchang',
+    city: 'Pyeongchang',
+    mapTitle: 'Where Route 2 becomes Olympic highland before the sea',
+    mapIntro:
+      'Pyeongchang is a support map for the gap between Wonju and Gangneung: Olympic venues, Jinbu access, Odaesan, Woljeongsa, ski resorts, and highland recovery.',
+    mapCenter: { lat: 37.3705, lng: 128.3902 },
+    supportSummary:
+      'Pyeongchang works as Route 2\'s Olympic highland gateway. It turns the eastbound line into a real mountain-to-sea route through 2018 Winter Olympics memory, Odaesan, Woljeongsa, ski resorts, and Jinbu access.',
+    roleSummary:
+      'This is the chapter that prevents Route 2 from jumping blankly between Wonju and Gangneung.',
+    staySummary:
+      'Stay near Jinbu or Odaesan for temple and national-park access; stay around the resort cluster when skiing, Olympic memory, or winter logistics matter more.',
+    foodSummary:
+      'Food should be framed through mountain warmth, resort practicality, temple-side pacing, and simple meals that support winter or hiking days.',
+    nextLegSummary:
+      'After Pyeongchang, Daegwallyeong should feel like the final highland pass before Gangneung and the East Sea.',
+    accommodationNote:
+      'Strongest stay-planning angle: Odaesan/Jinbu for temple and park access, resort cluster for ski and Olympic highland stays.',
+    sections: [
+      {
+        title: 'Why Pyeongchang fills the Route 2 gap',
+        body:
+          'Without Pyeongchang, Route 2 moves too abruptly from Wonju to Gangneung. The county gives the route a highland chapter with global recognition and local mountain depth.',
+      },
+      {
+        title: 'Why the Olympics are only the opening hook',
+        body:
+          'The 2018 Winter Olympics make Pyeongchang searchable, but Odaesan, Woljeongsa, Jinbu, and the ski-resort geography make it usable as a travel stop.',
+      },
+      {
+        title: 'How it hands off to Daegwallyeong',
+        body:
+          'Pyeongchang sets up the mountain mood; Daegwallyeong turns that mood into a pass before Gangneung arrives as the coast.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Use the Olympic resort cluster',
+        bestFor: 'Ski trips, winter stays, Olympic venue interest, and travelers who want easy resort logistics.',
+        why:
+          'Alpensia, Yongpyong, and nearby winter infrastructure make the highland chapter legible to international travelers.',
+      },
+      {
+        title: 'Use Odaesan and Woljeongsa',
+        bestFor: 'Temple walks, fir forest, national-park depth, and a quieter non-ski version of Pyeongchang.',
+        why:
+          'This side gives the city older Korean depth and stops it from reading only as a 2018 Olympics footnote.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay around Jinbu and Odaesan',
+        areaLabel: 'Jinbu / Odaesan',
+        bestFor: 'Temple, national park, and calmer mountain access.',
+        why:
+          'This zone gives Route 2 the historical and natural layer between Wonju and Gangneung.',
+      },
+      {
+        title: 'Stay in the resort cluster',
+        areaLabel: 'Alpensia / Yongpyong',
+        bestFor: 'Skiing, Olympic venues, and winter logistics.',
+        why:
+          'This zone makes the global Pyeongchang memory tangible as a stay decision.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Olympic highland',
+        title: 'Alpensia makes the 2018 Winter Olympics visible on Route 2',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
+        alt: 'Alpensia Resort in Pyeongchang',
+        body:
+          'Use the resort cluster as the immediate visual hook, then let the page widen into Odaesan and Woljeongsa.',
+        sourceLabel: 'Alpensia Resort reference',
+        sourceHref: 'https://www.alpensia.com/en/info/introduction.do',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Mountain depth',
+        title: 'Odaesan keeps Pyeongchang older than the Games',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
+        alt: 'Pyeongchang highland placeholder reference for Odaesan context',
+        body:
+          'Odaesan and Woljeongsa are the reason the city can carry more than ski and Olympic keywords.',
+        sourceLabel: 'VISITKOREA Odaesan reference',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=110675',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Route handoff',
+        title: 'Jinbu and the highlands prepare the final pass',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
+        alt: 'Pyeongchang highland route reference',
+        body:
+          'The practical route story is simple: Wonju sets up the eastbound move, Pyeongchang gives it altitude, and Daegwallyeong prepares the coast.',
+        sourceLabel: 'Route editorial reference',
+        sourceHref: '/route-2',
+        licenseLabel: 'Internal',
+      },
+    ],
+    points: [
+      {
+        id: 'pyeongchang-olympic-cluster',
+        name: 'Olympic resort cluster',
+        kind: 'stay',
+        areaLabel: 'Alpensia / Yongpyong',
+        coordinates: { lat: 37.661, lng: 128.68 },
+        summary: 'The strongest stay zone for ski, Olympic venue, and winter-resort logic.',
+        note: 'Use this when Route 2 should show global winter-sports memory.',
+      },
+      {
+        id: 'pyeongchang-odaesan',
+        name: 'Odaesan and Woljeongsa side',
+        kind: 'checkpoint',
+        areaLabel: 'Jinbu / Odaesan',
+        coordinates: { lat: 37.731, lng: 128.592 },
+        summary: 'The national-park and temple side that gives Pyeongchang deeper Korean context.',
+        note: 'This is the counterweight to the Olympic resort image.',
+      },
+      {
+        id: 'pyeongchang-jinbu',
+        name: 'Jinbu access point',
+        kind: 'mobility',
+        areaLabel: 'Jinbu',
+        coordinates: { lat: 37.636, lng: 128.556 },
+        summary: 'The access logic that makes Pyeongchang usable between Wonju and Gangneung.',
+        note: 'Useful for keeping the route practical as well as scenic.',
+      },
+    ],
+  },
+  daegwallyeong: {
+    slug: 'daegwallyeong',
+    city: 'Daegwallyeong',
+    mapTitle: 'Where the highland pass prepares Gangneung',
+    mapIntro:
+      'Daegwallyeong is a Route 2 support map for the final mountain threshold: resorts, ranches, wind, snow, and the descent toward Gangneung.',
+    mapCenter: { lat: 37.6771, lng: 128.7051 },
+    supportSummary:
+      'Daegwallyeong works as Route 2\'s final highland pass before Gangneung. It carries Alpensia, Yongpyong, Olympic venue memory, ranch scenery, and the physical feeling of crossing from mountains to sea.',
+    roleSummary:
+      'This is the last mountain beat before Gangneung becomes the Route 2 payoff and Route 4 junction.',
+    staySummary:
+      'Stay here when the mountain chapter should become a night: winter sports, ranch scenery, resort comfort, or a slower descent into Gangneung.',
+    foodSummary:
+      'Food is best framed as mountain warmth and resort practicality: simple meals, hot bowls, and low-friction stops before the coast.',
+    nextLegSummary:
+      'After Daegwallyeong, Gangneung should arrive as a proper finish rather than just the next city.',
+    accommodationNote:
+      'Strongest stay-planning angle: resort stay for ski/logistics, pass-side pause for scenery and mountain atmosphere.',
+    sections: [
+      {
+        title: 'Why Daegwallyeong is the pass',
+        body:
+          'Daegwallyeong is the physical threshold that makes the route feel crossed. The road should feel like it has earned the coast before Gangneung appears.',
+      },
+      {
+        title: 'Why it is more than a resort label',
+        body:
+          'Alpensia and Yongpyong are useful hooks, but the highland wind, ranch landscape, and pass geography are what make the route story work.',
+      },
+      {
+        title: 'How it hands off to Gangneung',
+        body:
+          'This stop is strongest when it makes Gangneung feel like release: mountain behind, sea ahead, and Route 2 complete.',
+      },
+    ],
+    decisions: [
+      {
+        title: 'Keep the resort version',
+        bestFor: 'Skiers, families, winter trips, and travelers who want easy lodging before Gangneung.',
+        why:
+          'Resort infrastructure makes the highland stay simple and internationally legible.',
+      },
+      {
+        title: 'Use the pass-and-ranch version',
+        bestFor: 'Scenery, road-trip pacing, and travelers who care about the mountain-to-sea transition.',
+        why:
+          'This version explains the route better because it turns geography into a felt crossing.',
+      },
+    ],
+    stayZones: [
+      {
+        title: 'Stay in the resort belt',
+        areaLabel: 'Alpensia / Yongpyong',
+        bestFor: 'Ski, winter, and low-friction lodging.',
+        why:
+          'This keeps the highland stop practical and easy to plan.',
+      },
+      {
+        title: 'Pause on the pass side',
+        areaLabel: 'Daegwallyeong highlands',
+        bestFor: 'Ranch scenery, wind, snow, and mountain atmosphere.',
+        why:
+          'This gives the stop a sense of crossing before the coast.',
+      },
+    ],
+    visuals: [
+      {
+        eyebrow: 'Final pass',
+        title: 'Daegwallyeong makes Gangneung feel earned',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
+        alt: 'Alpensia highland resort reference for Daegwallyeong',
+        body:
+          'The pass is the missing emotional beat before the sea. It should read as threshold, not filler.',
+        sourceLabel: 'Alpensia Resort reference',
+        sourceHref: 'https://www.alpensia.com/en/info/introduction.do',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Resort logic',
+        title: 'Alpensia and Yongpyong make the stop practical',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
+        alt: 'Daegwallyeong resort reference',
+        body:
+          'The resort cluster gives travelers a simple reason to sleep in the mountains instead of racing down to Gangneung.',
+        sourceLabel: 'Alpensia Resort reference',
+        sourceHref: 'https://www.alpensia.com/en/info/introduction.do',
+        licenseLabel: 'External reference',
+      },
+      {
+        eyebrow: 'Coast setup',
+        title: 'After this point, Route 2 resolves into Gangneung',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
+        alt: 'Highland-to-coast route reference',
+        body:
+          'Daegwallyeong should make the traveler feel the final change of terrain before the East Sea arrives.',
+        sourceLabel: 'Route editorial reference',
+        sourceHref: '/route-2',
+        licenseLabel: 'Internal',
+      },
+    ],
+    points: [
+      {
+        id: 'daegwallyeong-resort-belt',
+        name: 'Resort belt',
+        kind: 'stay',
+        areaLabel: 'Alpensia / Yongpyong',
+        coordinates: { lat: 37.661, lng: 128.68 },
+        summary: 'The practical ski and lodging cluster before Gangneung.',
+        note: 'Use this for winter trips and easy highland stays.',
+      },
+      {
+        id: 'daegwallyeong-pass',
+        name: 'Highland pass checkpoint',
+        kind: 'checkpoint',
+        areaLabel: 'Daegwallyeong',
+        coordinates: { lat: 37.6771, lng: 128.7051 },
+        summary: 'The final mountain threshold before Route 2 reaches the sea.',
+        note: 'This is the route identity point, not just a map label.',
+      },
+      {
+        id: 'daegwallyeong-gangneung-descent',
+        name: 'Gangneung descent',
+        kind: 'mobility',
+        areaLabel: 'Eastbound descent',
+        coordinates: { lat: 37.704, lng: 128.82 },
+        summary: 'The line where highland travel turns into coastal arrival.',
+        note: 'After this, Gangneung should land as the Route 2 finish.',
+      },
+    ],
+  },
   samcheok: {
     slug: 'samcheok',
     city: 'Samcheok',
     mapTitle: 'Where the east coast keeps unfolding instead of rushing south',
     mapIntro:
-      'Samcheok is a continuity map for the east coast. It matters when the route should stay scenic, open-road, and visibly shoreline-led between Gangneung and Uljin.',
+      'Samcheok is a continuity map for Route 4. It matters when the National Route 7 line should stay scenic, open-road, and visibly shoreline-led after Donghae and before Uljin.',
     mapCenter: { lat: 37.4499, lng: 129.1652 },
     supportSummary:
       'Samcheok works as the scenic continuation node. It keeps the east coast from collapsing into only a few major names and gives the shoreline one more believable chapter of cliffs, ports, and open road.',
@@ -4275,9 +4537,9 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Strongest stay-planning angle: one low-friction shoreline stay group and one more scenic coast-road stay read for travelers who want the east coast to unfold in chapters.',
     sections: [
       {
-        title: 'Why Samcheok matters after Gangneung',
+        title: 'Why Samcheok matters after Donghae',
         body:
-          'Samcheok keeps Gangneung from becoming the only convincing coast chapter. It gives the east side another stretch where the route feels scenic, spacious, and intentionally sea-led.',
+          'Samcheok keeps the Gangneung-Donghae section from being the whole coast story. It gives Route 4 another stretch where the road feels scenic, spacious, and intentionally sea-led.',
       },
       {
         title: 'Why a smaller scenic city can still earn a night',

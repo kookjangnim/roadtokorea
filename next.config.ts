@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/tier-1/gangneung',
-        destination: '/route-2/gangneung',
+        destination: '/cities/gangneung',
         permanent: true,
       },
       {
@@ -39,12 +39,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/tier-4/:city(wonju|samcheok)',
+        source: '/tier-4/:city(wonju|pyeongchang|daegwallyeong)',
         destination: '/route-2/:city',
         permanent: true,
       },
       {
-        source: '/tier-4/:city(yangyang|donghae|ulsan)',
+        source: '/tier-4/:city(yangyang|donghae|samcheok|ulsan)',
         destination: '/route-4/:city',
         permanent: true,
       },

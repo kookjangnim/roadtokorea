@@ -1067,29 +1067,29 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
   routeCode: '2-0-b',
   routeGroupCode: '2-0',
   routeGroupLabel: 'Eastbound Opening',
-  label: 'Wonju Junction + Coast Opening',
-  routeName: 'Yeongdong Expressway via Wonju',
-  totalTravelTime: '2h 40m - 3h 30m',
-  totalDistance: '230 km',
+  label: 'Olympic Highlands + Coast Arrival',
+  routeName: 'Yeongdong Expressway via Wonju, Pyeongchang, and Daegwallyeong',
+  totalTravelTime: '3h 20m - 4h 30m',
+  totalDistance: '250 km',
   summary:
-    'The strongest editorial version of Route 2: Seoul urgency loosens through Yeoju, gathers in Wonju, then opens fully once Gangneung reaches the sea.',
+    'The strongest editorial version of Route 2: Seoul urgency loosens through Yeoju, gathers in Wonju, rises into Pyeongchang and Daegwallyeong, then resolves at Gangneung and the sea.',
   bestFor:
     'Self-drive trips that want a real eastbound shape instead of a simple destination transfer.',
   tradeoff:
-    'It is still efficient, but the point is to let the route breathe through Wonju and stay open to a coastal second act.',
+    'It is still efficient, but the point is to let the route breathe through Wonju, Olympic highlands, Odaesan context, and the final descent into Gangneung.',
   stopPattern:
-    'Best with Yeoju as the first junction cue, one strong inland pause in Wonju, and one decision point in Gangneung about whether to stop or keep rolling south.',
+    'Best with Yeoju as the first junction cue, Wonju as the inland hinge, Pyeongchang/Daegwallyeong as the highland chapter, and Gangneung as the clean arrival.',
   chooseWhen:
-    'Choose this when Gangneung should feel like the beginning of the coast and Wonju should matter as more than a highway blur.',
+    'Choose this when Gangneung should feel earned through mountains, winter-sports memory, Odaesan, and the Daegwallyeong pass rather than simply reached.',
   avoidWhen:
     'Skip it if the only goal is to arrive in Gangneung as fast as possible without giving the route any structure of its own.',
   pacingNote:
-    'This version works best when Wonju handles the inland release and Gangneung handles the coastal threshold, with Samcheok as the optional second act rather than a requirement.',
+    'This version works best when Wonju handles the inland release, Pyeongchang and Daegwallyeong carry the highland story, and Gangneung lands as the Route 2 terminus.',
   planningNotes: [
     'Yeoju gives Route 2 a cleaner first junction cue before Wonju carries the deeper eastbound hinge role.',
     'Wonju is the route-defining city here because it is the first place the eastbound line starts feeling branch-capable instead of Seoul-adjacent.',
-    'Gangneung should be treated as a threshold city: users can stop there, but the route copy should leave the coast visibly open beyond it.',
-    'Samcheok is useful when the drive should prove that the eastbound route is not only about reaching one beach city and stopping.',
+    'Pyeongchang and Daegwallyeong should carry 2018 Winter Olympics, ski resort, Odaesan, Woljeongsa, ranch, and highland-pass identity.',
+    'Gangneung should be treated as the Route 2 terminus and a junction city where travelers can either stop or continue onto Route 4.',
   ],
   stopovers: [
     {
@@ -1148,20 +1148,74 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
       highlights: ['Eastbound junction logic', 'Dependable city services', 'Inland-to-Gangwon threshold'],
     },
     {
+      city: 'Pyeongchang',
+      citySlug: 'pyeongchang',
+      tier: 4,
+      coordinates: { lat: 37.3705, lng: 128.3902 },
+      travelTimeFromPrevious: '55m',
+      cumulativeTime: '2h 50m',
+      pitch: 'The Olympic highland chapter where Route 2 gains winter-sports memory, Jinbu access, ski resorts, and Odaesan depth before the sea.',
+      routeRole: 'Olympic highland gateway',
+      stayAdvice:
+        'Use Pyeongchang when the trip should slow into the mountains, ski resorts, Odaesan, Woljeongsa, or the 2018 Winter Olympics story before Gangneung.',
+      whyItEarnsTime:
+        'Pyeongchang makes Route 2 feel like a mountain-to-sea crossing instead of a blank expressway between Wonju and Gangneung.',
+      decisionReason:
+        'Keep Pyeongchang when the route needs global recognition and local depth in the same highland chapter.',
+      recoveryValue:
+        'Resort stays, temple walks, forest air, and cooler highland pacing make this the strongest recovery layer between Wonju and Gangneung.',
+      sleepValue:
+        'A strong overnight for ski trips, Odaesan visits, slower winter travel, or anyone who wants Gangneung to arrive the next day with more force.',
+      foodValue:
+        'Mountain resort meals, simple local food, and temple-adjacent pacing support the stop without needing a big-city dining identity.',
+      terrainTransition:
+        'Pyeongchang is where Route 2 climbs from inland city logic into Gangwon highland atmosphere.',
+      nextLegLogic:
+        'After Pyeongchang, Daegwallyeong becomes the final pass-side cue before the road drops toward Gangneung and the East Sea.',
+      highlights: ['2018 Winter Olympics', 'Odaesan National Park', 'Woljeongsa Temple'],
+    },
+    {
+      city: 'Daegwallyeong',
+      citySlug: 'daegwallyeong',
+      tier: 4,
+      coordinates: { lat: 37.6771, lng: 128.7051 },
+      travelTimeFromPrevious: '35m',
+      cumulativeTime: '3h 25m',
+      pitch: 'The highland pass where ski venues, ranch scenery, wind, snow, and mountain roads prepare the final descent to Gangneung.',
+      routeRole: 'Final highland pass',
+      stayAdvice:
+        'Use Daegwallyeong when the route should feel like it crosses a real mountain threshold before the coast arrives.',
+      whyItEarnsTime:
+        'It gives Route 2 a physical and emotional last mountain beat between Pyeongchang and Gangneung.',
+      decisionReason:
+        'Keep Daegwallyeong when the page needs to explain why Gangneung feels like a payoff after a crossing, not just a destination.',
+      recoveryValue:
+        'Highland air, resort infrastructure, and ranch-side scenery create a softer pause before the coast.',
+      sleepValue:
+        'Useful for winter resort stays or slower travelers who want the mountain pass to become a night rather than a drive-by.',
+      foodValue:
+        'Best framed through resort meals, simple mountain food, and warm stops before the descent.',
+      terrainTransition:
+        'Daegwallyeong is the final mountain threshold before Route 2 turns from highland to sea.',
+      nextLegLogic:
+        'After Daegwallyeong, Gangneung should arrive as the clear Route 2 terminus and Route 4 junction.',
+      highlights: ['Alpensia', 'Yongpyong', 'Daegwallyeong highlands'],
+    },
+    {
       city: 'Gangneung',
       citySlug: 'gangneung',
       tier: 1,
       coordinates: { lat: 37.7519, lng: 128.8761 },
-      travelTimeFromPrevious: '1h 30m',
-      cumulativeTime: '2h 50m',
-      pitch: 'The first real sea-facing threshold where the route stops being inland movement and starts reading like an east coast chapter.',
-      routeRole: 'Coast-opening threshold',
+      travelTimeFromPrevious: '35m',
+      cumulativeTime: '4h',
+      pitch: 'The sea-facing terminus where Route 2 finally resolves after Yeoju, Wonju, Pyeongchang, and Daegwallyeong.',
+      routeRole: 'Route 2 terminus and Route 4 junction',
       stayAdvice:
-        'Keep Gangneung if the route should land softly at the coast, but do not write it like a hard ending when the shoreline can still keep unfolding.',
+        'Keep Gangneung as the Route 2 finish. From here, travelers either stay and let the mountain-to-sea route complete or continue south on Route 4.',
       whyItEarnsTime:
-        'Gangneung earns time because it changes the geometry of the trip. After this point, the route can become a chain of sea-facing choices instead of a single arrival.',
+        'Gangneung earns time because it converts the highland crossing into a full coastal arrival and a clean route decision point.',
       decisionReason:
-        'Choose Gangneung when the route needs a true threshold city rather than a simple endpoint with no onward story.',
+        'Choose Gangneung when the route needs a true ending that can also become a junction into the longer National Route 7 coast.',
       recoveryValue:
         'Sea air, easier pacing, and a calmer shoreline mood make Gangneung one of the clearest emotional resets on the eastbound line.',
       sleepValue:
@@ -1169,33 +1223,19 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
       foodValue:
         'Coffee, seafood, and coast-adjacent meals matter here because they reinforce the route identity shift from inland hinge to shoreline chapter.',
       terrainTransition:
-        'Gangneung is the place where Route 2 fully crosses over from interior positioning into east coast presence.',
+        'Gangneung is the place where Route 2 fully crosses over from interior and highland positioning into east coast presence.',
       nextLegLogic:
-        'From Gangneung, the route can stop honorably or continue south into Samcheok if the user wants proof that the coast is really open.',
+        'From Gangneung, the route can stop honorably or continue south into Route 4 toward Donghae and Samcheok.',
       highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
-    },
-    {
-      city: 'Samcheok',
-      citySlug: 'samcheok',
-      tier: 4,
-      coordinates: { lat: 37.4499, lng: 129.1652 },
-      travelTimeFromPrevious: '1h 10m',
-      cumulativeTime: '4h',
-      pitch: 'A quieter shoreline continuation that proves Gangneung was the opening of the coast, not just the end of the road.',
-      routeRole: 'Optional second act',
-      stayAdvice:
-        'Use Samcheok if you want the coast to unfold in chapters and avoid making Gangneung carry the entire identity of Route 2 by itself.',
-      whyItEarnsTime:
-        'It confirms that the route can keep breathing after Gangneung and gives the eastbound family more than one sea-facing beat.',
-      highlights: ['Jangho Port', 'Hwanseon Cave', 'Samcheok Ocean Rail Bike'],
     },
   ],
   routePath: [
     [37.5665, 126.978],
     [37.298, 127.637],
     [37.3422, 127.9202],
+    [37.3705, 128.3902],
+    [37.6771, 128.7051],
     [37.7519, 128.8761],
-    [37.4499, 129.1652],
   ],
 };
 
@@ -1209,13 +1249,13 @@ const bicycleSeoulGangneungRoute: TransportRouteVariant = {
   totalTravelTime: '2-4 days',
   totalDistance: '220-260 km',
   summary:
-    'A stitched eastbound bicycle corridor that uses Seoul-side path logic, practical inland connections through Wonju, and a coast-opening finish in Gangneung.',
+    'A stitched eastbound bicycle corridor that uses Seoul-side path logic, Wonju setup, highland caution through Pyeongchang and Daegwallyeong, and a coast-opening finish in Gangneung.',
   bestFor:
     'Riders who want an honest eastbound route concept rather than a false promise of one perfectly continuous certified line.',
   tradeoff:
     'It takes more planning discipline than a single official path, but it produces a much clearer Seoul-to-coast narrative.',
   stopPattern:
-    'Best with Wonju as the setup hinge and Gangneung as the coast-opening finish, with Samcheok optional if the ride continues south.',
+    'Best with Wonju as the setup hinge, Pyeongchang or Daegwallyeong as the mountain checkpoint, and Gangneung as the coast-opening finish.',
   chooseWhen:
     'Choose this when the ride should feel assembled with intention and when Wonju matters as a true inland branch city before the coast.',
   avoidWhen:
@@ -1225,7 +1265,7 @@ const bicycleSeoulGangneungRoute: TransportRouteVariant = {
   planningNotes: [
     'Be explicit that this is a stitched corridor using official path logic where available and practical linking segments where necessary.',
     'Wonju is the most useful inland hinge because it can absorb setup, weather, fatigue, and route-choice adjustments before the final eastbound commitment.',
-    'If the rider still has energy after Gangneung, Samcheok is the cleanest first proof that the route can convert into an east-coast sequence.',
+        'If the rider still has energy after Gangneung, Route 4 is the right frame for continuing south toward Donghae and Samcheok.',
   ],
   stopovers: [
     {
@@ -1256,6 +1296,36 @@ const bicycleSeoulGangneungRoute: TransportRouteVariant = {
       highlights: ['Setup flexibility', 'Resupply strength', 'Eastbound branch logic'],
     },
     {
+      city: 'Pyeongchang',
+      citySlug: 'pyeongchang',
+      tier: 4,
+      coordinates: { lat: 37.3705, lng: 128.3902 },
+      travelTimeFromPrevious: 'mountain approach',
+      cumulativeTime: 'highland checkpoint',
+      pitch: 'The Olympic highland checkpoint where the ride becomes a real Gangwon crossing rather than an abstract eastbound line.',
+      routeRole: 'Highland checkpoint',
+      stayAdvice:
+        'Use Pyeongchang when the bike route needs a safer mountain-stage pause, Odaesan context, or winter-sports geography before Daegwallyeong.',
+      whyItEarnsTime:
+        'It adds recovery and realism to a route that should not pretend the mountain crossing is casual.',
+      highlights: ['Olympic highlands', 'Jinbu access', 'Odaesan context'],
+    },
+    {
+      city: 'Daegwallyeong',
+      citySlug: 'daegwallyeong',
+      tier: 4,
+      coordinates: { lat: 37.6771, lng: 128.7051 },
+      travelTimeFromPrevious: 'final climb logic',
+      cumulativeTime: 'pass threshold',
+      pitch: 'The final highland threshold before the ride drops toward Gangneung and sea air.',
+      routeRole: 'Pass threshold',
+      stayAdvice:
+        'Treat Daegwallyeong as a serious weather and effort checkpoint, not just a scenic label.',
+      whyItEarnsTime:
+        'It explains why Gangneung feels earned after the crossing.',
+      highlights: ['Highland pass', 'Resort infrastructure', 'Gangneung descent'],
+    },
+    {
       city: 'Gangneung',
       citySlug: 'gangneung',
       tier: 1,
@@ -1270,27 +1340,13 @@ const bicycleSeoulGangneungRoute: TransportRouteVariant = {
         'It is the city that makes the stitched corridor worth building in the first place by delivering a clean and legible arrival into the east coast.',
       highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
     },
-    {
-      city: 'Samcheok',
-      citySlug: 'samcheok',
-      tier: 4,
-      coordinates: { lat: 37.4499, lng: 129.1652 },
-      travelTimeFromPrevious: '3-4h',
-      cumulativeTime: 'optional coast continuation',
-      pitch: 'A small but useful continuation chapter if the rider wants Gangneung to open the coast rather than close the route.',
-      routeRole: 'Optional continuation',
-      stayAdvice:
-        'Use Samcheok only when the ride should convert into an east coast sequence; it is not required to make the Route 2 concept work.',
-      whyItEarnsTime:
-        'It gives the bicycle version a believable second act without pretending the whole trip must keep running south.',
-      highlights: ['Jangho Port', 'Shoreline roads', 'Smaller coast rhythm'],
-    },
   ],
   routePath: [
     [37.5665, 126.978],
     [37.3422, 127.9202],
+    [37.3705, 128.3902],
+    [37.6771, 128.7051],
     [37.7519, 128.8761],
-    [37.4499, 129.1652],
   ],
 };
 
@@ -1302,24 +1358,25 @@ export const seoulToGangneungRoute: RouteData = {
   toSlug: 'gangneung',
   href: '/route-2',
   routeLabel: 'Seoul to Gangneung',
-  headline: 'An eastbound route that uses Yeoju first, then hinges on Wonju before the coast opens.',
+  headline: 'A mountain-to-sea route through Yeoju, Wonju, Pyeongchang, Daegwallyeong, and Gangneung.',
   overview:
-    'Route 2 is not a smaller Seoul-to-Busan. It is the cleanest Seoul-origin eastbound line on the site: Yeoju creates the first branch cue, Wonju releases the route inland, then Gangneung turns it toward the sea.',
+    'Route 2 is not a smaller Seoul-to-Busan. It is the cleanest Seoul-origin eastbound line on the site: Yeoju creates the first branch cue, Wonju releases the route inland, Pyeongchang and Daegwallyeong carry the Olympic highland crossing, then Gangneung completes the move at the sea.',
   destinationPitch:
-    'Use this route when Gangneung should feel like a threshold city and when the trip might stop there or keep unfolding into the east coast.',
+    'Use this route when Gangneung should feel like a real mountain-to-sea payoff and a junction into the longer east coast.',
   bestUseCases: [
     'Trips that want a shorter flagship route without losing clear stopover logic.',
-    'Eastbound itineraries where Yeoju and Wonju should matter as real junction cities, not just pass-through names.',
+    'Eastbound itineraries where Yeoju, Wonju, Pyeongchang, and Daegwallyeong should matter as real chapters, not just pass-through names.',
     'Travelers choosing between direct arrival, coast-opening driving, or an honest stitched bicycle corridor.',
   ],
   routePromise: [
-    'Yeoju gives the route its first split, and Wonju gives it the real inland hinge before Gangneung changes the geometry into a sea-facing chapter.',
-    'You can keep this route elegant and direct or let it open into Samcheok and the wider east coast.',
+    'Yeoju gives the route its first split, Wonju gives it the real inland hinge, and Pyeongchang/Daegwallyeong make the crossing feel mountainous before Gangneung lands.',
+    'You can keep this route complete at Gangneung or use Gangneung as the junction into Route 4 and the wider east coast.',
     'Route 2 stays Seoul-first while feeling clearly different from the long southbound logic of Route 1.',
   ],
   editorialNotes: [
     'Yeoju should be visible as the shared junction cue, while Wonju remains the structural difference-maker for the eastbound identity.',
-    'Treat Gangneung as a threshold, not only a destination, so the route still feels open after arrival.',
+    'Pyeongchang and Daegwallyeong are the missing middle: they carry ski, Olympic, Odaesan, and highland-pass identity.',
+    'Treat Gangneung as both Route 2 terminus and Route 4 junction, so the route feels complete without closing the coast.',
     'For cycling, credibility matters more than romance: describe the line as stitched, practical, and worth doing for the coast payoff.',
   ],
   transports: {
@@ -1343,7 +1400,7 @@ export const seoulToGangneungRoute: RouteData = {
       chooseWhen:
         'Choose KTX when the eastbound move should stay light, fast, and easy to understand while still belonging to a real route family.',
       avoidWhen:
-        'Skip KTX as the main plan if Wonju should be deeply inhabited or if the route needs flexible onward movement into Samcheok and the lower coast.',
+        'Skip KTX as the main plan if Wonju, Pyeongchang, and Daegwallyeong should be deeply inhabited rather than treated as route context.',
       pacingNote:
         'Rail keeps Route 2 elegant. Let Wonju stay as a route-logic note unless the trip truly benefits from dividing the move before Gangneung.',
       planningNotes: [
@@ -2040,7 +2097,7 @@ export const goseongToBusanRoute: RouteData = {
   ],
   editorialNotes: [
     'Route 4 should be written as a long-form coastal itinerary, not as a shortcut between famous cities.',
-    'Shared cities are intentional: Goseong and Sokcho overlap with Route 3, while Gangneung and Samcheok overlap with Route 2.',
+    'Shared cities are intentional: Goseong and Sokcho overlap with Route 3, while Gangneung is the Route 2 terminus and Route 4 junction.',
     'The strongest page angle is past and present together: temples, ports, industry, ecology recovery, and living coast culture.',
   ],
   transports: {

@@ -20,12 +20,12 @@ export const routeSeoFaqsByCode: Record<string, RouteSeoFaq[]> = {
     {
       question: 'What is a good Seoul to Gangneung route?',
       answer:
-        'Route 2 works as an eastbound opening: Yeoju and Wonju prepare the move before Gangneung gives the first full East Sea payoff.',
+        'Route 2 works as a mountain-to-sea route: Yeoju and Wonju prepare the move, Pyeongchang and Daegwallyeong carry the Olympic highland crossing, and Gangneung gives the East Sea payoff.',
     },
     {
-      question: 'Should I continue past Gangneung to Samcheok?',
+      question: 'Why is Gangneung a junction city?',
       answer:
-        'Continue to Samcheok when you want cliffs, caves, ports, and a slower east-coast continuation rather than stopping at the first famous beach city.',
+        'Gangneung is where Route 2 can end cleanly after the mountain crossing, or Route 4 can continue south along National Route 7 toward Donghae, Samcheok, and Busan.',
     },
   ],
   '3': [

@@ -429,6 +429,26 @@
       "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg", "brief": "Street slot should eventually show port meals, beach roads, or local stay texture." }
     }
   },
+  "pyeongchang": {
+    "city": "Pyeongchang",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Hero should establish Pyeongchang as the Route 2 Olympic highland gateway between Wonju and Gangneung." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=174088", "brief": "History slot should eventually show Odaesan, Woljeongsa, or the fir forest path so the city is not only Olympic resort memory." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=97457", "brief": "Present slot should show ski resorts, Phoenix Snow Park, Alpensia, Yongpyong, and winter travel infrastructure." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=110675", "brief": "Route slot should show how Pyeongchang fills the Wonju-to-Daegwallyeong-to-Gangneung mountain gap." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Street slot should eventually capture Jinbu, resort stays, ski village texture, or Odaesan-side local movement." }
+    }
+  },
+  "daegwallyeong": {
+    "city": "Daegwallyeong",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Hero should establish Daegwallyeong as the final highland pass before Gangneung and the East Sea." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "History slot should eventually show the pass, ranch, wind, or old crossing logic beyond resort imagery." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Present slot should show Alpensia, Yongpyong, ski stays, Olympic venue memory, and four-season resort services." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Route slot should show the final Pyeongchang-to-Gangneung threshold where highland turns into coast." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Street slot should eventually capture resort village, ranch, mountain food, wind farms, or pass-side stay texture." }
+    }
+  },
   "uljin": {
     "city": "Uljin",
     "slots": {
