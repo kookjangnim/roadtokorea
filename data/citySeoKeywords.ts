@@ -896,6 +896,90 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
       { question: 'What is Mokpo known for?', answer: 'Mokpo is known for Yudalsan Mountain, Gatbawi Rock, seafood, ferries, modern port history, harbor views, and Dadohae access.' },
     ],
   },
+  haenam: {
+    city: 'Haenam',
+    primaryIntent: 'Haenam Korea Ttangkkeut Duryunsan Daeheungsa south coast route',
+    metaKeywords: ['Haenam Korea', 'Haenam travel guide', 'Ttangkkeut Village', 'Duryunsan Mountain', 'Daeheungsa Temple', 'Mokpo to Haenam', 'Haenam to Wando', 'Korea land end'],
+    clusters: [
+      { label: 'Route intent', terms: ['Mokpo to Haenam', 'Haenam to Wando', 'Route 7 Korea'] },
+      { label: 'Land-end intent', terms: ['Ttangkkeut Village', 'Korea land end', 'Haenam south coast'] },
+      { label: 'Heritage intent', terms: ['Duryunsan Mountain', 'Daeheungsa Temple', 'Haenam temple'] },
+    ],
+    questions: [
+      { question: 'Why include Haenam after Mokpo?', answer: 'Haenam gives Route 7 a symbolic land-end chapter through Ttangkkeut, Duryunsan, Daeheungsa, rural roads, seafood, and the Wando handoff.' },
+      { question: 'What is Haenam known for?', answer: 'Haenam is known for Ttangkkeut land-end travel, Duryunsan Mountain, Daeheungsa Temple, seafood, and its southern peninsula scenery.' },
+    ],
+  },
+  wando: {
+    city: 'Wando',
+    primaryIntent: 'Wando Korea Cheongsando seafood island south coast route',
+    metaKeywords: ['Wando Korea', 'Wando travel guide', 'Cheongsando', 'Wando seafood', 'Wando Arboretum', 'Haenam to Wando', 'Wando to Boseong', 'Korea island travel'],
+    clusters: [
+      { label: 'Route intent', terms: ['Haenam to Wando', 'Wando to Boseong', 'Route 7 Korea'] },
+      { label: 'Island intent', terms: ['Cheongsando', 'Wando ferries', 'Korea island travel'] },
+      { label: 'Food intent', terms: ['Wando seafood', 'Wando seaweed', 'south coast seafood'] },
+    ],
+    questions: [
+      { question: 'Why stop in Wando on Route 7?', answer: 'Wando turns the route into island travel through Cheongsando, seafood, seaweed culture, ferries, Wando Arboretum, and marine identity.' },
+      { question: 'Is Wando good for island travel?', answer: 'Yes. Wando works as a ferry and seafood gateway for Cheongsando and the wider southern island coast.' },
+    ],
+  },
+  boseong: {
+    city: 'Boseong',
+    primaryIntent: 'Boseong Korea green tea fields Daehan Dawon south coast stop',
+    metaKeywords: ['Boseong Korea', 'Boseong travel guide', 'Boseong green tea fields', 'Daehan Dawon', 'Wando to Boseong', 'Boseong to Suncheon', 'Korea tea fields', 'Route 7 Korea'],
+    clusters: [
+      { label: 'Route intent', terms: ['Wando to Boseong', 'Boseong to Suncheon', 'Route 7 Korea'] },
+      { label: 'Tea intent', terms: ['Boseong green tea fields', 'Daehan Dawon', 'Korea tea fields'] },
+      { label: 'Landscape intent', terms: ['Boseong scenery', 'rural Jeolla', 'south coast landscape'] },
+    ],
+    questions: [
+      { question: 'Why include Boseong between Wando and Suncheon?', answer: 'Boseong gives Route 7 a calm green-tea landscape between island travel and Suncheon ecology.' },
+      { question: 'What is Boseong known for?', answer: 'Boseong is known for green tea fields, Daehan Dawon, tea food and cafes, rural scenery, and a slow south-coast travel pace.' },
+    ],
+  },
+  namhae: {
+    city: 'Namhae',
+    primaryIntent: 'Namhae Korea German Village Boriam island road south coast',
+    metaKeywords: ['Namhae Korea', 'Namhae travel guide', 'Namhae German Village', 'Boriam', 'Namhae island road', 'Yeosu to Namhae', 'Namhae to Tongyeong', 'Korea south coast road trip'],
+    clusters: [
+      { label: 'Route intent', terms: ['Yeosu to Namhae', 'Namhae to Tongyeong', 'Route 7 Korea'] },
+      { label: 'Island intent', terms: ['Namhae island road', 'Darangee Village', 'Namhae beaches'] },
+      { label: 'Heritage intent', terms: ['Namhae German Village', 'Boriam', 'south coast temple view'] },
+    ],
+    questions: [
+      { question: 'Why stop in Namhae after Yeosu?', answer: 'Namhae gives Route 7 an island-road chapter through German Village, Boriam, terraces, beaches, seafood, and small coastal stays.' },
+      { question: 'What is Namhae known for?', answer: 'Namhae is known for German Village, Boriam coastal views, Darangee terraces, beaches, seafood, and scenic island drives.' },
+    ],
+  },
+  tongyeong: {
+    city: 'Tongyeong',
+    primaryIntent: 'Tongyeong Korea Yi Sun-sin Dongpirang Hallyeohaesang port city',
+    metaKeywords: ['Tongyeong Korea', 'Tongyeong travel guide', 'Yi Sun-sin Tongyeong', 'Dongpirang Village', 'Hallyeohaesang', 'Tongyeong seafood', 'Namhae to Tongyeong', 'Tongyeong to Geoje'],
+    clusters: [
+      { label: 'Route intent', terms: ['Namhae to Tongyeong', 'Tongyeong to Geoje', 'Route 7 Korea'] },
+      { label: 'History intent', terms: ['Yi Sun-sin Tongyeong', 'Tongyeong naval history', 'Hallyeohaesang'] },
+      { label: 'City intent', terms: ['Dongpirang Village', 'Tongyeong seafood', 'Tongyeong ferries'] },
+    ],
+    questions: [
+      { question: 'Why include Tongyeong before Geoje?', answer: 'Tongyeong gives Route 7 a dense port-culture chapter through Yi Sun-sin memory, Hallyeohaesang islands, Dongpirang, ferries, seafood, and art culture.' },
+      { question: 'What is Tongyeong known for?', answer: 'Tongyeong is known for Yi Sun-sin naval memory, Dongpirang mural village, seafood, ferries, Hallyeohaesang views, and compact harbor walks.' },
+    ],
+  },
+  geoje: {
+    city: 'Geoje',
+    primaryIntent: 'Geoje Korea POW Camp shipbuilding Windy Hill Oedo Busan handoff',
+    metaKeywords: ['Geoje Korea', 'Geoje travel guide', 'Geoje POW Camp', 'Geoje shipbuilding', 'Windy Hill Geoje', 'Oedo Botania', 'Tongyeong to Geoje', 'Geoje to Busan'],
+    clusters: [
+      { label: 'Route intent', terms: ['Tongyeong to Geoje', 'Geoje to Busan', 'Route 7 Korea'] },
+      { label: 'History intent', terms: ['Geoje POW Camp', 'Korean War Geoje', 'Geoje history'] },
+      { label: 'Island intent', terms: ['Windy Hill Geoje', 'Oedo Botania', 'Geoje beaches'] },
+    ],
+    questions: [
+      { question: 'Why stop in Geoje before Busan?', answer: 'Geoje gives Route 7 a modern island handoff through shipbuilding, POW Camp history, Windy Hill, Oedo Botania, beaches, and bridge access.' },
+      { question: 'Is Geoje only a scenic island?', answer: 'No. Geoje is scenic, but shipbuilding and Korean War POW history make it one of the route\'s strongest past-present cities.' },
+    ],
+  },
   ulsan: {
     city: 'Ulsan',
     primaryIntent: 'Ulsan Korea industrial coast and Daewangam stop before Busan',

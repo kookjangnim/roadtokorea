@@ -12,6 +12,7 @@
     "check:junctions": "node scripts/validate-junction-cities.mjs",
     "check:city-support": "node scripts/validate-city-support-profiles.mjs",
     "check:city-images": "node scripts/validate-city-image-slots.mjs",
+    "check:image-pipeline": "node scripts/validate-city-image-pipeline-audit.mjs",
     "check:city-seo": "node scripts/validate-city-seo-keywords.mjs",
     "check:route-branches": "node scripts/validate-route-branches.mjs",
     "check:route-network": "node scripts/validate-route-network.mjs"

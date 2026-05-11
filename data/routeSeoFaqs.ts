@@ -101,6 +101,23 @@ export const routeSeoFaqsByCode: Record<string, RouteSeoFaq[]> = {
         'No. The Boryeong Mud Festival is the strongest hook, but Daecheon Beach, seafood, sunsets, and coastal stays make Boryeong useful beyond festival dates.',
     },
   ],
+  '7': [
+    {
+      question: 'What is the best Mokpo to Busan south coast route?',
+      answer:
+        'Route 7 works best as Mokpo, Haenam, Wando, Boseong, Suncheon, Yeosu, Namhae, Tongyeong, Geoje, and Busan, linking land-end meaning, islands, green tea fields, wetlands, night sea, port culture, modern island history, and the final Busan harbor arrival.',
+    },
+    {
+      question: 'Why include Haenam after Mokpo?',
+      answer:
+        'Haenam gives the route a symbolic start through Ttangkkeut, Duryunsan, and Daeheungsa before Wando turns the journey into island and seafood travel.',
+    },
+    {
+      question: 'Is Route 7 a fast Mokpo to Busan transfer?',
+      answer:
+        'No. Route 7 is a multi-day south-coast itinerary for travelers who want the coast itself: islands, seafood, temples, tea fields, wetlands, small ports, Geoje, and Busan.',
+    },
+  ],
 };
 
 export function getRouteSeoFaqs(routeCode: string) {

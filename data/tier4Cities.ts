@@ -361,6 +361,66 @@ export const tier4Cities: Record<string, TierCityData> = {
       'Gunsan matters because the west coast is also a story of ports, grain, movement, colonial pressure, and modern urban memory. Its old-town streets, Modern History Museum, bakeries, and harbor food make it a serious middle anchor before Mokpo.',
     hotspots: []
   },
+  haenam: {
+    name: 'Haenam',
+    slug: 'haenam',
+    headline: 'The Land-End Threshold',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Duryunsan%20Mountain.jpg',
+    description: 'A southern peninsula county where Ttangkkeut, Duryunsan, Daeheungsa, seafood, and slow rural roads give Route 7 its symbolic beginning.',
+    culturalInsight:
+      'Haenam matters because Route 7 should not jump from Mokpo straight into generic coast. Ttangkkeut land-end identity, Duryunsan views, Daeheungsa temple memory, and the Wando handoff make Haenam the emotional threshold of Korea\'s south coast.',
+    hotspots: []
+  },
+  wando: {
+    name: 'Wando',
+    slug: 'wando',
+    headline: 'The Island Seafood Gateway',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20Korea.jpg',
+    description: 'An island gateway where Cheongsando, seafood, seaweed culture, ferries, Wando Arboretum, and marine identity shift Route 7 into island tempo.',
+    culturalInsight:
+      'Wando matters because it makes the south coast feel maritime rather than merely coastal. Cheongsando slow travel, seafood, seaweed, ferry movement, arboretum greenery, and the Boseong handoff create a clear past-present island chapter.',
+    hotspots: []
+  },
+  boseong: {
+    name: 'Boseong',
+    slug: 'boseong',
+    headline: 'The Green Tea Field Pause',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20Green%20Tea%20Fields.jpg',
+    description: 'A terraced green-tea landscape where Daehan Dawon, rural south-coast scenery, and slow pacing reset the route before Suncheon.',
+    culturalInsight:
+      'Boseong matters because it gives Route 7 a calm, globally legible visual identity. Daehan Dawon, green tea, rolling fields, local food, and the Suncheon handoff help the route breathe between islands and ecology.',
+    hotspots: []
+  },
+  namhae: {
+    name: 'Namhae',
+    slug: 'namhae',
+    headline: 'The Island Road Chapter',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Namhae%20German%20Village.jpg',
+    description: 'A south-coast island county where German Village, Boriam, terraces, beaches, seafood, and bridge approaches create a slow road-trip chapter.',
+    culturalInsight:
+      'Namhae matters because Route 7 needs an island-road mood after Yeosu. German Village, Boriam coastal views, Darangee terraces, beaches, seafood, and the Tongyeong handoff make it personal and scenic without losing route logic.',
+    hotspots: []
+  },
+  tongyeong: {
+    name: 'Tongyeong',
+    slug: 'tongyeong',
+    headline: 'The Hallyeohaesang Port City',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dongpirang%20Village.jpg',
+    description: 'A dense harbor city where Yi Sun-sin memory, Dongpirang murals, seafood, ferries, art culture, and Hallyeohaesang island views meet.',
+    culturalInsight:
+      'Tongyeong matters because it lets Route 7 hold naval history and living port culture together. Yi Sun-sin memory, Dongpirang, ferry terminals, seafood, music, art, and the Geoje handoff make it one of the route\'s strongest small-city chapters.',
+    hotspots: []
+  },
+  geoje: {
+    name: 'Geoje',
+    slug: 'geoje',
+    headline: 'The Modern Island Handoff',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Windy%20Hill%20Geoje.jpg',
+    description: 'A large island city where shipbuilding, POW Camp history, Windy Hill, Oedo Botania, beaches, and bridge access prepare the Busan finale.',
+    culturalInsight:
+      'Geoje matters because the final approach to Busan should show modern maritime Korea, not only scenery. Shipbuilding, Korean War POW memory, Windy Hill, Oedo, beaches, and bridge infrastructure make the island a strong present-tense handoff.',
+    hotspots: []
+  },
   chungju: {
     name: 'Chungju',
     slug: 'chungju',

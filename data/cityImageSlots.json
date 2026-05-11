@@ -142,31 +142,106 @@
   "jeongseon": {
     "city": "Jeongseon",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=459&vcontsId=106009", "brief": "Hero should establish Jeongseon through Arirang Market and the living mountain-market identity on Branch 2A." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=459&vcontsId=106009", "brief": "History slot should connect Arirang, five-day market memory, coal-era decline, and market revival through tourist train access." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Rail%20Bike.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110606", "brief": "Present slot should show Jeongseon Railbike and Kangwon Land together as current leisure and resort-economy hooks in the mountain interior." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsViewCid.do?cmsCid=2644815", "brief": "Route slot should show Jeongseon as the culture-and-valley chapter between Yeongwol and Taebaek." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg", "sourceHref": "https://www.jeongseon.go.kr/en/tourist_attractions/famous_sight/kangwonland_casino", "brief": "Street slot should eventually capture market food, local performance, Sabuk/High1 resort texture, or the closed-mine transition around Kangwon Land." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=459&vcontsId=106009",
+        "brief": "Hero should establish Jeongseon through Arirang Market and the living mountain-market identity on Branch 2A."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=459&vcontsId=106009",
+        "brief": "History slot should connect Arirang, five-day market memory, coal-era decline, and market revival through tourist train access."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Rail%20Bike.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110606",
+        "brief": "Present slot should show Jeongseon Railbike and Kangwon Land together as current leisure and resort-economy hooks in the mountain interior."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsViewCid.do?cmsCid=2644815",
+        "brief": "Route slot should show Jeongseon as the culture-and-valley chapter between Yeongwol and Taebaek."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeongseon%20Arirang%20Market.jpg",
+        "sourceHref": "https://www.jeongseon.go.kr/en/tourist_attractions/famous_sight/kangwonland_casino",
+        "brief": "Street slot should eventually capture market food, local performance, Sabuk/High1 resort texture, or the closed-mine transition around Kangwon Land."
+      }
     }
   },
   "taebaek": {
     "city": "Taebaek",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=62811", "brief": "Hero should establish Taebaek as the coal-and-highland threshold before the branch exits toward Samcheok." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaek%20Coal%20Museum.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=62811", "brief": "History slot should show Taebaek Coal Museum and Korea's coal industry memory without reducing the city to one museum." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=188477", "brief": "Present slot should show Taebaek Hanwoo, Hwangji Pond, river-source geography, highland walks, and current mountain-city travel." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg", "sourceHref": "https://www.taebaek.go.kr/eng/contents.do?key=980", "brief": "Route slot should show Taebaek as the final inland highland before the Samcheok and Route 4 handoff." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=188477", "brief": "Street slot should eventually capture coal-town texture, Hwangji Pond walks, Taebaek Hanwoo meals, or highland winter streets." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=62811",
+        "brief": "Hero should establish Taebaek as the coal-and-highland threshold before the branch exits toward Samcheok."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaek%20Coal%20Museum.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=62811",
+        "brief": "History slot should show Taebaek Coal Museum and Korea's coal industry memory without reducing the city to one museum."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=188477",
+        "brief": "Present slot should show Taebaek Hanwoo, Hwangji Pond, river-source geography, highland walks, and current mountain-city travel."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg",
+        "sourceHref": "https://www.taebaek.go.kr/eng/contents.do?key=980",
+        "brief": "Route slot should show Taebaek as the final inland highland before the Samcheok and Route 4 handoff."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=188477",
+        "brief": "Street slot should eventually capture coal-town texture, Hwangji Pond walks, Taebaek Hanwoo meals, or highland winter streets."
+      }
     }
   },
   "gapyeong": {
     "city": "Gapyeong",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091", "brief": "Hero should show Gapyeong as a river, island, and leisure gateway after Seoul." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://www.gp.go.kr/eng/contents.do?key=909", "brief": "History slot should show Jarasum's transformation from flood-prone river island to jazz and leisure culture." },
-      "present": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091", "brief": "Present slot should show Jarasum, Nami Island access, camping, jazz, and river leisure identity." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=69675", "brief": "Route slot should show rail bike, Bukhangang, or a gentle handoff from Seoul toward Chuncheon." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=55555", "brief": "Street slot should show pensions, camping, station access, or local leisure texture near the river." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091",
+        "brief": "Hero should show Gapyeong as a river, island, and leisure gateway after Seoul."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg",
+        "sourceHref": "https://www.gp.go.kr/eng/contents.do?key=909",
+        "brief": "History slot should show Jarasum's transformation from flood-prone river island to jazz and leisure culture."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091",
+        "brief": "Present slot should show Jarasum, Nami Island access, camping, jazz, and river leisure identity."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=69675",
+        "brief": "Route slot should show rail bike, Bukhangang, or a gentle handoff from Seoul toward Chuncheon."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=55555",
+        "brief": "Street slot should show pensions, camping, station access, or local leisure texture near the river."
+      }
     }
   },
   "chuncheon": {
@@ -207,11 +282,36 @@
   "yanggu": {
     "city": "Yanggu",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341", "brief": "Hero should show Punch Bowl basin as Yanggu's DMZ-adjacent landscape identity." },
-      "history": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341", "brief": "History slot should anchor Yanggu in Korean War battlefield memory and Punch Bowl geography." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://www.ygtour.kr/Home/index", "brief": "Present slot should show quieter highland villages, DMZ ecology, museums, and local travel rhythm." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341", "brief": "Route slot should explain Chuncheon to Yanggu to Inje as the move from lake city to borderland to Seorak threshold." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg", "sourceHref": "https://www.ygtour.kr/Home/index", "brief": "Street slot should show a quiet town, museum visit, highland road, or respectful local-stay texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341",
+        "brief": "Hero should show Punch Bowl basin as Yanggu's DMZ-adjacent landscape identity."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341",
+        "brief": "History slot should anchor Yanggu in Korean War battlefield memory and Punch Bowl geography."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg",
+        "sourceHref": "https://www.ygtour.kr/Home/index",
+        "brief": "Present slot should show quieter highland villages, DMZ ecology, museums, and local travel rhythm."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341",
+        "brief": "Route slot should explain Chuncheon to Yanggu to Inje as the move from lake city to borderland to Seorak threshold."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg",
+        "sourceHref": "https://www.ygtour.kr/Home/index",
+        "brief": "Street slot should show a quiet town, museum visit, highland road, or respectful local-stay texture."
+      }
     }
   },
   "inje": {
@@ -252,11 +352,36 @@
   "sokcho": {
     "city": "Sokcho",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222", "brief": "Hero should show Sokcho as the East Sea release after Seoraksan and Route 3's pass choice." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://en.wikipedia.org/wiki/Abai_Village", "brief": "History slot should eventually show Abai Village, gaetbae, and postwar northern-displacement memory." },
-      "present": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222", "brief": "Present slot should show Sokcho Beach, market, harbor food, cafes, hotels, and summer coastal energy." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222", "brief": "Route slot should show how Seoraksan, Inje, Goseong, and the pass choices make Sokcho feel earned." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg", "sourceHref": "https://sokcho-central.co.kr", "brief": "Street slot should show Sokcho Tourist and Fishery Market, seafood, Abai sundae, or harbor-street texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222",
+        "brief": "Hero should show Sokcho as the East Sea release after Seoraksan and Route 3's pass choice."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg",
+        "sourceHref": "https://en.wikipedia.org/wiki/Abai_Village",
+        "brief": "History slot should eventually show Abai Village, gaetbae, and postwar northern-displacement memory."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222",
+        "brief": "Present slot should show Sokcho Beach, market, harbor food, cafes, hotels, and summer coastal energy."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222",
+        "brief": "Route slot should show how Seoraksan, Inje, Goseong, and the pass choices make Sokcho feel earned."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg",
+        "sourceHref": "https://sokcho-central.co.kr",
+        "brief": "Street slot should show Sokcho Tourist and Fishery Market, seafood, Abai sundae, or harbor-street texture."
+      }
     }
   },
   "goseong": {
@@ -332,161 +457,561 @@
   "yeongdeok": {
     "city": "Yeongdeok",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/yeongdeok/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/yeongdeok/hero-generated-v1.png", "brief": "Hero should establish Yeongdeok as a smaller East Sea port and seafood route chapter." },
-      "history": { "status": "ready", "asset": "/images/routes/route-1/yeongdeok/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/yeongdeok/support-1-generated-v1.png", "brief": "History slot should show fishing-village and coastal movement memory before larger southeast cities." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/yeongdeok/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/yeongdeok/support-2-generated-v1.png", "brief": "Present slot should highlight crab, seafood markets, and small-port texture for travelers." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/yeongdeok/support-3-generated-v1.png", "sourceHref": "/images/routes/route-1/yeongdeok/support-3-generated-v1.png", "brief": "Route slot should show how Yeongdeok connects Uljin, Pohang, and the lower East Sea line." },
-      "street": { "status": "ready", "asset": "/images/routes/route-1/yeongdeok/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/yeongdeok/support-2-generated-v1.png", "brief": "Street slot should show port food, crab-town texture, and quiet coastal local life." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/yeongdeok/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/yeongdeok/hero-generated-v1.png",
+        "brief": "Hero should establish Yeongdeok as a smaller East Sea port and seafood route chapter."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/yeongdeok/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/yeongdeok/support-1-generated-v1.png",
+        "brief": "History slot should show fishing-village and coastal movement memory before larger southeast cities."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/yeongdeok/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/yeongdeok/support-2-generated-v1.png",
+        "brief": "Present slot should highlight crab, seafood markets, and small-port texture for travelers."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/yeongdeok/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/yeongdeok/support-3-generated-v1.png",
+        "brief": "Route slot should show how Yeongdeok connects Uljin, Pohang, and the lower East Sea line."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/yeongdeok/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/yeongdeok/support-2-generated-v1.png",
+        "brief": "Street slot should show port food, crab-town texture, and quiet coastal local life."
+      }
     }
   },
   "pohang": {
     "city": "Pohang",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/pohang/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/pohang/hero-generated-v1.png", "brief": "Hero should establish Pohang as the late coastal hinge before Gyeongju and Busan." },
-      "history": { "status": "ready", "asset": "/images/routes/route-1/pohang/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/pohang/support-1-generated-v1.png", "brief": "History slot should carry port, sunrise, and industrial-memory context without flattening the city." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/pohang/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/pohang/support-2-generated-v1.png", "brief": "Present slot should show beaches, food, markets, and useful city-scale coastal travel." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/pohang/support-3-generated-v1.png", "sourceHref": "/images/routes/route-1/pohang/support-3-generated-v1.png", "brief": "Route slot should connect Yeongdeok, Pohang, Gyeongju, and the final southeast approach." },
-      "street": { "status": "ready", "asset": "/images/routes/route-1/pohang/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/pohang/support-2-generated-v1.png", "brief": "Street slot should show seafood, cafe, beach-road, or harbor texture at traveler scale." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/pohang/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/pohang/hero-generated-v1.png",
+        "brief": "Hero should establish Pohang as the late coastal hinge before Gyeongju and Busan."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/pohang/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/pohang/support-1-generated-v1.png",
+        "brief": "History slot should carry port, sunrise, and industrial-memory context without flattening the city."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/pohang/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/pohang/support-2-generated-v1.png",
+        "brief": "Present slot should show beaches, food, markets, and useful city-scale coastal travel."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/pohang/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/pohang/support-3-generated-v1.png",
+        "brief": "Route slot should connect Yeongdeok, Pohang, Gyeongju, and the final southeast approach."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/pohang/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/pohang/support-2-generated-v1.png",
+        "brief": "Street slot should show seafood, cafe, beach-road, or harbor texture at traveler scale."
+      }
     }
   },
   "sangju": {
     "city": "Sangju",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/sangju/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/sangju/hero-generated-v1.png", "brief": "Hero should establish Sangju as the calm Nakdong corridor reset after Mungyeong." },
-      "history": { "status": "ready", "asset": "/images/routes/route-1/sangju/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/sangju/support-1-generated-v1.png", "brief": "History slot should show road, river, and agricultural memory in the inland corridor." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/sangju/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/sangju/support-2-generated-v1.png", "brief": "Present slot should show cycling, river-edge recovery, food, or calm local pacing." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/sangju/support-3-generated-v1.png", "sourceHref": "/images/routes/route-1/sangju/support-3-generated-v1.png", "brief": "Route slot should explain the Mungyeong to Sangju to Gumi transition." },
-      "street": { "status": "ready", "asset": "/images/routes/route-1/sangju/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/sangju/support-2-generated-v1.png", "brief": "Street slot should show simple town reset, food, lodging, or cycling-service texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/sangju/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/sangju/hero-generated-v1.png",
+        "brief": "Hero should establish Sangju as the calm Nakdong corridor reset after Mungyeong."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/sangju/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/sangju/support-1-generated-v1.png",
+        "brief": "History slot should show road, river, and agricultural memory in the inland corridor."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/sangju/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/sangju/support-2-generated-v1.png",
+        "brief": "Present slot should show cycling, river-edge recovery, food, or calm local pacing."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/sangju/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/sangju/support-3-generated-v1.png",
+        "brief": "Route slot should explain the Mungyeong to Sangju to Gumi transition."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/sangju/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/sangju/support-2-generated-v1.png",
+        "brief": "Street slot should show simple town reset, food, lodging, or cycling-service texture."
+      }
     }
   },
   "jecheon": {
     "city": "Jecheon",
     "slots": {
-      "hero": { "status": "ready", "asset": "https://upload.wikimedia.org/wikipedia/commons/4/45/Uirimji_Reservoir_%284%29_%2833526672911%29.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(4)_(33526672911).jpg", "brief": "Hero should establish Jecheon as a lake-and-mountain threshold on Branch 2A." },
-      "history": { "status": "ready", "asset": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Uirimji_Reservoir_%288%29_%2832812997394%29.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(8)_(32812997394).jpg", "brief": "History slot should keep Uirimji and older reservoir memory visible in the branch story." },
-      "present": { "status": "ready", "asset": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Uirimji_Reservoir_%286%29_%2833526671581%29.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(6)_(33526671581).jpg", "brief": "Present slot should point toward lake walks, mountain air, herbal identity, and quiet stays." },
-      "route": { "status": "ready", "asset": "https://upload.wikimedia.org/wikipedia/commons/4/45/Uirimji_Reservoir_%284%29_%2833526672911%29.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(4)_(33526672911).jpg", "brief": "Route slot should explain Wonju to Jecheon to Yeongwol as terrain threshold and emotional payoff." },
-      "street": { "status": "ready", "asset": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Uirimji_Reservoir_%286%29_%2833526671581%29.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(6)_(33526671581).jpg", "brief": "Street slot should eventually show town, market, herbal, or stay-zone texture in Jecheon." }
+      "hero": {
+        "status": "ready",
+        "asset": "https://upload.wikimedia.org/wikipedia/commons/4/45/Uirimji_Reservoir_%284%29_%2833526672911%29.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(4)_(33526672911).jpg",
+        "brief": "Hero should establish Jecheon as a lake-and-mountain threshold on Branch 2A."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Uirimji_Reservoir_%288%29_%2832812997394%29.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(8)_(32812997394).jpg",
+        "brief": "History slot should keep Uirimji and older reservoir memory visible in the branch story."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Uirimji_Reservoir_%286%29_%2833526671581%29.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(6)_(33526671581).jpg",
+        "brief": "Present slot should point toward lake walks, mountain air, herbal identity, and quiet stays."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "https://upload.wikimedia.org/wikipedia/commons/4/45/Uirimji_Reservoir_%284%29_%2833526672911%29.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(4)_(33526672911).jpg",
+        "brief": "Route slot should explain Wonju to Jecheon to Yeongwol as terrain threshold and emotional payoff."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Uirimji_Reservoir_%286%29_%2833526671581%29.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Uirimji_Reservoir_(6)_(33526671581).jpg",
+        "brief": "Street slot should eventually show town, market, herbal, or stay-zone texture in Jecheon."
+      }
     }
   },
   "cheonan": {
     "city": "Cheonan",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png", "brief": "Hero should show Cheonan as the first easy control point after Seoul." },
-      "history": { "status": "briefed", "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png", "brief": "History slot should eventually show independence-memory or corridor-history context." },
-      "present": { "status": "briefed", "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png", "brief": "Present slot should show walnut snack, station food, university, or hotel-core usefulness." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png", "brief": "Route slot should show Seoul softening into the first southbound reset." },
-      "street": { "status": "briefed", "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png", "brief": "Street slot should capture station, food, lodging, and first-night route texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "brief": "Hero should show Cheonan as the first easy control point after Seoul."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "brief": "History slot should eventually show independence-memory or corridor-history context."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "brief": "Present slot should show walnut snack, station food, university, or hotel-core usefulness."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "brief": "Route slot should show Seoul softening into the first southbound reset."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/cheonan/hero-generated-v1.png",
+        "brief": "Street slot should capture station, food, lodging, and first-night route texture."
+      }
     }
   },
   "daejeon": {
     "city": "Daejeon",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png", "brief": "Hero should establish Daejeon as the central corridor choice point." },
-      "history": { "status": "briefed", "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png", "brief": "History slot should eventually show rail, civic, science, or central-corridor memory." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png", "brief": "Present slot should show station-core efficiency, Yuseong recovery, or science-city life." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png", "brief": "Route slot should show Daejeon as the clean choose-your-version overnight." },
-      "street": { "status": "briefed", "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png", "brief": "Street slot should capture bakery, market, station, or Yuseong stay texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "brief": "Hero should establish Daejeon as the central corridor choice point."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "brief": "History slot should eventually show rail, civic, science, or central-corridor memory."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "brief": "Present slot should show station-core efficiency, Yuseong recovery, or science-city life."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "brief": "Route slot should show Daejeon as the clean choose-your-version overnight."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png",
+        "brief": "Street slot should capture bakery, market, station, or Yuseong stay texture."
+      }
     }
   },
   "daegu": {
     "city": "Daegu",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/daegu/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/daegu/support-1-generated-v1.png", "brief": "Hero should show Daegu as the strongest urban reset before Busan." },
-      "history": { "status": "ready", "asset": "/images/routes/route-1/daegu/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/daegu/support-2-generated-v1.png", "brief": "History slot should show market, medicine street, textile, or basin-city memory." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/daegu/support-3-generated-v1.png", "sourceHref": "/images/routes/route-1/daegu/support-3-generated-v1.png", "brief": "Present slot should show food alleys, markets, hotels, shopping, and city services." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/daegu/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/daegu/support-1-generated-v1.png", "brief": "Route slot should explain Daegu's handoff toward Gyeongju, Miryang, Changnyeong, or Busan." },
-      "street": { "status": "ready", "asset": "/images/routes/route-1/daegu/support-3-generated-v1.png", "sourceHref": "/images/routes/route-1/daegu/support-3-generated-v1.png", "brief": "Street slot should show market-street, food, evening, and hotel-zone texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/daegu/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daegu/support-1-generated-v1.png",
+        "brief": "Hero should show Daegu as the strongest urban reset before Busan."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/daegu/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daegu/support-2-generated-v1.png",
+        "brief": "History slot should show market, medicine street, textile, or basin-city memory."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/daegu/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daegu/support-3-generated-v1.png",
+        "brief": "Present slot should show food alleys, markets, hotels, shopping, and city services."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/daegu/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daegu/support-1-generated-v1.png",
+        "brief": "Route slot should explain Daegu's handoff toward Gyeongju, Miryang, Changnyeong, or Busan."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/daegu/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/daegu/support-3-generated-v1.png",
+        "brief": "Street slot should show market-street, food, evening, and hotel-zone texture."
+      }
     }
   },
   "gumi": {
     "city": "Gumi",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/gumi/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png", "brief": "Hero should show Gumi as a purposeful industrial-corridor reset." },
-      "history": { "status": "briefed", "asset": "/images/routes/route-1/gumi/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png", "brief": "History slot should eventually show manufacturing, river movement, or modern corridor memory." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/gumi/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png", "brief": "Present slot should show business services, hotels, food, and riverside calm." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/gumi/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png", "brief": "Route slot should show Gumi between Sangju, Daegu, and the final southeast." },
-      "street": { "status": "briefed", "asset": "/images/routes/route-1/gumi/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png", "brief": "Street slot should capture central stay, riverside, food, and service texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "brief": "Hero should show Gumi as a purposeful industrial-corridor reset."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "brief": "History slot should eventually show manufacturing, river movement, or modern corridor memory."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "brief": "Present slot should show business services, hotels, food, and riverside calm."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "brief": "Route slot should show Gumi between Sangju, Daegu, and the final southeast."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png",
+        "brief": "Street slot should capture central stay, riverside, food, and service texture."
+      }
     }
   },
   "changnyeong": {
     "city": "Changnyeong",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "brief": "Hero should show Changnyeong as a quiet lower-river recovery node." },
-      "history": { "status": "briefed", "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "brief": "History slot should eventually show Upo Wetland, lower-river memory, or small-town continuity." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "brief": "Present slot should show recovery, modest stays, food, wetland travel, or hot-spring logic." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "brief": "Route slot should show late-route calm after Daegu and before Busan." },
-      "street": { "status": "briefed", "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png", "brief": "Street slot should capture small-town food, local lodging, and quiet reset texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "brief": "Hero should show Changnyeong as a quiet lower-river recovery node."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "brief": "History slot should eventually show Upo Wetland, lower-river memory, or small-town continuity."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "brief": "Present slot should show recovery, modest stays, food, wetland travel, or hot-spring logic."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "brief": "Route slot should show late-route calm after Daegu and before Busan."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/changnyeong/hero-generated-v1.png",
+        "brief": "Street slot should capture small-town food, local lodging, and quiet reset texture."
+      }
     }
   },
   "miryang": {
     "city": "Miryang",
     "slots": {
-      "hero": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG", "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG", "brief": "Hero should show Yeongnamru and Miryang's river-pavilion identity before Busan." },
-      "history": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG", "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG", "brief": "History slot should keep the pavilion, river, and southern cultural hinge visible." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG", "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG", "brief": "Present slot should eventually show market food, local cafes, or modest stay texture." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG", "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG", "brief": "Route slot should show Miryang as a quiet southern hinge before Busan." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG", "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG", "brief": "Street slot should eventually show river walks, meals, rail corridor, or stay-zone details." }
+      "hero": {
+        "status": "ready",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG",
+        "brief": "Hero should show Yeongnamru and Miryang's river-pavilion identity before Busan."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG",
+        "brief": "History slot should keep the pavilion, river, and southern cultural hinge visible."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG",
+        "brief": "Present slot should eventually show market food, local cafes, or modest stay texture."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG",
+        "brief": "Route slot should show Miryang as a quiet southern hinge before Busan."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeongnamru%20Miryang%20Gyeongsangnamdo.JPG",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:Yeongnamru_Miryang_Gyeongsangnamdo.JPG",
+        "brief": "Street slot should eventually show river walks, meals, rail corridor, or stay-zone details."
+      }
     }
   },
   "gangneung": {
     "city": "Gangneung",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/gangneung/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/gangneung/support-1-generated-v1.png", "brief": "Hero should establish Gangneung as Route 2's coast-entry payoff." },
-      "history": { "status": "ready", "asset": "/images/routes/route-1/gangneung/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/gangneung/support-2-generated-v1.png", "brief": "History slot should show Gyeongpo, old pavilion, beach memory, or east-coast culture." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/gangneung/support-3-generated-v1.png", "sourceHref": "/images/routes/route-1/gangneung/support-3-generated-v1.png", "brief": "Present slot should show coffee, beaches, markets, seafood, hotels, and rail access." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/gangneung/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/gangneung/support-1-generated-v1.png", "brief": "Route slot should show Wonju-to-Gangneung as the earned arrival at the East Sea." },
-      "street": { "status": "ready", "asset": "/images/routes/route-1/gangneung/support-3-generated-v1.png", "sourceHref": "/images/routes/route-1/gangneung/support-3-generated-v1.png", "brief": "Street slot should show coffee street, beach walks, market meals, or hotel texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gangneung/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gangneung/support-1-generated-v1.png",
+        "brief": "Hero should establish Gangneung as Route 2's coast-entry payoff."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gangneung/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gangneung/support-2-generated-v1.png",
+        "brief": "History slot should show Gyeongpo, old pavilion, beach memory, or east-coast culture."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gangneung/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gangneung/support-3-generated-v1.png",
+        "brief": "Present slot should show coffee, beaches, markets, seafood, hotels, and rail access."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gangneung/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gangneung/support-1-generated-v1.png",
+        "brief": "Route slot should show Wonju-to-Gangneung as the earned arrival at the East Sea."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gangneung/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gangneung/support-3-generated-v1.png",
+        "brief": "Street slot should show coffee street, beach walks, market meals, or hotel texture."
+      }
     }
   },
   "samcheok": {
     "city": "Samcheok",
     "slots": {
-      "hero": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg", "brief": "Hero should show Samcheok as the scenic continuation of the East Sea route." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg", "brief": "History slot should eventually show cave, port, cliff, or older shoreline movement memory." },
-      "present": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg", "brief": "Present slot should show beaches, caves, rail-bike scenery, ports, and seafood pacing." },
-      "route": { "status": "ready", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg", "brief": "Route slot should show Samcheok extending the coast after Gangneung." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg", "brief": "Street slot should eventually show port meals, beach roads, or local stay texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg",
+        "brief": "Hero should show Samcheok as the scenic continuation of the East Sea route."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg",
+        "brief": "History slot should eventually show cave, port, cliff, or older shoreline movement memory."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg",
+        "brief": "Present slot should show beaches, caves, rail-bike scenery, ports, and seafood pacing."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg",
+        "brief": "Route slot should show Samcheok extending the coast after Gangneung."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-11-12%2014.02.53%20samcheok.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/File:2025-11-12_14.02.53_samcheok.jpg",
+        "brief": "Street slot should eventually show port meals, beach roads, or local stay texture."
+      }
     }
   },
   "pyeongchang": {
     "city": "Pyeongchang",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Hero should establish Pyeongchang as the Route 2 Olympic highland gateway between Wonju and Gangneung." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=174088", "brief": "History slot should eventually show Odaesan, Woljeongsa, or the fir forest path so the city is not only Olympic resort memory." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=97457", "brief": "Present slot should show ski resorts, Phoenix Snow Park, Alpensia, Yongpyong, and winter travel infrastructure." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=110675", "brief": "Route slot should show how Pyeongchang fills the Wonju-to-Daegwallyeong-to-Gangneung mountain gap." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Street slot should eventually capture Jinbu, resort stays, ski village texture, or Odaesan-side local movement." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://www.alpensia.com/en/info/introduction.do",
+        "brief": "Hero should establish Pyeongchang as the Route 2 Olympic highland gateway between Wonju and Gangneung."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=174088",
+        "brief": "History slot should eventually show Odaesan, Woljeongsa, or the fir forest path so the city is not only Olympic resort memory."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=97457",
+        "brief": "Present slot should show ski resorts, Phoenix Snow Park, Alpensia, Yongpyong, and winter travel infrastructure."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=110675",
+        "brief": "Route slot should show how Pyeongchang fills the Wonju-to-Daegwallyeong-to-Gangneung mountain gap."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://www.alpensia.com/en/info/introduction.do",
+        "brief": "Street slot should eventually capture Jinbu, resort stays, ski village texture, or Odaesan-side local movement."
+      }
     }
   },
   "daegwallyeong": {
     "city": "Daegwallyeong",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Hero should establish Daegwallyeong as the final highland pass before Gangneung and the East Sea." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "History slot should eventually show the pass, ranch, wind, or old crossing logic beyond resort imagery." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Present slot should show Alpensia, Yongpyong, ski stays, Olympic venue memory, and four-season resort services." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Route slot should show the final Pyeongchang-to-Gangneung threshold where highland turns into coast." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg", "sourceHref": "https://www.alpensia.com/en/info/introduction.do", "brief": "Street slot should eventually capture resort village, ranch, mountain food, wind farms, or pass-side stay texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://www.alpensia.com/en/info/introduction.do",
+        "brief": "Hero should establish Daegwallyeong as the final highland pass before Gangneung and the East Sea."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://www.alpensia.com/en/info/introduction.do",
+        "brief": "History slot should eventually show the pass, ranch, wind, or old crossing logic beyond resort imagery."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://www.alpensia.com/en/info/introduction.do",
+        "brief": "Present slot should show Alpensia, Yongpyong, ski stays, Olympic venue memory, and four-season resort services."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://www.alpensia.com/en/info/introduction.do",
+        "brief": "Route slot should show the final Pyeongchang-to-Gangneung threshold where highland turns into coast."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg",
+        "sourceHref": "https://www.alpensia.com/en/info/introduction.do",
+        "brief": "Street slot should eventually capture resort village, ranch, mountain food, wind farms, or pass-side stay texture."
+      }
     }
   },
   "uljin": {
     "city": "Uljin",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/uljin/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png", "brief": "Hero should show Uljin as an open, spacious East Sea chapter." },
-      "history": { "status": "briefed", "asset": "/images/routes/route-1/uljin/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png", "brief": "History slot should eventually show forested coast, maritime memory, or quieter shoreline culture." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/uljin/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png", "brief": "Present slot should show seafood, beach, hot-spring recovery, and modest stay logic." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/uljin/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png", "brief": "Route slot should show Uljin preserving openness before Yeongdeok and Pohang." },
-      "street": { "status": "briefed", "asset": "/images/routes/route-1/uljin/hero-generated-v1.png", "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png", "brief": "Street slot should capture harbor food, lodging, forest-road, or quiet coastal texture." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "brief": "Hero should show Uljin as an open, spacious East Sea chapter."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "brief": "History slot should eventually show forested coast, maritime memory, or quieter shoreline culture."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "brief": "Present slot should show seafood, beach, hot-spring recovery, and modest stay logic."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "brief": "Route slot should show Uljin preserving openness before Yeongdeok and Pohang."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/uljin/hero-generated-v1.png",
+        "brief": "Street slot should capture harbor food, lodging, forest-road, or quiet coastal texture."
+      }
     }
   },
   "gyeongju": {
     "city": "Gyeongju",
     "slots": {
-      "hero": { "status": "ready", "asset": "/images/routes/route-1/gyeongju/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/gyeongju/support-1-generated-v1.png", "brief": "Hero should show Gyeongju as the Silla-heritage handoff before Busan." },
-      "history": { "status": "ready", "asset": "/images/routes/route-1/gyeongju/support-1-generated-v1.png", "sourceHref": "/images/routes/route-1/gyeongju/support-1-generated-v1.png", "brief": "History slot should show royal tombs, temples, old capital memory, or heritage-core context." },
-      "present": { "status": "ready", "asset": "/images/routes/route-1/gyeongju/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/gyeongju/support-2-generated-v1.png", "brief": "Present slot should show Bomun, cafes, hotels, night walks, markets, and living stay logic." },
-      "route": { "status": "ready", "asset": "/images/routes/route-1/gyeongju/support-3-generated-v1.png", "sourceHref": "/images/routes/route-1/gyeongju/support-3-generated-v1.png", "brief": "Route slot should show Gyeongju setting up the final Busan arrival." },
-      "street": { "status": "ready", "asset": "/images/routes/route-1/gyeongju/support-2-generated-v1.png", "sourceHref": "/images/routes/route-1/gyeongju/support-2-generated-v1.png", "brief": "Street slot should show heritage-core walks, food, evening stays, or Bomun comfort." }
+      "hero": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gyeongju/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gyeongju/support-1-generated-v1.png",
+        "brief": "Hero should show Gyeongju as the Silla-heritage handoff before Busan."
+      },
+      "history": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gyeongju/support-1-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gyeongju/support-1-generated-v1.png",
+        "brief": "History slot should show royal tombs, temples, old capital memory, or heritage-core context."
+      },
+      "present": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gyeongju/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gyeongju/support-2-generated-v1.png",
+        "brief": "Present slot should show Bomun, cafes, hotels, night walks, markets, and living stay logic."
+      },
+      "route": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gyeongju/support-3-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gyeongju/support-3-generated-v1.png",
+        "brief": "Route slot should show Gyeongju setting up the final Busan arrival."
+      },
+      "street": {
+        "status": "ready",
+        "asset": "/images/routes/route-1/gyeongju/support-2-generated-v1.png",
+        "sourceHref": "/images/routes/route-1/gyeongju/support-2-generated-v1.png",
+        "brief": "Street slot should show heritage-core walks, food, evening stays, or Bomun comfort."
+      }
     }
   },
   "andong": {
@@ -527,161 +1052,621 @@
   "yangyang": {
     "city": "Yangyang",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "brief": "Hero should lead with Yangyang as an East Sea surf-and-temple hinge, ideally Surfyy Beach with Naksansa close in the story." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111119", "brief": "History slot should show Naksansa or Uisangdae so Yangyang keeps older pilgrimage and Gwandong view culture visible." },
-      "present": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "brief": "Present slot should show Surfyy Beach, surf schools, beach stays, and the youthful coast culture travelers search for." },
-      "route": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111020", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111020", "brief": "Route slot should show Hajodae or open coast as the Sokcho-to-Gangneung handoff along National Route 7." },
-      "street": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381", "brief": "Street slot should eventually capture cafes, beach roads, surf rentals, or stay-zone texture around Hajodae and Jukdo." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381",
+        "brief": "Hero should lead with Yangyang as an East Sea surf-and-temple hinge, ideally Surfyy Beach with Naksansa close in the story."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111119",
+        "brief": "History slot should show Naksansa or Uisangdae so Yangyang keeps older pilgrimage and Gwandong view culture visible."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381",
+        "brief": "Present slot should show Surfyy Beach, surf schools, beach stays, and the youthful coast culture travelers search for."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111020",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111020",
+        "brief": "Route slot should show Hajodae or open coast as the Sokcho-to-Gangneung handoff along National Route 7."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381",
+        "brief": "Street slot should eventually capture cafes, beach roads, surf rentals, or stay-zone texture around Hajodae and Jukdo."
+      }
     }
   },
   "donghae": {
     "city": "Donghae",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91465", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91465", "brief": "Hero should show Mukho Lighthouse or port-height views so Donghae reads as a working coastal city, not only scenery." },
-      "history": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451", "brief": "History slot should show Nongoldam-gil or Mukho port storytelling, linking the village lanes to harbor life and memory." },
-      "present": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94231", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94231", "brief": "Present slot should show Chuam Chotdaebawi, sunrise viewing, beach paths, and the photo-stop logic travelers understand quickly." },
-      "route": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=95394", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=95394", "brief": "Route slot should show Mureunggyegok Valley or mountain-water recovery as the inland counterpoint to the coastal road." },
-      "street": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451", "brief": "Street slot should eventually show Nongoldam-gil murals, cafes, seafood lanes, and port-side walking texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91465",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91465",
+        "brief": "Hero should show Mukho Lighthouse or port-height views so Donghae reads as a working coastal city, not only scenery."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451",
+        "brief": "History slot should show Nongoldam-gil or Mukho port storytelling, linking the village lanes to harbor life and memory."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94231",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94231",
+        "brief": "Present slot should show Chuam Chotdaebawi, sunrise viewing, beach paths, and the photo-stop logic travelers understand quickly."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=95394",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=95394",
+        "brief": "Route slot should show Mureunggyegok Valley or mountain-water recovery as the inland counterpoint to the coastal road."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=75451",
+        "brief": "Street slot should eventually show Nongoldam-gil murals, cafes, seafood lanes, and port-side walking texture."
+      }
     }
   },
   "gongju": {
     "city": "Gongju",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should establish Gongju as Route 5's Baekje gateway with fortress, river, and old-capital atmosphere." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg", "sourceHref": "https://whc.unesco.org/en/list/1477/", "brief": "History slot should show Gongsanseong, Baekje royal memory, or the UNESCO Baekje Historic Areas context." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Magoksa%20Temple.jpg", "sourceHref": "https://whc.unesco.org/en/list/1562/", "brief": "Present slot should show Magoksa, riverside walks, cafes, or small-city travel texture before Jeonju." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongju%20Geumgang%20River.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should explain the Seoul-to-Gongju-to-Jeonju handoff along the central-west southbound line." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should eventually capture Gongju's old-town, river, market, and relaxed heritage-stay texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg",
+        "brief": "Hero should establish Gongju as Route 5's Baekje gateway with fortress, river, and old-capital atmosphere."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg",
+        "sourceHref": "https://whc.unesco.org/en/list/1477/",
+        "brief": "History slot should show Gongsanseong, Baekje royal memory, or the UNESCO Baekje Historic Areas context."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Magoksa%20Temple.jpg",
+        "sourceHref": "https://whc.unesco.org/en/list/1562/",
+        "brief": "Present slot should show Magoksa, riverside walks, cafes, or small-city travel texture before Jeonju."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongju%20Geumgang%20River.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongju%20Geumgang%20River.jpg",
+        "brief": "Route slot should explain the Seoul-to-Gongju-to-Jeonju handoff along the central-west southbound line."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gongsanseong%20Fortress.jpg",
+        "brief": "Street slot should eventually capture Gongju's old-town, river, market, and relaxed heritage-stay texture."
+      }
     }
   },
   "jeonju": {
     "city": "Jeonju",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Jeonju Hanok Village as the main Jeolla food and culture overnight on Route 5." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show hanok streets, old-city texture, local craft, or shrine context rather than generic skyline." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Bibimbap.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show bibimbap, makgeolli, markets, snacks, and the living food culture travelers search for." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Jeonju as the anchor night before Namwon, Suncheon, and Yeosu." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Nambu%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture market lanes, hanok guesthouses, evening food, or makgeolli alley texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg",
+        "brief": "Hero should show Jeonju Hanok Village as the main Jeolla food and culture overnight on Route 5."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg",
+        "brief": "History slot should show hanok streets, old-city texture, local craft, or shrine context rather than generic skyline."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Bibimbap.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Bibimbap.jpg",
+        "brief": "Present slot should show bibimbap, makgeolli, markets, snacks, and the living food culture travelers search for."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Hanok%20Village.jpg",
+        "brief": "Route slot should show Jeonju as the anchor night before Namwon, Suncheon, and Yeosu."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Nambu%20Market.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeonju%20Nambu%20Market.jpg",
+        "brief": "Street slot should capture market lanes, hanok guesthouses, evening food, or makgeolli alley texture."
+      }
     }
   },
   "namwon": {
     "city": "Namwon",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Gwanghalluwon or garden atmosphere so Namwon reads as the Chunhyang story chapter." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show Chunhyang, Gwanghalluwon, pavilions, or romance-city memory in a specific way." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jirisan%20National%20Park.jpg", "sourceHref": "https://english.knps.or.kr", "brief": "Present slot should show Jirisan edge, walking, festivals, local food, or slower overnight texture." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should explain Namwon's role between Jeonju's food city and Suncheon's ecology gateway." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Namwon%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should eventually capture Namwon's garden-adjacent town streets, local meals, and calm lodging mood." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg",
+        "brief": "Hero should show Gwanghalluwon or garden atmosphere so Namwon reads as the Chunhyang story chapter."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg",
+        "brief": "History slot should show Chunhyang, Gwanghalluwon, pavilions, or romance-city memory in a specific way."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Jirisan%20National%20Park.jpg",
+        "sourceHref": "https://english.knps.or.kr",
+        "brief": "Present slot should show Jirisan edge, walking, festivals, local food, or slower overnight texture."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gwanghalluwon%20Garden.jpg",
+        "brief": "Route slot should explain Namwon's role between Jeonju's food city and Suncheon's ecology gateway."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Namwon%20Korea.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Namwon%20Korea.jpg",
+        "brief": "Street slot should eventually capture Namwon's garden-adjacent town streets, local meals, and calm lodging mood."
+      }
     }
   },
   "gwangju": {
     "city": "Gwangju",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/May%2018%20National%20Cemetery.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110989", "brief": "Hero should establish Gwangju first through May 18 modern Korean history and civic memory, then support the present-day culture layer." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/May%2018%20National%20Cemetery.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110989", "brief": "History slot should show May 18 Democratic Uprising memory or memorial space with sensitivity, clarity, and enough visual gravity." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Asia%20Culture%20Center%20Gwangju.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Asia Culture Center, art, food, markets, or contemporary Honam city life after the modern-history frame is clear." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mudeungsan%20National%20Park.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=111555", "brief": "Route slot should connect Gwangju to Suncheon through Mudeungsan, city scale, and the southbound Honam corridor." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yangnim-dong%20Penguin%20Village.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=14850", "brief": "Street slot should capture Yangnim-dong, craft streets, markets, cafes, and the lived-in Gwangju texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/May%2018%20National%20Cemetery.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110989",
+        "brief": "Hero should establish Gwangju first through May 18 modern Korean history and civic memory, then support the present-day culture layer."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/May%2018%20National%20Cemetery.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110989",
+        "brief": "History slot should show May 18 Democratic Uprising memory or memorial space with sensitivity, clarity, and enough visual gravity."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Asia%20Culture%20Center%20Gwangju.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Asia%20Culture%20Center%20Gwangju.jpg",
+        "brief": "Present slot should show Asia Culture Center, art, food, markets, or contemporary Honam city life after the modern-history frame is clear."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mudeungsan%20National%20Park.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=111555",
+        "brief": "Route slot should connect Gwangju to Suncheon through Mudeungsan, city scale, and the southbound Honam corridor."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yangnim-dong%20Penguin%20Village.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=14850",
+        "brief": "Street slot should capture Yangnim-dong, craft streets, markets, cafes, and the lived-in Gwangju texture."
+      }
     }
   },
   "imsil": {
     "city": "Imsil",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=351&vcontsId=34120", "brief": "Hero should show Imsil as the cheese-country stop that makes the Jeonju-to-Namwon gap feel intentional." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?dataSetId=262&menuSn=929&vcontsId=250027", "brief": "History slot should explain Korea's cheese production story and Imsil's rural dairy identity." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=351&vcontsId=34120", "brief": "Present slot should show Cheese Theme Park, family travel, cheese experiences, and local food production." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Okjeongho%20Lake.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should connect Jeonju, Imsil, Namwon, and Suncheon through rural Jeolla and Okjeongho lake scenery." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should eventually show rural cafes, cheese shops, local roads, and the softer branch-stop mood." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=351&vcontsId=34120",
+        "brief": "Hero should show Imsil as the cheese-country stop that makes the Jeonju-to-Namwon gap feel intentional."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?dataSetId=262&menuSn=929&vcontsId=250027",
+        "brief": "History slot should explain Korea's cheese production story and Imsil's rural dairy identity."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=351&vcontsId=34120",
+        "brief": "Present slot should show Cheese Theme Park, family travel, cheese experiences, and local food production."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Okjeongho%20Lake.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Okjeongho%20Lake.jpg",
+        "brief": "Route slot should connect Jeonju, Imsil, Namwon, and Suncheon through rural Jeolla and Okjeongho lake scenery."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Imsil%20Cheese%20Theme%20Park.jpg",
+        "brief": "Street slot should eventually show rural cafes, cheese shops, local roads, and the softer branch-stop mood."
+      }
     }
   },
   "suncheon": {
     "city": "Suncheon",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Suncheon Bay Wetland, reeds, or sunset so the city reads as Route 5's ecological hinge." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg", "sourceHref": "https://www.ramsar.org", "brief": "History slot should show older bay, reed, village, or agricultural landscape memory behind the modern eco identity." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20National%20Garden.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Suncheon Bay National Garden and how planned ecology gives the city present-day appeal." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Suncheon as the calm ecological threshold before the Yeosu finale." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should eventually capture old-town pockets, cafes, wetland access streets, and overnight recovery texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg",
+        "brief": "Hero should show Suncheon Bay Wetland, reeds, or sunset so the city reads as Route 5's ecological hinge."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg",
+        "sourceHref": "https://www.ramsar.org",
+        "brief": "History slot should show older bay, reed, village, or agricultural landscape memory behind the modern eco identity."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20National%20Garden.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20National%20Garden.jpg",
+        "brief": "Present slot should show Suncheon Bay National Garden and how planned ecology gives the city present-day appeal."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg",
+        "brief": "Route slot should show Suncheon as the calm ecological threshold before the Yeosu finale."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg",
+        "brief": "Street slot should eventually capture old-town pockets, cafes, wetland access streets, and overnight recovery texture."
+      }
     }
   },
   "yeosu": {
     "city": "Yeosu",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Night%20Sea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should make Yeosu feel like the Route 5 finale through night sea, harbor, islands, and south-coast mood." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyangiram%20Hermitage.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show Hyangiram, maritime temple-view culture, island geography, or older harbor memory." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Odongdo%20Island.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Odongdo, cable-car or harbor walks, seafood, cafes, Expo memory, and night-sea energy." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Night%20Sea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Yeosu as the emotional south-coast arrival after Suncheon and the Jeolla inland line." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should eventually capture seafood streets, harbor walks, Dolsan views, and night-market atmosphere." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Night%20Sea.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Night%20Sea.jpg",
+        "brief": "Hero should make Yeosu feel like the Route 5 finale through night sea, harbor, islands, and south-coast mood."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyangiram%20Hermitage.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyangiram%20Hermitage.jpg",
+        "brief": "History slot should show Hyangiram, maritime temple-view culture, island geography, or older harbor memory."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Odongdo%20Island.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Odongdo%20Island.jpg",
+        "brief": "Present slot should show Odongdo, cable-car or harbor walks, seafood, cafes, Expo memory, and night-sea energy."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Night%20Sea.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Night%20Sea.jpg",
+        "brief": "Route slot should show Yeosu as the emotional south-coast arrival after Suncheon and the Jeolla inland line."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Korea.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeosu%20Korea.jpg",
+        "brief": "Street slot should eventually capture seafood streets, harbor walks, Dolsan views, and night-market atmosphere."
+      }
     }
   },
   "incheon": {
     "city": "Incheon",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should establish Incheon as Route 6's open-port and West Sea first chapter, not only an airport city." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show open-port streets, Chinatown, port contact, or migration-era memory." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Songdo%20Incheon.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show modern Incheon, airport scale, Songdo, ferry terminals, seafood, or island access." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolmido%20Incheon.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Wolmido, harbor, ferry, or West Sea edge before the Suwon handoff." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture Chinatown, open-port lanes, cafes, market food, and harbor walking texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg",
+        "brief": "Hero should establish Incheon as Route 6's open-port and West Sea first chapter, not only an airport city."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg",
+        "brief": "History slot should show open-port streets, Chinatown, port contact, or migration-era memory."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Songdo%20Incheon.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Songdo%20Incheon.jpg",
+        "brief": "Present slot should show modern Incheon, airport scale, Songdo, ferry terminals, seafood, or island access."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolmido%20Incheon.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolmido%20Incheon.jpg",
+        "brief": "Route slot should show Wolmido, harbor, ferry, or West Sea edge before the Suwon handoff."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Incheon%20Chinatown.jpg",
+        "brief": "Street slot should capture Chinatown, open-port lanes, cafes, market food, and harbor walking texture."
+      }
     }
   },
   "suwon": {
     "city": "Suwon",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg", "sourceHref": "https://whc.unesco.org/en/list/817/", "brief": "Hero should show Hwaseong Fortress as Route 6's UNESCO fortress-planning hinge before the west coast widens." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg", "sourceHref": "https://whc.unesco.org/en/list/817/", "brief": "History slot should show King Jeongjo, Hwaseong walls, gates, or planned-city context." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Paldalmun%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Paldalmun Market, food streets, night walls, or walkable city-stay texture." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Suwon handing Route 6 from Incheon open-port memory toward Seosan and the coast." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Paldalmun%20Market.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture markets, fortress-wall walks, food, and evening stay practicality." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg",
+        "sourceHref": "https://whc.unesco.org/en/list/817/",
+        "brief": "Hero should show Hwaseong Fortress as Route 6's UNESCO fortress-planning hinge before the west coast widens."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg",
+        "sourceHref": "https://whc.unesco.org/en/list/817/",
+        "brief": "History slot should show King Jeongjo, Hwaseong walls, gates, or planned-city context."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Paldalmun%20Market.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Paldalmun%20Market.jpg",
+        "brief": "Present slot should show Paldalmun Market, food streets, night walls, or walkable city-stay texture."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Hwaseong%20Fortress.jpg",
+        "brief": "Route slot should show Suwon handing Route 6 from Incheon open-port memory toward Seosan and the coast."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Paldalmun%20Market.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Suwon%20Paldalmun%20Market.jpg",
+        "brief": "Street slot should capture markets, fortress-wall walks, food, and evening stay practicality."
+      }
     }
   },
   "seosan": {
     "city": "Seosan",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Seosan as the Haemi, Naepo, and Taean gateway rather than a generic coast stop." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show Haemi Martyrdom, Haemieupseong, Catholic memory, or Naepo-region context." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taean%20Kkotji%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Taean coast access, seafood, garlic, tidal flats, or local market texture." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Seosan connecting Suwon's fortress chapter to Boryeong's beach and festival chapter." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Seosan%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should eventually capture local food, market, coast-road, and quiet gateway atmosphere." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg",
+        "brief": "Hero should show Seosan as the Haemi, Naepo, and Taean gateway rather than a generic coast stop."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg",
+        "brief": "History slot should show Haemi Martyrdom, Haemieupseong, Catholic memory, or Naepo-region context."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Taean%20Kkotji%20Beach.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Taean%20Kkotji%20Beach.jpg",
+        "brief": "Present slot should show Taean coast access, seafood, garlic, tidal flats, or local market texture."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Haemieupseong%20Fortress.jpg",
+        "brief": "Route slot should show Seosan connecting Suwon's fortress chapter to Boryeong's beach and festival chapter."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Seosan%20Korea.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Seosan%20Korea.jpg",
+        "brief": "Street slot should eventually capture local food, market, coast-road, and quiet gateway atmosphere."
+      }
     }
   },
   "boryeong": {
     "city": "Boryeong",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Daecheon Beach or Boryeong Mud Festival energy as Route 6's beach chapter." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show mudflat, fishing-village, or older West Sea resource memory behind the festival." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Boryeong%20Mud%20Festival.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Boryeong Mud Festival, mud cosmetics, summer beach culture, and global search appeal." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Boryeong bridging Seosan's Haemi/Taean chapter and Gunsan's modern port memory." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture beach stays, seafood, sunset streets, festival streets, and light coastal energy." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg",
+        "brief": "Hero should show Daecheon Beach or Boryeong Mud Festival energy as Route 6's beach chapter."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg",
+        "brief": "History slot should show mudflat, fishing-village, or older West Sea resource memory behind the festival."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Boryeong%20Mud%20Festival.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Boryeong%20Mud%20Festival.jpg",
+        "brief": "Present slot should show Boryeong Mud Festival, mud cosmetics, summer beach culture, and global search appeal."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg",
+        "brief": "Route slot should show Boryeong bridging Seosan's Haemi/Taean chapter and Gunsan's modern port memory."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon%20Beach.jpg",
+        "brief": "Street slot should capture beach stays, seafood, sunset streets, festival streets, and light coastal energy."
+      }
     }
   },
   "gunsan": {
     "city": "Gunsan",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should establish Gunsan as Route 6's modern port-history anchor before Mokpo." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show the Modern History Museum, old port streets, or colonial-era architecture with careful context." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20old%20streets.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show bakeries, cafes, seafood, old-town walking, and living port-city travel." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Port.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Gunsan linking Boryeong beach energy to Mokpo southwest harbor arrival." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20old%20streets.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture old-town lanes, bakeries, museums, seafood streets, and port atmosphere." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg",
+        "brief": "Hero should establish Gunsan as Route 6's modern port-history anchor before Mokpo."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Modern%20History%20Museum.jpg",
+        "brief": "History slot should show the Modern History Museum, old port streets, or colonial-era architecture with careful context."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20old%20streets.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20old%20streets.jpg",
+        "brief": "Present slot should show bakeries, cafes, seafood, old-town walking, and living port-city travel."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Port.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20Port.jpg",
+        "brief": "Route slot should show Gunsan linking Boryeong beach energy to Mokpo southwest harbor arrival."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20old%20streets.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Gunsan%20old%20streets.jpg",
+        "brief": "Street slot should capture old-town lanes, bakeries, museums, seafood streets, and port atmosphere."
+      }
     }
   },
   "mokpo": {
     "city": "Mokpo",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Yudalsan.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Hero should show Mokpo as Route 6's southwest harbor finale with Yudalsan, port, and island-sea atmosphere." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Modern%20History%20Museum.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "History slot should show modern port streets, museum context, maritime trade, or old harbor memory." },
-      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Gatbawi.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Present slot should show Gatbawi, seafood, ferries, cable-car views, cafes, or Dadohae sunset." },
-      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Harbor.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Route slot should show Mokpo as the West Sea finale and future Route 7 south-coast handoff." },
-      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Korea.jpg", "sourceHref": "https://english.visitkorea.or.kr", "brief": "Street slot should capture seafood streets, ferry mood, harbor walks, cafes, and old-town layers." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Yudalsan.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Yudalsan.jpg",
+        "brief": "Hero should show Mokpo as Route 6's southwest harbor finale with Yudalsan, port, and island-sea atmosphere."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Modern%20History%20Museum.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Modern%20History%20Museum.jpg",
+        "brief": "History slot should show modern port streets, museum context, maritime trade, or old harbor memory."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Gatbawi.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Gatbawi.jpg",
+        "brief": "Present slot should show Gatbawi, seafood, ferries, cable-car views, cafes, or Dadohae sunset."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Harbor.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Harbor.jpg",
+        "brief": "Route slot should show Mokpo as the West Sea finale and future Route 7 south-coast handoff."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Korea.jpg",
+        "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Korea.jpg",
+        "brief": "Street slot should capture seafood streets, ferry mood, harbor walks, cafes, and old-town layers."
+      }
+    }
+  },
+  "haenam": {
+    "city": "Haenam",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Duryunsan%20Mountain.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Duryunsan%20Mountain.jpg", "brief": "Hero should establish Haenam as Route 7's land-end threshold through Duryunsan, Ttangkkeut, or southern peninsula views." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daeheungsa%20Temple.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Daeheungsa%20Temple.jpg", "brief": "History slot should show Daeheungsa or Duryunsan temple context so Haenam carries older spiritual depth." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Ttangkkeut%20Village.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Ttangkkeut%20Village.jpg", "brief": "Present slot should show Ttangkkeut, seafood, rural roads, or the land-end travel identity." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haenam%20Korea.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Haenam%20Korea.jpg", "brief": "Route slot should show Haenam linking Mokpo harbor to Wando island travel." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Haenam%20Market.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Haenam%20Market.jpg", "brief": "Street slot should capture small-town roads, food, market texture, and the slower rural south coast." }
+    }
+  },
+  "wando": {
+    "city": "Wando",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20Korea.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20Korea.jpg", "brief": "Hero should show Wando as an island and seafood gateway after Haenam." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheongsando.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheongsando.jpg", "brief": "History slot should show Cheongsando or island settlement memory so Wando's maritime identity is visible." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20seaweed.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20seaweed.jpg", "brief": "Present slot should show seafood, seaweed, ferries, or marine tourism." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20Arboretum.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20Arboretum.jpg", "brief": "Route slot should show the Wando Arboretum or island-greenery transition before Boseong." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20Harbor.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Wando%20Harbor.jpg", "brief": "Street slot should capture harbor food, ferry movement, seafood streets, and island stay texture." }
+    }
+  },
+  "boseong": {
+    "city": "Boseong",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20Green%20Tea%20Fields.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20Green%20Tea%20Fields.jpg", "brief": "Hero should show Boseong's green tea fields as the calm Route 7 landscape reset." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Daehan%20Dawon.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Daehan%20Dawon.jpg", "brief": "History slot should show Daehan Dawon or tea-production context rather than generic greenery." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20tea.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20tea.jpg", "brief": "Present slot should show tea food, cafes, field walks, or local green-tea travel." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20Korea.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20Korea.jpg", "brief": "Route slot should show Boseong linking Wando island road to Suncheon ecology." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20street.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Boseong%20street.jpg", "brief": "Street slot should capture rural Jeolla lanes, tea shops, food, and quieter south-coast pacing." }
+    }
+  },
+  "namhae": {
+    "city": "Namhae",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Namhae%20German%20Village.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Namhae%20German%20Village.jpg", "brief": "Hero should show Namhae as an island-road chapter, ideally German Village or a coastal drive view." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Boriam%20Namhae.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Boriam%20Namhae.jpg", "brief": "History slot should show Boriam or a temple-view layer so Namhae is not only a scenic drive." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Darangee%20Village.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Darangee%20Village.jpg", "brief": "Present slot should show Darangee terraces, beaches, pensions, seafood, or cafe-stay texture." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Namhae%20coast.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Namhae%20coast.jpg", "brief": "Route slot should show Yeosu-to-Namhae island-road pacing and the handoff toward Tongyeong." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Namhae%20Korea.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Namhae%20Korea.jpg", "brief": "Street slot should capture small roads, seafood, guesthouses, terraces, and bridge-connected island life." }
+    }
+  },
+  "tongyeong": {
+    "city": "Tongyeong",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg", "brief": "Hero should establish Tongyeong as Route 7's Hallyeohaesang harbor and island-culture city." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Yi%20Sun-sin.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Yi%20Sun-sin.jpg", "brief": "History slot should show Yi Sun-sin, naval memory, or old port context." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Dongpirang%20Village.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Dongpirang%20Village.jpg", "brief": "Present slot should show Dongpirang, seafood, ferries, art streets, or compact harbor travel." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallyeohaesang%20National%20Park.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallyeohaesang%20National%20Park.jpg", "brief": "Route slot should show Hallyeohaesang islands and Tongyeong's handoff toward Geoje." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20street.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20street.jpg", "brief": "Street slot should capture seafood markets, ferry streets, mural lanes, cafes, and port walking." }
+    }
+  },
+  "geoje": {
+    "city": "Geoje",
+    "slots": {
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Windy%20Hill%20Geoje.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Windy%20Hill%20Geoje.jpg", "brief": "Hero should show Geoje's scenic island appeal while still preparing the Busan handoff." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoje%20POW%20Camp.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoje%20POW%20Camp.jpg", "brief": "History slot should show Geoje POW Camp or Korean War memory so the island has past-present depth." },
+      "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Oedo%20Botania.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Oedo%20Botania.jpg", "brief": "Present slot should show Oedo Botania, beaches, shipbuilding scale, or bridge-connected island travel." },
+      "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoje%20Bridge.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoje%20Bridge.jpg", "brief": "Route slot should show Geoje as the final island infrastructure handoff into Busan." },
+      "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoje%20Korea.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoje%20Korea.jpg", "brief": "Street slot should capture island food, harbor roads, beaches, local stays, and modern maritime life." }
     }
   },
   "ulsan": {
     "city": "Ulsan",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963", "brief": "Hero should show Daewangam Park or its coastal rocks so Ulsan enters as a dramatic East Sea metropolis before Busan." },
-      "history": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68966", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68966", "brief": "History slot should show Jangsaengpo whale memory so Ulsan is not reduced to industry alone." },
-      "present": { "status": "briefed", "asset": "https://tong.visitkorea.or.kr/cms/resource/44/3422844_image2_1.png", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=80718", "brief": "Present slot should show Taehwagang National Garden and river recovery as Ulsan's modern ecological identity." },
-      "route": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963", "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963", "brief": "Route slot should show Daewangam or the southeast coastal edge that prepares the final Ulsan-to-Busan handoff." },
-      "street": { "status": "briefed", "asset": "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=140322", "sourceHref": "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=140322", "brief": "Street slot should eventually capture city-scale Ulsan: whale district, cafes, port mood, river walks, or industrial coast texture." }
+      "hero": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963",
+        "brief": "Hero should show Daewangam Park or its coastal rocks so Ulsan enters as a dramatic East Sea metropolis before Busan."
+      },
+      "history": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68966",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68966",
+        "brief": "History slot should show Jangsaengpo whale memory so Ulsan is not reduced to industry alone."
+      },
+      "present": {
+        "status": "briefed",
+        "asset": "https://tong.visitkorea.or.kr/cms/resource/44/3422844_image2_1.png",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=80718",
+        "brief": "Present slot should show Taehwagang National Garden and river recovery as Ulsan's modern ecological identity."
+      },
+      "route": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963",
+        "brief": "Route slot should show Daewangam or the southeast coastal edge that prepares the final Ulsan-to-Busan handoff."
+      },
+      "street": {
+        "status": "briefed",
+        "asset": "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=140322",
+        "sourceHref": "https://english.visitkorea.or.kr/svc/contents/infoHtmlView.do?menuSn=177&vcontsId=140322",
+        "brief": "Street slot should eventually capture city-scale Ulsan: whale district, cafes, port mood, river walks, or industrial coast texture."
+      }
     }
   }
 }

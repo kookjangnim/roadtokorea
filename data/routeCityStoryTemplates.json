@@ -464,6 +464,60 @@
     "imageBrief": "Use one Yudalsan or harbor-view image, one Gatbawi image, one modern-history street image, one seafood/ferry image, and one future south-coast handoff image.",
     "qualityBar": ["The page must make Mokpo the Route 6 finale.", "The page must connect Yudalsan, Gatbawi, harbor food, ferries, and modern history.", "The page must prepare future Route 7 south-coast expansion.", "The images must show harbor, mountain, rock, food/ferry, and southwest arrival."]
   },
+  "haenam": {
+    "city": "Haenam",
+    "routeSlug": "route-7",
+    "historicalWeight": "Haenam carries Korea's southern land-end imagination through Ttangkkeut, Duryunsan, Daeheungsa, temple memory, peninsula roads, and the feeling of reaching the edge before the island coast begins.",
+    "modernIdentity": "Modern Haenam works through land-end travel, Duryunsan views, temple stays, seafood, rural stays, and the practical handoff toward Wando and the islands.",
+    "routeMeaning": "On Route 7, Haenam is the symbolic threshold after Mokpo. It prevents the south-coast line from feeling like a transfer and gives the traveler a clear reason to slow down before Wando.",
+    "imageBrief": "Use one Ttangkkeut or land-end image, one Duryunsan image, one Daeheungsa image, one rural/seafood cue, and one Wando handoff image.",
+    "qualityBar": ["The page must explain Haenam through Ttangkkeut, Duryunsan, and Daeheungsa.", "The page must connect Mokpo, Haenam, Wando, and Route 7 clearly.", "The page must balance land-end symbolism with current travel value.", "The images must show land-end, mountain, temple, food or rural roads, and Wando handoff."]
+  },
+  "wando": {
+    "city": "Wando",
+    "routeSlug": "route-7",
+    "historicalWeight": "Wando should carry island and maritime memory through ferry movement, fishing life, seaweed culture, Cheongsando, and the long relationship between food, islands, and the southern sea.",
+    "modernIdentity": "Modern Wando works through seafood, seaweed, Cheongsando slow travel, ferry terminals, Wando Arboretum, marine tourism, and island stays.",
+    "routeMeaning": "On Route 7, Wando is the first unmistakable island chapter. It turns Haenam's land-end threshold into a living maritime route before Boseong slows the story with tea fields.",
+    "imageBrief": "Use one Wando harbor or island image, one Cheongsando image, one seafood/seaweed cue, one Wando Arboretum cue, and one Boseong handoff image.",
+    "qualityBar": ["The page must explain Wando as island and seafood gateway.", "The page must include Cheongsando, Wando Arboretum, and marine identity.", "The page must connect Haenam, Wando, and Boseong.", "The images must show island water, seafood/seaweed, slow island travel, greenery, and route handoff."]
+  },
+  "boseong": {
+    "city": "Boseong",
+    "routeSlug": "route-7",
+    "historicalWeight": "Boseong carries agricultural landscape memory, green-tea production, rural Jeolla texture, coastal hills, and the slower inland-side rhythm of the south coast.",
+    "modernIdentity": "Modern Boseong is searchable and visually clear through Daehan Dawon, green tea fields, tea food, cafe culture, scenic roads, and a calm stay before Suncheon.",
+    "routeMeaning": "On Route 7, Boseong is the green-tea pause between island road and ecological city. It gives the route an iconic landscape that English-speaking travelers can remember immediately.",
+    "imageBrief": "Use one Daehan Dawon tea-field image, one tea culture or food cue, one rural road image, one scenic hill/coast cue, and one Suncheon handoff image.",
+    "qualityBar": ["The page must lead with green tea and Daehan Dawon.", "The page must not become only a photo stop; it needs rural and route logic.", "The page must connect Wando, Boseong, and Suncheon.", "The images must show tea fields, tea culture, rural texture, scenery, and route handoff."]
+  },
+  "namhae": {
+    "city": "Namhae",
+    "routeSlug": "route-7",
+    "historicalWeight": "Namhae should carry island settlement, coastal road memory, Boriam temple views, terrace farming, fishing villages, and the bridge-connected geography of the south coast.",
+    "modernIdentity": "Modern Namhae works through German Village, Boriam, Darangee terraces, beaches, seafood, pensions, cafes, and small-road coastal travel.",
+    "routeMeaning": "On Route 7, Namhae is the island-road chapter after Yeosu. It makes the south coast intimate before Tongyeong turns the route into a denser port and island-culture city.",
+    "imageBrief": "Use one German Village image, one Boriam or coastal-view image, one terrace/beach cue, one seafood or stay cue, and one Tongyeong handoff image.",
+    "qualityBar": ["The page must explain Namhae through German Village, Boriam, and island roads.", "The page must connect Yeosu, Namhae, and Tongyeong.", "The page must balance scenic drive, food, and stays.", "The images must show village, temple/view, terraces or beach, food/stay texture, and handoff."]
+  },
+  "tongyeong": {
+    "city": "Tongyeong",
+    "routeSlug": "route-7",
+    "historicalWeight": "Tongyeong carries naval memory, Yi Sun-sin history, island routes, port culture, and the long Hallyeohaesang relationship between sea, defense, trade, and local food.",
+    "modernIdentity": "Modern Tongyeong works through Dongpirang, ferries, seafood, art and music culture, harbor walks, cable-car views, and compact small-city stays.",
+    "routeMeaning": "On Route 7, Tongyeong is the route's dense port-culture chapter. It connects Namhae's island-road calm to Geoje's modern island and Busan handoff.",
+    "imageBrief": "Use one harbor or Hallyeohaesang image, one Yi Sun-sin/naval cue, one Dongpirang image, one seafood/ferry cue, and one Geoje handoff image.",
+    "qualityBar": ["The page must explain Tongyeong through Yi Sun-sin, Dongpirang, Hallyeohaesang, and seafood.", "The page must connect Namhae, Tongyeong, and Geoje.", "The page must balance naval history with living port culture.", "The images must show harbor/islands, history, murals, food/ferries, and handoff."]
+  },
+  "geoje": {
+    "city": "Geoje",
+    "routeSlug": "route-7",
+    "historicalWeight": "Geoje carries Korean War POW Camp memory, island settlement, maritime work, and the bridge-connected geography that links the southern islands to Busan.",
+    "modernIdentity": "Modern Geoje works through shipbuilding, Windy Hill, Oedo Botania, beaches, bridge access, seafood, and a practical final island stay before Busan.",
+    "routeMeaning": "On Route 7, Geoje is the modern island handoff. It keeps the route from ending as scenery only by adding shipbuilding, Korean War history, island gardens, and Busan-facing infrastructure.",
+    "imageBrief": "Use one Windy Hill image, one POW Camp or history cue, one shipbuilding or bridge-scale cue, one Oedo or beach image, and one Busan handoff image.",
+    "qualityBar": ["The page must explain Geoje through POW history, shipbuilding, Windy Hill, and Oedo.", "The page must connect Tongyeong, Geoje, and Busan.", "The page must balance scenic island travel with modern maritime industry.", "The images must show history, industry or bridge scale, island scenery, gardens/beach, and Busan handoff."]
+  },
   "ulsan": {
     "city": "Ulsan",
     "routeSlug": "route-4",

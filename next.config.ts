@@ -69,6 +69,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tier-4/:city(haenam|wando|boseong|namhae|tongyeong|geoje)',
+        destination: '/route-7/:city',
+        permanent: true,
+      },
+      {
         source: '/tier-1/yeosu',
         destination: '/route-5/yeosu',
         permanent: true,

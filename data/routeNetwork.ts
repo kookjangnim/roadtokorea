@@ -65,6 +65,12 @@ export const routeNetworkCities: Record<string, RouteNetworkCity> = {
   boryeong: { slug: 'boryeong', name: 'Boryeong', kind: 'route', x: 30, y: 56, lat: 36.3334, lng: 126.6128, href: '/route-6/boryeong' },
   gunsan: { slug: 'gunsan', name: 'Gunsan', kind: 'route', x: 35, y: 68, lat: 35.9677, lng: 126.7366, href: '/route-6/gunsan' },
   mokpo: { slug: 'mokpo', name: 'Mokpo', kind: 'anchor', x: 35, y: 88, lat: 34.8118, lng: 126.3922, href: '/route-6/mokpo' },
+  haenam: { slug: 'haenam', name: 'Haenam', kind: 'route', x: 38, y: 90, lat: 34.5733, lng: 126.599, href: '/route-7/haenam' },
+  wando: { slug: 'wando', name: 'Wando', kind: 'route', x: 42, y: 93, lat: 34.311, lng: 126.755, href: '/route-7/wando' },
+  boseong: { slug: 'boseong', name: 'Boseong', kind: 'route', x: 49, y: 86, lat: 34.7715, lng: 127.0801, href: '/route-7/boseong' },
+  namhae: { slug: 'namhae', name: 'Namhae', kind: 'route', x: 62, y: 88, lat: 34.837, lng: 127.892, href: '/route-7/namhae' },
+  tongyeong: { slug: 'tongyeong', name: 'Tongyeong', kind: 'route', x: 68, y: 90, lat: 34.8544, lng: 128.4332, href: '/route-7/tongyeong' },
+  geoje: { slug: 'geoje', name: 'Geoje', kind: 'route', x: 72, y: 90, lat: 34.8806, lng: 128.6217, href: '/route-7/geoje' },
 };
 
 export const routeNetworkRoutes: RouteNetworkRoute[] = [
@@ -137,6 +143,16 @@ export const routeNetworkRoutes: RouteNetworkRoute[] = [
     color: '#7c6f2d',
     citySlugs: ['seoul', 'incheon', 'suwon', 'seosan', 'boryeong', 'gunsan', 'mokpo'],
     path: 'M43 13 C39 14, 36 15, 33 16 C36 20, 39 23, 42 25 C37 32, 33 39, 31 45 C30 49, 30 53, 30 56 C32 61, 34 65, 35 68 C34 75, 34 82, 35 88',
+  },
+  {
+    id: 'route-7',
+    label: 'Route 7',
+    title: 'Mokpo to Busan, South Coast island road',
+    summary: 'Mokpo hands the route to Haenam, Wando, Boseong, Suncheon, Yeosu, Namhae, Tongyeong, Geoje, and Busan as a long southern coast of land-end stories, islands, tea fields, ecology, ports, and modern maritime Korea.',
+    href: '/route-7',
+    color: '#c2410c',
+    citySlugs: ['mokpo', 'haenam', 'wando', 'boseong', 'suncheon', 'yeosu', 'namhae', 'tongyeong', 'geoje', 'busan'],
+    path: 'M35 88 C36 89, 37 90, 38 90 C40 92, 41 93, 42 93 C45 90, 47 87, 49 86 C51 83, 53 80, 55 79 C57 82, 59 85, 60 86 C62 87, 62 88, 62 88 C65 89, 67 90, 68 90 C70 90, 71 90, 72 90 C73 89, 74 88, 75 88',
   },
   {
     id: 'branch-2a',

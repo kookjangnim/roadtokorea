@@ -67,6 +67,15 @@ The machine-readable registry lives in `data/cityImageSlots.json`. Each required
 
 Run `npm.cmd run check:city-images` before considering a city content pass complete.
 
+For newly opened flagship routes, also run `npm.cmd run check:image-pipeline`. This stricter audit makes sure the route's reviewed cities have:
+
+- a city-level image production risk note
+- five named visual proof targets
+- a concrete next image action
+- specific source references instead of generic source homepages
+
+Route 5 and Route 6 are the first audited route groups.
+
 ## Chungju-Grade QA
 
 - The city has a route role and a city soul.

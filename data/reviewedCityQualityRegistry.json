@@ -46,7 +46,13 @@
     "seosan",
     "boryeong",
     "gunsan",
-    "mokpo"
+    "mokpo",
+    "haenam",
+    "wando",
+    "boseong",
+    "namhae",
+    "tongyeong",
+    "geoje"
   ],
   "supportTerms": {
     "chungju": ["supportSummary", "roleSummary", "staySummary", "foodSummary", "nextLegSummary"],
@@ -94,6 +100,12 @@
     "seosan": ["Haemi", "Taean", "Naepo", "Boryeong", "supportSummary"],
     "boryeong": ["Mud Festival", "Daecheon", "Gunsan", "supportSummary"],
     "gunsan": ["Modern History", "port", "Mokpo", "supportSummary"],
-    "mokpo": ["Yudalsan", "Gatbawi", "harbor", "supportSummary"]
+    "mokpo": ["Yudalsan", "Gatbawi", "harbor", "supportSummary"],
+    "haenam": ["Ttangkkeut", "Duryunsan", "Daeheungsa", "Wando", "supportSummary"],
+    "wando": ["Cheongsando", "seafood", "Wando Arboretum", "Boseong", "supportSummary"],
+    "boseong": ["green tea", "Daehan Dawon", "Suncheon", "supportSummary"],
+    "namhae": ["German Village", "Boriam", "Tongyeong", "supportSummary"],
+    "tongyeong": ["Yi Sun-sin", "Dongpirang", "Hallyeohaesang", "Geoje", "supportSummary"],
+    "geoje": ["POW", "shipbuilding", "Windy Hill", "Busan", "supportSummary"]
   }
 }
