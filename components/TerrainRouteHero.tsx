@@ -287,7 +287,7 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
   if (!activeRoute) return null;
 
   return (
-    <section className="relative min-h-[calc(100vh-5.5rem)] overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Full-screen map background */}
       <div className="absolute inset-0 z-0 h-full w-full">
         <RealKoreaMap activeRoute={activeRoute} activeCitySlugs={activeCitySlugs} />
@@ -295,59 +295,61 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
       </div>
 
       {/* Content overlay */}
-      <div className="relative z-[1000] mx-auto flex min-h-[calc(100vh-5.5rem)] max-w-7xl flex-col justify-between gap-8 px-4 py-8 md:px-8 md:py-12">
-        {/* Floating card - top left */}
-        <div className="max-w-md rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl md:p-6 lg:max-w-lg">
-          <div className="mb-4">
-            <span className="inline-flex border border-amber-200/20 bg-amber-100/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.34em] text-amber-100 backdrop-blur">
-              {activeScene.eyebrow}
-            </span>
-            <h1 className="mt-3 font-serif text-2xl leading-tight text-white md:text-3xl lg:text-4xl">
-              {getCompactTitle(activeRoute)}
-            </h1>
-          </div>
+      <div className="relative z-[1000] mx-auto grid h-screen max-w-7xl grid-cols-[1fr_auto] px-4 py-8 md:px-8 md:py-12">
+        {/* Left side - Floating card */}
+        <div className="flex flex-col justify-center">
+          <div className="max-w-md rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl md:p-6 lg:max-w-lg">
+            <div className="mb-4">
+              <span className="inline-flex border border-amber-200/20 bg-amber-100/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.34em] text-amber-100 backdrop-blur">
+                {activeScene.eyebrow}
+              </span>
+              <h1 className="mt-3 font-serif text-2xl leading-tight text-white md:text-3xl lg:text-4xl">
+                {getCompactTitle(activeRoute)}
+              </h1>
+            </div>
 
-          <p className="mb-4 text-sm leading-6 text-stone-200">
-            {activeRouteData?.destinationPitch ?? activeRoute.summary}
-          </p>
+            <p className="mb-4 text-sm leading-6 text-stone-200">
+              {activeRouteData?.destinationPitch ?? activeRoute.summary}
+            </p>
 
-          <p className="mb-4 text-xs leading-5 text-stone-400">{activeScene.terrain}</p>
+            <p className="mb-4 text-xs leading-5 text-stone-400">{activeScene.terrain}</p>
 
-          <div className="mb-5 flex flex-wrap gap-1.5">
-            {activeCities.slice(0, 4).map((city) => (
+            <div className="mb-5 flex flex-wrap gap-1.5">
+              {activeCities.slice(0, 4).map((city) => (
+                <Link
+                  key={`${activeRoute.id}-${city.slug}`}
+                  href={city.href}
+                  className="border border-white/12 bg-white/8 px-2.5 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-stone-200 transition-colors hover:border-white/24 hover:bg-white/14"
+                >
+                  {city.name}
+                </Link>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap gap-2">
               <Link
-                key={`${activeRoute.id}-${city.slug}`}
-                href={city.href}
-                className="border border-white/12 bg-white/8 px-2.5 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-stone-200 transition-colors hover:border-white/24 hover:bg-white/14"
+                href={activeRoute.href}
+                className="bg-white px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-950 transition-transform hover:-translate-y-0.5"
               >
-                {city.name}
+                Open Route
               </Link>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap gap-2">
-            <Link
-              href={activeRoute.href}
-              className="bg-white px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-950 transition-transform hover:-translate-y-0.5"
-            >
-              Open Route
-            </Link>
-            <Link
-              href="#how-it-works"
-              className="border border-white/18 px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:border-white/30 hover:bg-white/8"
-            >
-              How it works
-            </Link>
+              <Link
+                href="#how-it-works"
+                className="border border-white/18 px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:border-white/30 hover:bg-white/8"
+              >
+                How it works
+              </Link>
+            </div>
           </div>
         </div>
 
-        {/* Route selector - bottom */}
-        <div>
-          <div className="rounded-2xl border border-white/12 bg-black/48 p-4 backdrop-blur-xl lg:p-5">
-            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
-              Select Route
+        {/* Right side - Route selector */}
+        <div className="flex items-center">
+          <div className="w-72 rounded-2xl border border-white/12 bg-black/48 p-4 backdrop-blur-xl lg:p-5 lg:w-80">
+            <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
+              Routes
             </p>
-            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
+            <div className="flex flex-col gap-2 max-h-[60vh] overflow-y-auto pr-2">
               {routeNetworkRoutes.map((route) => {
                 const isActive = selectedRouteId === route.id;
 
@@ -356,7 +358,7 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
                     key={route.id}
                     type="button"
                     onClick={() => setSelectedRouteId(route.id)}
-                    className={`border px-3 py-2.5 text-left transition-all ${
+                    className={`border px-4 py-3 text-left transition-all ${
                       isActive
                         ? 'border-white/30 bg-white/12'
                         : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/8'
@@ -368,7 +370,7 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
                       </p>
                       <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: route.color }} />
                     </div>
-                    <h3 className="mt-1 truncate font-serif text-sm leading-tight text-white">
+                    <h3 className="mt-1.5 font-serif text-sm leading-tight text-white">
                       {route.title}
                     </h3>
                   </button>
