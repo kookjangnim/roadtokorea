@@ -3762,27 +3762,32 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   daejeon: {
     slug: 'daejeon',
     city: 'Daejeon',
-    mapTitle: 'Where Daejeon makes Route 1 easy to divide',
+    mapTitle: 'Where Daejeon makes Route 1 and Route 8 easy to divide',
     mapIntro:
-      'Daejeon is a support map for central overnights, hot-spring-adjacent stays, and practical onward movement. It matters because the route can split here cleanly without becoming dramatic.',
+      'Daejeon is a support map for central overnights, Sungsimdang food stops, hot-spring-adjacent stays, and practical onward movement. It matters because Route 1 and Route 8 can split here cleanly without becoming dramatic.',
     mapCenter: { lat: 36.3504, lng: 127.3845 },
     supportSummary:
-      'Daejeon works as the corridor?셲 cleanest choose-your-version overnight. Station-core efficiency and Yuseong-side recovery both serve Route 1 well, which makes the city one of the easiest places to use with real intention.',
+      'Daejeon works as the corridor?셲 cleanest choose-your-version overnight. Station-core efficiency, Sungsimdang bakery culture, science-city identity, and Yuseong-side recovery serve Route 1 and Route 8 well, which makes the city one of the easiest places to use with real intention.',
     roleSummary:
-      'This is the central corridor decision city. Daejeon rebalances Route 1 before the stronger southern chapters begin and lets the user choose between pure logistics and a warmer body-reset version of the same stop.',
+      'This is the central corridor decision city. Daejeon rebalances Route 1 before the stronger southern chapters begin, and it gives Route 8 a reliable first stabilizer before the Honam story starts to deepen.',
     staySummary:
       'Station-core stays are for sleep-fast, eat-fast, leave-cleanly timing. Yuseong-side stays are for travelers who want the overnight to restore energy instead of merely storing it until morning.',
     foodSummary:
-      'Food matters here in a concrete, route-support way: reliable dinners after late arrivals, easy breakfasts before departure, and uncomplicated meal zones that keep the split monetizable without becoming theatrical.',
+      'Food matters here in a concrete, route-support way: Sungsimdang gives Daejeon a nationally recognizable bakery anchor, while central meal streets cover reliable dinners after late arrivals and easy breakfasts before departure.',
     nextLegSummary:
-      'After Daejeon, Route 1 usually stops improvising. The next major move commits more clearly toward Daegu or the deeper south, which is why the quality of the split matters so much here.',
+      'After Daejeon, Route 1 usually commits more clearly toward Daegu, while Route 8 turns toward Jeonju and Gwangju. That is why the quality of the split matters so much here.',
     accommodationNote:
       'Strongest stay-planning angle: station-core business stays for clean departures and Yuseong-side recovery stays for slower or fatigue-led overnights.',
     sections: [
       {
         title: 'Why Daejeon stays useful',
         body:
-          'Daejeon helps because it is one of the few places on Route 1 where you can pause without changing the identity of the trip. The city absorbs timing problems well and sends the route onward cleanly.',
+          'Daejeon helps because it is one of the few places on Route 1 and Route 8 where you can pause without changing the identity of the trip. The city absorbs timing problems well and sends the route onward cleanly.',
+      },
+      {
+        title: 'Why Sungsimdang changes the stop',
+        body:
+          'Sungsimdang gives Daejeon a strong present-day travel hook. For English-speaking visitors, it turns the city from a central transfer into a food-driven stop that can sit beside Yuseong recovery and science-city identity.',
       },
       {
         title: 'Why Yuseong matters',
@@ -3792,7 +3797,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         title: 'How to keep it from feeling generic',
         body:
-          'The key is to decide whether Daejeon is a pure split or a recovery split. Once that is clear, the city becomes easier to use and easier to monetize through stay logic.',
+          'The key is to decide whether Daejeon is a pure split, a Sungsimdang food stop, or a Yuseong recovery split. Once that is clear, the city becomes easier to use and easier to monetize through stay logic.',
       },
     ],
     decisions: [
@@ -3801,6 +3806,12 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         bestFor: 'Rail users, one-night corridor travelers, and anyone trying to preserve next-day speed.',
         why:
           'This is the strongest sleep-eat-leave-cleanly play in the middle of Route 1 when momentum matters more than atmosphere.',
+      },
+      {
+        title: 'Make it a Sungsimdang stop',
+        bestFor: 'Food-driven travelers, first-time Korea visitors, and users who need a memorable reason to choose Daejeon.',
+        why:
+          'This gives the city a clear emotional handle: arrive, eat something distinctly Daejeon, then continue toward Jeonju, Daegu, or the deeper south.',
       },
       {
         title: 'Turn the overnight into recovery in Yuseong',
@@ -3859,12 +3870,12 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
       {
         id: 'daejeon-meal-corridor',
-        name: 'Central meal corridor',
+        name: 'Sungsimdang and central meal corridor',
         kind: 'food',
         areaLabel: 'Central streets',
         coordinates: { lat: 36.3492, lng: 127.3848 },
-        summary: 'A practical dinner-and-breakfast zone for keeping the city easy to use.',
-        note: 'The point is dependable timing and low friction, not destination-style dining.',
+        summary: 'The food anchor that turns Daejeon from a useful transfer into an intentional stop.',
+        note: 'Use Sungsimdang as the memory point, then let nearby meal streets keep the stop practical for late arrivals and early departures.',
       },
       {
         id: 'daejeon-expo-orientation',
@@ -5675,15 +5686,15 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     mapTitle: 'Where Mokpo finishes Route 6',
     mapIntro: 'Mokpo is the southwest harbor finale, joining Yudalsan, Gatbawi, seafood, ferries, modern history, and future Route 7 logic.',
     mapCenter: { lat: 34.8118, lng: 126.3922 },
-    supportSummary: 'Mokpo finishes Route 6 with Yudalsan, Gatbawi, harbor, seafood, ferries, modern port memory, and a future south-coast handoff.',
+    supportSummary: 'Mokpo finishes Route 6 with Yudalsan, Gatbawi, harbor, seafood, ferries, modern port memory, and also works as the Route 8 harbor hinge before Haenam.',
     roleSummary: 'Its role is to make the West Sea route feel complete and set up the next expansion along Korea\'s south coast.',
     staySummary: 'Give Mokpo the final night because mountain views, harbor food, ferries, and sunset are the reward after the long west-coast line.',
     foodSummary: 'Seafood, harbor meals, market food, and evening drinks make Mokpo feel like a proper finale.',
-    nextLegSummary: 'After Mokpo, the network can expand east along the south coast toward Wando, Boseong, Suncheon, Yeosu, Namhae, Tongyeong, and Busan.',
+    nextLegSummary: 'After Mokpo, Route 8 finishes toward Haenam while Route 7 can expand east along the south coast toward Wando, Boseong, Suncheon, Yeosu, Namhae, Tongyeong, and Busan.',
     sections: [
       { title: 'The southwest harbor payoff', body: 'Mokpo gives Route 6 a real arrival through harbor views, island ferries, seafood, and mountain-to-sea geography.' },
       { title: 'Modern history stays visible', body: 'The city keeps the modern port-memory thread alive after Gunsan while adding its own southwest identity.' },
-      { title: 'Why it points to Route 7', body: 'Mokpo is also the natural future handoff into the south-coast network.' },
+      { title: 'Why it points to Route 7 and Route 8', body: 'Mokpo is the natural handoff into the south-coast network and the harbor hinge before Route 8 reaches Haenam.' },
     ],
     decisions: [
       { title: 'End with a harbor night', bestFor: 'Most Route 6 travelers.', why: 'Mokpo is strongest after the drive when the harbor and food become the reward.' },
@@ -5705,11 +5716,11 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     mapTitle: 'Where Haenam opens Route 7',
     mapIntro: 'Haenam is the land-end threshold after Mokpo, joining Ttangkkeut, Duryunsan, Daeheungsa, seafood, and the Wando handoff.',
     mapCenter: { lat: 34.5733, lng: 126.599 },
-    supportSummary: 'Haenam opens Route 7 with Ttangkkeut land-end meaning, Duryunsan views, Daeheungsa history, rural roads, seafood, and a clear Wando handoff.',
-    roleSummary: 'Its role is to make the south coast feel symbolic before the route becomes island travel.',
+    supportSummary: 'Haenam opens Route 7 with Ttangkkeut land-end meaning, Duryunsan views, Daeheungsa history, rural roads, seafood, and also completes Route 8 as the Honam land-end finale.',
+    roleSummary: 'Its role is to make the south coast feel symbolic before Route 7 becomes island travel, while giving Route 8 a clear endpoint from Seoul.',
     staySummary: 'Use Haenam as a slow first chapter after Mokpo when Ttangkkeut, Duryunsan, and temple views should carry the day.',
     foodSummary: 'Seafood, simple local meals, and market stops support the rural south-coast opening.',
-    nextLegSummary: 'After Haenam, Wando turns Route 7 from land-end threshold into island and seafood travel.',
+    nextLegSummary: 'After Haenam, Wando turns Route 7 from land-end threshold into island and seafood travel; for Route 8, Haenam is the finale.',
     sections: [
       { title: 'Ttangkkeut gives the route a beginning', body: 'Haenam makes Route 7 feel authored by turning the first chapter into Korea\'s southern land-end story.' },
       { title: 'Duryunsan and Daeheungsa add depth', body: 'Mountain views and temple memory keep Haenam from being only a geographic marker.' },
@@ -5733,15 +5744,15 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     slug: 'wando',
     city: 'Wando',
     mapTitle: 'Where Wando turns Route 7 into island travel',
-    mapIntro: 'Wando is the island and seafood gateway after Haenam, with Cheongsando, ferries, Wando Arboretum, seaweed, and the Boseong handoff.',
+    mapIntro: 'Wando is the Dadohae island and seafood gateway after Haenam, with Cheongsando, ferries, Wando Arboretum, seaweed, and the Boseong handoff.',
     mapCenter: { lat: 34.311, lng: 126.755 },
-    supportSummary: 'Wando gives Route 7 Cheongsando, seafood, seaweed, Wando Arboretum, ferry mood, island stays, and a clear handoff to Boseong.',
-    roleSummary: 'Its role is to prove that Route 7 is a maritime route, not just a mainland road.',
+    supportSummary: 'Wando gives Route 7 Dadohae, Cheongsando, seafood, seaweed, Wando Arboretum, ferry mood, island stays, and a clear handoff to Boseong.',
+    roleSummary: 'Its role is to prove that Route 7 is a Dadohae maritime route, not just a mainland road.',
     staySummary: 'Give Wando time when the traveler wants ferry rhythm, seafood, island air, and a slower day after Haenam.',
     foodSummary: 'Seafood, seaweed, abalone, harbor meals, and simple island food should lead the food layer.',
     nextLegSummary: 'After Wando, Boseong slows the route into green tea fields before Suncheon ecology.',
     sections: [
-      { title: 'The route becomes maritime here', body: 'Wando shifts the traveler from peninsula edge into islands, ferries, seafood, and marine identity.' },
+      { title: 'The route becomes Dadohae here', body: 'Wando shifts the traveler from peninsula edge into Dadohae islands, ferries, seafood, and marine identity.' },
       { title: 'Cheongsando is the search hook', body: 'Cheongsando gives the page a globally understandable slow-island travel cue.' },
       { title: 'Why Boseong follows', body: 'Boseong changes the rhythm from sea and ferries to green hills, tea fields, and quiet landscape.' },
     ],
@@ -5795,13 +5806,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     mapTitle: 'Where Namhae gives Route 7 its island-road chapter',
     mapIntro: 'Namhae follows Yeosu with German Village, Boriam, terraces, beaches, seafood, pensions, and the Tongyeong handoff.',
     mapCenter: { lat: 34.837, lng: 127.892 },
-    supportSummary: 'Namhae gives Route 7 German Village, Boriam, island roads, Darangee terraces, beaches, seafood, small stays, and the Tongyeong handoff.',
-    roleSummary: 'Its role is to make the south coast intimate and road-trip friendly before the denser Tongyeong port chapter.',
+    supportSummary: 'Namhae gives Route 7 German Village, Boriam, Hallyeohaesang-facing island roads, Darangee terraces, beaches, seafood, small stays, and the Tongyeong handoff.',
+    roleSummary: 'Its role is to make the south coast intimate and road-trip friendly as the route enters the Hallyeohaesang side before the denser Tongyeong port chapter.',
     staySummary: 'Use Namhae for a scenic overnight when travelers want coastal drives, pensions, beaches, and slower island pacing.',
     foodSummary: 'Seafood, market meals, cafe stops, and simple island food should support the drive.',
     nextLegSummary: 'After Namhae, Tongyeong brings Yi Sun-sin memory, Hallyeohaesang islands, seafood, ferries, and art streets.',
     sections: [
-      { title: 'The island road is the product', body: 'Namhae works because the movement itself feels good: bridges, curves, beaches, villages, and sea views.' },
+      { title: 'The Hallyeohaesang approach is the product', body: 'Namhae works because the movement itself feels good: bridges, curves, beaches, villages, sea views, and the slow approach into the Hallyeohaesang island world.' },
       { title: 'German Village and Boriam create contrast', body: 'The page can hold a contemporary village hook beside an older temple-view layer.' },
       { title: 'Why Tongyeong follows', body: 'Tongyeong adds port density, island ferries, and naval memory after Namhae\'s softer roads.' },
     ],
@@ -5822,29 +5833,29 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   tongyeong: {
     slug: 'tongyeong',
     city: 'Tongyeong',
-    mapTitle: 'Where Tongyeong makes Route 7 a port-culture route',
-    mapIntro: 'Tongyeong brings Yi Sun-sin memory, Dongpirang, Hallyeohaesang, seafood, ferries, art streets, and the Geoje handoff.',
+    mapTitle: 'Where Tongyeong anchors Yi Sun-sin naval history',
+    mapIntro: 'Tongyeong brings Yi Sun-sin memory, Samdo Sugun Tongjeyeong, Dongpirang, Hallyeohaesang, seafood, ferries, art streets, and the Geoje handoff.',
     mapCenter: { lat: 34.8544, lng: 128.4332 },
-    supportSummary: 'Tongyeong gives Route 7 Yi Sun-sin memory, Dongpirang, Hallyeohaesang, seafood, ferries, harbor walks, art culture, and a strong Geoje handoff.',
-    roleSummary: 'Its role is to make the south coast dense with naval history, living port culture, islands, food, and art.',
-    staySummary: 'Give Tongyeong a night when travelers want a compact small city with real harbor atmosphere before Geoje.',
+    supportSummary: 'Tongyeong gives Route 7 Yi Sun-sin memory, Samdo Sugun Tongjeyeong history, Dongpirang, Hallyeohaesang, seafood, ferries, harbor walks, art culture, and a strong Geoje handoff.',
+    roleSummary: 'Its role is to make the south coast historically serious through naval history, then layer in living port culture, islands, food, and art.',
+    staySummary: 'Give Tongyeong a night when travelers want a compact small city with real Yi Sun-sin history and harbor atmosphere before Geoje.',
     foodSummary: 'Seafood, market meals, harbor snacks, cafes, and ferry-day food should lead the food layer.',
     nextLegSummary: 'After Tongyeong, Geoje adds shipbuilding, POW history, Windy Hill, Oedo, bridges, and the final Busan approach.',
     sections: [
-      { title: 'History and port life overlap', body: 'Tongyeong can hold Yi Sun-sin memory and daily ferry/seafood culture in the same compact city chapter.' },
+      { title: 'Yi Sun-sin history leads', body: 'Tongyeong should first read as a historically valuable naval city through Yi Sun-sin memory and Samdo Sugun Tongjeyeong, then open into daily ferry and seafood culture.' },
       { title: 'Dongpirang gives the present-tense hook', body: 'Murals, cafes, harbor views, and walking streets make the city approachable for international travelers.' },
       { title: 'Why Geoje follows', body: 'Geoje shifts the story into modern island scale, shipbuilding, POW history, and Busan-facing infrastructure.' },
     ],
     decisions: [
-      { title: 'Stay for port density', bestFor: 'Travelers who like small cities.', why: 'Tongyeong is walkable, food-rich, and strong after Namhae.' },
+      { title: 'Stay for naval history', bestFor: 'Travelers who want the south coast to feel historically meaningful.', why: 'Yi Sun-sin and Samdo Sugun Tongjeyeong make Tongyeong one of Route 7\'s strongest heritage anchors.' },
       { title: 'Use ferries and Hallyeohaesang', bestFor: 'Travelers who want islands.', why: 'The sea around Tongyeong is a core part of the route, not background.' },
     ],
     visuals: [
-      { eyebrow: 'Port culture', title: 'Tongyeong is the dense harbor chapter', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg', alt: 'Tongyeong harbor reference', body: 'Harbor imagery should carry seafood, ferries, and small-city energy.', sourceLabel: 'Tongyeong harbor reference', sourceHref: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg', licenseLabel: 'External reference' },
+      { eyebrow: 'Naval history', title: 'Tongyeong is the Yi Sun-sin chapter', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg', alt: 'Tongyeong harbor reference', body: 'Harbor imagery should carry Yi Sun-sin memory, command history, ferries, seafood, and small-city energy.', sourceLabel: 'Tongyeong harbor reference', sourceHref: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg', licenseLabel: 'External reference' },
       { eyebrow: 'Living streets', title: 'Dongpirang keeps Tongyeong present-tense', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dongpirang%20Village.jpg', alt: 'Dongpirang Village reference', body: 'Dongpirang, art streets, and cafes make the city usable beyond naval history.', sourceLabel: 'Dongpirang reference', sourceHref: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dongpirang%20Village.jpg', licenseLabel: 'External reference' },
     ],
     points: [
-      { id: 'tongyeong-yi-sun-sin', name: 'Yi Sun-sin memory core', kind: 'checkpoint', areaLabel: 'Central Tongyeong', coordinates: { lat: 34.843, lng: 128.423 }, summary: 'The naval-history anchor.', note: 'Use for past-present balance.' },
+      { id: 'tongyeong-yi-sun-sin', name: 'Yi Sun-sin and Tongjeyeong core', kind: 'checkpoint', areaLabel: 'Central Tongyeong', coordinates: { lat: 34.843, lng: 128.423 }, summary: 'The Yi Sun-sin and Samdo Sugun Tongjeyeong history anchor.', note: 'Use as Tongyeong\'s primary proof, not a side note.' },
       { id: 'tongyeong-dongpirang', name: 'Dongpirang mural village', kind: 'checkpoint', areaLabel: 'Dongpirang', coordinates: { lat: 34.844, lng: 128.425 }, summary: 'The present-tense walking hook.', note: 'Good for street imagery.' },
       { id: 'tongyeong-geoje-handoff', name: 'Geoje handoff line', kind: 'mobility', areaLabel: 'Island bridge line', coordinates: { lat: 34.87, lng: 128.53 }, summary: 'The move from port city to modern island.', note: 'This prepares the Busan approach.' },
     ],
@@ -5855,8 +5866,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     mapTitle: 'Where Geoje prepares the Busan finale',
     mapIntro: 'Geoje links POW history, shipbuilding, Windy Hill, Oedo, beaches, bridge access, and the final Busan handoff.',
     mapCenter: { lat: 34.8806, lng: 128.6217 },
-    supportSummary: 'Geoje gives Route 7 POW Camp history, shipbuilding, Windy Hill, Oedo Botania, beaches, bridge infrastructure, seafood, and the Busan handoff.',
-    roleSummary: 'Its role is to show modern maritime Korea before the route reaches the final metropolis.',
+    supportSummary: 'Geoje gives Route 7 Hallyeohaesang island scenery, POW Camp history, shipbuilding, Windy Hill, Oedo Botania, beaches, bridge infrastructure, seafood, and the Busan handoff.',
+    roleSummary: 'Its role is to show modern maritime Korea on the Hallyeohaesang side before the route reaches the final metropolis.',
     staySummary: 'Use Geoje as the final island overnight when travelers want scenery plus history and industry before Busan.',
     foodSummary: 'Seafood, harbor meals, market food, and casual island dining should support the final approach.',
     nextLegSummary: 'After Geoje, Busan becomes the metropolitan harbor finale of the entire south-coast route.',

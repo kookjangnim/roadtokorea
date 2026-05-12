@@ -648,7 +648,7 @@
         "status": "ready",
         "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png",
         "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png",
-        "brief": "Present slot should show station-core efficiency, Yuseong recovery, or science-city life."
+        "brief": "Present slot should show station-core efficiency, Yuseong recovery, Sungsimdang bakery culture, or science-city life."
       },
       "route": {
         "status": "ready",
@@ -660,7 +660,7 @@
         "status": "briefed",
         "asset": "/images/routes/route-1/daejeon/hero-generated-v1.png",
         "sourceHref": "/images/routes/route-1/daejeon/hero-generated-v1.png",
-        "brief": "Street slot should capture bakery, market, station, or Yuseong stay texture."
+        "brief": "Street slot should capture Sungsimdang or central bakery texture, market streets, station flow, or Yuseong stay texture."
       }
     }
   },
@@ -1617,8 +1617,8 @@
   "tongyeong": {
     "city": "Tongyeong",
     "slots": {
-      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg", "brief": "Hero should establish Tongyeong as Route 7's Hallyeohaesang harbor and island-culture city." },
-      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Yi%20Sun-sin.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Yi%20Sun-sin.jpg", "brief": "History slot should show Yi Sun-sin, naval memory, or old port context." },
+      "hero": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg", "brief": "Hero should establish Tongyeong as Route 7's Yi Sun-sin naval harbor and Hallyeohaesang island-culture city." },
+      "history": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Yi%20Sun-sin.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Yi%20Sun-sin.jpg", "brief": "History slot should show Yi Sun-sin, Samdo Sugun Tongjeyeong, naval memory, or old command-port context." },
       "present": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Dongpirang%20Village.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Dongpirang%20Village.jpg", "brief": "Present slot should show Dongpirang, seafood, ferries, art streets, or compact harbor travel." },
       "route": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallyeohaesang%20National%20Park.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallyeohaesang%20National%20Park.jpg", "brief": "Route slot should show Hallyeohaesang islands and Tongyeong's handoff toward Geoje." },
       "street": { "status": "briefed", "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20street.jpg", "sourceHref": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20street.jpg", "brief": "Street slot should capture seafood markets, ferry streets, mural lanes, cafes, and port walking." }

@@ -61,8 +61,8 @@ export const updatedCities: UpdatedCity[] = [
     slug: 'daejeon',
     tier: 'tier-2',
     href: '/route-1/daejeon',
-    reason: 'Practical corridor sample with a strong station-versus-recovery split.',
-    role: 'Central split city',
+    reason: 'Central corridor sample now pairs station control with Sungsimdang, Yuseong recovery, science-city identity, and Route 8 branching.',
+    role: 'Central food-and-route split city',
   },
   {
     name: 'Cheonan',
@@ -341,8 +341,8 @@ export const updatedCities: UpdatedCity[] = [
     slug: 'tongyeong',
     tier: 'tier-4',
     href: '/route-7/tongyeong',
-    reason: 'Route 7 now includes Tongyeong as the Yi Sun-sin, Dongpirang, Hallyeohaesang, ferry, and seafood port chapter.',
-    role: 'Port culture city',
+    reason: 'Route 7 now includes Tongyeong as the Yi Sun-sin, Samdo Sugun Tongjeyeong, Hallyeohaesang, ferry, seafood, and living port-culture chapter.',
+    role: 'Yi Sun-sin naval port city',
   },
   {
     name: 'Geoje',

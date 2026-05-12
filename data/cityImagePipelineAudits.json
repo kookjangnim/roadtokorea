@@ -10,6 +10,13 @@
     "Generic source homepages are not enough for audited cities; use a specific official or reference page when possible."
   ],
   "auditedCities": {
+    "daejeon": {
+      "routeSlug": "route-8",
+      "priority": "replace-soon",
+      "reason": "Daejeon now needs stronger proof than a generic corridor image because Route 8 depends on Sungsimdang, Yuseong, science-city identity, Daejeon Station, and the first southbound split.",
+      "mustProve": ["Sungsimdang", "Yuseong", "science city", "Daejeon Station", "Route 8 split"],
+      "nextAction": "Find or produce separate bakery-street, Yuseong recovery, science-city, station, and route-junction visuals before marking all slots final."
+    },
     "gongju": {
       "routeSlug": "route-5",
       "priority": "replace-soon",
@@ -97,16 +104,16 @@
     "mokpo": {
       "routeSlug": "route-6",
       "priority": "replace-soon",
-      "reason": "Mokpo is the Route 6 finale and Route 7 handoff, so harbor, Yudalsan, Gatbawi, ferry, and seafood imagery must be separate.",
-      "mustProve": ["Yudalsan", "Gatbawi", "harbor", "ferries or seafood", "Route 7 handoff"],
-      "nextAction": "Prioritize a harbor/Yudalsan hero and separate Gatbawi and ferry/food references."
+      "reason": "Mokpo is the Route 6 finale, Route 7 handoff, and Route 8 harbor hinge, so harbor, Yudalsan, Gatbawi, ferry, Dadohae, and seafood imagery must be separate.",
+      "mustProve": ["Yudalsan", "Gatbawi", "harbor", "Dadohae", "Route 8 Haenam handoff"],
+      "nextAction": "Prioritize a harbor/Yudalsan hero and separate Gatbawi, ferry/food, and Haenam handoff references."
     },
     "haenam": {
       "routeSlug": "route-7",
       "priority": "replace-soon",
-      "reason": "Haenam is the Route 7 land-end threshold, so imagery must prove Ttangkkeut, Duryunsan, Daeheungsa, rural roads, and the Wando handoff rather than generic coast.",
-      "mustProve": ["Ttangkkeut", "Duryunsan", "Daeheungsa", "rural south coast", "Wando handoff"],
-      "nextAction": "Confirm specific land-end, mountain, and temple image references before promoting any slot to publish-ready."
+      "reason": "Haenam is both the Route 7 land-end threshold and Route 8 finale, so imagery must prove Ttangkkeut, Duryunsan, Daeheungsa, rural roads, and the Wando continuation rather than generic coast.",
+      "mustProve": ["Ttangkkeut", "Duryunsan", "Daeheungsa", "Route 8 finale", "Wando handoff"],
+      "nextAction": "Confirm specific land-end, mountain, temple, and route-finale image references before promoting any slot to publish-ready."
     },
     "wando": {
       "routeSlug": "route-7",
@@ -132,9 +139,9 @@
     "tongyeong": {
       "routeSlug": "route-7",
       "priority": "replace-soon",
-      "reason": "Tongyeong needs a dense image set that proves Yi Sun-sin memory, Dongpirang, Hallyeohaesang, ferries, seafood, and the Geoje handoff.",
-      "mustProve": ["Yi Sun-sin", "Dongpirang", "Hallyeohaesang", "seafood or ferries", "Geoje handoff"],
-      "nextAction": "Pair harbor/island imagery with separate history and mural-street imagery."
+      "reason": "Tongyeong needs a dense image set that proves Yi Sun-sin memory, Samdo Sugun Tongjeyeong naval history, Hallyeohaesang, ferries, seafood, and the Geoje handoff before Dongpirang becomes the present-day layer.",
+      "mustProve": ["Yi Sun-sin", "Samdo Sugun Tongjeyeong", "Hallyeohaesang", "seafood or ferries", "Geoje handoff"],
+      "nextAction": "Pair harbor/island imagery with separate Yi Sun-sin or Tongjeyeong history imagery, then use Dongpirang as the modern street layer."
     },
     "geoje": {
       "routeSlug": "route-7",

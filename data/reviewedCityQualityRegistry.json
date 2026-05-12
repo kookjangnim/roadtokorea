@@ -74,7 +74,7 @@
     "sangju": ["Nakdong", "supportSummary"],
     "jecheon": ["Uirimji", "supportSummary"],
     "cheonan": ["station", "supportSummary"],
-    "daejeon": ["Yuseong", "supportSummary"],
+    "daejeon": ["Yuseong", "Sungsimdang", "science", "Route 8", "supportSummary"],
     "daegu": ["Seomun", "supportSummary"],
     "gumi": ["corridor", "supportSummary"],
     "changnyeong": ["recovery", "supportSummary"],
@@ -100,12 +100,12 @@
     "seosan": ["Haemi", "Taean", "Naepo", "Boryeong", "supportSummary"],
     "boryeong": ["Mud Festival", "Daecheon", "Gunsan", "supportSummary"],
     "gunsan": ["Modern History", "port", "Mokpo", "supportSummary"],
-    "mokpo": ["Yudalsan", "Gatbawi", "harbor", "supportSummary"],
-    "haenam": ["Ttangkkeut", "Duryunsan", "Daeheungsa", "Wando", "supportSummary"],
-    "wando": ["Cheongsando", "seafood", "Wando Arboretum", "Boseong", "supportSummary"],
+    "mokpo": ["Yudalsan", "Gatbawi", "harbor", "Route 8", "supportSummary"],
+    "haenam": ["Ttangkkeut", "Duryunsan", "Daeheungsa", "Route 8", "Wando", "supportSummary"],
+    "wando": ["Dadohae", "Cheongsando", "seafood", "Wando Arboretum", "Boseong", "supportSummary"],
     "boseong": ["green tea", "Daehan Dawon", "Suncheon", "supportSummary"],
-    "namhae": ["German Village", "Boriam", "Tongyeong", "supportSummary"],
-    "tongyeong": ["Yi Sun-sin", "Dongpirang", "Hallyeohaesang", "Geoje", "supportSummary"],
-    "geoje": ["POW", "shipbuilding", "Windy Hill", "Busan", "supportSummary"]
+    "namhae": ["Hallyeohaesang", "German Village", "Boriam", "Tongyeong", "supportSummary"],
+    "tongyeong": ["Yi Sun-sin", "Samdo Sugun Tongjeyeong", "naval history", "Hallyeohaesang", "Geoje", "supportSummary"],
+    "geoje": ["Hallyeohaesang", "POW", "shipbuilding", "Windy Hill", "Busan", "supportSummary"]
   }
 }

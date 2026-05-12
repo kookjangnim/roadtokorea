@@ -122,8 +122,8 @@ const carGyeongbuRoute: TransportRouteVariant = {
       routeRole: 'Central stabilizer',
       stayAdvice: 'Useful when you want to divide the route cleanly without adding too much narrative complexity.',
       whyItEarnsTime:
-        'Daejeon gives the car route structure and breathing room without asking you to leave the main corridor.',
-      highlights: ['Daejeon KAIST Campus', 'National Science Museum', 'Yuseong Hot Springs'],
+        'Daejeon gives the car route structure, Sungsimdang food memory, science-city texture, and breathing room without asking you to leave the main corridor.',
+      highlights: ['Sungsimdang bakery', 'National Science Museum', 'Yuseong Hot Springs'],
     },
     {
       city: 'Daegu',
@@ -945,8 +945,8 @@ export const seoulToBusanRoute: RouteData = {
           routeRole: 'Reset city',
           stayAdvice: 'Best as a lunch stop, half-day pause, or easy first-night reset if Seoul started too fast.',
           whyItEarnsTime:
-            'Daejeon earns time when you want to smooth the corridor, not dramatize it. It keeps the route calm and efficient.',
-          highlights: ['Daejeon KAIST Campus', 'National Science Museum', 'Yuseong Hot Springs'],
+            'Daejeon earns time when you want to smooth the corridor without making it faceless. Sungsimdang, Yuseong, and science-city identity keep the stop calm, efficient, and memorable.',
+          highlights: ['Sungsimdang bakery', 'National Science Museum', 'Yuseong Hot Springs'],
         },
         {
           city: 'Daegu',
@@ -1035,7 +1035,7 @@ export const seoulToBusanRoute: RouteData = {
           stayAdvice: 'Use Daejeon when you want to divide the long ride without turning the route into a major reroute project.',
           whyItEarnsTime:
             'It respects the bus route\'s main virtue: simplicity. The stop feels useful rather than ornamental.',
-          highlights: ['Daejeon KAIST Campus', 'National Science Museum', 'Yuseong Hot Springs'],
+          highlights: ['Sungsimdang bakery', 'National Science Museum', 'Yuseong Hot Springs'],
         },
         {
           city: 'Daegu',
@@ -2804,11 +2804,11 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
     coordinates: { lat: 34.8118, lng: 126.3922 },
     travelTimeFromPrevious: 'Route start',
     cumulativeTime: '0h',
-    pitch: 'The southwest harbor launchpad where Yudalsan, ferries, seafood, and modern port memory hand Route 6 into the south coast.',
+    pitch: 'The southwest harbor launchpad where Yudalsan, ferries, seafood, modern port memory, and Dadohae island access hand Route 6 into the south coast.',
     routeRole: 'South-coast gateway',
     stayAdvice: 'Start Route 7 with a Mokpo night so the traveler feels the handoff from west-coast harbor to island coast.',
     whyItEarnsTime:
-      'Mokpo makes Route 7 legible because it already has harbor, ferry, mountain, seafood, and island-departure energy before the road bends toward Haenam.',
+      'Mokpo makes Route 7 legible because it already has harbor, ferry, mountain, seafood, Dadohae access, and island-departure energy before the road bends toward Haenam.',
     nextLegLogic: 'After Mokpo, Haenam turns the route into Korea\'s land-end story before Wando opens the island rhythm.',
     highlights: ['Yudalsan Mountain', 'Mokpo harbor food', 'Dadohae ferry mood'],
   },
@@ -2834,13 +2834,13 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
     coordinates: { lat: 34.311, lng: 126.755 },
     travelTimeFromPrevious: '45m - 1h',
     cumulativeTime: '2h 20m',
-    pitch: 'An island-seafood gateway where Cheongsando, seaweed culture, ferries, Wando Arboretum, and marine life give the route its island tempo.',
+    pitch: 'A Dadohae island-seafood gateway where Cheongsando, seaweed culture, ferries, Wando Arboretum, and marine life give the route its island tempo.',
     routeRole: 'Island and seafood gateway',
     stayAdvice: 'Give Wando time when the traveler wants islands, ferry mood, seafood, and a slower coastal chapter after Haenam.',
     whyItEarnsTime:
-      'Wando is the first unmistakable island chapter on Route 7, linking Cheongsando slow travel, seafood, seaweed, ferries, arboretum greenery, and marine identity.',
+      'Wando is the first unmistakable Dadohae island chapter on Route 7, linking Cheongsando slow travel, seafood, seaweed, ferries, arboretum greenery, and marine identity.',
     nextLegLogic: 'After Wando, Boseong slows the line into tea fields before the route joins Suncheon and Yeosu.',
-    highlights: ['Cheongsando gateway', 'Wando seafood', 'Wando Arboretum'],
+    highlights: ['Cheongsando gateway', 'Dadohae island travel', 'Wando seafood'],
   },
   {
     city: 'Boseong',
@@ -2879,13 +2879,13 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
     coordinates: { lat: 34.7604, lng: 127.6622 },
     travelTimeFromPrevious: '40m - 1h',
     cumulativeTime: '6h',
-    pitch: 'The night-sea junction where Odongdo, Dolsan, Hyangiram, seafood, and harbor lights connect Route 5 to the deeper south coast.',
+    pitch: 'The night-sea junction where Odongdo, Dolsan, Hyangiram, seafood, and harbor lights connect Route 5 to the deeper Hallyeohaesang-facing south coast.',
     routeRole: 'Night-sea junction',
     stayAdvice: 'Keep Yeosu as an overnight rather than a pass-through; its evening identity is the point.',
     whyItEarnsTime:
-      'Yeosu is already a strong Route 5 finale, but on Route 7 it becomes the hinge from Jeolla ecology into Namhae, Tongyeong, Geoje, and Busan.',
+      'Yeosu is already a strong Route 5 finale, but on Route 7 it becomes the hinge from Jeolla ecology and Dadohae mood into Namhae, Hallyeohaesang, Tongyeong, Geoje, and Busan.',
     nextLegLogic: 'After Yeosu, Namhae begins the island-road chapter of the southeast-facing south coast.',
-    highlights: ['Yeosu night sea', 'Odongdo Island', 'Hyangiram Hermitage'],
+    highlights: ['Yeosu night sea', 'Odongdo Island', 'Hallyeohaesang handoff'],
   },
   {
     city: 'Namhae',
@@ -2894,13 +2894,13 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
     coordinates: { lat: 34.837, lng: 127.892 },
     travelTimeFromPrevious: '1h 20m - 1h 50m',
     cumulativeTime: '7h 40m',
-    pitch: 'An island-road chapter where German Village, Boriam views, rice terraces, beaches, and bridge approaches make the coast intimate.',
+    pitch: 'An island-road chapter where German Village, Boriam views, rice terraces, beaches, bridge approaches, and the Hallyeohaesang approach make the coast intimate.',
     routeRole: 'Island-road chapter',
     stayAdvice: 'Use Namhae for travelers who want coastal drives, small pensions, viewpoints, seafood, and a softer island mood after Yeosu.',
     whyItEarnsTime:
-      'Namhae gives Route 7 a lived-in island chapter through German Village, Boriam, Sangju Beach, Darangee terraces, seafood, and road-trip pacing.',
+      'Namhae gives Route 7 a lived-in island chapter through German Village, Boriam, Sangju Beach, Darangee terraces, seafood, Hallyeohaesang views, and road-trip pacing.',
     nextLegLogic: 'After Namhae, Tongyeong brings Hallyeohaesang island culture, Yi Sun-sin memory, and port-city art.',
-    highlights: ['Namhae German Village', 'Boriam coastal views', 'Darangee terraces'],
+    highlights: ['Namhae German Village', 'Boriam coastal views', 'Hallyeohaesang approach'],
   },
   {
     city: 'Tongyeong',
@@ -2909,13 +2909,13 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
     coordinates: { lat: 34.8544, lng: 128.4332 },
     travelTimeFromPrevious: '1h 40m - 2h 10m',
     cumulativeTime: '9h 50m',
-    pitch: 'The Hallyeohaesang port city where Yi Sun-sin memory, Dongpirang murals, island ferries, seafood, and art make the route dense.',
-    routeRole: 'Port, art, and island culture',
-    stayAdvice: 'Give Tongyeong a night when the traveler wants one of Korea\'s best small-city harbor chapters before Geoje.',
+    pitch: 'The Yi Sun-sin naval port city where Samdo Sugun Tongjeyeong history, Hallyeohaesang islands, Dongpirang murals, ferries, seafood, and art make the route dense.',
+    routeRole: 'Naval history and port culture',
+    stayAdvice: 'Give Tongyeong a night when the traveler wants one of Korea\'s most historically valuable small harbor chapters before Geoje.',
     whyItEarnsTime:
-      'Tongyeong balances past and present unusually well: naval memory, ferry terminals, Hallyeohaesang views, seafood, music and art culture, and compact walking streets.',
+      'Tongyeong balances past and present unusually well: Yi Sun-sin memory, Samdo Sugun Tongjeyeong command history, ferry terminals, Hallyeohaesang views, seafood, music and art culture, and compact walking streets.',
     nextLegLogic: 'After Tongyeong, Geoje adds shipbuilding scale, POW history, Oedo, Windy Hill, and the final push toward Busan.',
-    highlights: ['Yi Sun-sin memory', 'Dongpirang mural village', 'Hallyeohaesang islands'],
+    highlights: ['Yi Sun-sin memory', 'Samdo Sugun Tongjeyeong', 'Hallyeohaesang islands'],
   },
   {
     city: 'Geoje',
@@ -2957,8 +2957,8 @@ const carSouthCoastIslandRoadRoute: TransportRouteVariant = {
   routeName: 'Mokpo to Busan via Haenam, Wando, Boseong, Suncheon, Yeosu, Namhae, Tongyeong, and Geoje',
   totalTravelTime: '12h - 14h driving, 7-10 days recommended',
   totalDistance: '620-720 km',
-  summary:
-    'A south-coast route that turns Mokpo into a launchpad, then links Haenam land-end memory, Wando island seafood, Boseong tea fields, Suncheon ecology, Yeosu night sea, Namhae island roads, Tongyeong harbor culture, Geoje modern island history, and Busan.',
+    summary:
+    'A south-coast route that turns Mokpo into a launchpad, then links Dadohae island access, Haenam land-end memory, Wando island seafood, Boseong tea fields, Suncheon ecology, Yeosu night sea, Namhae island roads, Hallyeohaesang, Tongyeong Yi Sun-sin naval history, Geoje modern island history, and Busan.',
   bestFor: 'Travelers who want the long southern coast through islands, seafood, temples, tea fields, ecology, small ports, and a Busan finale.',
   tradeoff:
     'It is not a fast transfer. The value is the sequence of coast chapters, so the route needs time and selective overnights.',
@@ -2974,7 +2974,7 @@ const carSouthCoastIslandRoadRoute: TransportRouteVariant = {
     'Keep Haenam in the route because Ttangkkeut makes the south-coast launch feel meaningful.',
     'Use Wando and Namhae to prove the island-road identity rather than making the route only mainland cities.',
     'Treat Suncheon and Yeosu as junctions that connect Route 5 and Route 7 without flattening either route.',
-    'Use Tongyeong and Geoje together so Yi Sun-sin memory, art, shipbuilding, POW history, and island scenery all appear before Busan.',
+    'Use Tongyeong and Geoje together so Yi Sun-sin memory, Samdo Sugun Tongjeyeong history, art, shipbuilding, POW history, and island scenery all appear before Busan.',
   ],
   stopovers: southCoastIslandRoadStopovers,
   routePath: [
@@ -3001,22 +3001,22 @@ export const mokpoToBusanRoute: RouteData = {
   routeLabel: 'Route 7',
   headline: 'Mokpo to Busan along Korea\'s south coast of land-end stories, islands, tea fields, ecology, port cities, and modern maritime scale.',
   overview:
-    'Route 7 builds the south-coast corridor. Mokpo hands the traveler from Route 6 into Haenam, where Ttangkkeut, Duryunsan, and Daeheungsa make the land-end story clear. Wando opens island seafood and Cheongsando logic, Boseong slows the route through green tea fields, Suncheon and Yeosu connect ecology and night sea, Namhae gives the road an island-drive chapter, Tongyeong adds Yi Sun-sin, Dongpirang, ferries, and Hallyeohaesang culture, Geoje adds shipbuilding, POW history, Windy Hill, and Oedo, and Busan completes the arc as a major harbor city.',
+    'Route 7 builds the south-coast corridor through Korea\'s two great island-sea imaginations: Dadohae in the southwest and Hallyeohaesang farther east. Mokpo hands the traveler from Route 6 into Haenam, where Ttangkkeut, Duryunsan, and Daeheungsa make the land-end story clear. Wando opens Dadohae island seafood and Cheongsando logic, Boseong slows the route through green tea fields, Suncheon and Yeosu connect ecology and night sea, Namhae gives the road an island-drive chapter, Tongyeong adds Yi Sun-sin, Samdo Sugun Tongjeyeong, Dongpirang, ferries, and Hallyeohaesang culture, Geoje adds shipbuilding, POW history, Windy Hill, and Oedo, and Busan completes the arc as a major harbor city.',
   destinationPitch:
     'Busan works as the Route 7 finale because the traveler arrives after seeing the smaller south coast first. The city becomes a culmination of ports, seafood, bridges, beaches, markets, hillsides, and modern maritime Korea.',
   bestUseCases: [
     'Travelers who want the south coast to be the main journey, not a detour.',
-    'Road trips that can mix islands, seafood, temples, tea fields, wetlands, harbor cities, and Busan.',
+    'Road trips that can mix Dadohae, Hallyeohaesang, islands, seafood, temples, tea fields, wetlands, harbor cities, and Busan.',
     'Repeat Korea travelers who already know Seoul and Busan and want the route between coasts to feel deeper.',
   ],
   routePromise: [
     'The route will make the south coast feel like a coherent travel corridor from Mokpo to Busan.',
-    'It will keep past and present together: temples, land-end memory, naval history, POW history, shipbuilding, food, and modern harbor life.',
+    'It will keep past and present together: temples, land-end memory, Dadohae, Hallyeohaesang, naval history, POW history, shipbuilding, food, and modern harbor life.',
     'It will make smaller coastal cities feel as worthy as the famous endpoints.',
   ],
   editorialNotes: [
     'Haenam should stay in the main sequence because it gives the route symbolic force after Mokpo.',
-    'Wando, Namhae, Tongyeong, and Geoje should make the route visibly island-driven.',
+    'Wando should carry the Dadohae side, while Namhae, Tongyeong, and Geoje should make the Hallyeohaesang side visibly island-driven.',
     'Boseong should be used as a quiet scenic and searchable tea-field hinge, not as a throwaway detour.',
     'Suncheon and Yeosu are junction cities with Route 5; route copy should acknowledge that overlap clearly.',
     'Geoje should balance scenery with shipbuilding and Korean War POW history so the present stays visible.',
@@ -3107,6 +3107,237 @@ export const mokpoToBusanRoute: RouteData = {
   },
 };
 
+const honamLandEndStopovers: RouteStopover[] = [
+  {
+    city: 'Daejeon',
+    citySlug: 'daejeon',
+    tier: 2,
+    coordinates: { lat: 36.3504, lng: 127.3845 },
+    travelTimeFromPrevious: '1h 40m - 2h',
+    cumulativeTime: '2h',
+    pitch: 'The central transport reset where station efficiency, Sungsimdang bakery pilgrimage, Yuseong recovery, science-city scale, and southbound control make the Honam descent readable.',
+    routeRole: 'Central corridor stabilizer',
+    stayAdvice: 'Use Daejeon when the traveler needs a clean first night or a practical reset before Jeonju and Gwangju.',
+    whyItEarnsTime:
+      'Daejeon makes Route 8 easier to trust. It is not the emotional climax, but it stabilizes the long Seoul-to-Honam move with rail access, hotels, Yuseong hot springs, Sungsimdang bakery culture, and central-city services.',
+    nextLegLogic: 'After Daejeon, Jeonju turns the route from national corridor into Jeolla food and hanok culture.',
+    highlights: ['Daejeon Station', 'Sungsimdang bakery', 'Yuseong hot springs'],
+  },
+  {
+    city: 'Jeonju',
+    citySlug: 'jeonju',
+    tier: 4,
+    coordinates: { lat: 35.8242, lng: 127.148 },
+    travelTimeFromPrevious: '1h 10m - 1h 30m',
+    cumulativeTime: '3h 30m',
+    pitch: 'The Jeolla food and hanok anchor where bibimbap, makgeolli, markets, and old-city walks make the inland route emotionally accessible.',
+    routeRole: 'Jeolla food and hanok anchor',
+    stayAdvice: 'Give Jeonju an overnight when Route 8 needs warmth, food confidence, and an easy first deep-regional chapter.',
+    whyItEarnsTime:
+      'Jeonju turns the route from logistics into affection. Hanok Village, bibimbap, makgeolli alleys, markets, and walkable old-city texture make the Honam descent immediately legible for English-speaking travelers.',
+    nextLegLogic: 'After Jeonju, Gwangju adds Korea\'s modern democratic history and metropolitan Honam depth.',
+    highlights: ['Jeonju Hanok Village', 'bibimbap', 'makgeolli streets'],
+  },
+  {
+    city: 'Gwangju',
+    citySlug: 'gwangju',
+    tier: 2,
+    coordinates: { lat: 35.1595, lng: 126.8526 },
+    travelTimeFromPrevious: '1h 10m - 1h 30m',
+    cumulativeTime: '5h',
+    pitch: 'The Honam modern-history anchor where May 18 civic memory, Asia Culture Center, Mudeungsan, food, and city culture give the route moral weight.',
+    routeRole: 'Modern democratic history anchor',
+    stayAdvice: 'Give Gwangju serious time; on Route 8 it is the city that prevents the southbound line from becoming only food and scenery.',
+    whyItEarnsTime:
+      'Gwangju is central to Korea\'s modern democratic memory. May 18 sites, Asia Culture Center, Yangnim-dong, markets, Mudeungsan, and Honam food make it the route\'s most important civic-history chapter.',
+    nextLegLogic: 'After Gwangju, Mokpo turns the inland Honam route toward harbor memory, islands, seafood, and Dadohae access.',
+    highlights: ['May 18 democratic memory', 'Asia Culture Center', 'Mudeungsan National Park'],
+  },
+  {
+    city: 'Mokpo',
+    citySlug: 'mokpo',
+    tier: 2,
+    coordinates: { lat: 34.8118, lng: 126.3922 },
+    travelTimeFromPrevious: '1h 10m - 1h 30m',
+    cumulativeTime: '6h 30m',
+    pitch: 'The southwest harbor hinge where Yudalsan, Gatbawi, seafood, ferries, modern port memory, and Dadohae views turn Honam into the sea.',
+    routeRole: 'Southwest harbor hinge',
+    stayAdvice: 'Use Mokpo as the penultimate night when the traveler should feel the shift from inland history to island-facing coast.',
+    whyItEarnsTime:
+      'Mokpo keeps Route 8 from ending abruptly at the land end. Harbor food, Yudalsan, Gatbawi, ferries, modern port streets, and Dadohae mood make the final Haenam move feel earned.',
+    nextLegLogic: 'After Mokpo, Haenam completes the route with Ttangkkeut, Duryunsan, Daeheungsa, and Korea\'s land-end symbolism.',
+    highlights: ['Yudalsan Mountain', 'Gatbawi Rock', 'Dadohae harbor mood'],
+  },
+  {
+    city: 'Haenam',
+    citySlug: 'haenam',
+    tier: 4,
+    coordinates: { lat: 34.5733, lng: 126.599 },
+    travelTimeFromPrevious: '1h - 1h 20m',
+    cumulativeTime: '7h 50m',
+    pitch: 'The land-end finale where Ttangkkeut, Duryunsan, Daeheungsa, rural roads, seafood, and southern peninsula views give Route 8 its emotional endpoint.',
+    routeRole: 'Korea land-end finale',
+    stayAdvice: 'End Route 8 in Haenam when the trip should feel like reaching a symbolic edge rather than simply arriving at another city.',
+    whyItEarnsTime:
+      'Haenam makes the Seoul-to-Honam descent complete. Ttangkkeut gives the route a literal and emotional endpoint, while Duryunsan and Daeheungsa add mountain and temple depth before Route 7 can continue to Wando.',
+    highlights: ['Ttangkkeut Village', 'Duryunsan Mountain', 'Daeheungsa Temple'],
+  },
+];
+
+const carHonamLandEndRoute: TransportRouteVariant = {
+  id: 'honam-land-end-drive',
+  routeCode: '8-0-c',
+  routeGroupCode: '8-0',
+  routeGroupLabel: 'Honam Inland to Land End',
+  label: 'Honam Land-End Drive',
+  routeName: 'Seoul to Haenam via Daejeon, Jeonju, Gwangju, and Mokpo',
+  totalTravelTime: '7h 30m - 9h driving, 5-7 days recommended',
+  totalDistance: '470-540 km',
+  summary:
+    'A southbound Honam route that turns Seoul into Daejeon corridor control and Sungsimdang food culture, Jeonju food and hanok culture, Gwangju modern democratic history, Mokpo harbor memory, and Haenam land-end symbolism.',
+  bestFor: 'Travelers who want the strongest Seoul-to-southern-Jeolla line through food, modern history, harbor mood, and the land end.',
+  tradeoff:
+    'It overlaps with parts of Route 5, Route 6, and Route 7, but the purpose is different: Route 8 is the direct Honam-to-land-end spine.',
+  stopPattern:
+    'Best with Jeonju, Gwangju, Mokpo, and Haenam as the main emotional chapters; Daejeon controls pacing at the beginning.',
+  chooseWhen:
+    'Choose Route 8 when the traveler wants to understand Honam as a continuous descent from central Korea to Ttangkkeut.',
+  avoidWhen:
+    'Avoid it when the traveler wants beaches and islands first; Route 7 is better for that.',
+  pacingNote:
+    'Route 8 should feel like inland culture and civic history gradually becoming harbor and land-end emotion.',
+  planningNotes: [
+    'Use Daejeon as the practical first stabilizer, with Sungsimdang giving the stop a clear food reason instead of only a transfer reason.',
+    'Let Jeonju and Gwangju carry the food-and-history center of the route.',
+    'Use Mokpo as the harbor hinge before Haenam, not only as a Route 6 endpoint.',
+    'Let Haenam finish the route with Ttangkkeut, Duryunsan, and Daeheungsa before Route 7 continues to Wando.',
+  ],
+  stopovers: honamLandEndStopovers,
+  routePath: [
+    [37.5665, 126.978],
+    [36.3504, 127.3845],
+    [35.8242, 127.148],
+    [35.1595, 126.8526],
+    [34.8118, 126.3922],
+    [34.5733, 126.599],
+  ],
+};
+
+export const seoulToHaenamRoute: RouteData = {
+  routeCode: '8',
+  from: 'Seoul',
+  fromSlug: 'seoul',
+  to: 'Haenam',
+  toSlug: 'haenam',
+  href: '/route-8',
+  routeLabel: 'Route 8',
+  headline: 'Seoul to Haenam through Daejeon, Jeonju, Gwangju, Mokpo, and Korea\'s land end.',
+  overview:
+    'Route 8 is the Honam inland-to-land-end spine. Daejeon stabilizes the departure from Seoul with station logic, Sungsimdang bakery culture, Yuseong recovery, and science-city scale; Jeonju makes Jeolla warm through hanok streets and food, Gwangju gives the route modern democratic history and civic seriousness, Mokpo turns the journey toward harbor memory and Dadohae mood, and Haenam finishes with Ttangkkeut, Duryunsan, Daeheungsa, and the emotional logic of reaching Korea\'s southern edge.',
+  destinationPitch:
+    'Haenam works as the Route 8 finale because it gives the route a symbolic endpoint. The traveler is not only leaving Seoul; they are reaching a land-end story that can continue into Wando and Route 7.',
+  bestUseCases: [
+    'Travelers who want Seoul to southern Jeolla without treating the middle as a transfer.',
+    'Trips that need Jeonju food, Gwangju modern history, Mokpo harbor, and Haenam land-end meaning in one line.',
+    'Users who want a powerful alternative to the default Seoul-Busan axis.',
+  ],
+  routePromise: [
+    'The route will make Honam feel like a coherent descent, not scattered famous cities.',
+    'It will balance food, modern democratic history, harbor life, Dadohae mood, and land-end symbolism.',
+    'It will connect cleanly into Route 7 without making Route 7 carry all of the southwest origin story.',
+  ],
+  editorialNotes: [
+    'Daejeon should be framed as the stabilizing first corridor city, with Sungsimdang making the stop memorable for food-driven travelers.',
+    'Jeonju and Gwangju should not compete; Jeonju carries food warmth, Gwangju carries civic history and Honam city scale.',
+    'Mokpo is a junction: Route 6 finale, Route 7 launchpad, and Route 8 harbor hinge.',
+    'Haenam is a junction: Route 8 finale and Route 7 continuation toward Wando.',
+  ],
+  transports: {
+    KTX: {
+      mode: 'KTX',
+      id: 'rail-honam-land-end',
+      routeCode: '8-0-r',
+      routeGroupCode: '8-0',
+      routeGroupLabel: 'Honam Inland to Land End',
+      label: 'Rail + Local Transit',
+      routeName: 'Seoul to Haenam rail-led Honam itinerary',
+      totalTravelTime: '3h-4h rail/bus transfer, 5-6 days as a route',
+      totalDistance: '470-540 km',
+      summary:
+        'A public-transport version that uses Daejeon, Jeonju, Gwangju, and Mokpo as strong rail or bus anchors, then treats Haenam as the land-end local-transfer finale.',
+      bestFor: 'Travelers without a car who want Honam food, history, harbor, and land-end meaning.',
+      tradeoff: 'The main cities are practical, but Haenam and Ttangkkeut require local-transfer planning.',
+      stopPattern: 'Use Jeonju and Gwangju as main nights, Mokpo as harbor night, and Haenam as the finale.',
+      chooseWhen: 'Choose this when the traveler wants the Honam story with fewer driving demands.',
+      avoidWhen: 'Avoid it when the itinerary depends on remote rural roads, sunrise timing, or many temple/coast detours.',
+      pacingNote: 'Keep the public-transport version selective and honest about the final Haenam transfer.',
+      planningNotes: [
+        'Use Daejeon only when it improves timing; otherwise let Jeonju become the first emotional stop.',
+        'Keep Gwangju as a serious overnight, not a same-day mention.',
+        'Treat Mokpo as the final easy city before Haenam.',
+      ],
+      stopovers: honamLandEndStopovers,
+      routePath: carHonamLandEndRoute.routePath,
+    },
+    car: {
+      mode: 'car',
+      ...carHonamLandEndRoute,
+    },
+    bicycle: {
+      mode: 'bicycle',
+      id: 'bike-honam-land-end-concept',
+      routeCode: '8-0-b',
+      routeGroupCode: '8-0',
+      routeGroupLabel: 'Honam Inland to Land End',
+      label: 'Honam Bicycle Concept',
+      routeName: 'Seoul to Haenam bicycle concept',
+      totalTravelTime: '8-12 days',
+      totalDistance: '500-620 km',
+      summary:
+        'A long-distance concept for experienced riders who want central Korea, Jeolla cities, Honam civic history, Mokpo harbor, and the land end as one ride.',
+      bestFor: 'Experienced riders who want a meaningful southbound endpoint at Haenam.',
+      tradeoff: 'Urban exits, summer heat, rural roads, and final coastal approaches need detailed safety planning.',
+      stopPattern: 'Use Daejeon, Jeonju, Gwangju, Mokpo, and Haenam as recovery anchors.',
+      chooseWhen: 'Choose this only when the ride itself is the product.',
+      avoidWhen: 'Avoid it for casual riders until segment-level safety guidance exists.',
+      pacingNote: 'The bicycle version is aspirational and should stay clearly marked as a planning concept.',
+      planningNotes: [
+        'Future work should add road safety, heat, climbs, and service-gap notes.',
+        'City pages should support laundry, recovery food, and simple stays.',
+        'Haenam should be treated as the symbolic endpoint, not a rushed add-on.',
+      ],
+      stopovers: honamLandEndStopovers,
+      routePath: carHonamLandEndRoute.routePath,
+    },
+    bus: {
+      mode: 'bus',
+      id: 'bus-honam-land-end',
+      routeCode: '8-0-d',
+      routeGroupCode: '8-0',
+      routeGroupLabel: 'Honam Inland to Land End',
+      label: 'Intercity Bus',
+      routeName: 'Seoul to Haenam bus-led Honam route',
+      totalTravelTime: '4h-6h direct transfer, 5-7 days as a route',
+      totalDistance: '470-540 km',
+      summary:
+        'A bus-friendly version that makes Jeonju, Gwangju, Mokpo, and Haenam the core southbound chapters.',
+      bestFor: 'Budget travelers, solo travelers, and users who prefer city-center arrivals.',
+      tradeoff: 'Bus travel is practical, but rural Haenam and Ttangkkeut require careful local timing.',
+      stopPattern: 'Best with Jeonju, Gwangju, Mokpo, and Haenam; add Daejeon only when timing needs a first split.',
+      chooseWhen: 'Choose bus when simplicity and price matter more than detour freedom.',
+      avoidWhen: 'Avoid it when the traveler expects flexible rural roads or remote sunset timing.',
+      pacingNote: 'Bus Route 8 should stay focused on fewer, stronger chapters.',
+      planningNotes: [
+        'Use Jeonju and Gwangju as the main story nights.',
+        'Use Mokpo to make the final Haenam move feel coastal.',
+        'Do not overpack Haenam; the finale needs space.',
+      ],
+      stopovers: honamLandEndStopovers,
+      routePath: carHonamLandEndRoute.routePath,
+    },
+  },
+};
+
 const allRoutes: RouteData[] = [
   seoulToBusanRoute,
   seoulToGangneungRoute,
@@ -3115,6 +3346,7 @@ const allRoutes: RouteData[] = [
   seoulToYeosuRoute,
   seoulToMokpoRoute,
   mokpoToBusanRoute,
+  seoulToHaenamRoute,
 ];
 
 export function getAllRouteData(): RouteData[] {

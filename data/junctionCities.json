@@ -25,5 +25,77 @@
     "modernIdentity": "Modern Cheonan is a practical junction city with station hotels, Cheonan-Asan mobility, university energy, walnut snack identity, and enough services to soften the first hour out of Seoul.",
     "routeMeaning": "Cheonan is a junction city because it can support Route 1 as the first southbound reset toward Busan and Route 5 as the first pacing stop before Gongju, Jeonju, Gwangju, Suncheon, and Yeosu. It closes the Seoul departure gap without stealing attention from the deeper regional chapters.",
     "imageBrief": "Use station or Cheonan-Asan mobility, walnut snack or local food, independence-memory cues, and a map that shows the split toward Route 1 and Route 5."
+  },
+  "daejeon": {
+    "city": "Daejeon",
+    "canonicalHref": "/cities/daejeon",
+    "routeSlugs": ["route-1", "route-8"],
+    "historicalWeight": "Daejeon carries central-corridor history through rail movement, wartime displacement, science-city growth, and the practical geography that lets several versions of southbound Korea split cleanly.",
+    "modernIdentity": "Modern Daejeon is station efficiency, Yuseong hot-spring recovery, research and science-city identity, Sungsimdang bakery pilgrimage, food streets, hotels, and practical onward movement toward either the inland Busan line or the Honam land-end route.",
+    "routeMeaning": "Daejeon is a junction city because Route 1 can use it as the clean central reset toward Daegu and Busan, while Route 8 uses it as the stabilizing first southbound chapter before Jeonju, Gwangju, Mokpo, and Haenam.",
+    "imageBrief": "Use Daejeon Station, Yuseong recovery, science-city cues, Sungsimdang or central bakery streets, and a map that shows the split between the inland Busan route and the Honam land-end route."
+  },
+  "jeonju": {
+    "city": "Jeonju",
+    "canonicalHref": "/cities/jeonju",
+    "routeSlugs": ["route-5", "route-8"],
+    "historicalWeight": "Jeonju carries Jeolla food culture, hanok streets, old-city memory, markets, and regional identity strong enough to anchor both the Yeosu route and the deeper Honam land-end route.",
+    "modernIdentity": "Modern Jeonju is Hanok Village, bibimbap, makgeolli streets, market food, boutique stays, cafes, and one of the easiest regional Korea entry points for English-speaking travelers.",
+    "routeMeaning": "Jeonju is a junction city because Route 5 uses it as the warm inland food chapter before Gwangju, Suncheon, and Yeosu, while Route 8 uses it as the first deep Jeolla emotional chapter before Gwangju, Mokpo, and Haenam.",
+    "imageBrief": "Use Hanok Village, food streets, makgeolli, markets, and a map that shows Jeonju continuing either to the Route 5 south-coast finale or the Route 8 land-end descent."
+  },
+  "gwangju": {
+    "city": "Gwangju",
+    "canonicalHref": "/cities/gwangju",
+    "routeSlugs": ["route-5", "route-8"],
+    "historicalWeight": "Gwangju carries one of Korea's defining modern democratic-history chapters through May 18 memory, civic courage, Honam identity, and the relationship between city culture and political memory.",
+    "modernIdentity": "Modern Gwangju is Asia Culture Center, Mudeungsan, Yangnim-dong, markets, food, art, universities, and a metropolitan Honam stay that can send travelers toward Suncheon and Yeosu or toward Mokpo and Haenam.",
+    "routeMeaning": "Gwangju is a junction city because Route 5 uses it as the modern-history anchor before Suncheon and Yeosu, while Route 8 uses it as the civic-history center before Mokpo harbor and Haenam land-end symbolism.",
+    "imageBrief": "Use May 18 memory, Asia Culture Center, Mudeungsan, food streets, and a map that shows the split toward Route 5 ecology/night sea or Route 8 harbor/land end."
+  },
+  "mokpo": {
+    "city": "Mokpo",
+    "canonicalHref": "/cities/mokpo",
+    "routeSlugs": ["route-6", "route-7", "route-8"],
+    "historicalWeight": "Mokpo carries southwest port memory, modern harbor history, Yudalsan, Gatbawi, ferries, and the island-facing geography that makes the city both an ending and a beginning.",
+    "modernIdentity": "Modern Mokpo is seafood, ferries, cable-car views, harbor walks, island departures, and Dadohae access. It can finish the West Sea route or launch the south-coast route toward Haenam and Wando.",
+    "routeMeaning": "Mokpo is a junction city because Route 6 ends here as the West Sea modern-port finale, Route 7 begins here as the gateway into Dadohae and the south coast, and Route 8 uses it as the harbor hinge before Haenam land-end symbolism.",
+    "imageBrief": "Use Yudalsan, Gatbawi, harbor food, ferry movement, Dadohae island cues, and a map that shows Route 6 ending, Route 7 beginning, and Route 8 finishing its harbor-to-land-end movement."
+  },
+  "haenam": {
+    "city": "Haenam",
+    "canonicalHref": "/cities/haenam",
+    "routeSlugs": ["route-7", "route-8"],
+    "historicalWeight": "Haenam carries southern land-end imagination through Ttangkkeut, Duryunsan, Daeheungsa, rural roads, temple memory, seafood, and the feeling of reaching the peninsula edge.",
+    "modernIdentity": "Modern Haenam is land-end travel, Duryunsan views, Daeheungsa, seafood, slow rural stays, and the practical continuation toward Wando, Cheongsando, and Dadohae island travel.",
+    "routeMeaning": "Haenam is a junction city because Route 8 can end here as the Seoul-to-Honam land-end finale, while Route 7 can continue from here toward Wando, Boseong, Suncheon, Yeosu, Hallyeohaesang, and Busan.",
+    "imageBrief": "Use Ttangkkeut, Duryunsan, Daeheungsa, rural road/seafood cues, and a map that shows Haenam as Route 8 finale and Route 7 continuation toward Wando."
+  },
+  "suncheon": {
+    "city": "Suncheon",
+    "canonicalHref": "/cities/suncheon",
+    "routeSlugs": ["route-5", "route-7"],
+    "historicalWeight": "Suncheon carries old bay, reed-field, temple-region, and market-town memory before the route turns fully into the southern coast. Its landscape has always been about wetlands, fields, and controlled movement toward the sea.",
+    "modernIdentity": "Modern Suncheon is Suncheon Bay Wetland, Suncheon Bay National Garden, eco-travel, bird habitat, calmer stays, and a practical junction between Jeolla inland travel and the south-coast route.",
+    "routeMeaning": "Suncheon is a junction city because Route 5 uses it as the ecological hinge before the Yeosu finale, while Route 7 uses it as the point where the Dadohae-side west/south coast begins moving toward Yeosu, Namhae, Hallyeohaesang, Tongyeong, Geoje, and Busan.",
+    "imageBrief": "Use Suncheon Bay Wetland, National Garden, reeds, garden city cues, and a map that shows the split between the Route 5 Yeosu finale and the Route 7 eastward south-coast continuation."
+  },
+  "yeosu": {
+    "city": "Yeosu",
+    "canonicalHref": "/cities/yeosu",
+    "routeSlugs": ["route-5", "route-7"],
+    "historicalWeight": "Yeosu carries island-harbor memory, naval geography, Hyangiram, Odongdo, Dolsan, Expo-era modernization, seafood, and the emotional night-sea identity of Korea's southern coast.",
+    "modernIdentity": "Modern Yeosu is night sea, harbor lights, seafood, island walks, Dolsan Bridge, Expo-area services, ferries, and one of the most legible south-coast city brands for English-speaking travelers.",
+    "routeMeaning": "Yeosu is a junction city because Route 5 can finish here as the emotional south-coast payoff, while Route 7 continues through Yeosu into Namhae, Hallyeohaesang, Tongyeong, Geoje, and Busan. It is both a finale and a launch point.",
+    "imageBrief": "Use Yeosu night sea, Odongdo, Hyangiram, Dolsan Bridge, seafood, harbor lights, and a map that shows Yeosu as the Route 5 endpoint and Route 7 continuation."
+  },
+  "busan": {
+    "city": "Busan",
+    "canonicalHref": "/cities/busan",
+    "routeSlugs": ["route-1", "route-4", "route-7"],
+    "historicalWeight": "Busan carries port history, wartime refuge memory, hillside neighborhoods, markets, beaches, maritime trade, and the role of a final harbor for several different versions of Korea travel.",
+    "modernIdentity": "Modern Busan is a major harbor city with beaches, markets, film culture, cafes, seafood, rail and ferry access, and enough scale to receive the inland route, the east-coast National Route 7 line, and the south-coast Hallyeohaesang line.",
+    "routeMeaning": "Busan is a junction city because Route 1 reaches it through inland heritage, Route 4 reaches it down the East Sea and National Route 7 coast, and Route 7 reaches it after Dadohae, Hallyeohaesang, Geoje, and the southern island road. The city should read as a finale with different emotional approaches.",
+    "imageBrief": "Use harbor, Jagalchi, beaches, hillside neighborhoods, night coast, and a map that shows the three major approaches into Busan: inland, east coast, and south coast."
   }
 }

@@ -106,11 +106,28 @@ for (const term of requiredRoute7Terms) {
   if (!routeNetwork.includes(term)) failures.push(`routeNetwork.ts missing "${term}"`);
 }
 
+const requiredRoute8Terms = [
+  "id: 'route-8'",
+  "href: '/route-8'",
+  'Daejeon',
+  'Sungsimdang',
+  'Jeonju',
+  'Gwangju',
+  'Mokpo',
+  'Haenam',
+  'Honam',
+];
+
+for (const term of requiredRoute8Terms) {
+  if (!routeNetwork.includes(term)) failures.push(`routeNetwork.ts missing "${term}"`);
+}
+
 if (!routeRegistry.includes("'3': 'route-3'")) failures.push('routeRegistry.ts missing route-3 slug mapping');
 if (!routeRegistry.includes("'4': 'route-4'")) failures.push('routeRegistry.ts missing route-4 slug mapping');
 if (!routeRegistry.includes("'5': 'route-5'")) failures.push('routeRegistry.ts missing route-5 slug mapping');
 if (!routeRegistry.includes("'6': 'route-6'")) failures.push('routeRegistry.ts missing route-6 slug mapping');
 if (!routeRegistry.includes("'7': 'route-7'")) failures.push('routeRegistry.ts missing route-7 slug mapping');
+if (!routeRegistry.includes("'8': 'route-8'")) failures.push('routeRegistry.ts missing route-8 slug mapping');
 if (!routeRegistry.includes("'route-3': { from: 'seoul', to: 'sokcho' }")) {
   failures.push('routeRegistry.ts missing route-3 route pair');
 }
@@ -128,6 +145,9 @@ if (!routeRegistry.includes("'route-6': { from: 'seoul', to: 'mokpo' }")) {
 }
 if (!routeRegistry.includes("'route-7': { from: 'mokpo', to: 'busan' }")) {
   failures.push('routeRegistry.ts missing route-7 route pair');
+}
+if (!routeRegistry.includes("'route-8': { from: 'seoul', to: 'haenam' }")) {
+  failures.push('routeRegistry.ts missing route-8 route pair');
 }
 
 const route3CitySlugs = ['gapyeong', 'chuncheon', 'yanggu', 'inje', 'goseong', 'sokcho'];
@@ -244,6 +264,8 @@ for (const term of requiredRoute6StopoverTerms) {
 
 const requiredRoute7StopoverTerms = [
   'mokpoToBusanRoute',
+  'Dadohae',
+  'Hallyeohaesang',
   'Ttangkkeut',
   'Duryunsan',
   'Daeheungsa',
@@ -252,11 +274,28 @@ const requiredRoute7StopoverTerms = [
   'Yeosu night sea',
   'German Village',
   'Yi Sun-sin',
+  'Samdo Sugun Tongjeyeong',
   'POW history',
   'shipbuilding',
 ];
 
 for (const term of requiredRoute7StopoverTerms) {
+  if (!routeStopovers.includes(term)) failures.push(`routeStopovers.ts missing "${term}"`);
+}
+
+const requiredRoute8StopoverTerms = [
+  'seoulToHaenamRoute',
+  'Honam',
+  'Daejeon',
+  'Jeonju',
+  'Gwangju',
+  'May 18',
+  'Mokpo',
+  'Haenam',
+  'Ttangkkeut',
+];
+
+for (const term of requiredRoute8StopoverTerms) {
   if (!routeStopovers.includes(term)) failures.push(`routeStopovers.ts missing "${term}"`);
 }
 
@@ -268,4 +307,4 @@ if (failures.length > 0) {
   process.exit(1);
 }
 
-console.log('Route network validation passed for Route 2, Route 3, Route 4, Route 5, Route 6, and Route 7.');
+console.log('Route network validation passed for Route 2, Route 3, Route 4, Route 5, Route 6, Route 7, and Route 8.');

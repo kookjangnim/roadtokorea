@@ -25,9 +25,9 @@ export const tier2Cities: Record<string, TierCityData> = {
     name: 'Daejeon',
     heroImage: '/images/routes/route-1/daejeon/hero-generated-v1.png',
     headline: 'The Clean Central Split',
-    description: 'A practical central-city chapter where hot-spring calm, research-district rhythm, and easy transport make the route easier to manage.',
+    description: 'A practical central-city chapter where Sungsimdang bakery culture, hot-spring calm, research-district rhythm, and easy transport make the route easier to manage.',
     culturalInsight:
-      'Daejeon matters on Route 1 because it is one of the easiest places to divide the Seoul-to-Busan line without forcing a dramatic detour. Its value is in stability, clean timing, and a central-city rhythm that lets the trip breathe.',
+      'Daejeon matters because it is one of the easiest places to divide a long Korean route without forcing a dramatic detour. Its value is stability, clean timing, Sungsimdang as a food reason to stop, Yuseong recovery, and a science-city rhythm that lets the trip breathe.',
     hotspots: []
   },
   daegu: {

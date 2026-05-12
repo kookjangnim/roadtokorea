@@ -404,11 +404,11 @@ export const tier4Cities: Record<string, TierCityData> = {
   tongyeong: {
     name: 'Tongyeong',
     slug: 'tongyeong',
-    headline: 'The Hallyeohaesang Port City',
-    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dongpirang%20Village.jpg',
-    description: 'A dense harbor city where Yi Sun-sin memory, Dongpirang murals, seafood, ferries, art culture, and Hallyeohaesang island views meet.',
+    headline: 'The Yi Sun-sin Naval Port City',
+    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tongyeong%20Harbor.jpg',
+    description: 'A historically valuable naval harbor where Yi Sun-sin memory, Samdo Sugun Tongjeyeong, Dongpirang, seafood, ferries, art culture, and Hallyeohaesang island views meet.',
     culturalInsight:
-      'Tongyeong matters because it lets Route 7 hold naval history and living port culture together. Yi Sun-sin memory, Dongpirang, ferry terminals, seafood, music, art, and the Geoje handoff make it one of the route\'s strongest small-city chapters.',
+      'Tongyeong matters because Route 7 needs a city where Korea\'s naval past becomes visible. Yi Sun-sin memory, the Samdo Sugun Tongjeyeong command history, Hallyeohaesang island geography, Dongpirang, ferry terminals, seafood, music, art, and the Geoje handoff make it one of the route\'s strongest history-first small-city chapters.',
     hotspots: []
   },
   geoje: {

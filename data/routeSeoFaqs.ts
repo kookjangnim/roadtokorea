@@ -105,7 +105,7 @@ export const routeSeoFaqsByCode: Record<string, RouteSeoFaq[]> = {
     {
       question: 'What is the best Mokpo to Busan south coast route?',
       answer:
-        'Route 7 works best as Mokpo, Haenam, Wando, Boseong, Suncheon, Yeosu, Namhae, Tongyeong, Geoje, and Busan, linking land-end meaning, islands, green tea fields, wetlands, night sea, port culture, modern island history, and the final Busan harbor arrival.',
+        'Route 7 works best as Mokpo, Haenam, Wando, Boseong, Suncheon, Yeosu, Namhae, Tongyeong, Geoje, and Busan, linking Dadohae island access, land-end meaning, green tea fields, wetlands, night sea, Hallyeohaesang port culture, modern island history, and the final Busan harbor arrival.',
     },
     {
       question: 'Why include Haenam after Mokpo?',
@@ -115,7 +115,34 @@ export const routeSeoFaqsByCode: Record<string, RouteSeoFaq[]> = {
     {
       question: 'Is Route 7 a fast Mokpo to Busan transfer?',
       answer:
-        'No. Route 7 is a multi-day south-coast itinerary for travelers who want the coast itself: islands, seafood, temples, tea fields, wetlands, small ports, Geoje, and Busan.',
+        'No. Route 7 is a multi-day south-coast itinerary for travelers who want the coast itself: Dadohae, Hallyeohaesang, islands, seafood, temples, tea fields, wetlands, small ports, Geoje, and Busan.',
+    },
+    {
+      question: 'Why are Dadohae and Hallyeohaesang important on Route 7?',
+      answer:
+        'They give the route its real maritime identity. Dadohae frames the southwest island sea around Mokpo, Haenam, and Wando, while Hallyeohaesang frames the eastward island-and-port sequence through Yeosu, Namhae, Tongyeong, Geoje, and Busan.',
+    },
+  ],
+  '8': [
+    {
+      question: 'What is the best Seoul to Haenam route?',
+      answer:
+        'Route 8 works best as Seoul, Daejeon, Jeonju, Gwangju, Mokpo, and Haenam, turning the trip into a Honam descent through central transport, Jeolla food, modern democratic history, harbor memory, and Korea land-end symbolism.',
+    },
+    {
+      question: 'Why include Gwangju on the Seoul to Haenam route?',
+      answer:
+        'Gwangju gives Route 8 its modern-history center through May 18 civic memory, Asia Culture Center, Mudeungsan, food, and Honam city culture before the route turns toward Mokpo and Haenam.',
+    },
+    {
+      question: 'Why stop in Daejeon on Route 8?',
+      answer:
+        'Daejeon makes the long southbound route easier to pace with station access, hotels, Yuseong hot springs, science-city identity, and Sungsimdang as a clear food reason to stop before Jeonju.',
+    },
+    {
+      question: 'How is Route 8 different from Route 5, Route 6, and Route 7?',
+      answer:
+        'Route 5 ends at Yeosu through Jeolla food and ecology, Route 6 follows the West Sea to Mokpo, and Route 7 follows the south coast from Mokpo to Busan. Route 8 is the direct Honam inland-to-land-end spine from Seoul to Haenam.',
     },
   ],
 };
