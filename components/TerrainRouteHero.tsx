@@ -216,89 +216,67 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
   if (!activeRoute || !selectedRoute) return null;
 
   return (
-    <section className="relative overflow-hidden bg-[#16130f] px-4 pb-8 pt-6 text-white md:px-8 md:pb-12 md:pt-8">
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.26]"
-        style={{ backgroundImage: `url("${activeScene.image}")` }}
-        aria-hidden="true"
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(15,13,10,0.96)_0%,rgba(15,13,10,0.78)_42%,rgba(15,13,10,0.92)_100%)]" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(180deg,rgba(22,19,15,0)_0%,#efe7db_100%)]" />
+    <section className="relative isolate min-h-screen overflow-hidden">
+      {/* Full-screen map background */}
+      <div className="absolute inset-0 h-screen w-full">
+        <RealKoreaMap activeRoute={activeRoute} activeCitySlugs={activeCitySlugs} />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
+      </div>
 
-      <div className="relative mx-auto grid max-w-7xl gap-5 lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)]">
-        <div className="flex flex-col justify-between gap-6 py-4 lg:min-h-[calc(100vh-5rem)] lg:max-h-[calc(100vh-5rem)] lg:py-6">
-          <div>
-            <span className="inline-flex w-fit border border-white/[0.15] bg-white/[0.08] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.34em] text-stone-200 backdrop-blur">
-              Terrain-first Korea
+      {/* Content overlay */}
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-8 md:px-8 md:py-12">
+        {/* Floating card - top left */}
+        <div className="mb-6 max-w-md rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl md:p-6 lg:absolute lg:left-0 lg:top-8 lg:mb-0 lg:max-w-lg">
+          <div className="mb-4">
+            <span className="inline-flex border border-amber-200/20 bg-amber-100/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.34em] text-amber-100 backdrop-blur">
+              {activeScene.eyebrow}
             </span>
-            <h1 className="mt-4 max-w-3xl font-serif text-3xl leading-[0.96] text-white sm:text-4xl md:text-6xl">
-              Korea is shaped by mountains.
-              <span className="block text-stone-300">Choose the road that follows them.</span>
+            <h1 className="mt-3 font-serif text-2xl leading-tight text-white md:text-3xl lg:text-4xl">
+              {getCompactTitle(activeRoute)}
             </h1>
-            <p className="mt-4 max-w-2xl text-sm leading-7 text-stone-200">
-              RoadToKorea turns Seoul departures into route-led journeys through ridges, coasts,
-              old cities, harbor towns, and junctions where one trip can become another.
-            </p>
           </div>
 
-          <div className="hidden border border-white/[0.12] bg-black/[0.28] p-4 backdrop-blur-md md:p-5 lg:block">
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <p className="text-[9px] font-semibold uppercase tracking-[0.3em] text-amber-100">
-                  {activeScene.eyebrow}
-                </p>
-                <h2 className="mt-1.5 font-serif text-2xl leading-tight text-white md:text-3xl">
-                  {getCompactTitle(activeRoute)}
-                </h2>
-              </div>
-              <span className="h-3.5 w-3.5 shrink-0 rounded-full" style={{ backgroundColor: activeRoute.color }} />
-            </div>
-            <p className="mt-3 text-xs leading-6 text-stone-200">
-              {activeRouteData?.destinationPitch ?? activeRoute.summary}
-            </p>
-            <p className="mt-2 text-xs leading-6 text-stone-400">{activeScene.terrain}</p>
-            <div className="mt-4 flex flex-wrap gap-1.5">
-              {activeCities.slice(0, 5).map((city) => (
-                <Link
-                  key={`${activeRoute.id}-${city.slug}`}
-                  href={city.href}
-                  className="border border-white/[0.12] bg-white/[0.08] px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-stone-200 transition-colors hover:border-white/[0.30] hover:bg-white/[0.14]"
-                >
-                  {city.name}
-                </Link>
-              ))}
-            </div>
-            <div className="mt-4 flex flex-wrap gap-2.5">
+          <p className="mb-4 text-sm leading-6 text-stone-200">
+            {activeRouteData?.destinationPitch ?? activeRoute.summary}
+          </p>
+
+          <p className="mb-4 text-xs leading-5 text-stone-400">{activeScene.terrain}</p>
+
+          <div className="mb-5 flex flex-wrap gap-1.5">
+            {activeCities.slice(0, 4).map((city) => (
               <Link
-                href={activeRoute.href}
-                className="bg-white px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.24em] text-stone-950 transition-transform duration-300 hover:-translate-y-0.5"
+                key={`${activeRoute.id}-${city.slug}`}
+                href={city.href}
+                className="border border-white/12 bg-white/8 px-2.5 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-stone-200 transition-colors hover:border-white/24 hover:bg-white/14"
               >
-                Open Route
+                {city.name}
               </Link>
-              <Link
-                href="#how-it-works"
-                className="border border-white/[0.18] px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.24em] text-stone-200 transition-colors hover:border-white/[0.34] hover:bg-white/[0.08]"
-              >
-                How it works
-              </Link>
-            </div>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            <Link
+              href={activeRoute.href}
+              className="bg-white px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-950 transition-transform hover:-translate-y-0.5"
+            >
+              Open Route
+            </Link>
+            <Link
+              href="#how-it-works"
+              className="border border-white/18 px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:border-white/30 hover:bg-white/8"
+            >
+              How it works
+            </Link>
           </div>
         </div>
 
-        <div className="overflow-hidden border border-white/[0.12] bg-black/[0.30] shadow-[0_30px_110px_rgba(0,0,0,0.34)] backdrop-blur-md lg:my-4">
-          <div className="grid lg:grid-rows-[minmax(28rem,1fr)_auto]">
-            <div className="relative h-[25rem] bg-stone-900 md:h-[38rem] lg:h-[calc(100vh-15rem)] lg:min-h-[34rem] lg:max-h-[45rem]">
-              <RealKoreaMap activeRoute={activeRoute} activeCitySlugs={activeCitySlugs} />
-              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_18%,rgba(255,255,255,0.10),transparent_24%),linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.18))]" />
-              <div className="pointer-events-none absolute left-4 top-4 border border-black/[0.10] bg-white/[0.82] px-4 py-3 text-stone-950 shadow-lg backdrop-blur">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-600">
-                  Real map
-                </p>
-                <p className="mt-1 font-serif text-2xl leading-none">Routes follow real terrain.</p>
-              </div>
-            </div>
-
-            <div className="grid gap-2 border-t border-white/10 bg-[#15120f] p-3 sm:grid-cols-2 xl:grid-cols-3">
+        {/* Route selector - bottom */}
+        <div className="mt-auto lg:absolute lg:bottom-8 lg:left-8 lg:right-8">
+          <div className="rounded-2xl border border-white/12 bg-black/48 p-4 backdrop-blur-xl lg:p-5">
+            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
+              Select Route
+            </p>
+            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
               {routeNetworkRoutes.map((route) => {
                 const isActive = selectedRoute.id === route.id;
 
@@ -311,60 +289,31 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
                     onFocus={() => setHoveredRouteId(route.id)}
                     onBlur={() => setHoveredRouteId(null)}
                     onClick={() => setSelectedRouteId(route.id)}
-                    className={`min-h-24 border px-3 py-3 text-left transition-all duration-300 ${
+                    className={`border px-3 py-2.5 text-left transition-all ${
                       isActive
-                        ? 'border-white/[0.34] bg-white/[0.14]'
-                        : 'border-white/[0.10] bg-white/[0.05] hover:border-white/[0.24] hover:bg-white/[0.10]'
+                        ? 'border-white/30 bg-white/12'
+                        : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/8'
                     }`}
                   >
                     <div className="flex items-center justify-between gap-2">
-                      <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-stone-400">
+                      <p className="text-[8px] font-semibold uppercase tracking-[0.18em] text-stone-400">
                         {route.label}
                       </p>
-                      <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: route.color }} />
+                      <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: route.color }} />
                     </div>
-                    <h3 className="mt-2 font-serif text-lg leading-tight text-white">{route.title}</h3>
+                    <h3 className="mt-1 truncate font-serif text-sm leading-tight text-white">
+                      {route.title}
+                    </h3>
                   </button>
                 );
               })}
             </div>
-
-            <div className="border-t border-white/[0.10] bg-black/[0.28] p-5 backdrop-blur-md lg:hidden">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-amber-100">
-                    {activeScene.eyebrow}
-                  </p>
-                  <h2 className="mt-2 font-serif text-3xl leading-tight text-white">
-                    {getCompactTitle(activeRoute)}
-                  </h2>
-                </div>
-                <span className="h-4 w-4 shrink-0 rounded-full" style={{ backgroundColor: activeRoute.color }} />
-              </div>
-              <p className="mt-4 text-sm leading-7 text-stone-200">
-                {activeRouteData?.destinationPitch ?? activeRoute.summary}
-              </p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {activeCities.slice(0, 6).map((city) => (
-                  <Link
-                    key={`mobile-${activeRoute.id}-${city.slug}`}
-                    href={city.href}
-                    className="border border-white/[0.12] bg-white/[0.08] px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-stone-200"
-                  >
-                    {city.name}
-                  </Link>
-                ))}
-              </div>
-              <Link
-                href={activeRoute.href}
-                className="mt-6 inline-flex bg-white px-5 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-stone-950"
-              >
-                Open Route
-              </Link>
-            </div>
           </div>
         </div>
       </div>
+
+      {/* Bottom gradient fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/60 to-transparent" />
     </section>
   );
 }
