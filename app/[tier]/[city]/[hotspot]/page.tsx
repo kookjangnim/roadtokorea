@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
 import { getSeoulRouteOptionBySlug } from '@/data/seoulRoutes';
+import { getHotspotHeroImage } from '@/data/hotspotImageMap';
 
 const siteUrl = getSiteUrl();
 
@@ -59,14 +60,21 @@ function cleanContent(html: string): string {
   return cleaned;
 }
 
-function getHeroImage(post: HotspotPost): string | null {
+function getHeroImage(post: HotspotPost, citySlug: string, hotspotSlug: string): string | null {
+  // First try: Local hotspot image mapping
+  const localImage = getHotspotHeroImage(citySlug, hotspotSlug);
+  if (localImage) return localImage;
+
+  // Second try: WordPress featured media
   const featured = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
   if (featured) return featured;
 
+  // Third try: Content hero image
   const html = post.content?.rendered || '';
   const heroMatch = html.match(/class="[^"]*hero[^"]*"[^>]*>[\s\S]*?<img[^>]+src="([^">]+)"/i);
   if (heroMatch) return heroMatch[1];
 
+  // Fourth try: First image in content
   const firstMatch = html.match(/<img[^>]+src="([^">]+)"/i);
   return firstMatch ? firstMatch[1] : null;
 }
@@ -242,7 +250,7 @@ export async function generateMetadata({
 
   const title = stripHtml(post.title.rendered);
   const description = buildExcerpt(post) || `Discover ${title} with RoadToKorea`;
-  const heroImage = getHeroImage(post);
+  const heroImage = getHeroImage(post, city, hotspot);
   const normalizedHeroImage = heroImage ? normalizeWpMediaUrl(heroImage) : '';
 
   return {
@@ -298,7 +306,7 @@ export default async function HotspotPage({
   const rawContent = post.content?.rendered || '';
   const cleanedContent = cleanContent(rawContent);
   const { content: guidedContent, headings } = buildContentGuide(cleanedContent);
-  const heroImageUrl = getHeroImage(post);
+  const heroImageUrl = getHeroImage(post, citySlug, hotspotSlug);
   const fixedHeroUrl = heroImageUrl ? normalizeWpMediaUrl(heroImageUrl) : null;
   const title = stripHtml(post.title?.rendered || hotspotSlug);
   const excerpt = buildExcerpt(post);
@@ -317,7 +325,13 @@ export default async function HotspotPage({
       })
     : null;
   const relatedPosts = (await fetchPostsByCityTag(citySlug, 6))
-    .filter((candidate) => candidate.slug !== hotspotSlug)
+    .filter((candidate) => {
+      if (candidate.slug === hotspotSlug) return false;
+      const candidateImage = getHeroImage(candidate, citySlug, candidate.slug);
+      const currentImage = heroImageUrl;
+      if (candidateImage && currentImage && candidateImage === currentImage) return false;
+      return true;
+    })
     .slice(0, 3);
 
   const jsonLd = {
@@ -664,7 +678,7 @@ export default async function HotspotPage({
               {relatedPosts.map((relatedPost: WPPost) => {
                 const relatedTitle = stripHtml(relatedPost.title.rendered) || relatedPost.slug;
                 const relatedExcerpt = buildExcerpt(relatedPost);
-                const relatedImage = getHeroImage(relatedPost);
+                const relatedImage = getHeroImage(relatedPost, citySlug, relatedPost.slug);
                 const relatedImageUrl = relatedImage ? normalizeWpMediaUrl(relatedImage) : '/images/placeholder.png';
 
                 return (
