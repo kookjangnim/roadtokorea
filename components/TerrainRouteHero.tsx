@@ -105,9 +105,11 @@ function RealKoreaMap({
       const map = L.map(mapRef.current, {
         center: [36.7, 127.95],
         zoom: 7,
-        zoomControl: false,
+        zoomControl: true,
         scrollWheelZoom: false,
       });
+
+      L.control.zoom({ position: 'topright' }).addTo(map);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution:
@@ -165,15 +167,8 @@ function RealKoreaMap({
         L.marker([city.lat, city.lng], { icon }).addTo(map);
       });
 
-      const activeCoords = activeRoute.citySlugs
-        .map((slug) => routeNetworkCities[slug])
-        .filter(Boolean)
-        .map((city) => [city.lat, city.lng] as [number, number]);
-
-      if (activeCoords.length > 0) {
-        const bounds = L.latLngBounds(activeCoords.map(([lat, lng]) => L.latLng(lat, lng)));
-        map.fitBounds(bounds, { padding: [42, 42] });
-      }
+      // Fixed scale - no fitBounds
+      // This keeps the map at the same zoom level regardless of route selection
 
       mapInstance = map;
     }
@@ -216,15 +211,15 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
   if (!activeRoute || !selectedRoute) return null;
 
   return (
-    <section className="relative isolate min-h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Full-screen map background */}
-      <div className="absolute inset-0 h-screen w-full">
+      <div className="absolute inset-0 z-0 h-screen w-full">
         <RealKoreaMap activeRoute={activeRoute} activeCitySlugs={activeCitySlugs} />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
       </div>
 
       {/* Content overlay */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 py-8 md:px-8 md:py-12">
+      <div className="relative z-[1000] mx-auto max-w-7xl px-4 py-8 md:px-8 md:py-12">
         {/* Floating card - top left */}
         <div className="mb-6 max-w-md rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl md:p-6 lg:absolute lg:left-0 lg:top-8 lg:mb-0 lg:max-w-lg">
           <div className="mb-4">
