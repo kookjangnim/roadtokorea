@@ -1,7 +1,8 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
+import 'leaflet/dist/leaflet.css';
 import {
   routeNetworkCities,
   routeNetworkRoutes,
@@ -79,137 +80,117 @@ function getMarkerRadius(city: RouteNetworkCity) {
   return 1.85;
 }
 
-function TerrainReliefMap({
+function RealKoreaMap({
   activeRoute,
   activeCitySlugs,
 }: {
   activeRoute: RouteNetworkRoute;
   activeCitySlugs: Set<string>;
 }) {
-  return (
-    <svg viewBox="0 0 100 100" role="img" aria-label="Terrain relief map of Korea with route lines" className="h-full w-full">
-      <defs>
-        <radialGradient id="terrainGlow" cx="64%" cy="25%" r="72%">
-          <stop offset="0%" stopColor="#f4ecd8" />
-          <stop offset="42%" stopColor="#c9b58d" />
-          <stop offset="76%" stopColor="#81694b" />
-          <stop offset="100%" stopColor="#35291e" />
-        </radialGradient>
-        <linearGradient id="seaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#1d2d35" />
-          <stop offset="52%" stopColor="#213b42" />
-          <stop offset="100%" stopColor="#102127" />
-        </linearGradient>
-        <filter id="terrainTexture">
-          <feTurbulence type="fractalNoise" baseFrequency="0.018 0.045" numOctaves="4" seed="18" />
-          <feColorMatrix type="saturate" values="0" />
-          <feComponentTransfer>
-            <feFuncA type="table" tableValues="0 0.34" />
-          </feComponentTransfer>
-        </filter>
-        <filter id="routeShadow">
-          <feDropShadow dx="0" dy="0.7" stdDeviation="0.8" floodColor="#000000" floodOpacity="0.38" />
-        </filter>
-      </defs>
+  const mapRef = useRef<HTMLDivElement>(null);
+  const [isClient, setIsClient] = useState(false);
 
-      <rect width="100" height="100" fill="url(#seaGradient)" />
-      <path
-        d="M42 3 C50 1,58 3,65 8 C72 13,77 20,79 29 C80 36,78 42,79 49 C81 60,86 70,84 81 C82 91,73 97,62 96 C52 95,46 88,40 79 C34 69,33 58,29 48 C25 37,22 26,26 17 C29 10,34 5,42 3 Z"
-        fill="url(#terrainGlow)"
-        stroke="#e8dcc3"
-        strokeWidth="0.55"
-      />
-      <path
-        d="M42 3 C50 1,58 3,65 8 C72 13,77 20,79 29 C80 36,78 42,79 49 C81 60,86 70,84 81 C82 91,73 97,62 96 C52 95,46 88,40 79 C34 69,33 58,29 48 C25 37,22 26,26 17 C29 10,34 5,42 3 Z"
-        filter="url(#terrainTexture)"
-        opacity="0.64"
-      />
-      <path
-        d="M30 92 C34 89,39 89,43 92 C40 96,34 97,30 92 Z"
-        fill="#9f8c68"
-        opacity="0.68"
-        stroke="#e8dcc3"
-        strokeWidth="0.35"
-      />
+  useEffect(() => {
+    let mapInstance: { remove: () => void } | null = null;
+    let cancelled = false;
 
-      <g fill="none" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M65 10 C68 18,70 26,70 34 C72 43,75 50,75 60 C77 68,79 75,78 84" stroke="#4c3b2b" strokeWidth="2.5" opacity="0.38" />
-        <path d="M61 13 C64 22,65 31,66 40 C68 49,70 59,72 70" stroke="#f4e5bc" strokeWidth="0.8" opacity="0.34" />
-        <path d="M50 35 C56 40,61 47,64 55 C68 62,71 70,75 78" stroke="#4a3627" strokeWidth="2.1" opacity="0.30" />
-        <path d="M45 42 C52 47,58 55,61 64 C63 71,66 78,70 84" stroke="#f6e4b8" strokeWidth="0.72" opacity="0.28" />
-        <path d="M38 60 C43 65,48 69,55 72 C60 75,66 79,72 84" stroke="#5a3d28" strokeWidth="1.7" opacity="0.26" />
-        <path d="M34 19 C42 18,48 20,55 24" stroke="#fff2ca" strokeWidth="0.55" opacity="0.28" />
-        <path d="M33 31 C42 30,51 32,60 36" stroke="#fff2ca" strokeWidth="0.5" opacity="0.24" />
-        <path d="M34 47 C45 45,55 47,66 53" stroke="#fff2ca" strokeWidth="0.48" opacity="0.22" />
-        <path d="M38 68 C48 66,58 68,72 76" stroke="#fff2ca" strokeWidth="0.46" opacity="0.20" />
-      </g>
+    async function mountMap() {
+      if (!mapRef.current || typeof window === 'undefined') return;
 
-      <g fill="#eadfca" fontSize="2.2" fontWeight="700" letterSpacing="0.04em" opacity="0.72">
-        <text x="69" y="35" transform="rotate(76 69 35)">Taebaek</text>
-        <text x="58" y="58" transform="rotate(62 58 58)">Sobaek</text>
-        <text x="37" y="82">Dadohae</text>
-      </g>
+      const L = await import('leaflet');
+      if (cancelled || !mapRef.current) return;
 
-      <g fill="none" strokeLinecap="round" strokeLinejoin="round" filter="url(#routeShadow)">
-        {routeNetworkRoutes.map((route) => {
-          const isActive = route.id === activeRoute.id;
-          return (
-            <path
-              key={route.id}
-              d={route.path}
-              stroke={route.color}
-              strokeWidth={isActive ? 1.45 : 0.58}
-              opacity={isActive ? 1 : 0.2}
-              strokeDasharray={route.id.startsWith('branch-') ? '2 2' : undefined}
-            />
-          );
-        })}
-      </g>
+      setIsClient(true);
 
-      {Object.values(routeNetworkCities).map((city) => {
+      const map = L.map(mapRef.current, {
+        center: [36.7, 127.95],
+        zoom: 7,
+        zoomControl: false,
+        scrollWheelZoom: false,
+      });
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+
+      routeNetworkRoutes.forEach((route) => {
+        const isActive = route.id === activeRoute.id;
+        const coords = route.citySlugs
+          .map((slug) => routeNetworkCities[slug])
+          .filter(Boolean)
+          .map((city) => [city.lat, city.lng] as [number, number]);
+
+        L.polyline(coords, {
+          color: route.color,
+          weight: isActive ? 6 : 3,
+          opacity: isActive ? 0.95 : 0.25,
+          dashArray: route.id.startsWith('branch-') ? '6 8' : undefined,
+        }).addTo(map);
+      });
+
+      Object.values(routeNetworkCities).forEach((city) => {
         const isActive = activeCitySlugs.has(city.slug);
-        const isJunction = city.kind === 'junction';
-        return (
-          <g key={city.slug} opacity={isActive ? 1 : 0.26}>
-            {isJunction ? (
-              <rect
-                x={city.x - getMarkerRadius(city)}
-                y={city.y - getMarkerRadius(city)}
-                width={getMarkerRadius(city) * 2}
-                height={getMarkerRadius(city) * 2}
-                transform={`rotate(45 ${city.x} ${city.y})`}
-                fill={isActive ? '#f7c948' : '#e5c36c'}
-                stroke="#fffaf0"
-                strokeWidth="0.55"
-              />
-            ) : (
-              <circle
-                cx={city.x}
-                cy={city.y}
-                r={getMarkerRadius(city)}
-                fill={isActive ? '#11100e' : city.kind === 'anchor' ? '#5b5146' : '#f6f1e7'}
-                stroke="#fffaf0"
-                strokeWidth="0.55"
-              />
-            )}
-            {isActive && (
-              <text
-                x={city.x + 2.8}
-                y={city.y + 1.1}
-                fill="#11100e"
-                stroke="#fffaf0"
-                strokeWidth="0.34"
-                paintOrder="stroke"
-                fontSize={city.kind === 'anchor' ? 3.1 : 2.45}
-                fontWeight="800"
-              >
-                {city.name}
-              </text>
-            )}
-          </g>
-        );
-      })}
-    </svg>
+        const size = city.kind === 'anchor' ? 18 : city.kind === 'branch' ? 12 : 15;
+        const radius = city.kind === 'junction' ? '3px' : '999px';
+        const transform = city.kind === 'junction' ? 'rotate(45deg)' : 'none';
+        const background = isActive
+          ? city.kind === 'junction'
+            ? '#d69b2d'
+            : '#171411'
+          : city.kind === 'anchor'
+            ? '#6b6258'
+            : city.kind === 'junction'
+              ? '#f0c36b'
+              : '#ffffff';
+
+        const icon = L.divIcon({
+          className: '',
+          html: `<div style="
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:${size}px;
+            height:${size}px;
+            border:2px solid white;
+            border-radius:${radius};
+            background:${background};
+            transform:${transform};
+            box-shadow:0 8px 24px rgba(0,0,0,.22);
+          "></div>`,
+          iconSize: [size, size],
+          iconAnchor: [size / 2, size / 2],
+        });
+
+        L.marker([city.lat, city.lng], { icon }).addTo(map);
+      });
+
+      const activeCoords = activeRoute.citySlugs
+        .map((slug) => routeNetworkCities[slug])
+        .filter(Boolean)
+        .map((city) => [city.lat, city.lng] as [number, number]);
+
+      if (activeCoords.length > 0) {
+        const bounds = L.latLngBounds(activeCoords.map(([lat, lng]) => L.latLng(lat, lng)));
+        map.fitBounds(bounds, { padding: [42, 42] });
+      }
+
+      mapInstance = map;
+    }
+
+    mountMap();
+
+    return () => {
+      cancelled = true;
+      if (mapInstance) mapInstance.remove();
+    };
+  }, [activeRoute, activeCitySlugs]);
+
+  return (
+    <div className="relative h-full w-full">
+      {!isClient && <div className="h-full w-full animate-pulse bg-stone-900" />}
+      <div ref={mapRef} className={`${isClient ? 'block' : 'hidden'} h-full w-full`} />
+    </div>
   );
 }
 
@@ -307,13 +288,13 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
         <div className="overflow-hidden border border-white/[0.12] bg-black/[0.30] shadow-[0_30px_110px_rgba(0,0,0,0.34)] backdrop-blur-md lg:my-4">
           <div className="grid lg:grid-rows-[minmax(28rem,1fr)_auto]">
             <div className="relative h-[25rem] bg-stone-900 md:h-[38rem] lg:h-[calc(100vh-15rem)] lg:min-h-[34rem] lg:max-h-[45rem]">
-              <TerrainReliefMap activeRoute={activeRoute} activeCitySlugs={activeCitySlugs} />
+              <RealKoreaMap activeRoute={activeRoute} activeCitySlugs={activeCitySlugs} />
               <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_18%,rgba(255,255,255,0.10),transparent_24%),linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.18))]" />
               <div className="pointer-events-none absolute left-4 top-4 border border-black/[0.10] bg-white/[0.82] px-4 py-3 text-stone-950 shadow-lg backdrop-blur">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-600">
-                  Relief map
+                  Real map
                 </p>
-                <p className="mt-1 font-serif text-2xl leading-none">Routes follow terrain.</p>
+                <p className="mt-1 font-serif text-2xl leading-none">Routes follow real terrain.</p>
               </div>
             </div>
 
