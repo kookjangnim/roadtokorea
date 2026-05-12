@@ -294,88 +294,90 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
       </div>
 
-      {/* Content overlay */}
-      <div className="relative z-[1000] mx-auto grid h-screen max-w-7xl grid-cols-[1fr_auto] px-4 py-8 md:px-8 md:py-12">
-        {/* Left side - Floating card */}
-        <div className="flex flex-col justify-center">
-          <div className="max-w-md rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl md:p-6 lg:max-w-lg">
-            <div className="mb-4">
-              <span className="inline-flex border border-amber-200/20 bg-amber-100/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.34em] text-amber-100 backdrop-blur">
-                {activeScene.eyebrow}
-              </span>
-              <h1 className="mt-3 font-serif text-2xl leading-tight text-white md:text-3xl lg:text-4xl">
-                {getCompactTitle(activeRoute)}
-              </h1>
-            </div>
+      {/* Content overlay - positioned in map's empty space (top-left corner) */}
+      <div className="relative z-[1000] mx-auto max-w-7xl px-4 py-8 md:px-8 md:py-12">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_280px]">
+          {/* Left side - Route info card */}
+          <div>
+            <div className="max-w-md rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl md:p-6 lg:max-w-lg">
+              <div className="mb-4">
+                <span className="inline-flex border border-amber-200/20 bg-amber-100/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.34em] text-amber-100 backdrop-blur">
+                  {activeScene.eyebrow}
+                </span>
+                <h1 className="mt-3 font-serif text-2xl leading-tight text-white md:text-3xl lg:text-4xl">
+                  {getCompactTitle(activeRoute)}
+                </h1>
+              </div>
 
-            <p className="mb-4 text-sm leading-6 text-stone-200">
-              {activeRouteData?.destinationPitch ?? activeRoute.summary}
-            </p>
+              <p className="mb-4 text-sm leading-6 text-stone-200">
+                {activeRouteData?.destinationPitch ?? activeRoute.summary}
+              </p>
 
-            <p className="mb-4 text-xs leading-5 text-stone-400">{activeScene.terrain}</p>
+              <p className="mb-4 text-xs leading-5 text-stone-400">{activeScene.terrain}</p>
 
-            <div className="mb-5 flex flex-wrap gap-1.5">
-              {activeCities.slice(0, 4).map((city) => (
+              <div className="mb-5 flex flex-wrap gap-1.5">
+                {activeCities.slice(0, 4).map((city) => (
+                  <Link
+                    key={`${activeRoute.id}-${city.slug}`}
+                    href={city.href}
+                    className="border border-white/12 bg-white/8 px-2.5 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-stone-200 transition-colors hover:border-white/24 hover:bg-white/14"
+                  >
+                    {city.name}
+                  </Link>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap gap-2">
                 <Link
-                  key={`${activeRoute.id}-${city.slug}`}
-                  href={city.href}
-                  className="border border-white/12 bg-white/8 px-2.5 py-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-stone-200 transition-colors hover:border-white/24 hover:bg-white/14"
+                  href={activeRoute.href}
+                  className="bg-white px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-950 transition-transform hover:-translate-y-0.5"
                 >
-                  {city.name}
+                  Open Route
                 </Link>
-              ))}
-            </div>
-
-            <div className="flex flex-wrap gap-2">
-              <Link
-                href={activeRoute.href}
-                className="bg-white px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-950 transition-transform hover:-translate-y-0.5"
-              >
-                Open Route
-              </Link>
-              <Link
-                href="#how-it-works"
-                className="border border-white/18 px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:border-white/30 hover:bg-white/8"
-              >
-                How it works
-              </Link>
+                <Link
+                  href="#how-it-works"
+                  className="border border-white/18 px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:border-white/30 hover:bg-white/8"
+                >
+                  How it works
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Right side - Route selector */}
-        <div className="flex items-center">
-          <div className="w-72 rounded-2xl border border-white/12 bg-black/48 p-4 backdrop-blur-xl lg:p-5 lg:w-80">
-            <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
-              Routes
-            </p>
-            <div className="flex flex-col gap-2 max-h-[60vh] overflow-y-auto pr-2">
-              {routeNetworkRoutes.map((route) => {
-                const isActive = selectedRouteId === route.id;
+          {/* Right side - Route selector */}
+          <div className="hidden lg:block">
+            <div className="rounded-2xl border border-white/12 bg-black/48 p-4 backdrop-blur-xl">
+              <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
+                Routes
+              </p>
+              <div className="flex flex-col gap-2 max-h-[50vh] overflow-y-auto pr-2">
+                {routeNetworkRoutes.map((route) => {
+                  const isActive = selectedRouteId === route.id;
 
-                return (
-                  <button
-                    key={route.id}
-                    type="button"
-                    onClick={() => setSelectedRouteId(route.id)}
-                    className={`border px-4 py-3 text-left transition-all ${
-                      isActive
-                        ? 'border-white/30 bg-white/12'
-                        : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/8'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between gap-2">
-                      <p className="text-[8px] font-semibold uppercase tracking-[0.18em] text-stone-400">
-                        {route.label}
-                      </p>
-                      <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: route.color }} />
-                    </div>
-                    <h3 className="mt-1.5 font-serif text-sm leading-tight text-white">
-                      {route.title}
-                    </h3>
-                  </button>
-                );
-              })}
+                  return (
+                    <button
+                      key={route.id}
+                      type="button"
+                      onClick={() => setSelectedRouteId(route.id)}
+                      className={`border px-4 py-3 text-left transition-all ${
+                        isActive
+                          ? 'border-white/30 bg-white/12'
+                          : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/8'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="text-[8px] font-semibold uppercase tracking-[0.18em] text-stone-400">
+                          {route.label}
+                        </p>
+                        <span className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: route.color }} />
+                      </div>
+                      <h3 className="mt-1.5 font-serif text-sm leading-tight text-white">
+                        {route.title}
+                      </h3>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
