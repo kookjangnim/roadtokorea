@@ -130,8 +130,8 @@ function RealKoreaMap({
       setIsClient(true);
 
       const map = L.map(mapRef.current, {
-        center: [36.7, 127.95],
-        zoom: 7,
+        center: [36.2, 128.0],
+        zoom: 8,
         zoomControl: false,
         scrollWheelZoom: false,
       });
@@ -242,7 +242,7 @@ function RealKoreaMap({
         map.fitBounds(L.latLngBounds(activeCoords.map(([lat, lng]) => L.latLng(lat, lng))), {
           paddingTopLeft: [560, 90],
           paddingBottomRight: [100, 215],
-          maxZoom: 7,
+          maxZoom: 8,
           animate: false,
         });
       }
@@ -271,11 +271,8 @@ function RealKoreaMap({
 export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
   const defaultRouteId = routeNetworkRoutes.find((route) => route.id === 'route-3')?.id ?? routeNetworkRoutes[0]?.id ?? '';
   const [selectedRouteId, setSelectedRouteId] = useState(defaultRouteId);
-  const [hoveredRouteId, setHoveredRouteId] = useState<string | null>(null);
 
-  const activeRouteId = hoveredRouteId ?? selectedRouteId;
-  const activeRoute = routeNetworkRoutes.find((route) => route.id === activeRouteId) ?? routeNetworkRoutes[0];
-  const selectedRoute = routeNetworkRoutes.find((route) => route.id === selectedRouteId) ?? activeRoute;
+  const activeRoute = routeNetworkRoutes.find((route) => route.id === selectedRouteId) ?? routeNetworkRoutes[0];
   const activeScene = ROUTE_SCENES[activeRoute?.id ?? ''] ?? ROUTE_SCENES['route-1'];
   const routeDataByHref = useMemo(() => new Map(routes.map((route) => [route.href, route])), [routes]);
   const activeRouteData = activeRoute ? routeDataByHref.get(activeRoute.href) : undefined;
@@ -287,7 +284,7 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
     [activeRoute?.citySlugs]
   );
 
-  if (!activeRoute || !selectedRoute) return null;
+  if (!activeRoute) return null;
 
   return (
     <section className="relative min-h-[calc(100vh-5.5rem)] overflow-hidden">
@@ -352,16 +349,12 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
             </p>
             <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
               {routeNetworkRoutes.map((route) => {
-                const isActive = selectedRoute.id === route.id;
+                const isActive = selectedRouteId === route.id;
 
                 return (
                   <button
                     key={route.id}
                     type="button"
-                    onMouseEnter={() => setHoveredRouteId(route.id)}
-                    onMouseLeave={() => setHoveredRouteId(null)}
-                    onFocus={() => setHoveredRouteId(route.id)}
-                    onBlur={() => setHoveredRouteId(null)}
                     onClick={() => setSelectedRouteId(route.id)}
                     className={`border px-3 py-2.5 text-left transition-all ${
                       isActive
