@@ -80,6 +80,33 @@ function getMarkerRadius(city: RouteNetworkCity) {
   return 1.85;
 }
 
+const LABEL_PLACEMENTS: Record<string, { x: number; y: number }> = {
+  goseong: { x: 12, y: -16 },
+  sokcho: { x: 12, y: -2 },
+  yangyang: { x: 12, y: 12 },
+  inje: { x: 12, y: 8 },
+  gangneung: { x: 12, y: -14 },
+  donghae: { x: 12, y: -4 },
+  samcheok: { x: 12, y: 10 },
+  mokpo: { x: -62, y: -10 },
+  haenam: { x: -66, y: 6 },
+  wando: { x: 12, y: 16 },
+  boseong: { x: -70, y: -6 },
+  suncheon: { x: 12, y: -22 },
+  yeosu: { x: 12, y: 12 },
+  namhae: { x: -74, y: 12 },
+  tongyeong: { x: 12, y: -18 },
+  geoje: { x: 12, y: 12 },
+  busan: { x: 12, y: -8 },
+};
+
+function getLabelPlacement(city: RouteNetworkCity) {
+  return LABEL_PLACEMENTS[city.slug] ?? {
+    x: city.kind === 'anchor' ? 13 : 11,
+    y: 5,
+  };
+}
+
 function RealKoreaMap({
   activeRoute,
   activeCitySlugs,
@@ -105,7 +132,7 @@ function RealKoreaMap({
       const map = L.map(mapRef.current, {
         center: [36.7, 127.95],
         zoom: 7,
-        zoomControl: true,
+        zoomControl: false,
         scrollWheelZoom: false,
       });
 
@@ -116,7 +143,10 @@ function RealKoreaMap({
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }).addTo(map);
 
-      routeNetworkRoutes.forEach((route) => {
+      const inactiveRoutes = routeNetworkRoutes.filter((route) => route.id !== activeRoute.id);
+      const orderedRoutes = [...inactiveRoutes, activeRoute];
+
+      orderedRoutes.forEach((route) => {
         const isActive = route.id === activeRoute.id;
         const coords = route.citySlugs
           .map((slug) => routeNetworkCities[slug])
@@ -125,13 +155,20 @@ function RealKoreaMap({
 
         L.polyline(coords, {
           color: route.color,
-          weight: isActive ? 6 : 3,
-          opacity: isActive ? 0.95 : 0.25,
+          weight: isActive ? 7 : 3,
+          opacity: isActive ? 0.98 : 0.28,
           dashArray: route.id.startsWith('branch-') ? '6 8' : undefined,
+          lineCap: 'round',
+          lineJoin: 'round',
         }).addTo(map);
       });
 
-      Object.values(routeNetworkCities).forEach((city) => {
+      const orderedCities = [
+        ...Object.values(routeNetworkCities).filter((city) => !activeCitySlugs.has(city.slug)),
+        ...Object.values(routeNetworkCities).filter((city) => activeCitySlugs.has(city.slug)),
+      ];
+
+      orderedCities.forEach((city) => {
         const isActive = activeCitySlugs.has(city.slug);
         const size = city.kind === 'anchor' ? 18 : city.kind === 'branch' ? 12 : 15;
         const radius = city.kind === 'junction' ? '3px' : '999px';
@@ -145,30 +182,72 @@ function RealKoreaMap({
             : city.kind === 'junction'
               ? '#f0c36b'
               : '#ffffff';
+        const labelPlacement = getLabelPlacement(city);
+        const label = isActive
+          ? `<span style="
+              position:absolute;
+              left:${labelPlacement.x}px;
+              top:${labelPlacement.y}px;
+              padding:3px 7px;
+              border-radius:999px;
+              background:rgba(255,255,255,.92);
+              color:#171411;
+              font-size:12px;
+              line-height:1;
+              font-weight:850;
+              white-space:nowrap;
+              box-shadow:0 6px 18px rgba(0,0,0,.22);
+              pointer-events:none;
+            ">${city.name}</span>`
+          : '';
 
         const icon = L.divIcon({
           className: '',
           html: `<div style="
             display:flex;
             align-items:center;
-            justify-content:center;
-            width:${size}px;
-            height:${size}px;
-            border:2px solid white;
-            border-radius:${radius};
-            background:${background};
-            transform:${transform};
-            box-shadow:0 8px 24px rgba(0,0,0,.22);
-          "></div>`,
-          iconSize: [size, size],
+            position:relative;
+            min-width:${isActive ? 150 : size}px;
+            height:46px;
+            opacity:${isActive ? 1 : 0.48};
+          ">
+            <span style="
+              position:absolute;
+              left:0;
+              top:${(46 - size) / 2}px;
+              display:block;
+              width:${size}px;
+              height:${size}px;
+              border:2px solid white;
+              border-radius:${radius};
+              background:${background};
+              transform:${transform};
+              box-shadow:0 8px 24px rgba(0,0,0,.22);
+            "></span>
+            ${label}
+          </div>`,
+          iconSize: [isActive ? 164 : size, 46],
           iconAnchor: [size / 2, size / 2],
         });
 
         L.marker([city.lat, city.lng], { icon }).addTo(map);
       });
 
-      // Fixed scale - no fitBounds
-      // This keeps the map at the same zoom level regardless of route selection
+      const activeCoords = activeRoute.citySlugs
+        .map((slug) => routeNetworkCities[slug])
+        .filter(Boolean)
+        .map((city) => [city.lat, city.lng] as [number, number]);
+
+      if (activeCoords.length) {
+        map.fitBounds(L.latLngBounds(activeCoords.map(([lat, lng]) => L.latLng(lat, lng))), {
+          paddingTopLeft: [560, 90],
+          paddingBottomRight: [100, 215],
+          maxZoom: 7,
+          animate: false,
+        });
+      }
+
+      window.setTimeout(() => map.invalidateSize(), 80);
 
       mapInstance = map;
     }
@@ -211,17 +290,17 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
   if (!activeRoute || !selectedRoute) return null;
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-[calc(100vh-5.5rem)] overflow-hidden">
       {/* Full-screen map background */}
-      <div className="absolute inset-0 z-0 h-screen w-full">
+      <div className="absolute inset-0 z-0 h-full w-full">
         <RealKoreaMap activeRoute={activeRoute} activeCitySlugs={activeCitySlugs} />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
       </div>
 
       {/* Content overlay */}
-      <div className="relative z-[1000] mx-auto max-w-7xl px-4 py-8 md:px-8 md:py-12">
+      <div className="relative z-[1000] mx-auto flex min-h-[calc(100vh-5.5rem)] max-w-7xl flex-col justify-between gap-8 px-4 py-8 md:px-8 md:py-12">
         {/* Floating card - top left */}
-        <div className="mb-6 max-w-md rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl md:p-6 lg:absolute lg:left-0 lg:top-8 lg:mb-0 lg:max-w-lg">
+        <div className="max-w-md rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl md:p-6 lg:max-w-lg">
           <div className="mb-4">
             <span className="inline-flex border border-amber-200/20 bg-amber-100/10 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.34em] text-amber-100 backdrop-blur">
               {activeScene.eyebrow}
@@ -266,7 +345,7 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
         </div>
 
         {/* Route selector - bottom */}
-        <div className="mt-auto lg:absolute lg:bottom-8 lg:left-8 lg:right-8">
+        <div>
           <div className="rounded-2xl border border-white/12 bg-black/48 p-4 backdrop-blur-xl lg:p-5">
             <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
               Select Route
