@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import HeroSlider from '@/components/HeroSlider';
 import Footer from '@/components/Footer';
-import RouteNetworkMap from '@/components/RouteNetworkMap';
+import TerrainRouteHero from '@/components/TerrainRouteHero';
 import { getAllRouteData } from '@/data/routeStopovers';
 import { featuredUpdatedCities } from '@/data/updatedCities';
 
@@ -25,8 +24,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen text-foreground font-sans">
-      <HeroSlider routes={routes} />
-      <RouteNetworkMap />
+      <TerrainRouteHero routes={routes} />
       {primaryRoute ? (
         <>
           <section
