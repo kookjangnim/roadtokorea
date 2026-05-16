@@ -59,7 +59,7 @@ export const route2BranchA: RouteBranch = {
     {
       slug: 'jeongseon',
       name: 'Jeongseon',
-      href: '/cities/jeongseon',
+      href: '/route-2/branch-a',
       role: 'Arirang, railbike, and casino transition',
       summary:
         'Jeongseon brings Arirang Market, railbike scenery, old mining-era market revival, Kangwon Land, and a deeper Gangwon interior mood before Taebaek.',
@@ -67,7 +67,7 @@ export const route2BranchA: RouteBranch = {
     {
       slug: 'taebaek',
       name: 'Taebaek',
-      href: '/cities/taebaek',
+      href: '/route-2/branch-a',
       role: 'Coal and highland threshold',
       summary:
         'Taebaek turns the branch toward coal history, Taebaeksan, Hwangji Pond, highland air, and the final mountain-to-coast push toward Samcheok.',

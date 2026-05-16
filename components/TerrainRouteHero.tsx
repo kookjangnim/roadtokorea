@@ -73,13 +73,6 @@ function getCompactTitle(route: RouteNetworkRoute) {
   return route.title.replace(', ', ' / ');
 }
 
-function getMarkerRadius(city: RouteNetworkCity) {
-  if (city.kind === 'anchor') return 2.4;
-  if (city.kind === 'junction') return 2.1;
-  if (city.kind === 'branch') return 1.55;
-  return 1.85;
-}
-
 const LABEL_PLACEMENTS: Record<string, { x: number; y: number }> = {
   goseong: { x: 12, y: -16 },
   sokcho: { x: 12, y: -2 },
@@ -109,10 +102,10 @@ function getLabelPlacement(city: RouteNetworkCity) {
 
 function RealKoreaMap({
   activeRoute,
-  activeCitySlugs,
+  activeCitySlugsKey,
 }: {
   activeRoute: RouteNetworkRoute;
-  activeCitySlugs: Set<string>;
+  activeCitySlugsKey: string;
 }) {
   const mapRef = useRef<HTMLDivElement>(null);
   const [isClient, setIsClient] = useState(false);
@@ -145,6 +138,7 @@ function RealKoreaMap({
 
       const inactiveRoutes = routeNetworkRoutes.filter((route) => route.id !== activeRoute.id);
       const orderedRoutes = [...inactiveRoutes, activeRoute];
+      const activeCitySlugSet = new Set(activeCitySlugsKey ? activeCitySlugsKey.split('|') : []);
 
       orderedRoutes.forEach((route) => {
         const isActive = route.id === activeRoute.id;
@@ -164,12 +158,12 @@ function RealKoreaMap({
       });
 
       const orderedCities = [
-        ...Object.values(routeNetworkCities).filter((city) => !activeCitySlugs.has(city.slug)),
-        ...Object.values(routeNetworkCities).filter((city) => activeCitySlugs.has(city.slug)),
+        ...Object.values(routeNetworkCities).filter((city) => !activeCitySlugSet.has(city.slug)),
+        ...Object.values(routeNetworkCities).filter((city) => activeCitySlugSet.has(city.slug)),
       ];
 
       orderedCities.forEach((city) => {
-        const isActive = activeCitySlugs.has(city.slug);
+        const isActive = activeCitySlugSet.has(city.slug);
         const size = city.kind === 'anchor' ? 18 : city.kind === 'branch' ? 12 : 15;
         const radius = city.kind === 'junction' ? '3px' : '999px';
         const transform = city.kind === 'junction' ? 'rotate(45deg)' : 'none';
@@ -240,8 +234,8 @@ function RealKoreaMap({
 
       if (activeCoords.length) {
         map.fitBounds(L.latLngBounds(activeCoords.map(([lat, lng]) => L.latLng(lat, lng))), {
-          paddingTopLeft: [560, 90],
-          paddingBottomRight: [100, 215],
+          paddingTopLeft: [420, 90],
+          paddingBottomRight: [360, 215],
           maxZoom: 8,
           animate: false,
         });
@@ -258,7 +252,7 @@ function RealKoreaMap({
       cancelled = true;
       if (mapInstance) mapInstance.remove();
     };
-  }, [activeRoute, activeCitySlugs]);
+  }, [activeRoute, activeCitySlugsKey]);
 
   return (
     <div className="relative h-full w-full">
@@ -279,10 +273,7 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
   const activeCities = activeRoute
     ? activeRoute.citySlugs.map((slug) => routeNetworkCities[slug]).filter(Boolean)
     : [];
-  const activeCitySlugs = useMemo(
-    () => new Set(activeRoute?.citySlugs ?? []),
-    [activeRoute?.citySlugs]
-  );
+  const activeCitySlugsKey = activeRoute?.citySlugs.join('|') ?? '';
 
   if (!activeRoute) return null;
 
@@ -290,16 +281,19 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
     <section className="relative min-h-screen overflow-hidden">
       {/* Full-screen map background */}
       <div className="absolute inset-0 z-0 h-full w-full">
-        <RealKoreaMap activeRoute={activeRoute} activeCitySlugs={activeCitySlugs} />
+        <RealKoreaMap
+          activeRoute={activeRoute}
+          activeCitySlugsKey={activeCitySlugsKey}
+        />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
       </div>
 
       {/* Content overlay - positioned in map's empty space (top-left corner) */}
-      <div className="relative z-[1000] mx-auto max-w-7xl px-4 py-8 md:px-8 md:py-12">
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,1.5fr)_320px]">
+      <div className="relative z-[1000] mx-auto max-w-[1800px] px-4 py-8 md:px-8 md:py-12 xl:px-12">
+        <div className="grid min-h-[calc(100svh-6rem)] gap-6 xl:grid-cols-[360px_minmax(560px,1fr)_300px] xl:items-start">
           {/* Left side - Route info card */}
-          <div>
-            <div className="max-w-lg rounded-2xl border border-white/12 bg-black/48 p-6 backdrop-blur-xl md:p-8 lg:max-w-xl lg:p-10">
+          <div className="xl:pt-2">
+            <div className="max-w-lg rounded-2xl border border-white/12 bg-black/48 p-6 backdrop-blur-xl md:p-8 xl:max-w-none xl:p-7">
               <div className="mb-5">
                 <span className="inline-flex border border-amber-200/20 bg-amber-100/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.34em] text-amber-100 backdrop-blur">
                   {activeScene.eyebrow}
@@ -344,9 +338,11 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
             </div>
           </div>
 
+          <div className="hidden xl:block" aria-hidden="true" />
+
           {/* Right side - Route selector */}
-          <div className="hidden lg:block">
-            <div className="rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl lg:p-6">
+          <div className="hidden xl:block xl:justify-self-end xl:pt-2">
+            <div className="w-[300px] rounded-2xl border border-white/12 bg-black/48 p-5 backdrop-blur-xl">
               <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
                 Routes
               </p>

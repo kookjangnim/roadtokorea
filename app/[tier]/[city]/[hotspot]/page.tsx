@@ -2,9 +2,11 @@ import { fetchPostBySlug, fetchPostsByCityTag, type WPPost } from '@/lib/wp-api'
 import Link from 'next/link';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
 import { getSeoulRouteOptionBySlug } from '@/data/seoulRoutes';
 import { getHotspotHeroImage } from '@/data/hotspotImageMap';
+import { isWpPostRouteMatch } from '@/lib/wp-route-context';
 
 const siteUrl = getSiteUrl();
 
@@ -246,7 +248,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { tier, city, hotspot } = await params;
   const post = await fetchPostBySlug(hotspot);
-  if (!post) return { title: 'Not Found' };
+  if (!post || !isWpPostRouteMatch(post, tier, city)) {
+    return {
+      title: 'Not Found',
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
 
   const title = stripHtml(post.title.rendered);
   const description = buildExcerpt(post) || `Discover ${title} with RoadToKorea`;
@@ -265,6 +275,9 @@ export async function generateMetadata({
         ? [{ url: normalizedHeroImage, width: 1200, height: 630, alt: title }]
         : [],
     },
+    alternates: {
+      canonical: `${siteUrl}/${tier}/${city}/${hotspot}`,
+    },
   };
 }
 
@@ -276,32 +289,7 @@ export default async function HotspotPage({
   const { tier, city: citySlug, hotspot: hotspotSlug } = await params;
   const post = await fetchPostBySlug(hotspotSlug);
 
-  if (!post) {
-    const cityLabel = formatCityLabel(citySlug);
-
-    return (
-      <div className="min-h-screen bg-[linear-gradient(180deg,#faf5ee_0%,#f4ede4_54%,#efe7db_100%)] px-6 py-20 text-stone-900">
-        <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col items-center justify-center rounded-[2rem] border border-stone-200/80 bg-white/75 p-10 text-center shadow-[0_35px_90px_rgba(34,30,25,0.08)] backdrop-blur md:p-14">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.38em] text-stone-500">
-            404
-          </span>
-          <h1 className="mt-6 font-serif text-5xl leading-none text-stone-950 md:text-7xl">
-            Guide not found
-          </h1>
-          <p className="mt-6 max-w-md text-base leading-8 text-stone-600 md:text-lg">
-            This hotspot page has not been published yet, or it may have moved while the route was
-            being updated.
-          </p>
-          <Link
-            href={`/${tier}/${citySlug}`}
-            className="mt-10 inline-flex rounded-full bg-stone-950 px-7 py-4 text-xs font-semibold uppercase tracking-[0.28em] text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-stone-800"
-          >
-            Back to {cityLabel}
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  if (!post || !isWpPostRouteMatch(post, tier, citySlug)) notFound();
 
   const rawContent = post.content?.rendered || '';
   const cleanedContent = cleanContent(rawContent);
@@ -642,7 +630,7 @@ export default async function HotspotPage({
               />
             ) : (
               <p className="py-24 text-center font-serif text-2xl italic text-stone-400">
-                Content is currently being drafted. Check back soon.
+                This guide is focused on the route context available for this stop.
               </p>
             )}
 

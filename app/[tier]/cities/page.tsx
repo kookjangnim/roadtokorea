@@ -24,6 +24,10 @@ export async function generateMetadata({ params }: { params: Promise<{ tier: str
   return {
     title,
     description,
+    robots: {
+      index: false,
+      follow: true,
+    },
     openGraph: {
       title,
       description,
@@ -69,7 +73,7 @@ export default async function TierPage({ params }: { params: Promise<{ tier: str
             No cities found for Tier {tier}
           </h1>
           <p className="text-gray-400">
-            Cities for this tier are coming soon...
+            Use the route guides for the strongest published city chapters.
           </p>
           <Link
             href="/"

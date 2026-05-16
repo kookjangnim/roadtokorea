@@ -3,7 +3,7 @@
  * Parses destination image filenames to create hotspot-specific image assignments
  */
 
-import { existsSync, readdirSync } from 'fs';
+import { readdirSync } from 'fs';
 import { join } from 'path';
 
 interface HotspotImage {

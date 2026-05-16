@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
-import { fetchPosts } from '@/lib/api';
+import { fetchPosts } from '@/lib/wp-api';
 import { getSiteUrl } from '@/lib/site-config';
 import { getRouteCityLinks } from '@/data/routeRegistry';
+import { getIndexableWpPostRoute } from '@/lib/wp-route-context';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = getSiteUrl();
@@ -95,16 +96,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             priority: 0.75,
         }));
 
-        // Fetch all posts to get city slugs
-        const posts = await fetchPosts({ perPage: 100 });
+        const posts = await fetchPosts({ perPage: 100, embed: true });
 
-        // Dynamic city routes
-        const dynamicRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
-            url: `${baseUrl}/cities/${post.slug}`,
+        const dynamicRoutes: MetadataRoute.Sitemap = posts.flatMap((post) => {
+          const route = getIndexableWpPostRoute(post);
+          if (!route) return [];
+
+          return [{
+            url: `${baseUrl}${route.href}`,
             lastModified: new Date(post.modified || post.date),
             changeFrequency: 'weekly',
             priority: 0.7,
-        }));
+          }];
+        });
 
         return [...staticRoutes, ...routeCityRoutes, ...dynamicRoutes];
     } catch (error) {

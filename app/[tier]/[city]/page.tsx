@@ -411,7 +411,7 @@ export default async function CityPage({
                 </div>
               ) : (
                 <div className="flex h-[24rem] items-center justify-center bg-stone-100 text-stone-500">
-                  Map coming soon
+                  Route context
                 </div>
               )}
 
@@ -536,7 +536,7 @@ export default async function CityPage({
                     Best Choice
                   </p>
                   <p className="mt-3 font-serif text-2xl text-stone-950">
-                    {routeOption?.transport ?? 'Transit guidance coming soon'}
+                    {routeOption?.transport ?? 'Route guidance'}
                   </p>
                   <p className="mt-3 text-sm leading-7 text-stone-600">{transportGuidance.bestChoice}</p>
                 </div>
@@ -1024,7 +1024,7 @@ export default async function CityPage({
               </div>
             ) : (
               <p className="py-24 text-center font-serif text-2xl italic text-stone-400">
-                Content is currently being drafted. Check back soon.
+                This guide is focused on the route context available for this city.
               </p>
             )}
           </article>
