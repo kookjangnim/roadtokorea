@@ -19,7 +19,8 @@
     "check:image-pipeline": "node scripts/validate-city-image-pipeline-audit.mjs",
     "check:city-seo": "node scripts/validate-city-seo-keywords.mjs",
     "check:route-branches": "node scripts/validate-route-branches.mjs",
-    "check:route-network": "node scripts/validate-route-network.mjs"
+    "check:route-network": "node scripts/validate-route-network.mjs",
+    "audit:mojibake": "node scripts/audit-mojibake.mjs"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
