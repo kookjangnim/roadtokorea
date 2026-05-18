@@ -140,7 +140,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         title: 'Why cyclists read Chungju differently',
         body:
-          'For riders, Chungju is not just another inland city. Tangeumdae, the certification-center logic, and the move toward Suanbo make it one of the first places where recovery, route identity, and the next day?셲 legs all intersect.',
+          'For riders, Chungju is not just another inland city. Tangeumdae, the certification-center logic, and the move toward Suanbo make it one of the first places where recovery, route identity, and the next day\'s legs all intersect.',
       },
       {
         title: 'How to keep the stop from feeling vague',
@@ -181,7 +181,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Suanbo',
         bestFor: 'Cyclists, inland drivers, and travelers who want the overnight itself to repair the route.',
         why:
-          'Suanbo works because accommodation, baths, and recovery mood all line up with the next day?셲 terrain demands.',
+          'Suanbo works because accommodation, baths, and recovery mood all line up with the next day\'s terrain demands.',
       },
     ],
     visuals: [
@@ -255,7 +255,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         href: 'https://www.youtube.com/watch?v=2wywFCzEubU',
         body:
           'This video is useful because it shows how Chungju actually reads to riders: river edge, certification logic, and the feel of the transition before the Saejae side starts to matter.',
-        channelLabel: '?숇꽕?몃뒗?뷪V',
+        channelLabel: 'YouTube reference',
         whyWatch:
           'Watch this when you want the city to feel real before deciding whether the stop should be practical only or part of the trip identity.',
       },
@@ -355,7 +355,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           lng: 127.90343,
         },
         summary:
-          'A small but meaningful rider landmark that reinforces Chungju?셲 role inside long inland cycling lines.',
+          'A small but meaningful rider landmark that reinforces Chungju\'s role inside long inland cycling lines.',
         note:
           'Useful when the page should speak to how cyclists actually experience the stop, not just how drivers pass through it.',
       },
@@ -684,7 +684,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     decisions: [
       {
         title: 'Sleep near the station',
-        bestFor: 'Rail users, late arrivals, and travelers who want the cleanest next-morning movement toward Gangneung. ?좉퉸 ?щ뒗 ?먮굦???꾨땲???숈꽑???뺣━?섎뒗 ?좏깮?대떎.',
+        bestFor: 'Rail users, late arrivals, and travelers who want the cleanest next-morning movement toward Gangneung.',
         why:
           'The station-side stay keeps Route 2 simple. It is the right call when Wonju is mainly a timing hinge, not a full mountain escape.',
       },
@@ -2374,7 +2374,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         title: 'Keep the central stay grid',
         areaLabel: 'City core',
-        bestFor: 'Travelers who want the easiest dinner-sleep-depart sequence without losing Andong?셲 cultural value.',
+        bestFor: 'Travelers who want the easiest dinner-sleep-depart sequence without losing Andong\'s cultural value.',
         why:
           'The city core is the most practical overnight and works well when the route needs one deep stop without adding too much lodging friction.',
       },
@@ -2481,7 +2481,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'City core',
         coordinates: { lat: 36.5684, lng: 128.7294 },
         summary:
-          'A practical lodging zone that keeps dinner, transit, and the next morning easy without losing access to the city?셲 identity.',
+          'A practical lodging zone that keeps dinner, transit, and the next morning easy without losing access to the city\'s identity.',
         note:
           'Best when you want a real overnight with lower friction than a fully dispersed heritage stay.',
       },
@@ -2525,7 +2525,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Toward Gyeongju or Daegu',
         coordinates: { lat: 36.4933, lng: 128.7912 },
         summary:
-          'A directional point for the route?셲 next chapter once the inland cultural stop is complete.',
+          'A directional point for the route\'s next chapter once the inland cultural stop is complete.',
         note:
           'This helps the page end with continuation instead of closing in place.',
       },
@@ -2577,7 +2577,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         title: 'Why the seafood line matters commercially',
         body:
-          'This is one of the places where food is not just support. It is one of the route?셲 arguments for stopping, which means restaurant and stay intent can sit together naturally on the page.',
+          'This is one of the places where food is not just support. It is one of the route\'s arguments for stopping, which means restaurant and stay intent can sit together naturally on the page.',
       },
       {
         title: 'Why the town should stay small in the editorial frame',
@@ -2602,7 +2602,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         title: 'Stop briefly, but intentionally',
         bestFor: 'Travelers who cannot spare a full night but still want the coast to gain local flavor.',
         why:
-          'A short meal-and-air stop can still preserve Yeongdeok?셲 value if the route acknowledges why the town matters.',
+          'A short meal-and-air stop can still preserve Yeongdeok\'s value if the route acknowledges why the town matters.',
       },
     ],
     stayZones: [
@@ -2708,7 +2708,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Southbound coast',
         coordinates: { lat: 36.3198, lng: 129.3911 },
         summary:
-          'A directional point for the route?셲 move from flavor-heavy coast to late-route hinge city.',
+          'A directional point for the route\'s move from flavor-heavy coast to late-route hinge city.',
         note:
           'Useful when closing the page with continuation instead of ending inside the town.',
       },
@@ -2801,7 +2801,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Bay-side edge',
         bestFor: 'Travelers who still want the coast to be emotionally present even during the final reset.',
         why:
-          'This preserves the route?셲 shoreline identity while still giving the stop more urban control than the smaller towns to the north.',
+          'This preserves the route\'s shoreline identity while still giving the stop more urban control than the smaller towns to the north.',
       },
     ],
     visuals: [
@@ -2822,7 +2822,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         image: '/images/routes/route-1/pohang/support-2-generated-v1.png',
         alt: 'Generated editorial late-route reset image for Pohang',
         body:
-          'Pohang?셲 advantage is that it can restore control without killing the coastal mood. That combination is what makes it such a useful final overnight candidate.',
+          'Pohang\'s advantage is that it can restore control without killing the coastal mood. That combination is what makes it such a useful final overnight candidate.',
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/pohang/support-2-generated-v1.png',
         licenseLabel: 'Internal',
@@ -3032,7 +3032,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         summary:
           'The point where the city starts reading as part of a longer corridor instead of a post-pass leftover stop.',
         note:
-          'Use this area to explain why the route?셲 identity changes after Mungyeong and settles into a clearer southern line.',
+          'Use this area to explain why the route\'s identity changes after Mungyeong and settles into a clearer southern line.',
       },
       {
         id: 'sangju-city-stay',
@@ -3516,7 +3516,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Uirimji / lake edge',
         bestFor: 'Travelers who want the first inland night to feel visibly different from the Seoul departure rhythm.',
         why:
-          'A slower stay near the water makes the threshold feel real and strengthens the route?셲 early editorial identity.',
+          'A slower stay near the water makes the threshold feel real and strengthens the route\'s early editorial identity.',
       },
     ],
     visuals: [
@@ -3619,7 +3619,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         summary:
           'A directional point that frames Jecheon as the soft opening of the inland route before the stronger recovery logic of Chungju begins.',
         note:
-          'This helps the page close with continuation and keeps the city?셲 role anchored in the route rather than in itself alone.',
+          'This helps the page close with continuation and keeps the city\'s role anchored in the route rather than in itself alone.',
       },
     ],
   },
@@ -3631,7 +3631,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Cheonan is not a major destination map here. It is a first-break map for understanding where to pause, snack, or split the early corridor without overcomplicating the route.',
     mapCenter: { lat: 36.8157, lng: 127.1138 },
     supportSummary:
-      'Cheonan works best as the route?셲 first control point. The station-and-terminal grid makes the first night easy, while a softer outer-corridor option keeps the opening chapter from feeling rushed or mechanical.',
+      'Cheonan works best as the route\'s first control point. The station-and-terminal grid makes the first night easy, while a softer outer-corridor option keeps the opening chapter from feeling rushed or mechanical.',
     roleSummary:
       'On Route 1, Cheonan is the best early-break city. It earns space because it turns a hurried Seoul departure into an organized route with cleaner pacing and lower first-day friction.',
     staySummary:
@@ -3767,7 +3767,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       'Daejeon is a support map for central overnights, Sungsimdang food stops, hot-spring-adjacent stays, and practical onward movement. It matters because Route 1 and Route 8 can split here cleanly without becoming dramatic.',
     mapCenter: { lat: 36.3504, lng: 127.3845 },
     supportSummary:
-      'Daejeon works as the corridor?셲 cleanest choose-your-version overnight. Station-core efficiency, Sungsimdang bakery culture, science-city identity, and Yuseong-side recovery serve Route 1 and Route 8 well, which makes the city one of the easiest places to use with real intention.',
+      'Daejeon works as the corridor\'s cleanest choose-your-version overnight. Station-core efficiency, Sungsimdang bakery culture, science-city identity, and Yuseong-side recovery serve Route 1 and Route 8 well, which makes the city one of the easiest places to use with real intention.',
     roleSummary:
       'This is the central corridor decision city. Daejeon rebalances Route 1 before the stronger southern chapters begin, and it gives Route 8 a reliable first stabilizer before the Honam story starts to deepen.',
     staySummary:
@@ -3839,7 +3839,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     visuals: [
       {
         eyebrow: 'Central split',
-        title: 'Daejeon is the route?셲 cleanest divide-and-continue city',
+        title: 'Daejeon is the route\'s cleanest divide-and-continue city',
         image: '/images/routes/route-1/daejeon/hero-generated-v1.png',
         alt: 'Editorial route image for Daejeon central corridor split',
         body:
@@ -4109,7 +4109,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Nakdong side',
         bestFor: 'Travelers who want one softer landing before rejoining the corridor.',
         why:
-          'A brief riverside reset keeps the middle stop from feeling purely industrial while still preserving the route?셲 calm-before-Daegu function.',
+          'A brief riverside reset keeps the middle stop from feeling purely industrial while still preserving the route\'s calm-before-Daegu function.',
       },
     ],
     visuals: [
@@ -4119,7 +4119,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         image: '/images/routes/route-1/gumi/hero-generated-v1.png',
         alt: 'Editorial route image for Gumi middle-corridor reset',
         body:
-          'Not every useful stop has to perform loudly. Gumi improves Route 1 by lowering the route?셲 noise before Daegu raises it again.',
+          'Not every useful stop has to perform loudly. Gumi improves Route 1 by lowering the route\'s noise before Daegu raises it again.',
         sourceLabel: 'Generated route editorial image',
         sourceHref: '/images/routes/route-1/gumi/hero-generated-v1.png',
         licenseLabel: 'Project editorial asset',
@@ -4381,7 +4381,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'River side',
         bestFor: 'Travelers who want one quieter southern night before the Busan chapter begins.',
         why:
-          'This choice preserves the route?셲 calmer lower-river character right until the metropolitan handoff.',
+          'This choice preserves the route\'s calmer lower-river character right until the metropolitan handoff.',
       },
     ],
     visuals: [
@@ -4912,7 +4912,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         title: 'Use it as the scenic overnight before Uljin',
         bestFor: 'Travelers who want one softer coast stay before the longer quiet-coast section begins.',
         why:
-          'Samcheok is strongest when it protects the route?셲 openness before the next chapter turns calmer and less dramatic.',
+          'Samcheok is strongest when it protects the route\'s openness before the next chapter turns calmer and less dramatic.',
       },
     ],
     stayZones: [
@@ -4987,7 +4987,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         kind: 'mobility',
         areaLabel: 'Southbound Route 7',
         coordinates: { lat: 37.3014, lng: 129.2907 },
-        summary: 'The line where Samcheok?셲 scenic chapter begins handing the route to Uljin?셲 longer quiet-coast logic.',
+        summary: 'The line where Samcheok\'s scenic chapter begins handing the route to Uljin\'s longer quiet-coast logic.',
         note: 'This keeps the page pointed toward continuation rather than ending inside the city.',
       },
     ],
@@ -5004,7 +5004,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     roleSummary:
       'This is the long-coast continuity node. Uljin prevents the shoreline route from feeling compressed, over-edited, or too dependent on only the most famous coastal anchors.',
     staySummary:
-      'The best stays are sea-facing, simple, and low-friction. Uljin is valuable when the overnight protects the coast?셲 spaciousness instead of trying to become a resort performance.',
+      'The best stays are sea-facing, simple, and low-friction. Uljin is valuable when the overnight protects the coast\'s spaciousness instead of trying to become a resort performance.',
     foodSummary:
       'Food here belongs to the coast rhythm rather than a major destination claim. Fresh seafood, practical breakfasts, and calm timing matter more than spectacle.',
     nextLegSummary:

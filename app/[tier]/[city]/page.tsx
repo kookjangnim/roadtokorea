@@ -14,6 +14,7 @@ import { tier4Cities } from '@/data/tier4Cities';
 import { destinations, districtToEnglish, type Destination } from '@/data/destinations';
 import CitySupportMap from '@/components/city-detail/CitySupportMap';
 import CityMediaReferences from '@/components/city-detail/CityMediaReferences';
+import HotelBookingCard from '@/components/routes/HotelBookingCard';
 import { getCitySupportProfile } from '@/data/citySupportProfiles';
 import { getCitySeoKeywordProfile } from '@/data/citySeoKeywords';
 import { getCityImagePipeline } from '@/data/cityImagePipeline';
@@ -719,6 +720,10 @@ export default async function CityPage({
                     </div>
                   </div>
                 ) : null}
+
+                <div className="mt-8">
+                  <HotelBookingCard citySlug={citySlug} cityName={cityName} />
+                </div>
 
                 <div className="mt-8 grid gap-4 xl:grid-cols-3">
                   {supportProfile.decisions.map((decision) => (

@@ -1,0 +1,614 @@
+{
+  "generatedAt": "2026-05-18T08:05:13.641Z",
+  "affiliateTemplate": {
+    "allianceId": "8244727",
+    "sid": "312571792",
+    "tripSub3": "D17100288"
+  },
+  "sourceUrls": [
+    "https://kr.trip.com/hotels/",
+    "https://kr.trip.com/hotels/province/kr-gyeonggi-do.html",
+    "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html",
+    "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html",
+    "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html",
+    "https://kr.trip.com/hotels/province/kr-jeollanam-do.html",
+    "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html",
+    "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+  ],
+  "seedHotelUrls": [
+    "https://kr.trip.com/hotels/wonju-si-hotels-list-72358/",
+    "https://kr.trip.com/hotels/pyeongchang-gun-hotels-list-35792/",
+    "https://kr.trip.com/hotels/chuncheon-si-hotels-list-35788/",
+    "https://kr.trip.com/hotels/gapyeong-gun-hotels-list-78430/",
+    "https://kr.trip.com/hotels/inje-gun-hotels-list-72359/",
+    "https://kr.trip.com/hotels/sokcho-si-hotels-list-35793/",
+    "https://kr.trip.com/hotels/gangneung-si-hotels-list-61325/",
+    "https://kr.trip.com/hotels/donghae-si-hotels-list-58529/",
+    "https://kr.trip.com/hotels/yangyang-hotels-list-6430/"
+  ],
+  "cityIds": {
+    "andong": {
+      "cityId": "61163",
+      "tripSlug": "andong-si",
+      "sourceUrl": "https://kr.trip.com/hotels/andong-si-hotels-list-61163/",
+      "source": "web-search"
+    },
+    "asan": {
+      "cityId": "61169",
+      "tripSlug": "asan-si",
+      "sourceUrl": "https://kr.trip.com/hotels/asan-si-hotels-list-61169/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "boeun": {
+      "cityId": "61229",
+      "tripSlug": "boeun-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/boeun-gun-hotels-list-61229/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "boryeong": {
+      "cityId": "61232",
+      "tripSlug": "boryeong-si",
+      "sourceUrl": "https://kr.trip.com/hotels/boryeong-si-hotels-list-61232/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "boseong": {
+      "cityId": "72369",
+      "tripSlug": "boseong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/boseong-gun-hotels-list-72369/",
+      "source": "web-search"
+    },
+    "buan": {
+      "cityId": "78911",
+      "tripSlug": "buan-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/buan-gun-hotels-list-78911/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "busan": {
+      "cityId": "253",
+      "tripSlug": "busan",
+      "sourceUrl": "https://kr.trip.com/hotels/busan-hotels-list-253/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "buyeo": {
+      "cityId": "78703",
+      "tripSlug": "buyeo-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/buyeo-gun-hotels-list-78703/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "changnyeong": {
+      "cityId": "61271",
+      "tripSlug": "changnyeong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/changnyeong-gun-hotels-list-61271/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "cheonan": {
+      "cityId": "58525",
+      "tripSlug": "cheonan-si",
+      "sourceUrl": "https://kr.trip.com/hotels/cheonan-si-hotels-list-58525/",
+      "source": "web-search"
+    },
+    "cheongju": {
+      "cityId": "736",
+      "tripSlug": "cheong-ju",
+      "sourceUrl": "https://kr.trip.com/hotels/cheong-ju-hotels-list-736/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "chuncheon": {
+      "cityId": "35788",
+      "tripSlug": "chuncheon-si",
+      "sourceUrl": "https://kr.trip.com/hotels/chuncheon-si-hotels-list-35788/",
+      "source": "seed"
+    },
+    "chungju": {
+      "cityId": "4120",
+      "tripSlug": "chungju",
+      "sourceUrl": "https://kr.trip.com/hotels/chungju-hotels-list-4120/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "daegu": {
+      "cityId": "1287",
+      "tripSlug": "daegu",
+      "sourceUrl": "https://kr.trip.com/hotels/daegu-hotels-list-1287/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "daejeon": {
+      "cityId": "61292",
+      "tripSlug": "daejeon",
+      "sourceUrl": "https://kr.trip.com/hotels/daejeon-hotels-list-61292/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "daegwallyeong": {
+      "cityId": "35792",
+      "tripSlug": "pyeongchang-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/pyeongchang-gun-hotels-list-35792/location252873/",
+      "source": "web-search"
+    },
+    "dangjin": {
+      "cityId": "93717",
+      "tripSlug": "dangjin-si",
+      "sourceUrl": "https://kr.trip.com/hotels/dangjin-si-hotels-list-93717/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "danyang": {
+      "cityId": "61294",
+      "tripSlug": "danyang-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/danyang-gun-hotels-list-61294/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "donghae": {
+      "cityId": "58529",
+      "tripSlug": "donghae-si",
+      "sourceUrl": "https://kr.trip.com/hotels/donghae-si-hotels-list-58529/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "eumseong": {
+      "cityId": "79256",
+      "tripSlug": "eumseong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/eumseong-gun-hotels-list-79256/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "gangjin": {
+      "cityId": "128258",
+      "tripSlug": "gangjin-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/gangjin-gun-hotels-list-128258/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "gangneung": {
+      "cityId": "61325",
+      "tripSlug": "gangneung-si",
+      "sourceUrl": "https://kr.trip.com/hotels/gangneung-si-hotels-list-61325/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "gapyeong": {
+      "cityId": "78430",
+      "tripSlug": "gapyeong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/gapyeong-gun-hotels-list-78430/",
+      "source": "seed"
+    },
+    "geochang": {
+      "cityId": "92582",
+      "tripSlug": "geochang",
+      "sourceUrl": "https://kr.trip.com/hotels/geochang-hotels-list-92582/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "geoje": {
+      "cityId": "61331",
+      "tripSlug": "geoje-si",
+      "sourceUrl": "https://kr.trip.com/hotels/geoje-si-hotels-list-61331/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "geumsan": {
+      "cityId": "128247",
+      "tripSlug": "geumsan-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/geumsan-gun-hotels-list-128247/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "gimcheon": {
+      "cityId": "61333",
+      "tripSlug": "gimcheon-si",
+      "sourceUrl": "https://kr.trip.com/hotels/gimcheon-si-hotels-list-61333/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "gimje": {
+      "cityId": "128249",
+      "tripSlug": "gimje-si",
+      "sourceUrl": "https://kr.trip.com/hotels/gimje-si-hotels-list-128249/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "gochang": {
+      "cityId": "90430",
+      "tripSlug": "gochang-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/gochang-gun-hotels-list-90430/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "goesan": {
+      "cityId": "128268",
+      "tripSlug": "goesan-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/goesan-gun-hotels-list-128268/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "goheung": {
+      "cityId": "121740",
+      "tripSlug": "goheung-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/goheung-gun-hotels-list-121740/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "gokseong": {
+      "cityId": "128274",
+      "tripSlug": "gokseong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/gokseong-gun-hotels-list-128274/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "gongju": {
+      "cityId": "88099",
+      "tripSlug": "gongju-si",
+      "sourceUrl": "https://kr.trip.com/hotels/gongju-si-hotels-list-88099/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "goseong": {
+      "cityId": "78910",
+      "tripSlug": "goseong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/goseong-gun-hotels-list-78910/",
+      "source": "web-search"
+    },
+    "gunsan": {
+      "cityId": "7254",
+      "tripSlug": "gunsan",
+      "sourceUrl": "https://kr.trip.com/hotels/gunsan-hotels-list-7254/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "gunwi": {
+      "cityId": "128266",
+      "tripSlug": "gunwi-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/gunwi-gun-hotels-list-128266/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "gwangju": {
+      "cityId": "90736",
+      "tripSlug": "gwangju-1",
+      "sourceUrl": "https://kr.trip.com/hotels/gwangju-1-hotels-list-90736/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "gwangyang": {
+      "cityId": "92459",
+      "tripSlug": "gwangyang",
+      "sourceUrl": "https://kr.trip.com/hotels/gwangyang-hotels-list-92459/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "gumi": {
+      "cityId": "61350",
+      "tripSlug": "gumi",
+      "sourceUrl": "https://kr.trip.com/hotels/gumi-hotels-list-61350/",
+      "source": "web-search"
+    },
+    "gyeongju": {
+      "cityId": "3675",
+      "tripSlug": "gyeongju",
+      "sourceUrl": "https://kr.trip.com/hotels/gyeongju-hotels-list-3675/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "gyeongsan": {
+      "cityId": "128267",
+      "tripSlug": "gyeongsan-si",
+      "sourceUrl": "https://kr.trip.com/hotels/gyeongsan-si-hotels-list-128267/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "hadong": {
+      "cityId": "88097",
+      "tripSlug": "hadong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/hadong-gun-hotels-list-88097/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "haenam": {
+      "cityId": "121747",
+      "tripSlug": "haenam-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/haenam-gun-hotels-list-121747/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "haman": {
+      "cityId": "128259",
+      "tripSlug": "haman-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/haman-gun-hotels-list-128259/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "hapcheon": {
+      "cityId": "77790",
+      "tripSlug": "hapcheon-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/hapcheon-gun-hotels-list-77790/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "hongseong": {
+      "cityId": "128253",
+      "tripSlug": "hongseong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/hongseong-gun-hotels-list-128253/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "iksan": {
+      "cityId": "121661",
+      "tripSlug": "iksan-si",
+      "sourceUrl": "https://kr.trip.com/hotels/iksan-si-hotels-list-121661/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "imsil": {
+      "cityId": "128251",
+      "tripSlug": "imsil-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/imsil-gun-hotels-list-128251/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "incheon": {
+      "cityId": "410",
+      "tripSlug": "incheon",
+      "sourceUrl": "https://kr.trip.com/hotels/incheon-hotels-list-410/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "inje": {
+      "cityId": "72359",
+      "tripSlug": "inje-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/inje-gun-hotels-list-72359/",
+      "source": "seed"
+    },
+    "jeongseon": {
+      "cityId": "61379",
+      "tripSlug": "jeongseon-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/jeongseon-gun-hotels-list-61379/",
+      "source": "web-search"
+    },
+    "jangheung": {
+      "cityId": "128246",
+      "tripSlug": "jangheung-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/jangheung-gun-hotels-list-128246/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "jecheon": {
+      "cityId": "61378",
+      "tripSlug": "jecheon-si",
+      "sourceUrl": "https://kr.trip.com/hotels/jecheon-si-hotels-list-61378/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "jeju": {
+      "cityId": "737",
+      "tripSlug": "jeju",
+      "sourceUrl": "https://kr.trip.com/hotels/jeju-hotels-list-737/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "jeongeup": {
+      "cityId": "90541",
+      "tripSlug": "jeongeup-si",
+      "sourceUrl": "https://kr.trip.com/hotels/jeongeup-si-hotels-list-90541/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "jeonju": {
+      "cityId": "61380",
+      "tripSlug": "jeonju-si",
+      "sourceUrl": "https://kr.trip.com/hotels/jeonju-si-hotels-list-61380/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "jeungpyeong": {
+      "cityId": "128248",
+      "tripSlug": "jeungpyeong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/jeungpyeong-gun-hotels-list-128248/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "jinan": {
+      "cityId": "121710",
+      "tripSlug": "jinan-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/jinan-gun-hotels-list-121710/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "miryang": {
+      "cityId": "93539",
+      "tripSlug": "miryang-si",
+      "sourceUrl": "https://kr.trip.com/hotels/miryang-si-hotels-list-93539/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "mokpo": {
+      "cityId": "3986",
+      "tripSlug": "mokpo",
+      "sourceUrl": "https://kr.trip.com/hotels/mokpo-hotels-list-3986/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "mungyeong": {
+      "cityId": "61491",
+      "tripSlug": "mungyeong-si",
+      "sourceUrl": "https://kr.trip.com/hotels/mungyeong-si-hotels-list-61491/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "naju": {
+      "cityId": "93536",
+      "tripSlug": "naju-si",
+      "sourceUrl": "https://kr.trip.com/hotels/naju-si-hotels-list-93536/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "namhae": {
+      "cityId": "20818",
+      "tripSlug": "namhae",
+      "sourceUrl": "https://kr.trip.com/hotels/namhae-hotels-list-20818/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "namwon": {
+      "cityId": "61500",
+      "tripSlug": "namwon-si",
+      "sourceUrl": "https://kr.trip.com/hotels/namwon-si-hotels-list-61500/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "nonsan": {
+      "cityId": "128262",
+      "tripSlug": "nonsan-si",
+      "sourceUrl": "https://kr.trip.com/hotels/nonsan-si-hotels-list-128262/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "okcheon": {
+      "cityId": "128276",
+      "tripSlug": "okcheon-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/okcheon-gun-hotels-list-128276/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "pohang": {
+      "cityId": "3369",
+      "tripSlug": "pohang",
+      "sourceUrl": "https://kr.trip.com/hotels/pohang-hotels-list-3369/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "pyeongchang": {
+      "cityId": "35792",
+      "tripSlug": "pyeongchang-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/pyeongchang-gun-hotels-list-35792/",
+      "source": "seed"
+    },
+    "samcheok": {
+      "cityId": "78904",
+      "tripSlug": "samcheok-si",
+      "sourceUrl": "https://kr.trip.com/hotels/samcheok-si-hotels-list-78904/",
+      "source": "web-search"
+    },
+    "sancheong": {
+      "cityId": "61615",
+      "tripSlug": "sancheong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/sancheong-gun-hotels-list-61615/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "sangju": {
+      "cityId": "128257",
+      "tripSlug": "sangju-si",
+      "sourceUrl": "https://kr.trip.com/hotels/sangju-si-hotels-list-128257/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "seosan": {
+      "cityId": "79253",
+      "tripSlug": "seosan",
+      "sourceUrl": "https://kr.trip.com/hotels/seosan-hotels-list-79253/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "seoul": {
+      "cityId": "274",
+      "tripSlug": "seoul",
+      "sourceUrl": "https://kr.trip.com/hotels/seoul-hotels-list-274/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "sokcho": {
+      "cityId": "35793",
+      "tripSlug": "sokcho-si",
+      "sourceUrl": "https://kr.trip.com/hotels/sokcho-si-hotels-list-35793/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "sunchang": {
+      "cityId": "128255",
+      "tripSlug": "sunchang-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/sunchang-gun-hotels-list-128255/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "suncheon": {
+      "cityId": "61663",
+      "tripSlug": "suncheon-si",
+      "sourceUrl": "https://kr.trip.com/hotels/suncheon-si-hotels-list-61663/",
+      "source": "web-search"
+    },
+    "suwon": {
+      "cityId": "5980",
+      "tripSlug": "suwon",
+      "sourceUrl": "https://kr.trip.com/hotels/suwon-hotels-list-5980/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeonggi-do.html"
+    },
+    "taean": {
+      "cityId": "61670",
+      "tripSlug": "taean-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/taean-gun-hotels-list-61670/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongnam-do.html"
+    },
+    "taebaek": {
+      "cityId": "61671",
+      "tripSlug": "taebaek-si",
+      "sourceUrl": "https://kr.trip.com/hotels/taebaek-si-hotels-list-61671/",
+      "source": "web-search"
+    },
+    "tongyeong": {
+      "cityId": "72366",
+      "tripSlug": "tongyeong-si",
+      "sourceUrl": "https://kr.trip.com/hotels/tongyeong-si-hotels-list-72366/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "ulsan": {
+      "cityId": "3368",
+      "tripSlug": "ulsan",
+      "sourceUrl": "https://kr.trip.com/hotels/ulsan-hotels-list-3368/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "uljin": {
+      "cityId": "61719",
+      "tripSlug": "uljin-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/uljin-gun-uljin/hotels-c61719r66168875/",
+      "source": "web-search"
+    },
+    "wando": {
+      "cityId": "88101",
+      "tripSlug": "wando",
+      "sourceUrl": "https://kr.trip.com/hotels/wando-hotels-list-88101/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "wanju": {
+      "cityId": "61732",
+      "tripSlug": "wanju-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/wanju-gun-hotels-list-61732/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollabuk-do.html"
+    },
+    "wonju": {
+      "cityId": "72358",
+      "tripSlug": "wonju-si",
+      "sourceUrl": "https://kr.trip.com/hotels/wonju-si-hotels-list-72358/",
+      "source": "seed"
+    },
+    "yangsan": {
+      "cityId": "79364",
+      "tripSlug": "yangsan-si",
+      "sourceUrl": "https://kr.trip.com/hotels/yangsan-si-hotels-list-79364/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangnam-do.html"
+    },
+    "yangyang": {
+      "cityId": "6430",
+      "tripSlug": "yangyang",
+      "sourceUrl": "https://kr.trip.com/hotels/yangyang-hotels-list-6430/",
+      "source": "https://kr.trip.com/hotels/"
+    },
+    "yanggu": {
+      "cityId": "78909",
+      "tripSlug": "yanggu-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/yanggu-gun-hotels-list-78909/",
+      "source": "web-search"
+    },
+    "yecheon": {
+      "cityId": "6370",
+      "tripSlug": "yecheon",
+      "sourceUrl": "https://kr.trip.com/hotels/yecheon-hotels-list-6370/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "yeongcheon": {
+      "cityId": "93567",
+      "tripSlug": "yeongcheon-si",
+      "sourceUrl": "https://kr.trip.com/hotels/yeongcheon-si-hotels-list-93567/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "yeongdeok": {
+      "cityId": "92587",
+      "tripSlug": "yeongdeok",
+      "sourceUrl": "https://kr.trip.com/hotels/yeongdeok-hotels-list-92587/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "yeongdong": {
+      "cityId": "128273",
+      "tripSlug": "yeongdong-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/yeongdong-gun-hotels-list-128273/",
+      "source": "https://kr.trip.com/hotels/province/kr-chungcheongbuk-do.html"
+    },
+    "yeonggwang": {
+      "cityId": "128263",
+      "tripSlug": "yeonggwang-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/yeonggwang-gun-hotels-list-128263/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    },
+    "yeongju": {
+      "cityId": "79258",
+      "tripSlug": "yeongju-si",
+      "sourceUrl": "https://kr.trip.com/hotels/yeongju-si-hotels-list-79258/",
+      "source": "https://kr.trip.com/hotels/province/kr-gyeongsangbuk-do.html"
+    },
+    "yeongwol": {
+      "cityId": "78906",
+      "tripSlug": "yeongwol-gun",
+      "sourceUrl": "https://kr.trip.com/hotels/yeongwol-gun-hotels-list-78906/",
+      "source": "web-search"
+    },
+    "yeoju": {
+      "cityId": "62227",
+      "tripSlug": "yeoju",
+      "sourceUrl": "https://kr.trip.com/hotels/yeoju-hotels-list-62227/",
+      "source": "web-search"
+    },
+    "yeosu": {
+      "cityId": "4016",
+      "tripSlug": "yeosu",
+      "sourceUrl": "https://kr.trip.com/hotels/yeosu-hotels-list-4016/",
+      "source": "https://kr.trip.com/hotels/province/kr-jeollanam-do.html"
+    }
+  },
+  "failures": []
+}

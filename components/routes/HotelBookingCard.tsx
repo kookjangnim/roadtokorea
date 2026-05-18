@@ -1,15 +1,13 @@
+import { getTripHotelAffiliateUrl } from '@/data/tripAffiliateLinks';
+
 interface HotelBookingCardProps {
+  citySlug: string;
   cityName: string;
 }
 
-export default function HotelBookingCard({ cityName }: HotelBookingCardProps) {
-  const agodaSearchUrl = `https://www.agoda.com/en-US/search?city=${encodeURIComponent(
-    cityName
-  )},%20South%20Korea`;
-
-  const bookingComUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(
-    `${cityName}, South Korea`
-  )}`;
+export default function HotelBookingCard({ citySlug, cityName }: HotelBookingCardProps) {
+  const tripHotelUrl = getTripHotelAffiliateUrl(citySlug, 'city_page_stay_planning');
+  if (!tripHotelUrl) return null;
 
   return (
     <div className="rounded-[2rem] bg-[linear-gradient(135deg,#eef2ff_0%,#f8fafc_46%,#eef7f3_100%)] p-6">
@@ -24,29 +22,14 @@ export default function HotelBookingCard({ cityName }: HotelBookingCardProps) {
 
       <div className="mt-6 space-y-3">
         <a
-          href={agodaSearchUrl}
+          href={tripHotelUrl}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="sponsored noopener noreferrer"
           className="flex items-center justify-between rounded-[1.25rem] bg-white px-4 py-4 transition-shadow hover:shadow-md"
         >
           <div>
-            <div className="font-medium text-stone-900">Agoda</div>
-            <div className="text-xs text-stone-500">Strong for Asia inventory</div>
-          </div>
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
-            Search
-          </span>
-        </a>
-
-        <a
-          href={bookingComUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-between rounded-[1.25rem] bg-white px-4 py-4 transition-shadow hover:shadow-md"
-        >
-          <div>
-            <div className="font-medium text-stone-900">Booking.com</div>
-            <div className="text-xs text-stone-500">Wide hotel selection</div>
+            <div className="font-medium text-stone-900">Trip.com</div>
+            <div className="text-xs text-stone-500">Hotel search for this city</div>
           </div>
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
             Search
