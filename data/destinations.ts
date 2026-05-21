@@ -641,212 +641,212 @@ export const destinations: Destination[] = [
   {
     "id": "91",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_A_highend_fashion_editorial_photograph_of_the_luxu_018ab926be.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "92",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_A_highend_fashion_editorial_photograph_of_the_luxu_ccb2ce8e2f.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "93",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_A_highend_fashion_editorial_photograph_of_the_luxu_cf902b6d1a.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "94",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_A_raw_atmospheric_travel_photograph_outside_a_tren_ec94c17158.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "95",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_Gangnam_boulevard_seoul_night_2a6c4fb013.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "96",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_Gangnam_boulevard_seoul_night_7a9482e488.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "97",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_Professionals_working_in_cafe_09e19e8213.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "98",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_Professionals_working_in_cafe_70f7d8686f.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "99",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_Professionals_working_in_cafe_989ae699f5.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "100",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_Starfield_library_inside_coex_mall_487ea86427.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "101",
     "city": "Seoul",
-    "district": "媛뺣궓",
+    "district": "Gangnam",
     "imagePath": "/images/destinations/Seoul_Starfield_library_inside_coex_mall_c20d8f6f21.jpeg",
-    "description": "Beautiful 媛뺣궓 view."
+    "description": "Modern boulevards, shopping streets, and cafe culture in Gangnam."
   },
   {
     "id": "102",
     "city": "Seoul",
-    "district": "",
+    "district": "Gyeongbokgung Palace",
     "imagePath": "/images/destinations/Seoul_A_breathtaking_highly_atmospheric_editorial_landsc_06b2e5a711.jpeg",
-    "description": "Beautiful 寃쎈났沅?view."
+    "description": "Royal architecture and quiet palace courtyards at Gyeongbokgung Palace."
   },
   {
     "id": "103",
     "city": "Seoul",
-    "district": "",
+    "district": "Gyeongbokgung Palace",
     "imagePath": "/images/destinations/Seoul_A_breathtaking_highly_atmospheric_editorial_landsc_631021fa6b.jpeg",
-    "description": "Beautiful 寃쎈났沅?view."
+    "description": "Royal architecture and quiet palace courtyards at Gyeongbokgung Palace."
   },
   {
     "id": "104",
     "city": "Seoul",
-    "district": "",
+    "district": "Gyeongbokgung Palace",
     "imagePath": "/images/destinations/Seoul_Gyeongbokgung_palace_misty_morning_04de75fdb4.jpeg",
-    "description": "Beautiful 寃쎈났沅?view."
+    "description": "Royal architecture and quiet palace courtyards at Gyeongbokgung Palace."
   },
   {
     "id": "105",
     "city": "Seoul",
-    "district": "",
+    "district": "Gyeongbokgung Palace",
     "imagePath": "/images/destinations/Seoul_Gyeongbokgung_palace_misty_morning_c2f3ad2205.jpeg",
-    "description": "Beautiful 寃쎈났沅?view."
+    "description": "Royal architecture and quiet palace courtyards at Gyeongbokgung Palace."
   },
   {
     "id": "106",
     "city": "Seoul",
-    "district": "紐낅룞",
+    "district": "Myeongdong",
     "imagePath": "/images/destinations/Seoul_Street_shoppers_myeongdong_seoul_60855f3a7d.jpeg",
-    "description": "Beautiful 紐낅룞 view."
+    "description": "Street food, shopping lanes, and bright city energy in Myeongdong."
   },
   {
     "id": "107",
     "city": "Seoul",
-    "district": "紐낅룞",
+    "district": "Myeongdong",
     "imagePath": "/images/destinations/Seoul_Street_shoppers_myeongdong_seoul_b122a85c23.jpeg",
-    "description": "Beautiful 紐낅룞 view."
+    "description": "Street food, shopping lanes, and bright city energy in Myeongdong."
   },
   {
     "id": "108",
     "city": "Seoul",
-    "district": "",
+    "district": "Itaewon",
     "imagePath": "/images/destinations/Seoul_Antique_furniture_street_seoul_a7b47c4a86.jpeg",
-    "description": "Beautiful ?댄깭??view."
+    "description": "Hillside streets, rooftop bars, and international nightlife in Itaewon."
   },
   {
     "id": "109",
     "city": "Seoul",
-    "district": "",
+    "district": "Itaewon",
     "imagePath": "/images/destinations/Seoul_Back_alleys_itaewon_seoul_evening_7c8c4960a7.jpeg",
-    "description": "Beautiful ?댄깭??view."
+    "description": "Hillside streets, rooftop bars, and international nightlife in Itaewon."
   },
   {
     "id": "110",
     "city": "Seoul",
-    "district": "",
+    "district": "Itaewon",
     "imagePath": "/images/destinations/Seoul_Back_alleys_itaewon_seoul_evening_a0b9236760.jpeg",
-    "description": "Beautiful ?댄깭??view."
+    "description": "Hillside streets, rooftop bars, and international nightlife in Itaewon."
   },
   {
     "id": "111",
     "city": "Seoul",
-    "district": "",
+    "district": "Itaewon",
     "imagePath": "/images/destinations/Seoul_Back_alleys_itaewon_seoul_evening_d4da29de71.jpeg",
-    "description": "Beautiful ?댄깭??view."
+    "description": "Hillside streets, rooftop bars, and international nightlife in Itaewon."
   },
   {
     "id": "112",
     "city": "Seoul",
-    "district": "",
+    "district": "Itaewon",
     "imagePath": "/images/destinations/Seoul_Back_alleys_itaewon_seoul_evening_f8bc5bfa8f.jpeg",
-    "description": "Beautiful ?댄깭??view."
+    "description": "Hillside streets, rooftop bars, and international nightlife in Itaewon."
   },
   {
     "id": "113",
     "city": "Seoul",
-    "district": "",
+    "district": "Itaewon",
     "imagePath": "/images/destinations/Seoul_Cocktails_on_rooftop_bar_b38d0dbdff.jpeg",
-    "description": "Beautiful ?댄깭??view."
+    "description": "Hillside streets, rooftop bars, and international nightlife in Itaewon."
   },
   {
     "id": "114",
     "city": "Seoul",
-    "district": "",
+    "district": "Itaewon",
     "imagePath": "/images/destinations/Seoul_Hbc_hillside_street_seoul_73935b9e1f.jpeg",
-    "description": "Beautiful ?댄깭??view."
+    "description": "Hillside streets, rooftop bars, and international nightlife in Itaewon."
   },
   {
     "id": "115",
     "city": "Seoul",
-    "district": "",
+    "district": "Itaewon",
     "imagePath": "/images/destinations/Seoul_Hbc_hillside_street_seoul_7ef45c0eaa.jpeg",
-    "description": "Beautiful ?댄깭??view."
+    "description": "Hillside streets, rooftop bars, and international nightlife in Itaewon."
   },
   {
     "id": "116",
     "city": "Seoul",
-    "district": "?띾?",
+    "district": "Hongdae",
     "imagePath": "/images/destinations/Seoul_Cafe_with_people_relaxing_fca4ea77e1.jpeg",
-    "description": "Beautiful ?띾? view."
+    "description": "Live music, late-night streets, and independent culture around Hongdae."
   },
   {
     "id": "117",
     "city": "Seoul",
-    "district": "?띾?",
+    "district": "Hongdae",
     "imagePath": "/images/destinations/Seoul_Seoul_nightlife_street_evening_2dff359737.jpeg",
-    "description": "Beautiful ?띾? view."
+    "description": "Live music, late-night streets, and independent culture around Hongdae."
   },
   {
     "id": "118",
     "city": "Seoul",
-    "district": "?띾?",
+    "district": "Hongdae",
     "imagePath": "/images/destinations/Seoul_Street_at_night_colorful_signs_9d7f536cb0.jpeg",
-    "description": "Beautiful ?띾? view."
+    "description": "Live music, late-night streets, and independent culture around Hongdae."
   },
   {
     "id": "119",
     "city": "Seoul",
-    "district": "?띾?",
+    "district": "Hongdae",
     "imagePath": "/images/destinations/Seoul_Street_busker_performing_live_music_8addd1db52.jpeg",
-    "description": "Beautiful ?띾? view."
+    "description": "Live music, late-night streets, and independent culture around Hongdae."
   },
   {
     "id": "120",
     "city": "Seoul",
-    "district": "?띾?",
+    "district": "Hongdae",
     "imagePath": "/images/destinations/Seoul_Youths_walking_past_graffiti_murals_938f766861.jpeg",
-    "description": "Beautiful ?띾? view."
+    "description": "Live music, late-night streets, and independent culture around Hongdae."
   },
   {
     "id": "121",
