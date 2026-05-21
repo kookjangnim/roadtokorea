@@ -3,16 +3,16 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-const featuredCities = [
+const featuredRoutes = [
   { name: 'Route 1', href: '/route-1' },
   { name: 'Route 2', href: '/route-2' },
-  { name: 'Busan', href: '/route-1/busan' },
-  { name: 'Gangneung', href: '/route-2/gangneung' },
+  { name: 'Busan arrival', href: '/route-1/busan' },
+  { name: 'Gangneung junction', href: '/route-2/gangneung' },
 ];
 
 const primaryLinks = [
   { name: 'Start Here', href: '/' },
-  { name: 'Route Guide', href: '/route-1' },
+  { name: 'Route Guide', href: '/routes' },
   { name: 'About', href: '/about' },
 ];
 
@@ -27,7 +27,7 @@ export default function Header() {
             RoadToKorea
           </Link>
           <p className="header-tagline">
-            Korea travel, organized by trip depth instead of tourist noise.
+            Korea travel, organized by route logic instead of tourist noise.
           </p>
         </div>
 
@@ -39,12 +39,12 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="header-featured-desktop" aria-label="Featured destinations">
+        <div className="header-featured-desktop" aria-label="Featured routes">
           <span className="header-featured-label">Featured</span>
           <div className="header-featured-links">
-            {featuredCities.map((city) => (
-              <Link key={city.name} href={city.href} className="header-featured-link">
-                {city.name}
+            {featuredRoutes.map((route) => (
+              <Link key={route.name} href={route.href} className="header-featured-link">
+                {route.name}
               </Link>
             ))}
           </div>
@@ -79,21 +79,21 @@ export default function Header() {
           </div>
 
           <div className="header-mobile-group">
-            <span className="header-mobile-label">Featured Cities</span>
-            {featuredCities.map((city) => (
+            <span className="header-mobile-label">Featured Routes</span>
+            {featuredRoutes.map((route) => (
               <Link
-                key={city.name}
-                href={city.href}
+                key={route.name}
+                href={route.href}
                 className="header-mobile-link"
                 onClick={() => setMobileOpen(false)}
               >
-                {city.name}
+                {route.name}
               </Link>
             ))}
           </div>
 
           <div className="header-mobile-note">
-            Plan with the big names first, then branch into regional hubs and quieter local stops.
+            Plan from the route first, then branch into hubs, junctions, and quieter local stops.
           </div>
         </nav>
       )}

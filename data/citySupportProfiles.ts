@@ -2582,7 +2582,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         title: 'Why the town should stay small in the editorial frame',
         body:
-          'If Yeongdeok is written like a second-tier city guide, it loses its value. It works best as a smaller fishing-port chapter with sharper flavor and lower scale than the places south of it.',
+          'If Yeongdeok is written like a generic secondary city guide, it loses its value. It works best as a smaller fishing-port chapter with sharper flavor and lower scale than the places south of it.',
       },
     ],
     decisions: [

@@ -6,6 +6,7 @@ const helperSource = await readFile(new URL('../lib/wp-route-context.ts', import
 const runnableSource = helperSource
   .replace(/import \{ VALID_CITY_SLUGS \} from '..\/constants\/cities';\n/, '')
   .replace(/import type \{ WPPost \} from '.\/wp-api';\n/, '')
+  .replace(/import \{ isLegacyCategorySlug \} from '.\/legacy-route-compat';\n/, '')
   .replace(/export type IndexableWpPostRoute = \{[\s\S]*?\};\n\n/, '')
   .replace(/: Pick<WPPost, '_embedded'>/g, '')
   .replace(/: WpTerm\[\]/g, '')
@@ -16,9 +17,9 @@ const runnableSource = helperSource
   .replace(/type WpTerm = \{[\s\S]*?\};\n\n/, '');
 
 const moduleUrl = `data:text/javascript,${encodeURIComponent(
-  `const VALID_CITY_SLUGS = ${JSON.stringify(citiesModule.VALID_CITY_SLUGS)};\n${runnableSource}`
+  `const VALID_CITY_SLUGS = ${JSON.stringify(citiesModule.VALID_CITY_SLUGS)};\nconst LEGACY_CATEGORY_SLUGS = ['tier-1', 'tier-2', 'tier-3', 'tier-4'];\nfunction isLegacyCategorySlug(value) { return LEGACY_CATEGORY_SLUGS.includes(value); }\n${runnableSource}`
 )}`;
-const { getIndexableWpPostRoute, isWpPostRouteMatch } = await import(moduleUrl);
+const { getIndexableWpPostRoute, isWpPostCityMatch, isLegacyWpPostRouteMatch } = await import(moduleUrl);
 
 const taggedPost = {
   id: 101,
@@ -53,14 +54,17 @@ const defaultPost = {
 };
 
 assert.deepEqual(getIndexableWpPostRoute(taggedPost), {
-  tierSlug: 'tier-3',
+  legacyCategorySlug: 'tier-3',
   citySlug: 'seoul',
-  href: '/tier-3/seoul/gyeongbokgung-palace',
+  href: '/cities/seoul/gyeongbokgung-palace',
 });
 
 assert.equal(getIndexableWpPostRoute(defaultPost), null);
-assert.equal(isWpPostRouteMatch(taggedPost, 'tier-3', 'seoul'), true);
-assert.equal(isWpPostRouteMatch(taggedPost, 'tier-1', 'seoul'), false);
-assert.equal(isWpPostRouteMatch(defaultPost, 'tier-1', 'seoul'), false);
+assert.equal(isWpPostCityMatch(taggedPost, 'seoul'), true);
+assert.equal(isWpPostCityMatch(taggedPost, 'busan'), false);
+assert.equal(isWpPostCityMatch(defaultPost, 'seoul'), false);
+assert.equal(isLegacyWpPostRouteMatch(taggedPost, 'tier-3', 'seoul'), true);
+assert.equal(isLegacyWpPostRouteMatch(taggedPost, 'tier-1', 'seoul'), false);
+assert.equal(isLegacyWpPostRouteMatch(defaultPost, 'tier-1', 'seoul'), false);
 
 console.log('WP route context validation passed');

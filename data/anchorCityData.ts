@@ -9,7 +9,7 @@ export interface Hotspot {
   tags: string[];
 }
 
-export interface TierCityData {
+export interface LocalCityData {
   slug: string;
   name: string;
   heroImage: string;
@@ -19,7 +19,7 @@ export interface TierCityData {
   hotspots: Hotspot[];
 }
 
-export const tier2Cities: Record<string, TierCityData> = {
+export const anchorCityData: Record<string, LocalCityData> = {
   daejeon: {
     slug: 'daejeon',
     name: 'Daejeon',

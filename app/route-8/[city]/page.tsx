@@ -1,6 +1,5 @@
-import { notFound } from 'next/navigation';
-import CityPage from '@/app/[tier]/[city]/page';
-import { getLocalCityTier } from '@/data/routeRegistry';
+import CityPage from '@/components/city-detail/CityGuidePage';
+import RoutePageShell from '@/components/routes/RoutePageShell';
 
 interface PageProps {
   params: Promise<{
@@ -10,8 +9,10 @@ interface PageProps {
 
 export default async function RouteEightCityPage({ params }: PageProps) {
   const { city } = await params;
-  const tier = getLocalCityTier(city);
-  if (!tier) notFound();
 
-  return <CityPage params={Promise.resolve({ tier, city })} />;
+  return (
+    <RoutePageShell activeRouteSlug="route-8" activeCitySlug={city}>
+      <CityPage params={Promise.resolve({ city })} />
+    </RoutePageShell>
+  );
 }

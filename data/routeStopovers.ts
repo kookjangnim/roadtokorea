@@ -1,9 +1,8 @@
-export type TransportMode = 'KTX' | 'car' | 'bicycle' | 'bus';
+﻿export type TransportMode = 'KTX' | 'car' | 'bicycle' | 'bus';
 
 export interface RouteStopover {
   city: string;
   citySlug: string;
-  tier: number;
   coordinates: {
     lat: number;
     lng: number;
@@ -100,7 +99,6 @@ const carGyeongbuRoute: TransportRouteVariant = {
     {
       city: 'Cheonan',
       citySlug: 'cheonan',
-      tier: 3,
       coordinates: { lat: 36.8157, lng: 127.1138 },
       travelTimeFromPrevious: '1h',
       cumulativeTime: '1h',
@@ -114,7 +112,6 @@ const carGyeongbuRoute: TransportRouteVariant = {
     {
       city: 'Daejeon',
       citySlug: 'daejeon',
-      tier: 2,
       coordinates: { lat: 36.3504, lng: 127.3845 },
       travelTimeFromPrevious: '50m',
       cumulativeTime: '1h 50m',
@@ -128,7 +125,6 @@ const carGyeongbuRoute: TransportRouteVariant = {
     {
       city: 'Daegu',
       citySlug: 'daegu',
-      tier: 2,
       coordinates: { lat: 35.8714, lng: 128.6014 },
       travelTimeFromPrevious: '1h 20m',
       cumulativeTime: '3h 10m',
@@ -142,7 +138,6 @@ const carGyeongbuRoute: TransportRouteVariant = {
     {
       city: 'Gumi',
       citySlug: 'gumi',
-      tier: 3,
       coordinates: { lat: 36.1195, lng: 128.3446 },
       travelTimeFromPrevious: '45m',
       cumulativeTime: '2h 35m',
@@ -193,7 +188,6 @@ const carJungangRoute: TransportRouteVariant = {
     {
       city: 'Yeoju',
       citySlug: 'yeoju',
-      tier: 4,
       coordinates: { lat: 37.298, lng: 127.637 },
       travelTimeFromPrevious: '1h 10m',
       cumulativeTime: '1h 10m',
@@ -221,7 +215,6 @@ const carJungangRoute: TransportRouteVariant = {
     {
       city: 'Chungju',
       citySlug: 'chungju',
-      tier: 3,
       coordinates: { lat: 36.991, lng: 127.926 },
       travelTimeFromPrevious: '50m',
       cumulativeTime: '2h',
@@ -249,7 +242,6 @@ const carJungangRoute: TransportRouteVariant = {
     {
       city: 'Mungyeong',
       citySlug: 'mungyeong',
-      tier: 4,
       coordinates: { lat: 36.5866, lng: 128.1868 },
       travelTimeFromPrevious: '1h 5m',
       cumulativeTime: '2h 50m',
@@ -275,7 +267,6 @@ const carJungangRoute: TransportRouteVariant = {
     {
       city: 'Andong',
       citySlug: 'andong',
-      tier: 2,
       coordinates: { lat: 36.5715, lng: 128.7269 },
       travelTimeFromPrevious: '1h 10m',
       cumulativeTime: '4h',
@@ -301,7 +292,6 @@ const carJungangRoute: TransportRouteVariant = {
     {
       city: 'Gyeongju',
       citySlug: 'gyeongju',
-      tier: 1,
       coordinates: { lat: 35.8562, lng: 129.2247 },
       travelTimeFromPrevious: '1h 40m',
       cumulativeTime: '5h 25m',
@@ -365,7 +355,6 @@ const carRoute7Route: TransportRouteVariant = {
     {
       city: 'Gangneung',
       citySlug: 'gangneung',
-      tier: 1,
       coordinates: { lat: 37.7519, lng: 128.8761 },
       travelTimeFromPrevious: '2h 40m',
       cumulativeTime: '2h 40m',
@@ -391,7 +380,6 @@ const carRoute7Route: TransportRouteVariant = {
     {
       city: 'Samcheok',
       citySlug: 'samcheok',
-      tier: 4,
       coordinates: { lat: 37.4499, lng: 129.1652 },
       travelTimeFromPrevious: '1h 10m',
       cumulativeTime: '3h 50m',
@@ -405,7 +393,6 @@ const carRoute7Route: TransportRouteVariant = {
     {
       city: 'Uljin',
       citySlug: 'uljin',
-      tier: 4,
       coordinates: { lat: 36.9931, lng: 129.4005 },
       travelTimeFromPrevious: '1h 35m',
       cumulativeTime: '5h 25m',
@@ -419,7 +406,6 @@ const carRoute7Route: TransportRouteVariant = {
     {
       city: 'Yeongdeok',
       citySlug: 'yeongdeok',
-      tier: 4,
       coordinates: { lat: 36.4151, lng: 129.3654 },
       travelTimeFromPrevious: '1h 20m',
       cumulativeTime: '6h 45m',
@@ -433,7 +419,6 @@ const carRoute7Route: TransportRouteVariant = {
     {
       city: 'Pohang',
       citySlug: 'pohang',
-      tier: 3,
       coordinates: { lat: 36.0113, lng: 129.3642 },
       travelTimeFromPrevious: '3h 20m',
       cumulativeTime: '7h 10m',
@@ -475,7 +460,7 @@ const bicycleJungangRoute: TransportRouteVariant = {
   pacingNote:
     'This route can be compressed or stretched, but it works best when you let each inland chapter actually feel distinct.',
   planningNotes: [
-    'This is the most legible “Seoul to Busan by bike” story because the inland corridor has established long-distance cycling logic.',
+    'This is the most legible ?쏶eoul to Busan by bike??story because the inland corridor has established long-distance cycling logic.',
     'Saejae and Nakdong are the route ideas that matter here, not just generic inland roads.',
     'Busan feels like a genuine finish line on this version because the whole route builds toward it.',
   ],
@@ -483,7 +468,6 @@ const bicycleJungangRoute: TransportRouteVariant = {
     {
       city: 'Chungju',
       citySlug: 'chungju',
-      tier: 3,
       coordinates: { lat: 36.991, lng: 127.926 },
       travelTimeFromPrevious: '8-10h',
       cumulativeTime: '8-10h',
@@ -511,7 +495,6 @@ const bicycleJungangRoute: TransportRouteVariant = {
     {
       city: 'Mungyeong',
       citySlug: 'mungyeong',
-      tier: 4,
       coordinates: { lat: 36.5866, lng: 128.1868 },
       travelTimeFromPrevious: '4-5h',
       cumulativeTime: '8-10h',
@@ -521,7 +504,7 @@ const bicycleJungangRoute: TransportRouteVariant = {
       whyItEarnsTime:
         'It is one of the places that makes this route feel like a real cross-country line rather than a collection of flat connectors.',
       decisionReason:
-        'Mungyeong is the city that justifies the route’s cross-country claim because the Saejae crossing changes the ride physically and mentally.',
+        'Mungyeong is the city that justifies the route?셲 cross-country claim because the Saejae crossing changes the ride physically and mentally.',
       recoveryValue:
         'Not a soft recovery town first; its value is in how it breaks the route into before-the-pass and after-the-pass chapters.',
       sleepValue:
@@ -537,7 +520,6 @@ const bicycleJungangRoute: TransportRouteVariant = {
     {
       city: 'Sangju',
       citySlug: 'sangju',
-      tier: 4,
       coordinates: { lat: 36.4109, lng: 128.1591 },
       travelTimeFromPrevious: '2-3h',
       cumulativeTime: '10-12h',
@@ -563,7 +545,6 @@ const bicycleJungangRoute: TransportRouteVariant = {
     {
       city: 'Daegu',
       citySlug: 'daegu',
-      tier: 2,
       coordinates: { lat: 35.8714, lng: 128.6014 },
       travelTimeFromPrevious: '5-6h',
       cumulativeTime: '15-18h',
@@ -589,7 +570,6 @@ const bicycleJungangRoute: TransportRouteVariant = {
     {
       city: 'Changnyeong',
       citySlug: 'changnyeong',
-      tier: 3,
       coordinates: { lat: 35.5438, lng: 128.4923 },
       travelTimeFromPrevious: '3-4h',
       cumulativeTime: '18-21h',
@@ -601,7 +581,7 @@ const bicycleJungangRoute: TransportRouteVariant = {
       decisionReason:
         'Changnyeong matters when the rider wants one more calm southern chapter before the finish tightens toward Busan.',
       recoveryValue:
-        'A quieter recovery node that lowers the tempo again after Daegu’s bigger urban reset.',
+        'A quieter recovery node that lowers the tempo again after Daegu?셲 bigger urban reset.',
       sleepValue:
         'Useful as a final softer overnight if the rider does not want the last run to Busan to begin from a larger city mood.',
       foodValue:
@@ -634,7 +614,7 @@ const bicycleNakdongRoute: TransportRouteVariant = {
   totalTravelTime: '4-6 days',
   totalDistance: '460-520 km',
   summary:
-    'A southbound ride that prioritizes joining and following the Nakdonggang logic as much as possible, using the river corridor as the trip’s backbone.',
+    'A southbound ride that prioritizes joining and following the Nakdonggang logic as much as possible, using the river corridor as the trip?셲 backbone.',
   bestFor: 'Riders who want a calmer river-led southbound structure and who care about the Nakdong path more than the mountain-pass identity.',
   tradeoff: 'It can feel less dramatic than the coast and less mythic than the full Saejae-style cross-country story.',
   stopPattern: 'Best when the rider wants the route to settle into a long river rhythm after the initial inland lead-in.',
@@ -645,7 +625,7 @@ const bicycleNakdongRoute: TransportRouteVariant = {
   pacingNote:
     'The useful part here is not a fixed daily plan but the way the corridor becomes easier to read once the ride settles into the Nakdong basin.',
   planningNotes: [
-    'This route borrows from the logic of Korea’s Nakdong bicycle path culture more than from generic road routing.',
+    'This route borrows from the logic of Korea?셲 Nakdong bicycle path culture more than from generic road routing.',
     'Andong matters more here because it is one of the symbolic entry points into the Nakdong story.',
     'It is strongest for riders who want a legible long-distance river descent rather than a hybrid of many route moods.',
   ],
@@ -653,7 +633,6 @@ const bicycleNakdongRoute: TransportRouteVariant = {
     {
       city: 'Andong',
       citySlug: 'andong',
-      tier: 2,
       coordinates: { lat: 36.5715, lng: 128.7269 },
       travelTimeFromPrevious: 'lead-in day',
       cumulativeTime: 'river entry',
@@ -667,7 +646,6 @@ const bicycleNakdongRoute: TransportRouteVariant = {
     {
       city: 'Sangju',
       citySlug: 'sangju',
-      tier: 4,
       coordinates: { lat: 36.4109, lng: 128.1591 },
       travelTimeFromPrevious: '3-4h',
       cumulativeTime: '3-4h from Andong',
@@ -681,7 +659,6 @@ const bicycleNakdongRoute: TransportRouteVariant = {
     {
       city: 'Daegu',
       citySlug: 'daegu',
-      tier: 2,
       coordinates: { lat: 35.8714, lng: 128.6014 },
       travelTimeFromPrevious: '6-7h',
       cumulativeTime: '10-12h',
@@ -695,7 +672,6 @@ const bicycleNakdongRoute: TransportRouteVariant = {
     {
       city: 'Changnyeong',
       citySlug: 'changnyeong',
-      tier: 3,
       coordinates: { lat: 35.5438, lng: 128.4923 },
       travelTimeFromPrevious: '3-4h',
       cumulativeTime: '13-16h',
@@ -709,7 +685,6 @@ const bicycleNakdongRoute: TransportRouteVariant = {
     {
       city: 'Miryang',
       citySlug: 'miryang',
-      tier: 4,
       coordinates: { lat: 35.5038, lng: 128.7464 },
       travelTimeFromPrevious: '3-4h',
       cumulativeTime: '13-16h',
@@ -761,7 +736,6 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
     {
       city: 'Gangneung',
       citySlug: 'gangneung',
-      tier: 1,
       coordinates: { lat: 37.7519, lng: 128.8761 },
       travelTimeFromPrevious: 'rail/transfer setup',
       cumulativeTime: 'east coast start',
@@ -769,13 +743,12 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
       routeRole: 'Coastal start',
       stayAdvice: 'Keep Gangneung if you want the coast to be the identity of the ride rather than a late-stage reward.',
       whyItEarnsTime:
-        'It is the city that defines the route’s tone before the southbound cycling really begins.',
+        'It is the city that defines the route?셲 tone before the southbound cycling really begins.',
       highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
     },
     {
       city: 'Samcheok',
       citySlug: 'samcheok',
-      tier: 4,
       coordinates: { lat: 37.4499, lng: 129.1652 },
       travelTimeFromPrevious: '3-4h',
       cumulativeTime: '3-4h southbound',
@@ -789,7 +762,6 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
     {
       city: 'Uljin',
       citySlug: 'uljin',
-      tier: 4,
       coordinates: { lat: 36.9931, lng: 129.4005 },
       travelTimeFromPrevious: '3-4h',
       cumulativeTime: 'mid-coast',
@@ -797,7 +769,7 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
       routeRole: 'Quiet coast chapter',
       stayAdvice: 'Keep Uljin if the ride should lean into smaller seaside rhythm rather than only larger destination towns.',
       whyItEarnsTime:
-        'It supports the coast route’s strongest quality: repeated shoreline atmosphere over a long descent south.',
+        'It supports the coast route?셲 strongest quality: repeated shoreline atmosphere over a long descent south.',
       decisionReason:
         'Keep Uljin when the coast route should feel expansive and lived-in rather than compressed into only famous anchor points.',
       recoveryValue:
@@ -815,7 +787,6 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
     {
       city: 'Yeongdeok',
       citySlug: 'yeongdeok',
-      tier: 4,
       coordinates: { lat: 36.4151, lng: 129.3654 },
       travelTimeFromPrevious: '4-5h',
       cumulativeTime: 'late coast',
@@ -841,7 +812,6 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
     {
       city: 'Pohang',
       citySlug: 'pohang',
-      tier: 3,
       coordinates: { lat: 36.0113, lng: 129.3642 },
       travelTimeFromPrevious: '5-6h',
       cumulativeTime: 'long coastal descent',
@@ -936,7 +906,6 @@ export const seoulToBusanRoute: RouteData = {
         {
           city: 'Daejeon',
           citySlug: 'daejeon',
-          tier: 2,
           coordinates: { lat: 36.3504, lng: 127.3845 },
           travelTimeFromPrevious: '50m',
           cumulativeTime: '50m',
@@ -951,7 +920,6 @@ export const seoulToBusanRoute: RouteData = {
         {
           city: 'Daegu',
           citySlug: 'daegu',
-          tier: 2,
           coordinates: { lat: 35.8714, lng: 128.6014 },
           travelTimeFromPrevious: '1h 5m',
           cumulativeTime: '1h 55m',
@@ -966,7 +934,6 @@ export const seoulToBusanRoute: RouteData = {
         {
           city: 'Gyeongju',
           citySlug: 'gyeongju',
-          tier: 1,
           coordinates: { lat: 35.8562, lng: 129.2247 },
           travelTimeFromPrevious: '35m',
           cumulativeTime: '2h 30m',
@@ -1026,7 +993,6 @@ export const seoulToBusanRoute: RouteData = {
         {
           city: 'Daejeon',
           citySlug: 'daejeon',
-          tier: 2,
           coordinates: { lat: 36.3504, lng: 127.3845 },
           travelTimeFromPrevious: '1h 30m',
           cumulativeTime: '1h 30m',
@@ -1040,7 +1006,6 @@ export const seoulToBusanRoute: RouteData = {
         {
           city: 'Daegu',
           citySlug: 'daegu',
-          tier: 2,
           coordinates: { lat: 35.8714, lng: 128.6014 },
           travelTimeFromPrevious: '2h',
           cumulativeTime: '3h 30m',
@@ -1095,7 +1060,6 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Yeoju',
       citySlug: 'yeoju',
-      tier: 4,
       coordinates: { lat: 37.298, lng: 127.637 },
       travelTimeFromPrevious: '1h 10m',
       cumulativeTime: '1h 10m',
@@ -1123,7 +1087,6 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Wonju',
       citySlug: 'wonju',
-      tier: 1,
       coordinates: { lat: 37.3422, lng: 127.9202 },
       travelTimeFromPrevious: '45m',
       cumulativeTime: '1h 55m',
@@ -1150,7 +1113,6 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Pyeongchang',
       citySlug: 'pyeongchang',
-      tier: 4,
       coordinates: { lat: 37.3705, lng: 128.3902 },
       travelTimeFromPrevious: '55m',
       cumulativeTime: '2h 50m',
@@ -1177,7 +1139,6 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Daegwallyeong',
       citySlug: 'daegwallyeong',
-      tier: 4,
       coordinates: { lat: 37.6771, lng: 128.7051 },
       travelTimeFromPrevious: '35m',
       cumulativeTime: '3h 25m',
@@ -1204,7 +1165,6 @@ const carSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Gangneung',
       citySlug: 'gangneung',
-      tier: 1,
       coordinates: { lat: 37.7519, lng: 128.8761 },
       travelTimeFromPrevious: '35m',
       cumulativeTime: '4h',
@@ -1271,7 +1231,6 @@ const bicycleSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Wonju',
       citySlug: 'wonju',
-      tier: 1,
       coordinates: { lat: 37.3422, lng: 127.9202 },
       travelTimeFromPrevious: 'day 1 setup',
       cumulativeTime: 'inland hinge',
@@ -1298,7 +1257,6 @@ const bicycleSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Pyeongchang',
       citySlug: 'pyeongchang',
-      tier: 4,
       coordinates: { lat: 37.3705, lng: 128.3902 },
       travelTimeFromPrevious: 'mountain approach',
       cumulativeTime: 'highland checkpoint',
@@ -1313,7 +1271,6 @@ const bicycleSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Daegwallyeong',
       citySlug: 'daegwallyeong',
-      tier: 4,
       coordinates: { lat: 37.6771, lng: 128.7051 },
       travelTimeFromPrevious: 'final climb logic',
       cumulativeTime: 'pass threshold',
@@ -1328,7 +1285,6 @@ const bicycleSeoulGangneungRoute: TransportRouteVariant = {
     {
       city: 'Gangneung',
       citySlug: 'gangneung',
-      tier: 1,
       coordinates: { lat: 37.7519, lng: 128.8761 },
       travelTimeFromPrevious: '1 long day or 1.5 days',
       cumulativeTime: 'coast opening',
@@ -1412,7 +1368,6 @@ export const seoulToGangneungRoute: RouteData = {
         {
           city: 'Wonju',
           citySlug: 'wonju',
-          tier: 1,
           coordinates: { lat: 37.3422, lng: 127.9202 },
           travelTimeFromPrevious: '50m',
           cumulativeTime: '50m',
@@ -1427,7 +1382,6 @@ export const seoulToGangneungRoute: RouteData = {
         {
           city: 'Gangneung',
           citySlug: 'gangneung',
-          tier: 1,
           coordinates: { lat: 37.7519, lng: 128.8761 },
           travelTimeFromPrevious: '1h',
           cumulativeTime: '1h 50m',
@@ -1489,7 +1443,6 @@ export const seoulToGangneungRoute: RouteData = {
         {
           city: 'Wonju',
           citySlug: 'wonju',
-          tier: 1,
           coordinates: { lat: 37.3422, lng: 127.9202 },
           travelTimeFromPrevious: '1h 20m',
           cumulativeTime: '1h 20m',
@@ -1504,7 +1457,6 @@ export const seoulToGangneungRoute: RouteData = {
         {
           city: 'Gangneung',
           citySlug: 'gangneung',
-          tier: 1,
           coordinates: { lat: 37.7519, lng: 128.8761 },
           travelTimeFromPrevious: '1h 40m',
           cumulativeTime: '3h',
@@ -1558,7 +1510,6 @@ const carJinburyeongSokchoRoute: TransportRouteVariant = {
     {
       city: 'Gapyeong',
       citySlug: 'gapyeong',
-      tier: 4,
       coordinates: { lat: 37.8315, lng: 127.5099 },
       travelTimeFromPrevious: '1h 10m',
       cumulativeTime: '1h 10m',
@@ -1573,7 +1524,6 @@ const carJinburyeongSokchoRoute: TransportRouteVariant = {
     {
       city: 'Chuncheon',
       citySlug: 'chuncheon',
-      tier: 4,
       coordinates: { lat: 37.8813, lng: 127.7298 },
       travelTimeFromPrevious: '35m',
       cumulativeTime: '1h 45m',
@@ -1588,7 +1538,6 @@ const carJinburyeongSokchoRoute: TransportRouteVariant = {
     {
       city: 'Yanggu',
       citySlug: 'yanggu',
-      tier: 4,
       coordinates: { lat: 38.1101, lng: 127.9897 },
       travelTimeFromPrevious: '1h 10m',
       cumulativeTime: '2h 55m',
@@ -1611,7 +1560,6 @@ const carJinburyeongSokchoRoute: TransportRouteVariant = {
     {
       city: 'Inje',
       citySlug: 'inje',
-      tier: 4,
       coordinates: { lat: 38.0695, lng: 128.1707 },
       travelTimeFromPrevious: '45m',
       cumulativeTime: '3h 40m',
@@ -1634,7 +1582,6 @@ const carJinburyeongSokchoRoute: TransportRouteVariant = {
     {
       city: 'Goseong',
       citySlug: 'goseong',
-      tier: 4,
       coordinates: { lat: 38.3806, lng: 128.4676 },
       travelTimeFromPrevious: '55m',
       cumulativeTime: '4h 35m',
@@ -1649,7 +1596,6 @@ const carJinburyeongSokchoRoute: TransportRouteVariant = {
     {
       city: 'Sokcho',
       citySlug: 'sokcho',
-      tier: 1,
       coordinates: { lat: 38.207, lng: 128.5918 },
       travelTimeFromPrevious: '30m',
       cumulativeTime: '5h 5m',
@@ -1886,7 +1832,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Sokcho',
     citySlug: 'sokcho',
-    tier: 4,
     coordinates: { lat: 38.2045, lng: 128.5918 },
     travelTimeFromPrevious: '35m',
     cumulativeTime: '35m',
@@ -1899,7 +1844,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Yangyang',
     citySlug: 'yangyang',
-    tier: 4,
     coordinates: { lat: 38.0754, lng: 128.619 },
     travelTimeFromPrevious: '25m',
     cumulativeTime: '1h',
@@ -1912,7 +1856,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Gangneung',
     citySlug: 'gangneung',
-    tier: 4,
     coordinates: { lat: 37.7519, lng: 128.8761 },
     travelTimeFromPrevious: '45m',
     cumulativeTime: '1h 45m',
@@ -1925,7 +1868,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Donghae',
     citySlug: 'donghae',
-    tier: 4,
     coordinates: { lat: 37.5247, lng: 129.1143 },
     travelTimeFromPrevious: '40m',
     cumulativeTime: '2h 25m',
@@ -1938,7 +1880,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Samcheok',
     citySlug: 'samcheok',
-    tier: 4,
     coordinates: { lat: 37.4499, lng: 129.1652 },
     travelTimeFromPrevious: '25m',
     cumulativeTime: '2h 50m',
@@ -1951,7 +1892,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Uljin',
     citySlug: 'uljin',
-    tier: 4,
     coordinates: { lat: 36.9931, lng: 129.4005 },
     travelTimeFromPrevious: '1h 35m',
     cumulativeTime: '4h 25m',
@@ -1964,7 +1904,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Yeongdeok',
     citySlug: 'yeongdeok',
-    tier: 4,
     coordinates: { lat: 36.415, lng: 129.365 },
     travelTimeFromPrevious: '1h',
     cumulativeTime: '5h 25m',
@@ -1977,7 +1916,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Pohang',
     citySlug: 'pohang',
-    tier: 4,
     coordinates: { lat: 36.019, lng: 129.3435 },
     travelTimeFromPrevious: '55m',
     cumulativeTime: '6h 20m',
@@ -1990,11 +1928,10 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Gyeongju',
     citySlug: 'gyeongju',
-    tier: 2,
     coordinates: { lat: 35.8562, lng: 129.2247 },
     travelTimeFromPrevious: '45m',
     cumulativeTime: '7h 05m',
-    pitch: 'Korea’s Silla-era capital turns the coast route inward for one major heritage chapter before the final metropolitan south.',
+    pitch: 'Korea?셲 Silla-era capital turns the coast route inward for one major heritage chapter before the final metropolitan south.',
     routeRole: 'Heritage handoff',
     stayAdvice: 'Use Gyeongju as the highest-value cultural overnight before Ulsan and Busan.',
     whyItEarnsTime: 'It gives Route 4 historical depth instead of letting the final third become only ports and expressway logic.',
@@ -2003,7 +1940,6 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Ulsan',
     citySlug: 'ulsan',
-    tier: 4,
     coordinates: { lat: 35.5384, lng: 129.3114 },
     travelTimeFromPrevious: '45m',
     cumulativeTime: '7h 50m',
@@ -2016,14 +1952,13 @@ const nationalRoute7Stopovers: RouteStopover[] = [
   {
     city: 'Busan',
     citySlug: 'busan',
-    tier: 1,
     coordinates: { lat: 35.1796, lng: 129.0756 },
     travelTimeFromPrevious: '1h',
     cumulativeTime: '8h 50m',
-    pitch: 'Korea’s major southern port closes the route with beaches, markets, hillsides, rail, ferries, and full-city arrival energy.',
+    pitch: 'Korea?셲 major southern port closes the route with beaches, markets, hillsides, rail, ferries, and full-city arrival energy.',
     routeRole: 'Southern finish',
     stayAdvice: 'End with at least two nights if Route 4 has been paced slowly; Busan should feel like a finale, not a checkout point.',
-    whyItEarnsTime: 'It resolves the full east coast line into Korea’s strongest port-city finish.',
+    whyItEarnsTime: 'It resolves the full east coast line into Korea?셲 strongest port-city finish.',
     highlights: ['Haeundae', 'Jagalchi Market', 'Gamcheon Culture Village'],
   },
 ];
@@ -2080,11 +2015,11 @@ export const goseongToBusanRoute: RouteData = {
   toSlug: 'busan',
   href: '/route-4',
   routeLabel: 'Goseong to Busan',
-  headline: 'Korea’s long East Sea line through National Route 7, surf towns, ports, heritage, industry, and Busan.',
+  headline: 'Korea?셲 long East Sea line through National Route 7, surf towns, ports, heritage, industry, and Busan.',
   overview:
     'Route 4 is the coastal counterweight to the inland and mountain routes. It begins where the northern coast meets DMZ and Seoraksan memory, then follows the East Sea through Yangyang, Gangneung, Donghae, Samcheok, Uljin, Yeongdeok, Pohang, Gyeongju, Ulsan, and finally Busan.',
   destinationPitch:
-    'Use this route when Korea’s east coast should be the main story, not a scenery strip beside the road.',
+    'Use this route when Korea?셲 east coast should be the main story, not a scenery strip beside the road.',
   bestUseCases: [
     'Travelers planning a Korea east coast road trip from Goseong or Sokcho toward Busan.',
     'Repeat visitors who already know Seoul and Busan but want the towns and cities between them to matter.',
@@ -2217,7 +2152,6 @@ const jeollaSouthCoastStopovers: RouteStopover[] = [
   {
     city: 'Cheonan',
     citySlug: 'cheonan',
-    tier: 4,
     coordinates: { lat: 36.8157, lng: 127.1138 },
     travelTimeFromPrevious: '1h - 1h 20m',
     cumulativeTime: '1h 10m',
@@ -2233,7 +2167,6 @@ const jeollaSouthCoastStopovers: RouteStopover[] = [
   {
     city: 'Gongju',
     citySlug: 'gongju',
-    tier: 4,
     coordinates: { lat: 36.4465, lng: 127.119 },
     travelTimeFromPrevious: '1h 50m - 2h 20m',
     cumulativeTime: '2h',
@@ -2249,7 +2182,6 @@ const jeollaSouthCoastStopovers: RouteStopover[] = [
   {
     city: 'Jeonju',
     citySlug: 'jeonju',
-    tier: 2,
     coordinates: { lat: 35.8242, lng: 127.148 },
     travelTimeFromPrevious: '1h 10m - 1h 30m',
     cumulativeTime: '3h 30m',
@@ -2265,7 +2197,6 @@ const jeollaSouthCoastStopovers: RouteStopover[] = [
   {
     city: 'Imsil',
     citySlug: 'imsil',
-    tier: 4,
     coordinates: { lat: 35.6179, lng: 127.2891 },
     travelTimeFromPrevious: '35m - 45m',
     cumulativeTime: '4h 10m',
@@ -2281,7 +2212,6 @@ const jeollaSouthCoastStopovers: RouteStopover[] = [
   {
     city: 'Namwon',
     citySlug: 'namwon',
-    tier: 4,
     coordinates: { lat: 35.4164, lng: 127.3906 },
     travelTimeFromPrevious: '55m - 1h 20m',
     cumulativeTime: '4h 40m',
@@ -2297,7 +2227,6 @@ const jeollaSouthCoastStopovers: RouteStopover[] = [
   {
     city: 'Suncheon',
     citySlug: 'suncheon',
-    tier: 4,
     coordinates: { lat: 34.9506, lng: 127.4872 },
     travelTimeFromPrevious: '1h - 1h 20m',
     cumulativeTime: '5h 50m',
@@ -2313,7 +2242,6 @@ const jeollaSouthCoastStopovers: RouteStopover[] = [
   {
     city: 'Yeosu',
     citySlug: 'yeosu',
-    tier: 1,
     coordinates: { lat: 34.7604, lng: 127.6622 },
     travelTimeFromPrevious: '35m - 50m',
     cumulativeTime: '6h 30m',
@@ -2334,7 +2262,6 @@ const jeollaHonamMainStopovers: RouteStopover[] = [
   {
     city: 'Gwangju',
     citySlug: 'gwangju',
-    tier: 2,
     coordinates: { lat: 35.1595, lng: 126.8526 },
     travelTimeFromPrevious: '1h 10m - 1h 30m',
     cumulativeTime: '4h 50m',
@@ -2554,7 +2481,6 @@ const westSeaModernCoastStopovers: RouteStopover[] = [
   {
     city: 'Incheon',
     citySlug: 'incheon',
-    tier: 2,
     coordinates: { lat: 37.4563, lng: 126.7052 },
     travelTimeFromPrevious: '45m - 1h',
     cumulativeTime: '1h',
@@ -2569,7 +2495,6 @@ const westSeaModernCoastStopovers: RouteStopover[] = [
   {
     city: 'Suwon',
     citySlug: 'suwon',
-    tier: 2,
     coordinates: { lat: 37.2636, lng: 127.0286 },
     travelTimeFromPrevious: '1h - 1h 20m',
     cumulativeTime: '2h 10m',
@@ -2584,7 +2509,6 @@ const westSeaModernCoastStopovers: RouteStopover[] = [
   {
     city: 'Seosan',
     citySlug: 'seosan',
-    tier: 4,
     coordinates: { lat: 36.7849, lng: 126.45 },
     travelTimeFromPrevious: '1h 30m - 2h',
     cumulativeTime: '4h',
@@ -2599,7 +2523,6 @@ const westSeaModernCoastStopovers: RouteStopover[] = [
   {
     city: 'Boryeong',
     citySlug: 'boryeong',
-    tier: 4,
     coordinates: { lat: 36.3334, lng: 126.6128 },
     travelTimeFromPrevious: '1h - 1h 20m',
     cumulativeTime: '5h 10m',
@@ -2614,7 +2537,6 @@ const westSeaModernCoastStopovers: RouteStopover[] = [
   {
     city: 'Gunsan',
     citySlug: 'gunsan',
-    tier: 4,
     coordinates: { lat: 35.9677, lng: 126.7366 },
     travelTimeFromPrevious: '1h - 1h 20m',
     cumulativeTime: '6h 20m',
@@ -2629,7 +2551,6 @@ const westSeaModernCoastStopovers: RouteStopover[] = [
   {
     city: 'Mokpo',
     citySlug: 'mokpo',
-    tier: 2,
     coordinates: { lat: 34.8118, lng: 126.3922 },
     travelTimeFromPrevious: '2h 20m - 3h',
     cumulativeTime: '9h',
@@ -2800,7 +2721,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Mokpo',
     citySlug: 'mokpo',
-    tier: 2,
     coordinates: { lat: 34.8118, lng: 126.3922 },
     travelTimeFromPrevious: 'Route start',
     cumulativeTime: '0h',
@@ -2815,7 +2735,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Haenam',
     citySlug: 'haenam',
-    tier: 4,
     coordinates: { lat: 34.5733, lng: 126.599 },
     travelTimeFromPrevious: '1h - 1h 20m',
     cumulativeTime: '1h 20m',
@@ -2830,7 +2749,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Wando',
     citySlug: 'wando',
-    tier: 4,
     coordinates: { lat: 34.311, lng: 126.755 },
     travelTimeFromPrevious: '45m - 1h',
     cumulativeTime: '2h 20m',
@@ -2845,7 +2763,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Boseong',
     citySlug: 'boseong',
-    tier: 4,
     coordinates: { lat: 34.7715, lng: 127.0801 },
     travelTimeFromPrevious: '1h 20m - 1h 40m',
     cumulativeTime: '4h',
@@ -2860,7 +2777,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Suncheon',
     citySlug: 'suncheon',
-    tier: 4,
     coordinates: { lat: 34.9506, lng: 127.4872 },
     travelTimeFromPrevious: '45m - 1h',
     cumulativeTime: '5h',
@@ -2875,7 +2791,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Yeosu',
     citySlug: 'yeosu',
-    tier: 1,
     coordinates: { lat: 34.7604, lng: 127.6622 },
     travelTimeFromPrevious: '40m - 1h',
     cumulativeTime: '6h',
@@ -2890,7 +2805,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Namhae',
     citySlug: 'namhae',
-    tier: 4,
     coordinates: { lat: 34.837, lng: 127.892 },
     travelTimeFromPrevious: '1h 20m - 1h 50m',
     cumulativeTime: '7h 40m',
@@ -2905,7 +2819,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Tongyeong',
     citySlug: 'tongyeong',
-    tier: 4,
     coordinates: { lat: 34.8544, lng: 128.4332 },
     travelTimeFromPrevious: '1h 40m - 2h 10m',
     cumulativeTime: '9h 50m',
@@ -2920,7 +2833,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Geoje',
     citySlug: 'geoje',
-    tier: 4,
     coordinates: { lat: 34.8806, lng: 128.6217 },
     travelTimeFromPrevious: '40m - 1h',
     cumulativeTime: '10h 50m',
@@ -2935,7 +2847,6 @@ const southCoastIslandRoadStopovers: RouteStopover[] = [
   {
     city: 'Busan',
     citySlug: 'busan',
-    tier: 1,
     coordinates: { lat: 35.1796, lng: 129.0756 },
     travelTimeFromPrevious: '1h 20m - 2h',
     cumulativeTime: '12h 30m',
@@ -3111,7 +3022,6 @@ const honamLandEndStopovers: RouteStopover[] = [
   {
     city: 'Daejeon',
     citySlug: 'daejeon',
-    tier: 2,
     coordinates: { lat: 36.3504, lng: 127.3845 },
     travelTimeFromPrevious: '1h 40m - 2h',
     cumulativeTime: '2h',
@@ -3126,7 +3036,6 @@ const honamLandEndStopovers: RouteStopover[] = [
   {
     city: 'Jeonju',
     citySlug: 'jeonju',
-    tier: 4,
     coordinates: { lat: 35.8242, lng: 127.148 },
     travelTimeFromPrevious: '1h 10m - 1h 30m',
     cumulativeTime: '3h 30m',
@@ -3141,7 +3050,6 @@ const honamLandEndStopovers: RouteStopover[] = [
   {
     city: 'Gwangju',
     citySlug: 'gwangju',
-    tier: 2,
     coordinates: { lat: 35.1595, lng: 126.8526 },
     travelTimeFromPrevious: '1h 10m - 1h 30m',
     cumulativeTime: '5h',
@@ -3156,7 +3064,6 @@ const honamLandEndStopovers: RouteStopover[] = [
   {
     city: 'Mokpo',
     citySlug: 'mokpo',
-    tier: 2,
     coordinates: { lat: 34.8118, lng: 126.3922 },
     travelTimeFromPrevious: '1h 10m - 1h 30m',
     cumulativeTime: '6h 30m',
@@ -3171,7 +3078,6 @@ const honamLandEndStopovers: RouteStopover[] = [
   {
     city: 'Haenam',
     citySlug: 'haenam',
-    tier: 4,
     coordinates: { lat: 34.5733, lng: 126.599 },
     travelTimeFromPrevious: '1h - 1h 20m',
     cumulativeTime: '7h 50m',
@@ -3365,3 +3271,4 @@ export function getTransportRoute(
   const routeData = getRouteData(fromSlug, toSlug);
   return routeData?.transports[transportMode] ?? null;
 }
+

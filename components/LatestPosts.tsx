@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { WPPost } from '@/lib/wp-api';
-import { VALID_CITY_SLUGS } from '@/constants/cities';
 import { normalizeWpMediaUrl } from '@/lib/site-config';
 import { getFirstImageFromHtml, getPostDisplayTitle } from '@/lib/content-utils';
+import { getIndexableWpPostRoute } from '@/lib/wp-route-context';
 
 interface LatestPostsProps {
   posts: WPPost[];
@@ -45,24 +45,17 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
             }
 
             let categoryLabel = 'Travel';
-            let tierSlug = 'tier-1';
-            let citySlug = 'seoul';
 
             const wpTerms = post._embedded?.['wp:term'] || [];
             for (const taxonomyArray of wpTerms) {
               for (const term of taxonomyArray) {
                 if (term.taxonomy === 'category') {
-                  if (term.slug?.startsWith('tier-')) {
-                    tierSlug = term.slug;
-                  }
                   categoryLabel = term.name || categoryLabel;
-                } else if (term.taxonomy === 'post_tag' && term.slug && VALID_CITY_SLUGS.includes(term.slug)) {
-                  citySlug = term.slug;
                 }
               }
             }
 
-            const postUrl = `/${tierSlug}/${citySlug}/${post.slug}`;
+            const postUrl = getIndexableWpPostRoute(post)?.href ?? '/routes';
             const postTitle = getPostDisplayTitle(post);
 
             return (

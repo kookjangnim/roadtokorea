@@ -1,7 +1,6 @@
 export type UpdatedCity = {
   name: string;
   slug: string;
-  tier: 'tier-1' | 'tier-2' | 'tier-4';
   href: string;
   reason: string;
   role: string;
@@ -11,7 +10,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Wonju',
     slug: 'wonju',
-    tier: 'tier-4',
     href: '/route-2/wonju',
     reason: 'Route 2 inland hinge page now explains why Wonju matters before the east coast opens.',
     role: 'Eastbound inland junction',
@@ -19,7 +17,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Chungju',
     slug: 'chungju',
-    tier: 'tier-4',
     href: '/route-1/chungju',
     reason: 'Reference-quality inland support page with clear stay and handoff logic.',
     role: 'Route 1 practical benchmark',
@@ -27,7 +24,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Mungyeong',
     slug: 'mungyeong',
-    tier: 'tier-4',
     href: '/route-1/mungyeong',
     reason: 'Strong inland handoff page with quieter route logic that now reads intentionally.',
     role: 'Inland transition anchor',
@@ -35,7 +31,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Andong',
     slug: 'andong',
-    tier: 'tier-2',
     href: '/route-1/andong',
     reason: 'Cultural support page with a convincing overnight and onward-route payoff.',
     role: 'Cultural inland chapter',
@@ -43,7 +38,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Daegu',
     slug: 'daegu',
-    tier: 'tier-2',
     href: '/route-1/daegu',
     reason: 'Southern support page with clear city-scale sleep, food, and route-reset logic.',
     role: 'Southern route stabilizer',
@@ -51,7 +45,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Gyeongju',
     slug: 'gyeongju',
-    tier: 'tier-2',
     href: '/route-1/gyeongju',
     reason: 'Route-support page now reads like a real stop choice instead of a generic destination card.',
     role: 'Historic support chapter',
@@ -59,7 +52,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Daejeon',
     slug: 'daejeon',
-    tier: 'tier-2',
     href: '/route-1/daejeon',
     reason: 'Central corridor sample now pairs station control with Sungsimdang, Yuseong recovery, science-city identity, and Route 8 branching.',
     role: 'Central food-and-route split city',
@@ -67,7 +59,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Cheonan',
     slug: 'cheonan',
-    tier: 'tier-4',
     href: '/route-1/cheonan',
     reason: 'Early-route break page now has clear first-night and low-friction support value.',
     role: 'Early corridor reset',
@@ -75,7 +66,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Gumi',
     slug: 'gumi',
-    tier: 'tier-4',
     href: '/route-1/gumi',
     reason: 'Middle-corridor page now clearly supports fatigue control before Daegu.',
     role: 'Pre-Daegu breather',
@@ -83,7 +73,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Changnyeong',
     slug: 'changnyeong',
-    tier: 'tier-4',
     href: '/route-1/changnyeong',
     reason: 'Late-route recovery stop with a distinct quiet-finish purpose.',
     role: 'Lower-river recovery node',
@@ -91,7 +80,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Gangneung',
     slug: 'gangneung',
-    tier: 'tier-1',
     href: '/cities/gangneung',
     reason: 'Junction page now separates Gangneung as Route 2 terminus and Route 4 east-coast continuation anchor.',
     role: 'Route 2 / Route 4 junction',
@@ -99,7 +87,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Uljin',
     slug: 'uljin',
-    tier: 'tier-4',
     href: '/route-1/uljin',
     reason: 'Long-coast support page now explains why the overnight matters.',
     role: 'Coastal continuity node',
@@ -107,7 +94,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Yeongdeok',
     slug: 'yeongdeok',
-    tier: 'tier-4',
     href: '/route-1/yeongdeok',
     reason: 'Small-port coast page now has clear seafood identity, stay logic, and a clean handoff into Pohang.',
     role: 'Coastal flavor anchor',
@@ -115,7 +101,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Pohang',
     slug: 'pohang',
-    tier: 'tier-4',
     href: '/route-1/pohang',
     reason: 'Late-route hinge page now cleanly turns the long coast into a controlled final approach.',
     role: 'Late-coast hinge city',
@@ -123,7 +108,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Sangju',
     slug: 'sangju',
-    tier: 'tier-4',
     href: '/route-1/sangju',
     reason: 'Post-pass corridor page now gives the inland line a stable river-led handoff instead of a vague continuation.',
     role: 'Nakdong corridor hinge',
@@ -131,7 +115,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Samcheok',
     slug: 'samcheok',
-    tier: 'tier-4',
     href: '/route-4/samcheok',
     reason: 'Scenic continuation page now belongs to Route 4 as the National Route 7 coastline deepens after Gangneung and Donghae.',
     role: 'Route 4 scenic coastline continuation',
@@ -139,7 +122,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Pyeongchang',
     slug: 'pyeongchang',
-    tier: 'tier-4',
     href: '/route-2/pyeongchang',
     reason: 'Route 2 now gains its Olympic highland chapter with ski, Odaesan, Woljeongsa, and Jinbu access logic.',
     role: 'Olympic highland gateway',
@@ -147,7 +129,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Daegwallyeong',
     slug: 'daegwallyeong',
-    tier: 'tier-4',
     href: '/route-2/daegwallyeong',
     reason: 'Route 2 now has a final highland-pass stop before Gangneung and the East Sea.',
     role: 'Highland pass threshold',
@@ -155,7 +136,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Jeongseon',
     slug: 'jeongseon',
-    tier: 'tier-4',
     href: '/route-2/branch-a',
     reason: 'Branch 2A now uses Jeongseon as the Arirang market, railbike, Kangwon Land, and closed-mine transition chapter.',
     role: 'Arirang and casino transition',
@@ -163,7 +143,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Taebaek',
     slug: 'taebaek',
-    tier: 'tier-4',
     href: '/route-2/branch-a',
     reason: 'Branch 2A now uses Taebaek as the coal-history, Hanwoo, and highland threshold before Samcheok.',
     role: 'Coal and Hanwoo highland',
@@ -171,7 +150,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Yangyang',
     slug: 'yangyang',
-    tier: 'tier-4',
     href: '/route-4/yangyang',
     reason: 'Route 4 page now frames Yangyang through surf culture, Naksansa heritage, and the Sokcho-to-Gangneung handoff.',
     role: 'Surf-and-temple hinge',
@@ -179,7 +157,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Donghae',
     slug: 'donghae',
-    tier: 'tier-4',
     href: '/route-4/donghae',
     reason: 'New support page gives Donghae a clear Mukho, Chuam, and Mureung Valley role on the East Sea line.',
     role: 'Port-and-sunrise connector',
@@ -187,7 +164,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Ulsan',
     slug: 'ulsan',
-    tier: 'tier-4',
     href: '/route-4/ulsan',
     reason: 'Route 4 now uses Ulsan as the modern industrial coast chapter before Busan.',
     role: 'Industrial coast metropolis',
@@ -195,7 +171,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Miryang',
     slug: 'miryang',
-    tier: 'tier-4',
     href: '/route-1/miryang',
     reason: 'Quiet-hinge page now gives the late Route 1 line a calmer final handoff before Busan.',
     role: 'Quiet southern hinge',
@@ -203,7 +178,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Gongju',
     slug: 'gongju',
-    tier: 'tier-4',
     href: '/route-5/gongju',
     reason: 'Route 5 now opens with Gongju as the Baekje gateway before Jeonju and the Jeolla southbound line.',
     role: 'Baekje gateway',
@@ -211,7 +185,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Jeonju',
     slug: 'jeonju',
-    tier: 'tier-4',
     href: '/route-5/jeonju',
     reason: 'Route 5 now has a high-confidence Hanok Village, bibimbap, makgeolli, and Jeolla food overnight.',
     role: 'Jeolla food and hanok anchor',
@@ -219,7 +192,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Gwangju',
     slug: 'gwangju',
-    tier: 'tier-2',
     href: '/route-5/gwangju',
     reason: 'Route 5 now includes Gwangju as the Honam metropolitan anchor with May 18 memory, culture, food, and Mudeungsan before Suncheon.',
     role: 'Honam metropolitan anchor',
@@ -227,7 +199,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Imsil',
     slug: 'imsil',
-    tier: 'tier-4',
     href: '/route-5/imsil',
     reason: 'Route 5 inland variant now uses Imsil cheese country and Okjeongho to close the Jeonju-to-Namwon gap.',
     role: 'Jeolla cheese-country pause',
@@ -235,7 +206,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Namwon',
     slug: 'namwon',
-    tier: 'tier-4',
     href: '/route-5/namwon',
     reason: 'Route 5 now uses Namwon for Chunhyang, Gwanghalluwon, and Jirisan story depth before Suncheon.',
     role: 'Chunhyang and Jirisan handoff',
@@ -243,7 +213,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Suncheon',
     slug: 'suncheon',
-    tier: 'tier-4',
     href: '/route-5/suncheon',
     reason: 'Route 5 now gains an ecological hinge through Suncheon Bay Wetland and Suncheon Bay National Garden before Yeosu.',
     role: 'Wetland garden gateway',
@@ -251,7 +220,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Yeosu',
     slug: 'yeosu',
-    tier: 'tier-1',
     href: '/route-5/yeosu',
     reason: 'Route 5 now finishes with Yeosu as the south-coast finale through Odongdo, Hyangiram, seafood, and night sea.',
     role: 'South coast finale',
@@ -259,7 +227,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Incheon',
     slug: 'incheon',
-    tier: 'tier-2',
     href: '/route-6/incheon',
     reason: 'Route 6 now opens with Incheon as the West Sea open-port chapter, not only airport access.',
     role: 'Open-port gateway',
@@ -267,7 +234,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Suwon',
     slug: 'suwon',
-    tier: 'tier-2',
     href: '/route-6/suwon',
     reason: 'Route 6 now uses Suwon as the UNESCO Hwaseong and King Jeongjo fortress-planning hinge.',
     role: 'Fortress planning city',
@@ -275,7 +241,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Seosan',
     slug: 'seosan',
-    tier: 'tier-4',
     href: '/route-6/seosan',
     reason: 'Route 6 now gains Seosan as the Haemi, Naepo, and Taean gateway before Boryeong.',
     role: 'Naepo and Taean gateway',
@@ -283,7 +248,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Boryeong',
     slug: 'boryeong',
-    tier: 'tier-4',
     href: '/route-6/boryeong',
     reason: 'Route 6 now has its Daecheon Beach and Mud Festival west-coast chapter.',
     role: 'Mud festival coast',
@@ -291,7 +255,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Gunsan',
     slug: 'gunsan',
-    tier: 'tier-4',
     href: '/route-6/gunsan',
     reason: 'Route 6 now uses Gunsan as the modern port-history and old-street anchor before Mokpo.',
     role: 'Modern port memory city',
@@ -299,7 +262,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Mokpo',
     slug: 'mokpo',
-    tier: 'tier-2',
     href: '/route-6/mokpo',
     reason: 'Route 6 now finishes in Mokpo as the southwest harbor finale and future Route 7 handoff.',
     role: 'Southwest harbor finale',
@@ -307,7 +269,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Haenam',
     slug: 'haenam',
-    tier: 'tier-4',
     href: '/route-7/haenam',
     reason: 'Route 7 now opens the south coast through Haenam\'s Ttangkkeut, Duryunsan, Daeheungsa, and Wando handoff.',
     role: 'Land-end threshold',
@@ -315,7 +276,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Wando',
     slug: 'wando',
-    tier: 'tier-4',
     href: '/route-7/wando',
     reason: 'Route 7 now uses Wando as the island, seafood, Cheongsando, and arboretum gateway after Haenam.',
     role: 'Island seafood gateway',
@@ -323,7 +283,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Boseong',
     slug: 'boseong',
-    tier: 'tier-4',
     href: '/route-7/boseong',
     reason: 'Route 7 now slows into Boseong green tea fields before Suncheon ecology.',
     role: 'Green tea field pause',
@@ -331,7 +290,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Namhae',
     slug: 'namhae',
-    tier: 'tier-4',
     href: '/route-7/namhae',
     reason: 'Route 7 now gives the south coast an island-road chapter through German Village, Boriam, terraces, and beaches.',
     role: 'Island road chapter',
@@ -339,7 +297,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Tongyeong',
     slug: 'tongyeong',
-    tier: 'tier-4',
     href: '/route-7/tongyeong',
     reason: 'Route 7 now includes Tongyeong as the Yi Sun-sin, Samdo Sugun Tongjeyeong, Hallyeohaesang, ferry, seafood, and living port-culture chapter.',
     role: 'Yi Sun-sin naval port city',
@@ -347,7 +304,6 @@ export const updatedCities: UpdatedCity[] = [
   {
     name: 'Geoje',
     slug: 'geoje',
-    tier: 'tier-4',
     href: '/route-7/geoje',
     reason: 'Route 7 now uses Geoje as the shipbuilding, POW history, Windy Hill, Oedo, and Busan handoff island.',
     role: 'Modern island handoff',

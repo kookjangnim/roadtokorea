@@ -1,7 +1,7 @@
-export type { Hotspot } from './tier2Cities';
-import type { Hotspot } from './tier2Cities';
+export type { Hotspot } from './anchorCityData';
+import type { Hotspot } from './anchorCityData';
 
-export interface TierCityData {
+export interface LocalCityData {
   slug: string;
   name: string;
   heroImage: string;
@@ -11,7 +11,7 @@ export interface TierCityData {
   hotspots: Hotspot[];
 }
 
-export const tier4Cities: Record<string, TierCityData> = {
+export const supportCityData: Record<string, LocalCityData> = {
   cheonan: {
     name: 'Cheonan',
     slug: 'cheonan',

@@ -1,7 +1,6 @@
 import { VALID_CITY_SLUGS } from '../constants/cities';
 import type { WPPost } from './wp-api';
-
-const INDEXABLE_TIER_SLUGS = new Set(['tier-1', 'tier-2', 'tier-3', 'tier-4']);
+import { isLegacyCategorySlug } from './legacy-route-compat';
 const EXCLUDED_POST_SLUGS = new Set(['hello-world']);
 
 type WpTerm = {
@@ -10,7 +9,7 @@ type WpTerm = {
 };
 
 export type IndexableWpPostRoute = {
-  tierSlug: string;
+  legacyCategorySlug: string;
   citySlug: string;
   href: string;
 };
@@ -22,12 +21,16 @@ function getEmbeddedTerms(post: Pick<WPPost, '_embedded'>): WpTerm[] {
 export function getIndexableWpPostRoute(post: WPPost): IndexableWpPostRoute | null {
   if (EXCLUDED_POST_SLUGS.has(post.slug)) return null;
 
-  let tierSlug = '';
+  let legacyCategorySlug = '';
   let citySlug = '';
 
   for (const term of getEmbeddedTerms(post)) {
-    if (term.taxonomy === 'category' && term.slug && INDEXABLE_TIER_SLUGS.has(term.slug)) {
-      tierSlug = term.slug;
+    if (
+      term.taxonomy === 'category' &&
+      term.slug &&
+      isLegacyCategorySlug(term.slug)
+    ) {
+      legacyCategorySlug = term.slug;
     }
 
     if (
@@ -40,16 +43,25 @@ export function getIndexableWpPostRoute(post: WPPost): IndexableWpPostRoute | nu
     }
   }
 
-  if (!tierSlug || !citySlug) return null;
+  if (!legacyCategorySlug || !citySlug) return null;
 
   return {
-    tierSlug,
+    legacyCategorySlug,
     citySlug,
-    href: `/${tierSlug}/${citySlug}/${post.slug}`,
+    href: `/cities/${citySlug}/${post.slug}`,
   };
 }
 
-export function isWpPostRouteMatch(post: WPPost, tierSlug: string, citySlug: string): boolean {
+export function isWpPostCityMatch(post: WPPost, citySlug: string): boolean {
   const route = getIndexableWpPostRoute(post);
-  return route?.tierSlug === tierSlug && route.citySlug === citySlug;
+  return route?.citySlug === citySlug;
+}
+
+export function isLegacyWpPostRouteMatch(
+  post: WPPost,
+  legacyCategorySlug: string,
+  citySlug: string
+): boolean {
+  const route = getIndexableWpPostRoute(post);
+  return route?.legacyCategorySlug === legacyCategorySlug && route.citySlug === citySlug;
 }

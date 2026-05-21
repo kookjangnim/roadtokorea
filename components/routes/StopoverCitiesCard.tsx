@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { RouteStopover } from '@/data/routeStopovers';
-import { tier2Cities } from '@/data/tier2Cities';
-import { tier4Cities } from '@/data/tier4Cities';
+import { getLocalCityDataBySlug } from '@/data/cityRegistry';
 import { getRouteCityHref, type RouteSlug } from '@/data/routeRegistry';
 
 interface StopoverCitiesCardProps {
@@ -12,9 +11,7 @@ interface StopoverCitiesCardProps {
 }
 
 function getStopoverImage(stopover: RouteStopover) {
-  const tier2Hero = tier2Cities[stopover.citySlug]?.heroImage;
-  const tier4Hero = tier4Cities[stopover.citySlug]?.heroImage;
-  return tier2Hero || tier4Hero || '/images/placeholder.png';
+  return getLocalCityDataBySlug(stopover.citySlug)?.heroImage || '/images/placeholder.png';
 }
 
 function getCityGuideHref(routeSlug: RouteSlug, stopover: RouteStopover) {
@@ -65,7 +62,7 @@ export default function StopoverCitiesCard({
               </p>
               <h3 className="mt-2 font-serif text-3xl text-stone-950">{stopover.city}</h3>
               <p className="mt-2 text-sm text-stone-500">
-                Tier {stopover.tier} · {stopover.cumulativeTime} from Seoul
+                Cumulative route time: {stopover.cumulativeTime}
               </p>
             </div>
 

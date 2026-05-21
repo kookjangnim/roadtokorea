@@ -1,7 +1,4 @@
 import { getAllRouteData, getRouteData, type RouteData } from '@/data/routeStopovers';
-import { tier1Cities } from '@/data/tier1Cities';
-import { tier2Cities } from '@/data/tier2Cities';
-import { tier4Cities } from '@/data/tier4Cities';
 import { getJunctionCity, getJunctionRouteSlugs, junctionCityRegistry } from '@/data/junctionCities';
 
 export type RouteSlug = 'route-1' | 'route-2' | 'route-3' | 'route-4' | 'route-5' | 'route-6' | 'route-7' | 'route-8';
@@ -32,12 +29,6 @@ export const routePairBySlug: Record<RouteSlug, { from: string; to: string }> = 
   'route-6': { from: 'seoul', to: 'mokpo' },
   'route-7': { from: 'mokpo', to: 'busan' },
   'route-8': { from: 'seoul', to: 'haenam' },
-};
-
-const localCityTierBySlug: Record<string, string> = {
-  ...Object.fromEntries(Object.keys(tier1Cities).map((slug) => [slug, 'tier-1'])),
-  ...Object.fromEntries(Object.keys(tier2Cities).map((slug) => [slug, 'tier-2'])),
-  ...Object.fromEntries(Object.keys(tier4Cities).map((slug) => [slug, 'tier-4'])),
 };
 
 const preferredRouteByCitySlug: Record<string, RouteSlug> = {
@@ -101,10 +92,6 @@ export function getRouteDataBySlug(routeSlug: string): RouteData | null {
   return getRouteData(pair.from, pair.to);
 }
 
-export function getLocalCityTier(citySlug: string): string | null {
-  return localCityTierBySlug[citySlug] ?? null;
-}
-
 export function getPreferredRouteSlugForCity(citySlug: string): RouteSlug | null {
   if (getJunctionCity(citySlug)) return null;
   return preferredRouteByCitySlug[citySlug] ?? null;
@@ -135,19 +122,25 @@ export function getRouteCityLinks(): RouteCityLink[] {
 
   for (const routeData of getAllRouteData()) {
     const routeSlug = getRouteSlugForRoute(routeData);
+    const addRouteCityLink = (citySlug: string) => {
+      const key = `${routeSlug}:${citySlug}`;
+      links.set(key, {
+        citySlug,
+        routeSlug,
+        href: getRouteCityHref(routeSlug, citySlug),
+      });
+    };
+
+    addRouteCityLink(routeData.fromSlug);
     for (const transport of Object.values(routeData.transports)) {
       const variants = transport.variants?.length ? transport.variants : [transport];
       for (const variant of variants) {
         for (const stopover of variant.stopovers) {
-          const key = `${routeSlug}:${stopover.citySlug}`;
-          links.set(key, {
-            citySlug: stopover.citySlug,
-            routeSlug,
-            href: getRouteCityHref(routeSlug, stopover.citySlug),
-          });
+          addRouteCityLink(stopover.citySlug);
         }
       }
     }
+    addRouteCityLink(routeData.toSlug);
   }
 
   return [...links.values()];

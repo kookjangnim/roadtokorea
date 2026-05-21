@@ -1,10 +1,10 @@
 import { notFound, redirect } from 'next/navigation';
-import CityPage from '@/app/[tier]/[city]/page';
+import CityPage from '@/components/city-detail/CityGuidePage';
 import {
   getCanonicalCityHref,
-  getLocalCityTier,
   getPreferredRouteSlugForCity,
 } from '@/data/routeRegistry';
+import { hasLocalCityData } from '@/data/cityRegistry';
 
 interface PageProps {
   params: Promise<{
@@ -18,8 +18,7 @@ export default async function CityCanonicalRedirectPage({ params }: PageProps) {
     redirect(getCanonicalCityHref(city));
   }
 
-  const tier = getLocalCityTier(city);
-  if (!tier) notFound();
+  if (!hasLocalCityData(city)) notFound();
 
-  return <CityPage params={Promise.resolve({ tier, city })} />;
+  return <CityPage params={Promise.resolve({ city })} />;
 }

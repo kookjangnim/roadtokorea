@@ -1,8 +1,7 @@
-
+﻿
 /**
  * WordPress REST API Client
- * WordPress Headless CMS에서 데이터를 가져오는 클라이언트
- */
+ * WordPress Headless CMS?먯꽌 ?곗씠?곕? 媛?몄삤???대씪?댁뼵?? */
 
 
 import { getApiBase } from './site-config';
@@ -49,19 +48,17 @@ export interface WPCategory {
 const WP_API_BASE = getApiBase();
 
 /**
- * WordPress REST API 기본 설정
+ * WordPress REST API 湲곕낯 ?ㅼ젙
  */
 const WP_CONFIG = {
   baseUrl: WP_API_BASE,
-  timeout: 10000, // 10초
-  retries: 3,
+  timeout: 10000, // 10珥?  retries: 3,
 } as const;
 
 /**
- * WordPress 포스트 목록 가져오기
- *
- * @param options - 가져오기 옵션
- * @returns 포스트 배열
+ * WordPress ?ъ뒪??紐⑸줉 媛?몄삤湲? *
+ * @param options - 媛?몄삤湲??듭뀡
+ * @returns ?ъ뒪??諛곗뿴
  */
 export async function fetchPosts(options: {
   perPage?: number;
@@ -108,58 +105,26 @@ export async function fetchPosts(options: {
 
   try {
     const response = await fetch(url, {
-      next: { revalidate: 60 }, // 1분 캐시 (ISR)
+      next: { revalidate: 60 }, // 1遺?罹먯떆 (ISR)
     });
 
     if (!response.ok) {
-      throw new Error(`WordPress API 에러: ${response.status} ${response.statusText}`);
+      throw new Error(`WordPress API ?먮윭: ${response.status} ${response.statusText}`);
     }
 
     const posts = await response.json();
     return posts;
   } catch (error) {
-    console.error('[WP API] 포스트 가져오기 실패:', error);
+    console.error('[WP API] ?ъ뒪??媛?몄삤湲??ㅽ뙣:', error);
     throw error;
   }
 }
 
-/**
- * Tier별 카테고리 ID 매핑
- */
-const TIER_CATEGORY_IDS = {
-  'tier-1': 1,
-  'tier-2': 9,
-  'tier-3': 10,
-  'tier-4': 11,
-} as const;
-
-export type TierCategory = keyof typeof TIER_CATEGORY_IDS;
 
 /**
- * Tier별 포스트 가져오기
+ * 理쒖떊 ?ъ뒪??媛?몄삤湲?(紐⑤뱺 ?곗뼱)
  *
- * @param tier - 티어 ('tier-1', 'tier-2', 'tier-3', 'tier-4')
- * @param perPage - 가져올 포스트 수
- * @returns 포스트 배열
- */
-export async function fetchPostsByTier(
-  tier: TierCategory,
-  perPage: number = 10
-): Promise<WPPost[]> {
-  const categoryId = TIER_CATEGORY_IDS[tier];
-
-  return fetchPosts({
-    perPage,
-    page: 1,
-    categories: [categoryId],
-  });
-}
-
-/**
- * 최신 포스트 가져오기 (모든 티어)
- *
- * @param perPage - 가져올 포스트 수
- * @returns 포스트 배열
+ * @param perPage - 媛?몄삱 ?ъ뒪???? * @returns ?ъ뒪??諛곗뿴
  */
 export async function fetchLatestPosts(perPage: number = 4): Promise<WPPost[]> {
   return fetchPosts({
@@ -169,10 +134,9 @@ export async function fetchLatestPosts(perPage: number = 4): Promise<WPPost[]> {
 }
 
 /**
- * 특정 포스트 가져오기 (슬러그 기반)
+ * ?뱀젙 ?ъ뒪??媛?몄삤湲?(?щ윭洹?湲곕컲)
  *
- * @param slug - 포스트 슬러그
- * @returns 포스트 또는 null
+ * @param slug - ?ъ뒪???щ윭洹? * @returns ?ъ뒪???먮뒗 null
  */
 export async function fetchPostBySlug(slug: string): Promise<WPPost | null> {
   const url = `${WP_CONFIG.baseUrl}/posts?slug=${slug}&_embed=1`;
@@ -189,41 +153,39 @@ export async function fetchPostBySlug(slug: string): Promise<WPPost | null> {
     const posts = await response.json();
     return posts.length > 0 ? posts[0] : null;
   } catch (error) {
-    console.error('[WP API] 포스트 가져오기 실패:', error);
+    console.error('[WP API] ?ъ뒪??媛?몄삤湲??ㅽ뙣:', error);
     return null;
   }
 }
 
 /**
- * 카테고리 목록 가져오기
- *
- * @returns 카테고리 배열
+ * 移댄뀒怨좊━ 紐⑸줉 媛?몄삤湲? *
+ * @returns 移댄뀒怨좊━ 諛곗뿴
  */
 export async function fetchCategories(): Promise<WPCategory[]> {
   const url = `${WP_CONFIG.baseUrl}/categories`;
 
   try {
     const response = await fetch(url, {
-      next: { revalidate: 3600 }, // 1시간 캐시
+      next: { revalidate: 3600 }, // 1?쒓컙 罹먯떆
     });
 
     if (!response.ok) {
-      throw new Error(`WordPress API 에러: ${response.status}`);
+      throw new Error(`WordPress API ?먮윭: ${response.status}`);
     }
 
     const categories = await response.json();
     return categories;
   } catch (error) {
-    console.error('[WP API] 카테고리 가져오기 실패:', error);
+    console.error('[WP API] 移댄뀒怨좊━ 媛?몄삤湲??ㅽ뙣:', error);
     throw error;
   }
 }
 
 /**
- * 카테고리 슬러그으로 ID 찾기
+ * 移댄뀒怨좊━ ?щ윭洹몄쑝濡?ID 李얘린
  *
- * @param slug - 카테고리 슬러그
- * @returns 카테고리 ID 또는 undefined
+ * @param slug - 移댄뀒怨좊━ ?щ윭洹? * @returns 移댄뀒怨좊━ ID ?먮뒗 undefined
  */
 export async function getCategoryIdBySlug(slug: string): Promise<number | undefined> {
   const categories = await fetchCategories();
@@ -231,36 +193,34 @@ export async function getCategoryIdBySlug(slug: string): Promise<number | undefi
 }
 
 /**
- * 태그 슬러그으로 ID 찾기
+ * ?쒓렇 ?щ윭洹몄쑝濡?ID 李얘린
  *
- * @param slug - 태그 슬러그
- * @returns 태그 ID 또는 undefined
+ * @param slug - ?쒓렇 ?щ윭洹? * @returns ?쒓렇 ID ?먮뒗 undefined
  */
 export async function getTagIdBySlug(slug: string): Promise<number | undefined> {
   const url = `${WP_CONFIG.baseUrl}/tags?slug=${slug}`;
   try {
     const response = await fetch(url, { next: { revalidate: 60 } });
-    if (!response.ok) throw new Error(`WordPress API 에러: ${response.status}`);
+    if (!response.ok) throw new Error(`WordPress API ?먮윭: ${response.status}`);
     const tags = await response.json();
     return tags.length > 0 ? tags[0].id : undefined;
   } catch (error) {
-    console.error('[WP API] 태그 ID 가져오기 실패:', error);
+    console.error('[WP API] ?쒓렇 ID 媛?몄삤湲??ㅽ뙣:', error);
     return undefined;
   }
 }
 
 /**
- * 도시 태그명 기반 관련 포스트 검색
- *
- * @param slug - 도시 슬러그 (예: 'seoul', 'busan')
- * @param perPage - 최대 노출 수량
- * @returns 포스트 배열
+ * ?꾩떆 ?쒓렇紐?湲곕컲 愿???ъ뒪??寃?? *
+ * @param slug - ?꾩떆 ?щ윭洹?(?? 'seoul', 'busan')
+ * @param perPage - 理쒕? ?몄텧 ?섎웾
+ * @returns ?ъ뒪??諛곗뿴
  */
 export async function fetchPostsByCityTag(slug: string, perPage: number = 4): Promise<WPPost[]> {
   const tagId = await getTagIdBySlug(slug.toLowerCase());
   
   if (!tagId) {
-    // 태그가 없으면 빈 배열을 반환 (관련 없는 최신 포스트 노출 방지)
+    // ?쒓렇媛 ?놁쑝硫?鍮?諛곗뿴??諛섑솚 (愿???녿뒗 理쒖떊 ?ъ뒪???몄텧 諛⑹?)
     return [];
   }
 
@@ -269,3 +229,4 @@ export async function fetchPostsByCityTag(slug: string, perPage: number = 4): Pr
     tags: [tagId],
   });
 }
+

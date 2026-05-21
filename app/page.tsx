@@ -187,7 +187,7 @@ export default async function Home() {
                     className="group rounded-[1.75rem] border border-stone-200 bg-stone-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-stone-900/15 hover:bg-white"
                   >
                     <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                      {city.tier.replace('tier-', 'Tier ')}
+                      Route-ready chapter
                     </p>
                     <h3 className="mt-3 font-serif text-3xl text-stone-950">{city.name}</h3>
                     <p className="mt-4 text-sm leading-7 text-stone-700">{city.role}</p>

@@ -73,6 +73,19 @@ function getCompactTitle(route: RouteNetworkRoute) {
   return route.title.replace(', ', ' / ');
 }
 
+function getVisibleRoutes(selectedRouteId: string, showAllRoutes: boolean) {
+  if (showAllRoutes) return routeNetworkRoutes;
+
+  const leadingRoutes = routeNetworkRoutes.slice(0, 3);
+  const selectedRoute = routeNetworkRoutes.find((route) => route.id === selectedRouteId);
+
+  if (!selectedRoute || leadingRoutes.some((route) => route.id === selectedRoute.id)) {
+    return leadingRoutes;
+  }
+
+  return [selectedRoute, ...leadingRoutes.slice(0, 2)];
+}
+
 const LABEL_PLACEMENTS: Record<string, { x: number; y: number }> = {
   goseong: { x: 12, y: -16 },
   sokcho: { x: 12, y: -2 },
@@ -149,8 +162,8 @@ function RealKoreaMap({
 
         L.polyline(coords, {
           color: route.color,
-          weight: isActive ? 7 : 3,
-          opacity: isActive ? 0.98 : 0.28,
+          weight: isActive ? 7 : 2.5,
+          opacity: isActive ? 0.98 : 0.13,
           dashArray: route.id.startsWith('branch-') ? '6 8' : undefined,
           lineCap: 'round',
           lineJoin: 'round',
@@ -203,7 +216,7 @@ function RealKoreaMap({
             position:relative;
             min-width:${isActive ? 150 : size}px;
             height:46px;
-            opacity:${isActive ? 1 : 0.48};
+            opacity:${isActive ? 1 : 0.26};
           ">
             <span style="
               position:absolute;
@@ -233,10 +246,26 @@ function RealKoreaMap({
         .map((city) => [city.lat, city.lng] as [number, number]);
 
       if (activeCoords.length) {
+        const viewportWidth = window.innerWidth;
+        const fitPadding =
+          viewportWidth >= 1280
+            ? {
+                paddingTopLeft: [430, 92] as [number, number],
+                paddingBottomRight: [350, 190] as [number, number],
+              }
+            : viewportWidth >= 768
+              ? {
+                  paddingTopLeft: [64, 310] as [number, number],
+                  paddingBottomRight: [64, 64] as [number, number],
+                }
+              : {
+                  paddingTopLeft: [32, 360] as [number, number],
+                  paddingBottomRight: [32, 56] as [number, number],
+                };
+
         map.fitBounds(L.latLngBounds(activeCoords.map(([lat, lng]) => L.latLng(lat, lng))), {
-          paddingTopLeft: [420, 90],
-          paddingBottomRight: [360, 215],
-          maxZoom: 8,
+          ...fitPadding,
+          maxZoom: viewportWidth >= 1280 ? 8 : 7,
           animate: false,
         });
       }
@@ -263,78 +292,107 @@ function RealKoreaMap({
 }
 
 export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
-  const defaultRouteId = routeNetworkRoutes.find((route) => route.id === 'route-3')?.id ?? routeNetworkRoutes[0]?.id ?? '';
+  const defaultRouteId = routeNetworkRoutes.find((route) => route.id === 'route-1')?.id ?? routeNetworkRoutes[0]?.id ?? '';
   const [selectedRouteId, setSelectedRouteId] = useState(defaultRouteId);
+  const [showAllRoutes, setShowAllRoutes] = useState(false);
 
   const activeRoute = routeNetworkRoutes.find((route) => route.id === selectedRouteId) ?? routeNetworkRoutes[0];
   const activeScene = ROUTE_SCENES[activeRoute?.id ?? ''] ?? ROUTE_SCENES['route-1'];
   const routeDataByHref = useMemo(() => new Map(routes.map((route) => [route.href, route])), [routes]);
   const activeRouteData = activeRoute ? routeDataByHref.get(activeRoute.href) : undefined;
-  const activeCities = activeRoute
-    ? activeRoute.citySlugs.map((slug) => routeNetworkCities[slug]).filter(Boolean)
-    : [];
   const activeCitySlugsKey = activeRoute?.citySlugs.join('|') ?? '';
+  const visibleRoutes = getVisibleRoutes(selectedRouteId, showAllRoutes);
 
   if (!activeRoute) return null;
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative mt-2 min-h-screen overflow-hidden bg-[#11100e] shadow-[0_-8px_24px_rgba(17,16,14,0.08)]">
       {/* Full-screen map background */}
       <div className="absolute inset-0 z-0 h-full w-full">
         <RealKoreaMap
           activeRoute={activeRoute}
           activeCitySlugsKey={activeCitySlugsKey}
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(12,11,10,.28)_0%,rgba(12,11,10,.06)_38%,rgba(12,11,10,.24)_100%)]" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-[48rem] bg-[linear-gradient(90deg,rgba(12,11,10,.7)_0%,rgba(12,11,10,.42)_45%,rgba(12,11,10,0)_100%)] lg:block" />
       </div>
 
       {/* Content overlay - positioned in map's empty space (top-left corner) */}
-      <div className="relative z-[1000] mx-auto max-w-[1800px] px-4 py-8 md:px-8 md:py-12 xl:px-12">
-        <div className="grid min-h-[calc(100svh-6rem)] gap-6 xl:grid-cols-[360px_minmax(560px,1fr)_300px] xl:items-start">
+      <div className="relative z-30 mx-auto max-w-[1800px] px-4 py-5 md:px-8 md:py-8 xl:px-12">
+        <div className="grid min-h-[calc(100svh-3.5rem)] content-start gap-4 md:min-h-[calc(100svh-4rem)] md:gap-5 xl:grid-cols-[360px_minmax(560px,1fr)_300px] xl:items-start">
           {/* Left side - Route info card */}
-          <div className="xl:pt-2">
-            <div className="max-w-lg rounded-2xl border border-white/12 bg-black/48 p-6 backdrop-blur-xl md:p-8 xl:max-w-none xl:p-7">
-              <div className="mb-5">
+          <div className="min-w-0 xl:pt-2">
+            <div className="w-full min-w-0 max-w-lg rounded-2xl border border-white/14 bg-black/60 p-5 shadow-[0_24px_80px_rgba(0,0,0,.28)] backdrop-blur-2xl md:p-6 xl:max-w-none">
+              <div
+                key={activeRoute.id}
+                className="min-w-0 animate-[routeHeroFade_.32s_ease-out]"
+              >
                 <span className="inline-flex border border-amber-200/20 bg-amber-100/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.34em] text-amber-100 backdrop-blur">
                   {activeScene.eyebrow}
                 </span>
-                <h1 className="mt-4 font-serif text-3xl leading-tight text-white md:text-4xl lg:text-5xl">
+                <h1 className="mt-4 max-w-full break-words font-serif text-3xl leading-tight text-white md:text-4xl lg:text-5xl">
                   {getCompactTitle(activeRoute)}
                 </h1>
+
+                <p className="mt-4 max-w-full text-base leading-7 text-stone-200 md:text-lg">
+                  {activeRouteData?.destinationPitch ?? activeRoute.summary}
+                </p>
               </div>
 
-              <p className="mb-5 text-base leading-7 text-stone-200 md:text-lg">
-                {activeRouteData?.destinationPitch ?? activeRoute.summary}
-              </p>
-
-              <p className="mb-5 text-sm leading-6 text-stone-400">{activeScene.terrain}</p>
-
-              <div className="mb-6 flex flex-wrap gap-2">
-                {activeCities.slice(0, 4).map((city) => (
-                  <Link
-                    key={`${activeRoute.id}-${city.slug}`}
-                    href={city.href}
-                    className="border border-white/12 bg-white/8 px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-stone-200 transition-colors hover:border-white/24 hover:bg-white/14"
-                  >
-                    {city.name}
-                  </Link>
-                ))}
-              </div>
-
-              <div className="flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Link
                   href={activeRoute.href}
-                  className="bg-white px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-stone-950 transition-transform hover:-translate-y-0.5"
+                  className="inline-flex w-full justify-center bg-white px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-stone-950 shadow-[0_12px_28px_rgba(255,255,255,.18)] transition-transform hover:-translate-y-0.5 sm:w-auto"
                 >
                   Open Route
                 </Link>
                 <Link
                   href="#how-it-works"
-                  className="border border-white/18 px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-white transition-colors hover:border-white/30 hover:bg-white/8"
+                  className="inline-flex w-full justify-center border border-white/14 px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-stone-200 transition-colors hover:border-white/30 hover:bg-white/8 sm:w-auto"
                 >
                   How it works
                 </Link>
               </div>
+            </div>
+
+            <div className="mt-4 w-full min-w-0 max-w-lg rounded-2xl border border-white/12 bg-black/48 p-3 shadow-[0_18px_60px_rgba(0,0,0,.22)] backdrop-blur-xl xl:hidden">
+              <div className="flex gap-2 overflow-x-auto pb-1">
+                {visibleRoutes.map((route) => {
+                  const isActive = selectedRouteId === route.id;
+
+                  return (
+                    <button
+                      key={route.id}
+                      type="button"
+                      onClick={() => setSelectedRouteId(route.id)}
+                      className={`min-w-[11.5rem] border px-4 py-3 text-left transition-all ${
+                        isActive
+                          ? 'border-white/30 bg-white/14'
+                          : 'border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/8'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-stone-400">
+                          {route.label}
+                        </p>
+                        <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: route.color }} />
+                      </div>
+                      <h3 className="mt-2 line-clamp-2 font-serif text-base leading-tight text-white">
+                        {route.title}
+                      </h3>
+                    </button>
+                  );
+                })}
+              </div>
+              {!showAllRoutes && routeNetworkRoutes.length > visibleRoutes.length && (
+                <button
+                  type="button"
+                  onClick={() => setShowAllRoutes(true)}
+                  className="mt-2 w-full border border-white/10 px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-300 transition-colors hover:border-white/24 hover:bg-white/8"
+                >
+                  All routes
+                </button>
+              )}
             </div>
           </div>
 
@@ -346,8 +404,8 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
               <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.32em] text-stone-400">
                 Routes
               </p>
-              <div className="flex flex-col gap-3 max-h-[55vh] overflow-y-auto pr-3">
-                {routeNetworkRoutes.map((route) => {
+              <div className="flex flex-col gap-3">
+                {visibleRoutes.map((route) => {
                   const isActive = selectedRouteId === route.id;
 
                   return (
@@ -374,13 +432,22 @@ export default function TerrainRouteHero({ routes }: TerrainRouteHeroProps) {
                   );
                 })}
               </div>
+              {!showAllRoutes && routeNetworkRoutes.length > visibleRoutes.length && (
+                <button
+                  type="button"
+                  onClick={() => setShowAllRoutes(true)}
+                  className="mt-4 w-full border border-white/10 px-5 py-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-300 transition-colors hover:border-white/24 hover:bg-white/8"
+                >
+                  All routes
+                </button>
+              )}
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/60 to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-[20] h-24 bg-gradient-to-t from-black/38 to-transparent md:h-28" />
     </section>
   );
 }

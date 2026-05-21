@@ -1,13 +1,10 @@
-import { tier1Cities } from '@/data/tier1Cities';
-import { tier2Cities } from '@/data/tier2Cities';
-import { tier4Cities } from '@/data/tier4Cities';
+import { getAllLocalCityData } from '@/data/cityRegistry';
 import { getCanonicalCityHref } from '@/data/routeRegistry';
 
 export interface SeoulRouteOption {
   slug: string;
   name: string;
   href: string;
-  tier: number;
   image: string;
   headline: string;
   description: string;
@@ -25,7 +22,7 @@ export interface SeoulRouteOption {
 
 const routeMeta: Record<
   string,
-  Omit<SeoulRouteOption, 'name' | 'href' | 'tier' | 'image' | 'headline' | 'description' | 'slug'>
+  Omit<SeoulRouteOption, 'name' | 'href' | 'image' | 'headline' | 'description' | 'slug'>
 > = {
   busan: {
     routePitch: 'The clearest southbound contrast to Seoul: sea air, denser seafood culture, and a slower urban rhythm.',
@@ -192,25 +189,18 @@ const routeMeta: Record<
 };
 
 export function getSeoulRouteOptions(): SeoulRouteOption[] {
-  const mergedCities = [
-    ...Object.values(tier1Cities).map((city) => ({ ...city, tier: 1 })),
-    ...Object.values(tier2Cities).map((city) => ({ ...city, tier: 2 })),
-    ...Object.values(tier4Cities).map((city) => ({ ...city, tier: 4 })),
-  ];
-
-  return mergedCities
+  return getAllLocalCityData()
     .filter((city) => city.slug !== 'seoul' && routeMeta[city.slug])
     .map((city) => ({
       slug: city.slug,
       name: city.name,
       href: getCanonicalCityHref(city.slug),
-      tier: city.tier,
       image: city.heroImage,
       headline: city.headline,
       description: city.description,
       ...routeMeta[city.slug],
     }))
-    .sort((a, b) => a.tier - b.tier || a.name.localeCompare(b.name));
+    .sort((a, b) => a.href.localeCompare(b.href) || a.name.localeCompare(b.name));
 }
 
 export function getSeoulRouteOptionBySlug(citySlug: string): SeoulRouteOption | null {

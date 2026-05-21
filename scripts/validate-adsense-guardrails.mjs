@@ -16,10 +16,12 @@ assert.doesNotMatch(cityPage, /coming soon|currently being drafted/i);
 assert.doesNotMatch(updatedCities, /href:\s*'\/cities\/(?:jeongseon|taebaek)'/);
 assert.doesNotMatch(routeBranches, /href:\s*'\/cities\/(?:jeongseon|taebaek)'/);
 assert.doesNotMatch(routeNetwork, /(?:jeongseon|taebaek): \{[^}]+href: '\/cities\//);
-assert.match(tier1CitiesRedirect, /redirect\('\/updated-cities'\)/);
-assert.match(tier2CitiesRedirect, /redirect\('\/updated-cities'\)/);
-assert.match(tier4CitiesRedirect, /redirect\('\/updated-cities'\)/);
+assert.match(tierCitiesPage, /redirect\(LEGACY_ROUTE_INDEX_HREF\)/);
+assert.doesNotMatch(tierCitiesPage, /fetchCitiesByTier|CityList|CollectionPage/);
+assert.match(tier1CitiesRedirect, /redirect\(LEGACY_ROUTE_INDEX_HREF\)/);
+assert.match(tier2CitiesRedirect, /redirect\(LEGACY_ROUTE_INDEX_HREF\)/);
+assert.match(tier4CitiesRedirect, /redirect\(LEGACY_ROUTE_INDEX_HREF\)/);
 assert.match(hero, /xl:grid-cols-\[360px_minmax\(560px,1fr\)_300px\]/);
-assert.match(hero, /paddingTopLeft:\s*\[420,\s*90\]/);
+assert.match(hero, /paddingTopLeft:\s*\[430,\s*92\]/);
 
 console.log('AdSense and hero guardrails passed');

@@ -1,28 +1,15 @@
-import type { Metadata } from 'next';
-import CityPage, { generateMetadata as generateSharedMetadata } from '@/app/[tier]/[city]/page';
+import { redirect } from 'next/navigation';
+import { getCanonicalCityHref } from '@/data/routeRegistry';
 
 type Params = {
   city: string;
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<Params>;
-}): Promise<Metadata> {
-  const resolved = await params;
-  return generateSharedMetadata({
-    params: Promise.resolve({ tier: 'tier-1', city: resolved.city }),
-  });
-}
-
-export default async function Tier1CityPage({
+export default async function TierOneCityRedirectPage({
   params,
 }: {
   params: Promise<Params>;
 }) {
-  const resolved = await params;
-  return CityPage({
-    params: Promise.resolve({ tier: 'tier-1', city: resolved.city }),
-  });
+  const { city } = await params;
+  redirect(getCanonicalCityHref(city));
 }
