@@ -1125,6 +1125,249 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  jeonju: {
+    hanok: {
+      stay: {
+        question: 'Should you sleep near Jeonju Hanok Village?',
+        summary: 'Jeonju Hanok Village is one of the clearest places in Korea where staying nearby can change the trip. The value is the evening walk, slower breakfast, and old-city atmosphere after day visitors leave.',
+        cards: [
+          { title: 'Stay nearby for the evening layer', body: 'The village feels different after the day-trip crowd thins and the streets become slower.' },
+          { title: 'Use central Jeonju for practical comfort', body: 'If luggage, parking, or hotel standards matter more than hanok atmosphere, a central stay can be easier.' },
+          { title: 'Choose hanok stays deliberately', body: 'A hanok stay can be memorable, but travelers should expect atmosphere over hotel-style convenience.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Jeonju Hanok Village?',
+        summary: 'Food is not a side note in Jeonju. Around Hanok Village, the best plan separates snacks, bibimbap or proper meals, makgeolli-style evenings, and cafe breaks instead of trying to eat everything at once.',
+        cards: [
+          { title: 'Use snacks while walking', body: 'Street snacks support the village walk, but they should not replace the main Jeonju food experience.' },
+          { title: 'Plan one proper meal', body: 'Bibimbap, local set meals, or a stronger Jeonju dinner gives the city more depth than grazing only.' },
+          { title: 'Save evening appetite', body: 'Jeonju becomes more interesting when dinner or drinks are part of the overnight rhythm.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Jeonju Hanok Village?',
+        summary: 'Hanok Village works best with Gyeonggijeon, Jeondong Cathedral, local lanes, markets, and a slower old-city loop rather than a scattered checklist.',
+        cards: [
+          { title: 'Two-hour version: village, shrine, and cathedral', body: 'This gives first-time visitors the core old-city shape without stretching the day.' },
+          { title: 'Half-day version: village, market, and food', body: 'This is the strongest use when Jeonju is a route stop rather than a quick photo detour.' },
+          { title: 'Overnight version: sunset walk and breakfast', body: 'Sleeping nearby lets the area feel less like a day-trip crowd zone.' },
+        ],
+      },
+      transport: {
+        question: 'How do you move through Jeonju Hanok Village smoothly?',
+        summary: 'The village is walk-first, but arrival and luggage planning matter. Keep cars and bags out of the core whenever possible.',
+        cards: [
+          { title: 'Arrive, park, then walk', body: 'The old-city core is easier when movement is pedestrian, not car-dependent.' },
+          { title: 'Plan station-to-village transfer', body: 'Rail travelers should decide taxi or bus timing before arrival so the first hour stays smooth.' },
+          { title: 'Do not overpack nearby stops', body: 'Jeonju works best when walking and eating are allowed to set the pace.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Jeonju Hanok Village?',
+        summary: 'Hanok Village is popular and can feel crowded, but it still works well when timed around food, evening atmosphere, and slower walking.',
+        cards: [
+          { title: 'Avoid judging it only at peak crowd time', body: 'The village can feel commercial at midday but softer in the morning or evening.' },
+          { title: 'Do not eat everything too early', body: 'Jeonju is a food city. Leave room for a proper meal, not only snacks.' },
+          { title: 'Use it as an overnight city when possible', body: 'Jeonju becomes more convincing when the route gives it a night instead of a rushed stop.' },
+        ],
+      },
+    },
+  },
+  andong: {
+    hahoe: {
+      stay: {
+        question: 'Should you sleep near Hahoe Folk Village?',
+        summary: 'Hahoe is worth shaping a stay around when Andong is meant to be a cultural anchor, not a quick museum-style stop. Many travelers still sleep in Andong city for food and logistics.',
+        cards: [
+          { title: 'Stay near Hahoe for immersion', body: 'This works when the village atmosphere and slower rural rhythm are the reason for the Andong stop.' },
+          { title: 'Use Andong city for practical evenings', body: 'City-side stays make food, transport, and next-day movement easier.' },
+          { title: 'Choose based on cultural weight', body: 'If Hahoe is the main story, stay closer; if it is one chapter, sleep in the city.' },
+        ],
+      },
+      food: {
+        question: 'How should you plan food around Hahoe?',
+        summary: 'Hahoe food planning should connect to Andong identity: jjimdak, local meals, and slower regional eating rather than quick convenience only.',
+        cards: [
+          { title: 'Use Andong city for the main meal', body: 'The city is usually stronger for a fuller food experience after the village visit.' },
+          { title: 'Keep village food simple', body: 'If eating near Hahoe, choose it for convenience and atmosphere rather than variety.' },
+          { title: 'Make food part of the culture stop', body: 'Andong works best when food, ritual, old houses, and route meaning support each other.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Hahoe Folk Village?',
+        summary: 'Hahoe pairs with Buyongdae views, mask culture, Confucian heritage, and Andong city food. It should not be rushed like a generic old-house stop.',
+        cards: [
+          { title: 'Two-hour version: village walk', body: 'Use this when the route needs a focused cultural stop and must continue onward.' },
+          { title: 'Half-day version: Hahoe and Buyongdae', body: 'This gives the village landscape context and makes the stop feel larger.' },
+          { title: 'Cultural version: Hahoe plus Andong heritage', body: 'Use this when Andong is carrying the route’s deeper cultural weight.' },
+        ],
+      },
+      transport: {
+        question: 'How do you get to Hahoe without making Andong feel awkward?',
+        summary: 'Hahoe sits outside the city core, so transport must be planned as a deliberate out-and-back or car-based cultural chapter.',
+        cards: [
+          { title: 'Use car or planned transfer when possible', body: 'This keeps the village from consuming the day through uncertainty.' },
+          { title: 'Give the out-and-back enough time', body: 'The stop loses meaning if the schedule only allows a rushed pass through.' },
+          { title: 'Return to the city for evening logic', body: 'Food and lodging may work better after the village chapter ends.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Hahoe?',
+        summary: 'Hahoe is most valuable when approached with context and patience. It is a living cultural landscape, not only a photo set.',
+        cards: [
+          { title: 'Slow down inside the village', body: 'The point is the relationship between houses, river, landscape, and tradition.' },
+          { title: 'Add the viewpoint if time allows', body: 'Buyongdae helps explain the setting better than the village alone.' },
+          { title: 'Respect the lived-in quality', body: 'Treat the area as cultural heritage, not a theme park.' },
+        ],
+      },
+    },
+  },
+  yeosu: {
+    nightsea: {
+      stay: {
+        question: 'Should you sleep near Yeosu Night Sea?',
+        summary: 'Yeosu is one of the places where staying overnight matters. The night sea, harbor lights, seafood, and next-day island/coast movement are the point.',
+        cards: [
+          { title: 'Stay near the water for the payoff', body: 'Yeosu works best when the evening view is not rushed before leaving town.' },
+          { title: 'Use central harbor areas for food and movement', body: 'A harbor-side base helps connect seafood, walks, boats, and night views.' },
+          { title: 'Skip the overnight only on very tight routes', body: 'Yeosu loses a lot if treated as a daytime pass-through.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Yeosu Night Sea?',
+        summary: 'Yeosu food should lean into seafood, harbor meals, casual night eating, and a slower dinner window that leads naturally into the view.',
+        cards: [
+          { title: 'Make dinner the start of the night', body: 'Seafood or harbor food works best before a walk or night view rather than as a separate errand.' },
+          { title: 'Keep the view close after eating', body: 'The night sea is stronger when dinner, walking, and lodging sit in one easy loop.' },
+          { title: 'Use breakfast lightly before moving on', body: 'If the next day continues along the south coast, do not overload the morning.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Yeosu Night Sea?',
+        summary: 'Yeosu night sea pairs with Odongdo, cable car views, harbor walks, seafood streets, and the south-coast continuation toward Suncheon or Namhae.',
+        cards: [
+          { title: 'Two-hour version: dinner and harbor walk', body: 'Use this when Yeosu is the evening payoff after a travel day.' },
+          { title: 'Half-day version: Odongdo, cable car, and night sea', body: 'This gives Yeosu enough shape without forcing every island or viewpoint.' },
+          { title: 'Route version: Yeosu into Namhae', body: 'The city becomes a hinge when the trip continues east along the south coast.' },
+        ],
+      },
+      transport: {
+        question: 'How do you move through Yeosu at night?',
+        summary: 'Yeosu night plans should minimize transfers. Choose a stay and dinner area that lets the harbor or coast be walked rather than chased by taxi.',
+        cards: [
+          { title: 'Keep lodging near the evening loop', body: 'The night sea works better when the return is simple.' },
+          { title: 'Use taxis for hill or cable-car gaps', body: 'Short transfers can save energy, especially after dinner.' },
+          { title: 'Plan the next coastal leg', body: 'If continuing to Namhae or Suncheon, do not let the night plan break the morning route.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before planning Yeosu Night Sea?',
+        summary: 'Yeosu’s emotional value is in the evening. It is worth protecting the night window instead of overfilling the day.',
+        cards: [
+          { title: 'Do not arrive too tired', body: 'The view matters less if the traveler has no energy left for a walk.' },
+          { title: 'Watch wind and rain', body: 'Coastal weather can change whether the night walk feels romantic or rough.' },
+          { title: 'Treat it as a finale or hinge', body: 'Yeosu works as either a south-coast payoff or the launch toward Namhae and Busan.' },
+        ],
+      },
+    },
+    odongdo: {
+      stay: {
+        question: 'Should you sleep near Odongdo?',
+        summary: 'Odongdo is a good stay influence when the Yeosu plan is harbor-side, walkable, and night-view focused.',
+        cards: [
+          { title: 'Stay nearby for a gentle morning', body: 'A nearby base makes Odongdo easier before crowds or heat build.' },
+          { title: 'Use the harbor for broader convenience', body: 'Harbor-side lodging usually balances Odongdo, food, and night views better than an isolated stay.' },
+          { title: 'Do not choose lodging only for one walk', body: 'The stay should also support dinner, views, and the next route leg.' },
+        ],
+      },
+      food: {
+        question: 'Where should you eat around Odongdo?',
+        summary: 'Odongdo itself is more walking and scenery than food. Plan meals in Yeosu harbor areas before or after the visit.',
+        cards: [
+          { title: 'Eat before the walk if energy is low', body: 'A simple meal first can make the island walk more relaxed.' },
+          { title: 'Use harbor seafood after Odongdo', body: 'The walk pairs naturally with seafood, night views, or casual harbor food.' },
+          { title: 'Keep snacks practical', body: 'Do not make the island carry the whole food plan.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Odongdo?',
+        summary: 'Odongdo works with harbor walks, cable car views, night sea, and a slower Yeosu coastal half-day.',
+        cards: [
+          { title: 'Short version: Odongdo walk', body: 'Use this when the day needs a light nature stop close to the harbor.' },
+          { title: 'Half-day version: Odongdo and cable car', body: 'This creates a clean view-focused Yeosu plan.' },
+          { title: 'Evening version: Odongdo into night sea', body: 'Let the walk lead toward dinner and harbor lights.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Odongdo into Yeosu movement?',
+        summary: 'Odongdo is easiest when paired with harbor-side lodging, taxi hops, or a walkable evening loop.',
+        cards: [
+          { title: 'Keep the route compact', body: 'Odongdo should not be paired with too many far-apart Yeosu stops in one window.' },
+          { title: 'Use taxi when connecting from station or hotels', body: 'A short ride can protect energy for the island walk.' },
+          { title: 'Plan the return before dark', body: 'If continuing to dinner or cable car, know the next step before entering the island path.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Odongdo?',
+        summary: 'Odongdo is a light but valuable Yeosu stop. Its value comes from pacing, weather, and how it connects to the harbor night.',
+        cards: [
+          { title: 'Use it as a breathing space', body: 'The stop works best between heavier travel and the evening view.' },
+          { title: 'Watch weather and footwear', body: 'Wind, rain, and walking comfort affect the experience quickly.' },
+          { title: 'Pair it with the night sea', body: 'Odongdo becomes stronger when it is part of a full Yeosu coastal rhythm.' },
+        ],
+      },
+    },
+  },
+  daegu: {
+    seomun: {
+      stay: {
+        question: 'Should you sleep near Seomun Market?',
+        summary: 'Seomun Market can influence a Daegu stay when food, night market energy, and central access matter, but the best hotel choice may still depend on station or downtown movement.',
+        cards: [
+          { title: 'Stay central for food and movement', body: 'A central Daegu base can connect Seomun, Dongseongno, station access, and late meals.' },
+          { title: 'Use Seomun as an evening anchor', body: 'The market is strongest when it supports dinner or night-market browsing.' },
+          { title: 'Do not overfocus lodging on one market', body: 'Choose the sleep zone by the next morning’s route as well as the night food plan.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat at Seomun Market?',
+        summary: 'Seomun is one of Daegu’s clearest food anchors. Treat it as a grazing and night-market plan rather than a single sit-down meal only.',
+        cards: [
+          { title: 'Arrive hungry enough to browse', body: 'The market works when you can sample and compare instead of rushing one item.' },
+          { title: 'Use night market energy', body: 'Evening gives the stop more atmosphere and makes Daegu feel less like a transfer city.' },
+          { title: 'Balance snacks with a real meal', body: 'If the group needs structure, decide whether Seomun is dinner or a food walk after dinner.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Seomun Market?',
+        summary: 'Seomun pairs with Dongseongno, modern Daegu shopping streets, station logic, and a food-focused evening route.',
+        cards: [
+          { title: 'Short version: market food walk', body: 'Use this when Daegu is a practical stop with a strong food layer.' },
+          { title: 'Half-day version: Seomun and downtown', body: 'This gives Daegu a city-center rhythm beyond the market itself.' },
+          { title: 'Night version: market then Dongseongno', body: 'Pairing food and downtown energy makes the stop feel more complete.' },
+        ],
+      },
+      transport: {
+        question: 'How do you move through Seomun Market efficiently?',
+        summary: 'Seomun is central enough to work by subway, taxi, or walking from nearby downtown areas. The key is avoiding luggage and peak crowd friction.',
+        cards: [
+          { title: 'Drop bags before the market', body: 'Markets are easier when hands are free and the group can browse.' },
+          { title: 'Use central transit links', body: 'Subway or short taxi hops keep the stop from becoming a parking problem.' },
+          { title: 'Connect it to the next morning', body: 'Daegu often works as a route reset, so the hotel and market plan should support onward movement.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Seomun Market?',
+        summary: 'Seomun is best when you want Daegu to feel active, local, and food-driven. It is less useful as a silent sightseeing stop.',
+        cards: [
+          { title: 'Go with appetite and patience', body: 'The market rewards browsing more than rushing.' },
+          { title: 'Expect crowd and sensory density', body: 'That energy is the point, but it can be tiring after a long travel day.' },
+          { title: 'Use it to give Daegu identity', body: 'Seomun helps Daegu read as a food and city stop, not only a transfer.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -1145,6 +1388,11 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['suanbo-hot-springs', 'suanbo-onsen', 'suanbo-hot-spring'].includes(hotspotSlug)) return 'suanbo';
   if (['gangneung-coffee-street', 'anmok-coffee-street', 'anmok-beach-coffee-street'].includes(hotspotSlug)) return 'coffee';
   if (['seoraksan-national-park', 'seoraksan-mountain', 'mount-seorak'].includes(hotspotSlug)) return 'seoraksan';
+  if (['jeonju-hanok-village', 'hanok-village'].includes(hotspotSlug)) return 'hanok';
+  if (['hahoe-village', 'andong-hahoe-village', 'hahoe-folk-village'].includes(hotspotSlug)) return 'hahoe';
+  if (['yeosu-night-sea', 'night-sea', 'yeosu-night-view'].includes(hotspotSlug)) return 'nightsea';
+  if (['odongdo-island', 'odongdo-park'].includes(hotspotSlug)) return 'odongdo';
+  if (['seomun-market', 'daegu-seomun-market', 'seomun-night-market'].includes(hotspotSlug)) return 'seomun';
   return hotspotSlug;
 }
 
