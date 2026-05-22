@@ -1952,6 +1952,300 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  gongju: {
+    gongsanseong: {
+      stay: {
+        question: 'Should you sleep near Gongsanseong Fortress?',
+        summary: 'Gongsanseong can shape a Gongju overnight when Baekje history, river walking, and a quieter heritage stop matter more than fast city-to-city movement.',
+        cards: [
+          { title: 'Stay central for Baekje context', body: 'A central Gongju stay keeps the fortress, river, museum logic, and food close enough to feel connected.' },
+          { title: 'Use Gongju as a calm heritage pause', body: 'The city works when the route needs a quieter historical chapter between bigger urban stops.' },
+          { title: 'Skip the overnight for a quick fortress walk', body: 'If the fortress is only a short stop, lodging should follow the next route city.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gongsanseong?',
+        summary: 'Food around Gongsanseong should support a relaxed heritage walk. Use central Gongju for simple local meals before or after the fortress.',
+        cards: [
+          { title: 'Eat after the fortress walk', body: 'A meal lands better once the river and wall route have given the stop its shape.' },
+          { title: 'Keep food close to the old core', body: 'The city is compact enough that food should not pull the route away from the heritage area.' },
+          { title: 'Use cafes as a soft pause', body: 'A slower coffee stop can help Gongju feel like a real chapter, not a pass-through.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Gongsanseong?',
+        summary: 'Gongsanseong pairs with the Geumgang River, Baekje royal tomb context, Gongju National Museum, and a slower old-city walk.',
+        cards: [
+          { title: 'Short version: fortress and river view', body: 'Use this when Gongju is a heritage pause inside a longer drive.' },
+          { title: 'Half-day version: fortress and museum context', body: 'This gives the Baekje story enough weight to matter.' },
+          { title: 'Route version: Gongju before Jeolla movement', body: 'Gongju can prepare the route for deeper western and southern history.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Gongsanseong into the route?',
+        summary: 'Gongsanseong is easiest as a walkable central stop after parking or taxi arrival. It should be planned as a compact heritage loop.',
+        cards: [
+          { title: 'Park or arrive once, then walk', body: 'The fortress and river work better without repeated vehicle moves.' },
+          { title: 'Protect daylight', body: 'The wall and river views need enough light to land properly.' },
+          { title: 'Keep the next leg realistic', body: 'Gongju is calm, so do not make it a rushed add-on before a long drive.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gongsanseong?',
+        summary: 'Gongsanseong rewards context and a slower pace. It is more meaningful when visitors understand Gongju as a Baekje capital layer.',
+        cards: [
+          { title: 'Read it as Baekje history', body: 'The fortress is stronger when it is not just another wall walk.' },
+          { title: 'Wear walking-friendly shoes', body: 'The route includes slopes, walls, and uneven sections.' },
+          { title: 'Pair with the river', body: 'The Geumgang setting helps the stop feel specific to Gongju.' },
+        ],
+      },
+    },
+  },
+  damyang: {
+    juknokwon: {
+      stay: {
+        question: 'Should you sleep near Juknokwon?',
+        summary: 'Juknokwon can shape a Damyang stay when bamboo forest calm, slow food, and a softer Jeolla pause are the reason for stopping.',
+        cards: [
+          { title: 'Stay nearby for a quieter morning', body: 'Bamboo paths feel better before the day becomes busy or hot.' },
+          { title: 'Use Gwangju for broader logistics', body: 'If the route needs more hotels, transit, or nightlife, Gwangju can be the better base.' },
+          { title: 'Choose Damyang for atmosphere', body: 'The overnight value is calm, food, and green scenery rather than dense sightseeing.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Juknokwon?',
+        summary: 'Damyang food should connect to bamboo, tteokgalbi, noodles, cafes, and a slower Jeolla meal rhythm.',
+        cards: [
+          { title: 'Plan one proper local meal', body: 'Damyang is stronger when food is part of the stop, not an afterthought.' },
+          { title: 'Use cafes after the bamboo walk', body: 'A cafe pause helps the forest visit become a calm half-day rather than a quick path.' },
+          { title: 'Do not overfill the food list', body: 'One good meal and one slow pause usually beat chasing every specialty.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Juknokwon?',
+        summary: 'Juknokwon pairs with Meta Provence, Gwanbangjerim, local food streets, and a slow green Jeolla route.',
+        cards: [
+          { title: 'Short version: bamboo walk', body: 'Use this when Damyang is a green reset between larger cities.' },
+          { title: 'Half-day version: bamboo, food, and riverside trees', body: 'This gives the town enough texture to justify the stop.' },
+          { title: 'Route version: Gwangju to Damyang pause', body: 'Damyang softens the route before deeper Jeolla or mountain movement.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Juknokwon into the route?',
+        summary: 'Juknokwon works best by car or deliberate local transfer from Gwangju or nearby Jeolla stops.',
+        cards: [
+          { title: 'Use car-first routing when possible', body: 'Damyang is easier when food, forest, and riverside stops can be linked flexibly.' },
+          { title: 'Avoid making it a rushed detour', body: 'The stop is about calm, so tight timing weakens it.' },
+          { title: 'Pair it with Gwangju or Boseong logic', body: 'Damyang can be a green pause in a broader Jeolla route.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Juknokwon?',
+        summary: 'Juknokwon is atmosphere-led. Weather, heat, and crowd timing decide whether it feels peaceful or merely busy.',
+        cards: [
+          { title: 'Go earlier in warm seasons', body: 'Morning helps with heat, light, and crowd pressure.' },
+          { title: 'Let the stop stay simple', body: 'Bamboo, food, and a cafe are enough.' },
+          { title: 'Use it as contrast', body: 'Damyang gives the route a green and quiet texture between heavier city chapters.' },
+        ],
+      },
+    },
+  },
+  taean: {
+    mallipo: {
+      stay: {
+        question: 'Should you sleep near Mallipo Beach?',
+        summary: 'Mallipo can shape a Taean stay when west-coast sunsets, beach pacing, and a slower peninsula drive are the point.',
+        cards: [
+          { title: 'Stay nearby for sunset and morning beach time', body: 'The coast feels more worthwhile when the visit is not squeezed into one quick stop.' },
+          { title: 'Use Taean town for practical needs', body: 'Town-side lodging can be easier if food, errands, or onward driving matter more.' },
+          { title: 'Choose the beach for mood, not transit', body: 'Mallipo is a stay choice for atmosphere rather than central convenience.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Mallipo?',
+        summary: 'Food around Mallipo should support beach timing: seafood, simple coastal meals, and sunset-friendly pacing.',
+        cards: [
+          { title: 'Plan dinner around sunset', body: 'The meal works better when it leads into or follows the west-coast light.' },
+          { title: 'Keep lunch simple on beach days', body: 'A heavy schedule can make the coast feel like logistics instead of rest.' },
+          { title: 'Use seafood when the group wants a payoff', body: 'Coastal meals help Taean feel distinct from inland stopovers.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Mallipo Beach?',
+        summary: 'Mallipo pairs with Taean coastal drives, beaches, sunset viewpoints, and a slower west-coast road-trip rhythm.',
+        cards: [
+          { title: 'Short version: beach and sunset', body: 'Use this when Taean is a scenic coastal pause.' },
+          { title: 'Half-day version: beach, cafe, and coast road', body: 'This gives the peninsula enough time to feel different from a city stop.' },
+          { title: 'Route version: west-coast reset', body: 'Mallipo can make the route breathe before returning inland or south.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Mallipo into a Taean route?',
+        summary: 'Mallipo is car-first for most travelers. It works best inside a coastal loop rather than as a public-transport-heavy side trip.',
+        cards: [
+          { title: 'Use car routing deliberately', body: 'The beach and nearby coast stops need flexible timing.' },
+          { title: 'Avoid overloading the peninsula', body: 'Too many beach hops can blur together and create fatigue.' },
+          { title: 'Plan the return after dark', body: 'Sunset stops need a realistic driving plan afterward.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Mallipo?',
+        summary: 'Mallipo is weather and sunset dependent. It is strongest when the route gives the west coast enough room.',
+        cards: [
+          { title: 'Check tide, wind, and weather', body: 'Beach comfort changes quickly on the west coast.' },
+          { title: 'Do not rush the sunset', body: 'The main value is timing, not a long checklist.' },
+          { title: 'Use it as a rest chapter', body: 'Mallipo works when the trip needs a soft coastal pause.' },
+        ],
+      },
+    },
+  },
+  jirisan: {
+    trail: {
+      stay: {
+        question: 'Should you sleep near Jirisan trail access?',
+        summary: 'Jirisan should shape lodging when mountain access, early starts, valley rest, and a serious nature chapter are central to the route.',
+        cards: [
+          { title: 'Stay near the trail for early movement', body: 'Mountain days are much easier when the first transfer is short.' },
+          { title: 'Use a valley or town base for recovery', body: 'If the trip is not a hard hike, comfort and food access can matter more than trail proximity.' },
+          { title: 'Do not choose lodging casually', body: 'Jirisan is large, so the wrong base can add major route friction.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Jirisan?',
+        summary: 'Food around Jirisan should support energy and recovery: simple breakfasts, post-hike meals, local mountain food, and practical snacks.',
+        cards: [
+          { title: 'Plan breakfast before the mountain', body: 'A serious nature day needs a reliable start.' },
+          { title: 'Use local meals as recovery', body: 'Post-hike food is part of the value of staying near the mountain.' },
+          { title: 'Carry snacks and water', body: 'Do not depend on perfect food access during trail windows.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Jirisan?',
+        summary: 'Jirisan pairs with trail access, valley scenery, temples, local villages, and a slower mountain-road chapter.',
+        cards: [
+          { title: 'Short version: valley and viewpoint', body: 'Use this when the route needs mountain atmosphere without a full hike.' },
+          { title: 'Half-day version: trail, temple, and meal', body: 'This gives the mountain enough texture while staying realistic.' },
+          { title: 'Full-day version: hike-first planning', body: 'If hiking is the point, protect the day from extra sightseeing.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Jirisan into the route?',
+        summary: 'Jirisan requires deliberate base selection. Car-first movement is usually easiest, and trailhead choice should come before hotel choice.',
+        cards: [
+          { title: 'Pick the access side first', body: 'Different Jirisan areas are not interchangeable.' },
+          { title: 'Protect daylight and energy', body: 'Mountain movement punishes overpacked schedules.' },
+          { title: 'Plan the exit route', body: 'Know whether the next move is Namwon, Hadong, Gurye, Sancheong, or another south route.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Jirisan?',
+        summary: 'Jirisan is not a casual single-point attraction. Weather, trail choice, lodging base, and traveler ability all matter.',
+        cards: [
+          { title: 'Match the route to ability', body: 'A valley walk and a summit hike are completely different days.' },
+          { title: 'Check mountain weather', body: 'Conditions can change quickly and affect safety and enjoyment.' },
+          { title: 'Give the mountain respect', body: 'Jirisan works best when the itinerary slows down around it.' },
+        ],
+      },
+    },
+  },
+  mokpo: {
+    gatbawi: {
+      stay: {
+        question: 'Should you sleep near Mokpo Gatbawi?',
+        summary: 'Gatbawi can support a Mokpo stay when the route wants harbor scenery, evening walks, and a southwest-coast launch point.',
+        cards: [
+          { title: 'Stay in Mokpo for the harbor chapter', body: 'The city works best when evening food, water views, and the next coastal leg are connected.' },
+          { title: 'Use a central or waterfront base', body: 'Lodging should support both Gatbawi and Mokpo food/port movement.' },
+          { title: 'Skip nearby lodging for a quick stop', body: 'If Gatbawi is only a viewpoint, choose the hotel by the next route segment.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gatbawi?',
+        summary: 'Mokpo food should lean into seafood, harbor meals, and southwest market texture before or after the Gatbawi walk.',
+        cards: [
+          { title: 'Use seafood as the anchor', body: 'Mokpo needs a real meal layer to feel like more than a viewpoint stop.' },
+          { title: 'Pair food with evening water views', body: 'Dinner and a walk make the city feel coherent.' },
+          { title: 'Keep breakfast practical before departure', body: 'Mokpo often launches longer south-coast routes, so the morning should stay simple.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Gatbawi?',
+        summary: 'Gatbawi pairs with Mokpo harbor, museums, seafood, Yudalsan, and the route handoff toward Haenam, Wando, or the south coast.',
+        cards: [
+          { title: 'Short version: Gatbawi walk and food', body: 'Use this when Mokpo is an arrival or departure city.' },
+          { title: 'Half-day version: harbor, Yudalsan, and seafood', body: 'This gives Mokpo more city identity.' },
+          { title: 'Route version: southwest launch', body: 'Gatbawi can mark the start of the Haenam/Wando/Boseong line.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Gatbawi into Mokpo movement?',
+        summary: 'Gatbawi is easiest when combined with a waterfront or central Mokpo loop. The route should also account for ferries, trains, or southbound driving.',
+        cards: [
+          { title: 'Keep the harbor loop compact', body: 'Food, views, and lodging should not require too many transfers.' },
+          { title: 'Plan onward movement early', body: 'Mokpo often sits at the start of a bigger south-coast route.' },
+          { title: 'Use taxis for short city hops', body: 'This can preserve energy before longer regional travel.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gatbawi?',
+        summary: 'Gatbawi is strongest as part of Mokpo’s harbor identity, not as an isolated rock formation stop.',
+        cards: [
+          { title: 'Go when the light is good', body: 'Waterfront stops depend heavily on atmosphere.' },
+          { title: 'Pair with Mokpo food', body: 'The city needs its seafood and port layer to feel complete.' },
+          { title: 'Use it as a route marker', body: 'Gatbawi helps signal the move into Korea’s southwest coast.' },
+        ],
+      },
+    },
+  },
+  haenam: {
+    ttangkkeut: {
+      stay: {
+        question: 'Should you sleep near Ttangkkeut Village?',
+        summary: 'Ttangkkeut can shape a Haenam stay when the route wants land-end symbolism, slow coast, and a clear southwest turning point.',
+        cards: [
+          { title: 'Stay nearby for the land-end feeling', body: 'The stop becomes more meaningful when it is not rushed as a quick signboard photo.' },
+          { title: 'Use Haenam or Wando for broader logistics', body: 'Depending on the next leg, another base may make food and movement easier.' },
+          { title: 'Choose the stay by the next coast segment', body: 'Ttangkkeut matters most when it supports the route toward Wando, Mokpo, or the south coast.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Ttangkkeut?',
+        summary: 'Food around Ttangkkeut should stay simple and coastal. The main value is the route marker, with fuller meals often better in Haenam, Wando, or Mokpo.',
+        cards: [
+          { title: 'Keep the meal close to the coast', body: 'Simple seafood or local meals fit the mood better than a complicated detour.' },
+          { title: 'Use nearby towns for more choice', body: 'If the group needs variety, plan the main meal outside the land-end stop.' },
+          { title: 'Carry snacks for long drives', body: 'Southwest coastal movement can stretch between reliable stops.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Ttangkkeut?',
+        summary: 'Ttangkkeut pairs with land-end viewpoints, coastal drives, Duryunsan, Wando handoff, and the symbolic start or end of a southwest route.',
+        cards: [
+          { title: 'Short version: land-end viewpoint', body: 'Use this when the stop is symbolic and precise.' },
+          { title: 'Half-day version: Ttangkkeut and coastal road', body: 'This gives Haenam enough landscape context.' },
+          { title: 'Route version: Mokpo to Wando hinge', body: 'Ttangkkeut can make the southwest route feel authored rather than random.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Ttangkkeut into the route?',
+        summary: 'Ttangkkeut is car-first and remote. It should be planned as a deliberate endpoint or hinge, not a casual side trip.',
+        cards: [
+          { title: 'Respect the distance', body: 'The land-end feeling comes with real travel time.' },
+          { title: 'Link it to Wando or Mokpo', body: 'The stop works better when connected to a clear coast sequence.' },
+          { title: 'Avoid late exhausted arrivals', body: 'A symbolic stop loses power when the traveler only wants to leave.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Ttangkkeut?',
+        summary: 'Ttangkkeut is about meaning and geography. It works when the route gives the land-end idea enough attention.',
+        cards: [
+          { title: 'Use it as a route statement', body: 'This is the place that says the southwest edge matters.' },
+          { title: 'Check weather and visibility', body: 'Coastal views and ferry-like atmosphere change quickly.' },
+          { title: 'Do not overpack the day', body: 'The distance itself is part of the chapter.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -1989,6 +2283,12 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['museum-san', 'museumsan', 'wonju-museum-san'].includes(hotspotSlug)) return 'museumsan';
   if (['cheongpung-lake', 'cheongpung-ho', 'cheongpungho'].includes(hotspotSlug)) return 'cheongpung';
   if (['jangneung', 'yeongwol-jangneung', 'jangneung-royal-tomb'].includes(hotspotSlug)) return 'jangneung';
+  if (['gongsanseong-fortress', 'gongju-gongsanseong'].includes(hotspotSlug)) return 'gongsanseong';
+  if (['juknokwon-bamboo-forest', 'damyang-juknokwon'].includes(hotspotSlug)) return 'juknokwon';
+  if (['mallipo-beach', 'taean-mallipo'].includes(hotspotSlug)) return 'mallipo';
+  if (['jirisan-national-park', 'jiri-mountain', 'jirisan-trail', 'jirisan'].includes(hotspotSlug)) return 'trail';
+  if (['gatbawi-rock', 'mokpo-gatbawi'].includes(hotspotSlug)) return 'gatbawi';
+  if (['ttangkkeut-village', 'haenam-ttangkkeut', 'land-end'].includes(hotspotSlug)) return 'ttangkkeut';
   return hotspotSlug;
 }
 
