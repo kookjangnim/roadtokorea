@@ -18,17 +18,21 @@ for (const key of keys) {
   assert.equal((block[1].match(/title:/g) ?? []).length, 3, `${key} must have exactly three cards`);
 }
 
-const gyeongbokgungBlock = source.match(/gyeongbokgung: \{([\s\S]*?)\n    \},/);
-assert.ok(gyeongbokgungBlock, 'Seoul Gyeongbokgung override must exist');
+const requiredSeoulHotspots = ['gyeongbokgung', 'seongsu', 'myeongdong', 'hongdae', 'itaewon', 'gangnam'];
 
-for (const key of keys) {
-  const overrideBlock = gyeongbokgungBlock[1].match(new RegExp(`${key}: \\{([\\s\\S]*?)\\n      \\},`));
-  assert.ok(overrideBlock, `Gyeongbokgung ${key} override must exist`);
-  assert.equal(
-    (overrideBlock[1].match(/title:/g) ?? []).length,
-    3,
-    `Gyeongbokgung ${key} override must have exactly three cards`
-  );
+for (const hotspot of requiredSeoulHotspots) {
+  const hotspotBlock = source.match(new RegExp(`${hotspot}: \\{([\\s\\S]*?)\\n    \\},`));
+  assert.ok(hotspotBlock, `Seoul ${hotspot} override must exist`);
+
+  for (const key of keys) {
+    const overrideBlock = hotspotBlock[1].match(new RegExp(`${key}: \\{([\\s\\S]*?)\\n      \\},`));
+    assert.ok(overrideBlock, `${hotspot} ${key} override must exist`);
+    assert.equal(
+      (overrideBlock[1].match(/title:/g) ?? []).length,
+      3,
+      `${hotspot} ${key} override must have exactly three cards`
+    );
+  }
 }
 
 assert.match(overview, /HOTSPOT_CATEGORY_PAGES/, 'overview must render category navigation');
