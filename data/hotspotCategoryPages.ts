@@ -3471,6 +3471,251 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  yeoju: {
+    silleuksa: {
+      stay: {
+        question: 'Should you sleep near Silleuksa or the Yeoju river side?',
+        summary: 'Yeoju is worth a light stay when the route needs a first junction after Seoul, with Namhan River calm, Silleuksa, King Sejong memory, ceramics, and outlet-side services.',
+        cards: [
+          { title: 'Stay for the first route split', body: 'Yeoju gives the Seoul departure a meaningful pause before Chungju or Wonju.' },
+          { title: 'Use the river side for atmosphere', body: 'Silleuksa and Namhan River make the stop feel rooted rather than purely practical.' },
+          { title: 'Use outlet-side stays for service logic', body: 'Drivers and families may value parking, food, and predictable onward movement more.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Yeoju?',
+        summary: 'Yeoju food should stay grounded: rice, riverside meals, simple market eating, cafe pauses, and a low-friction meal before the route branches.',
+        cards: [
+          { title: 'Keep food tied to the stop’s pace', body: 'Yeoju works best as a calm junction, not a heavy food chase.' },
+          { title: 'Use rice and local meals as place cues', body: 'The city should feel regional quickly after Seoul.' },
+          { title: 'Plan food around the next leg', body: 'Meals should support the choice toward Chungju or Wonju.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Silleuksa?',
+        summary: 'Silleuksa pairs with the Namhan River, King Sejong royal tomb context, ceramics, Gangcheonseom, outlet services, and the Chungju/Wonju split.',
+        cards: [
+          { title: 'Heritage version: Silleuksa and King Sejong', body: 'Use this when the stop should carry historical weight.' },
+          { title: 'Modern version: ceramics and outlets', body: 'This keeps Yeoju present-tense and practical.' },
+          { title: 'Route version: first true junction', body: 'Yeoju helps travelers decide what kind of route comes next.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Yeoju into the route?',
+        summary: 'Yeoju should be planned as the first junction stop after Seoul, with the next leg chosen clearly toward Chungju or Wonju.',
+        cards: [
+          { title: 'Decide the route identity here', body: 'Southbound and eastbound choices split the trip’s mood.' },
+          { title: 'Keep the stop compact', body: 'Yeoju is strongest as one clean chapter, not a full itinerary burden.' },
+          { title: 'Use services when needed', body: 'Outlet-side logistics can make the first regional move easier.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Yeoju?',
+        summary: 'Yeoju is a junction city. Its value is the mix of river heritage, modern services, and route choice rather than one giant attraction.',
+        cards: [
+          { title: 'Let the river slow the departure', body: 'The stop should feel like the first breath outside Seoul.' },
+          { title: 'Do not overload the city', body: 'One heritage read and one practical read are enough.' },
+          { title: 'Use it to choose the next route', body: 'That is why Yeoju matters structurally.' },
+        ],
+      },
+    },
+  },
+  sangju: {
+    nakdong: {
+      stay: {
+        question: 'Should you sleep in Sangju on the Nakdong corridor?',
+        summary: 'Sangju is useful when the inland route needs a cycling-friendly Nakdong River pause, simple food, rural pacing, and a calmer handoff toward Daegu or Changnyeong.',
+        cards: [
+          { title: 'Stay for route recovery', body: 'Sangju works when the day needs lower pressure before the next stronger city.' },
+          { title: 'Use river-side logic for riders', body: 'The Nakdong corridor makes the stop more meaningful for cycling and slower travel.' },
+          { title: 'Skip the night if the route is moving well', body: 'Sangju should solve pacing, not create a forced stop.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Sangju?',
+        summary: 'Sangju food should be simple and restorative: local meals, fruit or market cues, breakfast, and enough fuel for the river corridor.',
+        cards: [
+          { title: 'Eat to recover', body: 'The stop is about keeping the route steady.' },
+          { title: 'Keep food near the stay or river path', body: 'Long detours weaken a practical corridor stop.' },
+          { title: 'Use breakfast to launch cleanly', body: 'The next leg often needs energy more than novelty.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Sangju?',
+        summary: 'Sangju pairs with Nakdong River movement, Sangpung Bridge area, cycling-route continuity, local food, and the Daegu or Changnyeong handoff.',
+        cards: [
+          { title: 'Short version: river pause and meal', body: 'Use this when Sangju is a recovery checkpoint.' },
+          { title: 'Cycling version: Nakdong continuity', body: 'This is the clearest reason to keep Sangju visible.' },
+          { title: 'Route version: calm before southern density', body: 'Sangju keeps the inland line composed before larger stops.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Sangju into the inland route?',
+        summary: 'Sangju should be planned as a continuity stop on the Nakdong corridor, especially for riders, drivers, and slower lower-river pacing.',
+        cards: [
+          { title: 'Use it when distance needs breaking', body: 'The stop improves the route by lowering fatigue.' },
+          { title: 'Keep the river logic visible', body: 'Without Nakdong context, Sangju can feel too generic.' },
+          { title: 'Choose the next handoff clearly', body: 'Daegu, Changnyeong, or another lower-river move create different days.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Sangju?',
+        summary: 'Sangju is a support stop. It should be framed through river continuity, cycling, recovery, and route rhythm.',
+        cards: [
+          { title: 'Do not oversell it as a destination', body: 'Its value is route function.' },
+          { title: 'Use it for slower travel', body: 'Riders and road-trip users benefit most.' },
+          { title: 'Let the stop stay quiet', body: 'The calm is the point.' },
+        ],
+      },
+    },
+  },
+  changnyeong: {
+    recovery: {
+      stay: {
+        question: 'Should you sleep in Changnyeong before Busan?',
+        summary: 'Changnyeong is useful when the lower Nakdong route needs a quiet recovery night, simple meals, rural calm, and a composed final push toward Busan.',
+        cards: [
+          { title: 'Stay for late-route recovery', body: 'Changnyeong helps travelers arrive in Busan with more composure.' },
+          { title: 'Use a quiet town-core base', body: 'Dinner, sleep, breakfast, and departure should stay easy.' },
+          { title: 'Skip the night if Busan should land now', body: 'The stop is only useful when rest matters more than speed.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Changnyeong?',
+        summary: 'Changnyeong food should be restorative: simple dinners, easy breakfasts, low-friction fuel, and rural pacing before the final metropolitan arrival.',
+        cards: [
+          { title: 'Keep meals uncomplicated', body: 'The stop should lower route noise.' },
+          { title: 'Eat close to the stay grid', body: 'Recovery stops should not create more movement.' },
+          { title: 'Use breakfast for finish momentum', body: 'A calm morning improves the Busan approach.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Changnyeong?',
+        summary: 'Changnyeong pairs with quiet town stays, Nakdong-side recovery, rural lower-river scenery, simple food, and the Busan handoff.',
+        cards: [
+          { title: 'Short version: dinner, sleep, breakfast', body: 'Use this when the route needs one clean reset.' },
+          { title: 'Recovery version: lower-river edge', body: 'This explains the city’s calm route function.' },
+          { title: 'Route version: taper before Busan', body: 'Changnyeong lets the trip finish without one more loud city beat.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Changnyeong into Route 1?',
+        summary: 'Changnyeong should be used as a late lower-river recovery node, with the final Busan approach kept simple.',
+        cards: [
+          { title: 'Use it only when rest is needed', body: 'This is a recovery decision, not a prestige stop.' },
+          { title: 'Keep departure direction obvious', body: 'The next move should be Busan-facing and clean.' },
+          { title: 'Avoid adding complexity', body: 'The stop’s job is to simplify the finish.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Changnyeong?',
+        summary: 'Changnyeong is strongest as a quiet late-route body reset. It should remain modest and practical.',
+        cards: [
+          { title: 'Let recovery be enough', body: 'Not every stop needs a big attraction.' },
+          { title: 'Use it for riders and slower travelers', body: 'The lower-river calm is especially useful there.' },
+          { title: 'Do not compete with Busan', body: 'Changnyeong prepares the finish.' },
+        ],
+      },
+    },
+  },
+  miryang: {
+    yeongnamnu: {
+      stay: {
+        question: 'Should you sleep in Miryang before Busan?',
+        summary: 'Miryang is useful when the southern route needs a quiet final hinge, Yeongnamnu context, river calm, simple meals, and a cleaner handoff into Busan.',
+        cards: [
+          { title: 'Stay for the final quiet hinge', body: 'Miryang gives the route one last composed night before Busan.' },
+          { title: 'Use the central grid for simplicity', body: 'Dinner, lodging, and departure should stay easy.' },
+          { title: 'Skip the night if arrival energy is high', body: 'Miryang should protect the finish, not delay it unnecessarily.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Miryang?',
+        summary: 'Miryang food should support a quiet final handoff: practical dinners, easy breakfasts, one local meal, and low-stress timing before Busan.',
+        cards: [
+          { title: 'Keep dinner close and calm', body: 'The stop is about a controlled final night.' },
+          { title: 'Use breakfast to launch well', body: 'The Busan approach improves when the morning is simple.' },
+          { title: 'Do not chase too many food stops', body: 'Miryang is a hinge, not a food tour.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Yeongnamnu?',
+        summary: 'Yeongnamnu pairs with Miryang river scenery, central town walks, quiet meals, practical lodging, and the final Busan handoff.',
+        cards: [
+          { title: 'Short version: pavilion, meal, sleep', body: 'Use this when Miryang is the final calm stop.' },
+          { title: 'River version: slower southern reset', body: 'This keeps the route’s soft tone alive before Busan.' },
+          { title: 'Route version: composed final hinge', body: 'Miryang helps Busan arrive as arrival, not rescue.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Miryang into Route 1?',
+        summary: 'Miryang should be used as the final quiet hinge before Busan, with food, lodging, and departure kept tightly organized.',
+        cards: [
+          { title: 'Keep the stay central', body: 'The stop works when logistics are simple.' },
+          { title: 'Protect the Busan handoff', body: 'The final city should land cleanly.' },
+          { title: 'Use river calm when needed', body: 'Miryang can soften the last approach.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Miryang?',
+        summary: 'Miryang is not a loud finale. It is a quiet hinge that can make the actual Busan arrival better.',
+        cards: [
+          { title: 'Let it stay modest', body: 'The power is in pacing.' },
+          { title: 'Use Yeongnamnu as the identity cue', body: 'One strong local anchor is enough.' },
+          { title: 'Do not overwork the final day', body: 'Miryang is there to simplify the finish.' },
+        ],
+      },
+    },
+  },
+  taebaek: {
+    coal: {
+      stay: {
+        question: 'Should you sleep in Taebaek before the coast exit?',
+        summary: 'Taebaek is worth a stay when Branch 2A needs coal history, highland geography, Taebaeksan context, Hanwoo, and a serious final inland chapter before Samcheok.',
+        cards: [
+          { title: 'Stay for coal and highland memory', body: 'Taebaek gives the branch industrial and geographic weight before the coast.' },
+          { title: 'Use town lodging for practical access', body: 'Food, museum context, and the next road leg are easiest from a simple base.' },
+          { title: 'Skip the night if the coast is the goal', body: 'Fast branches can use Taebaek as a focused highland stop.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Taebaek?',
+        summary: 'Taebaek food should support highland travel: Hanwoo, warm meals, simple breakfasts, and enough fuel before the Samcheok descent.',
+        cards: [
+          { title: 'Use Hanwoo as the clear food cue', body: 'It gives the highland stop a practical reward.' },
+          { title: 'Keep meals warm and grounded', body: 'The city’s tone is mountain, labor, and recovery.' },
+          { title: 'Plan breakfast before the descent', body: 'The coast exit is easier with the morning settled.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Taebaek coal history?',
+        summary: 'Taebaek coal history pairs with Taebaek Coal Museum, Taebaeksan, Hwangji Pond, highland weather, Hanwoo meals, and the Samcheok coast exit.',
+        cards: [
+          { title: 'History version: coal museum and town context', body: 'Use this when the branch should show modern industrial memory.' },
+          { title: 'Highland version: Taebaeksan and Hwangji Pond', body: 'This gives the city mountain geography beyond coal.' },
+          { title: 'Route version: final inland chapter before sea', body: 'Taebaek makes the coast exit feel earned.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Taebaek into Branch 2A?',
+        summary: 'Taebaek should be planned as the coal-and-highland threshold before the route drops toward Samcheok and Route 4.',
+        cards: [
+          { title: 'Respect winter and highland weather', body: 'Road comfort matters here.' },
+          { title: 'Choose history or mountain focus', body: 'The stop can be museum-led or landscape-led.' },
+          { title: 'Plan the coast exit clearly', body: 'Samcheok should feel like the branch resolving into the East Sea.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Taebaek?',
+        summary: 'Taebaek should be treated as industrial memory plus highland geography, not only a mountain waypoint.',
+        cards: [
+          { title: 'Keep coal history visible', body: 'It explains the city’s modern importance.' },
+          { title: 'Use the highland climate honestly', body: 'Weather is part of the travel experience.' },
+          { title: 'Let it complete the branch', body: 'Taebaek is the final inland weight before the coast.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -3539,6 +3784,11 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['naerincheon', 'naerincheon-rafting', 'inje-naerincheon', 'misiryeong-pass'].includes(hotspotSlug)) return 'naerincheon';
   if (['goseong-dmz', 'dmz-museum', 'goseong-dmz-museum', 'songjiho-beach'].includes(hotspotSlug)) return 'dmz';
   if (['jeongseon-arirang-market', 'arirang-market', 'jeongseon-railbike', 'kangwon-land'].includes(hotspotSlug)) return 'arirang';
+  if (['silleuksa', 'silleuksa-temple', 'yeoju-silleuksa', 'king-sejong-tomb'].includes(hotspotSlug)) return 'silleuksa';
+  if (['sangju-nakdong', 'nakdong-river-sangju', 'sangpung-bridge'].includes(hotspotSlug)) return 'nakdong';
+  if (['changnyeong-recovery', 'changnyeong-nakdong', 'lower-river-recovery'].includes(hotspotSlug)) return 'recovery';
+  if (['yeongnamnu', 'miryang-yeongnamnu', 'miryang-river'].includes(hotspotSlug)) return 'yeongnamnu';
+  if (['taebaek-coal', 'taebaek-coal-museum', 'coal-museum', 'taebaeksan'].includes(hotspotSlug)) return 'coal';
   return hotspotSlug;
 }
 
