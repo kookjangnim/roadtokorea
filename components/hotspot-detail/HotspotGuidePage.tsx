@@ -7,6 +7,7 @@ import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
 import { getSeoulRouteOptionBySlug } from '@/data/seoulRoutes';
 import { getHotspotHeroImage } from '@/data/hotspotImageMap';
 import { isWpPostCityMatch } from '@/lib/wp-route-context';
+import { HOTSPOT_CATEGORY_PAGES, getHotspotCategoryHref } from '@/data/hotspotCategoryPages';
 
 const siteUrl = getSiteUrl();
 
@@ -101,15 +102,6 @@ function buildExcerpt(post: HotspotPost): string {
   return paragraphMatch ? stripHtml(paragraphMatch[1]).slice(0, 180) : '';
 }
 
-function slugifyHeading(value: string): string {
-  return stripHtml(value)
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-');
-}
-
 function buildGuideBullets(post: HotspotPost, cityLabel: string): string[] {
   const excerpt = buildExcerpt(post);
   const intro = excerpt
@@ -121,31 +113,6 @@ function buildGuideBullets(post: HotspotPost, cityLabel: string): string[] {
     `Best used as a focused stop inside a broader ${cityLabel} route, not as a generic checklist item.`,
     'Use the sections below to decide what matters most before you commit time on the ground.',
   ];
-}
-
-function buildContentGuide(html: string) {
-  const headings: Array<{ id: string; label: string }> = [];
-  const seenIds = new Set<string>();
-
-  const content = html.replace(/<h2([^>]*)>([\s\S]*?)<\/h2>/gi, (_match, attrs, inner) => {
-    const label = stripHtml(inner);
-    if (!label) return _match;
-
-    let id = slugifyHeading(label) || `section-${headings.length + 1}`;
-    while (seenIds.has(id)) {
-      id = `${id}-${headings.length + 1}`;
-    }
-
-    seenIds.add(id);
-    headings.push({ id, label });
-
-    if (/id=/i.test(attrs)) {
-      return `<h2${attrs}>${inner}</h2>`;
-    }
-    return `<h2${attrs} id="${id}">${inner}</h2>`;
-  });
-
-  return { content, headings };
 }
 
 function estimateReadingMinutes(html: string): number {
@@ -292,7 +259,7 @@ export default async function HotspotPage({
 
   const rawContent = post.content?.rendered || '';
   const cleanedContent = cleanContent(rawContent);
-  const { content: guidedContent, headings } = buildContentGuide(cleanedContent);
+  const hasSourceArticle = stripHtml(cleanedContent).length > 0;
   const heroImageUrl = getHeroImage(post, citySlug, hotspotSlug);
   const fixedHeroUrl = heroImageUrl ? normalizeWpMediaUrl(heroImageUrl) : null;
   const title = stripHtml(post.title?.rendered || hotspotSlug);
@@ -422,10 +389,10 @@ export default async function HotspotPage({
                 )}
                 <div className="border-t border-white/10 pt-5">
                   <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-stone-500">
-                    Reading Time
+                    Source Depth
                   </p>
                   <p className="mt-2 text-sm leading-7 text-stone-200">
-                    About {readingMinutes} min
+                    About {readingMinutes} min, split by category
                   </p>
                 </div>
                 <div className="border-t border-white/10 pt-5">
@@ -465,15 +432,15 @@ export default async function HotspotPage({
                   <a href="#guide-overview" className="rounded-full bg-stone-100 px-4 py-2 transition-colors hover:bg-stone-200">
                     Guide overview
                   </a>
-                  {headings.slice(0, 5).map((heading) => (
-                    <a
-                      key={heading.id}
-                      href={`#${heading.id}`}
-                      className="rounded-full bg-stone-100 px-4 py-2 transition-colors hover:bg-stone-200"
-                    >
-                      {heading.label}
-                    </a>
-                  ))}
+                  <a href="#category-guides" className="rounded-full bg-stone-100 px-4 py-2 transition-colors hover:bg-stone-200">
+                    Category guides
+                  </a>
+                  <a href="#why-go" className="rounded-full bg-stone-100 px-4 py-2 transition-colors hover:bg-stone-200">
+                    Why go
+                  </a>
+                  <a href="#skip-if" className="rounded-full bg-stone-100 px-4 py-2 transition-colors hover:bg-stone-200">
+                    Skip if
+                  </a>
                 </div>
               </div>
 
@@ -484,9 +451,9 @@ export default async function HotspotPage({
                 <div className="mt-5 grid gap-4">
                   <div>
                     <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                      Sections
+                      Categories
                     </p>
-                    <p className="mt-2 font-serif text-2xl text-stone-950">{headings.length || 1}</p>
+                    <p className="mt-2 font-serif text-2xl text-stone-950">{HOTSPOT_CATEGORY_PAGES.length}</p>
                   </div>
                   <div className="border-t border-stone-200 pt-4">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
@@ -588,7 +555,44 @@ export default async function HotspotPage({
               </div>
             </div>
 
-            <section className="mb-12 border-b border-stone-200 pb-10">
+            <section id="category-guides" className="mb-12 border-b border-stone-200 pb-10">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
+                Category Guides
+              </p>
+              <h2 className="mt-4 max-w-3xl font-serif text-3xl leading-tight text-stone-950 md:text-5xl">
+                Open only the planning layer you need next.
+              </h2>
+              <p className="mt-5 max-w-3xl text-base leading-8 text-stone-600">
+                This overview stays short on purpose. Use the category pages for lodging, food,
+                nearby attractions, transport, and practical timing instead of reading everything
+                at once.
+              </p>
+
+              <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+                {HOTSPOT_CATEGORY_PAGES.map((category) => (
+                  <Link
+                    key={category.key}
+                    href={getHotspotCategoryHref(citySlug, hotspotSlug, category.key)}
+                    className="group flex min-h-52 flex-col justify-between rounded-[1.5rem] border border-stone-200 bg-stone-50/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-stone-900/20 hover:bg-white hover:shadow-[0_18px_45px_rgba(34,30,25,0.08)]"
+                  >
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                        {category.eyebrow}
+                      </p>
+                      <h3 className="mt-4 font-serif text-2xl leading-tight text-stone-950">
+                        {category.navLabel}
+                      </h3>
+                      <p className="mt-3 text-sm leading-7 text-stone-600">{category.question}</p>
+                    </div>
+                    <span className="mt-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500 transition-colors group-hover:text-stone-950">
+                      Open
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+
+            <section id="why-go" className="mb-12 border-b border-stone-200 pb-10">
               <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
                 Why Go
               </p>
@@ -610,7 +614,7 @@ export default async function HotspotPage({
               </div>
             </section>
 
-            <section className="mb-12 border-b border-stone-200 pb-10">
+            <section id="skip-if" className="mb-12 border-b border-stone-200 pb-10">
               <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
                 Caution
               </p>
@@ -622,16 +626,19 @@ export default async function HotspotPage({
               </div>
             </section>
 
-            {rawContent ? (
-              <div
-                className="city-article city-article--feature"
-                dangerouslySetInnerHTML={{ __html: guidedContent }}
-              />
-            ) : (
-              <p className="py-24 text-center font-serif text-2xl italic text-stone-400">
-                This guide is focused on the route context available for this stop.
+            <section className="mb-12 border-b border-stone-200 pb-10">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
+                Source Notes
               </p>
-            )}
+              <h2 className="mt-4 max-w-3xl font-serif text-3xl leading-tight text-stone-950 md:text-5xl">
+                The long guide is now split into smaller decisions.
+              </h2>
+              <p className="mt-5 max-w-3xl text-base leading-8 text-stone-600">
+                {hasSourceArticle
+                  ? 'The deeper editorial material still informs this page, but the first screen now points you toward the category that matches your planning question.'
+                  : 'This stop currently uses route context and planning guidance while the editorial source material is expanded.'}
+              </p>
+            </section>
 
             <section className="mt-12 rounded-[1.75rem] border border-stone-200 bg-stone-50/80 p-6 md:p-8">
               <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">

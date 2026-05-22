@@ -21,6 +21,7 @@
     "check:route-branches": "node scripts/validate-route-branches.mjs",
     "check:route-network": "node scripts/validate-route-network.mjs",
     "check:route-navigation": "node scripts/validate-route-navigation.mjs",
+    "check:hotspot-categories": "node scripts/validate-hotspot-categories.mjs",
     "audit:mojibake": "node scripts/audit-mojibake.mjs"
   },
   "dependencies": {
