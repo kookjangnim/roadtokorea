@@ -2736,6 +2736,251 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  cheonan: {
+    walnut: {
+      stay: {
+        question: 'Should you sleep in Cheonan on the first route day?',
+        summary: 'Cheonan is useful when the Seoul departure needs a low-friction first night, station access, walnut-cookie identity, and a cleaner relaunch south.',
+        cards: [
+          { title: 'Stay for late-start forgiveness', body: 'Cheonan turns a rushed Seoul exit into a calmer first overnight.' },
+          { title: 'Use the station grid for logistics', body: 'Dinner, sleep, breakfast, and departure can stay tightly organized.' },
+          { title: 'Skip the night if the first day is clean', body: 'If timing is strong, Cheonan can remain a snack-and-reset checkpoint.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Cheonan?',
+        summary: 'Cheonan food should stay practical: walnut cookies, quick Korean comfort meals, station-side breakfast, and first-day refuel logic.',
+        cards: [
+          { title: 'Use walnut cookies as the local cue', body: 'They make the first route pause feel specific without slowing the day.' },
+          { title: 'Keep dinner easy after Seoul', body: 'The stop is about reducing friction, not chasing a complicated food list.' },
+          { title: 'Protect breakfast before departure', body: 'A simple morning makes the Daejeon or direct-corridor handoff cleaner.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Cheonan?',
+        summary: 'Cheonan pairs with station-side reset logic, walnut-cookie stops, Independence Hall context, and the southbound handoff toward Daejeon.',
+        cards: [
+          { title: 'Short version: snack and reset', body: 'Use this when Cheonan is a first exhale, not a full destination.' },
+          { title: 'Purpose version: Independence Hall side stop', body: 'This gives the first pause a more meaningful layer.' },
+          { title: 'Route version: settle before the corridor', body: 'Cheonan helps the trip feel organized before stronger city choices begin.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Cheonan into Route 1?',
+        summary: 'Cheonan should be used as a first control point, especially when arrival timing, station access, or next-morning relaunch matters.',
+        cards: [
+          { title: 'Keep arrival and lodging close', body: 'The station-side grid is the easiest way to lower first-day stress.' },
+          { title: 'Decide whether it is a sleep or snack stop', body: 'Cheonan works best when its role is clear.' },
+          { title: 'Use it to clean up the next leg', body: 'The point is to make Daejeon or the direct southbound corridor easier.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Cheonan?',
+        summary: 'Cheonan is not trying to be the main attraction. Its value is timing, comfort, first-day recovery, and a local snack identity.',
+        cards: [
+          { title: 'Let it stay practical', body: 'This city is strongest when it solves the route instead of performing.' },
+          { title: 'Use it after a late Seoul exit', body: 'That is when Cheonan earns its place most clearly.' },
+          { title: 'Add one meaningful stop only if time allows', body: 'Independence Hall works best when it does not break the route rhythm.' },
+        ],
+      },
+    },
+  },
+  gumi: {
+    river: {
+      stay: {
+        question: 'Should you sleep in Gumi before Daegu?',
+        summary: 'Gumi is useful as a quieter middle-corridor overnight when the route needs rest, food, resupply, and a calmer entry into Daegu.',
+        cards: [
+          { title: 'Stay to protect Daegu energy', body: 'A cleaner night here can make Daegu feel sharper the next day.' },
+          { title: 'Use central Gumi for low friction', body: 'The city works best when dinner, hotel, and morning departure are simple.' },
+          { title: 'Skip the night if momentum is good', body: 'Gumi should solve fatigue, not become an unnecessary detour.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gumi?',
+        summary: 'Gumi food should be steadying: warm dinner, simple breakfast, resupply snacks, and enough local grounding before Daegu.',
+        cards: [
+          { title: 'Choose reliable over elaborate', body: 'The stop’s value is comfort and timing.' },
+          { title: 'Keep food close to lodging', body: 'A corridor reset should not create extra transfers.' },
+          { title: 'Use breakfast to relaunch well', body: 'The next leg is easier when the morning is settled.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Gumi?',
+        summary: 'Gumi pairs with central stay logic, Nakdong riverside reset, Geumo Mountain access, and the Daegu handoff.',
+        cards: [
+          { title: 'Short version: stay, meal, relaunch', body: 'Use this when Gumi is a practical route pause.' },
+          { title: 'Soft version: Nakdong-side reset', body: 'This gives the stop a calmer spatial identity.' },
+          { title: 'Route version: pre-Daegu breather', body: 'Gumi keeps the direct corridor from becoming one long push.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Gumi into Route 1?',
+        summary: 'Gumi should be treated as a corridor decompression node with a clear southbound departure plan.',
+        cards: [
+          { title: 'End the day before fatigue wins', body: 'That is the clearest reason to use Gumi.' },
+          { title: 'Keep resupply and departure simple', body: 'The city should reduce route noise.' },
+          { title: 'Point the next leg toward Daegu', body: 'Gumi works best as a prelude rather than an endpoint.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Gumi?',
+        summary: 'Gumi is a usefulness-first stop. It should be framed honestly as timing, rest, and corridor control.',
+        cards: [
+          { title: 'Do not oversell the stop', body: 'Its strength is practical clarity.' },
+          { title: 'Use it when tired', body: 'A rested Daegu arrival is the payoff.' },
+          { title: 'Add a river edge if you need atmosphere', body: 'A small scenic reset can make the stay feel less mechanical.' },
+        ],
+      },
+    },
+  },
+  samcheok: {
+    jangho: {
+      stay: {
+        question: 'Should you sleep near Samcheok’s coastline?',
+        summary: 'Samcheok is worth a coast stay when Route 4 needs one more scenic shoreline chapter before the quieter Uljin stretch.',
+        cards: [
+          { title: 'Stay for coastline spacing', body: 'The east coast feels more believable when it unfolds in chapters.' },
+          { title: 'Use a sea-facing base', body: 'The overnight works best when the ocean remains the main experience.' },
+          { title: 'Skip the night if the coast is already overloaded', body: 'Samcheok should add breathing room, not another rushed stop.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Samcheok?',
+        summary: 'Samcheok food should support the shoreline rhythm: seafood, harbor meals, easy breakfasts, and road-trip pacing.',
+        cards: [
+          { title: 'Eat close to the harbor or beach', body: 'The meal should reinforce the coastal chapter.' },
+          { title: 'Keep breakfast practical', body: 'The next Uljin leg benefits from an easy start.' },
+          { title: 'Avoid food detours that break the coast', body: 'The route’s value here is continuity.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Samcheok?',
+        summary: 'Samcheok pairs with Jangho Port, cave-country context, coastal rail-bike scenery, open shoreline, and the Uljin handoff.',
+        cards: [
+          { title: 'Short version: harbor and sea view', body: 'Use this when Samcheok is a scenic pause.' },
+          { title: 'Half-day version: port, coast road, cave or rail-bike', body: 'This gives the stop enough texture without overloading it.' },
+          { title: 'Route version: coast before quiet coast', body: 'Samcheok prepares the longer, calmer Uljin section.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Samcheok into Route 4?',
+        summary: 'Samcheok should be planned as a coast-road stop, usually by car or deliberate regional movement south from Donghae.',
+        cards: [
+          { title: 'Keep the route sea-led', body: 'The stop works when the coast is visually present.' },
+          { title: 'Protect daylight for views', body: 'Scenic coast chapters lose force after dark.' },
+          { title: 'Plan the Uljin handoff', body: 'The next section is longer and quieter.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Samcheok?',
+        summary: 'Samcheok is a continuity stop. It makes the east coast feel spacious rather than compressed into only famous cities.',
+        cards: [
+          { title: 'Let it be scenic, not frantic', body: 'The stop is strongest with fewer priorities.' },
+          { title: 'Check weather and sea conditions', body: 'Coastal value changes quickly with visibility.' },
+          { title: 'Use it to slow Route 4 down', body: 'That is the editorial and practical reason it belongs.' },
+        ],
+      },
+    },
+  },
+  uljin: {
+    coast: {
+      stay: {
+        question: 'Should you sleep on the Uljin coast?',
+        summary: 'Uljin is useful when the east-coast route needs open shoreline, quiet recovery, simple seafood, and space before Yeongdeok and Pohang.',
+        cards: [
+          { title: 'Stay for the long-coast feeling', body: 'Uljin keeps Route 4 from becoming only headline stops.' },
+          { title: 'Use a simple shoreline stay', body: 'The value is waking into the coast, not resort spectacle.' },
+          { title: 'Skip the night if you need a bigger city', body: 'Uljin is for spacing and calm, not density.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Uljin?',
+        summary: 'Uljin food should stay coastal and simple: seafood, breakfast before driving, harbor-side meals, and quiet timing.',
+        cards: [
+          { title: 'Use seafood as a fresh reset', body: 'The meal should match the open coast mood.' },
+          { title: 'Keep food close to the stay area', body: 'Uljin works best when logistics stay easy.' },
+          { title: 'Plan the morning launch', body: 'A clean breakfast helps the long shoreline continue smoothly.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Uljin?',
+        summary: 'Uljin pairs with open East Sea coast, harbor food, forest-road recovery, Deokgu-side valleys, and the Yeongdeok handoff.',
+        cards: [
+          { title: 'Short version: coast and meal', body: 'Use this when Uljin is a quiet maritime pause.' },
+          { title: 'Recovery version: coast plus valley air', body: 'This gives the stop more body-reset value.' },
+          { title: 'Route version: open coast before flavor coast', body: 'Uljin prepares Yeongdeok’s seafood identity by giving the shore room first.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Uljin into Route 4?',
+        summary: 'Uljin should be planned as a long-coast continuity stop with realistic driving time and a clear southbound next leg.',
+        cards: [
+          { title: 'Respect the length of the coast', body: 'The point is spacious travel, not fast transfer.' },
+          { title: 'Keep the stay and meals simple', body: 'Overplanning fights the reason Uljin works.' },
+          { title: 'Aim the next leg toward Yeongdeok', body: 'That gives the route a clearer food-and-port chapter after the open coast.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Uljin?',
+        summary: 'Uljin is a calm continuity chapter. It rewards travelers who want the east coast to feel broad and actually traveled.',
+        cards: [
+          { title: 'Do not expect a dense city guide', body: 'The value is space, coast, and recovery.' },
+          { title: 'Check weather for coastal payoff', body: 'Visibility and wind affect the mood.' },
+          { title: 'Let it make the next stop sharper', body: 'Yeongdeok and Pohang land better after Uljin has opened the route.' },
+        ],
+      },
+    },
+  },
+  yeongdeok: {
+    crab: {
+      stay: {
+        question: 'Should you sleep near Yeongdeok’s port side?',
+        summary: 'Yeongdeok is worth a compact stay when the east-coast route needs local seafood identity, smaller-port texture, and a softer handoff toward Pohang.',
+        cards: [
+          { title: 'Stay for seafood identity', body: 'The town works best when food and port atmosphere can carry the night.' },
+          { title: 'Use a compact port-side base', body: 'Lodging should keep meals, harbor air, and departure close.' },
+          { title: 'Skip the overnight for a quick flavor stop', body: 'A focused meal can still preserve Yeongdeok’s route value.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Yeongdeok?',
+        summary: 'Yeongdeok food should lead the stop: crab culture, seafood meals, port-side dining, and a clear local flavor chapter.',
+        cards: [
+          { title: 'Let crab be the reason', body: 'Food is not support here; it is the route argument.' },
+          { title: 'Keep the meal near the port', body: 'The atmosphere matters as much as the plate.' },
+          { title: 'Use breakfast to relaunch south', body: 'A simple morning keeps Pohang from arriving tired.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Yeongdeok crab culture?',
+        summary: 'Yeongdeok pairs with fishing-port mood, crab streets, coast-road scenery, smaller-town stays, and the Pohang handoff.',
+        cards: [
+          { title: 'Short version: crab meal and harbor walk', body: 'Use this when Yeongdeok is a flavor checkpoint.' },
+          { title: 'Overnight version: port stay and coast road', body: 'This gives the town enough scale without pretending it is a major city.' },
+          { title: 'Route version: local flavor before bigger coast', body: 'Yeongdeok makes the line south toward Pohang feel more regional.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Yeongdeok into Route 4?',
+        summary: 'Yeongdeok should be used as a compact food-and-port chapter before the route scales up toward Pohang and the southeast.',
+        cards: [
+          { title: 'Keep the stop small and intentional', body: 'Yeongdeok is strongest when its role is sharp.' },
+          { title: 'Plan food before the onward leg', body: 'The meal is the point, so timing should protect it.' },
+          { title: 'Use the coast road deliberately', body: 'The shoreline helps the town feel like part of the route, not only a restaurant stop.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Yeongdeok?',
+        summary: 'Yeongdeok works best as a smaller seafood-and-port chapter. It should stay local, compact, and route-aware.',
+        cards: [
+          { title: 'Do not overinflate the town', body: 'Its strength is clarity and flavor.' },
+          { title: 'Use seafood as route logic', body: 'This is where the east coast becomes edible.' },
+          { title: 'Let Pohang stay the next scale-up', body: 'Yeongdeok should prepare that shift, not compete with it.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -2789,6 +3034,11 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['may-18', 'may-18-national-cemetery', 'gwangju-may18', 'gwangju-may-18'].includes(hotspotSlug)) return 'may18';
   if (['gwanghallu', 'gwanghalluwon', 'namwon-gwanghallu', 'gwanghallu-garden'].includes(hotspotSlug)) return 'gwanghallu';
   if (['imsil-cheese-theme-park', 'imsil-cheese', 'cheese-theme-park'].includes(hotspotSlug)) return 'cheese';
+  if (['cheonan-walnut-cookies', 'walnut-cookies', 'hodu-gwaja', 'cheonan-station'].includes(hotspotSlug)) return 'walnut';
+  if (['gumi-river', 'nakdong-river-gumi', 'geumo-mountain', 'geumosan'].includes(hotspotSlug)) return 'river';
+  if (['jangho-port', 'samcheok-jangho', 'samcheok-coast', 'hwanseon-cave'].includes(hotspotSlug)) return 'jangho';
+  if (['uljin-coast', 'uljin-seaside', 'deokgu-valley', 'mangyangjeong'].includes(hotspotSlug)) return 'coast';
+  if (['yeongdeok-crab', 'snow-crab', 'yeongdeok-snow-crab', 'yeongdeok-port'].includes(hotspotSlug)) return 'crab';
   return hotspotSlug;
 }
 
