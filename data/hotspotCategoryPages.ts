@@ -1026,6 +1026,53 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
         ],
       },
     },
+    lake: {
+      stay: {
+        question: 'Should you sleep near Chungju Lake?',
+        summary: 'Chungju Lake can shape an overnight when the inland route needs scenery, recovery, and a calmer handoff before Mungyeong or deeper central Korea.',
+        cards: [
+          { title: 'Stay nearby for a slower inland reset', body: 'Lake-side pacing makes Chungju feel like more than a transfer between Seoul and the southeast.' },
+          { title: 'Use Suanbo when hot springs matter more', body: 'If recovery is the main purpose, Suanbo may be the stronger stay choice than the lake edge.' },
+          { title: 'Use central Chungju for logistics', body: 'City-side lodging is easier when food, errands, or transit are more important than scenery.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Chungju Lake?',
+        summary: 'Food around Chungju Lake should support a scenic and recovery-oriented stop. Keep meals practical unless the lake stay is the main chapter.',
+        cards: [
+          { title: 'Use simple meals around the lake', body: 'The scenery is the anchor, so food should not overcomplicate the stop.' },
+          { title: 'Move central for more choice', body: 'Chungju city gives better flexibility when the group needs reliable restaurants.' },
+          { title: 'Plan snacks for the next inland leg', body: 'If the route continues toward Mungyeong, practical food planning helps the next day.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Chungju Lake?',
+        summary: 'Chungju Lake pairs with Suanbo, riverside views, light drives, and the inland route handoff toward Mungyeong Saejae.',
+        cards: [
+          { title: 'Short version: lake viewpoint and pause', body: 'Use this when Chungju is a scenic reset inside a longer driving day.' },
+          { title: 'Half-day version: lake and Suanbo', body: 'This gives the stop both scenery and recovery logic.' },
+          { title: 'Route version: lake before pass country', body: 'The lake chapter prepares the route for the more dramatic Mungyeong crossing.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Chungju Lake into the route?',
+        summary: 'Chungju Lake is easiest by car or deliberate local transfer. It works best when grouped with the inland road sequence.',
+        cards: [
+          { title: 'Use car-first routing', body: 'The lake becomes more valuable when viewpoints and recovery stops are linked by road.' },
+          { title: 'Avoid scattered lake stops', body: 'Choose a clear viewpoint or stay zone instead of chasing the whole shoreline.' },
+          { title: 'Protect the next morning', body: 'Chungju is strongest when it makes the next inland leg easier.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Chungju Lake?',
+        summary: 'Chungju Lake is a mood and pacing stop. It succeeds when the route needs calm, not when travelers expect dense urban sightseeing.',
+        cards: [
+          { title: 'Use it to slow the route', body: 'The lake gives the inland line breathing room after Seoul-side movement.' },
+          { title: 'Watch weather and visibility', body: 'Lake scenery changes quickly with haze, rain, and season.' },
+          { title: 'Pair with recovery', body: 'The lake feels more useful when connected to Suanbo, rest, or a softer overnight.' },
+        ],
+      },
+    },
   },
   gangneung: {
     coffee: {
@@ -1709,6 +1756,202 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  mungyeong: {
+    saejae: {
+      stay: {
+        question: 'Should you sleep near Mungyeong Saejae?',
+        summary: 'Mungyeong Saejae can justify an overnight when the route should feel like a real inland crossing rather than a fast southbound transfer.',
+        cards: [
+          { title: 'Stay nearby for the pass-country mood', body: 'Sleeping close lets the old road and gate landscape define the stop.' },
+          { title: 'Use Mungyeong town for practical comfort', body: 'Town-side stays can be easier for food and services while still supporting Saejae.' },
+          { title: 'Skip the overnight if it is only a photo stop', body: 'Saejae needs time to feel like a route chapter.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Mungyeong Saejae?',
+        summary: 'Food should support the mountain-pass rhythm: simple local meals, omija references, and recovery after walking.',
+        cards: [
+          { title: 'Eat after the walk when possible', body: 'A meal feels better when it lands as recovery from the pass route.' },
+          { title: 'Use local products as identity', body: 'Omija and regional food cues help Mungyeong feel specific.' },
+          { title: 'Keep the meal close to the route', body: 'Do not let food logistics pull the day away from the old-road chapter.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Mungyeong Saejae?',
+        summary: 'Mungyeong Saejae pairs with old-road gates, pass-country walking, filming-set heritage, local food, and the onward route toward Andong or Sangju.',
+        cards: [
+          { title: 'Short version: first gate and old-road feel', body: 'Use this when the stop needs to prove the inland route identity quickly.' },
+          { title: 'Half-day version: gates and pass walk', body: 'This is the strongest way to make Mungyeong feel meaningful.' },
+          { title: 'Route version: Chungju to Mungyeong to Andong', body: 'Saejae becomes the threshold between recovery and cultural depth.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Mungyeong Saejae into the inland route?',
+        summary: 'Saejae works best with car-first or carefully planned bus movement. It should be treated as the route’s threshold, not a casual detour.',
+        cards: [
+          { title: 'Arrive with walking time protected', body: 'The stop loses meaning if there is no time to experience the pass.' },
+          { title: 'Group it with inland movement', body: 'Chungju, Mungyeong, Sangju, and Andong make more sense when sequenced deliberately.' },
+          { title: 'Avoid late rushed arrival', body: 'The old road needs daylight and energy.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Mungyeong Saejae?',
+        summary: 'Mungyeong Saejae is about crossing, gates, and old-road atmosphere. It works best when the traveler slows down enough to feel the geography.',
+        cards: [
+          { title: 'Wear walking-friendly shoes', body: 'The value is in movement through the pass, not just standing near a gate.' },
+          { title: 'Use it as route proof', body: 'This stop explains why the inland route is different from a direct transfer.' },
+          { title: 'Do not overload the day', body: 'Saejae needs enough quiet space to register.' },
+        ],
+      },
+    },
+  },
+  wonju: {
+    museumsan: {
+      stay: {
+        question: 'Should you sleep near Museum SAN?',
+        summary: 'Museum SAN can influence a Wonju stay when art, architecture, mountain setting, and a calm Gangwon opening matter more than city-center convenience.',
+        cards: [
+          { title: 'Stay nearby for a quiet art-focused reset', body: 'This works when Museum SAN is the reason to slow down before deeper Gangwon movement.' },
+          { title: 'Use Wonju center for transit and food', body: 'The city core is easier when the next leg or station access matters.' },
+          { title: 'Skip nearby lodging for a quick art stop', body: 'If the museum is only one stop, stay where the route needs you next.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Museum SAN?',
+        summary: 'Food should support the museum’s quiet pace. Plan cafe time or a simple meal, then use Wonju center for broader restaurant choice.',
+        cards: [
+          { title: 'Use cafe time as part of the visit', body: 'Museum SAN works best when the architecture, grounds, and pauses are not rushed.' },
+          { title: 'Move central for dinner', body: 'Wonju city gives more flexibility after the museum closes.' },
+          { title: 'Avoid heavy meal timing before the visit', body: 'The museum benefits from a lighter, more focused schedule.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Museum SAN?',
+        summary: 'Museum SAN pairs with Oak Valley, mountain scenery, Wonju city food, and a calm Gangwon route opening.',
+        cards: [
+          { title: 'Short version: museum and grounds', body: 'Use this when the stop is about art and architecture.' },
+          { title: 'Half-day version: museum and mountain resort rhythm', body: 'This gives the area enough time to feel like a retreat.' },
+          { title: 'Route version: Seoul to Wonju reset', body: 'Museum SAN can make the first Gangwon stop feel intentional.' },
+        ],
+      },
+      transport: {
+        question: 'How do you get to Museum SAN smoothly?',
+        summary: 'Museum SAN is not a casual walk from central Wonju. Plan car, taxi, or resort-based movement before committing.',
+        cards: [
+          { title: 'Use car or taxi planning', body: 'The museum’s setting is part of its appeal, but it creates transfer friction.' },
+          { title: 'Do not squeeze it between tight departures', body: 'A rushed visit misses the point.' },
+          { title: 'Connect it to the next Gangwon leg', body: 'Wonju works best when it prepares the route toward Jecheon, Yeongwol, or Gangneung.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Museum SAN?',
+        summary: 'Museum SAN rewards quiet time, weather awareness, and a slower pace. It should not be treated like a quick indoor fallback only.',
+        cards: [
+          { title: 'Give the grounds time', body: 'The outdoor and architectural experience matters as much as the exhibits.' },
+          { title: 'Check opening hours carefully', body: 'The museum stop needs more schedule discipline than a street district.' },
+          { title: 'Use it for contrast', body: 'It gives the route a calm art-and-mountain layer before louder city chapters.' },
+        ],
+      },
+    },
+  },
+  jecheon: {
+    cheongpung: {
+      stay: {
+        question: 'Should you sleep near Cheongpung Lake?',
+        summary: 'Cheongpung Lake can shape a Jecheon stay when the route wants water scenery, cable-car views, and a slower inland-nature pause.',
+        cards: [
+          { title: 'Stay nearby for lake scenery', body: 'This works when the view and quiet pace are the main reason for stopping.' },
+          { title: 'Use Jecheon center for logistics', body: 'The city center is easier for food, rail, and onward movement.' },
+          { title: 'Choose based on tomorrow’s route', body: 'A lake stay is strongest when the next day continues through nature or slow inland roads.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Cheongpung Lake?',
+        summary: 'Food around Cheongpung should be practical and scenery-friendly. Use central Jecheon when meal choice matters more.',
+        cards: [
+          { title: 'Keep meals close to the lake plan', body: 'Do not let food require unnecessary backtracking.' },
+          { title: 'Use cafes and simple stops for recovery', body: 'The lake chapter works best when it remains calm.' },
+          { title: 'Move central for a stronger dinner', body: 'Jecheon center can carry the fuller food layer after the scenic day.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Cheongpung Lake?',
+        summary: 'Cheongpung Lake pairs with cable-car views, lake drives, light walks, and the Wonju-Jecheon-Yeongwol inland sequence.',
+        cards: [
+          { title: 'Short version: lake viewpoint', body: 'Use this when Jecheon is a scenic pause.' },
+          { title: 'Half-day version: lake and cable car', body: 'This is the clearest way to make Cheongpung feel memorable.' },
+          { title: 'Route version: inland nature bridge', body: 'The lake helps connect Wonju, Jecheon, and Yeongwol into one calmer branch.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Cheongpung Lake into the route?',
+        summary: 'Cheongpung Lake is easiest with car-first movement or a planned local transfer. It should be grouped with lake-side stops.',
+        cards: [
+          { title: 'Use car routing for the lake edge', body: 'The scenery makes more sense when movement is flexible.' },
+          { title: 'Avoid city-lake-city repetition', body: 'Pick a clear sequence so the day does not become transfers.' },
+          { title: 'Protect daylight', body: 'Lake views and cable-car timing need enough light.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Cheongpung Lake?',
+        summary: 'Cheongpung is a scenery-first stop. Weather, visibility, and pacing decide whether it feels worth the detour.',
+        cards: [
+          { title: 'Check visibility', body: 'Haze or rain changes the lake-view payoff.' },
+          { title: 'Do not rush the cable-car window', body: 'The main value is the view, so timing matters.' },
+          { title: 'Use it as a calm branch', body: 'Cheongpung works best when the route wants inland nature, not city density.' },
+        ],
+      },
+    },
+  },
+  yeongwol: {
+    jangneung: {
+      stay: {
+        question: 'Should you sleep near Jangneung in Yeongwol?',
+        summary: 'Jangneung can influence a Yeongwol stay when the route wants Danjong history, quiet reflection, and a slower inland branch ending.',
+        cards: [
+          { title: 'Stay in Yeongwol for the story', body: 'The town becomes stronger when Jangneung, river scenery, and history have time to settle.' },
+          { title: 'Use a practical town base', body: 'Food and lodging are easier when the stay supports several Yeongwol stops, not only the tomb.' },
+          { title: 'Skip overnight if the route is only passing through', body: 'Jangneung is meaningful, but it needs context to justify a full stay.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Jangneung?',
+        summary: 'Food around Jangneung should be quiet and practical, supporting a history-focused visit rather than becoming the whole point.',
+        cards: [
+          { title: 'Use town meals after the visit', body: 'A simple local meal gives the stop a calmer landing.' },
+          { title: 'Do not rush from food to history', body: 'Jangneung needs a more respectful pace.' },
+          { title: 'Plan snacks for rural movement', body: 'Yeongwol routes can include gaps between major stops.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Jangneung?',
+        summary: 'Jangneung pairs with Danjong story sites, river scenery, observatory views, and the emotional end of a compact inland branch.',
+        cards: [
+          { title: 'Short version: Jangneung and context', body: 'Use this when the stop needs one clear historical anchor.' },
+          { title: 'Half-day version: history and river views', body: 'This lets Yeongwol feel like a place, not a single tomb stop.' },
+          { title: 'Route version: Jecheon to Yeongwol close', body: 'Jangneung gives the branch a more reflective ending.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Jangneung into Yeongwol movement?',
+        summary: 'Jangneung is easiest as part of a planned Yeongwol town-and-river route, usually by car or careful local transfer.',
+        cards: [
+          { title: 'Group history stops together', body: 'The Danjong story is stronger when not fragmented.' },
+          { title: 'Use car movement for rural flexibility', body: 'Yeongwol rewards controlled timing between viewpoints and town stops.' },
+          { title: 'Avoid treating it as a roadside errand', body: 'The stop needs a bit of quiet to land properly.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Jangneung?',
+        summary: 'Jangneung is a respect-first historical stop. It works best when the traveler knows why Yeongwol matters before arriving.',
+        cards: [
+          { title: 'Read the Danjong context', body: 'The site is much stronger when the story is understood.' },
+          { title: 'Keep the mood quieter', body: 'This is not a loud checklist attraction.' },
+          { title: 'Pair it with landscape', body: 'Yeongwol’s river and mountain setting helps the history feel less abstract.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -1741,6 +1984,11 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['boriam-temple', 'namhae-boriam'].includes(hotspotSlug)) return 'boriam';
   if (['suncheon-bay', 'suncheonman-bay', 'suncheon-bay-wetland'].includes(hotspotSlug)) return 'bay';
   if (['boseong-tea-fields', 'boseong-green-tea-field', 'green-tea-field'].includes(hotspotSlug)) return 'tea';
+  if (['chungju-lake', 'chungjuho-lake', 'chungjuho'].includes(hotspotSlug)) return 'lake';
+  if (['mungyeong-saejae', 'mungyeongsaejae', 'saejae-pass', 'mungyeong-saejae-pass'].includes(hotspotSlug)) return 'saejae';
+  if (['museum-san', 'museumsan', 'wonju-museum-san'].includes(hotspotSlug)) return 'museumsan';
+  if (['cheongpung-lake', 'cheongpung-ho', 'cheongpungho'].includes(hotspotSlug)) return 'cheongpung';
+  if (['jangneung', 'yeongwol-jangneung', 'jangneung-royal-tomb'].includes(hotspotSlug)) return 'jangneung';
   return hotspotSlug;
 }
 
