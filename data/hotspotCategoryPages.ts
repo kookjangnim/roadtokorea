@@ -2491,6 +2491,251 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  wando: {
+    cheongsando: {
+      stay: {
+        question: 'Should you sleep near Wando or Cheongsando access?',
+        summary: 'Wando is worth a stay when Route 7 needs island tempo, ferry rhythm, seafood, and a clear Dadohae chapter after Haenam.',
+        cards: [
+          { title: 'Stay for ferry flexibility', body: 'Island days work better when the first boat or return window is not stressful.' },
+          { title: 'Use Wando town for practical services', body: 'Hotels, food, and port access make the island plan easier to control.' },
+          { title: 'Skip the overnight if ferries are not central', body: 'If Cheongsando is not part of the day, Wando can stay a shorter seafood stop.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Wando?',
+        summary: 'Wando food should lead with seafood, seaweed, abalone, harbor meals, and simple island-day pacing.',
+        cards: [
+          { title: 'Anchor one meal in seafood', body: 'The food layer should make the Dadohae setting obvious.' },
+          { title: 'Keep ferry days simple', body: 'Meals should support boat timing instead of fighting it.' },
+          { title: 'Use seaweed and abalone as local cues', body: 'They make Wando feel specific rather than just another port.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Cheongsando access?',
+        summary: 'Cheongsando pairs with Wando harbor, island ferry timing, seafood, Wando Arboretum, and the Boseong handoff.',
+        cards: [
+          { title: 'Short version: harbor meal and sea view', body: 'Use this when Wando is a compact coastal pause.' },
+          { title: 'Island version: Cheongsando day', body: 'This is the strongest reason to slow Route 7 here.' },
+          { title: 'Route version: land end to island country', body: 'Wando proves the south coast is becoming maritime, not just scenic.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Wando into Route 7?',
+        summary: 'Wando needs ferry-aware planning. The route should decide early whether the city is a port stop, an island day, or a full overnight.',
+        cards: [
+          { title: 'Check ferry windows first', body: 'Boat timing should shape the day before hotels or meals do.' },
+          { title: 'Keep the next handoff realistic', body: 'Boseong or Suncheon movement can feel long after an island day.' },
+          { title: 'Use car-first movement on the mainland', body: 'The town, port, arboretum, and onward route are easier with flexible timing.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Wando?',
+        summary: 'Wando works when the route respects island logistics. Weather, ferry timing, and food pacing decide whether it feels smooth.',
+        cards: [
+          { title: 'Treat ferries as the spine', body: 'Do not add Cheongsando casually without checking the day structure.' },
+          { title: 'Let seafood do real work', body: 'Food is part of Wando’s route identity.' },
+          { title: 'Use it as a maritime turn', body: 'This is where Route 7 stops feeling like a mainland road.' },
+        ],
+      },
+    },
+  },
+  geoje: {
+    powcamp: {
+      stay: {
+        question: 'Should you sleep near Geoje POW Camp or the island coast?',
+        summary: 'Geoje is worth a final island stay when Route 7 needs Korean War memory, shipbuilding scale, Windy Hill scenery, and a slower approach to Busan.',
+        cards: [
+          { title: 'Stay for the final island chapter', body: 'Geoje gives the Busan arrival more shape than a direct transfer.' },
+          { title: 'Choose the base by purpose', body: 'Stay central for POW Camp and services, or coast-side for Windy Hill and island scenery.' },
+          { title: 'Skip the night only if Busan must land fast', body: 'Rushing Geoje can flatten one of Route 7’s strongest contrasts.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Geoje?',
+        summary: 'Geoje food should support island movement: seafood, harbor meals, market food, and simple stops between history and coastline.',
+        cards: [
+          { title: 'Use seafood as the island anchor', body: 'A coastal meal keeps Geoje tied to Route 7’s maritime logic.' },
+          { title: 'Plan food around long island drives', body: 'Distances can feel larger than they look.' },
+          { title: 'Keep dinner near the stay base', body: 'After scenery and history, simple logistics matter.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Geoje POW Camp?',
+        summary: 'Geoje POW Camp pairs with Windy Hill, Oedo access, shipbuilding context, beaches, harbor food, and the bridge handoff to Busan.',
+        cards: [
+          { title: 'Short version: POW Camp and meal', body: 'Use this when Geoje is a history stop before Busan.' },
+          { title: 'Scenery version: Windy Hill and coast road', body: 'This gives the island its visual payoff.' },
+          { title: 'Route version: modern island before metropolis', body: 'Geoje prepares Busan by showing maritime Korea at a different scale.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Geoje into Route 7?',
+        summary: 'Geoje is car-first for most travelers. The day should be built around one history anchor, one coast anchor, and a realistic Busan handoff.',
+        cards: [
+          { title: 'Do not underestimate island distance', body: 'Windy Hill, Oedo access, and central Geoje are not one tiny cluster.' },
+          { title: 'Pick one scenic priority', body: 'Trying to chase every coast stop can blur the island.' },
+          { title: 'Plan the bridge line to Busan', body: 'The final handoff should feel deliberate, not exhausted.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Geoje?',
+        summary: 'Geoje needs balance. It is scenic, but its Korean War memory and shipbuilding context make the stop more serious than a beach detour.',
+        cards: [
+          { title: 'Hold history and scenery together', body: 'POW Camp memory gives Geoje weight beside Windy Hill views.' },
+          { title: 'Check boat and weather conditions', body: 'Oedo and coastal plans depend on visibility and operations.' },
+          { title: 'Use it to slow the Busan arrival', body: 'Geoje makes the final metropolis feel earned.' },
+        ],
+      },
+    },
+  },
+  gwangju: {
+    may18: {
+      stay: {
+        question: 'Should you sleep near Gwangju’s May 18 memory sites?',
+        summary: 'Gwangju deserves an overnight when the route needs modern democratic history, civic memory, culture, food, and a serious Honam chapter.',
+        cards: [
+          { title: 'Stay for modern-history context', body: 'A night gives the city enough time to be more than a solemn checkpoint.' },
+          { title: 'Use central Gwangju for balance', body: 'Culture, food, and May 18 memory are easier to connect from a central base.' },
+          { title: 'Skip the overnight only on a very tight route', body: 'Reducing Gwangju to a transfer weakens Route 5 and Route 8.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gwangju’s modern-history chapter?',
+        summary: 'Food in Gwangju should support reflection and city life: markets, local meals, cafes, and a slower evening after civic-memory sites.',
+        cards: [
+          { title: 'Use food as a recovery layer', body: 'A respectful history day needs a softer city rhythm afterward.' },
+          { title: 'Keep meals central', body: 'The city works best when culture, food, and memory stay connected.' },
+          { title: 'Do not make food erase the context', body: 'Gwangju’s gravity should remain visible even when the page becomes practical.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with May 18 sites?',
+        summary: 'May 18 memory pairs with the Asia Culture Center, Yangnim-dong, markets, Mudeungsan, and the handoff toward Suncheon or Mokpo.',
+        cards: [
+          { title: 'Short version: memory and culture core', body: 'Use this when Gwangju is a focused civic-history stop.' },
+          { title: 'Fuller version: May 18, ACC, food, and neighborhood walk', body: 'This lets the city feel alive without flattening the memory.' },
+          { title: 'Route version: Honam seriousness before coast', body: 'Gwangju gives the southbound route moral and modern weight.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Gwangju into the route?',
+        summary: 'Gwangju should be planned as a major city chapter, with enough time for civic-memory sites and a clean onward move to Suncheon or Mokpo.',
+        cards: [
+          { title: 'Give the city enough time', body: 'A serious site plus food and culture needs more than a rushed stop.' },
+          { title: 'Choose the next direction clearly', body: 'The route can turn toward Suncheon ecology or Mokpo harbor.' },
+          { title: 'Use city transport pragmatically', body: 'Taxis and transit can keep the day from becoming fragmented.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gwangju May 18 sites?',
+        summary: 'Gwangju requires respectful travel framing. The city should be written as modern civic history plus living culture, not tragedy tourism.',
+        cards: [
+          { title: 'Lead with respect', body: 'May 18 memory is central to modern Korean democracy.' },
+          { title: 'Pair memory with present culture', body: 'ACC, food, and neighborhoods show the city continuing forward.' },
+          { title: 'Avoid rushing the chapter', body: 'The route is better when Gwangju has room to land.' },
+        ],
+      },
+    },
+  },
+  namwon: {
+    gwanghallu: {
+      stay: {
+        question: 'Should you sleep near Gwanghalluwon in Namwon?',
+        summary: 'Namwon is worth a stay when the route needs Chunhyang story, garden atmosphere, local food, and a Jirisan-edge pause between Jeonju and Suncheon.',
+        cards: [
+          { title: 'Stay for the story-city mood', body: 'Gwanghalluwon works better when evening and morning give it time.' },
+          { title: 'Use Namwon as a softer inland hinge', body: 'It changes the route from Jeonju food culture toward mountain-edge storytelling.' },
+          { title: 'Skip the night if Suncheon is the priority', body: 'Fast ecology-focused routes may keep Namwon as a compact stop.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gwanghalluwon?',
+        summary: 'Food around Namwon should be local, calm, and practical, supporting the garden and Chunhyang story without overloading the day.',
+        cards: [
+          { title: 'Plan one local meal after the garden', body: 'The stop lands better when food follows the story walk.' },
+          { title: 'Keep the evening slow', body: 'Namwon’s value is atmosphere more than density.' },
+          { title: 'Use food before mountain or wetland movement', body: 'The next leg needs energy and clear timing.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Gwanghalluwon?',
+        summary: 'Gwanghalluwon pairs with Chunhyang theme sites, Namwon old-town walking, Jirisan-edge scenery, and the Suncheon handoff.',
+        cards: [
+          { title: 'Short version: garden and Chunhyang context', body: 'Use this when Namwon is a literary-story pause.' },
+          { title: 'Half-day version: garden, town meal, Jirisan edge', body: 'This gives the city enough route texture.' },
+          { title: 'Route version: Jeonju to mountain story', body: 'Namwon makes the middle of Jeolla feel authored.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Namwon into Route 5?',
+        summary: 'Namwon should be used as a measured stop between Jeonju, Imsil, Jirisan-edge scenery, and Suncheon.',
+        cards: [
+          { title: 'Keep the garden walk protected', body: 'Gwanghalluwon needs calm time, not a leftover hour.' },
+          { title: 'Decide between Jirisan and Suncheon next', body: 'The next direction changes the day’s pacing.' },
+          { title: 'Use Namwon for route rhythm', body: 'It prevents the Jeolla route from jumping too abruptly.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gwanghalluwon?',
+        summary: 'Gwanghalluwon is strongest when the traveler understands Namwon as a story city and not only a pretty garden.',
+        cards: [
+          { title: 'Read the Chunhyang layer', body: 'The garden has more meaning when the story is visible.' },
+          { title: 'Let the pace stay gentle', body: 'Namwon rewards quiet more than checklist speed.' },
+          { title: 'Use it between food and nature chapters', body: 'It bridges Jeonju, Imsil, Jirisan, and Suncheon well.' },
+        ],
+      },
+    },
+  },
+  imsil: {
+    cheese: {
+      stay: {
+        question: 'Should you sleep near Imsil Cheese Theme Park?',
+        summary: 'Imsil is usually a short route stop, but it can justify a pause when cheese, Okjeongho scenery, and rural Jeolla pacing fill the Jeonju-to-Namwon gap.',
+        cards: [
+          { title: 'Use Imsil as a half-day bridge', body: 'It is strongest when it solves the middle of the route rather than becoming the whole trip.' },
+          { title: 'Stay only for a rural slow day', body: 'An overnight works when Okjeongho or countryside pacing matters.' },
+          { title: 'Base elsewhere for broader services', body: 'Jeonju or Namwon will usually handle lodging more easily.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Imsil Cheese Theme Park?',
+        summary: 'Food in Imsil should lean into cheese, local dairy identity, simple rural meals, and snacks that make the branch memorable.',
+        cards: [
+          { title: 'Let cheese be the hook', body: 'The stop works because the food-production story is specific and easy to understand.' },
+          { title: 'Keep the meal playful but grounded', body: 'Imsil should feel like local production, not only novelty.' },
+          { title: 'Use snacks for route movement', body: 'A lighter stop can bridge Jeonju and Namwon cleanly.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Imsil Cheese Theme Park?',
+        summary: 'Imsil Cheese Theme Park pairs with local dairy history, Okjeongho lake scenery, rural roads, and the Namwon handoff.',
+        cards: [
+          { title: 'Short version: cheese stop and snack', body: 'Use this when Imsil fills a transfer gap.' },
+          { title: 'Half-day version: cheese and lake scenery', body: 'This gives the branch enough visual contrast.' },
+          { title: 'Route version: modern local food before story city', body: 'Imsil makes Namwon feel like the next chapter, not an abrupt detour.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Imsil into the route?',
+        summary: 'Imsil works best by car or planned local transfer between Jeonju, Okjeongho, and Namwon.',
+        cards: [
+          { title: 'Use it to break up the middle', body: 'The stop is most useful when it improves route rhythm.' },
+          { title: 'Do not overbuild the day', body: 'Cheese, lake, and one meal are enough.' },
+          { title: 'Keep Namwon or Jeonju as the anchor', body: 'Imsil usually supports the route rather than replacing a city stay.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Imsil Cheese Theme Park?',
+        summary: 'Imsil should be framed as modern local production and rural Jeolla texture, not just a quirky theme-park detour.',
+        cards: [
+          { title: 'Treat the cheese story seriously enough', body: 'It gives the route a present-day local-production layer.' },
+          { title: 'Pair with scenery if time allows', body: 'Okjeongho helps the stop feel less one-note.' },
+          { title: 'Use it selectively', body: 'The stop is best for travelers who enjoy food identity and slower branches.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -2539,6 +2784,11 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['haemieupseong', 'haemieupseong-fortress', 'haemi-fortress', 'seosan-haemi'].includes(hotspotSlug)) return 'haemi';
   if (['daecheon-beach', 'boryeong-daecheon', 'boryeong-mud-festival'].includes(hotspotSlug)) return 'daecheon';
   if (['gunsan-modern-history', 'modern-history-museum', 'gunsan-modern-history-museum'].includes(hotspotSlug)) return 'modernhistory';
+  if (['cheongsando', 'cheongsando-island', 'wando-cheongsando'].includes(hotspotSlug)) return 'cheongsando';
+  if (['geoje-pow-camp', 'pow-camp', 'pow-camp-history', 'geoje-pow-camp-history'].includes(hotspotSlug)) return 'powcamp';
+  if (['may-18', 'may-18-national-cemetery', 'gwangju-may18', 'gwangju-may-18'].includes(hotspotSlug)) return 'may18';
+  if (['gwanghallu', 'gwanghalluwon', 'namwon-gwanghallu', 'gwanghallu-garden'].includes(hotspotSlug)) return 'gwanghallu';
+  if (['imsil-cheese-theme-park', 'imsil-cheese', 'cheese-theme-park'].includes(hotspotSlug)) return 'cheese';
   return hotspotSlug;
 }
 
