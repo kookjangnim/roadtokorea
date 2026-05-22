@@ -1368,6 +1368,347 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  pohang: {
+    homigot: {
+      stay: {
+        question: 'Should you sleep near Homigot?',
+        summary: 'Homigot shapes a stay only when sunrise, East Sea driving, and a slower coastal morning are the reason for stopping in Pohang.',
+        cards: [
+          { title: 'Stay nearby for sunrise', body: 'A nearby stay makes the early start realistic and turns Homigot into the day’s main opening.' },
+          { title: 'Use central Pohang for food and services', body: 'If seafood, market access, and city convenience matter more, sleep closer to the city core.' },
+          { title: 'Skip the overnight for a quick photo stop', body: 'Homigot is less demanding when it is one scenic point inside a longer coastal drive.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Homigot?',
+        summary: 'Food near Homigot should support coastal timing. Stronger seafood and market meals usually fit better back toward Pohang city.',
+        cards: [
+          { title: 'Keep sunrise food practical', body: 'Coffee, snacks, or a simple breakfast often matter more than a complicated pre-dawn meal.' },
+          { title: 'Use Pohang for the seafood payoff', body: 'After the coastal stop, city markets and seafood areas give the meal more identity.' },
+          { title: 'Do not overdrive for one restaurant', body: 'Let the food plan follow the coast route instead of breaking it.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Homigot?',
+        summary: 'Homigot pairs with sunrise views, coastal roads, Pohang seafood, and the Route 1 or east-coast handoff toward Gyeongju or Yeongdeok.',
+        cards: [
+          { title: 'Short version: sunrise and sculpture', body: 'Use this when Homigot is the symbolic East Sea stop.' },
+          { title: 'Half-day version: Homigot and Pohang food', body: 'This balances scenic coast with a practical city meal.' },
+          { title: 'Route version: coastal handoff', body: 'Homigot works well when the day continues along the East Sea corridor.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Homigot into the route?',
+        summary: 'Homigot is car-first for most travelers. It should be grouped with coastal movement rather than treated like a central-city attraction.',
+        cards: [
+          { title: 'Use car timing deliberately', body: 'The value is sunrise or coastline, both of which need control over arrival time.' },
+          { title: 'Avoid backtracking from central Pohang', body: 'Plan the stop as part of a coast loop or onward route.' },
+          { title: 'Protect the next leg', body: 'Do not let a sunrise stop create a tired, overpacked driving day.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Homigot?',
+        summary: 'Homigot is timing-sensitive. It feels meaningful when sunrise, weather, and coastal routing line up.',
+        cards: [
+          { title: 'Check sunrise and weather', body: 'Clouds or rain can change the whole value of an early visit.' },
+          { title: 'Dress for wind', body: 'East Sea stops can feel colder or rougher than expected.' },
+          { title: 'Use it as a symbol, not a full day', body: 'Homigot is strongest as a precise coastal moment inside a larger route.' },
+        ],
+      },
+    },
+  },
+  ulsan: {
+    daewangam: {
+      stay: {
+        question: 'Should you sleep near Daewangam Park?',
+        summary: 'Daewangam can influence a stay when Ulsan is being used as a coastal recovery stop between Gyeongju, Pohang, and Busan.',
+        cards: [
+          { title: 'Stay coast-side for recovery', body: 'The park, sea air, and slower walking make more sense when the night is calm.' },
+          { title: 'Use central Ulsan for business or transit', body: 'If practical movement matters more than scenery, the city core can be easier.' },
+          { title: 'Skip nearby lodging for a quick route stop', body: 'Daewangam can work as a strong pause without requiring an overnight.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Daewangam?',
+        summary: 'Food should support the coastal pause: simple seafood, cafes, or a later meal in Ulsan depending on where the route sleeps.',
+        cards: [
+          { title: 'Use seafood after the walk', body: 'The coast makes seafood feel natural after park time.' },
+          { title: 'Keep cafe time flexible', body: 'A cafe stop can help if wind or weather shortens the walk.' },
+          { title: 'Move central for broader dinner choice', body: 'If staying in Ulsan city, save the main meal for the hotel area.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Daewangam Park?',
+        summary: 'Daewangam pairs with coastal walking, lighthouse views, beaches, and a gentle handoff toward Busan or Gyeongju.',
+        cards: [
+          { title: 'Short version: park loop and sea view', body: 'Use this when Ulsan is a scenic route pause.' },
+          { title: 'Half-day version: coast and cafe', body: 'This gives Ulsan a softer identity beyond industry and transit.' },
+          { title: 'Route version: Gyeongju to Busan buffer', body: 'Daewangam can keep the southeast coast from feeling like a pure transfer.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Daewangam into southeast movement?',
+        summary: 'Daewangam is easiest by car or planned taxi transfer. It should be treated as a coast-side stop, not a station-adjacent city walk.',
+        cards: [
+          { title: 'Group it with coastal movement', body: 'The stop works best when the route is already moving along the southeast coast.' },
+          { title: 'Use taxi if arriving by rail', body: 'A short transfer can keep the park from becoming logistically awkward.' },
+          { title: 'Avoid tight onward timing', body: 'Coastal walks are better when they are not squeezed between departures.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Daewangam?',
+        summary: 'Daewangam is a scenery and recovery stop. It works best when weather, walking energy, and the southeast route all support it.',
+        cards: [
+          { title: 'Watch wind and rain', body: 'The coast is the point, so weather changes the experience quickly.' },
+          { title: 'Do not undersell Ulsan', body: 'The park helps Ulsan read as coastal, not only industrial.' },
+          { title: 'Use it to slow the route', body: 'It is most useful when the traveler needs a breathing point before Busan.' },
+        ],
+      },
+    },
+  },
+  tongyeong: {
+    dongpirang: {
+      stay: {
+        question: 'Should you sleep near Dongpirang?',
+        summary: 'Dongpirang supports a Tongyeong stay when harbor walks, mural lanes, seafood, ferries, and Yi Sun-sin history should all stay close.',
+        cards: [
+          { title: 'Stay central for compact Tongyeong', body: 'A central stay lets Dongpirang, harbor food, ferry streets, and command-history layers connect on foot.' },
+          { title: 'Use waterfront lodging for views', body: 'If the night should be scenic, harbor-facing stays can be stronger than mural-lane proximity.' },
+          { title: 'Do not treat it as only a photo stop', body: 'Dongpirang works best as one layer in a broader Tongyeong overnight.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Dongpirang?',
+        summary: 'Dongpirang food planning should lean into Tongyeong harbor seafood, market snacks, and cafe pauses after walking.',
+        cards: [
+          { title: 'Use harbor seafood as the main meal', body: 'The mural village pairs naturally with seafood streets and port atmosphere.' },
+          { title: 'Use cafes for the hill walk', body: 'A cafe break makes the slopes and views feel less rushed.' },
+          { title: 'Keep snacks local and light', body: 'Let the main meal carry Tongyeong’s seafood identity.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Dongpirang?',
+        summary: 'Dongpirang pairs with Tongyeong harbor, ferry terminals, seafood markets, Yi Sun-sin memory, and nearby island routes.',
+        cards: [
+          { title: 'Short version: mural village and harbor', body: 'Use this when Tongyeong is a compact stop.' },
+          { title: 'Half-day version: Dongpirang, food, and command history', body: 'This gives the city both present-day texture and historical weight.' },
+          { title: 'Longer version: ferry or island layer', body: 'Tongyeong gets much stronger when Hallyeohaesang movement appears.' },
+        ],
+      },
+      transport: {
+        question: 'How do you move through Dongpirang and central Tongyeong?',
+        summary: 'Central Tongyeong is compact but hilly. Plan walking direction, parking or taxi drop-off, and the harbor return before starting.',
+        cards: [
+          { title: 'Walk downhill when possible', body: 'The village is easier when the route respects slopes.' },
+          { title: 'Keep harbor and food close', body: 'A compact loop prevents the stop from becoming fragmented.' },
+          { title: 'Plan ferry timing separately', body: 'Island plans should not be improvised after a slow mural walk.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Dongpirang?',
+        summary: 'Dongpirang is colorful but should not swallow Tongyeong’s deeper naval and island identity.',
+        cards: [
+          { title: 'Use it as the present-tense layer', body: 'The murals and cafes make Tongyeong feel alive after the history layer.' },
+          { title: 'Respect local residents', body: 'The area is not just a photo backdrop.' },
+          { title: 'Pair it with harbor history', body: 'Tongyeong becomes much stronger when Dongpirang is not isolated from Yi Sun-sin and port culture.' },
+        ],
+      },
+    },
+  },
+  namhae: {
+    german: {
+      stay: {
+        question: 'Should you sleep near Namhae German Village?',
+        summary: 'German Village can support a Namhae stay when the trip wants island-road atmosphere, pensions, sunset, and a slower south-coast night.',
+        cards: [
+          { title: 'Stay nearby for island mood', body: 'The village and surrounding roads work best when the night is part of the scenery.' },
+          { title: 'Use another Namhae base for route efficiency', body: 'If Boriam, beaches, or onward Tongyeong movement dominate, another stay zone may be easier.' },
+          { title: 'Choose lodging for views and driving logic', body: 'In Namhae, the accommodation location should support the next road segment.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around German Village?',
+        summary: 'Food around German Village should match the relaxed island-road rhythm: cafes, casual meals, German-themed stops, and seafood elsewhere in Namhae.',
+        cards: [
+          { title: 'Use cafes and light meals here', body: 'The village is strongest as an atmosphere and view stop.' },
+          { title: 'Move for seafood identity', body: 'Namhae food feels broader when seafood or local meals join the plan.' },
+          { title: 'Do not force every meal into the village', body: 'The route should use the whole island, not only one scenic cluster.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with German Village?',
+        summary: 'German Village pairs with coastal drives, Boriam, beaches, Darangee-style terraces, and the Yeosu-to-Tongyeong south-coast handoff.',
+        cards: [
+          { title: 'Short version: village and viewpoint', body: 'Use this when Namhae is a scenic island-road pause.' },
+          { title: 'Half-day version: village and coastal drive', body: 'This lets the island setting matter more than the buildings alone.' },
+          { title: 'Route version: Yeosu to Tongyeong bridge', body: 'German Village can soften the route before the denser Tongyeong port chapter.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit German Village into a Namhae route?',
+        summary: 'German Village is car-first and should be placed inside a coherent island loop rather than reached as an isolated detour.',
+        cards: [
+          { title: 'Use car routing deliberately', body: 'Namhae’s value is in the road sequence, not a single pinpoint.' },
+          { title: 'Avoid excessive backtracking', body: 'Choose a clockwise or counterclockwise island flow and stick to it.' },
+          { title: 'Protect the Tongyeong handoff', body: 'If continuing east, do not let the village stop consume the whole day.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting German Village?',
+        summary: 'German Village is best as part of Namhae’s scenic island mood. It disappoints when expected to carry the whole destination alone.',
+        cards: [
+          { title: 'Use it with the landscape', body: 'Views and road context are as important as the village itself.' },
+          { title: 'Expect a themed stop', body: 'Its value is atmosphere and story, not deep urban density.' },
+          { title: 'Pair with one stronger nature layer', body: 'Boriam, beaches, or terraces make Namhae feel complete.' },
+        ],
+      },
+    },
+    boriam: {
+      stay: {
+        question: 'Should you sleep near Boriam?',
+        summary: 'Boriam can influence a stay when Namhae is a spiritual, scenic, and slow-road chapter rather than a quick island pass.',
+        cards: [
+          { title: 'Stay nearby when sunrise or quiet matters', body: 'The temple and views are strongest when the day is not rushed.' },
+          { title: 'Use a broader Namhae base for comfort', body: 'Many travelers will prefer lodging that balances temple access with food and road movement.' },
+          { title: 'Do not choose it only for convenience', body: 'The reason to stay nearby is atmosphere, not hotel density.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Boriam?',
+        summary: 'Food around Boriam should be simple and timed around the temple visit. The stronger meal often happens elsewhere on Namhae’s coast.',
+        cards: [
+          { title: 'Keep food light before the temple', body: 'The walk and atmosphere benefit from a simple schedule.' },
+          { title: 'Use seafood after the viewpoint', body: 'A coastal meal afterward gives the scenic stop a good landing.' },
+          { title: 'Plan snacks for road gaps', body: 'Namhae drives can stretch between proper meal zones.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Boriam?',
+        summary: 'Boriam pairs with Geumsan views, coastal drives, German Village, beaches, and a slower south-coast road day.',
+        cards: [
+          { title: 'Short version: temple and viewpoint', body: 'Use this when Boriam is the main scenic-spiritual stop.' },
+          { title: 'Half-day version: Boriam and coast drive', body: 'This lets the mountain and sea relationship carry the day.' },
+          { title: 'Route version: Boriam before German Village', body: 'The pairing balances quiet temple atmosphere with themed island scenery.' },
+        ],
+      },
+      transport: {
+        question: 'How do you reach Boriam without exhausting the day?',
+        summary: 'Boriam needs car-first or carefully planned local movement. The route should respect slopes, parking, and weather.',
+        cards: [
+          { title: 'Start with enough time', body: 'The stop loses value if squeezed between long drives.' },
+          { title: 'Check parking and walking expectations', body: 'The final access can shape traveler comfort.' },
+          { title: 'Group it with nearby island stops', body: 'Avoid making Boriam a long isolated out-and-back.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Boriam?',
+        summary: 'Boriam is weather and energy sensitive. It is one of Namhae’s strongest stops when the view and quiet mood have room.',
+        cards: [
+          { title: 'Check visibility', body: 'Views are central to the experience.' },
+          { title: 'Respect the temple setting', body: 'Treat it as a cultural and spiritual place, not only a lookout.' },
+          { title: 'Keep the day slower', body: 'Boriam works best when the route is not overloaded.' },
+        ],
+      },
+    },
+  },
+  suncheon: {
+    bay: {
+      stay: {
+        question: 'Should you sleep near Suncheon Bay?',
+        summary: 'Suncheon Bay can justify an overnight when wetlands, sunset, ecology, and a slower south-coast transition matter.',
+        cards: [
+          { title: 'Stay for sunset or early nature time', body: 'The bay is stronger when timing is protected instead of squeezed.' },
+          { title: 'Use Suncheon city for food and transit', body: 'City-side stays may be easier if the bay is only one chapter.' },
+          { title: 'Choose based on the next route', body: 'Suncheon often functions as the hinge toward Yeosu or Boseong.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Suncheon Bay?',
+        summary: 'Food should support the wetland timing. Eat in Suncheon city for variety, then protect the bay window for walking and views.',
+        cards: [
+          { title: 'Do not let dinner steal sunset', body: 'If sunset matters, schedule the meal around it.' },
+          { title: 'Use city meals for reliability', body: 'Suncheon city is usually better for a proper meal than the wetland edge.' },
+          { title: 'Keep snacks simple for the walk', body: 'Nature stops work better when food logistics stay light.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Suncheon Bay?',
+        summary: 'Suncheon Bay pairs with the national garden, ecological walks, local food, and the route handoff toward Yeosu or Boseong.',
+        cards: [
+          { title: 'Short version: bay walk', body: 'Use this when ecology is the main stop before moving onward.' },
+          { title: 'Half-day version: garden and bay', body: 'This is the clearest Suncheon pairing for first-time visitors.' },
+          { title: 'Route version: Suncheon to Yeosu', body: 'The bay can become the ecological hinge before the night-sea payoff.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Suncheon Bay into the route?',
+        summary: 'Suncheon Bay needs timing and local transfer planning. It should be grouped with the garden or used as the south-coast hinge.',
+        cards: [
+          { title: 'Plan sunset before transport', body: 'The best time window should drive the schedule.' },
+          { title: 'Use local transfers cleanly', body: 'Taxi or bus planning prevents the bay from feeling remote.' },
+          { title: 'Protect the next city handoff', body: 'Suncheon often leads to Yeosu, so avoid ending the day stranded or tired.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Suncheon Bay?',
+        summary: 'Suncheon Bay rewards patience, weather awareness, and a slower ecological mindset.',
+        cards: [
+          { title: 'Weather changes the value', body: 'Wind, rain, heat, and visibility affect wetland walking.' },
+          { title: 'Give nature enough silence', body: 'The bay is not a rapid checklist attraction.' },
+          { title: 'Use it as the ecological chapter', body: 'It gives the south route a different identity before coastal nightlife or tea fields.' },
+        ],
+      },
+    },
+  },
+  boseong: {
+    tea: {
+      stay: {
+        question: 'Should you sleep near Boseong tea fields?',
+        summary: 'Boseong tea fields can shape a stay when the route needs green scenery, rural calm, and a slower Jeolla pause.',
+        cards: [
+          { title: 'Stay nearby for morning fields', body: 'Early light can make the tea fields feel calmer and more atmospheric.' },
+          { title: 'Use Suncheon or Yeosu for broader services', body: 'If the route needs more food and lodging choice, nearby larger cities may be easier bases.' },
+          { title: 'Choose Boseong for quiet, not nightlife', body: 'The stay value is rural scenery and rest.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Boseong tea fields?',
+        summary: 'Food around Boseong should support tea, local snacks, and a light rural stop. Larger meals may work better before or after the field visit.',
+        cards: [
+          { title: 'Use tea as the signature', body: 'Tea, desserts, and green-tea products are part of the reason to stop.' },
+          { title: 'Keep meals simple', body: 'Do not force a dense restaurant plan into a rural scenic chapter.' },
+          { title: 'Plan food around the next city', body: 'Suncheon, Yeosu, or other route stops may carry the fuller meal.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Boseong tea fields?',
+        summary: 'Boseong tea fields pair with green-tea views, rural roads, cafes, and the Jeolla south-coast movement toward Suncheon or Yeosu.',
+        cards: [
+          { title: 'Short version: tea field walk', body: 'Use this when Boseong is a scenic pause in a longer drive.' },
+          { title: 'Half-day version: fields, cafe, and rural road', body: 'This gives the stop enough calm to feel distinct.' },
+          { title: 'Route version: Boseong to Suncheon', body: 'The tea fields can soften the route before wetland or coast chapters.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Boseong tea fields into the route?',
+        summary: 'Boseong is easiest by car or deliberate local transfer. It should be placed as a scenic rural chapter, not a rushed side quest.',
+        cards: [
+          { title: 'Use car-first routing', body: 'The fields make the most sense inside a Jeolla road sequence.' },
+          { title: 'Avoid excessive detour logic', body: 'If the route is too tight, the stop can feel costly.' },
+          { title: 'Pair with Suncheon or Yeosu movement', body: 'Those cities can carry the heavier lodging and food layers.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Boseong tea fields?',
+        summary: 'Boseong is a visual and atmospheric stop. It works best with good light, weather, and an unhurried route.',
+        cards: [
+          { title: 'Watch weather and season', body: 'Green fields, rain, heat, and visibility all change the experience.' },
+          { title: 'Do not rush the walk', body: 'The value is in texture and pacing, not only the viewpoint.' },
+          { title: 'Use it as contrast', body: 'Boseong gives the south route a calm rural break between larger city chapters.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -1393,6 +1734,13 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['yeosu-night-sea', 'night-sea', 'yeosu-night-view'].includes(hotspotSlug)) return 'nightsea';
   if (['odongdo-island', 'odongdo-park'].includes(hotspotSlug)) return 'odongdo';
   if (['seomun-market', 'daegu-seomun-market', 'seomun-night-market'].includes(hotspotSlug)) return 'seomun';
+  if (['homigot-sunrise-square', 'homigot-sunrise', 'homigot-hand'].includes(hotspotSlug)) return 'homigot';
+  if (['daewangam-park', 'ulsan-daewangam-park'].includes(hotspotSlug)) return 'daewangam';
+  if (['dongpirang-village', 'dongpirang-mural-village'].includes(hotspotSlug)) return 'dongpirang';
+  if (['namhae-german-village', 'german-village'].includes(hotspotSlug)) return 'german';
+  if (['boriam-temple', 'namhae-boriam'].includes(hotspotSlug)) return 'boriam';
+  if (['suncheon-bay', 'suncheonman-bay', 'suncheon-bay-wetland'].includes(hotspotSlug)) return 'bay';
+  if (['boseong-tea-fields', 'boseong-green-tea-field', 'green-tea-field'].includes(hotspotSlug)) return 'tea';
   return hotspotSlug;
 }
 
