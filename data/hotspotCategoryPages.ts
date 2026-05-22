@@ -1952,6 +1952,251 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  incheon: {
+    wolmido: {
+      stay: {
+        question: 'Should you sleep near Wolmido in Incheon?',
+        summary: 'Wolmido can shape an Incheon stay when the route needs a soft West Sea opening with harbor walks, open-port streets, Chinatown, and ferry mood.',
+        cards: [
+          { title: 'Stay near the harbor for atmosphere', body: 'Wolmido works best when the first night feels maritime rather than like a Seoul overflow stay.' },
+          { title: 'Use Jung-gu for route coherence', body: 'Chinatown, open-port streets, and Wolmido can sit in one compact Incheon chapter.' },
+          { title: 'Choose airport lodging only for transit', body: 'If the route story matters, airport convenience should not replace the port-city opening.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Wolmido?',
+        summary: 'Food around Wolmido should connect seafood, Chinatown meals, harbor snacks, and a relaxed first-night rhythm before the route moves south.',
+        cards: [
+          { title: 'Use Chinatown for the first meal', body: 'It gives Incheon an immediate open-port identity instead of generic arrival food.' },
+          { title: 'Keep seafood close to the water', body: 'Harbor meals help the West Sea route announce itself early.' },
+          { title: 'Do not overplan the first night', body: 'A simple dinner and waterfront walk usually work better than a packed checklist.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Wolmido?',
+        summary: 'Wolmido pairs with Chinatown, open-port streets, Jayu Park, harbor views, and the route handoff toward Suwon.',
+        cards: [
+          { title: 'Short version: Wolmido and Chinatown', body: 'Use this when Incheon is a light route opener.' },
+          { title: 'Half-day version: open port, park, and harbor', body: 'This gives Incheon enough historical and maritime texture.' },
+          { title: 'Route version: port before fortress', body: 'Wolmido makes the move to Suwon feel like a designed contrast.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Wolmido into Route 6?',
+        summary: 'Wolmido is easiest as a compact Jung-gu loop before the route turns inland toward Suwon and then west again toward Seosan.',
+        cards: [
+          { title: 'Keep the Incheon loop tight', body: 'Open-port streets, food, and waterfront should not require repeated transfers.' },
+          { title: 'Plan the Suwon handoff early', body: 'The next leg changes the mood from harbor to fortress city.' },
+          { title: 'Use taxis or local rail pragmatically', body: 'The goal is a smooth opening chapter, not transit gymnastics.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Wolmido?',
+        summary: 'Wolmido is strongest when treated as the first West Sea signal. It should support open-port context, water, food, and relaxed pacing.',
+        cards: [
+          { title: 'Read it as a route opener', body: 'The value is how it starts the west-coast story.' },
+          { title: 'Go when the waterfront has life', body: 'Evening light and food timing make the stop more memorable.' },
+          { title: 'Pair it with history nearby', body: 'Chinatown and open-port streets keep Wolmido from feeling isolated.' },
+        ],
+      },
+    },
+  },
+  suwon: {
+    hwaseong: {
+      stay: {
+        question: 'Should you sleep near Hwaseong Fortress?',
+        summary: 'Hwaseong can shape a Suwon overnight when fortress walking, markets, evening food, and a reliable Route 6 city base are important.',
+        cards: [
+          { title: 'Stay near the wall for evening walks', body: 'The fortress feels different when it is not squeezed into a day-trip window.' },
+          { title: 'Use market access for practical comfort', body: 'Paldalmun-side food makes Suwon easier as an overnight stop.' },
+          { title: 'Skip the night for a quick heritage pass', body: 'If the route is moving fast, keep Suwon as a focused fortress stop.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Hwaseong?',
+        summary: 'Food around Hwaseong should use market streets, simple late meals, and walkable dinner pacing so the fortress becomes a lived-in stop.',
+        cards: [
+          { title: 'Eat around Paldalmun', body: 'The market layer makes Suwon feel practical as well as historic.' },
+          { title: 'Pair dinner with a wall walk', body: 'That sequence gives the overnight its best rhythm.' },
+          { title: 'Keep food close to the heritage core', body: 'Long detours weaken the compact fortress-city experience.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Hwaseong?',
+        summary: 'Hwaseong pairs with fortress gates, palace context, Paldalmun market, and the westbound handoff toward Seosan.',
+        cards: [
+          { title: 'Short version: wall and gates', body: 'Use this when Suwon is the route hinge before the coast.' },
+          { title: 'Half-day version: fortress, palace, and market', body: 'This gives the city enough structure to justify a stop.' },
+          { title: 'Route version: inland heritage before West Sea', body: 'Suwon gives Route 6 a royal-planning chapter before Naepo and beaches.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Hwaseong into Route 6?',
+        summary: 'Hwaseong should be planned as a walkable core stop, with lodging and departure chosen around the next westbound leg.',
+        cards: [
+          { title: 'Arrive once, then walk', body: 'The fortress area works better without repeated car or taxi hops.' },
+          { title: 'Protect the westbound exit', body: 'The next move toward Seosan can take more energy than the map suggests.' },
+          { title: 'Use Suwon as the reliable service stop', body: 'This is where Route 6 can stock up before smaller coastal chapters.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Hwaseong?',
+        summary: 'Hwaseong rewards walking time and context. It is more than a photo gate if the route lets the city breathe.',
+        cards: [
+          { title: 'Wear walking-friendly shoes', body: 'The fortress is a movement experience, not only a viewpoint.' },
+          { title: 'Use evening light when possible', body: 'The wall and market combination is strongest later in the day.' },
+          { title: 'Connect it to Route 6 logic', body: 'Suwon explains why the route pauses inland before the coast.' },
+        ],
+      },
+    },
+  },
+  seosan: {
+    haemi: {
+      stay: {
+        question: 'Should you sleep near Haemi in Seosan?',
+        summary: 'Haemi can shape a Seosan stop when Route 6 needs Catholic memory, fortress texture, Taean access, and quieter West Sea pacing.',
+        cards: [
+          { title: 'Stay in Seosan for a slower Naepo chapter', body: 'The overnight works when Haemi, food, and Taean-side choices need room.' },
+          { title: 'Use Haemi as the story anchor', body: 'It gives Seosan more depth than a simple transfer town.' },
+          { title: 'Move on if the coast is the priority', body: 'Beach-focused travelers may base closer to Taean or Boryeong.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Haemi?',
+        summary: 'Food around Haemi should stay local and practical, using Seosan seafood, market meals, garlic flavors, and a calm stop rhythm.',
+        cards: [
+          { title: 'Use food to make Seosan specific', body: 'A local meal helps the stop feel grounded before the beach route continues.' },
+          { title: 'Keep the meal near the next move', body: 'Haemi often sits inside a broader driving day.' },
+          { title: 'Do not turn it into a food chase', body: 'The memory and route position should remain the main reason.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Haemi?',
+        summary: 'Haemi pairs with Haemieupseong Fortress, Catholic pilgrimage memory, Naepo context, Taean branching, and the Boryeong handoff.',
+        cards: [
+          { title: 'Short version: Haemi fortress core', body: 'Use this when Seosan is a history pause.' },
+          { title: 'Half-day version: Haemi and Taean gateway', body: 'This explains why Seosan matters on a West Sea route.' },
+          { title: 'Route version: moral memory before beach energy', body: 'Haemi makes Boryeong feel like a tonal shift, not a random next stop.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Haemi into Route 6?',
+        summary: 'Haemi works best by car or planned bus movement, grouped with Seosan town, Taean access, or the southbound coast line.',
+        cards: [
+          { title: 'Choose the branch before arriving', body: 'Decide whether the day bends toward Taean or continues toward Boryeong.' },
+          { title: 'Keep Haemi as a compact stop', body: 'The site is strongest when the route around it is clear.' },
+          { title: 'Avoid late-day overextension', body: 'West-coast driving can make small detours feel larger.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Haemi?',
+        summary: 'Haemi needs respectful framing because its value is historical and memorial, not only scenic.',
+        cards: [
+          { title: 'Understand the memory layer', body: 'The stop has deeper weight than a casual fortress walk.' },
+          { title: 'Use it to slow the route', body: 'Haemi gives Route 6 a quieter chapter before festival and beach energy.' },
+          { title: 'Pair it with one local meal', body: 'That keeps Seosan usable without overbuilding the stop.' },
+        ],
+      },
+    },
+  },
+  boryeong: {
+    daecheon: {
+      stay: {
+        question: 'Should you sleep near Daecheon Beach?',
+        summary: 'Daecheon can shape a Boryeong stay when Route 6 needs beach energy, festival identity, seafood, and a lighter pause before Gunsan.',
+        cards: [
+          { title: 'Stay near the beach in summer', body: 'This is when Boryeong has the strongest reason to hold a night.' },
+          { title: 'Use Daecheon for a soft reset', body: 'The beach can make the next modern-history chapter easier to absorb.' },
+          { title: 'Skip the overnight outside your season', body: 'If beach time is not the point, keep Boryeong as a short coastal pause.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Daecheon Beach?',
+        summary: 'Food around Daecheon should be casual, coastal, and timing-led: seafood, beach meals, festival snacks, and sunset pacing.',
+        cards: [
+          { title: 'Plan dinner near the beach', body: 'The meal works best when it stays tied to the water.' },
+          { title: 'Keep festival days flexible', body: 'Crowds and events can change the food rhythm quickly.' },
+          { title: 'Use seafood as the simple payoff', body: 'A clear coastal meal is usually enough here.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Daecheon?',
+        summary: 'Daecheon pairs with the beach, Mud Festival zone, seafood, sunset walks, and the southbound move toward Gunsan.',
+        cards: [
+          { title: 'Short version: beach and meal', body: 'Use this when Boryeong is a quick coastal reset.' },
+          { title: 'Festival version: mud zone and beach stay', body: 'This is the strongest global-search hook for Boryeong.' },
+          { title: 'Route version: playful coast before port memory', body: 'Daecheon gives Route 6 a lighter chapter before Gunsan.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Daecheon into Route 6?',
+        summary: 'Daecheon should be planned around beach timing, festival crowds, and the onward line to Gunsan.',
+        cards: [
+          { title: 'Check season and event timing', body: 'Boryeong changes dramatically around festival periods.' },
+          { title: 'Keep luggage and parking simple', body: 'Beach stops become annoying when logistics sprawl.' },
+          { title: 'Leave enough energy for Gunsan', body: 'The next chapter asks for museums and old-street walking.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Daecheon?',
+        summary: 'Daecheon is best when treated as a seasonal beach and festival chapter, not as a generic attraction list.',
+        cards: [
+          { title: 'Let the beach be the point', body: 'Overloading Boryeong can weaken the easy coastal mood.' },
+          { title: 'Prepare for crowds in peak season', body: 'Festival timing can change transport, food, and lodging pressure.' },
+          { title: 'Use it as contrast', body: 'The route needs this lighter chapter before Gunsan gets serious.' },
+        ],
+      },
+    },
+  },
+  gunsan: {
+    modernhistory: {
+      stay: {
+        question: 'Should you sleep near Gunsan modern-history streets?',
+        summary: 'Gunsan is worth an overnight when modern port memory, old streets, bakeries, seafood, and museums should carry the middle of Route 6.',
+        cards: [
+          { title: 'Stay close to the old port district', body: 'The city works best when museums, streets, food, and cafes are easy to connect.' },
+          { title: 'Use Gunsan as the serious middle chapter', body: 'It gives Route 6 historical weight after the beach pause.' },
+          { title: 'Skip the night only on a fast west-coast drive', body: 'A rushed stop can flatten what makes Gunsan useful.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gunsan old streets?',
+        summary: 'Food around Gunsan should use bakeries, seafood, old-town cafes, and simple harbor meals to soften a history-heavy visit.',
+        cards: [
+          { title: 'Use bakeries as a city texture', body: 'They make the modern-history walk feel lived in rather than museum-only.' },
+          { title: 'Plan one harbor or seafood meal', body: 'The port identity should be visible in the food layer.' },
+          { title: 'Keep cafes near the old streets', body: 'Short pauses help the history chapter stay walkable.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Gunsan modern history?',
+        summary: 'Gunsan modern history pairs with the museum district, old Japanese-style streets, bakeries, harbor food, and the Mokpo handoff.',
+        cards: [
+          { title: 'Short version: museum and old streets', body: 'Use this when Gunsan is the route history anchor.' },
+          { title: 'Half-day version: museum, bakery, harbor meal', body: 'This gives the city enough everyday texture.' },
+          { title: 'Route version: port memory before southwest arrival', body: 'Gunsan prepares Mokpo to feel like a finale.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Gunsan into Route 6?',
+        summary: 'Gunsan should be handled as a walkable old-port core with a clear onward plan toward Mokpo or another southwest stop.',
+        cards: [
+          { title: 'Cluster the old-town stops', body: 'The history district works best as one connected walk.' },
+          { title: 'Protect museum hours', body: 'The chapter loses force if the key institutions are closed.' },
+          { title: 'Plan the long next leg', body: 'Mokpo or other southwest movement needs realistic timing.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gunsan modern history?',
+        summary: 'Gunsan needs careful tone: old streets are attractive, but the colonial-era and port-memory context should stay visible.',
+        cards: [
+          { title: 'Keep the context clear', body: 'The stop is not only aesthetic streets and bakeries.' },
+          { title: 'Use food to balance the weight', body: 'Meals and cafes make the chapter approachable without erasing history.' },
+          { title: 'Let Gunsan set up Mokpo', body: 'Together they make Route 6 feel like a complete port-history line.' },
+        ],
+      },
+    },
+  },
   gongju: {
     gongsanseong: {
       stay: {
@@ -2289,6 +2534,11 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['jirisan-national-park', 'jiri-mountain', 'jirisan-trail', 'jirisan'].includes(hotspotSlug)) return 'trail';
   if (['gatbawi-rock', 'mokpo-gatbawi'].includes(hotspotSlug)) return 'gatbawi';
   if (['ttangkkeut-village', 'haenam-ttangkkeut', 'land-end'].includes(hotspotSlug)) return 'ttangkkeut';
+  if (['wolmido-island', 'incheon-wolmido', 'wolmi-do'].includes(hotspotSlug)) return 'wolmido';
+  if (['hwaseong-fortress', 'suwon-hwaseong', 'suwon-hwaseong-fortress'].includes(hotspotSlug)) return 'hwaseong';
+  if (['haemieupseong', 'haemieupseong-fortress', 'haemi-fortress', 'seosan-haemi'].includes(hotspotSlug)) return 'haemi';
+  if (['daecheon-beach', 'boryeong-daecheon', 'boryeong-mud-festival'].includes(hotspotSlug)) return 'daecheon';
+  if (['gunsan-modern-history', 'modern-history-museum', 'gunsan-modern-history-museum'].includes(hotspotSlug)) return 'modernhistory';
   return hotspotSlug;
 }
 
