@@ -2981,6 +2981,251 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  gapyeong: {
+    nami: {
+      stay: {
+        question: 'Should you sleep near Nami Island or Jarasum in Gapyeong?',
+        summary: 'Gapyeong is worth a stay when Route 3 should open softly with river air, island access, pensions, camping, and a gentle handoff to Chuncheon.',
+        cards: [
+          { title: 'Stay for a soft first night', body: 'Gapyeong works when the Seoul departure should feel like a river escape rather than another city transfer.' },
+          { title: 'Choose the base by mood', body: 'Nami access is easy for first-timers, while Jarasum and riverside stays feel more seasonal and relaxed.' },
+          { title: 'Move on if Chuncheon needs the weight', body: 'If dinner and city rhythm matter more, keep Gapyeong light and sleep in Chuncheon.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gapyeong?',
+        summary: 'Gapyeong food should support leisure pacing: river cafes, pension meals, camping supplies, simple station food, and an easy restart toward Chuncheon.',
+        cards: [
+          { title: 'Keep food secondary to the river', body: 'The stop is about mood, movement, and recovery more than destination dining.' },
+          { title: 'Use cafes as route pacing', body: 'A riverside cafe can make the first chapter feel intentionally slow.' },
+          { title: 'Plan practical meals before moving on', body: 'Simple food keeps the handoff to Chuncheon clean.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Nami Island access?',
+        summary: 'Nami access pairs with Jarasum, Bukhangang River scenery, Gapyeong Rail Park, pensions, camping, and the Chuncheon handoff.',
+        cards: [
+          { title: 'Short version: island access and river pause', body: 'Use this when Gapyeong is the route’s first breath.' },
+          { title: 'Leisure version: Jarasum, rail bike, and cafe', body: 'This gives Gapyeong more than one famous island.' },
+          { title: 'Route version: soft opening before city rhythm', body: 'Gapyeong loosens the Seoul exit before Chuncheon takes over.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Gapyeong into Route 3?',
+        summary: 'Gapyeong should be used as a light first chapter, with transit or driving plans shaped around Nami, Jarasum, and the move to Chuncheon.',
+        cards: [
+          { title: 'Decide whether it is a stay or stop', body: 'Gapyeong gets messy when it tries to be both a full destination and a quick pass-through.' },
+          { title: 'Keep island access simple', body: 'Nami-side timing should not consume the whole route day unless that is the point.' },
+          { title: 'Protect the Chuncheon handoff', body: 'Chuncheon carries the first serious city-and-food chapter.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gapyeong?',
+        summary: 'Gapyeong is best as a soft opener. It should feel river-led, seasonal, and light rather than overloaded.',
+        cards: [
+          { title: 'Let the stop stay gentle', body: 'The value is the mood change after Seoul.' },
+          { title: 'Use Jarasum for broader identity', body: 'Camping and seasonal culture keep Gapyeong from becoming only Nami access.' },
+          { title: 'Do not compete with Chuncheon', body: 'Gapyeong opens the route; Chuncheon gives it weight.' },
+        ],
+      },
+    },
+  },
+  chuncheon: {
+    dakgalbi: {
+      stay: {
+        question: 'Should you sleep in Chuncheon for Route 3?',
+        summary: 'Chuncheon is the first full Route 3 city anchor, making a stay useful when lake scenery, dakgalbi, transit, and a clean northern restart matter.',
+        cards: [
+          { title: 'Stay for dinner-led logic', body: 'Dakgalbi and makguksu naturally make Chuncheon a night stop rather than a rushed lunch stop.' },
+          { title: 'Use the lake side for atmosphere', body: 'Soyanggang and Uiamho make the city feel scenic, not only practical.' },
+          { title: 'Choose central lodging for simplicity', body: 'Food, transit, and the next morning are easiest from the city core.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat in Chuncheon?',
+        summary: 'Chuncheon food should be treated as route infrastructure: dakgalbi, makguksu, market snacks, and an evening rhythm that supports an overnight.',
+        cards: [
+          { title: 'Make dakgalbi the anchor', body: 'It is the clearest reason for many travelers to stop.' },
+          { title: 'Use makguksu as the second cue', body: 'The food layer feels stronger when it is not one-note.' },
+          { title: 'Eat before the route gets quieter', body: 'Chuncheon should carry the social city meal before Yanggu and Inje.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Chuncheon dakgalbi?',
+        summary: 'Chuncheon pairs with Soyanggang, Uiamho, Samaksan cable car, Myeongdong Dakgalbi Street, and the northbound handoff toward Yanggu.',
+        cards: [
+          { title: 'Short version: dinner and lake walk', body: 'Use this when Chuncheon is the first proper overnight.' },
+          { title: 'View version: Samaksan and lake city', body: 'This gives the city a landscape argument beyond food.' },
+          { title: 'Route version: city rhythm before borderland', body: 'Chuncheon makes the next quieter northern chapters feel deliberate.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Chuncheon into Route 3?',
+        summary: 'Chuncheon should be planned as the first strong city base after Seoul and Gapyeong, especially for train, bus, or low-friction overnight movement.',
+        cards: [
+          { title: 'Use it as the practical anchor', body: 'Chuncheon keeps Route 3 usable for travelers without a car.' },
+          { title: 'Keep dinner and lodging close', body: 'The overnight works best when the food core is easy.' },
+          { title: 'Plan the Yanggu or Inje move', body: 'The next section becomes quieter and more landscape-led.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Chuncheon?',
+        summary: 'Chuncheon should not be reduced to a day-trip food stop. It gives Route 3 its first city weight.',
+        cards: [
+          { title: 'Let food justify the night', body: 'Dinner is the conversion point for staying.' },
+          { title: 'Add water to the city story', body: 'Soyanggang and Uiamho keep the page scenic.' },
+          { title: 'Use it before the route thins out', body: 'Chuncheon gives energy before the northern line grows quieter.' },
+        ],
+      },
+    },
+  },
+  pyeongchang: {
+    olympic: {
+      stay: {
+        question: 'Should you sleep in Pyeongchang’s Olympic highlands?',
+        summary: 'Pyeongchang is worth a stay when Route 2 needs Olympic memory, ski or resort logistics, Odaesan depth, and a mountain chapter before Gangneung.',
+        cards: [
+          { title: 'Stay for resort and winter logic', body: 'Alpensia and Yongpyong make the highland stop easy to understand.' },
+          { title: 'Use Jinbu or Odaesan for a quieter base', body: 'Temple and national-park access give Pyeongchang depth beyond the Games.' },
+          { title: 'Skip the night if the coast is the priority', body: 'Fast routes can keep Pyeongchang as a highland checkpoint.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Pyeongchang?',
+        summary: 'Food around Pyeongchang should support mountain days: warm meals, resort practicality, temple-side pacing, and simple breakfast before the pass.',
+        cards: [
+          { title: 'Choose warmth over complexity', body: 'Highland stops need comfort and timing more than a long food list.' },
+          { title: 'Match food to ski or hiking plans', body: 'Meal timing should support the day’s activity.' },
+          { title: 'Keep the morning clean', body: 'The Daegwallyeong or Gangneung handoff benefits from a simple start.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Pyeongchang Olympic sites?',
+        summary: 'Pyeongchang pairs with Alpensia, Yongpyong, Olympic venue memory, Odaesan, Woljeongsa, Jinbu access, and the Daegwallyeong handoff.',
+        cards: [
+          { title: 'Resort version: Olympic cluster and stay', body: 'Use this when winter sports or global recognition matters.' },
+          { title: 'Temple version: Odaesan and Woljeongsa', body: 'This keeps Pyeongchang older and quieter than the Olympics.' },
+          { title: 'Route version: altitude before the sea', body: 'Pyeongchang fills the gap between Wonju and Gangneung.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Pyeongchang into Route 2?',
+        summary: 'Pyeongchang should be planned around either resort access or Jinbu/Odaesan access, then handed cleanly to Daegwallyeong and Gangneung.',
+        cards: [
+          { title: 'Pick the highland purpose first', body: 'Ski resort and temple-park days use different bases.' },
+          { title: 'Protect weather-dependent plans', body: 'Snow, mountain roads, and visibility can shape the day.' },
+          { title: 'Use it to make Gangneung feel earned', body: 'The coast lands better after the route has felt altitude.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Pyeongchang?',
+        summary: 'Pyeongchang is strongest when the Olympic hook leads into real highland planning, not just a name check.',
+        cards: [
+          { title: 'Do not stop at the Olympics', body: 'Odaesan and Woljeongsa give the county deeper travel value.' },
+          { title: 'Plan seasonally', body: 'Winter, hiking, and shoulder seasons create different trips.' },
+          { title: 'Use it as the mountain chapter', body: 'That is the route role before Gangneung.' },
+        ],
+      },
+    },
+  },
+  yangyang: {
+    surf: {
+      stay: {
+        question: 'Should you sleep near Yangyang surf beaches?',
+        summary: 'Yangyang is worth a stay when Route 4 needs surf culture, beach cafes, Naksansa heritage, sunrise pacing, and a clean Sokcho-to-Gangneung hinge.',
+        cards: [
+          { title: 'Stay surf-side for younger coast energy', body: 'Hajodae, Jukdo, and Surfyy-style demand make the stop feel current.' },
+          { title: 'Use Naksan for sunrise and temple mood', body: 'This side gives Yangyang a quieter heritage layer.' },
+          { title: 'Skip the night if Gangneung should carry the stay', body: 'Yangyang can be a strong middle beat without owning the overnight.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Yangyang?',
+        summary: 'Yangyang food should stay beach-town practical: seafood, cafes, simple late meals, and breakfast before the next coast leg.',
+        cards: [
+          { title: 'Use cafes as part of the beach rhythm', body: 'The modern coast identity is social and casual.' },
+          { title: 'Keep seafood close to the shore', body: 'Food should reinforce the East Sea setting.' },
+          { title: 'Avoid overbuilding the food plan', body: 'Yangyang’s value is surf, temple, and coast pacing.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Yangyang surf culture?',
+        summary: 'Yangyang pairs with Surfyy-style beaches, Hajodae, Jukdo, Naksansa, Uisangdae, sunrise views, and the Gangneung handoff.',
+        cards: [
+          { title: 'Surf version: beach, cafe, and stay', body: 'Use this when the modern coast mood matters.' },
+          { title: 'Heritage version: Naksansa and sunrise', body: 'This keeps the stop from feeling shallow.' },
+          { title: 'Route version: younger coast before Gangneung', body: 'Yangyang changes the temperature between Sokcho and Gangneung.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Yangyang into Route 4?',
+        summary: 'Yangyang should be treated as a compact coast hinge, with the base chosen by surf-side social energy or Naksan-side heritage.',
+        cards: [
+          { title: 'Choose surf or temple first', body: 'The two versions create different stays.' },
+          { title: 'Keep the Gangneung handoff clear', body: 'Gangneung is the larger service and coffee-beach chapter.' },
+          { title: 'Protect sunrise or lesson timing', body: 'The best Yangyang plans depend on time of day.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Yangyang?',
+        summary: 'Yangyang works when surf culture and older East Sea heritage sit together instead of replacing each other.',
+        cards: [
+          { title: 'Do not make it only a trend stop', body: 'Naksansa and Uisangdae add real depth.' },
+          { title: 'Use the beach mood honestly', body: 'The modern demand is part of why Yangyang belongs.' },
+          { title: 'Let it bridge the coast', body: 'The stop should connect Sokcho and Gangneung, not compete with both.' },
+        ],
+      },
+    },
+  },
+  donghae: {
+    mukho: {
+      stay: {
+        question: 'Should you sleep near Mukho or Chuam in Donghae?',
+        summary: 'Donghae is useful when Route 4 needs port memory, sunrise rocks, simple seafood, valley recovery, and a grounded coast chapter before Samcheok.',
+        cards: [
+          { title: 'Stay near Mukho for local texture', body: 'The lighthouse, port, and hill-village side give Donghae its strongest identity.' },
+          { title: 'Use Chuam for sunrise-first pacing', body: 'Chuam is the easiest visual reason to pause.' },
+          { title: 'Stay central for simpler movement', body: 'Central Donghae can be better when the route needs logistics over atmosphere.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Donghae?',
+        summary: 'Donghae food should support the working coast: seafood, port meals, simple market texture, and an easy start toward Samcheok.',
+        cards: [
+          { title: 'Eat where the port story is visible', body: 'Mukho-side food makes the stop feel grounded.' },
+          { title: 'Keep meals practical', body: 'Donghae should not become a luxury dining chapter.' },
+          { title: 'Use breakfast before the coast road', body: 'A clean morning helps the Samcheok handoff.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Mukho?',
+        summary: 'Mukho pairs with Mukho Lighthouse, Nongoldam-gil, Chuam Chotdaebawi, Mureunggyegok Valley, seafood, and the Samcheok handoff.',
+        cards: [
+          { title: 'Port version: Mukho and lighthouse walk', body: 'Use this when Donghae should feel lived and working.' },
+          { title: 'Scenic version: Chuam sunrise rocks', body: 'This gives the city a fast visual payoff.' },
+          { title: 'Recovery version: Mureung valley air', body: 'This adds mountain-water relief to the coast route.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Donghae into Route 4?',
+        summary: 'Donghae should be planned as the grounded connector between Gangneung and Samcheok, with one clear focus: Mukho, Chuam, or Mureung.',
+        cards: [
+          { title: 'Pick the focus before lodging', body: 'Mukho, Chuam, and Mureung pull the stay in different directions.' },
+          { title: 'Keep the coast sequence intact', body: 'Donghae works because it holds the line between larger or louder stops.' },
+          { title: 'Plan the Samcheok handoff', body: 'The next coast chapter should feel continuous.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Donghae?',
+        summary: 'Donghae is strongest when it is not reduced to one sunrise rock. Mukho and Mureung give it working-coast and recovery layers.',
+        cards: [
+          { title: 'Lead with Mukho for depth', body: 'The port side gives the city memory.' },
+          { title: 'Use Chuam for clarity', body: 'It is the quick visual proof point.' },
+          { title: 'Add Mureung when the route needs rest', body: 'A valley stop balances the beach-and-port rhythm.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -3039,6 +3284,11 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['jangho-port', 'samcheok-jangho', 'samcheok-coast', 'hwanseon-cave'].includes(hotspotSlug)) return 'jangho';
   if (['uljin-coast', 'uljin-seaside', 'deokgu-valley', 'mangyangjeong'].includes(hotspotSlug)) return 'coast';
   if (['yeongdeok-crab', 'snow-crab', 'yeongdeok-snow-crab', 'yeongdeok-port'].includes(hotspotSlug)) return 'crab';
+  if (['nami-island', 'jarasum', 'gapyeong-nami', 'gapyeong-rail-park'].includes(hotspotSlug)) return 'nami';
+  if (['chuncheon-dakgalbi', 'dakgalbi-street', 'myeongdong-dakgalbi-street'].includes(hotspotSlug)) return 'dakgalbi';
+  if (['pyeongchang-olympic', 'alpensia', 'yongpyong', 'odaesan'].includes(hotspotSlug)) return 'olympic';
+  if (['yangyang-surf', 'surfyy-beach', 'hajodae-beach', 'naksansa'].includes(hotspotSlug)) return 'surf';
+  if (['mukho', 'mukho-lighthouse', 'donghae-mukho', 'chuam-chotdaebawi'].includes(hotspotSlug)) return 'mukho';
   return hotspotSlug;
 }
 
