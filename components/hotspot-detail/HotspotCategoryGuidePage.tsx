@@ -11,7 +11,7 @@ import { getTripHotelAffiliateUrl } from '@/data/tripAffiliateLinks';
 import {
   HOTSPOT_CATEGORY_PAGES,
   getHotspotCategoryHref,
-  getHotspotCategoryPage,
+  getResolvedHotspotCategoryPage,
   type HotspotCategoryKey,
 } from '@/data/hotspotCategoryPages';
 
@@ -93,7 +93,7 @@ export async function generateCategoryMetadata({
   params: Promise<HotspotCategoryParams>;
 }): Promise<Metadata> {
   const { city, hotspot, category } = await params;
-  const categoryPage = getHotspotCategoryPage(category);
+  const categoryPage = getResolvedHotspotCategoryPage(city, hotspot, category);
   if (!categoryPage) {
     return {
       title: 'Not Found',
@@ -140,7 +140,7 @@ export default async function HotspotCategoryPage({
   params: Promise<HotspotCategoryParams>;
 }) {
   const { city: citySlug, hotspot: hotspotSlug, category } = await params;
-  const categoryPage = getHotspotCategoryPage(category);
+  const categoryPage = getResolvedHotspotCategoryPage(citySlug, hotspotSlug, category);
   if (!categoryPage) notFound();
 
   const post = await fetchPostBySlug(hotspotSlug);

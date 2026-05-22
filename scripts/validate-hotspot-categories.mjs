@@ -18,7 +18,21 @@ for (const key of keys) {
   assert.equal((block[1].match(/title:/g) ?? []).length, 3, `${key} must have exactly three cards`);
 }
 
+const gyeongbokgungBlock = source.match(/gyeongbokgung: \{([\s\S]*?)\n    \},/);
+assert.ok(gyeongbokgungBlock, 'Seoul Gyeongbokgung override must exist');
+
+for (const key of keys) {
+  const overrideBlock = gyeongbokgungBlock[1].match(new RegExp(`${key}: \\{([\\s\\S]*?)\\n      \\},`));
+  assert.ok(overrideBlock, `Gyeongbokgung ${key} override must exist`);
+  assert.equal(
+    (overrideBlock[1].match(/title:/g) ?? []).length,
+    3,
+    `Gyeongbokgung ${key} override must have exactly three cards`
+  );
+}
+
 assert.match(overview, /HOTSPOT_CATEGORY_PAGES/, 'overview must render category navigation');
+assert.match(overview, /getResolvedHotspotCategoryPage/, 'overview must use per-hotspot category overrides');
 assert.doesNotMatch(
   overview,
   /dangerouslySetInnerHTML=\{\{ __html: guidedContent \}\}/,

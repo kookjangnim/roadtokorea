@@ -7,7 +7,11 @@ import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
 import { getSeoulRouteOptionBySlug } from '@/data/seoulRoutes';
 import { getHotspotHeroImage } from '@/data/hotspotImageMap';
 import { isWpPostCityMatch } from '@/lib/wp-route-context';
-import { HOTSPOT_CATEGORY_PAGES, getHotspotCategoryHref } from '@/data/hotspotCategoryPages';
+import {
+  HOTSPOT_CATEGORY_PAGES,
+  getHotspotCategoryHref,
+  getResolvedHotspotCategoryPage,
+} from '@/data/hotspotCategoryPages';
 
 const siteUrl = getSiteUrl();
 
@@ -569,26 +573,33 @@ export default async function HotspotPage({
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
-                {HOTSPOT_CATEGORY_PAGES.map((category) => (
-                  <Link
-                    key={category.key}
-                    href={getHotspotCategoryHref(citySlug, hotspotSlug, category.key)}
-                    className="group flex min-h-52 flex-col justify-between rounded-[1.5rem] border border-stone-200 bg-stone-50/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-stone-900/20 hover:bg-white hover:shadow-[0_18px_45px_rgba(34,30,25,0.08)]"
-                  >
-                    <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                        {category.eyebrow}
-                      </p>
-                      <h3 className="mt-4 font-serif text-2xl leading-tight text-stone-950">
-                        {category.navLabel}
-                      </h3>
-                      <p className="mt-3 text-sm leading-7 text-stone-600">{category.question}</p>
-                    </div>
-                    <span className="mt-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500 transition-colors group-hover:text-stone-950">
-                      Open
-                    </span>
-                  </Link>
-                ))}
+                {HOTSPOT_CATEGORY_PAGES.map((category) => {
+                  const resolvedCategory =
+                    getResolvedHotspotCategoryPage(citySlug, hotspotSlug, category.key) ?? category;
+
+                  return (
+                    <Link
+                      key={category.key}
+                      href={getHotspotCategoryHref(citySlug, hotspotSlug, category.key)}
+                      className="group flex min-h-52 flex-col justify-between rounded-[1.5rem] border border-stone-200 bg-stone-50/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-stone-900/20 hover:bg-white hover:shadow-[0_18px_45px_rgba(34,30,25,0.08)]"
+                    >
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                          {resolvedCategory.eyebrow}
+                        </p>
+                        <h3 className="mt-4 font-serif text-2xl leading-tight text-stone-950">
+                          {resolvedCategory.navLabel}
+                        </h3>
+                        <p className="mt-3 text-sm leading-7 text-stone-600">
+                          {resolvedCategory.question}
+                        </p>
+                      </div>
+                      <span className="mt-6 text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500 transition-colors group-hover:text-stone-950">
+                        Open
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
             </section>
 

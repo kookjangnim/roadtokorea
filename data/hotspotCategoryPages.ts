@@ -19,6 +19,15 @@ export type HotspotCategoryPage = {
   primaryAction: string;
 };
 
+type HotspotCategoryOverride = Partial<
+  Pick<HotspotCategoryPage, 'question' | 'summary' | 'cards' | 'primaryAction'>
+>;
+
+type HotspotCategoryOverrideRegistry = Record<
+  string,
+  Record<string, Partial<Record<HotspotCategoryKey, HotspotCategoryOverride>>>
+>;
+
 export const HOTSPOT_CATEGORY_PAGES: HotspotCategoryPage[] = [
   {
     key: 'stay',
@@ -162,8 +171,150 @@ export const HOTSPOT_CATEGORY_PAGES: HotspotCategoryPage[] = [
   },
 ];
 
+export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
+  seoul: {
+    gyeongbokgung: {
+      stay: {
+        question: 'Should you sleep near Gyeongbokgung?',
+        summary:
+          'Gyeongbokgung can shape your stay choice if you want a calm palace morning, a Jongno/Bukchon walking base, or an easy first-day Seoul arrival. It is less useful as a hotel anchor if your night plan is Gangnam, Hongdae, or Itaewon.',
+        cards: [
+          {
+            title: 'Stay around Gwanghwamun or Jongno for the cleanest palace morning',
+            body:
+              'This keeps Gyeongbokgung, Gwanghwamun Square, Cheonggyecheon, Insadong, and Bukchon within a low-friction first walk.',
+          },
+          {
+            title: 'Use Myeongdong when you want easier shopping and airport flow',
+            body:
+              'Myeongdong is not as quiet, but it gives first-time visitors more food, shopping, and transit convenience after the palace visit.',
+          },
+          {
+            title: 'Skip a palace-area stay for nightlife-heavy Seoul plans',
+            body:
+              'If the trip is built around late nights in Hongdae, Itaewon, or Gangnam, visit Gyeongbokgung by day and sleep closer to the evening district.',
+          },
+        ],
+      },
+      food: {
+        question: 'Where should you eat before or after Gyeongbokgung?',
+        summary:
+          'Gyeongbokgung works best when food is planned around nearby neighborhoods rather than forced directly beside the palace gate. Seochon, Bukchon, Insadong, and Gwanghwamun each create a different meal rhythm.',
+        cards: [
+          {
+            title: 'Use Seochon for a slower meal before or after the palace',
+            body:
+              'Seochon is the strongest fit when the visit should feel local, walkable, and less like a checklist stop.',
+          },
+          {
+            title: 'Use Insadong when culture and food should stay together',
+            body:
+              'Insadong keeps tea, snacks, galleries, and traditional-street atmosphere close to the palace story.',
+          },
+          {
+            title: 'Use Gwanghwamun for practical lunch',
+            body:
+              'Gwanghwamun is better when the day needs a reliable meal window before moving to another district.',
+          },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Gyeongbokgung?',
+        summary:
+          'Gyeongbokgung should rarely be treated as a single isolated palace stop. It becomes much stronger when paired with Gwanghwamun, Bukchon, Insadong, Seochon, or Cheonggyecheon depending on the day length.',
+        cards: [
+          {
+            title: 'Two-hour version: palace plus Gwanghwamun',
+            body:
+              'Use this when the palace is a context stop before the day moves elsewhere. It keeps the visit focused and efficient.',
+          },
+          {
+            title: 'Half-day version: palace, Bukchon, and Insadong',
+            body:
+              'This gives first-time visitors a clear old-Seoul cluster without turning the day into transit hopping.',
+          },
+          {
+            title: 'Softer version: palace and Seochon',
+            body:
+              'Choose this when you want cafes, alleys, and a slower neighborhood finish after the formal palace layer.',
+          },
+        ],
+      },
+      transport: {
+        question: 'How do you get to Gyeongbokgung without wasting energy?',
+        summary:
+          'The simplest access is usually subway plus walking. Gyeongbokgung Station, Gwanghwamun Station, and Anguk Station each work, but the best choice depends on whether you want to enter through the palace, connect to Bukchon, or continue toward Insadong.',
+        cards: [
+          {
+            title: 'Use Gyeongbokgung Station for the most direct arrival',
+            body:
+              'This is the cleanest choice when the palace itself is the first priority and the group wants minimal decision fatigue.',
+          },
+          {
+            title: 'Use Gwanghwamun Station for a ceremonial approach',
+            body:
+              'This works well when the route should start with the square and city-axis feeling before entering the palace area.',
+          },
+          {
+            title: 'Use Anguk Station when Bukchon or Insadong comes next',
+            body:
+              'Anguk is useful when the palace is part of a broader old-Seoul walking cluster rather than the only stop.',
+          },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gyeongbokgung?',
+        summary:
+          'Gyeongbokgung is easiest to enjoy when the visit is timed for lower crowd pressure and treated as a cultural anchor, not a rushed photo stop. The palace pairs best with one nearby neighborhood rather than too many scattered sights.',
+        cards: [
+          {
+            title: 'Go earlier when the palace matters',
+            body:
+              'A morning visit usually gives the palace more breathing room and leaves the afternoon free for Bukchon, Insadong, or another district.',
+          },
+          {
+            title: 'Do not overpack the old-Seoul day',
+            body:
+              'Palace, Bukchon, Insadong, Seochon, and Cheonggyecheon can be too much if every stop gets equal weight.',
+          },
+          {
+            title: 'Use the palace as context',
+            body:
+              'The visit works best when it explains Seoul history before the day shifts into food, streets, or modern neighborhoods.',
+          },
+        ],
+      },
+    },
+    gyeongbok: {},
+  },
+};
+
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
   return HOTSPOT_CATEGORY_PAGES.find((page) => page.key === category) ?? null;
+}
+
+function normalizeHotspotSlug(hotspotSlug: string) {
+  if (hotspotSlug === 'gyeongbok') return 'gyeongbokgung';
+  return hotspotSlug;
+}
+
+export function getResolvedHotspotCategoryPage(
+  citySlug: string,
+  hotspotSlug: string,
+  category: string
+): HotspotCategoryPage | null {
+  const basePage = getHotspotCategoryPage(category);
+  if (!basePage) return null;
+
+  const normalizedHotspot = normalizeHotspotSlug(hotspotSlug);
+  const override = HOTSPOT_CATEGORY_OVERRIDES[citySlug]?.[normalizedHotspot]?.[basePage.key];
+  if (!override) return basePage;
+
+  return {
+    ...basePage,
+    ...override,
+    cards: override.cards ?? basePage.cards,
+  };
 }
 
 export function getHotspotCategoryHref(citySlug: string, hotspotSlug: string, category: HotspotCategoryKey) {
