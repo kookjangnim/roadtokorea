@@ -929,6 +929,202 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  daejeon: {
+    sungsimdang: {
+      stay: {
+        question: 'Should you sleep near Sungsimdang?',
+        summary: 'Sungsimdang can support a Daejeon overnight when the city is being used as a central reset, but the bakery itself should not be the only reason to choose the hotel area.',
+        cards: [
+          { title: 'Stay central when Daejeon is a route break', body: 'A central stay makes the bakery, station, restaurants, and next-day transport easier to combine.' },
+          { title: 'Use Yuseong when recovery matters more', body: 'If hot springs and slower rest are the point, Yuseong can be the better sleep zone than the bakery core.' },
+          { title: 'Do not overbuild the stay around one queue', body: 'Sungsimdang is a strong food anchor, but accommodation should still follow the next route move.' },
+        ],
+      },
+      food: {
+        question: 'How should you plan food around Sungsimdang?',
+        summary: 'Sungsimdang is best treated as Daejeon’s food identity anchor, then supported by a simple meal plan nearby or in Yuseong depending on the day.',
+        cards: [
+          { title: 'Use the bakery as the anchor, not the whole meal', body: 'Plan bread, snacks, or gifts here, then decide whether the real meal happens nearby or later.' },
+          { title: 'Visit earlier when possible', body: 'Crowds can turn the stop into a schedule problem, especially if the route has a train or drive after it.' },
+          { title: 'Carryable food helps the next leg', body: 'Bakery items work well for travelers continuing toward another city instead of staying long in Daejeon.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Sungsimdang?',
+        summary: 'Sungsimdang works best with Daejeon Station, central streets, local markets, or a Yuseong recovery layer rather than a scattered city tour.',
+        cards: [
+          { title: 'Short version: bakery and station logic', body: 'Use this when Daejeon is a transfer or practical stop on a longer route.' },
+          { title: 'Half-day version: bakery, central walk, and market', body: 'This gives the city more texture without turning Daejeon into a forced sightseeing day.' },
+          { title: 'Recovery version: Sungsimdang plus Yuseong', body: 'Pair food identity with hot-spring rest when Daejeon is meant to reset the traveler.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Sungsimdang into Daejeon movement?',
+        summary: 'Sungsimdang is easiest when planned around Daejeon Station, central walking, or a short taxi/subway hop before the next route leg.',
+        cards: [
+          { title: 'Use station timing carefully', body: 'The bakery is useful for rail travelers, but lines can threaten tight departures.' },
+          { title: 'Keep luggage friction low', body: 'If carrying bags, decide whether this is a quick stop, a hotel-adjacent stop, or a post-check-in visit.' },
+          { title: 'Link it to the next city', body: 'Daejeon’s value is central transport, so the bakery stop should support the next movement rather than delay it.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Sungsimdang?',
+        summary: 'Sungsimdang is worth the attention, but the visit is better when treated as a practical food anchor inside Daejeon route logic.',
+        cards: [
+          { title: 'Expect crowd pressure', body: 'Build a buffer instead of treating it as a five-minute errand.' },
+          { title: 'Choose what travels well', body: 'Some items make more sense for train or car travel than others.' },
+          { title: 'Use it to explain Daejeon', body: 'The bakery gives Daejeon identity in a route system that might otherwise look too practical.' },
+        ],
+      },
+    },
+  },
+  chungju: {
+    suanbo: {
+      stay: {
+        question: 'Should you sleep in Suanbo?',
+        summary: 'Suanbo is the strongest Chungju stay choice when hot-spring recovery and next-day inland movement matter more than city-center convenience.',
+        cards: [
+          { title: 'Stay here for recovery', body: 'Suanbo makes sense when the route needs a real rest chapter before mountain or inland travel continues.' },
+          { title: 'Use Chungju center for practical errands', body: 'If food, transit, or city services matter more, central Chungju can be easier.' },
+          { title: 'Do not choose it for nightlife', body: 'Suanbo is a recovery district, not a late-night city base.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Suanbo?',
+        summary: 'Food around Suanbo should stay simple and restorative. The main purpose is supporting rest, bathing, and the next day’s route.',
+        cards: [
+          { title: 'Keep dinner close to the stay', body: 'After hot springs or driving, low-friction food is better than chasing a distant restaurant.' },
+          { title: 'Use local meals as recovery', body: 'The food plan should help the stop feel calm, not turn it into another task.' },
+          { title: 'Stock up before a long next leg', body: 'If continuing toward Mungyeong or deeper inland, simple snacks and breakfast planning help.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Suanbo?',
+        summary: 'Suanbo pairs with hot springs, mountain-edge scenery, Chungju Lake logic, and the next movement toward Mungyeong Saejae.',
+        cards: [
+          { title: 'Short version: bath and rest', body: 'Use this when Suanbo is a pure recovery stop.' },
+          { title: 'Half-day version: Suanbo and Chungju nature', body: 'Add lake or mountain context when the traveler has enough time before resting.' },
+          { title: 'Route version: Suanbo before Mungyeong', body: 'This is the strongest use when the next day crosses into pass-country logic.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Suanbo into the inland route?',
+        summary: 'Suanbo works best by car or planned local transfer. It should be treated as a deliberate recovery detour, not a random hotel choice.',
+        cards: [
+          { title: 'Use car-first timing', body: 'The stay becomes easier when arrival, bath time, dinner, and departure are all controlled.' },
+          { title: 'Plan the next morning', body: 'Suanbo pays off when the next leg starts fresher, especially toward Mungyeong or mountain roads.' },
+          { title: 'Avoid late uncertain arrivals', body: 'The district is quieter, so a too-late arrival can reduce the value of staying there.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before choosing Suanbo?',
+        summary: 'Suanbo is about route recovery. It is excellent when the trip needs rest, but weak if the traveler expects dense city entertainment.',
+        cards: [
+          { title: 'Make rest the point', body: 'The district works when you stop asking it to be a sightseeing checklist.' },
+          { title: 'Check bath or hotel expectations', body: 'The stay experience matters more here than in a normal city hotel zone.' },
+          { title: 'Use it before a harder leg', body: 'Suanbo becomes more valuable when the next day actually benefits from recovery.' },
+        ],
+      },
+    },
+  },
+  gangneung: {
+    coffee: {
+      stay: {
+        question: 'Should you sleep near Gangneung Coffee Street?',
+        summary: 'Gangneung Coffee Street can support a coastal stay when beach walks, cafes, and a slower East Sea morning matter.',
+        cards: [
+          { title: 'Stay nearby for coast and coffee pacing', body: 'This works when the trip wants the morning to begin with the sea instead of city logistics.' },
+          { title: 'Use central Gangneung for food and transit', body: 'If trains, markets, and local meals matter more, the city core can be more practical.' },
+          { title: 'Use the coast as a mood base', body: 'The value is atmosphere, not only hotel efficiency.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gangneung Coffee Street?',
+        summary: 'Coffee Street is best for cafes, desserts, beach breaks, and a soft meal rhythm, while stronger local food may sit closer to markets or central Gangneung.',
+        cards: [
+          { title: 'Let coffee be the anchor', body: 'This area earns its place when cafe time is treated as part of the travel experience.' },
+          { title: 'Move central for a fuller meal', body: 'For market food or local specialties, do not force everything onto the beach strip.' },
+          { title: 'Use cafes as weather buffers', body: 'Wind, rain, or cold can still make the coast usable if cafe stops are planned.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Gangneung Coffee Street?',
+        summary: 'Coffee Street pairs naturally with Anmok Beach, coastal walks, nearby beaches, markets, and a slower East Sea day.',
+        cards: [
+          { title: 'Short version: coffee and beach walk', body: 'Use this when Gangneung is a light coastal reset.' },
+          { title: 'Half-day version: beach, cafe, and market', body: 'This balances ocean atmosphere with local food texture.' },
+          { title: 'Route version: Gangneung into the east coast', body: 'Coffee Street can become the soft opening before Donghae, Samcheok, or north-coast movement.' },
+        ],
+      },
+      transport: {
+        question: 'How do you get to Gangneung Coffee Street smoothly?',
+        summary: 'Coffee Street is a coast-side stop, so train arrivals usually need a taxi, bus, or planned local transfer from central Gangneung.',
+        cards: [
+          { title: 'Plan the station-to-coast move', body: 'Do not assume the beach is immediately next to the train arrival.' },
+          { title: 'Group coast-side stops together', body: 'The day works better when beaches and cafes are clustered instead of mixed with too many inland hops.' },
+          { title: 'Use taxis when time matters', body: 'Short local transfers can preserve energy for the coast.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gangneung Coffee Street?',
+        summary: 'Coffee Street is a mood stop. It works best when the itinerary allows sea air, weather flexibility, and unhurried cafe time.',
+        cards: [
+          { title: 'Do not over-schedule cafe time', body: 'Pick a good window and let the stop breathe.' },
+          { title: 'Watch coastal weather', body: 'Wind and cold can change how long the beach remains comfortable.' },
+          { title: 'Pair it with one local food layer', body: 'Coffee plus market or seafood gives Gangneung more range.' },
+        ],
+      },
+    },
+  },
+  sokcho: {
+    seoraksan: {
+      stay: {
+        question: 'Should you sleep near Seoraksan?',
+        summary: 'Seoraksan justifies a nearby stay when hiking, early entry, autumn foliage, or mountain-first pacing matters more than Sokcho city nightlife.',
+        cards: [
+          { title: 'Stay near the park for early mountain time', body: 'This reduces morning friction and helps the mountain feel like the main chapter.' },
+          { title: 'Use Sokcho city for food and harbor nights', body: 'If markets, seafood, and the sea are the evening focus, city-side lodging may fit better.' },
+          { title: 'Choose based on the next morning', body: 'The best stay zone depends on whether tomorrow starts with trails, beach, or onward travel.' },
+        ],
+      },
+      food: {
+        question: 'How should you plan food around Seoraksan?',
+        summary: 'Food around Seoraksan should support hiking energy and recovery. Stronger seafood and market meals usually belong back in Sokcho.',
+        cards: [
+          { title: 'Eat simply before the mountain', body: 'A clean breakfast or snack plan matters more than a complicated food hunt.' },
+          { title: 'Use Sokcho for the reward meal', body: 'After mountain time, seafood, markets, or harbor food make the day feel complete.' },
+          { title: 'Carry water and snacks', body: 'Mountain pacing needs practical food support, especially in crowded or seasonal windows.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Seoraksan?',
+        summary: 'Seoraksan pairs with Sokcho markets, beaches, harbor food, or a slower mountain-focused day depending on energy.',
+        cards: [
+          { title: 'Short version: cable car or light trail', body: 'Use this when the mountain is scenic context rather than a full hike.' },
+          { title: 'Half-day version: Seoraksan and Sokcho market', body: 'This balances mountain atmosphere with city food reward.' },
+          { title: 'Full-day version: trail-first planning', body: 'If hiking is the main purpose, do not overload the day with extra sightseeing.' },
+        ],
+      },
+      transport: {
+        question: 'How do you get to Seoraksan without draining the day?',
+        summary: 'Seoraksan needs deliberate access planning from Sokcho, especially in peak foliage or holiday periods.',
+        cards: [
+          { title: 'Start early in peak seasons', body: 'Crowds and traffic can change the whole day if arrival is too late.' },
+          { title: 'Choose city or park base first', body: 'Transport feels simpler once the sleeping area and first stop are aligned.' },
+          { title: 'Do not force too many transfers', body: 'Mountain days are better when movement is simple and energy is preserved.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Seoraksan?',
+        summary: 'Seoraksan is weather, season, and energy dependent. It is one of the places where timing matters more than adding extra stops.',
+        cards: [
+          { title: 'Check weather and visibility', body: 'A mountain day changes sharply with clouds, rain, wind, or heat.' },
+          { title: 'Respect crowd seasons', body: 'Autumn foliage can be beautiful but logistically heavy.' },
+          { title: 'Match route to ability', body: 'A light scenic visit and a serious hike are different days.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -945,6 +1141,10 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['aewol-coast', 'aewol-cafe-street'].includes(hotspotSlug)) return 'aewol';
   if (['seongsan-ilchulbong', 'seongsan-sunrise-peak', 'seongsan-sunrise'].includes(hotspotSlug)) return 'seongsan';
   if (['seogwipo-city', 'seogwipo-market'].includes(hotspotSlug)) return 'seogwipo';
+  if (['sungsimdang-bakery', 'sung-simdang', 'sung-simdang-bakery'].includes(hotspotSlug)) return 'sungsimdang';
+  if (['suanbo-hot-springs', 'suanbo-onsen', 'suanbo-hot-spring'].includes(hotspotSlug)) return 'suanbo';
+  if (['gangneung-coffee-street', 'anmok-coffee-street', 'anmok-beach-coffee-street'].includes(hotspotSlug)) return 'coffee';
+  if (['seoraksan-national-park', 'seoraksan-mountain', 'mount-seorak'].includes(hotspotSlug)) return 'seoraksan';
   return hotspotSlug;
 }
 
