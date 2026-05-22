@@ -547,6 +547,388 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
     },
     gyeongbok: {},
   },
+  busan: {
+    haeundae: {
+      stay: {
+        question: 'Should you sleep near Haeundae?',
+        summary: 'Haeundae is the easiest Busan beach base when the trip wants hotels, beach walks, cafes, and low-friction first-time logistics.',
+        cards: [
+          { title: 'Stay here for beach-first Busan', body: 'Haeundae works when the beach, Marine City, cafes, and a polished hotel zone should carry the night.' },
+          { title: 'Use Seomyeon for city-center transfers', body: 'If the next day needs trains, subway transfers, or west/east flexibility, Seomyeon can be a better base.' },
+          { title: 'Skip it for old-port food focus', body: 'Travelers focused on Jagalchi, Nampo, or markets may spend too much time crossing the city from Haeundae.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Haeundae?',
+        summary: 'Haeundae is best for beach-adjacent meals, cafes, hotel-zone dining, and easy seafood plans, but deeper market food usually belongs elsewhere in Busan.',
+        cards: [
+          { title: 'Use the beach area for easy meals', body: 'This keeps the day smooth when swimming, walking, or evening views matter more than food hunting.' },
+          { title: 'Move toward local markets for stronger seafood texture', body: 'Haeundae has convenience, but Busan food feels broader when paired with market or port areas.' },
+          { title: 'Plan cafes as recovery', body: 'Beach walks and coastal transit pair naturally with coffee breaks rather than a packed meal schedule.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Haeundae?',
+        summary: 'Haeundae works as a coastal cluster with the beach, Dongbaekseom, Marine City, Blue Line Park, and nearby cafe streets.',
+        cards: [
+          { title: 'Two-hour version: beach and Dongbaekseom', body: 'This gives first-time visitors a clean coastal view without overloading the day.' },
+          { title: 'Half-day version: beach, Blue Line Park, and cafes', body: 'Use this when the east coast side of Busan should feel like the main chapter.' },
+          { title: 'Night version: Marine City views', body: 'Haeundae gets stronger after dark when skyline and beach atmosphere become part of the point.' },
+        ],
+      },
+      transport: {
+        question: 'How do you get in and out of Haeundae smoothly?',
+        summary: 'Haeundae is easy once you are in east Busan, but it is not central. Build the day around fewer cross-city moves.',
+        cards: [
+          { title: 'Use subway for predictable access', body: 'Subway access is slower than it looks from central Busan, but it is stable and easy to understand.' },
+          { title: 'Group east-side stops together', body: 'Haeundae, Cheongsapo, and coastal rail plans work better together than mixed with Nampo or Jagalchi.' },
+          { title: 'Avoid rush-hour taxi dependence', body: 'Traffic can make cross-city movement feel heavier than the map suggests.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Haeundae?',
+        summary: 'Haeundae is polished, popular, and easy. It shines when used as a beach base, but it should not be mistaken for all of Busan.',
+        cards: [
+          { title: 'Expect a resort-city mood', body: 'This is the smoother side of Busan, with hotels and beach convenience leading the experience.' },
+          { title: 'Give sunset or night a role', body: 'The area often feels more memorable when the skyline and beach atmosphere switch on.' },
+          { title: 'Balance it with older Busan', body: 'Pairing Haeundae with markets or port districts keeps the city from feeling too polished.' },
+        ],
+      },
+    },
+    gwangalli: {
+      stay: {
+        question: 'Should you sleep near Gwangalli?',
+        summary: 'Gwangalli is a strong stay choice when bridge views, beach bars, cafes, and evening atmosphere matter more than pure transit convenience.',
+        cards: [
+          { title: 'Stay here for the night view', body: 'Gwangan Bridge gives the stay a clear reason, especially for couples and slower Busan evenings.' },
+          { title: 'Use Haeundae for a more hotel-heavy beach base', body: 'Haeundae is usually easier for resort-style stays, while Gwangalli feels more social and view-driven.' },
+          { title: 'Use Seomyeon when the itinerary is city-wide', body: 'If the plan jumps between many Busan districts, Gwangalli can become a beautiful but less central base.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Gwangalli?',
+        summary: 'Gwangalli food works best as an evening plan: seafood, casual dining, cafes, drinks, and bridge-view pacing.',
+        cards: [
+          { title: 'Make dinner part of the view', body: 'The district is strongest when food and the bridge atmosphere happen together.' },
+          { title: 'Use cafes for a softer afternoon', body: 'Arriving before dinner lets the beach and cafe layer warm up before the night view.' },
+          { title: 'Move elsewhere for market intensity', body: 'For raw market energy, Jagalchi or older port areas do a different job than Gwangalli.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Gwangalli?',
+        summary: 'Gwangalli is best paired with beach walking, bridge views, cafes, Millak waterfront, and a relaxed evening route.',
+        cards: [
+          { title: 'Two-hour version: beach and bridge view', body: 'Use this when Gwangalli is an evening pause rather than the whole day.' },
+          { title: 'Half-day version: cafes, waterfront, and dinner', body: 'This gives the area enough time to move from day to night naturally.' },
+          { title: 'Pair with Haeundae only if the day is coastal', body: 'Two beach districts can work, but only when the route is intentionally east-coast Busan.' },
+        ],
+      },
+      transport: {
+        question: 'How do you move through Gwangalli?',
+        summary: 'Gwangalli is usually a subway-plus-walk or taxi edge destination. The main decision is whether the evening ends here or continues elsewhere.',
+        cards: [
+          { title: 'Arrive before peak evening', body: 'Getting in before the busiest dinner window makes the area easier to enjoy.' },
+          { title: 'Plan the late return', body: 'Know whether you are walking to a nearby stay, using taxi, or returning by subway.' },
+          { title: 'Do not overconnect it', body: 'Gwangalli works best when the night can settle instead of becoming one more transfer.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Gwangalli?',
+        summary: 'Gwangalli is a mood stop. It succeeds when you give the bridge view, beach, and evening energy enough time to matter.',
+        cards: [
+          { title: 'Do not rush the view', body: 'A short photo stop misses why people like the area. Let it become dinner, a walk, or a drink.' },
+          { title: 'Check event crowd expectations', body: 'Drone shows and beach events can make the area feel exciting or crowded depending on the trip style.' },
+          { title: 'Use it for atmosphere, not checklist sightseeing', body: 'Gwangalli is less about landmarks and more about how Busan feels by the water at night.' },
+        ],
+      },
+    },
+    seomyeon: {
+      stay: {
+        question: 'Should you sleep in Seomyeon?',
+        summary: 'Seomyeon is Busan’s practical city-core base for subway access, food, nightlife, shopping, and balanced movement across the city.',
+        cards: [
+          { title: 'Stay here for city-wide efficiency', body: 'Seomyeon works when the trip needs access to beaches, markets, stations, and nightlife without committing to one edge.' },
+          { title: 'Use it for food and late movement', body: 'The area gives easy restaurants, bars, and casual night options close to hotels.' },
+          { title: 'Skip it for beach-first romance', body: 'Haeundae or Gwangalli will feel more memorable if the stay itself should be coastal.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Seomyeon?',
+        summary: 'Seomyeon is a strong practical food district with casual meals, late-night options, cafes, and group-friendly choices.',
+        cards: [
+          { title: 'Use it for easy dinner after transit', body: 'Seomyeon is useful when the day has been long and the group needs a reliable meal zone.' },
+          { title: 'Use side streets for better texture', body: 'The main commercial streets are convenient, but smaller alleys often make the meal feel more local.' },
+          { title: 'Save seafood-market plans for another district', body: 'Seomyeon handles city food well; port seafood belongs closer to Jagalchi or Nampo.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Seomyeon?',
+        summary: 'Seomyeon is more of a base and nightlife district than a classic attraction. Pair it with shopping, cafes, food alleys, and onward movement.',
+        cards: [
+          { title: 'Two-hour version: food and shopping', body: 'Use this when Seomyeon is a practical reset between larger Busan chapters.' },
+          { title: 'Evening version: dinner and nightlife', body: 'This is the district’s strongest use when staying nearby.' },
+          { title: 'Transfer version: Seomyeon as the hinge', body: 'Use it to connect east beaches, central markets, and station logic without making every stop coastal.' },
+        ],
+      },
+      transport: {
+        question: 'How do you use Seomyeon as a transport base?',
+        summary: 'Seomyeon is one of Busan’s easiest subway hubs. It is useful when the itinerary moves in multiple directions.',
+        cards: [
+          { title: 'Use Seomyeon for multi-district days', body: 'It reduces friction when the route includes beaches, markets, and central Busan.' },
+          { title: 'Return here after edge districts', body: 'A central base makes late returns simpler after Haeundae, Gwangalli, or Nampo.' },
+          { title: 'Avoid unnecessary taxis at peak hours', body: 'Subway movement is often cleaner than trying to cross Busan by road.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Seomyeon?',
+        summary: 'Seomyeon is not the prettiest Busan base, but it may be the most useful one. Treat it as a route tool with strong food and night support.',
+        cards: [
+          { title: 'Choose it for function', body: 'Seomyeon earns its place by making Busan easier to move through.' },
+          { title: 'Use the night layer', body: 'The area feels more valuable when dinner, bars, or late cafes are part of the plan.' },
+          { title: 'Pair with scenic districts', body: 'Balance Seomyeon with Haeundae, Gwangalli, or port views so the trip still feels visually Busan.' },
+        ],
+      },
+    },
+  },
+  gyeongju: {
+    bulguksa: {
+      stay: {
+        question: 'Should you sleep near Bulguksa?',
+        summary: 'Bulguksa can justify an east-side or Bomun stay when temple timing, Seokguram, and a calmer heritage morning matter.',
+        cards: [
+          { title: 'Stay east when the temple is the priority', body: 'This reduces morning friction and makes Bulguksa feel like a proper heritage chapter.' },
+          { title: 'Use Bomun for easier resort comfort', body: 'Bomun gives hotels, lake walks, and family-friendly convenience while staying close enough to Bulguksa.' },
+          { title: 'Use central Gyeongju for old-city evenings', body: 'If the night plan is Hwangnidan-gil or royal tombs, central Gyeongju may fit better.' },
+        ],
+      },
+      food: {
+        question: 'Where should you eat around Bulguksa?',
+        summary: 'Food around Bulguksa should support temple pacing. Keep meals simple nearby, or move toward Bomun or central Gyeongju for a fuller food plan.',
+        cards: [
+          { title: 'Eat simply before or after the temple', body: 'A heavy meal can break the quiet rhythm. Keep food practical if the temple is the main purpose.' },
+          { title: 'Use Bomun for family-friendly meals', body: 'Bomun works when the group needs easier restaurants and resort-area convenience.' },
+          { title: 'Move central for evening food', body: 'Central Gyeongju is stronger when dinner should become part of the city experience.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Bulguksa?',
+        summary: 'Bulguksa is strongest with Seokguram, Bomun Lake, or a central heritage handoff depending on time and energy.',
+        cards: [
+          { title: 'Two-hour version: Bulguksa only', body: 'Use this when the temple is a focused heritage stop and the rest of the day belongs elsewhere.' },
+          { title: 'Half-day version: Bulguksa and Seokguram', body: 'This is the strongest cultural pairing, but it needs enough time and transport planning.' },
+          { title: 'Softer version: Bulguksa and Bomun', body: 'Pair the temple with lake or resort recovery when the group needs a gentler day.' },
+        ],
+      },
+      transport: {
+        question: 'How do you get to Bulguksa efficiently?',
+        summary: 'Bulguksa sits away from central Gyeongju, so transport planning matters more than it does for downtown heritage stops.',
+        cards: [
+          { title: 'Use car or taxi for low-stress timing', body: 'This is often easiest when pairing Bulguksa with Seokguram or Bomun.' },
+          { title: 'Use bus only with a loose schedule', body: 'Public transport can work, but it needs more patience and less packed planning.' },
+          { title: 'Group east-side stops together', body: 'Avoid bouncing between Bulguksa and central Gyeongju multiple times in one day.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Bulguksa?',
+        summary: 'Bulguksa rewards slower attention. It is less successful when squeezed between too many photo stops.',
+        cards: [
+          { title: 'Give the temple enough quiet time', body: 'The value is in atmosphere, architecture, and context, not only quick photos.' },
+          { title: 'Watch weather and walking energy', body: 'Temple paths and nearby pairings can feel heavier in heat, rain, or winter cold.' },
+          { title: 'Decide whether Seokguram is included', body: 'That decision changes the whole transport and time plan.' },
+        ],
+      },
+    },
+    bomun: {
+      stay: {
+        question: 'Should you sleep near Bomun Lake?',
+        summary: 'Bomun is Gyeongju’s easiest resort-style stay zone, useful for families, drivers, lake walks, and a softer base between central heritage and Bulguksa.',
+        cards: [
+          { title: 'Stay here for comfort and recovery', body: 'Bomun works when the trip needs hotels, lake air, parking, and lower evening friction.' },
+          { title: 'Use it between Bulguksa and central Gyeongju', body: 'The area can bridge temple visits and old-city sightseeing without feeling too urban.' },
+          { title: 'Skip it for nightlife and walking streets', body: 'If Hwangnidan-gil and tomb-area evenings matter most, central Gyeongju feels livelier.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Bomun?',
+        summary: 'Bomun food is practical and resort-friendly. Use it for convenience, then look central when the meal should feel more like Gyeongju street culture.',
+        cards: [
+          { title: 'Use Bomun for easy group meals', body: 'Families and drivers benefit from the area’s lower-friction restaurant choices.' },
+          { title: 'Move central for stronger local atmosphere', body: 'Hwangnidan-gil and market-side areas usually carry more distinctive food texture.' },
+          { title: 'Use cafes as lake recovery', body: 'A cafe break can be the best use of Bomun between heavier heritage stops.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Bomun?',
+        summary: 'Bomun pairs with lake walks, cafes, resorts, Bulguksa, and central Gyeongju depending on whether the day needs recovery or heritage density.',
+        cards: [
+          { title: 'Two-hour version: lake walk and cafe', body: 'Use this as a calm reset between cultural stops.' },
+          { title: 'Half-day version: Bomun and Bulguksa', body: 'This keeps the east-side plan coherent and avoids too much backtracking.' },
+          { title: 'Evening version: resort recovery', body: 'Bomun is useful when the night should be calmer than central Gyeongju.' },
+        ],
+      },
+      transport: {
+        question: 'How do you use Bomun in the Gyeongju route?',
+        summary: 'Bomun is easiest by car or taxi and works best when grouped with east-side heritage or used as the night base.',
+        cards: [
+          { title: 'Use car logic when staying here', body: 'Parking and road access are part of why Bomun works as a base.' },
+          { title: 'Use taxi links to central Gyeongju', body: 'This keeps evenings flexible without forcing a central hotel.' },
+          { title: 'Avoid constant shuttling', body: 'Pick either central or Bomun as the day’s anchor instead of moving back and forth repeatedly.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before choosing Bomun?',
+        summary: 'Bomun is a comfort zone, not the deepest heritage zone. It improves the trip when recovery and logistics matter.',
+        cards: [
+          { title: 'Use it for slower travelers', body: 'Families, drivers, and resort-minded travelers often get more value here.' },
+          { title: 'Do not expect old-city street energy', body: 'Bomun is calmer and more spread out than central Gyeongju.' },
+          { title: 'Pair comfort with culture', body: 'The area works best when Bulguksa, Seokguram, or central heritage still carry the trip’s meaning.' },
+        ],
+      },
+    },
+  },
+  jeju: {
+    aewol: {
+      stay: {
+        question: 'Should you sleep in Aewol?',
+        summary: 'Aewol is a strong west-Jeju stay choice when cafes, sunsets, coastal drives, and a softer first or last night matter.',
+        cards: [
+          { title: 'Stay here for coastal mood', body: 'Aewol works when the accommodation itself should feel like part of the Jeju experience.' },
+          { title: 'Use Jeju City for airport efficiency', body: 'If the schedule is tight, the city may be easier even when Aewol feels prettier.' },
+          { title: 'Use Seogwipo for south-island touring', body: 'Aewol is not the best base when waterfalls, Jungmun, or eastern routes dominate the next day.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Aewol?',
+        summary: 'Aewol food is strongest as cafes, seafood, bakery stops, and sunset-adjacent meals rather than a rushed restaurant checklist.',
+        cards: [
+          { title: 'Use cafes as the main stop', body: 'Cafe views and slow pacing are often the reason Aewol is on the route.' },
+          { title: 'Plan seafood or casual dinner near sunset', body: 'The west-coast light can turn a simple meal into the day’s anchor.' },
+          { title: 'Do not overdrive for one meal', body: 'Aewol works best when food fits the coast route, not when the route chases a single place.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Aewol?',
+        summary: 'Aewol pairs with coastal roads, cafes, sunset points, beaches, and west-Jeju movement rather than dense sightseeing.',
+        cards: [
+          { title: 'Two-hour version: cafe and coastal walk', body: 'Use this when Aewol is a scenic pause in a bigger Jeju day.' },
+          { title: 'Half-day version: west coast drive', body: 'Aewol gets stronger when connected to nearby beaches and viewpoints.' },
+          { title: 'Arrival-day version: airport to coast', body: 'It is useful as a soft landing after arriving on Jeju.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Aewol into a Jeju route?',
+        summary: 'Aewol is easiest by car and works best when placed on a west-coast sequence rather than forced from the opposite side of the island.',
+        cards: [
+          { title: 'Use car-first planning', body: 'Aewol’s value comes from coastal movement, which is hard to capture with rigid transit.' },
+          { title: 'Pair with airport timing', body: 'It can work well before departure or after arrival if the schedule allows coast time.' },
+          { title: 'Avoid east-west overreach', body: 'Do not combine Aewol with far eastern Jeju unless the day is intentionally long.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Aewol?',
+        summary: 'Aewol is about mood, light, and coastal pacing. It disappoints when treated as a quick landmark list.',
+        cards: [
+          { title: 'Time it for light', body: 'Late afternoon and sunset often make the area feel much stronger.' },
+          { title: 'Pick fewer stops', body: 'Aewol is better with one good cafe and a drive than too many tiny detours.' },
+          { title: 'Watch wind and weather', body: 'Coastal Jeju changes quickly, so keep the plan flexible.' },
+        ],
+      },
+    },
+    seongsan: {
+      stay: {
+        question: 'Should you sleep near Seongsan Ilchulbong?',
+        summary: 'Seongsan is worth sleeping near when sunrise, Udo access, and east-Jeju touring are central to the plan.',
+        cards: [
+          { title: 'Stay here for sunrise logic', body: 'Sleeping nearby makes an early Seongsan Ilchulbong visit realistic instead of punishing.' },
+          { title: 'Use it for Udo access', body: 'The area works well when Udo ferry timing is part of the next day.' },
+          { title: 'Skip it for west or south-heavy plans', body: 'If the route points to Aewol, Jungmun, or Seogwipo, Seongsan can be too far east.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Seongsan?',
+        summary: 'Food around Seongsan should support sunrise, Udo, and coastal touring. Keep meals practical unless the east-side day is slow.',
+        cards: [
+          { title: 'Plan breakfast after sunrise', body: 'An early climb or viewpoint works better when breakfast is nearby and simple.' },
+          { title: 'Use seafood when staying east', body: 'A slower Seongsan night can make seafood or coastal meals feel natural.' },
+          { title: 'Carry snacks for Udo or long drives', body: 'East-Jeju pacing often includes gaps between stops.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Seongsan Ilchulbong?',
+        summary: 'Seongsan pairs naturally with Udo, east-coast drives, canola fields in season, and nearby volcanic-coast scenery.',
+        cards: [
+          { title: 'Two-hour version: Seongsan only', body: 'Use this when the sunrise peak is the clear focus and the day moves onward.' },
+          { title: 'Half-day version: Seongsan and Udo', body: 'This is the strongest east-Jeju pairing when ferry timing is realistic.' },
+          { title: 'Seasonal version: canola and coastal views', body: 'Spring and clear-weather days make the surrounding landscape more valuable.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Seongsan into Jeju movement?',
+        summary: 'Seongsan needs deliberate east-side planning. Car travel is the cleanest option for most route versions.',
+        cards: [
+          { title: 'Stay nearby for sunrise', body: 'This avoids a long pre-dawn drive and makes the visit feel intentional.' },
+          { title: 'Group east-side stops', body: 'Pair Seongsan with Udo or nearby coast rather than crossing the island repeatedly.' },
+          { title: 'Check ferry timing if Udo is included', body: 'Udo changes the day from a quick stop into a larger route commitment.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Seongsan Ilchulbong?',
+        summary: 'Seongsan is iconic but timing-sensitive. It is best when sunrise, weather, and east-side routing are planned together.',
+        cards: [
+          { title: 'Weather matters a lot', body: 'Clouds, wind, and rain can change the value of a sunrise plan quickly.' },
+          { title: 'Do not force sunrise after a late night', body: 'The visit becomes better when the previous night supports the early start.' },
+          { title: 'Decide on Udo early', body: 'Udo affects meals, transport, and time budget for the whole day.' },
+        ],
+      },
+    },
+    seogwipo: {
+      stay: {
+        question: 'Should you sleep in Seogwipo?',
+        summary: 'Seogwipo is one of Jeju’s strongest bases for south-island nature, waterfalls, markets, coastal drives, and slower multi-night stays.',
+        cards: [
+          { title: 'Stay here for south-Jeju touring', body: 'Seogwipo works when waterfalls, coast, Jungmun, and Hallasan-side movement matter.' },
+          { title: 'Use it for a slower Jeju rhythm', body: 'The city gives enough food and services without feeling as airport-driven as Jeju City.' },
+          { title: 'Skip it for east-only or airport-tight plans', body: 'If the schedule is short or focused on Seongsan and Udo, Seogwipo may add distance.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Seogwipo?',
+        summary: 'Seogwipo is useful for markets, seafood, casual local meals, cafes, and post-nature recovery.',
+        cards: [
+          { title: 'Use markets for a local evening', body: 'Market food gives the city a practical and lively night layer.' },
+          { title: 'Use seafood after coastal touring', body: 'South-coast drives and waterfall days pair naturally with seafood or casual local meals.' },
+          { title: 'Keep cafes for recovery', body: 'Seogwipo works well when nature stops are broken by simple cafe pauses.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Seogwipo?',
+        summary: 'Seogwipo pairs with waterfalls, Olle trails, Jungmun, coastal viewpoints, markets, and south-island drives.',
+        cards: [
+          { title: 'Two-hour version: waterfall and market', body: 'Use this when Seogwipo is a compact city stop inside a larger island route.' },
+          { title: 'Half-day version: coast, waterfall, and cafe', body: 'This lets south Jeju feel scenic without becoming exhausting.' },
+          { title: 'Multi-day version: Seogwipo as base', body: 'The city can support several south-island chapters if the trip is slower.' },
+        ],
+      },
+      transport: {
+        question: 'How do you use Seogwipo as a Jeju base?',
+        summary: 'Seogwipo is best with car-first planning and grouped south-side stops. It can be awkward if the day constantly returns to the north.',
+        cards: [
+          { title: 'Group south-side attractions', body: 'Waterfalls, coast, Jungmun, and markets work better together than mixed with far-east or far-west stops.' },
+          { title: 'Plan airport transfers carefully', body: 'Seogwipo is not close to the airport, so arrival and departure days need a lighter schedule.' },
+          { title: 'Use taxis locally when tired', body: 'Short local hops can save energy after nature-heavy days.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before staying in Seogwipo?',
+        summary: 'Seogwipo is a strong base when Jeju should feel slower, coastal, and nature-led. It needs time to pay off.',
+        cards: [
+          { title: 'Give it at least a night', body: 'Seogwipo is less convincing as a rushed day-trip label and stronger as a base.' },
+          { title: 'Balance nature with recovery', body: 'Waterfalls, trails, and drives can stack fatigue. Build in food and cafe pauses.' },
+          { title: 'Watch island distance', body: 'Jeju looks compact until the route crosses the island too many times.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -555,6 +937,14 @@ export function getHotspotCategoryPage(category: string): HotspotCategoryPage | 
 
 function normalizeHotspotSlug(hotspotSlug: string) {
   if (hotspotSlug === 'gyeongbok') return 'gyeongbokgung';
+  if (['haeundae-beach', 'haeundae-beach-busan'].includes(hotspotSlug)) return 'haeundae';
+  if (['gwangalli-beach', 'gwanganri', 'gwanganli'].includes(hotspotSlug)) return 'gwangalli';
+  if (['seomyeon-street', 'seomyeon-food-street'].includes(hotspotSlug)) return 'seomyeon';
+  if (['bulguksa-temple'].includes(hotspotSlug)) return 'bulguksa';
+  if (['bomun-lake', 'bomun-lake-resort', 'bomun-resort'].includes(hotspotSlug)) return 'bomun';
+  if (['aewol-coast', 'aewol-cafe-street'].includes(hotspotSlug)) return 'aewol';
+  if (['seongsan-ilchulbong', 'seongsan-sunrise-peak', 'seongsan-sunrise'].includes(hotspotSlug)) return 'seongsan';
+  if (['seogwipo-city', 'seogwipo-market'].includes(hotspotSlug)) return 'seogwipo';
   return hotspotSlug;
 }
 

@@ -19,10 +19,11 @@ for (const key of keys) {
 }
 
 const requiredSeoulHotspots = ['gyeongbokgung', 'seongsu', 'myeongdong', 'hongdae', 'itaewon', 'gangnam'];
+const requiredRegionalHotspots = ['haeundae', 'gwangalli', 'seomyeon', 'bulguksa', 'bomun', 'aewol', 'seongsan', 'seogwipo'];
 
-for (const hotspot of requiredSeoulHotspots) {
+for (const hotspot of [...requiredSeoulHotspots, ...requiredRegionalHotspots]) {
   const hotspotBlock = source.match(new RegExp(`${hotspot}: \\{([\\s\\S]*?)\\n    \\},`));
-  assert.ok(hotspotBlock, `Seoul ${hotspot} override must exist`);
+  assert.ok(hotspotBlock, `${hotspot} override must exist`);
 
   for (const key of keys) {
     const overrideBlock = hotspotBlock[1].match(new RegExp(`${key}: \\{([\\s\\S]*?)\\n      \\},`));
@@ -33,6 +34,10 @@ for (const hotspot of requiredSeoulHotspots) {
       `${hotspot} ${key} override must have exactly three cards`
     );
   }
+}
+
+for (const alias of ['haeundae-beach', 'gwangalli-beach', 'bulguksa-temple', 'bomun-lake', 'seongsan-ilchulbong']) {
+  assert.match(source, new RegExp(`['"]${alias}['"]`), `missing alias normalization for ${alias}`);
 }
 
 assert.match(overview, /HOTSPOT_CATEGORY_PAGES/, 'overview must render category navigation');
