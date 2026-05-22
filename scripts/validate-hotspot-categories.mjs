@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const source = await readFile(new URL('../data/hotspotCategoryPages.ts', import.meta.url), 'utf8');
+const supportCityData = await readFile(new URL('../data/supportCityData.ts', import.meta.url), 'utf8');
+const citySupportProfiles = await readFile(new URL('../data/citySupportProfiles.ts', import.meta.url), 'utf8');
 const overview = await readFile(
   new URL('../components/hotspot-detail/HotspotGuidePage.tsx', import.meta.url),
   'utf8'
@@ -126,6 +128,16 @@ for (const alias of [
   'taebaek-coal-museum',
 ]) {
   assert.match(source, new RegExp(`['"]${alias}['"]`), `missing alias normalization for ${alias}`);
+}
+
+const supportCitySlugs = [...new Set([...supportCityData.matchAll(/slug: '([^']+)'/g)].map((match) => match[1]))];
+const citySupportProfileSlugs = [
+  ...new Set([...citySupportProfiles.matchAll(/slug: '([^']+)'/g)].map((match) => match[1])),
+];
+const overrideCitySlugs = [...new Set([...source.matchAll(/^  ([a-z][a-z0-9-]*): \{/gm)].map((match) => match[1]))];
+
+for (const citySlug of [...supportCitySlugs, ...citySupportProfileSlugs]) {
+  assert.ok(overrideCitySlugs.includes(citySlug), `${citySlug} needs hotspot category override coverage`);
 }
 
 assert.match(overview, /HOTSPOT_CATEGORY_PAGES/, 'overview must render category navigation');
