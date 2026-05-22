@@ -29,6 +29,7 @@ const requiredWestSeaHotspots = ['wolmido', 'hwaseong', 'haemi', 'daecheon', 'mo
 const requiredSouthJeollaHotspots = ['cheongsando', 'powcamp', 'may18', 'gwanghallu', 'cheese'];
 const requiredSupportHotspots = ['walnut', 'river', 'jangho', 'coast', 'crab'];
 const requiredGangwonHotspots = ['nami', 'dakgalbi', 'olympic', 'surf', 'mukho'];
+const requiredMountainBorderHotspots = ['pass', 'punchbowl', 'naerincheon', 'dmz', 'arirang'];
 
 for (const hotspot of [
   ...requiredSeoulHotspots,
@@ -42,6 +43,7 @@ for (const hotspot of [
   ...requiredSouthJeollaHotspots,
   ...requiredSupportHotspots,
   ...requiredGangwonHotspots,
+  ...requiredMountainBorderHotspots,
 ]) {
   const hotspotBlock = source.match(new RegExp(`${hotspot}: \\{([\\s\\S]*?)\\n    \\},`));
   assert.ok(hotspotBlock, `${hotspot} override must exist`);
@@ -110,6 +112,11 @@ for (const alias of [
   'pyeongchang-olympic',
   'surfyy-beach',
   'mukho-lighthouse',
+  'daegwallyeong-pass',
+  'yanggu-punch-bowl',
+  'naerincheon-rafting',
+  'goseong-dmz-museum',
+  'jeongseon-arirang-market',
 ]) {
   assert.match(source, new RegExp(`['"]${alias}['"]`), `missing alias normalization for ${alias}`);
 }

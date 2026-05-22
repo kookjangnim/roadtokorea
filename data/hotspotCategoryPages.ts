@@ -3226,6 +3226,251 @@ export const HOTSPOT_CATEGORY_OVERRIDES: HotspotCategoryOverrideRegistry = {
       },
     },
   },
+  daegwallyeong: {
+    pass: {
+      stay: {
+        question: 'Should you sleep around Daegwallyeong before Gangneung?',
+        summary: 'Daegwallyeong is worth a stay when Route 2 should feel like a mountain crossing, with resort logistics, ranch scenery, winter air, and a slower descent toward Gangneung.',
+        cards: [
+          { title: 'Stay for the pass feeling', body: 'The route feels more earned when the mountains become a night, not just a road.' },
+          { title: 'Use the resort belt for easy logistics', body: 'Alpensia and Yongpyong make winter or family stays simpler to plan.' },
+          { title: 'Skip the night if the coast should land fast', body: 'Fast Route 2 versions can use Daegwallyeong as a scenic threshold only.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Daegwallyeong?',
+        summary: 'Food around Daegwallyeong should be mountain-warm and practical: resort meals, hot bowls, simple breakfasts, and low-friction stops before the coast.',
+        cards: [
+          { title: 'Choose warmth over variety', body: 'The highland chapter is about comfort, weather, and timing.' },
+          { title: 'Match meals to ski or road plans', body: 'Food should support the day’s mountain purpose.' },
+          { title: 'Keep breakfast easy before descent', body: 'Gangneung lands better when the morning is not cluttered.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Daegwallyeong?',
+        summary: 'Daegwallyeong pairs with Alpensia, Yongpyong, ranch scenery, wind and snow, highland viewpoints, and the descent into Gangneung.',
+        cards: [
+          { title: 'Resort version: sleep in the highlands', body: 'Use this when winter sports or low-friction lodging matters.' },
+          { title: 'Scenery version: pass, ranch, and wind', body: 'This makes the mountain-to-sea transition visible.' },
+          { title: 'Route version: threshold before the East Sea', body: 'Daegwallyeong is the emotional beat before Gangneung releases the route.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Daegwallyeong into Route 2?',
+        summary: 'Daegwallyeong should be planned as the last highland threshold before Gangneung, with weather, road comfort, and descent timing treated seriously.',
+        cards: [
+          { title: 'Check weather before committing', body: 'Snow, fog, and wind can change the highland experience quickly.' },
+          { title: 'Choose resort or pass-side purpose', body: 'Those two versions create different days.' },
+          { title: 'Make Gangneung the release', body: 'The descent should feel like the route resolving into the sea.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Daegwallyeong?',
+        summary: 'Daegwallyeong works best when it is treated as geography, not filler. It gives Route 2 a felt mountain crossing.',
+        cards: [
+          { title: 'Let the pass be the story', body: 'This is the threshold between highland and coast.' },
+          { title: 'Plan seasonally', body: 'Winter, ranch scenery, and clear-road months create different travel value.' },
+          { title: 'Do not overload the stop', body: 'One strong highland purpose is enough.' },
+        ],
+      },
+    },
+  },
+  yanggu: {
+    punchbowl: {
+      stay: {
+        question: 'Should you sleep in Yanggu for Route 3?',
+        summary: 'Yanggu is worth a quiet stay when Route 3 should carry Punch Bowl terrain, Korean War memory, DMZ-adjacent ecology, and a serious northern turn before Inje.',
+        cards: [
+          { title: 'Stay when quiet is the point', body: 'Yanggu changes the route’s emotional weight when it has time to settle.' },
+          { title: 'Use town lodging for practical pacing', body: 'Food, rest, and the Inje handoff are easiest from a simple base.' },
+          { title: 'Keep it a day chapter on faster trips', body: 'Yanggu does not always need a night, but it does need a clear purpose.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Yanggu?',
+        summary: 'Food in Yanggu should stay modest and local: simple meals, market stops, mountain-town cafes, and enough fuel before Inje.',
+        cards: [
+          { title: 'Keep food humble', body: 'The stop’s center is landscape and memory, not dining performance.' },
+          { title: 'Use meals to slow the chapter', body: 'A quiet local meal helps the route shift tone after Chuncheon.' },
+          { title: 'Plan before the mountain road', body: 'The next leg benefits from food and timing already settled.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Punch Bowl context?',
+        summary: 'Punch Bowl context pairs with Yanggu town, Korean War memory, DMZ-adjacent landscape, ecological quiet, and the Inje handoff.',
+        cards: [
+          { title: 'Short version: town and memory context', body: 'Use this when Yanggu is a meaningful route pause.' },
+          { title: 'Landscape version: Punch Bowl terrain', body: 'This explains why the route feels northern and serious.' },
+          { title: 'Route version: lake city to mountain threshold', body: 'Yanggu turns Chuncheon comfort toward Inje’s pass decision.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Yanggu into Route 3?',
+        summary: 'Yanggu should be planned as the tonal turn between Chuncheon and Inje, with access rules, road timing, and next-leg planning kept clear.',
+        cards: [
+          { title: 'Check access conditions', body: 'Some border-adjacent contexts require careful planning.' },
+          { title: 'Keep the day respectful and simple', body: 'This is not the place for a frantic checklist.' },
+          { title: 'Point the route toward Inje', body: 'Yanggu’s role is to prepare the Seorak threshold.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Yanggu?',
+        summary: 'Yanggu should be written and visited with quiet attention. Its value is memory, terrain, and northern atmosphere.',
+        cards: [
+          { title: 'Use a measured tone', body: 'Korean War memory and DMZ geography need respect.' },
+          { title: 'Let silence count', body: 'Yanggu’s quiet is part of the route experience.' },
+          { title: 'Do not force a heavy overnight', body: 'A clear day chapter can be enough.' },
+        ],
+      },
+    },
+  },
+  inje: {
+    naerincheon: {
+      stay: {
+        question: 'Should you sleep in Inje before crossing toward Sokcho?',
+        summary: 'Inje is worth a stay when Route 3 needs a calm Seorak pass decision, Naerincheon outdoor identity, weather checks, and a deliberate final move toward the East Sea.',
+        cards: [
+          { title: 'Stay for the pass decision', body: 'Inje lets travelers choose the final mountain crossing without late-day pressure.' },
+          { title: 'Use Naerincheon for outdoor energy', body: 'River sports and valley air make the stop present-tense, not only a road node.' },
+          { title: 'Skip the night if Sokcho must land quickly', body: 'Fast versions can use Inje as a pass-planning checkpoint.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Inje?',
+        summary: 'Food around Inje should be restorative: warm meals, rafting-base food, coffee, simple dinner, and breakfast before the chosen pass.',
+        cards: [
+          { title: 'Eat before the pass', body: 'The final mountain leg is better with food settled.' },
+          { title: 'Keep meals practical', body: 'Inje is about road readiness and outdoor recovery.' },
+          { title: 'Use cafes for weather waiting', body: 'A pause can help the pass decision stay calm.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Naerincheon?',
+        summary: 'Naerincheon pairs with rafting, valley travel, town-core weather checks, Jinburyeong, Hangyeryeong, Misiryeong, and Sokcho arrival.',
+        cards: [
+          { title: 'Outdoor version: Naerincheon and valley air', body: 'Use this when Inje should feel active and seasonal.' },
+          { title: 'Pass version: choose the Seorak approach', body: 'This is the structural reason Inje belongs.' },
+          { title: 'Route version: mountain tension before sea release', body: 'Inje gives Sokcho a more earned arrival.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Inje into Route 3?',
+        summary: 'Inje should be used as the decision tool for the final Seorak approach, with weather, pass choice, and driver comfort handled before departure.',
+        cards: [
+          { title: 'Separate the pass choices', body: 'Jinburyeong, Hangyeryeong, and Misiryeong create different routes.' },
+          { title: 'Check road and weather conditions', body: 'The most scenic option is not always the best option.' },
+          { title: 'Leave early for the coast', body: 'A morning crossing makes Sokcho feel like arrival, not escape.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before using Inje?',
+        summary: 'Inje is more than a pass prelude. It is where Route 3 decides how it wants to see Seoraksan before reaching the sea.',
+        cards: [
+          { title: 'Choose one pass logic', body: 'Trying to keep every option alive weakens the day.' },
+          { title: 'Respect weather', body: 'Mountain roads reward patience.' },
+          { title: 'Let Naerincheon add life', body: 'The river gives Inje a current outdoor identity.' },
+        ],
+      },
+    },
+  },
+  goseong: {
+    dmz: {
+      stay: {
+        question: 'Should you sleep in Goseong before Sokcho?',
+        summary: 'Goseong is worth a stay when the Jinburyeong route should keep its northern coast identity through DMZ memory, Hwajinpo, Songjiho, seafood, and quiet beaches.',
+        cards: [
+          { title: 'Stay for the northern coast mood', body: 'Goseong gives the East Sea arrival a quieter borderland texture before Sokcho.' },
+          { title: 'Use Hwajinpo or Songjiho by mood', body: 'Hwajinpo carries memory and lagoon ecology; Songjiho carries softer beach leisure.' },
+          { title: 'Skip the night on direct Sokcho routes', body: 'Goseong belongs most clearly to the Jinburyeong variant.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Goseong?',
+        summary: 'Goseong food should stay coastal and practical: seafood, beach-road meals, coffee after memory sites, and an easy handoff toward Sokcho.',
+        cards: [
+          { title: 'Use seafood without making it the whole story', body: 'Food supports the northern coast, but memory and landscape still matter.' },
+          { title: 'Keep meals near the chosen coast base', body: 'The stop works best when it stays calm.' },
+          { title: 'Plan a simple dinner before Sokcho', body: 'Goseong should feel like a quiet prelude, not a complicated detour.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Goseong DMZ context?',
+        summary: 'Goseong DMZ context pairs with Hwajinpo lagoon, Songjiho Beach, quiet fishing villages, northern East Sea drives, and the short Sokcho handoff.',
+        cards: [
+          { title: 'Memory version: DMZ Museum and Hwajinpo', body: 'Use this when the route needs modern-history weight.' },
+          { title: 'Leisure version: Songjiho and beach road', body: 'This shows Goseong as a living coast, not only a memory site.' },
+          { title: 'Route version: northern prelude before Sokcho', body: 'Goseong keeps Sokcho from carrying every coastal idea alone.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Goseong into Route 3?',
+        summary: 'Goseong should be used when Route 3 chooses the northern Jinburyeong handoff, then kept short and coastal before Sokcho.',
+        cards: [
+          { title: 'Tie it to Jinburyeong', body: 'That keeps the route logic clear.' },
+          { title: 'Check access and opening details', body: 'DMZ-adjacent sites can have operating constraints.' },
+          { title: 'Keep the Sokcho handoff easy', body: 'The final city should arrive without fatigue.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Goseong?',
+        summary: 'Goseong needs balance: DMZ memory, ecology, beaches, seafood, and quiet coast should sit together without sensational framing.',
+        cards: [
+          { title: 'Handle the DMZ layer carefully', body: 'The page should be respectful, not spectacle-driven.' },
+          { title: 'Use Songjiho for softness', body: 'The beach layer lets the stop breathe after heavier context.' },
+          { title: 'Let Sokcho remain the release', body: 'Goseong prepares the arrival, not competes with it.' },
+        ],
+      },
+    },
+  },
+  jeongseon: {
+    arirang: {
+      stay: {
+        question: 'Should you sleep near Jeongseon Arirang Market?',
+        summary: 'Jeongseon is worth a stay when the inland branch needs Arirang market culture, valley railbike movement, Kangwon Land context, and a deeper mountain-town chapter before Taebaek.',
+        cards: [
+          { title: 'Stay for market timing', body: 'The town is strongest when the market rhythm can shape the day.' },
+          { title: 'Use Sabuk or High1 for modern transition context', body: 'That side shows the closed-mine and resort economy layer.' },
+          { title: 'Keep it a valley stop on faster branches', body: 'Jeongseon can still work as railbike, market, and meal without a full night.' },
+        ],
+      },
+      food: {
+        question: 'How should you eat around Jeongseon?',
+        summary: 'Jeongseon food should follow market timing, local mountain produce, simple bowls, snacks, and a lived-in town rhythm.',
+        cards: [
+          { title: 'Use the market as the anchor', body: 'Food is strongest when it feels local and timed.' },
+          { title: 'Keep meals connected to the valley day', body: 'Railbike and road movement should not be broken by food detours.' },
+          { title: 'Let simple food carry place', body: 'This stop is about mountain-town texture, not polish.' },
+        ],
+      },
+      attractions: {
+        question: 'What should you combine with Jeongseon Arirang Market?',
+        summary: 'Jeongseon Arirang Market pairs with five-day market rhythm, railbike valleys, Hwaam Cave, Kangwon Land/High1 context, and the Taebaek handoff.',
+        cards: [
+          { title: 'Market version: Arirang and local food', body: 'Use this when cultural texture is the point.' },
+          { title: 'Valley version: railbike and mountain road', body: 'This makes Jeongseon active and scenic.' },
+          { title: 'Route version: living mountain culture before coal highlands', body: 'Jeongseon prepares Taebaek without flattening the branch.' },
+        ],
+      },
+      transport: {
+        question: 'How do you fit Jeongseon into Branch 2A?',
+        summary: 'Jeongseon should be planned around market dates, valley movement, and whether Sabuk/High1 belongs in the route story.',
+        cards: [
+          { title: 'Check market timing', body: 'The stop is sharper when the market is active.' },
+          { title: 'Choose town, valley, or High1 base', body: 'Each version says something different about Jeongseon.' },
+          { title: 'Point the branch toward Taebaek', body: 'The next chapter should deepen into coal highlands.' },
+        ],
+      },
+      tips: {
+        question: 'What should you know before visiting Jeongseon?',
+        summary: 'Jeongseon should hold market culture, railbike scenery, and Kangwon Land context together without reducing the city to one hook.',
+        cards: [
+          { title: 'Use Kangwon Land with context', body: 'It is part of a closed-mine-area transition story, not just casino shorthand.' },
+          { title: 'Let the market lead when possible', body: 'That is the clearest cultural entry point.' },
+          { title: 'Keep the branch moving', body: 'Jeongseon works best when it hands off naturally to Taebaek.' },
+        ],
+      },
+    },
+  },
 };
 
 export function getHotspotCategoryPage(category: string): HotspotCategoryPage | null {
@@ -3289,6 +3534,11 @@ function normalizeHotspotSlug(hotspotSlug: string) {
   if (['pyeongchang-olympic', 'alpensia', 'yongpyong', 'odaesan'].includes(hotspotSlug)) return 'olympic';
   if (['yangyang-surf', 'surfyy-beach', 'hajodae-beach', 'naksansa'].includes(hotspotSlug)) return 'surf';
   if (['mukho', 'mukho-lighthouse', 'donghae-mukho', 'chuam-chotdaebawi'].includes(hotspotSlug)) return 'mukho';
+  if (['daegwallyeong-pass', 'daegwallyeong-highlands', 'yongpyong-resort', 'alpensia-resort'].includes(hotspotSlug)) return 'pass';
+  if (['punchbowl', 'yanggu-punch-bowl', 'punch-bowl', 'punchbowl-korea'].includes(hotspotSlug)) return 'punchbowl';
+  if (['naerincheon', 'naerincheon-rafting', 'inje-naerincheon', 'misiryeong-pass'].includes(hotspotSlug)) return 'naerincheon';
+  if (['goseong-dmz', 'dmz-museum', 'goseong-dmz-museum', 'songjiho-beach'].includes(hotspotSlug)) return 'dmz';
+  if (['jeongseon-arirang-market', 'arirang-market', 'jeongseon-railbike', 'kangwon-land'].includes(hotspotSlug)) return 'arirang';
   return hotspotSlug;
 }
 
