@@ -405,7 +405,7 @@ export default async function HotspotPage({
                   </p>
                   <p className="mt-2 text-sm leading-7 text-stone-200">
                     {routeOption
-                      ? `${routeOption.transport} • ${routeOption.travelTime}`
+                      ? `${routeOption.transport} - ${routeOption.travelTime}`
                       : 'Core route guidance is being expanded.'}
                   </p>
                 </div>
@@ -480,6 +480,57 @@ export default async function HotspotPage({
               <h2 className="mt-4 max-w-3xl font-serif text-3xl leading-tight text-stone-950 md:text-5xl">
                 What this place feels like, and why it belongs on the route.
               </h2>
+
+              <div className="mt-6 grid gap-4 border-y border-stone-200 py-5 md:grid-cols-4">
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                    Reading Time
+                  </p>
+                  <p className="mt-2 font-serif text-2xl text-stone-950">
+                    {readingMinutes} min post
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                    City
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-stone-700">{cityLabel}</p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                    Published
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-stone-700">
+                    {publishedDate ?? 'Editorial guide'}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                    Post Map
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <a
+                      href="#category-guides"
+                      className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
+                    >
+                      Guides
+                    </a>
+                    <a
+                      href="#why-go"
+                      className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
+                    >
+                      Why go
+                    </a>
+                    <a
+                      href="#skip-if"
+                      className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
+                    >
+                      Skip
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               {routeOption && (
                 <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-[linear-gradient(135deg,rgba(191,153,107,0.12),rgba(255,255,255,0.7))] p-6">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
@@ -494,7 +545,7 @@ export default async function HotspotPage({
                         From Seoul
                       </p>
                       <p className="mt-2 text-sm leading-7 text-stone-700">
-                        {routeOption.transport} • {routeOption.travelTime}
+                        {routeOption.transport} - {routeOption.travelTime}
                       </p>
                     </div>
                     <div>
@@ -512,6 +563,37 @@ export default async function HotspotPage({
                   </div>
                 </div>
               )}
+
+              {fixedHeroUrl && (
+                <div className="mt-8 overflow-hidden border border-stone-200 bg-white">
+                  <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
+                    <div className="relative min-h-72 bg-stone-100">
+                      <Image
+                        src={fixedHeroUrl}
+                        alt={title}
+                        fill
+                        unoptimized
+                        sizes="(max-width: 1024px) 100vw, 45vw"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6 md:p-8">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
+                        Photo Note
+                      </p>
+                      <h3 className="mt-4 font-serif text-3xl leading-tight text-stone-950 md:text-4xl">
+                        Read the image before you read the checklist.
+                      </h3>
+                      <p className="mt-5 text-sm leading-7 text-stone-600 md:text-base md:leading-8">
+                        This page starts with the mood of the place, then turns it into practical
+                        route decisions: when to go, how long to stay, who should keep it, and when
+                        it is better to skip.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               <div className="mt-8 grid gap-4 md:grid-cols-3">
                 {guideBullets.map((bullet) => (
                   <div

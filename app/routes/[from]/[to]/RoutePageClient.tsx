@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { RouteData, TransportMode, TransportRouteVariant } from '@/data/routeStopovers';
@@ -9,6 +10,7 @@ import StopoverCitiesCard from '@/components/routes/StopoverCitiesCard';
 import RouteJourneyHero from '@/components/routes/RouteJourneyHero';
 import { getRouteSlugForRoute } from '@/data/routeRegistry';
 import { getRouteSeoFaqs } from '@/data/routeSeoFaqs';
+import { getCityImageSlots } from '@/data/cityImageSlots';
 
 interface RoutePageClientProps {
   routeData: RouteData;
@@ -17,6 +19,15 @@ interface RoutePageClientProps {
 }
 
 const TRANSPORT_ORDER: TransportMode[] = ['KTX', 'car', 'bus', 'bicycle'];
+
+function getStopoverImage(citySlug: string) {
+  const slots = getCityImageSlots(citySlug);
+
+  return slots?.slots.route?.asset
+    ?? slots?.slots.hero?.asset
+    ?? slots?.slots.street?.asset
+    ?? '/images/placeholder.png';
+}
 
 export default function RoutePageClient({
   routeData,
@@ -289,6 +300,57 @@ export default function RoutePageClient({
           </div>
         </section>
 
+        <section className="mt-8 overflow-hidden rounded-[2rem] border border-stone-200 bg-white shadow-sm">
+          <div className="border-b border-stone-200 px-6 py-6 md:px-8">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-stone-500">
+              City thumbnails
+            </p>
+            <h2 className="mt-2 font-serif text-4xl text-stone-950">
+              The visual stops inside this route.
+            </h2>
+            <p className="mt-4 max-w-3xl text-sm leading-7 text-stone-600 md:text-base">
+              Open the city chapters that make this route feel concrete: lake resets, harbor
+              handoffs, mountain gates, food cities, and coastal pauses.
+            </p>
+          </div>
+
+          <div className="grid gap-4 p-5 md:grid-cols-2 md:p-6 xl:grid-cols-3 2xl:grid-cols-4">
+            {currentVariant.stopovers.map((stopover, index) => (
+              <Link
+                key={`${currentVariant.id}-${stopover.citySlug}-thumbnail`}
+                href={`/${routeSlug}/${stopover.citySlug}`}
+                className="group border border-stone-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_38px_rgba(34,30,25,0.12)]"
+              >
+                <article className="h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
+                    <Image
+                      src={getStopoverImage(stopover.citySlug)}
+                      alt={`${stopover.city} route stop`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute left-4 top-4 bg-white/92 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-stone-900 shadow-sm">
+                      Stop {index + 1}
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-500">
+                      {stopover.routeRole}
+                    </p>
+                    <h3 className="mt-2 font-serif text-3xl leading-tight text-stone-950">
+                      {stopover.city}
+                    </h3>
+                    <p className="mt-3 line-clamp-3 text-sm leading-7 text-stone-600">
+                      {stopover.whyItEarnsTime}
+                    </p>
+                  </div>
+                </article>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section className="mt-8 rounded-[2rem] border border-stone-200 bg-white p-6 shadow-sm md:p-8">
           <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
@@ -361,6 +423,56 @@ export default function RoutePageClient({
                 isLast={index === currentVariant.stopovers.length - 1}
                 routeSlug={routeSlug}
               />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-[2rem] border border-stone-200 bg-[#171411] p-6 text-white shadow-sm md:p-8">
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-stone-400">
+                Continue reading
+              </p>
+              <h2 className="mt-2 font-serif text-4xl leading-tight">
+                Turn this route into city chapters.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-sm leading-7 text-stone-300">
+              The route gives the frame. These city guides give each stop enough context, texture,
+              and local detail to read as a complete travel article.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {currentVariant.stopovers.slice(0, 4).map((stopover) => (
+              <Link
+                key={`${currentVariant.id}-${stopover.citySlug}-reading`}
+                href={`/${routeSlug}/${stopover.citySlug}`}
+                className="group border border-white/10 bg-white/[0.06] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:bg-white/[0.1]"
+              >
+                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-400">
+                  {stopover.routeRole}
+                </p>
+                <h3 className="mt-3 font-serif text-3xl leading-tight text-white">
+                  {stopover.city}
+                </h3>
+                <p className="mt-4 line-clamp-4 text-sm leading-7 text-stone-300">
+                  {stopover.pitch}
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {stopover.highlights.slice(0, 2).map((highlight) => (
+                    <span
+                      key={highlight}
+                      className="border border-white/10 bg-white/[0.06] px-3 py-1.5 text-[10px] font-semibold text-stone-300"
+                    >
+                      {highlight}
+                    </span>
+                  ))}
+                </div>
+                <span className="mt-6 inline-block text-xs font-semibold uppercase tracking-[0.22em] text-white transition-transform group-hover:translate-x-1">
+                  Open city guide
+                </span>
+              </Link>
             ))}
           </div>
         </section>

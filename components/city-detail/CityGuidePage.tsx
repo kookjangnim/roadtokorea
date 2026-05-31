@@ -251,6 +251,49 @@ export default async function CityPage({
 
     return items;
   }, []);
+  const bodyWordCount = rawContent
+    ? stripHtml(rawContent).split(/\s+/).filter(Boolean).length
+    : description.split(/\s+/).filter(Boolean).length + 650;
+  const estimatedReadMinutes = Math.max(5, Math.ceil(bodyWordCount / 180));
+  const cityVisualStrip: Array<{
+    eyebrow: string;
+    title: string;
+    body: string;
+    image: string;
+  }> = [];
+
+  if (heroImageUrl) {
+    cityVisualStrip.push({
+      eyebrow: 'Opening image',
+      title: `${cityName} at a glance`,
+      body:
+        description ||
+        `A visual starting point for reading why ${cityName} belongs in the route.`,
+      image: heroImageUrl,
+    });
+  }
+
+  if (supportProfile) {
+    cityVisualStrip.push(
+      ...supportProfile.visuals.slice(0, 2).map((visual) => ({
+        eyebrow: visual.eyebrow,
+        title: visual.title,
+        body: visual.body,
+        image: visual.image,
+      }))
+    );
+  }
+
+  if (cityVisualStrip.length < 3) {
+    cityVisualStrip.push(
+      ...localGallery.slice(0, 3 - cityVisualStrip.length).map((spot) => ({
+        eyebrow: 'Local district',
+        title: spot.name,
+        body: spot.description,
+        image: spot.image,
+      }))
+    );
+  }
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -467,6 +510,49 @@ export default async function CityPage({
               <h2 className="mt-4 max-w-3xl font-serif text-3xl leading-tight text-stone-950 md:text-5xl">
                 The city guide that helps you decide whether this stop fits the trip.
               </h2>
+              <div className="mt-6 grid gap-4 border-y border-stone-200 py-5 md:grid-cols-3">
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                    Reading Time
+                  </p>
+                  <p className="mt-2 font-serif text-2xl text-stone-950">
+                    {estimatedReadMinutes} min guide
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                    Best Use
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-stone-700">
+                    {routeOption?.bestFor ?? 'Use this as a slower city chapter, not a checklist.'}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                    Article Map
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <a
+                      href="#transport"
+                      className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
+                    >
+                      From Seoul
+                    </a>
+                    <a
+                      href="#attractions"
+                      className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
+                    >
+                      Places
+                    </a>
+                    <a
+                      href="#food"
+                      className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
+                    >
+                      Food
+                    </a>
+                  </div>
+                </div>
+              </div>
 
               {routeOption && (
                 <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-[linear-gradient(135deg,rgba(191,153,107,0.12),rgba(255,255,255,0.7))] p-6">
@@ -497,6 +583,43 @@ export default async function CityPage({
                       </p>
                       <p className="mt-2 text-sm leading-7 text-stone-700">{routeOption.nextMove}</p>
                     </div>
+                  </div>
+                </div>
+              )}
+
+              {cityVisualStrip.length > 0 && (
+                <div className="mt-8">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
+                    Visual Preview
+                  </p>
+                  <div className="mt-5 grid gap-4 md:grid-cols-3">
+                    {cityVisualStrip.slice(0, 3).map((visual) => (
+                      <article
+                        key={`${visual.eyebrow}-${visual.title}`}
+                        className="overflow-hidden border border-stone-200 bg-white"
+                      >
+                        <div className="relative aspect-[4/3] bg-stone-100">
+                          <Image
+                            src={visual.image}
+                            alt={visual.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="p-5">
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-500">
+                            {visual.eyebrow}
+                          </p>
+                          <h3 className="mt-2 font-serif text-2xl leading-tight text-stone-950">
+                            {visual.title}
+                          </h3>
+                          <p className="mt-3 line-clamp-3 text-sm leading-7 text-stone-600">
+                            {visual.body}
+                          </p>
+                        </div>
+                      </article>
+                    ))}
                   </div>
                 </div>
               )}
