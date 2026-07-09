@@ -1,0 +1,68 @@
+{
+  "citySlug": "seongsu",
+  "generatedAt": "2026-05-18T06:51:35.687Z",
+  "source": "local-picture-folder",
+  "rightsNote": "Imported from local picture folder. Confirm contributor permission before promotional or monetized use.",
+  "images": [
+    {
+      "id": "seongsu-local-photo-01",
+      "citySlug": "seongsu",
+      "cityLabel": "Seongsu",
+      "sourcePath": "seoul/seongsudong/KakaoTalk_20260513_193027586_01.jpg",
+      "targetFileName": "seongsu-local-photo-01-kakaotalk-20260513-193027586-01.jpg",
+      "localPath": "/images/editorial/seongsu-real/seongsu-local-photo-01-kakaotalk-20260513-193027586-01.jpg",
+      "alt": "Seongsu local travel photo 1",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 1600,
+      "height": 901,
+      "byteSize": 597544
+    },
+    {
+      "id": "seongsu-local-photo-02",
+      "citySlug": "seongsu",
+      "cityLabel": "Seongsu",
+      "sourcePath": "seoul/seongsudong/KakaoTalk_20260513_193027586_02.jpg",
+      "targetFileName": "seongsu-local-photo-02-kakaotalk-20260513-193027586-02.jpg",
+      "localPath": "/images/editorial/seongsu-real/seongsu-local-photo-02-kakaotalk-20260513-193027586-02.jpg",
+      "alt": "Seongsu local travel photo 2",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 901,
+      "height": 1600,
+      "byteSize": 432795
+    },
+    {
+      "id": "seongsu-local-photo-03",
+      "citySlug": "seongsu",
+      "cityLabel": "Seongsu",
+      "sourcePath": "seoul/seongsudong/KakaoTalk_20260513_193027586_03.jpg",
+      "targetFileName": "seongsu-local-photo-03-kakaotalk-20260513-193027586-03.jpg",
+      "localPath": "/images/editorial/seongsu-real/seongsu-local-photo-03-kakaotalk-20260513-193027586-03.jpg",
+      "alt": "Seongsu local travel photo 3",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 901,
+      "height": 1600,
+      "byteSize": 535887
+    },
+    {
+      "id": "seongsu-local-photo-04",
+      "citySlug": "seongsu",
+      "cityLabel": "Seongsu",
+      "sourcePath": "seoul/seongsudong/KakaoTalk_20260513_193027586_04.jpg",
+      "targetFileName": "seongsu-local-photo-04-kakaotalk-20260513-193027586-04.jpg",
+      "localPath": "/images/editorial/seongsu-real/seongsu-local-photo-04-kakaotalk-20260513-193027586-04.jpg",
+      "alt": "Seongsu local travel photo 4",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 1600,
+      "height": 901,
+      "byteSize": 773097
+    }
+  ]
+}

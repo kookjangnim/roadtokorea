@@ -1,0 +1,23 @@
+{
+  "citySlug": "seoul",
+  "generatedAt": "2026-05-18T06:51:35.686Z",
+  "source": "local-picture-folder",
+  "rightsNote": "Imported from local picture folder. Confirm contributor permission before promotional or monetized use.",
+  "images": [
+    {
+      "id": "seoul-local-photo-01",
+      "citySlug": "seoul",
+      "cityLabel": "Seoul",
+      "sourcePath": "seoul/KakaoTalk_20260513_191524063.jpg",
+      "targetFileName": "seoul-local-photo-01-kakaotalk-20260513-191524063.jpg",
+      "localPath": "/images/editorial/seoul-real/seoul-local-photo-01-kakaotalk-20260513-191524063.jpg",
+      "alt": "Seoul local travel photo 1",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 4042,
+      "height": 3409,
+      "byteSize": 10018776
+    }
+  ]
+}

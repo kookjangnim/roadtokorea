@@ -1,0 +1,53 @@
+{
+  "citySlug": "taean",
+  "generatedAt": "2026-05-18T06:51:35.688Z",
+  "source": "local-picture-folder",
+  "rightsNote": "Imported from local picture folder. Confirm contributor permission before promotional or monetized use.",
+  "images": [
+    {
+      "id": "taean-local-photo-01",
+      "citySlug": "taean",
+      "cityLabel": "Taean",
+      "sourcePath": "taean/KakaoTalk_20260513_152008999_01.jpg",
+      "targetFileName": "taean-local-photo-01-kakaotalk-20260513-152008999-01.jpg",
+      "localPath": "/images/editorial/taean-real/taean-local-photo-01-kakaotalk-20260513-152008999-01.jpg",
+      "alt": "Taean local travel photo 1",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 1616,
+      "height": 1080,
+      "byteSize": 1603753
+    },
+    {
+      "id": "taean-local-photo-02",
+      "citySlug": "taean",
+      "cityLabel": "Taean",
+      "sourcePath": "taean/KakaoTalk_20260513_152008999_02.jpg",
+      "targetFileName": "taean-local-photo-02-kakaotalk-20260513-152008999-02.jpg",
+      "localPath": "/images/editorial/taean-real/taean-local-photo-02-kakaotalk-20260513-152008999-02.jpg",
+      "alt": "Taean local travel photo 2",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 1200,
+      "height": 802,
+      "byteSize": 1500734
+    },
+    {
+      "id": "taean-local-photo-03",
+      "citySlug": "taean",
+      "cityLabel": "Taean",
+      "sourcePath": "taean/KakaoTalk_20260513_155056708.jpg",
+      "targetFileName": "taean-local-photo-03-kakaotalk-20260513-155056708.jpg",
+      "localPath": "/images/editorial/taean-real/taean-local-photo-03-kakaotalk-20260513-155056708.jpg",
+      "alt": "Taean local travel photo 3",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 1200,
+      "height": 802,
+      "byteSize": 844083
+    }
+  ]
+}

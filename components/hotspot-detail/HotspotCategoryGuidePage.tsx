@@ -14,6 +14,7 @@ import {
   getResolvedHotspotCategoryPage,
   type HotspotCategoryKey,
 } from '@/data/hotspotCategoryPages';
+import { getEditorialImageForPost, getSafeEditorialImage } from '@/data/editorialImageFallbacks';
 
 const siteUrl = getSiteUrl();
 
@@ -61,15 +62,18 @@ function getHeroImage(post: HotspotPost, citySlug: string, hotspotSlug: string):
   const localImage = getHotspotHeroImage(citySlug, hotspotSlug);
   if (localImage) return localImage;
 
+  const localEditorialImage = getEditorialImageForPost(post);
+  if (localEditorialImage) return localEditorialImage;
+
   const featured = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-  if (featured) return featured;
+  if (featured) return getSafeEditorialImage(featured, citySlug);
 
   const html = post.content?.rendered || '';
   const heroMatch = html.match(/class="[^"]*hero[^"]*"[^>]*>[\s\S]*?<img[^>]+src="([^">]+)"/i);
-  if (heroMatch) return heroMatch[1];
+  if (heroMatch) return getSafeEditorialImage(heroMatch[1], citySlug);
 
   const firstMatch = html.match(/<img[^>]+src="([^">]+)"/i);
-  return firstMatch ? firstMatch[1] : null;
+  return getSafeEditorialImage(firstMatch?.[1] || '', citySlug);
 }
 
 function formatCityLabel(citySlug: string): string {

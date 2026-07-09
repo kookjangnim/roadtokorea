@@ -142,8 +142,14 @@ for (const citySlug of [...supportCitySlugs, ...citySupportProfileSlugs]) {
 
 assert.match(overview, /HOTSPOT_CATEGORY_PAGES/, 'overview must render category navigation');
 assert.match(overview, /getResolvedHotspotCategoryPage/, 'overview must use per-hotspot category overrides');
-assert.doesNotMatch(
+assert.match(overview, /id="full-guide"/, 'overview must expose the restored source guide section');
+assert.match(
   overview,
-  /dangerouslySetInnerHTML=\{\{ __html: guidedContent \}\}/,
-  'overview must not render the full WordPress article by default'
+  /dangerouslySetInnerHTML=\{\{ __html: cleanedContent \}\}/,
+  'overview must render the cleaned WordPress source article'
+);
+assert.match(
+  overview,
+  /data-image-slot="clipartkorea-inline-before-source"/,
+  'overview must keep a stable image insertion slot before the restored source article'
 );

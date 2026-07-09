@@ -4,6 +4,7 @@ import type { WPPost } from '@/lib/wp-api';
 import { normalizeWpMediaUrl } from '@/lib/site-config';
 import { getFirstImageFromHtml, getPostDisplayTitle } from '@/lib/content-utils';
 import { getIndexableWpPostRoute } from '@/lib/wp-route-context';
+import { getEditorialImageForPost, getSafeEditorialImage } from '@/data/editorialImageFallbacks';
 
 interface LatestPostsProps {
   posts: WPPost[];
@@ -32,17 +33,20 @@ export default function LatestPosts({ posts }: LatestPostsProps) {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {posts.map((post, index) => {
-            let imageUrl = '/images/placeholder.png';
+            let imageCandidate = '';
             const featuredUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
 
             if (featuredUrl) {
-              imageUrl = normalizeWpMediaUrl(featuredUrl);
+              imageCandidate = normalizeWpMediaUrl(featuredUrl);
             } else {
               const contentImage = getFirstImageFromHtml(post.content?.rendered);
               if (contentImage) {
-                imageUrl = normalizeWpMediaUrl(contentImage);
+                imageCandidate = normalizeWpMediaUrl(contentImage);
               }
             }
+
+            const imageUrl =
+              getEditorialImageForPost(post, index) ?? getSafeEditorialImage(imageCandidate);
 
             let categoryLabel = 'Travel';
 

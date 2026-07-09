@@ -1,0 +1,23 @@
+{
+  "citySlug": "jirisan",
+  "generatedAt": "2026-05-18T06:51:35.685Z",
+  "source": "local-picture-folder",
+  "rightsNote": "Imported from local picture folder. Confirm contributor permission before promotional or monetized use.",
+  "images": [
+    {
+      "id": "jirisan-local-photo-01",
+      "citySlug": "jirisan",
+      "cityLabel": "Jirisan",
+      "sourcePath": "jirisan/KakaoTalk_20260514_180721030.jpg",
+      "targetFileName": "jirisan-local-photo-01-kakaotalk-20260514-180721030.jpg",
+      "localPath": "/images/editorial/jirisan-real/jirisan-local-photo-01-kakaotalk-20260514-180721030.jpg",
+      "alt": "Jirisan local travel photo 1",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 9678,
+      "height": 3788,
+      "byteSize": 11767302
+    }
+  ]
+}

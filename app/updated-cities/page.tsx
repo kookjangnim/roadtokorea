@@ -2,14 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { updatedCities } from '@/data/updatedCities';
 import { getCityImageSlots } from '@/data/cityImageSlots';
+import { getEditorialImageForCity, getSafeEditorialImage } from '@/data/editorialImageFallbacks';
 
 function getCityImage(citySlug: string) {
   const slots = getCityImageSlots(citySlug);
-
-  return slots?.slots.hero?.asset
+  const localImage = getEditorialImageForCity(citySlug);
+  const candidate =
+    slots?.slots.hero?.asset
     ?? slots?.slots.route?.asset
     ?? slots?.slots.street?.asset
-    ?? '/images/placeholder.png';
+    ?? '';
+
+  return localImage ?? getSafeEditorialImage(candidate, citySlug);
 }
 
 function getRouteLabel(href: string) {

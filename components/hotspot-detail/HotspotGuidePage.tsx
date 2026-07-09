@@ -12,6 +12,7 @@ import {
   getHotspotCategoryHref,
   getResolvedHotspotCategoryPage,
 } from '@/data/hotspotCategoryPages';
+import { getEditorialImageForPost, getSafeEditorialImage } from '@/data/editorialImageFallbacks';
 
 const siteUrl = getSiteUrl();
 
@@ -71,18 +72,21 @@ function getHeroImage(post: HotspotPost, citySlug: string, hotspotSlug: string):
   const localImage = getHotspotHeroImage(citySlug, hotspotSlug);
   if (localImage) return localImage;
 
+  const localEditorialImage = getEditorialImageForPost(post);
+  if (localEditorialImage) return localEditorialImage;
+
   // Second try: WordPress featured media
   const featured = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
-  if (featured) return featured;
+  if (featured) return getSafeEditorialImage(featured, citySlug);
 
   // Third try: Content hero image
   const html = post.content?.rendered || '';
   const heroMatch = html.match(/class="[^"]*hero[^"]*"[^>]*>[\s\S]*?<img[^>]+src="([^">]+)"/i);
-  if (heroMatch) return heroMatch[1];
+  if (heroMatch) return getSafeEditorialImage(heroMatch[1], citySlug);
 
   // Fourth try: First image in content
   const firstMatch = html.match(/<img[^>]+src="([^">]+)"/i);
-  return firstMatch ? firstMatch[1] : null;
+  return getSafeEditorialImage(firstMatch?.[1] || '', citySlug);
 }
 
 function formatCityLabel(citySlug: string): string {
@@ -445,6 +449,9 @@ export default async function HotspotPage({
                   <a href="#skip-if" className="rounded-full bg-stone-100 px-4 py-2 transition-colors hover:bg-stone-200">
                     Skip if
                   </a>
+                  <a href="#full-guide" className="rounded-full bg-stone-100 px-4 py-2 transition-colors hover:bg-stone-200">
+                    Full guide
+                  </a>
                 </div>
               </div>
 
@@ -526,6 +533,12 @@ export default async function HotspotPage({
                       className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
                     >
                       Skip
+                    </a>
+                    <a
+                      href="#full-guide"
+                      className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
+                    >
+                      Full
                     </a>
                   </div>
                 </div>
@@ -649,9 +662,9 @@ export default async function HotspotPage({
                 Open only the planning layer you need next.
               </h2>
               <p className="mt-5 max-w-3xl text-base leading-8 text-stone-600">
-                This overview stays short on purpose. Use the category pages for lodging, food,
-                nearby attractions, transport, and practical timing instead of reading everything
-                at once.
+                Use the category pages for lodging, food, nearby attractions, transport, and
+                practical timing. The full editorial guide stays on this page below for travelers
+                who want the deeper context before deciding.
               </p>
 
               <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
@@ -719,18 +732,31 @@ export default async function HotspotPage({
               </div>
             </section>
 
-            <section className="mb-12 border-b border-stone-200 pb-10">
+            <section id="full-guide" className="mb-12 border-b border-stone-200 pb-10">
               <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
-                Source Notes
+                Full Guide
               </p>
               <h2 className="mt-4 max-w-3xl font-serif text-3xl leading-tight text-stone-950 md:text-5xl">
-                The long guide is now split into smaller decisions.
+                The deeper travel notes, restored in full.
               </h2>
               <p className="mt-5 max-w-3xl text-base leading-8 text-stone-600">
                 {hasSourceArticle
-                  ? 'The deeper editorial material still informs this page, but the first screen now points you toward the category that matches your planning question.'
+                  ? 'Start with the decision cards above when you are comparing options, then use the full guide below when you want the original place-by-place detail.'
                   : 'This stop currently uses route context and planning guidance while the editorial source material is expanded.'}
               </p>
+              {hasSourceArticle && (
+                <div className="mt-8">
+                  <div
+                    aria-hidden="true"
+                    className="hidden"
+                    data-image-slot="clipartkorea-inline-before-source"
+                  />
+                  <div
+                    className="city-article city-article--feature"
+                    dangerouslySetInnerHTML={{ __html: cleanedContent }}
+                  />
+                </div>
+              )}
             </section>
 
             <section className="mt-12 rounded-[1.75rem] border border-stone-200 bg-stone-50/80 p-6 md:p-8">

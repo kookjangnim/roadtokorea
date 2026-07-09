@@ -1,0 +1,53 @@
+{
+  "citySlug": "yeoncheon",
+  "generatedAt": "2026-05-18T06:51:35.688Z",
+  "source": "local-picture-folder",
+  "rightsNote": "Imported from local picture folder. Confirm contributor permission before promotional or monetized use.",
+  "images": [
+    {
+      "id": "yeoncheon-local-photo-01",
+      "citySlug": "yeoncheon",
+      "cityLabel": "Yeoncheon",
+      "sourcePath": "yeoncheon/KakaoTalk_20260514_115221987.jpg",
+      "targetFileName": "yeoncheon-local-photo-01-kakaotalk-20260514-115221987.jpg",
+      "localPath": "/images/editorial/yeoncheon-real/yeoncheon-local-photo-01-kakaotalk-20260514-115221987.jpg",
+      "alt": "Yeoncheon local travel photo 1",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 570,
+      "height": 600,
+      "byteSize": 500017
+    },
+    {
+      "id": "yeoncheon-local-photo-02",
+      "citySlug": "yeoncheon",
+      "cityLabel": "Yeoncheon",
+      "sourcePath": "yeoncheon/KakaoTalk_20260514_115534333_01.jpg",
+      "targetFileName": "yeoncheon-local-photo-02-kakaotalk-20260514-115534333-01.jpg",
+      "localPath": "/images/editorial/yeoncheon-real/yeoncheon-local-photo-02-kakaotalk-20260514-115534333-01.jpg",
+      "alt": "Yeoncheon local travel photo 2",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 1267,
+      "height": 1900,
+      "byteSize": 2888532
+    },
+    {
+      "id": "yeoncheon-local-photo-03",
+      "citySlug": "yeoncheon",
+      "cityLabel": "Yeoncheon",
+      "sourcePath": "yeoncheon/KakaoTalk_20260514_115534333_02.jpg",
+      "targetFileName": "yeoncheon-local-photo-03-kakaotalk-20260514-115534333-02.jpg",
+      "localPath": "/images/editorial/yeoncheon-real/yeoncheon-local-photo-03-kakaotalk-20260514-115534333-02.jpg",
+      "alt": "Yeoncheon local travel photo 3",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 1620,
+      "height": 1080,
+      "byteSize": 945220
+    }
+  ]
+}

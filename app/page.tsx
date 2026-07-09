@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { getAllRouteData, type RouteData } from '@/data/routeStopovers';
 import { getCityImageSlots } from '@/data/cityImageSlots';
+import { getEditorialImageForCity, getSafeEditorialImage } from '@/data/editorialImageFallbacks';
 
 const routeFallbackImages: Record<string, string> = {
   '1': '/images/destinations/Busan_A_breathtaking_cinematic_travel_photograph_of_haeu_e9b5575ea7.jpeg',
@@ -25,10 +26,13 @@ const routeCategories = [
 
 function getRouteImage(route: RouteData) {
   const destinationSlots = getCityImageSlots(route.toSlug);
-  return destinationSlots?.slots.route?.asset
+  const localImage = getEditorialImageForCity(route.toSlug);
+  const candidate = destinationSlots?.slots.route?.asset
     ?? destinationSlots?.slots.hero?.asset
     ?? routeFallbackImages[route.routeCode]
-    ?? '/images/placeholder.png';
+    ?? '';
+
+  return localImage ?? getSafeEditorialImage(candidate, route.toSlug);
 }
 
 function getRepresentativeStops(route: RouteData) {

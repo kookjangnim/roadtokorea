@@ -1,0 +1,53 @@
+{
+  "citySlug": "damyang",
+  "generatedAt": "2026-05-18T06:51:35.683Z",
+  "source": "local-picture-folder",
+  "rightsNote": "Imported from local picture folder. Confirm contributor permission before promotional or monetized use.",
+  "images": [
+    {
+      "id": "damyang-local-photo-01",
+      "citySlug": "damyang",
+      "cityLabel": "Damyang",
+      "sourcePath": "damyang/KakaoTalk_20260514_132212120.jpg",
+      "targetFileName": "damyang-local-photo-01-kakaotalk-20260514-132212120.jpg",
+      "localPath": "/images/editorial/damyang-real/damyang-local-photo-01-kakaotalk-20260514-132212120.jpg",
+      "alt": "Damyang local travel photo 1",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 4032,
+      "height": 3024,
+      "byteSize": 5858482
+    },
+    {
+      "id": "damyang-local-photo-02",
+      "citySlug": "damyang",
+      "cityLabel": "Damyang",
+      "sourcePath": "damyang/KakaoTalk_20260514_132214027.jpg",
+      "targetFileName": "damyang-local-photo-02-kakaotalk-20260514-132214027.jpg",
+      "localPath": "/images/editorial/damyang-real/damyang-local-photo-02-kakaotalk-20260514-132214027.jpg",
+      "alt": "Damyang local travel photo 2",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 4032,
+      "height": 3024,
+      "byteSize": 5191373
+    },
+    {
+      "id": "damyang-local-photo-03",
+      "citySlug": "damyang",
+      "cityLabel": "Damyang",
+      "sourcePath": "damyang/KakaoTalk_20260514_132215747.jpg",
+      "targetFileName": "damyang-local-photo-03-kakaotalk-20260514-132215747.jpg",
+      "localPath": "/images/editorial/damyang-real/damyang-local-photo-03-kakaotalk-20260514-132215747.jpg",
+      "alt": "Damyang local travel photo 3",
+      "credit": "Local contributor photo",
+      "rightsStatus": "needs-review",
+      "reviewStatus": "imported",
+      "width": 4032,
+      "height": 2268,
+      "byteSize": 4531114
+    }
+  ]
+}

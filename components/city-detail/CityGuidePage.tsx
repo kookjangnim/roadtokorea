@@ -23,6 +23,11 @@ import {
   SEOUL_COORDS,
 } from '@/lib/map-utils';
 import { getIndexableWpPostRoute } from '@/lib/wp-route-context';
+import {
+  getEditorialImageForCity,
+  getEditorialImageForPost,
+  getSafeEditorialImage,
+} from '@/data/editorialImageFallbacks';
 
 const siteUrl = getSiteUrl();
 
@@ -207,11 +212,13 @@ export default async function CityPage({
   const routeOption = getSeoulRouteOptionBySlug(citySlug);
   const prefersGeneratedRouteHero =
     Boolean(routeOption) && localCityData?.heroImage?.startsWith('/images/routes/route-1/');
-  const heroImageUrl = heroImage
+  const localEditorialImage = getEditorialImageForCity(citySlug);
+  const heroCandidate = heroImage
     ? normalizeWpMediaUrl(heroImage)
     : prefersGeneratedRouteHero
       ? localCityData?.heroImage || localDestinations[0]?.imagePath || null
       : localDestinations[0]?.imagePath || localCityData?.heroImage || null;
+  const heroImageUrl = localEditorialImage ?? getSafeEditorialImage(heroCandidate, citySlug);
   const supportProfile = getCitySupportProfile(citySlug);
   const storyTemplate = getRouteCityStoryTemplate(citySlug);
   const seoProfile = getCitySeoKeywordProfile(citySlug);
@@ -1167,15 +1174,15 @@ export default async function CityPage({
 
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
               {dynamicPosts.map((post: WPPost) => {
-                let imageUrl = '/images/placeholder.png';
+                let imageCandidate = '';
                 const featuredUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
 
                 if (featuredUrl) {
-                  imageUrl = normalizeWpMediaUrl(featuredUrl);
+                  imageCandidate = normalizeWpMediaUrl(featuredUrl);
                 } else if (post.content?.rendered) {
                   const imgMatch = post.content.rendered.match(/<img[^>]+src="([^">]+)"/i);
                   if (imgMatch?.[1]) {
-                    imageUrl = normalizeWpMediaUrl(imgMatch[1]);
+                    imageCandidate = normalizeWpMediaUrl(imgMatch[1]);
                   }
                 }
 
@@ -1192,6 +1199,8 @@ export default async function CityPage({
                 const postUrl = getIndexableWpPostRoute(post)?.href ?? `/cities/${citySlug}/${post.slug}`;
                 const postTitle = stripHtml(post.title.rendered) || formatCityLabel(post.slug);
                 const postExcerpt = buildStoryExcerpt(post.excerpt.rendered, post.content.rendered);
+                const imageUrl =
+                  getEditorialImageForPost(post) ?? getSafeEditorialImage(imageCandidate, citySlug);
                 const publishedDate = new Date(post.date).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
