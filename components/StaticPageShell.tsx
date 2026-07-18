@@ -34,6 +34,7 @@ export default function StaticPageShell({
                 { label: 'About', href: '/about' },
                 { label: 'Contact', href: '/contact' },
                 { label: 'Privacy', href: '/privacy' },
+                { label: 'Terms', href: '/terms' },
                 { label: 'Editorial Policy', href: '/editorial-policy' },
                 { label: 'Routes', href: '/routes' },
               ].map((item) => (
@@ -132,7 +133,7 @@ export default function StaticPageShell({
               Transparency
             </p>
             <p className="mt-2">
-              Contact and privacy details are available from every basic site page.
+              Contact, privacy, terms, and editorial methods are available from every basic site page.
             </p>
           </div>
           <div>

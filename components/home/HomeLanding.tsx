@@ -145,7 +145,7 @@ export default function HomeLanding({ routes }: HomeLandingProps) {
             </div>
 
             <article className="signature-card">
-              <Link href={featured.href} className="signature-card__visual" aria-label={`Explore ${featured.from} to ${featured.to}`}>
+              <Link href={featured.href} className="signature-card__visual">
                 <Image
                   src={getRouteImage(featured)}
                   alt={`${featured.from} to ${featured.to} route guide`}

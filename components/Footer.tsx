@@ -17,6 +17,7 @@ const footerExplore = [
 const footerPolicies = [
   { name: 'Editorial & advertising policy', href: '/editorial-policy' },
   { name: 'Privacy policy', href: '/privacy' },
+  { name: 'Terms of use', href: '/terms' },
 ];
 
 export default function Footer() {

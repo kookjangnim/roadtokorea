@@ -15,7 +15,9 @@ const staticPaths = [
   '/updated-cities',
   '/about',
   '/contact',
+  '/editorial-policy',
   '/privacy',
+  '/terms',
   '/route-1',
   '/route-2',
   '/route-2/branch-a',
@@ -63,7 +65,7 @@ function stripHtml(html) {
 
 function getMinimumWords(path) {
   if (path === '/contact') return 120;
-  if (path === '/about' || path === '/privacy') return 180;
+  if (path === '/about' || path === '/privacy' || path === '/terms' || path === '/editorial-policy') return 180;
   if (path === '/' || path === '/routes' || path === '/updated-cities') return 450;
   if (/^\/route-\d$/.test(path) || path === '/route-2/branch-a') return 650;
   if (/^\/route-\d\//.test(path) || /^\/cities\//.test(path)) return 500;

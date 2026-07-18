@@ -1,6 +1,7 @@
 import CityPage from '@/components/city-detail/CityGuidePage';
 import RoutePageShell from '@/components/routes/RoutePageShell';
-import { getRouteCityLinks } from '@/data/routeRegistry';
+import { notFound } from 'next/navigation';
+import { getRouteCityLinks, isCityOnRoute } from '@/data/routeRegistry';
 
 export { generateMetadata } from '@/components/city-detail/CityGuidePage';
 
@@ -18,6 +19,7 @@ export function generateStaticParams() {
 
 export default async function RouteEightCityPage({ params }: PageProps) {
   const { city } = await params;
+  if (!isCityOnRoute('route-8', city)) notFound();
 
   return (
     <RoutePageShell activeRouteSlug="route-8" activeCitySlug={city}>

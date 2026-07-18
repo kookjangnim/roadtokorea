@@ -3,7 +3,10 @@ import { fetchPostsByCityTag } from '@/lib/wp-api';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import PopularSearches from '@/components/PopularSearches';
+import EditorialTrustNote from '@/components/EditorialTrustNote';
+import EditorialExperienceNote from '@/components/city-detail/EditorialExperienceNote';
 import type { WPPost } from '@/lib/wp-api';
 import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
 import { getSeoulRouteOptionBySlug } from '@/data/seoulRoutes';
@@ -15,8 +18,13 @@ import HotelBookingCard from '@/components/routes/HotelBookingCard';
 import { getCitySupportProfile } from '@/data/citySupportProfiles';
 import { getCitySeoKeywordProfile } from '@/data/citySeoKeywords';
 import { getCityImageSlots } from '@/data/cityImageSlots';
+import { getEditorialExperienceNote } from '@/data/editorialExperienceNotes';
 import { getAllRouteData } from '@/data/routeStopovers';
-import { getCanonicalCityHref } from '@/data/routeRegistry';
+import {
+  getCanonicalCityHref,
+  getPreferredRouteSlugForCity,
+  getRouteDataBySlug,
+} from '@/data/routeRegistry';
 import { getCityQualityPackStatus } from '@/data/reviewedCityQualityRegistry';
 import {
   buildOpenStreetMapDirectionsUrl,
@@ -199,28 +207,7 @@ export default async function CityPage({
   const dynamicPosts = await fetchPostsByCityTag(citySlug, 8);
 
   if (!cityData && !localCityData) {
-    return (
-      <div className="min-h-screen bg-[linear-gradient(180deg,#faf5ee_0%,#f4ede4_54%,#efe7db_100%)] px-6 py-20 text-stone-900">
-        <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col items-center justify-center rounded-[2rem] border border-stone-200/80 bg-white/75 p-10 text-center shadow-[0_35px_90px_rgba(34,30,25,0.08)] backdrop-blur md:p-14">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.38em] text-stone-500">
-            Missing Guide
-          </span>
-          <h1 className="mt-6 font-serif text-5xl leading-none text-stone-950 md:text-7xl">
-            City not found
-          </h1>
-          <p className="mt-6 max-w-md text-base leading-8 text-stone-600 md:text-lg">
-            This city guide has not been published yet, or the route may still be moving into
-            place.
-          </p>
-          <Link
-            href="/"
-            className="mt-10 inline-flex rounded-full bg-stone-950 px-7 py-4 text-xs font-semibold uppercase tracking-[0.28em] text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-stone-800"
-          >
-            Back to routes
-          </Link>
-        </div>
-      </div>
-    );
+    notFound();
   }
 
   const cityName = cityData
@@ -253,6 +240,21 @@ export default async function CityPage({
   const storyTemplate = getRouteCityStoryTemplate(citySlug);
   const seoProfile = getCitySeoKeywordProfile(citySlug);
   const qualityPackStatus = getCityQualityPackStatus(citySlug);
+  const experienceNote = getEditorialExperienceNote(citySlug);
+  const canonicalPath = getCanonicalCityHref(citySlug);
+  const canonicalUrl = `${siteUrl}${canonicalPath}`;
+  const preferredRouteSlug = getPreferredRouteSlugForCity(citySlug);
+  const preferredRoute = preferredRouteSlug ? getRouteDataBySlug(preferredRouteSlug) : null;
+  const breadcrumbItems = [
+    { name: 'Routes', href: '/routes' },
+    preferredRouteSlug
+      ? {
+          name: preferredRoute ? `Route ${preferredRoute.routeCode}` : preferredRouteSlug,
+          href: `/${preferredRouteSlug}`,
+        }
+      : { name: 'City Guides', href: '/updated-cities' },
+    { name: cityName, href: canonicalPath },
+  ];
   const transportGuidance = buildTransportGuidance(routeOption?.transport);
   const tags = [
     cityName,
@@ -399,11 +401,45 @@ export default async function CityPage({
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'TouristDestination',
-    name: cityName,
-    description,
-    url: `${siteUrl}/cities/${citySlug}`,
-    keywords: seoProfile?.metaKeywords,
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbItems.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: item.name,
+          item: `${siteUrl}${item.href}`,
+        })),
+      },
+      {
+        '@type': 'Article',
+        headline: `${cityName} Travel Guide`,
+        description,
+        url: canonicalUrl,
+        mainEntityOfPage: canonicalUrl,
+        author: {
+          '@type': 'Organization',
+          name: 'RoadToKorea Editorial Desk',
+          url: `${siteUrl}/about#editorial-desk`,
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'RoadToKorea',
+          url: siteUrl,
+        },
+        about: {
+          '@type': 'TouristDestination',
+          name: cityName,
+        },
+      },
+      {
+        '@type': 'TouristDestination',
+        name: cityName,
+        description,
+        url: canonicalUrl,
+        keywords: seoProfile?.metaKeywords,
+      },
+    ],
   };
 
   return (
@@ -416,14 +452,23 @@ export default async function CityPage({
       <section className="border-b border-stone-200/80 bg-[linear-gradient(180deg,#f8f2ea_0%,#f5ede4_100%)] px-4 py-10 md:px-8 md:py-14">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-start justify-between gap-4">
-            <Link
-              href="/routes"
-              className="inline-flex items-center gap-3 rounded-full border border-stone-300 bg-white/85 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.32em] text-stone-700 backdrop-blur transition-colors hover:border-stone-900 hover:text-stone-950"
+            <nav
+              aria-label="Breadcrumb"
+              className="inline-flex flex-wrap items-center gap-2 rounded-full border border-stone-300 bg-white/85 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-stone-700 backdrop-blur"
             >
-              <span>Destinations</span>
-              <span className="text-stone-400">/</span>
-              <span>All cities</span>
-            </Link>
+              {breadcrumbItems.map((item, index) => (
+                <span key={item.href} className="inline-flex items-center gap-2">
+                  {index > 0 ? <span aria-hidden="true" className="text-stone-400">/</span> : null}
+                  {index === breadcrumbItems.length - 1 ? (
+                    <span aria-current="page" className="text-stone-950">{item.name}</span>
+                  ) : (
+                    <Link href={item.href} className="transition-colors hover:text-stone-950">
+                      {item.name}
+                    </Link>
+                  )}
+                </span>
+              ))}
+            </nav>
 
             <div className="hidden rounded-full border border-stone-300 bg-white/70 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.32em] text-stone-600 md:inline-flex">
               City Guide
@@ -596,6 +641,11 @@ export default async function CityPage({
                 {supportProfile && (
                   <span className="rounded-full bg-stone-100 px-4 py-2">Local support map</span>
                 )}
+                {experienceNote && (
+                  <span className="rounded-full bg-amber-100 px-4 py-2 text-amber-950">
+                    Editor experience
+                  </span>
+                )}
                 <span className="rounded-full bg-stone-100 px-4 py-2">Related hotspots</span>
               </div>
             </div>
@@ -640,6 +690,14 @@ export default async function CityPage({
                     >
                       From Seoul
                     </a>
+                    {experienceNote ? (
+                      <a
+                        href="#editor-experience"
+                        className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
+                      >
+                        Experience
+                      </a>
+                    ) : null}
                     <a
                       href="#attractions"
                       className="border border-stone-200 bg-stone-50 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-600 transition-colors hover:border-stone-900 hover:bg-white"
@@ -654,6 +712,10 @@ export default async function CityPage({
                     </a>
                   </div>
                 </div>
+              </div>
+
+              <div className="mt-6">
+                <EditorialTrustNote />
               </div>
 
               {routeOption && (
@@ -726,6 +788,8 @@ export default async function CityPage({
                 </div>
               )}
             </div>
+
+            {experienceNote ? <EditorialExperienceNote note={experienceNote} /> : null}
 
             <section id="transport" className="mb-12 border-b border-stone-200 pb-10">
               <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">

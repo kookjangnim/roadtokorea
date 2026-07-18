@@ -11,6 +11,7 @@ import RouteJourneyHero from '@/components/routes/RouteJourneyHero';
 import { getRouteSlugForRoute } from '@/data/routeRegistry';
 import { getRouteSeoFaqs } from '@/data/routeSeoFaqs';
 import { getCityImageSlots } from '@/data/cityImageSlots';
+import EditorialTrustNote from '@/components/EditorialTrustNote';
 
 interface RoutePageClientProps {
   routeData: RouteData;
@@ -61,6 +62,16 @@ export default function RoutePageClient({
         <header className="overflow-hidden rounded-[2.5rem] border border-stone-200/80 bg-white/75 shadow-[0_35px_90px_rgba(34,30,25,0.08)] backdrop-blur">
           <div className="grid gap-8 px-8 py-10 md:px-12 md:py-12 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
+              <nav
+                aria-label="Breadcrumb"
+                className="mb-5 flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-stone-600"
+              >
+                <Link href="/routes" className="underline decoration-stone-300 underline-offset-4 hover:decoration-stone-800">
+                  Routes
+                </Link>
+                <span aria-hidden="true" className="text-stone-400">/</span>
+                <span aria-current="page" className="text-stone-900">Route {routeData.routeCode}</span>
+              </nav>
               <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
                 Route guide
               </p>
@@ -84,6 +95,10 @@ export default function RoutePageClient({
               <p className="mt-5 max-w-3xl text-base leading-8 text-stone-600">
                 {routeData.overview}
               </p>
+
+              <div className="mt-6">
+                <EditorialTrustNote compact />
+              </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 {routeData.bestUseCases.map((item) => (

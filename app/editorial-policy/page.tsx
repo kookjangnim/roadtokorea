@@ -38,6 +38,26 @@ export default function EditorialPolicyPage() {
           closures, and booking conditions with the relevant operator before traveling.
         </p>
 
+        <h2 id="research-method">Research method, personal experience, and AI assistance</h2>
+        <p>
+          Each guide separates three kinds of input: the editor&apos;s genuine personal connection
+          to a place, current factual references, and editorial judgment about route order or
+          travel pace. Personal experience is labeled only where it exists. Older memories, such
+          as a past residence or school trip, are not presented as proof of current conditions.
+        </p>
+        <p>
+          Research can include official tourism pages, transport and venue operators, map context,
+          locally maintained route data, licensed location photography, and comparisons across
+          connected cities. Details likely to change should be confirmed again by the traveler
+          before departure.
+        </p>
+        <p>
+          Software and AI tools may assist with outlining, comparison, or draft language. A human
+          editor remains responsible for what is selected and published. The site does not use
+          AI-generated images as documentary travel photography, and it does not invent a personal
+          visit to make a guide appear more experienced than it is.
+        </p>
+
         <h2>Corrections and updates</h2>
         <p>
           Factual corrections are welcome. Please email{' '}

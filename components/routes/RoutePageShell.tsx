@@ -53,7 +53,7 @@ export default function RoutePageShell({
           activeCategoryId={activeCategoryId}
         />
       </aside>
-      <main className="route-page-shell__content">{children}</main>
+      <div className="route-page-shell__content">{children}</div>
     </div>
   );
 }

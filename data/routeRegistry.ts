@@ -151,6 +151,12 @@ export function getRouteCityLinks(): RouteCityLink[] {
   return [...links.values()];
 }
 
+export function isCityOnRoute(routeSlug: RouteSlug, citySlug: string): boolean {
+  return getRouteCityLinks().some(
+    (link) => link.routeSlug === routeSlug && link.citySlug === citySlug.toLowerCase(),
+  );
+}
+
 export function getCanonicalCityLinks(): CanonicalCityLink[] {
   const links = new Map<string, CanonicalCityLink>();
 
