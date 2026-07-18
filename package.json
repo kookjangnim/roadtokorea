@@ -9,6 +9,9 @@
     "lint": "eslint",
     "images:ingest": "node scripts/ingest-editorial-images.mjs",
     "images:local": "node scripts/local-photo-pipeline.mjs",
+    "images:clipart": "node scripts/clipartkorea-batch-download.mjs",
+    "images:clipart:organize": "node scripts/clipartkorea-organize-downloads.mjs",
+    "images:clipart:map": "node scripts/map-clipartkorea-city-slots.mjs",
     "affiliate:trip:sync": "node scripts/sync-trip-city-ids.mjs",
     "test:local-images": "node --test scripts/local-photo-pipeline.test.mjs",
     "test:trip-affiliate": "node --test scripts/trip-city-id-utils.test.mjs",
@@ -22,6 +25,7 @@
     "check:route-network": "node scripts/validate-route-network.mjs",
     "check:route-navigation": "node scripts/validate-route-navigation.mjs",
     "check:hotspot-categories": "node scripts/validate-hotspot-categories.mjs",
+    "audit:content-depth": "node scripts/audit-content-depth.mjs",
     "audit:internal-routes": "node scripts/audit-internal-routes.mjs",
     "audit:public-images": "node scripts/audit-public-images.mjs",
     "audit:mojibake": "node scripts/audit-mojibake.mjs"

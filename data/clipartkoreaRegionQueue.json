@@ -1,0 +1,427 @@
+{
+  "version": 2,
+  "targetPerRegion": 15,
+  "targetPerSpot": 3,
+  "maxSpotsPerRegion": 5,
+  "downloadType": "JPG (WEB)",
+  "delayMs": 3000,
+  "workflow": "single-search-tab-card-download-menu",
+  "regions": [
+    {
+      "order": 1,
+      "route": "route-1",
+      "slug": "yeoju",
+      "nameKo": "여주",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 2,
+      "route": "route-1",
+      "slug": "cheonan",
+      "nameKo": "천안",
+      "status": "done",
+      "localCount": 8
+    },
+    {
+      "order": 3,
+      "route": "route-1",
+      "slug": "daejeon",
+      "nameKo": "대전",
+      "status": "done",
+      "localCount": 9
+    },
+    {
+      "order": 4,
+      "route": "route-1",
+      "slug": "chungju",
+      "nameKo": "충주",
+      "status": "done",
+      "localCount": 7
+    },
+    {
+      "order": 5,
+      "route": "route-1",
+      "slug": "mungyeong",
+      "nameKo": "문경",
+      "status": "done",
+      "localCount": 8
+    },
+    {
+      "order": 6,
+      "route": "route-1",
+      "slug": "andong",
+      "nameKo": "안동",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 7,
+      "route": "route-1",
+      "slug": "sangju",
+      "nameKo": "상주",
+      "status": "done",
+      "localCount": 13
+    },
+    {
+      "order": 8,
+      "route": "route-1",
+      "slug": "gumi",
+      "nameKo": "구미",
+      "status": "done",
+      "localCount": 3
+    },
+    {
+      "order": 9,
+      "route": "route-1",
+      "slug": "daegu",
+      "nameKo": "대구",
+      "status": "done",
+      "localCount": 6
+    },
+    {
+      "order": 10,
+      "route": "route-1",
+      "slug": "changnyeong",
+      "nameKo": "창녕",
+      "status": "done",
+      "localCount": 9
+    },
+    {
+      "order": 11,
+      "route": "route-1",
+      "slug": "miryang",
+      "nameKo": "밀양",
+      "status": "done",
+      "localCount": 6
+    },
+    {
+      "order": 12,
+      "route": "route-1",
+      "slug": "gyeongju",
+      "nameKo": "경주",
+      "status": "done",
+      "localCount": 15
+    },
+    {
+      "order": 13,
+      "route": "route-1",
+      "slug": "pohang",
+      "nameKo": "포항",
+      "status": "done",
+      "localCount": 15
+    },
+    {
+      "order": 14,
+      "route": "route-1",
+      "slug": "yeongdeok",
+      "nameKo": "영덕",
+      "status": "done",
+      "localCount": 7
+    },
+    {
+      "order": 15,
+      "route": "route-1",
+      "slug": "uljin",
+      "nameKo": "울진",
+      "status": "done",
+      "localCount": 9
+    },
+    {
+      "order": 16,
+      "route": "route-2",
+      "slug": "wonju",
+      "nameKo": "원주",
+      "status": "done",
+      "localCount": 7
+    },
+    {
+      "order": 17,
+      "route": "route-2",
+      "slug": "pyeongchang",
+      "nameKo": "평창",
+      "status": "done",
+      "localCount": 6
+    },
+    {
+      "order": 18,
+      "route": "route-2",
+      "slug": "daegwallyeong",
+      "nameKo": "대관령",
+      "status": "done",
+      "localCount": 15
+    },
+    {
+      "order": 19,
+      "route": "route-2",
+      "slug": "gangneung",
+      "nameKo": "강릉",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 20,
+      "route": "route-2-branch",
+      "slug": "jecheon",
+      "nameKo": "제천",
+      "status": "done",
+      "localCount": 10
+    },
+    {
+      "order": 21,
+      "route": "route-2-branch",
+      "slug": "yeongwol",
+      "nameKo": "영월",
+      "status": "done",
+      "localCount": 15
+    },
+    {
+      "order": 22,
+      "route": "route-2-branch",
+      "slug": "jeongseon",
+      "nameKo": "정선",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 23,
+      "route": "route-2-branch",
+      "slug": "taebaek",
+      "nameKo": "태백",
+      "status": "done",
+      "localCount": 5
+    },
+    {
+      "order": 24,
+      "route": "route-3",
+      "slug": "gapyeong",
+      "nameKo": "가평",
+      "status": "done",
+      "localCount": 5
+    },
+    {
+      "order": 25,
+      "route": "route-3",
+      "slug": "chuncheon",
+      "nameKo": "춘천",
+      "status": "done",
+      "localCount": 5
+    },
+    {
+      "order": 26,
+      "route": "route-3",
+      "slug": "yanggu",
+      "nameKo": "양구",
+      "status": "done",
+      "localCount": 5
+    },
+    {
+      "order": 27,
+      "route": "route-3",
+      "slug": "inje",
+      "nameKo": "인제",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 28,
+      "route": "route-3",
+      "slug": "goseong",
+      "nameKo": "고성",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 29,
+      "route": "route-3",
+      "slug": "sokcho",
+      "nameKo": "속초",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 30,
+      "route": "route-4",
+      "slug": "yangyang",
+      "nameKo": "양양",
+      "status": "done",
+      "localCount": 9
+    },
+    {
+      "order": 31,
+      "route": "route-4",
+      "slug": "donghae",
+      "nameKo": "동해",
+      "status": "done",
+      "localCount": 9
+    },
+    {
+      "order": 32,
+      "route": "route-4",
+      "slug": "samcheok",
+      "nameKo": "삼척",
+      "status": "done",
+      "localCount": 14
+    },
+    {
+      "order": 33,
+      "route": "route-4",
+      "slug": "ulsan",
+      "nameKo": "울산",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 34,
+      "route": "route-5",
+      "slug": "gongju",
+      "nameKo": "공주",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 35,
+      "route": "route-5",
+      "slug": "jeonju",
+      "nameKo": "전주",
+      "status": "done",
+      "localCount": 9
+    },
+    {
+      "order": 36,
+      "route": "route-5",
+      "slug": "gwangju",
+      "nameKo": "광주",
+      "status": "done",
+      "localCount": 8
+    },
+    {
+      "order": 37,
+      "route": "route-5",
+      "slug": "imsil",
+      "nameKo": "임실",
+      "status": "done",
+      "localCount": 13
+    },
+    {
+      "order": 38,
+      "route": "route-5",
+      "slug": "namwon",
+      "nameKo": "남원",
+      "status": "done",
+      "localCount": 6
+    },
+    {
+      "order": 39,
+      "route": "route-5",
+      "slug": "suncheon",
+      "nameKo": "순천",
+      "status": "done",
+      "localCount": 15
+    },
+    {
+      "order": 40,
+      "route": "route-5",
+      "slug": "yeosu",
+      "nameKo": "여수",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 41,
+      "route": "route-6",
+      "slug": "incheon",
+      "nameKo": "인천",
+      "status": "done",
+      "localCount": 15
+    },
+    {
+      "order": 42,
+      "route": "route-6",
+      "slug": "suwon",
+      "nameKo": "수원",
+      "status": "done",
+      "localCount": 8
+    },
+    {
+      "order": 43,
+      "route": "route-6",
+      "slug": "seosan",
+      "nameKo": "서산",
+      "status": "done",
+      "localCount": 12
+    },
+    {
+      "order": 44,
+      "route": "route-6",
+      "slug": "boryeong",
+      "nameKo": "보령",
+      "status": "done",
+      "localCount": 9
+    },
+    {
+      "order": 45,
+      "route": "route-6",
+      "slug": "gunsan",
+      "nameKo": "군산",
+      "status": "done",
+      "localCount": 6
+    },
+    {
+      "order": 46,
+      "route": "route-6",
+      "slug": "mokpo",
+      "nameKo": "목포",
+      "status": "done",
+      "localCount": 11
+    },
+    {
+      "order": 47,
+      "route": "route-7",
+      "slug": "haenam",
+      "nameKo": "해남",
+      "status": "done",
+      "localCount": 4
+    },
+    {
+      "order": 48,
+      "route": "route-7",
+      "slug": "wando",
+      "nameKo": "완도",
+      "status": "done",
+      "localCount": 2
+    },
+    {
+      "order": 49,
+      "route": "route-7",
+      "slug": "boseong",
+      "nameKo": "보성",
+      "status": "done",
+      "localCount": 4
+    },
+    {
+      "order": 50,
+      "route": "route-7",
+      "slug": "namhae",
+      "nameKo": "남해",
+      "status": "done",
+      "localCount": 5
+    },
+    {
+      "order": 51,
+      "route": "route-7",
+      "slug": "tongyeong",
+      "nameKo": "통영",
+      "status": "done",
+      "localCount": 4
+    },
+    {
+      "order": 52,
+      "route": "route-7",
+      "slug": "geoje",
+      "nameKo": "거제",
+      "status": "done",
+      "localCount": 3
+    }
+  ]
+}

@@ -1199,9 +1199,11 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       { title: 'Stay near Gapyeong Station', areaLabel: 'Transit base', bestFor: 'Travelers continuing to Chuncheon or using public transport.', why: 'This keeps the stop light and practical.' },
     ],
     visuals: [
-      { eyebrow: 'River opening', title: 'Bukhangang makes the Seoul departure visible', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Nami Island and river scenery near Gapyeong', body: 'The image should make Gapyeong feel like water and island escape, not a deep inland stop.', sourceLabel: 'Wikimedia Commons Nami Island reference', sourceHref: 'https://commons.wikimedia.org/wiki/File:Nami_Island,_Korea.jpg', licenseLabel: 'Open reference' },
-      { eyebrow: 'Seasonal present', title: 'Jarasum gives Gapyeong more than one famous island', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Gapyeong river island leisure reference', body: 'Jarasum, camping, and jazz culture make Gapyeong broader than only Nami Island search traffic.', sourceLabel: 'VisitKorea Jara Island', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091', licenseLabel: 'Official reference' },
-      { eyebrow: 'Route handoff', title: 'Gapyeong should hand the route to Chuncheon', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Gapyeong route opening before Chuncheon', body: 'This slot should eventually become a river-road or rail-bike handoff visual toward Chuncheon.', sourceLabel: 'VisitKorea Gapyeong Rail Park', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=69675', licenseLabel: 'Official reference' },
+      { eyebrow: 'River opening', title: 'Bukhangang makes the Seoul departure visible', image: '/images/clipartkorea/gapyeong/tc00240064479-jaraseom-namiseom-aerial.jpg', alt: 'Aerial view of Jarasum, the Bukhangang River, and Gapyeong', body: 'The aerial view makes Gapyeong feel like water, islands, and a gentle escape from Seoul rather than a generic inland stop.', sourceLabel: 'ClipartKorea tc00240064479', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240064479', licenseLabel: 'Licensed JPG (WEB)' },
+      { eyebrow: 'Island leisure', title: 'Nami Island access keeps the river in motion', image: '/images/clipartkorea/gapyeong/tc00240001915-namiseom-ferry.jpg', alt: 'Ferry crossing the Bukhangang River near Nami Island in autumn', body: 'The ferry makes Gapyeong\'s best-known island access feel like part of the wider Bukhangang landscape rather than a detached attraction.', sourceLabel: 'ClipartKorea tc00240001915', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240001915', licenseLabel: 'Licensed JPG (WEB)' },
+      { eyebrow: 'Route handoff', title: 'The Gyeongchun Line carries the route toward Chuncheon', image: '/images/clipartkorea/gapyeong/cm27004158-gyeongchun-train.jpg', alt: 'Gyeongchun Line train crossing a river bridge in Gapyeong', body: 'Rail movement gives the page a practical handoff: Gapyeong opens the scenery, then Chuncheon adds city rhythm, dinner, and overnight depth.', sourceLabel: 'ClipartKorea cm27004158', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=cm27004158', licenseLabel: 'Licensed JPG (WEB)' },
+      { eyebrow: 'Colorful stay cue', title: 'Petit France adds a village-scale detour', image: '/images/clipartkorea/gapyeong/tc00240110390-petit-france.jpg', alt: 'Petit France village in Gapyeong', body: 'The compact hillside village gives Gapyeong a human-scale attraction alongside the river and island landscape, useful for couples and family itineraries.', sourceLabel: 'ClipartKorea tc00240110390', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240110390', licenseLabel: 'Licensed JPG (WEB)' },
+      { eyebrow: 'Mountain option', title: 'Unaksan keeps Gapyeong from feeling one-note', image: '/images/clipartkorea/gapyeong/cm270021119-unaksan-autumn.jpg', alt: 'Autumn mountain scenery at Unaksan near Gapyeong', body: 'Unaksan widens the visual story beyond islands and leisure: travelers can add a mountain day when the route needs a stronger seasonal outdoors option.', sourceLabel: 'ClipartKorea cm270021119', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=cm270021119', licenseLabel: 'Licensed JPG (WEB)' },
     ],
     officialReferences: [
       { eyebrow: 'Official tourism source', title: 'Jarasum is a camping and festival island', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg', alt: 'Jarasum reference image', body: 'VisitKorea frames Jarasum as a multi-island leisure area with camping and Jarasum International Jazz Festival identity.', sourceLabel: 'VisitKorea Jara Island', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=85091', licenseLabel: 'Official reference', usageNote: 'Use for Gapyeong seasonal and leisure identity.' },
@@ -1315,13 +1317,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Lake city',
         title: 'Soyanggang makes Chuncheon feel like arrival, not transfer',
-        image: 'https://tong.visitkorea.or.kr/cms/resource/92/2392892_image2_1.jpg',
-        alt: 'Official tourism image for Soyanggang Skywalk in Chuncheon',
+        image: '/images/clipartkorea/chuncheon/tc00240003686-soyang-river-uiam-lake.jpg',
+        alt: 'Soyang River and Uiam Lake bridge landscape in Chuncheon',
         body:
           'The river image matters because Chuncheon needs to read as water, city, and pause. Soyanggang gives Route 3 its first visual stop after the Seoul-side departure.',
-        sourceLabel: 'VisitKorea Soyanggang Skywalk',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68510',
-        licenseLabel: 'Official reference',
+        sourceLabel: 'ClipartKorea tc00240003686',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240003686',
+        licenseLabel: 'Licensed JPG (WEB)',
       },
       {
         eyebrow: 'Food anchor',
@@ -1337,13 +1339,46 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Lake and mountain',
         title: 'Samaksan gives Chuncheon the route-scale view',
-        image: 'https://tong.visitkorea.or.kr/cms/resource/00/3578100_image2_1.jpg',
-        alt: 'Official tourism image for Chuncheon Samaksan Mountain Lake Cable Car',
+        image: '/images/clipartkorea/chuncheon/cm270031335-soyanggang-dam.jpg',
+        alt: 'Soyanggang Dam and lake landscape in Chuncheon',
         body:
           'The cable car lets the city become a landscape argument: lake below, mountains around, and the route preparing to leave the easy city chapter.',
-        sourceLabel: 'VisitKorea Chuncheon Samaksan Mountain Lake Cable Car',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=112537',
-        licenseLabel: 'Official reference',
+        sourceLabel: 'ClipartKorea cm270031335',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=cm270031335',
+        licenseLabel: 'Licensed JPG (WEB)',
+      },
+      {
+        eyebrow: 'Sunrise water',
+        title: 'Soyanggang at first light makes the overnight tangible',
+        image: '/images/clipartkorea/chuncheon/tc00240008606-soyanggang-maiden-sunrise.jpg',
+        alt: 'Sunrise over Soyanggang in Chuncheon',
+        body:
+          'A quieter sunrise frame gives the city a reason to be experienced before breakfast, not only visited for one meal and left.',
+        sourceLabel: 'ClipartKorea tc00240008606',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240008606',
+        licenseLabel: 'Licensed JPG (WEB)',
+      },
+      {
+        eyebrow: 'City base',
+        title: 'The Chuncheon skyline keeps the route practical',
+        image: '/images/clipartkorea/chuncheon/tc00240031018-chuncheon-cityscape.jpg',
+        alt: 'Chuncheon cityscape framed by surrounding mountains',
+        body:
+          'The city view balances the lake imagery with a clear overnight base: restaurants, stations, and a real urban reset before Yanggu.',
+        sourceLabel: 'ClipartKorea tc00240031018',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240031018',
+        licenseLabel: 'Licensed JPG (WEB)',
+      },
+      {
+        eyebrow: 'Lakeside pace',
+        title: 'Uiamho cycling turns scenery into an activity',
+        image: '/images/clipartkorea/chuncheon/tc00240029873-uiamho-cycling.jpg',
+        alt: 'Cycling along Uiamho Lake in Chuncheon',
+        body:
+          'The cycling scene gives travelers a low-friction way to use Chuncheon: move along the water, then return to the food-and-transit core.',
+        sourceLabel: 'ClipartKorea tc00240029873',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240029873',
+        licenseLabel: 'Licensed JPG (WEB)',
       },
     ],
     officialReferences: [
@@ -1480,9 +1515,11 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       { title: 'Use Yanggu as a pause', areaLabel: 'Day chapter', bestFor: 'Chuncheon-to-Inje pacing without committing to an overnight.', why: 'This keeps the route efficient while preserving its northern story.' },
     ],
     visuals: [
-      { eyebrow: 'Borderland terrain', title: 'Punch Bowl gives Yanggu its shape', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Punch Bowl highland basin in Yanggu', body: 'The basin image is central because Yanggu is a landscape argument as much as a stop.', sourceLabel: 'VisitKorea Yanggu Punch Bowl Village', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341', licenseLabel: 'Official reference' },
-      { eyebrow: 'Korean War memory', title: 'Yanggu should stay quiet and serious', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Yanggu Punch Bowl battlefield landscape reference', body: 'War memory belongs in the page, but the tone should be measured and route-aware.', sourceLabel: 'VisitKorea Yanggu Punch Bowl Village', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341', licenseLabel: 'Official reference' },
-      { eyebrow: 'Route turn', title: 'Yanggu prepares the road for Inje', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Yanggu highland terrain before Inje', body: 'The visual should make clear that Chuncheon comfort is behind the traveler and Seorak threshold is ahead.', sourceLabel: 'Yanggu tourism reference', sourceHref: 'https://www.ygtour.kr/Home/index', licenseLabel: 'Official reference' },
+      { eyebrow: 'Borderland terrain', title: 'Punch Bowl gives Yanggu its shape', image: '/images/clipartkorea/yanggu/tc00240007625-yanggu-basin.jpg', alt: 'Punch Bowl highland basin in Yanggu', body: 'The basin image is central because Yanggu is a landscape argument as much as a stop.', sourceLabel: 'ClipartKorea tc00240007625', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240007625', licenseLabel: 'Licensed JPG (WEB)' },
+      { eyebrow: 'Korean War memory', title: 'Yanggu should stay quiet and serious', image: '/images/clipartkorea/yanggu/tc00240118626-punchbowl-village.jpg', alt: 'Punch Bowl village and highland fields in Yanggu', body: 'The village-and-basin view gives the page a grounded way to discuss war memory without turning the route into a military checklist.', sourceLabel: 'ClipartKorea tc00240118626', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240118626', licenseLabel: 'Licensed JPG (WEB)' },
+      { eyebrow: 'Lake crossing', title: 'Paroho keeps the northern water story visible', image: '/images/clipartkorea/yanggu/cm28002652-paroho-bridge.jpg', alt: 'Bridge crossing Paroho Lake near Yanggu', body: 'The bridge over Paroho adds a present-day travel cue: water, forest, and the long northern road still belong in the same chapter.', sourceLabel: 'ClipartKorea cm28002652', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=cm28002652', licenseLabel: 'Licensed JPG (WEB)' },
+      { eyebrow: 'Route turn', title: 'Dutaeyeon prepares the road for Inje', image: '/images/clipartkorea/yanggu/tc00240036469-dutaeyeon-autumn.jpg', alt: 'Autumn gorge and stream at Dutaeyeon near Yanggu', body: 'Dutaeyeon adds the route-scale handoff: Chuncheon comfort is behind the traveler and the quieter mountain threshold is ahead.', sourceLabel: 'ClipartKorea tc00240036469', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240036469', licenseLabel: 'Licensed JPG (WEB)' },
+      { eyebrow: 'Highland season', title: 'Siberian aster makes the quiet outdoors tangible', image: '/images/clipartkorea/yanggu/tc00240030297-siberian-aster.jpg', alt: 'Siberian aster flowers on a Yanggu mountain ridge', body: 'A close seasonal frame gives Yanggu a softer present-tense detail alongside the basin, bridge, and war-memory landscape.', sourceLabel: 'ClipartKorea tc00240030297', sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240030297', licenseLabel: 'Licensed JPG (WEB)' },
     ],
     officialReferences: [
       { eyebrow: 'Official tourism source', title: 'Punch Bowl is Yanggu’s core landscape and memory source', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punchbowl%20Korea.jpg', alt: 'Yanggu Punch Bowl reference', body: 'VisitKorea describes Punch Bowl as a highland basin inside the Civilian Access Control Line and a former Korean War battlefield near Daeamsan.', sourceLabel: 'VisitKorea Yanggu Punch Bowl Village', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81341', licenseLabel: 'Official reference', usageNote: 'Use as the core source for Yanggu terrain, Korean War memory, and DMZ-adjacent ecology.' },
@@ -1607,13 +1644,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Pass decision',
         title: 'Inje should show the choice before Sokcho',
-        image: 'https://tong.visitkorea.or.kr/cms/resource/56/3358956_image2_1.jpg',
-        alt: 'Inje valley image used as a placeholder for Route 3 pass decision',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Misiryeong%20East.jpg',
+        alt: 'Misiryeong ridge road view between Inje and the Sokcho coast',
         body:
-          'This slot should eventually become a pass map or road view. The page needs one visual that separates Jinburyeong, Hangyeryeong, and Misiryeong at a glance.',
-        sourceLabel: 'Inje County tourism reference',
-        sourceHref: 'https://tour.inje.go.kr/en/tour/tour_leports',
-        licenseLabel: 'Official reference',
+          'This pass image makes the route choice visible: Inje is where the inland valley starts turning into a mountain crossing toward the Sokcho coast.',
+        sourceLabel: 'Wikimedia Commons Misiryeong',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Misiryeong_East.jpg',
+        licenseLabel: 'CC BY 3.0 reference',
       },
       {
         eyebrow: 'Seorak approach',
@@ -1849,13 +1886,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Lagoon and route',
         title: 'Hwajinpo explains why the coast should slow down',
-        image: 'https://tong.visitkorea.or.kr/cms/resource/21/2714121_image2_1.jpg',
-        alt: 'Goseong coast image used as a placeholder for Hwajinpo lagoon context',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Hwajinpo%20Lake.jpg',
+        alt: 'Hwajinpo Lake lagoon landscape in Goseong',
         body:
-          'The Hwajinpo slot should eventually use a lagoon-specific image. For now, the content brief keeps the visual requirement clear: Goseong needs water, ecology, and history in one frame.',
-        sourceLabel: 'VisitKorea Hwajinpo Beach National Geopark',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=107566',
-        licenseLabel: 'Official reference',
+          'The lagoon view gives Goseong a different visual rhythm from the DMZ museum and beach slots, making the northern coast feel ecological and slow.',
+        sourceLabel: 'Wikimedia Commons Hwajinpo Lake',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Hwajinpo_Lake.jpg',
+        licenseLabel: 'CC BY-SA 4.0 reference',
       },
     ],
     officialReferences: [
@@ -1993,13 +2030,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     ],
     visuals: [
       { eyebrow: 'Final release', title: 'Sokcho turns the pass into sea air', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho Beach and East Sea reference', body: 'The sea image matters because Route 3 should end with relief after the mountain logic.', sourceLabel: 'VisitKorea Seorak Special Tourist Zone', sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222', licenseLabel: 'Official reference' },
-      { eyebrow: 'Food arrival', title: 'The market makes Sokcho human', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho market and harbor food reference placeholder', body: 'The page needs a market visual because food converts the endpoint into a lived arrival.', sourceLabel: 'Sokcho Tourist and Fishery Market', sourceHref: 'https://sokcho-central.co.kr', licenseLabel: 'Official reference' },
-      { eyebrow: 'Postwar memory', title: 'Abai Village adds memory to the coast', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho Abai Village memory reference placeholder', body: 'Abai Village keeps Sokcho from becoming generic: the final city holds migration memory as well as seafood and beach stays.', sourceLabel: 'Abai Village reference', sourceHref: 'https://en.wikipedia.org/wiki/Abai_Village', licenseLabel: 'Reference' },
+      { eyebrow: 'Food arrival', title: 'The market makes Sokcho human', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fish%20market%20in%20Sokcho.jpg', alt: 'Sokcho Tourist and Fishery Market seafood stalls', body: 'The market visual converts the endpoint into a lived arrival: seafood, dinner decisions, and local evening movement after the mountain crossing.', sourceLabel: 'Wikimedia Commons Sokcho Fish Market', sourceHref: 'https://commons.wikimedia.org/wiki/File:Fish_market_in_Sokcho.jpg', licenseLabel: 'CC BY-SA 4.0 reference' },
+      { eyebrow: 'Postwar memory', title: 'Abai Village adds memory to the coast', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Abai%20village%20-%205433869814.jpg', alt: 'Abai Village in Sokcho near the harbor channel', body: 'Abai Village keeps Sokcho from becoming generic: the final city holds migration memory, harbor life, and food culture as well as beach stays.', sourceLabel: 'Wikimedia Commons Abai Village', sourceHref: 'https://commons.wikimedia.org/wiki/File:Abai_village_-_5433869814.jpg', licenseLabel: 'CC BY 2.0 reference' },
     ],
     officialReferences: [
       { eyebrow: 'Official tourism source', title: 'Seorak Special Tourist Zone ties Sokcho to mountain and sea', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho and Seoraksan reference', body: 'VisitKorea frames the Seorak Special Tourist Zone around Seoraksan, Sokcho, beaches, and nearby coastal attractions, supporting Sokcho as a mountain-to-sea arrival.', sourceLabel: 'VisitKorea Seorak Special Tourist Zone', sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222', licenseLabel: 'Official reference', usageNote: 'Use as the core source for Seoraksan and East Sea arrival logic.' },
-      { eyebrow: 'Market source', title: 'Sokcho market supports the food-arrival layer', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho market reference', body: 'The central market source supports Sokcho as seafood, snack, and local evening city rather than only a scenic endpoint.', sourceLabel: 'Sokcho Tourist and Fishery Market', sourceHref: 'https://sokcho-central.co.kr', licenseLabel: 'Official reference', usageNote: 'Use for market, food, and street-level arrival.' },
-      { eyebrow: 'Memory source', title: 'Abai Village keeps postwar memory visible', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Abai Village reference', body: 'Abai Village is associated with displaced people from Hamgyong Province after the Korean War and gives Sokcho a human memory layer beyond tourism.', sourceLabel: 'Abai Village reference', sourceHref: 'https://en.wikipedia.org/wiki/Abai_Village', licenseLabel: 'Reference', usageNote: 'Replace with stronger official/local source when available.' },
+      { eyebrow: 'Market source', title: 'Sokcho market supports the food-arrival layer', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fish%20market%20in%20Sokcho.jpg', alt: 'Sokcho market seafood reference', body: 'The central market source supports Sokcho as seafood, snack, and local evening city rather than only a scenic endpoint.', sourceLabel: 'VisitKorea Sokcho Tourism and Fisheries Market', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=174444', licenseLabel: 'Official reference', usageNote: 'Use for market, food, and street-level arrival.' },
+      { eyebrow: 'Memory source', title: 'Abai Village keeps postwar memory visible', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Abai%20village%20-%205433869814.jpg', alt: 'Abai Village reference in Sokcho', body: 'Abai Village is associated with displaced people from Hamgyong Province after the Korean War and gives Sokcho a human memory layer beyond tourism.', sourceLabel: 'Abai Village reference', sourceHref: 'https://en.wikipedia.org/wiki/Abai_Village', licenseLabel: 'Reference', usageNote: 'Use with respectful postwar-memory framing.' },
     ],
     points: [
       { id: 'sokcho-beach', name: 'Sokcho Beach', kind: 'stay', areaLabel: 'Sea arrival', coordinates: { lat: 38.1894, lng: 128.6031 }, summary: 'The simplest final-night zone for travelers who want the sea to be visible and easy.', note: 'Use this for comfort-led endings.' },
@@ -4684,13 +4721,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Mountain depth',
         title: 'Odaesan keeps Pyeongchang older than the Games',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
-        alt: 'Pyeongchang highland placeholder reference for Odaesan context',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Pyeongchang-Woljeongsa-01.jpg',
+        alt: 'Woljeongsa Temple in Pyeongchang on Odaesan Mountain',
         body:
           'Odaesan and Woljeongsa are the reason the city can carry more than ski and Olympic keywords.',
-        sourceLabel: 'VISITKOREA Odaesan reference',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=110675',
-        licenseLabel: 'External reference',
+        sourceLabel: 'Wikimedia Commons Woljeongsa',
+        sourceHref: 'https://commons.wikimedia.org/wiki/File:Korea-Pyeongchang-Woljeongsa-01.jpg',
+        licenseLabel: 'CC BY 2.0 reference',
       },
       {
         eyebrow: 'Route handoff',

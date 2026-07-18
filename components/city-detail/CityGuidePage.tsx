@@ -15,7 +15,8 @@ import CityMediaReferences from '@/components/city-detail/CityMediaReferences';
 import HotelBookingCard from '@/components/routes/HotelBookingCard';
 import { getCitySupportProfile } from '@/data/citySupportProfiles';
 import { getCitySeoKeywordProfile } from '@/data/citySeoKeywords';
-import { getCityImagePipeline } from '@/data/cityImagePipeline';
+import { getCityImageSlots } from '@/data/cityImageSlots';
+import { getAllRouteData } from '@/data/routeStopovers';
 import { getCityQualityPackStatus } from '@/data/reviewedCityQualityRegistry';
 import {
   buildOpenStreetMapDirectionsUrl,
@@ -74,6 +75,22 @@ function formatCityLabel(citySlug: string): string {
     .split('-')
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(' ');
+}
+
+function cleanCityTitle(value: string, citySlug: string): string {
+  const title = stripHtml(value)
+    .replace(/\s+Travel Guide(?:\s+[\u2014-]\s+Road\s*To\s*Korea)?$/i, '')
+    .replace(/\s+City Guide(?:\s+[\u2014-]\s+Road\s*To\s*Korea)?$/i, '')
+    .trim();
+  return title || formatCityLabel(citySlug);
+}
+
+function getRouteStopoverContext(citySlug: string) {
+  for (const route of getAllRouteData()) {
+    const stopover = route.transports.car.stopovers.find((item) => item.citySlug === citySlug);
+    if (stopover) return { route, stopover };
+  }
+  return null;
 }
 
 function buildPointDirectionsUrl(lat: number, lng: number) {
@@ -145,7 +162,9 @@ export async function generateMetadata({
   const seoProfile = getCitySeoKeywordProfile(city);
   if (!cityData && !localCityData) return { title: 'Not Found' };
 
-  const title = cityData ? stripHtml(cityData.title.rendered) : localCityData?.name ?? 'City Guide';
+  const title = cityData
+    ? cleanCityTitle(cityData.title.rendered, city)
+    : localCityData?.name ?? 'City Guide';
   const description =
     cityData
       ? buildStoryExcerpt(cityData.excerpt.rendered, cityData.content.rendered) ||
@@ -201,15 +220,24 @@ export default async function CityPage({
   }
 
   const cityName = cityData
-    ? stripHtml(cityData.title.rendered) || formatCityLabel(citySlug)
+    ? cleanCityTitle(cityData.title.rendered, citySlug)
     : localCityData?.name || formatCityLabel(citySlug);
   const description = cityData
     ? buildStoryExcerpt(cityData.excerpt.rendered, cityData.content.rendered)
     : localCityData?.description || '';
   const rawContent = cityData?.content.rendered || '';
   const heroImage = cityData ? getHeroImageFromHtml(rawContent) : null;
+  const cityImageSlots = getCityImageSlots(citySlug);
   const localDestinations = destinations.filter((dest) => dest.city.toLowerCase() === citySlug.toLowerCase());
   const routeOption = getSeoulRouteOptionBySlug(citySlug);
+  const routeStopoverContext = getRouteStopoverContext(citySlug);
+  const routeConnectionLabel = routeOption?.transport
+    ?? routeStopoverContext?.route.routeLabel
+    ?? 'Regional connection';
+  const routeTravelWindow = routeOption?.travelTime
+    ?? (routeStopoverContext
+      ? `${routeStopoverContext.stopover.cumulativeTime} from ${routeStopoverContext.route.from}`
+      : 'Compare rail, bus, and driving time before departure.');
   const prefersGeneratedRouteHero =
     Boolean(routeOption) && localCityData?.heroImage?.startsWith('/images/routes/route-1/');
   const localEditorialImage = getEditorialImageForCity(citySlug);
@@ -218,11 +246,12 @@ export default async function CityPage({
     : prefersGeneratedRouteHero
       ? localCityData?.heroImage || localDestinations[0]?.imagePath || null
       : localDestinations[0]?.imagePath || localCityData?.heroImage || null;
-  const heroImageUrl = localEditorialImage ?? getSafeEditorialImage(heroCandidate, citySlug);
+  const heroImageUrl = cityImageSlots?.slots.hero.asset
+    || localEditorialImage
+    || getSafeEditorialImage(heroCandidate, citySlug);
   const supportProfile = getCitySupportProfile(citySlug);
   const storyTemplate = getRouteCityStoryTemplate(citySlug);
   const seoProfile = getCitySeoKeywordProfile(citySlug);
-  const imagePipeline = getCityImagePipeline(citySlug);
   const qualityPackStatus = getCityQualityPackStatus(citySlug);
   const transportGuidance = buildTransportGuidance(routeOption?.transport);
   const tags = [
@@ -280,9 +309,26 @@ export default async function CityPage({
     });
   }
 
-  if (supportProfile) {
+  if (cityImageSlots) {
     cityVisualStrip.push(
-      ...supportProfile.visuals.slice(0, 2).map((visual) => ({
+      {
+        eyebrow: 'Route landscape',
+        title: `${cityName} on the road`,
+        body: cityImageSlots.slots.route.brief,
+        image: cityImageSlots.slots.route.asset,
+      },
+      {
+        eyebrow: 'Street level',
+        title: `${cityName} up close`,
+        body: cityImageSlots.slots.street.brief,
+        image: cityImageSlots.slots.street.asset,
+      },
+    );
+  }
+
+  if (supportProfile && cityVisualStrip.length < 3) {
+    cityVisualStrip.push(
+      ...supportProfile.visuals.slice(0, 3 - cityVisualStrip.length).map((visual) => ({
         eyebrow: visual.eyebrow,
         title: visual.title,
         body: visual.body,
@@ -301,6 +347,56 @@ export default async function CityPage({
       }))
     );
   }
+
+  const usedPageImageUrls = new Set<string>();
+  const uniqueCityVisualStrip = cityVisualStrip.filter((visual) => {
+    if (!visual.image || usedPageImageUrls.has(visual.image)) return false;
+    usedPageImageUrls.add(visual.image);
+    return true;
+  });
+  const licensedBodyVisuals = cityImageSlots
+    ? [
+        {
+          title: `The older layers of ${cityName}`,
+          eyebrow: 'Historical context',
+          image: cityImageSlots.slots.history.asset,
+          alt: `${cityName} historical travel context`,
+          body: cityImageSlots.slots.history.brief,
+          sourceLabel: cityImageSlots.slots.history.asset.startsWith('/images/clipartkorea/')
+            ? 'ClipartKorea'
+            : 'Editorial source',
+          sourceHref: cityImageSlots.slots.history.sourceHref,
+          licenseLabel: cityImageSlots.slots.history.asset.startsWith('/images/clipartkorea/')
+            ? 'Licensed editorial photo'
+            : 'External reference',
+        },
+        {
+          title: `${cityName} in the present tense`,
+          eyebrow: 'Present-day identity',
+          image: cityImageSlots.slots.present.asset,
+          alt: `${cityName} present-day travel context`,
+          body: cityImageSlots.slots.present.brief,
+          sourceLabel: cityImageSlots.slots.present.asset.startsWith('/images/clipartkorea/')
+            ? 'ClipartKorea'
+            : 'Editorial source',
+          sourceHref: cityImageSlots.slots.present.sourceHref,
+          licenseLabel: cityImageSlots.slots.present.asset.startsWith('/images/clipartkorea/')
+            ? 'Licensed editorial photo'
+            : 'External reference',
+        },
+      ]
+    : [];
+  const bodySupportVisuals = [...licensedBodyVisuals, ...(supportProfile?.visuals ?? [])].map((visual) => {
+    const showImage = Boolean(visual.image) && !usedPageImageUrls.has(visual.image);
+    if (showImage) usedPageImageUrls.add(visual.image);
+    return { ...visual, showImage };
+  });
+  const localGalleryForBody = localGallery.map((spot) => {
+    const showImage = Boolean(spot.image) && !usedPageImageUrls.has(spot.image);
+    if (showImage) usedPageImageUrls.add(spot.image);
+    return { ...spot, showImage };
+  });
+  const mediaReferenceExcludedImages = [...usedPageImageUrls];
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -371,10 +467,10 @@ export default async function CityPage({
                     Best Way From Seoul
                   </p>
                   <p className="mt-3 font-serif text-2xl text-stone-950">
-                    {routeOption?.transport ?? 'Transit soon'}
+                    {routeConnectionLabel}
                   </p>
                   <p className="mt-3 text-sm leading-7 text-stone-600">
-                    {routeOption?.travelTime ?? 'Timing is being added to this destination.'}
+                    {routeTravelWindow}
                   </p>
                 </div>
                 <div className="rounded-[1.5rem] border border-stone-200 bg-white p-5">
@@ -594,13 +690,13 @@ export default async function CityPage({
                 </div>
               )}
 
-              {cityVisualStrip.length > 0 && (
+              {uniqueCityVisualStrip.length > 0 && (
                 <div className="mt-8">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-500">
                     Visual Preview
                   </p>
                   <div className="mt-5 grid gap-4 md:grid-cols-3">
-                    {cityVisualStrip.slice(0, 3).map((visual) => (
+                    {uniqueCityVisualStrip.slice(0, 3).map((visual) => (
                       <article
                         key={`${visual.eyebrow}-${visual.title}`}
                         className="overflow-hidden border border-stone-200 bg-white"
@@ -654,7 +750,7 @@ export default async function CityPage({
                     Travel Window
                   </p>
                   <p className="mt-3 font-serif text-2xl text-stone-950">
-                    {routeOption?.travelTime ?? 'Timing in progress'}
+                    {routeTravelWindow}
                   </p>
                   <p className="mt-3 text-sm leading-7 text-stone-600">{transportGuidance.lowestStress}</p>
                 </div>
@@ -852,24 +948,26 @@ export default async function CityPage({
                 </div>
 
                 <div className="mt-8 grid gap-6 xl:grid-cols-3">
-                  {supportProfile.visuals.map((visual) => (
+                  {bodySupportVisuals.map((visual) => (
                     <article
                       key={visual.title}
                       className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_20px_60px_rgba(34,30,25,0.06)]"
                     >
-                      <div className="relative aspect-[4/5]">
-                        <Image
-                          src={visual.image}
-                          alt={visual.alt}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                          className="object-cover"
-                        />
-                        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.04),rgba(17,17,17,0.48))]" />
-                        <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.26em] text-white backdrop-blur">
-                          {visual.eyebrow}
+                      {visual.showImage && (
+                        <div className="relative aspect-[4/5]">
+                          <Image
+                            src={visual.image}
+                            alt={visual.alt}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                            className="object-cover"
+                          />
+                          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.04),rgba(17,17,17,0.48))]" />
+                          <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.26em] text-white backdrop-blur">
+                            {visual.eyebrow}
+                          </div>
                         </div>
-                      </div>
+                      )}
                       <div className="p-6">
                         <h3 className="font-serif text-2xl leading-tight text-stone-950">
                           {visual.title}
@@ -891,39 +989,8 @@ export default async function CityPage({
                 <CityMediaReferences
                   officialReferences={supportProfile.officialReferences}
                   videoReferences={supportProfile.videoReferences}
+                  excludedImageUrls={mediaReferenceExcludedImages}
                 />
-
-                {imagePipeline.length > 0 && (
-                  <div className="mt-8 rounded-[1.75rem] border border-stone-200 bg-white p-6">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                      Image Pipeline
-                    </p>
-                    <h3 className="mt-3 font-serif text-3xl leading-tight text-stone-950">
-                      Every image slot has a production purpose.
-                    </h3>
-                    <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
-                      {imagePipeline.map((item) => (
-                        <a
-                          key={item.slot}
-                          href={item.sourceHref}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="rounded-[1rem] border border-stone-200 bg-stone-50/80 p-4 transition-colors hover:border-stone-400 hover:bg-white"
-                        >
-                          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-500">
-                            {item.slot}
-                          </p>
-                          <p className="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-stone-700">
-                            {item.priority}
-                          </p>
-                          <p className="mt-3 line-clamp-4 text-xs leading-5 text-stone-600">
-                            {item.brief}
-                          </p>
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                )}
 
                 <div className="mt-8 grid gap-4 xl:grid-cols-3">
                   {supportProfile.sections.map((section) => (
@@ -1114,20 +1181,22 @@ export default async function CityPage({
                       Key Districts
                     </p>
                     <div className="mt-8 grid gap-6 md:grid-cols-2">
-                      {localGallery.slice(0, 4).map((spot) => (
+                      {localGalleryForBody.slice(0, 4).map((spot) => (
                         <article
                           key={spot.id}
                           className="overflow-hidden rounded-[1.5rem] border border-stone-200 bg-stone-50/80"
                         >
-                          <div className="relative aspect-[4/3]">
-                            <Image
-                              src={spot.image}
-                              alt={spot.name}
-                              fill
-                              sizes="(max-width: 768px) 100vw, 50vw"
-                              className="object-cover"
-                            />
-                          </div>
+                          {spot.showImage && (
+                            <div className="relative aspect-[4/3]">
+                              <Image
+                                src={spot.image}
+                                alt={spot.name}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover"
+                              />
+                            </div>
+                          )}
                           <div className="p-5">
                             <h4 className="font-serif text-2xl text-stone-950">{spot.name}</h4>
                             <p className="mt-3 text-sm leading-7 text-stone-600">{spot.description}</p>

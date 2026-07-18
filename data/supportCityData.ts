@@ -185,7 +185,7 @@ export const supportCityData: Record<string, LocalCityData> = {
     name: 'Gapyeong',
     slug: 'gapyeong',
     headline: 'The River-Lake Escape',
-    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nami%20Island%2C%20Korea.jpg',
+    heroImage: '/images/clipartkorea/gapyeong/tc00240064479-jaraseom-namiseom-aerial.jpg',
     description: 'The first leisure gateway where Seoul softens into Bukhangang river air, islands, camping, and lakeside movement.',
     culturalInsight:
       'Gapyeong matters on Route 3 because it lets the northern route begin gently. Before DMZ memory and Seoraksan passes arrive, the line first becomes river, lake, and weekend escape.',
@@ -195,7 +195,7 @@ export const supportCityData: Record<string, LocalCityData> = {
     name: 'Chuncheon',
     slug: 'chuncheon',
     headline: 'The Northern Lakeside Anchor',
-    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chuncheon%20Soyang%20Bridge.jpg',
+    heroImage: '/images/clipartkorea/chuncheon/tc00240003686-soyang-river-uiam-lake.jpg',
     description: 'A lakeside city of dakgalbi, river islands, Soyang water, and enough urban rhythm to anchor the northern route.',
     culturalInsight:
       'Chuncheon gives Route 3 its first real city chapter. It keeps the line from becoming only scenery by adding food identity, lake culture, and a practical overnight before the route turns quieter toward Yanggu.',
@@ -205,7 +205,7 @@ export const supportCityData: Record<string, LocalCityData> = {
     name: 'Yanggu',
     slug: 'yanggu',
     headline: 'The Quiet Borderland Chapter',
-    heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath:Punchbowl%20Korea.jpg',
+    heroImage: '/images/clipartkorea/yanggu/tc00240007625-yanggu-basin.jpg',
     description: 'A DMZ-adjacent mountain county where Punch Bowl geography and war memory give Route 3 its northern gravity.',
     culturalInsight:
       'Yanggu is the reason Route 3 feels different from a pretty road to Sokcho. It brings borderland silence, Korean War memory, and the feeling that northern geography is carrying history.',
@@ -245,7 +245,7 @@ export const supportCityData: Record<string, LocalCityData> = {
     name: 'Jecheon',
     slug: 'jecheon',
     headline: 'The Inland Threshold',
-    heroImage: '/images/placeholder.png',
+    heroImage: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Uirimji_Reservoir_%284%29_%2833526672911%29.jpg',
     description: 'A mountain-edged inland city that helps Route 1 turn away from the default corridor and prepare for deeper country.',
     culturalInsight:
       'Jecheon belongs on the route as a threshold city. Its value is not only scenery, but the feeling that the trip is leaving the capital corridor and entering a more interior Korea shaped by lakes, mountain approaches, and slower movement.',

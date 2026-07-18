@@ -1,0 +1,735 @@
+{
+  "generatedAt": "2026-07-18T09:09:49.342Z",
+  "summary": {
+    "regions": 52,
+    "localImages": 474,
+    "appliedSlots": 250,
+    "reserveImages": 224,
+    "regionsWithFiveUniqueSlots": 51,
+    "duplicateSlotRegions": [
+      "gumi"
+    ]
+  },
+  "cities": [
+    {
+      "slug": "yeoju",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240112611.jpg",
+        "tc00780003338.jpg",
+        "cm270028469.jpg",
+        "cm270028343.jpg",
+        "tc00240116550.jpg"
+      ]
+    },
+    {
+      "slug": "cheonan",
+      "availableLocal": 8,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240110360.jpg",
+        "tc00230000491.jpg",
+        "tc02290000599.jpg",
+        "tc02290000595.jpg",
+        "tc00240108260.jpg"
+      ]
+    },
+    {
+      "slug": "daejeon",
+      "availableLocal": 9,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm26002727.jpg",
+        "cm260018326.jpg",
+        "tc00240115988.jpg",
+        "tc00240031823.jpg",
+        "cm270033926.jpg"
+      ]
+    },
+    {
+      "slug": "chungju",
+      "availableLocal": 7,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240036197.jpg",
+        "cm270023269.jpg",
+        "tip2500021932.jpg",
+        "tip004t107658.jpg",
+        "tc00240085268.jpg"
+      ]
+    },
+    {
+      "slug": "mungyeong",
+      "availableLocal": 8,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm260022428.jpg",
+        "cm280021904.jpg",
+        "tc00240100625.jpg",
+        "cm260021026.jpg",
+        "cm260021021.jpg"
+      ]
+    },
+    {
+      "slug": "andong",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm27007157.jpg",
+        "cm26005208.jpg",
+        "tc00240004359.jpg",
+        "tc00240004386.jpg",
+        "tc00240028813.jpg"
+      ]
+    },
+    {
+      "slug": "sangju",
+      "availableLocal": 13,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240014867.jpg",
+        "tc03140003036.jpg",
+        "tc00240057882.jpg",
+        "tc00240013868.jpg",
+        "tc00240095232.jpg"
+      ]
+    },
+    {
+      "slug": "gumi",
+      "availableLocal": 3,
+      "mappedLocal": 3,
+      "uniqueSlotAssets": 4,
+      "duplicateSlots": [
+        "street"
+      ],
+      "selectedFiles": [
+        "tc00240093236.jpg",
+        "tc00240103032.jpg",
+        "tc00240110615.jpg"
+      ]
+    },
+    {
+      "slug": "daegu",
+      "availableLocal": 6,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240077166.jpg",
+        "tc00240077172.jpg",
+        "cm280033716.jpg",
+        "cm26003055.jpg",
+        "cm280033718.jpg"
+      ]
+    },
+    {
+      "slug": "changnyeong",
+      "availableLocal": 9,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240077354.jpg",
+        "tc00240055464.jpg",
+        "tc02460001095.jpg",
+        "tc00240021759.jpg",
+        "tc00240021757.jpg"
+      ]
+    },
+    {
+      "slug": "miryang",
+      "availableLocal": 6,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240109961.jpg",
+        "tc00240052339.jpg",
+        "tc00240021746.jpg",
+        "tc00240021748.jpg",
+        "tc00240021747.jpg"
+      ]
+    },
+    {
+      "slug": "gyeongju",
+      "availableLocal": 15,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm27013557.jpg",
+        "tc00240010970.jpg",
+        "tc02520000276.jpg",
+        "tc00240032704.jpg",
+        "cm280039495.jpg"
+      ]
+    },
+    {
+      "slug": "pohang",
+      "availableLocal": 15,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm27015052.jpg",
+        "tc00240033945.jpg",
+        "tc02840000757.jpg",
+        "cm26014070.jpg",
+        "tc00240107970.jpg"
+      ]
+    },
+    {
+      "slug": "yeongdeok",
+      "availableLocal": 7,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240078251.jpg",
+        "tc02820009613.jpg",
+        "tc02640002191.jpg",
+        "tc08070000556.jpg",
+        "tc08070000555.jpg"
+      ]
+    },
+    {
+      "slug": "uljin",
+      "availableLocal": 9,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc08070000559.jpg",
+        "tc08070000561.jpg",
+        "tc00240093631.jpg",
+        "tc00240013562.jpg",
+        "tc00240050954.jpg"
+      ]
+    },
+    {
+      "slug": "wonju",
+      "availableLocal": 7,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240110506.jpg",
+        "tc08110000069.jpg",
+        "tc00240101280.jpg",
+        "cm270031618.jpg",
+        "tc00240005519.jpg"
+      ]
+    },
+    {
+      "slug": "pyeongchang",
+      "availableLocal": 6,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240025336.jpg",
+        "tc00240067283.jpg",
+        "tc00240056966.jpg",
+        "tc00240035190.jpg",
+        "tc00240035191.jpg"
+      ]
+    },
+    {
+      "slug": "daegwallyeong",
+      "availableLocal": 15,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240026529.jpg",
+        "tc00240034693.jpg",
+        "tc00240027944.jpg",
+        "tc00240047350.jpg",
+        "tip249t014125.jpg"
+      ]
+    },
+    {
+      "slug": "gangneung",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc02820005412.jpg",
+        "tc00240033488.jpg",
+        "tip249t012173.jpg",
+        "tip249t012057.jpg",
+        "tc00240108021.jpg"
+      ]
+    },
+    {
+      "slug": "jecheon",
+      "availableLocal": 10,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240091352.jpg",
+        "tc00240007277.jpg",
+        "tc00240002218.jpg",
+        "cm28002148.jpg",
+        "tip250t007309.jpg"
+      ]
+    },
+    {
+      "slug": "yeongwol",
+      "availableLocal": 15,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc08070000607.jpg",
+        "tc00240091252.jpg",
+        "tc00240042285.jpg",
+        "tc08070000622.jpg",
+        "tc00240051811.jpg"
+      ]
+    },
+    {
+      "slug": "jeongseon",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00230004262.jpg",
+        "tc00240086914.jpg",
+        "tc00230000849.jpg",
+        "tc00240019187.jpg",
+        "tc08070000190.jpg"
+      ]
+    },
+    {
+      "slug": "taebaek",
+      "availableLocal": 5,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240045574.jpg",
+        "tc00240038104.jpg",
+        "tip249t015554.jpg",
+        "tc00240072307.jpg",
+        "tc08070000673.jpg"
+      ]
+    },
+    {
+      "slug": "gapyeong",
+      "availableLocal": 5,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240064479-jaraseom-namiseom-aerial.jpg",
+        "cm27004158-gyeongchun-train.jpg",
+        "cm270021119-unaksan-autumn.jpg",
+        "tc00240001915-namiseom-ferry.jpg",
+        "tc00240110390-petit-france.jpg"
+      ]
+    },
+    {
+      "slug": "chuncheon",
+      "availableLocal": 5,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240003686-soyang-river-uiam-lake.jpg",
+        "tc00240008606-soyanggang-maiden-sunrise.jpg",
+        "cm270031335-soyanggang-dam.jpg",
+        "tc00240031018-chuncheon-cityscape.jpg",
+        "tc00240029873-uiamho-cycling.jpg"
+      ]
+    },
+    {
+      "slug": "yanggu",
+      "availableLocal": 5,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240036469-dutaeyeon-autumn.jpg",
+        "tc00240030297-siberian-aster.jpg",
+        "tc00240118626-punchbowl-village.jpg",
+        "tc00240007625-yanggu-basin.jpg",
+        "cm28002652-paroho-bridge.jpg"
+      ]
+    },
+    {
+      "slug": "inje",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240029370.jpg",
+        "tc00780002451.jpg",
+        "tc03950002309.jpg",
+        "trd032tg01744.jpg",
+        "tc00240041633.jpg"
+      ]
+    },
+    {
+      "slug": "goseong",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240009931.jpg",
+        "tc00240102435.jpg",
+        "tc00240088016.jpg",
+        "tc07690000390.jpg",
+        "tc09820000015.jpg"
+      ]
+    },
+    {
+      "slug": "sokcho",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240020235.jpg",
+        "tc00240087724.jpg",
+        "tc00240034312.jpg",
+        "tc00240001369.jpg",
+        "tc00240087714.jpg"
+      ]
+    },
+    {
+      "slug": "yangyang",
+      "availableLocal": 9,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240092128.jpg",
+        "tc00240092130.jpg",
+        "tc00240001341.jpg",
+        "cm28011380.jpg",
+        "tc00240092131.jpg"
+      ]
+    },
+    {
+      "slug": "donghae",
+      "availableLocal": 9,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00480002185.jpg",
+        "tc00520000867.jpg",
+        "tc00240042710.jpg",
+        "tip2440005212.jpg",
+        "tip2440005209.jpg"
+      ]
+    },
+    {
+      "slug": "samcheok",
+      "availableLocal": 14,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240024248.jpg",
+        "tc00330000896.jpg",
+        "tc00240104715.jpg",
+        "tc00240011377.jpg",
+        "tc08070000152.jpg"
+      ]
+    },
+    {
+      "slug": "ulsan",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240031101.jpg",
+        "tc00240097252.jpg",
+        "cm27010493.jpg",
+        "cm27010497.jpg",
+        "tc00240089478.jpg"
+      ]
+    },
+    {
+      "slug": "gongju",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00230002475.jpg",
+        "tip249t005393.jpg",
+        "cm28007690.jpg",
+        "cm28003557.jpg",
+        "cm260019044.jpg"
+      ]
+    },
+    {
+      "slug": "jeonju",
+      "availableLocal": 9,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm260017697.jpg",
+        "cm260017696.jpg",
+        "tc00240114961.jpg",
+        "tc00240018923.jpg",
+        "tc00240034484.jpg"
+      ]
+    },
+    {
+      "slug": "gwangju",
+      "availableLocal": 8,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm280036334.jpg",
+        "tc00240112057.jpg",
+        "tc08000000563.jpg",
+        "tc00240034737.jpg",
+        "tc00240018775.jpg"
+      ]
+    },
+    {
+      "slug": "imsil",
+      "availableLocal": 13,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240104173.jpg",
+        "tc00240109540.jpg",
+        "tc00240015651.jpg",
+        "tc00240115551.jpg",
+        "tc02820004615.jpg"
+      ]
+    },
+    {
+      "slug": "namwon",
+      "availableLocal": 6,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240032982.jpg",
+        "tc00240032254.jpg",
+        "cm280031567.jpg",
+        "cm28006317.jpg",
+        "tc00240070769.jpg"
+      ]
+    },
+    {
+      "slug": "suncheon",
+      "availableLocal": 15,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc02820006621.jpg",
+        "tc02820004910.jpg",
+        "tc00240036519.jpg",
+        "tc00240036561.jpg",
+        "tc00240051975.jpg"
+      ]
+    },
+    {
+      "slug": "yeosu",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240046415.jpg",
+        "tc00240010815.jpg",
+        "cm27003121.jpg",
+        "cm28006447.jpg",
+        "cm27009408.jpg"
+      ]
+    },
+    {
+      "slug": "incheon",
+      "availableLocal": 15,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240015561.jpg",
+        "tc00240039315.jpg",
+        "tc00240003208.jpg",
+        "tc00240110451.jpg",
+        "tc00240065755.jpg"
+      ]
+    },
+    {
+      "slug": "suwon",
+      "availableLocal": 8,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm27006035.jpg",
+        "tc00240050756.jpg",
+        "tc00240072044.jpg",
+        "tc00240070949.jpg",
+        "tc00240039337.jpg"
+      ]
+    },
+    {
+      "slug": "seosan",
+      "availableLocal": 12,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240028151.jpg",
+        "tc00240027848.jpg",
+        "cm270022207.jpg",
+        "cm270022199.jpg",
+        "tc08110002998.jpg"
+      ]
+    },
+    {
+      "slug": "boryeong",
+      "availableLocal": 9,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240074399.jpg",
+        "tc00240093281.jpg",
+        "tc00240093280.jpg",
+        "tc00240116729.jpg",
+        "ta03330003733.jpg"
+      ]
+    },
+    {
+      "slug": "gunsan",
+      "availableLocal": 6,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240028924.jpg",
+        "tc00240027689.jpg",
+        "tc01090000012.jpg",
+        "cm27011175.jpg",
+        "tc00240008389.jpg"
+      ]
+    },
+    {
+      "slug": "mokpo",
+      "availableLocal": 11,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240029851.jpg",
+        "tc00240097754.jpg",
+        "tc02460000729.jpg",
+        "tc00230001383.jpg",
+        "cm27002761.jpg"
+      ]
+    },
+    {
+      "slug": "haenam",
+      "availableLocal": 4,
+      "mappedLocal": 4,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240076791.jpg",
+        "tc00240015668.jpg",
+        "tc08110001899.jpg",
+        "tc00240034550.jpg"
+      ]
+    },
+    {
+      "slug": "wando",
+      "availableLocal": 2,
+      "mappedLocal": 2,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240072552.jpg",
+        "cm27015648.jpg"
+      ]
+    },
+    {
+      "slug": "boseong",
+      "availableLocal": 4,
+      "mappedLocal": 4,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "cm28004464-boseong-green-tea-terraces.jpg",
+        "cm28010223-daehan-dawon.jpg",
+        "tip250t021276-korea-tea-museum.jpg",
+        "tc00240036428-beolgyo-mudflat.jpg"
+      ]
+    },
+    {
+      "slug": "namhae",
+      "availableLocal": 5,
+      "mappedLocal": 5,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240031341-namhae-german-village.jpg",
+        "cm27002353.jpg",
+        "tc00240008028.jpg",
+        "tc00240046050.jpg",
+        "tc00240008460.jpg"
+      ]
+    },
+    {
+      "slug": "tongyeong",
+      "availableLocal": 4,
+      "mappedLocal": 4,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc07690000940.jpg",
+        "tc00240114502.jpg",
+        "cm28003289.jpg",
+        "tc02820006696.jpg"
+      ]
+    },
+    {
+      "slug": "geoje",
+      "availableLocal": 3,
+      "mappedLocal": 3,
+      "uniqueSlotAssets": 5,
+      "duplicateSlots": [],
+      "selectedFiles": [
+        "tc00240067406.jpg",
+        "tc00240033922.jpg",
+        "tc00240005192.jpg"
+      ]
+    }
+  ]
+}

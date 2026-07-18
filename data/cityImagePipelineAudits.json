@@ -19,94 +19,94 @@
     },
     "gongju": {
       "routeSlug": "route-5",
-      "priority": "replace-soon",
-      "reason": "Baekje gateway needs stronger verified Gongsanseong, royal tomb, Magoksa, river, and old-town imagery.",
+      "priority": "publish-ready",
+      "reason": "Gongju now has separate Baekje, Magoksa, Geumgang, and route-handoff imagery instead of one repeated fortress placeholder.",
       "mustProve": ["Baekje", "Gongsanseong", "Magoksa", "Geumgang", "Jeonju handoff"],
-      "nextAction": "Replace generic source references with specific VISITKOREA, UNESCO, or public-domain image references."
+      "nextAction": "Later improvement: add a dedicated old-town or market street photo if available."
     },
     "jeonju": {
       "routeSlug": "route-5",
-      "priority": "replace-soon",
-      "reason": "The route depends on Jeonju as the high-confidence food and hanok overnight, so the images must not feel interchangeable.",
+      "priority": "publish-ready",
+      "reason": "Jeonju now has a local Hanok Village hero plus separate food and market references for the overnight story.",
       "mustProve": ["Hanok Village", "bibimbap", "makgeolli", "market streets", "Namwon or Gwangju handoff"],
-      "nextAction": "Prioritize a real Hanok Village hero and separate food/street references."
+      "nextAction": "Later improvement: add a makgeolli alley-specific image if a reliable source is found."
     },
     "gwangju": {
       "routeSlug": "route-5",
-      "priority": "replace-soon",
-      "reason": "Gwangju must visually lead with modern Korean history and May 18 civic memory before the culture-city layer.",
+      "priority": "publish-ready",
+      "reason": "Gwangju now leads with May 18 civic memory and separates the culture, mountain, and street layers.",
       "mustProve": ["May 18 Democratic Uprising memory", "May 18 National Cemetery", "Asia Culture Center", "Mudeungsan", "Suncheon handoff"],
-      "nextAction": "Use respectful May 18 memorial imagery for hero/history and keep contemporary culture as the present slot."
+      "nextAction": "Later improvement: replace any Commons fallback with official memorial photography if licensing allows."
     },
     "imsil": {
       "routeSlug": "route-5",
-      "priority": "replace-soon",
-      "reason": "Imsil is a branch stop, so its imagery must make the cheese-country story immediately believable.",
+      "priority": "publish-ready",
+      "reason": "Imsil now has a clear cheese-country visual set plus Okjeongho for the rural route layer.",
       "mustProve": ["Imsil cheese", "Cheese Theme Park", "Okjeongho", "rural Jeolla", "Namwon handoff"],
-      "nextAction": "Confirm Cheese Theme Park and Okjeongho references before upgrading any slot to ready."
+      "nextAction": "Later improvement: source a dedicated rural cafe or cheese-shop street image."
     },
     "namwon": {
       "routeSlug": "route-5",
-      "priority": "replace-soon",
-      "reason": "Namwon has a clear story, but the page needs separate proof for Chunhyang, Gwanghalluwon, Jirisan, and town texture.",
+      "priority": "publish-ready",
+      "reason": "Namwon now has a local Gwanghalluwon hero plus Jirisan route-depth imagery for the Chunhyang-to-mountain handoff.",
       "mustProve": ["Chunhyang", "Gwanghalluwon", "Jirisan", "local streets", "Suncheon handoff"],
-      "nextAction": "Separate garden/story imagery from mountain and street imagery."
+      "nextAction": "Later improvement: add a food or old-town street photo if available."
     },
     "suncheon": {
       "routeSlug": "route-5",
-      "priority": "replace-soon",
-      "reason": "Suncheon is the ecological hinge before Yeosu, so wetland and garden images need to be specific and distinct.",
+      "priority": "publish-ready",
+      "reason": "Suncheon now separates the wetland, National Garden, ecological route layer, and city-street texture.",
       "mustProve": ["Suncheon Bay Wetland", "Suncheon Bay National Garden", "reeds", "old-town stay", "Yeosu handoff"],
-      "nextAction": "Keep wetland as hero/route and National Garden as present; find a street or stay texture image."
+      "nextAction": "Later improvement: add an old-town cafe or market image if a reliable source is available."
     },
     "yeosu": {
       "routeSlug": "route-5",
-      "priority": "replace-soon",
-      "reason": "Yeosu is the finale, so night sea, Odongdo, Hyangiram, seafood, and harbor imagery must not collapse into one generic coast image.",
+      "priority": "publish-ready",
+      "reason": "Yeosu now uses a local harbor hero and separates Hyangiram, Odongdo, route-finale, and street/seafood imagery.",
       "mustProve": ["Odongdo", "Hyangiram", "night sea", "seafood", "south-coast finale"],
-      "nextAction": "Prioritize night-sea hero and separate island/temple/food slots."
+      "nextAction": "Later improvement: add a true night-sea or night-market image when a reliable source is available."
     },
     "incheon": {
       "routeSlug": "route-6",
-      "priority": "replace-soon",
-      "reason": "Incheon must read as an open-port and West Sea gateway, not only an airport-adjacent city.",
+      "priority": "publish-ready",
+      "reason": "Incheon now has separate open-port, Chinatown, Songdo, Wolmido, and harbor-street imagery so it reads as Route 6's West Sea opener.",
       "mustProve": ["open-port streets", "Chinatown", "Wolmido", "ferries or islands", "Suwon handoff"],
-      "nextAction": "Use open-port or Chinatown as hero/history and keep airport/Songdo references secondary."
+      "nextAction": "Later improvement: add a ferry terminal or island-departure photo if available."
     },
     "suwon": {
       "routeSlug": "route-6",
-      "priority": "replace-soon",
-      "reason": "Suwon is the UNESCO fortress-planning hinge, so Hwaseong must dominate the image logic.",
+      "priority": "publish-ready",
+      "reason": "Suwon now centers Hwaseong while keeping Paldalmun market as the present-day stay and food layer.",
       "mustProve": ["Hwaseong", "King Jeongjo", "UNESCO", "market streets", "Seosan handoff"],
-      "nextAction": "Upgrade hero/history only after a strong Hwaseong reference is confirmed."
+      "nextAction": "Later improvement: add a night-wall or food-street image if available."
     },
     "seosan": {
       "routeSlug": "route-6",
-      "priority": "replace-soon",
-      "reason": "Seosan is easy to make vague; imagery must prove Haemi, Naepo, Taean access, and food/coast texture.",
+      "priority": "publish-ready",
+      "reason": "Seosan now proves Haemieupseong, Taean access, and the gateway role before Boryeong.",
       "mustProve": ["Haemi", "Naepo", "Taean gateway", "tidal-flat food", "Boryeong handoff"],
-      "nextAction": "Find specific Haemi and Taean references before expanding the branch."
+      "nextAction": "Later improvement: source a tidal-flat food or market image."
     },
     "boryeong": {
       "routeSlug": "route-6",
-      "priority": "replace-soon",
-      "reason": "Boryeong needs both Mud Festival and Daecheon Beach so it does not become only seasonal.",
+      "priority": "publish-ready",
+      "reason": "Boryeong now pairs Daecheon Beach with Mud Festival so the chapter works both seasonally and year-round.",
       "mustProve": ["Mud Festival", "Daecheon Beach", "mud culture", "seafood or sunset", "Gunsan handoff"],
-      "nextAction": "Pair festival imagery with non-festival beach and stay imagery."
+      "nextAction": "Later improvement: source a Daecheon Beach seafood-street or sunset-stay image from Boryeong tourism or Wikimedia."
     },
     "gunsan": {
       "routeSlug": "route-6",
-      "priority": "replace-soon",
-      "reason": "Gunsan's colonial-era and modern port history must be handled carefully, with food and street imagery as support.",
+      "priority": "publish-ready",
+      "reason": "Gunsan now separates modern-history museum, old streets, port, and food/street texture for a careful Route 6 middle anchor.",
       "mustProve": ["Modern History Museum", "old port streets", "colonial-era context", "bakeries or seafood", "Mokpo handoff"],
-      "nextAction": "Use museum or old port streets as hero/history; avoid cheerful-only treatment."
+      "nextAction": "Later improvement: add a locally sourced bakery or seafood street image."
     },
     "mokpo": {
       "routeSlug": "route-6",
-      "priority": "replace-soon",
-      "reason": "Mokpo is the Route 6 finale, Route 7 handoff, and Route 8 harbor hinge, so harbor, Yudalsan, Gatbawi, ferry, Dadohae, and seafood imagery must be separate.",
+      "priority": "publish-ready",
+      "reason": "Mokpo now separates Yudalsan, modern port history, Gatbawi, harbor, and street/seafood imagery for the southwest finale.",
       "mustProve": ["Yudalsan", "Gatbawi", "harbor", "Dadohae", "Route 8 Haenam handoff"],
-      "nextAction": "Prioritize a harbor/Yudalsan hero and separate Gatbawi, ferry/food, and Haenam handoff references."
+      "nextAction": "Later improvement: add a ferry or seafood market photo if available."
     },
     "haenam": {
       "routeSlug": "route-7",

@@ -10,15 +10,18 @@ import type {
 interface CityMediaReferencesProps {
   officialReferences?: CitySupportOfficialReference[];
   videoReferences?: CitySupportVideoReference[];
+  excludedImageUrls?: string[];
 }
 
 export default function CityMediaReferences({
   officialReferences = [],
   videoReferences = [],
+  excludedImageUrls = [],
 }: CityMediaReferencesProps) {
   const [activeVideo, setActiveVideo] = useState<CitySupportVideoReference | null>(null);
 
   const hasMedia = officialReferences.length > 0 || videoReferences.length > 0;
+  const excludedImages = useMemo(() => new Set(excludedImageUrls), [excludedImageUrls]);
   const embedUrl = useMemo(() => {
     if (!activeVideo) return null;
     return `https://www.youtube-nocookie.com/embed/${activeVideo.youtubeId}?autoplay=1&rel=0`;
@@ -34,19 +37,21 @@ export default function CityMediaReferences({
             key={reference.title}
             className="overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white shadow-[0_20px_60px_rgba(34,30,25,0.06)]"
           >
-            <div className="relative aspect-[4/3]">
-              <Image
-                src={reference.image}
-                alt={reference.alt}
-                fill
-                sizes="(max-width: 1280px) 100vw, 50vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.03),rgba(17,17,17,0.44))]" />
-              <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.26em] text-white backdrop-blur">
-                {reference.eyebrow}
+            {!excludedImages.has(reference.image) && (
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={reference.image}
+                  alt={reference.alt}
+                  fill
+                  sizes="(max-width: 1280px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.03),rgba(17,17,17,0.44))]" />
+                <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-black/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.26em] text-white backdrop-blur">
+                  {reference.eyebrow}
+                </div>
               </div>
-            </div>
+            )}
             <div className="p-6">
               <h3 className="font-serif text-2xl leading-tight text-stone-950">{reference.title}</h3>
               <p className="mt-4 text-sm leading-7 text-stone-700">{reference.body}</p>
