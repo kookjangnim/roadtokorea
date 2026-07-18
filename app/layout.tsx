@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
-import Script from "next/script";
 import Header from "@/components/Header";
 import { getAdsenseClient, getSiteUrl } from "@/lib/site-config";
 import "./globals.css";
@@ -63,12 +62,10 @@ export default function RootLayout({
           <meta name="google-adsense-account" content={adsenseClient} />
         ) : null}
         {adsenseClient ? (
-          <Script
-            id="adsense-script"
+          <script
             async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
             crossOrigin="anonymous"
-            strategy="afterInteractive"
           />
         ) : null}
       </head>
