@@ -3,7 +3,7 @@ import { isLegacyWpPostRouteMatch } from '@/lib/wp-route-context';
 import { notFound, permanentRedirect } from 'next/navigation';
 
 type LegacyHotspotParams = {
-  tier: string;
+  legacyCategory: string;
   city: string;
   hotspot: string;
 };
@@ -13,10 +13,10 @@ export default async function LegacyHotspotRedirectPage({
 }: {
   params: Promise<LegacyHotspotParams>;
 }) {
-  const { tier: legacySegment, city: citySlug, hotspot: hotspotSlug } = await params;
+  const { legacyCategory, city: citySlug, hotspot: hotspotSlug } = await params;
   const post = await fetchPostBySlug(hotspotSlug);
 
-  if (!post || !isLegacyWpPostRouteMatch(post, legacySegment, citySlug)) notFound();
+  if (!post || !isLegacyWpPostRouteMatch(post, legacyCategory, citySlug)) notFound();
 
   permanentRedirect(`/cities/${citySlug}/${hotspotSlug}`);
 }

@@ -79,17 +79,17 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/regions/:tier',
+        source: '/regions/:legacyCategory',
         destination: '/routes',
         permanent: true,
       },
       {
-        source: '/regions/:tier/cities',
+        source: '/regions/:legacyCategory/cities',
         destination: '/routes',
         permanent: true,
       },
       {
-        source: '/:tier(tier-1|tier-2|tier-3|tier-4)',
+        source: '/:legacyCategory(tier-1|tier-2|tier-3|tier-4)',
         destination: '/routes',
         permanent: true,
       }

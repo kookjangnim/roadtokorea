@@ -5,7 +5,11 @@ import { getSiteUrl } from '@/lib/site-config';
 
 const siteUrl = getSiteUrl();
 
-export async function generateMetadata({ params }: { params: Promise<{ tier: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ legacyCategory: string }>;
+}): Promise<Metadata> {
   const resolvedParams = await params;
   const title = 'Route Guide';
   const description = 'Compatibility redirect for legacy city chapter archives. Use the route guides for the primary RoadToKorea experience.';
@@ -20,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ tier: str
     openGraph: {
       title,
       description,
-      url: `${siteUrl}/${resolvedParams.tier}/cities`,
+      url: `${siteUrl}/${resolvedParams.legacyCategory}/cities`,
     },
   };
 }
