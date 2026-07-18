@@ -722,15 +722,15 @@
       },
       "route": {
         "status": "ready",
-        "asset": "/images/routes/route-1/gumi/hero-generated-v1.png",
-        "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png",
-        "brief": "Route slot should show Gumi between Sangju, Daegu, and the final southeast."
+        "asset": "/images/clipartkorea/gumi/tc00240093236.jpg",
+        "sourceHref": "https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240093236",
+        "brief": "Licensed real city frame for Gumi between Sangju, Daegu, and the final southeast."
       },
       "street": {
-        "status": "briefed",
-        "asset": "/images/routes/route-1/gumi/hero-generated-v1.png",
-        "sourceHref": "/images/routes/route-1/gumi/hero-generated-v1.png",
-        "brief": "Street slot should capture central stay, riverside, food, and service texture."
+        "status": "ready",
+        "asset": "/images/clipartkorea/gumi/tc00240110615.jpg",
+        "sourceHref": "https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240110615",
+        "brief": "Licensed real present-day Gumi frame for riverside, food, and service texture."
       }
     }
   },

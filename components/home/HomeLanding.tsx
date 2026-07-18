@@ -6,14 +6,14 @@ import type { RouteData } from '@/data/routeStopovers';
 import { getAdsenseClient } from '@/lib/site-config';
 
 const routeImages: Record<string, string> = {
-  '1': '/images/destinations/Busan_A_breathtaking_cinematic_travel_photograph_of_haeu_e9b5575ea7.jpeg',
-  '2': '/images/cities/gangneung.jpg',
-  '3': '/images/cities/seoraksan.jpg',
-  '4': '/images/routes/route-1/yeongdeok/hero-generated-v1.png',
-  '5': '/images/cities/yeosu.jpg',
-  '6': '/images/routes/route-6/incheon/hero.jpg',
-  '7': '/images/cities/tongyeong.jpg',
-  '8': '/images/cities/gwangju.jpg',
+  '1': 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',
+  '2': '/images/clipartkorea/gangneung/tc02820005412.jpg',
+  '3': '/images/clipartkorea/sokcho/tc00240020235.jpg',
+  '4': 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',
+  '5': '/images/clipartkorea/yeosu/tc00240046415.jpg',
+  '6': '/images/clipartkorea/mokpo/tc00240029851.jpg',
+  '7': 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',
+  '8': '/images/clipartkorea/haenam/tc00240076791.jpg',
 };
 
 const routeThemes: Record<string, { eyebrow: string; color: string }> = {
@@ -28,7 +28,7 @@ const routeThemes: Record<string, { eyebrow: string; color: string }> = {
 };
 
 function getRouteImage(route: RouteData) {
-  return routeImages[route.routeCode] ?? '/images/cities/busan_hero_aesthetic_1773587206276.png';
+  return routeImages[route.routeCode] ?? '/images/clipartkorea/mokpo/tc00240029851.jpg';
 }
 
 function getStops(route: RouteData) {
@@ -76,8 +76,8 @@ export default function HomeLanding({ routes }: HomeLandingProps) {
     <main className="home-landing">
       <section className="home-hero">
         <Image
-          src="/images/destinations/Busan_A_premium_editorial_lifestyle_photograph_taken_fro_39f32dd8c5.jpeg"
-          alt="Travelers looking across the Busan coast"
+          src="/images/clipartkorea/mokpo/tc00240029851.jpg"
+          alt="Mokpo harbor and the city seen from Yudalsan Mountain"
           fill
           priority
           sizes="100vw"
@@ -245,8 +245,8 @@ export default function HomeLanding({ routes }: HomeLandingProps) {
         <div className="home-shell home-method__grid">
           <div className="home-method__image-wrap">
             <Image
-              src="/images/destinations/Busan_Road_leading_to_ocean_tram_852c2545ac.jpeg"
-              alt="A coastal road leading toward the sea in Busan"
+              src="/images/clipartkorea/haenam/tc00240034550.jpg"
+              alt="A real travel view from Korea's land end in Haenam"
               fill
               sizes="(max-width: 900px) 100vw, 46vw"
               className="home-method__image"

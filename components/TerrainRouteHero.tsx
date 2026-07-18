@@ -23,47 +23,47 @@ interface RouteScene {
 
 const ROUTE_SCENES: Record<string, RouteScene> = {
   'route-1': {
-    image: '/images/destinations/Busan_A_breathtaking_cinematic_travel_photograph_of_haeu_e9b5575ea7.jpeg',
+    image: 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',
     eyebrow: 'Inland spine',
     terrain: 'Ridges, old roads, river basins, and the long pull toward Busan.',
   },
   'route-2': {
-    image: '/images/cities/gangneung.jpg',
+    image: '/images/clipartkorea/gangneung/tc02820005412.jpg',
     eyebrow: 'Eastbound mountains',
     terrain: 'The road climbs through ski country, Odaesan, and Daegwallyeong before the sea opens.',
   },
   'route-3': {
-    image: '/images/cities/seoraksan.jpg',
+    image: '/images/clipartkorea/sokcho/tc00240020235.jpg',
     eyebrow: 'Seorak approach',
     terrain: 'Lakes, borderland towns, valleys, and the pass decision into Seoraksan.',
   },
   'route-4': {
-    image: '/images/cities/yangyang.jpg',
+    image: '/images/clipartkorea/yangyang/tc00240092128.jpg',
     eyebrow: 'Route 7 coast',
     terrain: 'A north-to-south East Sea line where mountains fall almost directly into the water.',
   },
   'route-5': {
-    image: '/images/cities/jeonju.jpg',
+    image: '/images/clipartkorea/yeosu/tc00240046415.jpg',
     eyebrow: 'Jeolla inland',
     terrain: 'Food cities, old capitals, wetlands, and the softer southern descent toward Yeosu.',
   },
   'route-6': {
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Yudalsan.jpg',
+    image: '/images/clipartkorea/mokpo/tc00240029851.jpg',
     eyebrow: 'West coast memory',
     terrain: 'Ports, fortress towns, mudflats, islands, and the southwest harbor finish.',
   },
   'route-7': {
-    image: '/images/cities/tongyeong.jpg',
+    image: '/images/clipartkorea/tongyeong/tc07690000940.jpg',
     eyebrow: 'South coast arc',
     terrain: 'Dadohae and Hallyeohaesang turn the map into islands, tea fields, harbors, and naval memory.',
   },
   'route-8': {
-    image: '/images/cities/gwangju.jpg',
+    image: '/images/clipartkorea/haenam/tc00240076791.jpg',
     eyebrow: 'Honam land end',
     terrain: 'Central Korea drops into Jeolla food, civic history, harbor air, and Haenam land-end symbolism.',
   },
   'branch-2a': {
-    image: '/images/destinations/Wonju_Hiker_on_mountain_overlooking_city_1b7177f12b.jpeg',
+    image: '/images/clipartkorea/wonju/tc00240110506.jpg',
     eyebrow: 'Gangwon branch',
     terrain: 'Wonju, Jecheon, Yeongwol, Jeongseon, and Taebaek prove how mountain towns reshape the route.',
   },

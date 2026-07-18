@@ -1,4 +1,4 @@
-﻿export type CitySupportPointKind =
+export type CitySupportPointKind =
   | 'recovery'
   | 'stay'
   | 'food'
@@ -188,34 +188,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Recovery mood',
         title: 'Suanbo should feel warm before it feels efficient',
-        image: '/images/routes/route-1/chungju/support-1-generated-v1.png',
-        alt: 'Generated editorial recovery image for Suanbo in Chungju',
+        image: '/images/clipartkorea/chungju/cm270023269.jpg',
+        alt: 'Licensed real recovery image for Suanbo in Chungju',
         body:
           'Suanbo is useful because it is an actual recovery town in the mountains, not just a hotel cluster. Even before you choose a bath or a room, the terrain itself signals a slower reset.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/chungju/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/chungju/cm270023269.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Route atmosphere',
         title: 'Riverside night gives the stop emotional weight',
-        image: '/images/routes/route-1/chungju/support-2-generated-v1.png',
-        alt: 'Generated editorial night-river image for Chungju',
+        image: '/images/clipartkorea/chungju/tip2500021932.jpg',
+        alt: 'Licensed real night-river image for Chungju',
         body:
           'Chungju reads better as part of a journey when the page shows its real inland texture. The value is not spectacle alone, but the feeling of entering a slower mountain-and-water chapter.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/chungju/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/chungju/tip2500021932.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Landscape anchor',
         title: 'Lake-and-fortress imagery explains why this is not just a transit town',
-        image: '/images/routes/route-1/chungju/support-3-generated-v1.png',
-        alt: 'Generated editorial landscape image for Chungju Lake',
+        image: '/images/clipartkorea/chungju/tip004t107658.jpg',
+        alt: 'Licensed real landscape image for Chungju Lake',
         body:
           'If the city needs one visual argument, it is this inland breadth. The stop works because it feels spatially different from Seoul before the route narrows again.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/chungju/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/chungju/tip004t107658.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -728,56 +728,56 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Mountain hinge',
         title: 'Wonju should feel like the inland breath before the coast',
-        image: '/images/destinations/Wonju_Hiker_on_mountain_overlooking_city_1b7177f12b.jpeg',
+        image: '/images/clipartkorea/wonju/tc08110000069.jpg',
         alt: 'Hiker overlooking Wonju and surrounding mountains',
         body:
           'The mountain view is not just scenery. It explains why Route 2 needs a hinge before Gangneung: the trip is leaving capital-region rhythm and preparing for Gangwon terrain.',
         sourceLabel: 'Project destination image',
-        sourceHref: '/images/destinations/Wonju_Hiker_on_mountain_overlooking_city_1b7177f12b.jpeg',
+        sourceHref: '/images/clipartkorea/wonju/tc00240101280.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Working city',
         title: 'The station and city grid keep Wonju practical',
-        image: '/images/destinations/Wonju_Train_station_with_cherry_blossoms_918188e3e2.jpeg',
+        image: '/images/clipartkorea/wonju/cm270031618.jpg',
         alt: 'Wonju station area with cherry blossoms',
         body:
           'Wonju is strongest when it is allowed to be useful. Station-side imagery supports the city as a place where route timing, luggage, meals, and onward movement can all settle.',
         sourceLabel: 'Project destination image',
-        sourceHref: '/images/destinations/Wonju_Train_station_with_cherry_blossoms_918188e3e2.jpeg',
+        sourceHref: '/images/clipartkorea/wonju/tc00240005519.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Everyday present',
         title: 'Cafe and street-level images keep the page out of museum mode',
-        image: '/images/destinations/Wonju_Friends_relaxing_with_coffee_cafe_bcb924ac4f.jpeg',
+        image: '/images/clipartkorea/wonju/tc00240110506.jpg',
         alt: 'Friends relaxing with coffee in Wonju',
         body:
           'The page needs present-day life as much as history. Wonju should feel like a city where people study, work, eat, manufacture, recover, and move onward.',
         sourceLabel: 'Project destination image',
-        sourceHref: '/images/destinations/Wonju_Friends_relaxing_with_coffee_cafe_bcb924ac4f.jpeg',
+        sourceHref: '/images/clipartkorea/wonju/tc08110000069.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Spiritual edge',
         title: 'Temples and forest keep the Gangwon threshold visible',
-        image: '/images/destinations/Wonju_Hiker_dwarfed_by_stone_pagodas_88c2c81acf.jpeg',
+        image: '/images/clipartkorea/wonju/tc00240101280.jpg',
         alt: 'Hiker among stone pagodas in Wonju',
         body:
           'This visual layer balances the industrial and military story. Wonju is also a place where the city edge quickly softens into forest, stone, and mountain quiet.',
         sourceLabel: 'Project destination image',
-        sourceHref: '/images/destinations/Wonju_Hiker_dwarfed_by_stone_pagodas_88c2c81acf.jpeg',
+        sourceHref: '/images/clipartkorea/wonju/cm270031618.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Recovery mood',
         title: 'Water and reflection give the hinge a softer finish',
-        image: '/images/destinations/Wonju_Woman_admiring_water_reflection_66e693eb77.jpeg',
+        image: '/images/clipartkorea/wonju/tc00240005519.jpg',
         alt: 'Traveler admiring water reflection in Wonju',
         body:
           'Wonju should not read as only logistics. A softer recovery image makes the overnight feel emotionally useful before the route commits to the east coast.',
         sourceLabel: 'Project destination image',
-        sourceHref: '/images/destinations/Wonju_Woman_admiring_water_reflection_66e693eb77.jpeg',
+        sourceHref: '/images/clipartkorea/wonju/tc00240110506.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -785,7 +785,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Official company source',
         title: 'Samyang confirms the Wonju plant as a ramen, snack, and sauce production site',
-        image: '/images/destinations/Wonju_Friends_relaxing_with_coffee_cafe_bcb924ac4f.jpeg',
+        image: '/images/clipartkorea/wonju/tc08110000069.jpg',
         alt: 'Present-day Wonju food and cafe context',
         body:
           'Samyang Foods lists its Wonju Plant as the company first plant, founded in 1989, producing ramen, snacks, and sauces. That source supports the modern K-food layer on this page.',
@@ -798,7 +798,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Military history source',
         title: 'U.S. Army documented the return of Camps Eagle and Long in the Wonju area',
-        image: '/images/destinations/Wonju_City_park_reflecting_mountain_b858d6d9ba.jpeg',
+        image: '/images/clipartkorea/wonju/tc00240101280.jpg',
         alt: 'Wonju city park and mountain context',
         body:
           'The U.S. Army reported plans to close Camps Eagle and Long in the Wonju area and transfer activities to Camp Humphreys, supporting the page military-logistics layer.',
@@ -811,7 +811,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Korean War source',
         title: 'U.S. Army University staff ride materials cover the Battles of Wonju',
-        image: '/images/destinations/Wonju_Hiker_dipping_hand_in_stream_3a59155cab.jpeg',
+        image: '/images/clipartkorea/wonju/cm270031618.jpg',
         alt: 'Wonju mountain stream and terrain context',
         body:
           'Army University Press materials identify the Battles of Wonju and Chipyong-ni as a staff ride topic for studying combat in complex terrain, supporting the city historical-weight framing.',
@@ -2144,34 +2144,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Threshold image',
         title: 'The gate is the reason Mungyeong does not feel interchangeable',
-        image: '/images/routes/route-1/mungyeong/support-1-generated-v1.png',
-        alt: 'Generated editorial gateway image for Mungyeong Saejae',
+        image: '/images/clipartkorea/mungyeong/cm280021904.jpg',
+        alt: 'Licensed real gateway image for Mungyeong Saejae',
         body:
           'Mungyeong becomes memorable when the route visibly passes through something. The gate image matters because it turns abstract inland travel into a concrete threshold.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/mungyeong/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/mungyeong/cm280021904.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Pass-country atmosphere',
         title: 'The open film-set edge makes the crossing feel spatial, not symbolic only',
-        image: '/images/routes/route-1/mungyeong/support-2-generated-v1.png',
-        alt: 'Generated editorial pass-country image for Mungyeong',
+        image: '/images/clipartkorea/mungyeong/tc00240100625.jpg',
+        alt: 'Licensed real pass-country image for Mungyeong',
         body:
           'The city works best when the pass has visual breadth. This is what helps the overnight feel like a chapter in the land rather than a random place to stop the car.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/mungyeong/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/mungyeong/tc00240100625.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Slow-route detail',
         title: 'Craft, omija, and mining memory keep the crossing present tense',
-        image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
-        alt: 'Generated editorial civic-detail image for Mungyeong',
+        image: '/images/clipartkorea/mungyeong/cm260021026.jpg',
+        alt: 'Licensed real civic-detail image for Mungyeong',
         body:
           'Not every useful image has to be monumental. Smaller details keep Mungyeong from reading like a scenic backdrop and make room for chasabal pottery, omija, old tunnels, and the working memory behind the route.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/mungyeong/cm260021026.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -2179,8 +2179,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Official tourism source',
         title: 'Mungyeongsaejae is the proof that this is pass country',
-        image: '/images/routes/route-1/mungyeong/support-1-generated-v1.png',
-        alt: 'Generated editorial gateway image for Mungyeong Saejae',
+        image: '/images/clipartkorea/mungyeong/cm280021904.jpg',
+        alt: 'Licensed real gateway image for Mungyeong Saejae',
         body:
           'VisitKorea describes Mungyeongsaejae Pass as crossing Joryeongsan Mountain, with three gates designated together as Historic Site No. 147. This is the source that anchors the threshold story.',
         sourceLabel: 'VisitKorea Mungyeongsaejae Provincial Park',
@@ -2192,8 +2192,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Official city source',
         title: 'Mungyeong City frames Saejae as cultural assets and natural heritage',
-        image: '/images/routes/route-1/mungyeong/support-2-generated-v1.png',
-        alt: 'Generated editorial pass-country image for Mungyeong',
+        image: '/images/clipartkorea/mungyeong/tc00240100625.jpg',
+        alt: 'Licensed real pass-country image for Mungyeong',
         body:
           'Mungyeong City lists Mungyeong Gwanmun, the Mungyeongsaejae old road, Yeongnamdaero, temples, mountain peaks, and Baekdudaegan Range as part of the Saejae landscape.',
         sourceLabel: 'Mungyeong City Culture & Tourism',
@@ -2205,8 +2205,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Present-day craft source',
         title: 'Chasabal keeps Mungyeong in the present',
-        image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
-        alt: 'Generated editorial civic-detail image for Mungyeong',
+        image: '/images/clipartkorea/mungyeong/cm260021026.jpg',
+        alt: 'Licensed real civic-detail image for Mungyeong',
         body:
           'VisitKorea describes the Mungyeong Chasabal Festival as honoring traditional Korean pottery and ancestral craftsmanship, with exhibitions, hands-on programs, and tea-bowl culture.',
         sourceLabel: 'VisitKorea Mungyeong Chasabal Festival',
@@ -2218,8 +2218,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Present-day food source',
         title: 'Omija gives the pass a local flavor',
-        image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
-        alt: 'Generated editorial local-detail image for Mungyeong',
+        image: '/images/clipartkorea/mungyeong/cm260021026.jpg',
+        alt: 'Licensed real local-detail image for Mungyeong',
         body:
           'VisitKorea describes the Omija Theme Tunnel as a former coal-transport tunnel reborn for tourism, with omija products and pottery available inside the space.',
         sourceLabel: 'VisitKorea Mungyeong Omija Theme Tunnel',
@@ -2231,8 +2231,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Industrial memory source',
         title: 'Coal history gives Mungyeong a second modern layer',
-        image: '/images/routes/route-1/mungyeong/support-3-generated-v1.png',
-        alt: 'Generated editorial civic-detail image for Mungyeong',
+        image: '/images/clipartkorea/mungyeong/cm260021026.jpg',
+        alt: 'Licensed real civic-detail image for Mungyeong',
         body:
           'VisitKorea describes the Mungyeong Coal Museum as showing coal history and the lives of miners in what was once one of Korea’s productive coalfields.',
         sourceLabel: 'VisitKorea Mungyeong Coal Museum',
@@ -2427,34 +2427,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Cultural anchor',
         title: 'Andong should feel like the route has gained weight',
-        image: '/images/routes/route-1/andong/support-1-generated-v1.png',
+        image: '/images/clipartkorea/andong/cm26005208.jpg',
         alt: 'Editorial route image for Andong cultural anchor',
         body:
           'The point of Andong is not speed. It is the moment the inland route stops feeling improvised and begins to feel like a deliberate chapter in Korea.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/andong/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/andong/cm26005208.jpg',
         licenseLabel: 'Project asset',
       },
       {
         eyebrow: 'Stay logic',
         title: 'The overnight matters because the city accumulates value slowly',
-        image: '/images/routes/route-1/andong/support-2-generated-v1.png',
+        image: '/images/clipartkorea/andong/tc00240004359.jpg',
         alt: 'Editorial route image for Andong overnight mood',
         body:
           'Andong is strongest when you let the stay breathe. Its value does not land all at once like a viewpoint city; it builds through evening, dinner, and a slower next morning.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/andong/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/andong/tc00240004359.jpg',
         licenseLabel: 'Project asset',
       },
       {
         eyebrow: 'Food identity',
         title: 'Dinner should be part of the route logic here',
-        image: '/images/routes/route-1/andong/support-3-generated-v1.png',
+        image: '/images/clipartkorea/andong/tc00240004386.jpg',
         alt: 'Editorial route image for Andong food identity',
         body:
           'Andong is one of the inland cities where a meal can justify the stop instead of merely servicing it. That is why the food layer deserves dedicated commercial space later.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/andong/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/andong/tc00240004386.jpg',
         licenseLabel: 'Project asset',
       },
     ],
@@ -2462,7 +2462,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'UNESCO reference',
         title: 'Hahoe is part of Korea’s representative historic clan-village heritage',
-        image: '/images/routes/route-1/andong/support-1-generated-v1.png',
+        image: '/images/clipartkorea/andong/cm26005208.jpg',
         alt: 'Editorial image for Andong Hahoe cultural context',
         body:
           'UNESCO describes Hahoe and Yangdong as representative historic clan villages shaped by early Joseon aristocratic Confucian culture, river-facing landscapes, study halls, academies, and family residences.',
@@ -2475,7 +2475,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'UNESCO reference',
         title: 'Dosan and Byeongsan sit inside Korea’s seowon tradition',
-        image: '/images/routes/route-1/andong/support-2-generated-v1.png',
+        image: '/images/clipartkorea/andong/tc00240004359.jpg',
         alt: 'Editorial image for Andong seowon and overnight mood',
         body:
           'UNESCO frames Korean seowon as Neo-Confucian academies where learning, veneration, and landscape interaction shaped the design. That supports Andong as more than a scenic stop.',
@@ -2488,7 +2488,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Food identity',
         title: 'Andong jjimdak keeps the city present-tense',
-        image: '/images/routes/route-1/andong/support-3-generated-v1.png',
+        image: '/images/clipartkorea/andong/tc00240004386.jpg',
         alt: 'Editorial image for Andong food identity',
         body:
           'Andong’s food identity gives the page a modern entry point. Dinner is not filler here; it is one of the clearest ways the city’s regional character becomes immediate for travelers.',
@@ -2662,34 +2662,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Flavor image',
         title: 'Yeongdeok earns space when the route should taste local',
-        image: '/images/routes/route-1/yeongdeok/support-1-generated-v1.png',
-        alt: 'Generated editorial flavor image for Yeongdeok',
+        image: '/images/clipartkorea/yeongdeok/tc02820009613.jpg',
+        alt: 'Licensed real flavor image for Yeongdeok',
         body:
           'This stop matters because the coast should sometimes become edible, not just scenic. Crab identity is one of the clearest reasons Yeongdeok belongs on the route at all.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/yeongdeok/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/yeongdeok/tc02820009613.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Smaller-town mood',
         title: 'The route gets lighter here before it gets heavier again',
-        image: '/images/routes/route-1/yeongdeok/support-2-generated-v1.png',
-        alt: 'Generated editorial small-town coastal image for Yeongdeok',
+        image: '/images/clipartkorea/yeongdeok/tc02640002191.jpg',
+        alt: 'Licensed real small-town coastal image for Yeongdeok',
         body:
           'Yeongdeok is useful precisely because it does not feel like a large hinge city yet. It gives the coast one smaller-scale chapter before the south tightens up.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/yeongdeok/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/yeongdeok/tc02640002191.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Coast-road atmosphere',
         title: 'A quiet road can justify a night as much as a major landmark can',
-        image: '/images/routes/route-1/yeongdeok/support-3-generated-v1.png',
-        alt: 'Generated editorial coast-road image for Yeongdeok',
+        image: '/images/clipartkorea/yeongdeok/tc08070000556.jpg',
+        alt: 'Licensed real coast-road image for Yeongdeok',
         body:
           'The editorial value of Yeongdeok is not spectacle. It is the sensation of remaining on the coast long enough for the route to gain one more local chapter before the final hinge.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/yeongdeok/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/yeongdeok/tc08070000556.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -2845,34 +2845,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Hinge image',
         title: 'Homigot is where the coast still feels open even as the route tightens',
-        image: '/images/routes/route-1/pohang/support-1-generated-v1.png',
-        alt: 'Generated editorial hinge image for Pohang',
+        image: '/images/clipartkorea/pohang/tc00240033945.jpg',
+        alt: 'Licensed real hinge image for Pohang',
         body:
           'Pohang works because it is not a pure inland service city. The sea is still visible, which helps the route close one coastal chapter before Busan begins another.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/pohang/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/pohang/tc00240033945.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Late-route reset',
         title: 'A beach-facing city can still function like a practical handoff',
-        image: '/images/routes/route-1/pohang/support-2-generated-v1.png',
-        alt: 'Generated editorial late-route reset image for Pohang',
+        image: '/images/clipartkorea/pohang/tc02840000757.jpg',
+        alt: 'Licensed real late-route reset image for Pohang',
         body:
           'Pohang\'s advantage is that it can restore control without killing the coastal mood. That combination is what makes it such a useful final overnight candidate.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/pohang/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/pohang/tc02840000757.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Arrival strategy',
         title: 'The final southbound day should start cleaner than it ends',
-        image: '/images/routes/route-1/pohang/support-3-generated-v1.png',
-        alt: 'Generated editorial arrival-strategy image for Pohang',
+        image: '/images/clipartkorea/pohang/cm26014070.jpg',
+        alt: 'Licensed real arrival-strategy image for Pohang',
         body:
           'Pohang becomes valuable when it protects the final approach. The point is not one more stop for its own sake, but a better launch into Busan.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/pohang/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/pohang/cm26014070.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -3028,34 +3028,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Corridor image',
         title: 'The river is what makes Sangju legible',
-        image: '/images/routes/route-1/sangju/support-1-generated-v1.png',
-        alt: 'Generated editorial corridor image for Sangju',
+        image: '/images/clipartkorea/sangju/tc03140003036.jpg',
+        alt: 'Licensed real corridor image for Sangju',
         body:
           'Sangju gets stronger when the route is read through the Nakdong corridor. The visual argument is not urban spectacle, but the long continuity of the river chapter that starts to dominate here.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/sangju/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/sangju/tc03140003036.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Route continuity',
         title: 'Sangju matters because the route stops feeling fragmented',
-        image: '/images/routes/route-1/sangju/support-2-generated-v1.png',
-        alt: 'Generated editorial route-continuity image for Sangju',
+        image: '/images/clipartkorea/sangju/tc00240057882.jpg',
+        alt: 'Licensed real route-continuity image for Sangju',
         body:
           'The city does not need a monumental image to justify itself. Its value is in the way the corridor begins to feel long, stable, and southbound from here.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/sangju/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/sangju/tc00240057882.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Pacing logic',
         title: 'A useful city can be worth more than a dramatic one',
-        image: '/images/routes/route-1/sangju/support-3-generated-v1.png',
-        alt: 'Generated editorial pacing image for Sangju',
+        image: '/images/clipartkorea/sangju/tc00240013868.jpg',
+        alt: 'Licensed real pacing image for Sangju',
         body:
           'Sangju earns its space because it helps tomorrow work better. That kind of practical value is exactly what makes it commercially and editorially useful on a route-first site.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/sangju/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/sangju/tc00240013868.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -3730,12 +3730,12 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Early reset',
         title: 'Cheonan is where Route 1 becomes manageable',
-        image: '/images/routes/route-1/cheonan/hero-generated-v1.png',
+        image: '/images/clipartkorea/cheonan/tc00240110360.jpg',
         alt: 'Editorial route image for Cheonan early reset',
         body:
           'This city earns time by turning the rushed Seoul exit into a calmer, more legible route opening.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/cheonan/hero-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/cheonan/tc00240110360.jpg',
         licenseLabel: 'Project editorial asset',
       },
     ],
@@ -3877,12 +3877,12 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Central split',
         title: 'Daejeon is the route\'s cleanest divide-and-continue city',
-        image: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+        image: '/images/clipartkorea/daejeon/cm26002727.jpg',
         alt: 'Editorial route image for Daejeon central corridor split',
         body:
           'The city earns its place when the user can immediately tell whether this is a tight station night or a more restorative Yuseong night.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/daejeon/cm26002727.jpg',
         licenseLabel: 'Project editorial asset',
       },
     ],
@@ -4013,34 +4013,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Southern reset',
         title: 'Daegu should feel denser than the inland chapters before it',
-        image: '/images/routes/route-1/daegu/support-1-generated-v1.png',
+        image: '/images/clipartkorea/daegu/tc00240077172.jpg',
         alt: 'Editorial route image for Daegu southern reset',
         body:
           'This stop works because the route suddenly picks up city heat, markets, and food again before the final descent.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/daegu/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/daegu/tc00240077172.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Food logic',
         title: 'Dinner matters more here than in most other Route 1 cities',
-        image: '/images/routes/route-1/daegu/support-2-generated-v1.png',
+        image: '/images/clipartkorea/daegu/cm280033716.jpg',
         alt: 'Editorial route image for Daegu food-led urban evening',
         body:
           'Daegu is where the route can stop being purely geographic and become urban again.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/daegu/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/daegu/cm280033716.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Final momentum',
         title: 'A strong reset here makes Busan land better',
-        image: '/images/routes/route-1/daegu/support-3-generated-v1.png',
+        image: '/images/clipartkorea/daegu/cm26003055.jpg',
         alt: 'Editorial route image for Daegu station-side handoff',
         body:
           'Used well, Daegu strengthens the end of Route 1 instead of delaying it.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/daegu/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/daegu/cm26003055.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -4153,12 +4153,12 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Middle corridor',
         title: 'Gumi works best when the route chooses calm on purpose',
-        image: '/images/routes/route-1/gumi/hero-generated-v1.png',
+        image: '/images/clipartkorea/gumi/tc00240093236.jpg',
         alt: 'Editorial route image for Gumi middle-corridor reset',
         body:
           'Not every useful stop has to perform loudly. Gumi improves Route 1 by lowering the route\'s noise before Daegu raises it again.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gumi/hero-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/gumi/tc00240093236.jpg',
         licenseLabel: 'Project editorial asset',
       },
     ],
@@ -4289,12 +4289,12 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Late calm',
         title: 'Changnyeong is where the lower river chooses recovery over one last performance',
-        image: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
+        image: '/images/clipartkorea/changnyeong/tc00240077354.jpg',
         alt: 'Editorial route image for Changnyeong lower-river recovery',
         body:
           'This stop matters because the route can get stronger by quieting down. It is a late-stage reset, not a missed climax.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/changnyeong/hero-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/changnyeong/tc00240077354.jpg',
         licenseLabel: 'Project editorial asset',
       },
     ],
@@ -4552,34 +4552,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Coast-entry',
         title: 'Gangneung is where Route 2 reaches the sea',
-        image: '/images/routes/route-1/gangneung/support-1-generated-v1.png',
+        image: '/images/clipartkorea/gangneung/tc00240033488.jpg',
         alt: 'Editorial route image for Gangneung coast entry',
         body:
           'This city gives Route 2 its full mountain-to-sea payoff.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gangneung/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/gangneung/tc00240033488.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Morning logic',
         title: 'The overnight only works if the next morning belongs to the sea',
-        image: '/images/routes/route-1/gangneung/support-2-generated-v1.png',
+        image: '/images/clipartkorea/gangneung/tip249t012173.jpg',
         alt: 'Editorial route image for Gangneung coastal overnight mood',
         body:
           'Gangneung earns time because the route changes most clearly at breakfast and first light, not only at arrival.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gangneung/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/gangneung/tip249t012173.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Route commitment',
         title: 'After this city, Route 4 takes over the coastline',
-        image: '/images/routes/route-1/gangneung/support-3-generated-v1.png',
+        image: '/images/clipartkorea/gangneung/tip249t012057.jpg',
         alt: 'Editorial route image for Gangneung shoreline commitment',
         body:
           'Used well, Gangneung makes Donghae, Samcheok, and the longer National Route 7 sequence feel intentional.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gangneung/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/gangneung/tip249t012057.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -5099,12 +5099,12 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Open shoreline',
         title: 'Uljin keeps the coast broad and believable',
-        image: '/images/routes/route-1/uljin/hero-generated-v1.png',
+        image: '/images/clipartkorea/uljin/tc08070000559.jpg',
         alt: 'Editorial route image for Uljin coast continuity',
         body:
           'This is not the loudest east-coast stop, but it may be one of the most important for route shape because it keeps the shoreline from collapsing into only famous names.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/uljin/hero-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/uljin/tc08070000559.jpg',
         licenseLabel: 'Project editorial asset',
       },
     ],
@@ -5235,34 +5235,34 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       {
         eyebrow: 'Historic handoff',
         title: 'Gyeongju gives the final route chapter real weight',
-        image: '/images/routes/route-1/gyeongju/support-1-generated-v1.png',
+        image: '/images/clipartkorea/gyeongju/tc00240010970.jpg',
         alt: 'Editorial route image for Gyeongju historic handoff',
         body:
           'Used well, this city makes the end of Route 1 feel authored instead of simply completed.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gyeongju/support-1-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/gyeongju/tc00240010970.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Stay logic',
         title: 'The difference between heritage core and Bomun matters here',
-        image: '/images/routes/route-1/gyeongju/support-2-generated-v1.png',
+        image: '/images/clipartkorea/gyeongju/tc02520000276.jpg',
         alt: 'Editorial route image for Gyeongju stay logic',
         body:
           'Gyeongju is stronger when the user understands which style of overnight they are actually choosing.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gyeongju/support-2-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/gyeongju/tc02520000276.jpg',
         licenseLabel: 'Internal',
       },
       {
         eyebrow: 'Busan setup',
         title: 'A strong Gyeongju stop makes Busan arrive cleanly',
-        image: '/images/routes/route-1/gyeongju/support-3-generated-v1.png',
+        image: '/images/clipartkorea/gyeongju/tc00240032704.jpg',
         alt: 'Editorial route image for Gyeongju Busan setup',
         body:
           'This is the last major place on Route 1 where one overnight can still reshape the finish.',
-        sourceLabel: 'Generated route editorial image',
-        sourceHref: '/images/routes/route-1/gyeongju/support-3-generated-v1.png',
+        sourceLabel: 'Licensed real travel photograph',
+        sourceHref: '/images/clipartkorea/gyeongju/tc00240032704.jpg',
         licenseLabel: 'Internal',
       },
     ],
@@ -6279,7 +6279,29 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   },
 };
 
+function withLicensedPhotoCredit<T extends CitySupportProfileVisual | CitySupportOfficialReference>(
+  visual: T,
+): T {
+  const match = visual.image.match(/^\/images\/clipartkorea\/[^/]+\/([a-z0-9]+)(?:-[^/]*)?\.(?:jpe?g|png|webp)$/i);
+  if (!match) return visual;
+
+  const assetCode = match[1];
+  return {
+    ...visual,
+    sourceLabel: `ClipartKorea ${assetCode}`,
+    sourceHref: `https://www.clipartkorea.co.kr/search?menu=m&keyword=${assetCode}`,
+    licenseLabel: 'Licensed JPG (WEB)',
+  };
+}
+
 export function getCitySupportProfile(citySlug: string): CitySupportProfile | null {
-  return citySupportProfiles[citySlug.toLowerCase()] ?? null;
+  const profile = citySupportProfiles[citySlug.toLowerCase()];
+  if (!profile) return null;
+
+  return {
+    ...profile,
+    visuals: profile.visuals.map(withLicensedPhotoCredit),
+    officialReferences: profile.officialReferences?.map(withLicensedPhotoCredit),
+  };
 }
 

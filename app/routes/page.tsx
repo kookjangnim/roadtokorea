@@ -6,14 +6,14 @@ import RoutePageShell from '@/components/routes/RoutePageShell';
 import { getCityImageSlots } from '@/data/cityImageSlots';
 
 const routeFallbackImages: Record<string, string> = {
-  '1': '/images/destinations/Busan_A_breathtaking_cinematic_travel_photograph_of_haeu_e9b5575ea7.jpeg',
-  '2': '/images/cities/gangneung.jpg',
-  '3': '/images/cities/seoraksan.jpg',
-  '4': '/images/cities/yangyang.jpg',
-  '5': '/images/cities/jeonju.jpg',
-  '6': 'https://commons.wikimedia.org/wiki/Special:FilePath/Mokpo%20Yudalsan.jpg',
-  '7': '/images/cities/tongyeong.jpg',
-  '8': '/images/cities/gwangju.jpg',
+  '1': 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',
+  '2': '/images/clipartkorea/gangneung/tc02820005412.jpg',
+  '3': '/images/clipartkorea/sokcho/tc00240020235.jpg',
+  '4': 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',
+  '5': '/images/clipartkorea/yeosu/tc00240046415.jpg',
+  '6': '/images/clipartkorea/mokpo/tc00240029851.jpg',
+  '7': 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',
+  '8': '/images/clipartkorea/haenam/tc00240076791.jpg',
 };
 
 const routeThemes = [
@@ -29,7 +29,7 @@ function getRouteImage(route: RouteData) {
   return destinationSlots?.slots.route?.asset
     ?? destinationSlots?.slots.hero?.asset
     ?? routeFallbackImages[route.routeCode]
-    ?? '/images/cities/seoul_hero_aesthetic_1773587191807.png';
+    ?? '/images/clipartkorea/mokpo/tc00240029851.jpg';
 }
 
 function getRouteReadingLabel(route: RouteData) {

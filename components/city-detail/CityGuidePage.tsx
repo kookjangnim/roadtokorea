@@ -9,7 +9,6 @@ import { getSiteUrl, normalizeWpMediaUrl } from '@/lib/site-config';
 import { getSeoulRouteOptionBySlug } from '@/data/seoulRoutes';
 import { getRouteCityStoryTemplate } from '@/data/routeCityStoryTemplates';
 import { getLocalCityDataBySlug } from '@/data/cityRegistry';
-import { destinations, districtToEnglish, type Destination } from '@/data/destinations';
 import CitySupportMap from '@/components/city-detail/CitySupportMap';
 import CityMediaReferences from '@/components/city-detail/CityMediaReferences';
 import HotelBookingCard from '@/components/routes/HotelBookingCard';
@@ -228,7 +227,7 @@ export default async function CityPage({
   const rawContent = cityData?.content.rendered || '';
   const heroImage = cityData ? getHeroImageFromHtml(rawContent) : null;
   const cityImageSlots = getCityImageSlots(citySlug);
-  const localDestinations = destinations.filter((dest) => dest.city.toLowerCase() === citySlug.toLowerCase());
+  const localHotspots = localCityData?.hotspots ?? [];
   const routeOption = getSeoulRouteOptionBySlug(citySlug);
   const routeStopoverContext = getRouteStopoverContext(citySlug);
   const routeConnectionLabel = routeOption?.transport
@@ -238,14 +237,10 @@ export default async function CityPage({
     ?? (routeStopoverContext
       ? `${routeStopoverContext.stopover.cumulativeTime} from ${routeStopoverContext.route.from}`
       : 'Compare rail, bus, and driving time before departure.');
-  const prefersGeneratedRouteHero =
-    Boolean(routeOption) && localCityData?.heroImage?.startsWith('/images/routes/route-1/');
   const localEditorialImage = getEditorialImageForCity(citySlug);
   const heroCandidate = heroImage
     ? normalizeWpMediaUrl(heroImage)
-    : prefersGeneratedRouteHero
-      ? localCityData?.heroImage || localDestinations[0]?.imagePath || null
-      : localDestinations[0]?.imagePath || localCityData?.heroImage || null;
+    : localHotspots[0]?.image || localCityData?.heroImage || null;
   const heroImageUrl = cityImageSlots?.slots.hero.asset
     || localEditorialImage
     || getSafeEditorialImage(heroCandidate, citySlug);
@@ -267,22 +262,21 @@ export default async function CityPage({
   const directionsUrl = routeOption
     ? buildOpenStreetMapDirectionsUrl(SEOUL_COORDS, routeOption.coordinates)
     : null;
-  const localGallery = localDestinations.reduce<Array<{
+  const localGallery = localHotspots.reduce<Array<{
     id: string;
     name: string;
     description: string;
     image: string;
-  }>>((items, dest: Destination, index) => {
-    const districtName = districtToEnglish[dest.district] || dest.district || cityName;
-    if (items.some((item) => item.name === districtName)) return items;
+  }>>((items, hotspot, index) => {
+    if (items.some((item) => item.name === hotspot.name)) return items;
 
     items.push({
-      id: `${dest.city}-${districtName}-${index}`,
-      name: districtName,
+      id: hotspot.id || `${citySlug}-hotspot-${index}`,
+      name: hotspot.name,
       description:
-        dest.description ||
-        `${districtName} helps explain what makes ${cityName} feel distinct once you are on the ground.`,
-      image: dest.imagePath,
+        hotspot.description ||
+        `${hotspot.name} helps explain what makes ${cityName} feel distinct once you are on the ground.`,
+      image: hotspot.image,
     });
 
     return items;

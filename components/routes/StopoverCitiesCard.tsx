@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { RouteStopover } from '@/data/routeStopovers';
 import { getLocalCityDataBySlug } from '@/data/cityRegistry';
 import { getRouteCityHref, type RouteSlug } from '@/data/routeRegistry';
+import { getCityImageSlots } from '@/data/cityImageSlots';
 
 interface StopoverCitiesCardProps {
   stopover: RouteStopover;
@@ -11,8 +12,9 @@ interface StopoverCitiesCardProps {
 }
 
 function getStopoverImage(stopover: RouteStopover) {
-  return getLocalCityDataBySlug(stopover.citySlug)?.heroImage
-    || '/images/cities/seoul_hero_aesthetic_1773587191807.png';
+  return getCityImageSlots(stopover.citySlug)?.slots.hero.asset
+    || getLocalCityDataBySlug(stopover.citySlug)?.heroImage
+    || '/images/clipartkorea/mokpo/tc00240029851.jpg';
 }
 
 function getCityGuideHref(routeSlug: RouteSlug, stopover: RouteStopover) {

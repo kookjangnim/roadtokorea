@@ -23,7 +23,7 @@ export const primaryCityData: Record<string, LocalCityData> = {
   seoul: {
     slug: 'seoul',
     name: 'Seoul',
-    heroImage: '/images/Gemini_Generated_Image_8lyf5h8lyf5h8lyf.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1693928105512-10516b969717?auto=format&fit=crop&w=1600&q=82',
     headline: 'Where Tradition Meets Tomorrow',
     description: 'A dynamic metropolis where modern skyscrapers, high-tech subways, and pop culture meet Buddhist temples, palaces, and street markets.',
     culturalInsight: 'Seoul is an intoxicating blend of the ancient and the hyper-modern. From the serene grounds of Gyeongbokgung Palace to the neon-drenched streets of Gangnam, this city never sleeps. Discover a culinary world that ranges from Michelin-starred fine dining to legendary street food stalls.',
@@ -83,7 +83,7 @@ export const primaryCityData: Record<string, LocalCityData> = {
   busan: {
     slug: 'busan',
     name: 'Busan',
-    heroImage: '/images/Gemini_Generated_Image_wsb8jpwsb8jpwsb8.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',
     headline: 'Coastal Majesty of the South',
     description: 'South Korea\'s quintessential coastal city, renowned for its stunning beaches, majestic mountains, and magnificent temples.',
     culturalInsight: 'Busan offers a more laid-back coastal vibe compared to Seoul. It boasts spectacular seaside temples, bustling seafood markets, and the vibrant colors of hillside villages. Enjoy the fresh ocean breeze and the warm hospitality of the south.',
@@ -133,7 +133,7 @@ export const primaryCityData: Record<string, LocalCityData> = {
   jeju: {
     slug: 'jeju',
     name: 'Jeju',
-    heroImage: '/images/Gemini_Generated_Image_8p1cib8p1cib8p1c.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1616798249081-30877e213b16?auto=format&fit=crop&w=1600&q=82',
     headline: 'The Volcanic Island Paradise',
     description: 'A breathtaking volcanic island featuring a striking dormant volcano, dramatic lava tubes, and pristine white-sand beaches.',
     culturalInsight: 'Known as the "Hawaii of Korea," Jeju Island is a premier vacation destination. From the imposing Mt. Hallasan to the mystical Haenyeo (female deep-sea divers), the island is rich in unique myths, volcanic landscapes, and natural wonders.',
@@ -162,10 +162,10 @@ export const primaryCityData: Record<string, LocalCityData> = {
         id: 'jeju-3',
         name: 'Jeongbang Waterfall',
         description: 'One of the rare waterfalls in the world that falls directly into the ocean, offering a spectacular natural display.',
-        image: '/images/cities/jeju.jpg',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jeongbang%20Waterfall%2001.JPG',
         imageAlt: 'Jeongbang Waterfall in Jeju',
-        author: 'Local',
-        sourceLink: '/',
+        author: 'Wikimedia Commons (Abasaa)',
+        sourceLink: 'https://commons.wikimedia.org/wiki/File:Jeongbang_Waterfall_01.JPG',
         tags: ['Waterfall', 'Ocean', 'Scenic']
       },
       {
@@ -183,7 +183,7 @@ export const primaryCityData: Record<string, LocalCityData> = {
   gangneung: {
     slug: 'gangneung',
     name: 'Gangneung',
-    heroImage: '/images/cities/gangneung.jpg',
+    heroImage: '/images/clipartkorea/gangneung/tc02820005412.jpg',
     headline: 'Where the Pine Forest Meets the Sea',
     description: 'A coastal city famous for its breathtaking sunrises, fragrant pine forests, and a thriving coffee culture along the beach.',
     culturalInsight: 'Gangneung is a peaceful retreat where the scent of roasting coffee blends with the salty ocean breeze. Known for its historical festivals and pristine beaches, it offers a perfect balance of deep-rooted Korean tradition and modern coastal relaxation.',
@@ -212,10 +212,10 @@ export const primaryCityData: Record<string, LocalCityData> = {
         id: 'gangneung-3',
         name: 'Gyodong',
         description: 'A vibrant neighborhood known for its incredible local cuisine, especially its famous spicy seafood noodles.',
-        image: '/images/cities/gangneung.jpg',
+        image: '/images/clipartkorea/gangneung/tc00240108021.jpg',
         imageAlt: 'Gyodong streets',
-        author: 'Local',
-        sourceLink: '/',
+        author: 'ClipartKorea',
+        sourceLink: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240108021',
         tags: ['Food', 'Local', 'Vibrant']
       },
       {
@@ -233,7 +233,7 @@ export const primaryCityData: Record<string, LocalCityData> = {
   yeosu: {
     slug: 'yeosu',
     name: 'Yeosu',
-    heroImage: '/images/cities/yeosu.jpg',
+    heroImage: '/images/clipartkorea/yeosu/tc00240046415.jpg',
     headline: 'The Romantic Night Sea',
     description: 'A picturesque port city famed for its spectacular marine cable car, romantic night views, and islands.',
     culturalInsight: 'Yeosu is synonymous with romance in Korea, largely thanks to the famous song "Yeosu Night Sea". The city is a gateway to hundreds of beautiful islands and offers an unforgettable culinary journey highlighted by fresh seafood and local delicacies.',
@@ -262,10 +262,10 @@ export const primaryCityData: Record<string, LocalCityData> = {
         id: 'yeosu-3',
         name: 'Yi Sun-sin Square',
         description: 'A historic plaza dedicated to the legendary Admiral Yi Sun-sin, surrounded by famous local eateries.',
-        image: '/images/cities/yeosu.jpg',
+        image: '/images/clipartkorea/yeosu/cm27009408.jpg',
         imageAlt: 'Yi Sun-sin Square',
-        author: 'Local',
-        sourceLink: '/',
+        author: 'ClipartKorea',
+        sourceLink: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=cm27009408',
         tags: ['History', 'Food', 'Culture']
       }
     ]

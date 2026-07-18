@@ -23,7 +23,7 @@ export const anchorCityData: Record<string, LocalCityData> = {
   daejeon: {
     slug: 'daejeon',
     name: 'Daejeon',
-    heroImage: '/images/routes/route-1/daejeon/hero-generated-v1.png',
+    heroImage: '/images/clipartkorea/daejeon/cm26002727.jpg',
     headline: 'The Clean Central Split',
     description: 'A practical central-city chapter where Sungsimdang bakery culture, hot-spring calm, research-district rhythm, and easy transport make the route easier to manage.',
     culturalInsight:
@@ -33,7 +33,7 @@ export const anchorCityData: Record<string, LocalCityData> = {
   daegu: {
     slug: 'daegu',
     name: 'Daegu',
-    heroImage: '/images/cities/daegu.jpg',
+    heroImage: '/images/clipartkorea/daegu/tc00240077166.jpg',
     headline: 'The Southern Urban Reset',
     description: 'A market-rich southern city where food, medicine streets, and denser urban rhythm sharpen the route before the final southeast push.',
     culturalInsight:
@@ -43,7 +43,7 @@ export const anchorCityData: Record<string, LocalCityData> = {
   andong: {
     slug: 'andong',
     name: 'Andong',
-    heroImage: '/images/cities/andong.jpg',
+    heroImage: '/images/clipartkorea/andong/cm27007157.jpg',
     headline: 'The Inland Cultural Anchor',
     description: 'A slow, weighty inland city where Confucian memory, river geography, and regional food make the route feel authored instead of accidental.',
     culturalInsight:
@@ -53,11 +53,11 @@ export const anchorCityData: Record<string, LocalCityData> = {
   gyeongju: {
     slug: 'gyeongju',
     name: 'Gyeongju',
-    heroImage: '/images/cities/gyeongju.jpg',
+    heroImage: '/images/clipartkorea/gyeongju/cm27013557.jpg',
     headline: 'The Museum Without Walls',
     description: 'Step back in time in the ancient capital of the Silla Kingdom, where royal tombs, millennia-old temples, and timeless relics seamlessly blend with modern Korean life.',
     culturalInsight: 'Gyeongju is a living testament to Korea\'s golden age. Here, history is not confined to museums but is breathed in the air, walked upon in the streets, and felt in the shadows of the monumental burial mounds that dot the landscape.',
-    hotspots: [] // Hotspots are derived dynamically from destinations.ts
+    hotspots: [] // Detailed points are provided by the city support profile.
   },
   gwangju: {
     slug: 'gwangju',

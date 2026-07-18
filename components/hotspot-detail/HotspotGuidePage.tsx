@@ -794,7 +794,7 @@ export default async function HotspotPage({
                 const relatedImage = getHeroImage(relatedPost, citySlug, relatedPost.slug);
                 const relatedImageUrl = relatedImage
                   ? normalizeWpMediaUrl(relatedImage)
-                  : '/images/cities/seoul_hero_aesthetic_1773587191807.png';
+                  : 'https://images.unsplash.com/photo-1693928105512-10516b969717?auto=format&fit=crop&w=1080&q=80';
 
                 return (
                   <article

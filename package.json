@@ -28,6 +28,7 @@
     "audit:content-depth": "node scripts/audit-content-depth.mjs",
     "audit:internal-routes": "node scripts/audit-internal-routes.mjs",
     "audit:public-images": "node scripts/audit-public-images.mjs",
+    "audit:no-ai-images": "node scripts/audit-no-ai-images.mjs",
     "audit:mojibake": "node scripts/audit-mojibake.mjs"
   },
   "dependencies": {
