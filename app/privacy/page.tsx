@@ -21,6 +21,8 @@ export default function PrivacyPage() {
       lede="RoadToKorea keeps data collection minimal, but some information may still be processed through analytics, email communication, and advertising tools."
     >
       <>
+        <p><strong>Last reviewed: July 18, 2026</strong></p>
+
         <h2>Overview</h2>
         <p>
           RoadToKorea is a travel information website. Most pages can be viewed without creating an
@@ -60,6 +62,14 @@ export default function PrivacyPage() {
           This site may rely on third-party providers for hosting, analytics, media delivery, maps,
           and advertising. Those providers may process limited technical data as part of delivering
           their services.
+        </p>
+
+        <h2>Consent choices</h2>
+        <p>
+          Where consent is legally required for advertising cookies or personalized advertising,
+          an applicable consent message may be provided through Google or another certified
+          consent management platform. Available choices depend on the visitor&apos;s region and the
+          advertising services active on the site at that time.
         </p>
 
         <h2>Policy updates</h2>

@@ -1,6 +1,4 @@
-import { getApiBase } from './site-config';
-
-const API_BASE = getApiBase();
+import { fetchWordPressJson } from './wp-fetch';
 
 export interface WordPressPost {
   id: number;
@@ -49,93 +47,37 @@ export async function fetchPosts(params?: {
     queryParams.append('per_page', params.perPage.toString());
   }
 
-  try {
-    const response = await fetch(`${API_BASE}/posts?${queryParams.toString()}`, {
-      next: { revalidate: 60 },
-    });
-
-    if (!response.ok) {
-      throw new Error(`WordPress API error: ${response.status}`);
-    }
-
-    return response.json();
-  } catch (error) {
-    console.error('Error fetching posts:', error);
-    return [];
-  }
+  return await fetchWordPressJson<WordPressPost[]>(
+    `/posts?${queryParams.toString()}`,
+    { revalidate: 60 },
+  ) ?? [];
 }
 
 export async function fetchCity(slug: string): Promise<WordPressPost | null> {
-  try {
-    const response = await fetch(`${API_BASE}/posts?slug=${slug}`, {
-      next: { revalidate: 60 },
-    });
+  const posts = await fetchWordPressJson<WordPressPost[]>(
+    `/posts?slug=${encodeURIComponent(slug)}`,
+    { revalidate: 60 },
+  );
 
-    if (!response.ok) {
-      throw new Error(`WordPress API error: ${response.status}`);
-    }
-
-    const posts = await response.json();
-    return posts.length > 0 ? posts[0] : null;
-  } catch (error) {
-    console.error('Error fetching city:', error);
-    return null;
-  }
+  return posts?.[0] ?? null;
 }
 
 export async function fetchMedia(id: number): Promise<WordPressMedia | null> {
-  try {
-    const response = await fetch(`${API_BASE}/media/${id}`, {
-      next: { revalidate: 86400 },
-    });
-
-    if (!response.ok) {
-      throw new Error(`WordPress API error: ${response.status}`);
-    }
-
-    return response.json();
-  } catch (error) {
-    console.error('Error fetching media:', error);
-    return null;
-  }
+  return fetchWordPressJson<WordPressMedia>(`/media/${id}`, {
+    revalidate: 86400,
+  });
 }
 
 export async function fetchPopularPosts(): Promise<WordPressPost[]> {
-  try {
-    const response = await fetch(
-      `${API_BASE}/posts?orderby=meta_value&meta_key=popularity_score&per_page=6`,
-      {
-        next: { revalidate: 60 },
-      }
-    );
-
-    if (!response.ok) {
-      throw new Error(`WordPress API error: ${response.status}`);
-    }
-
-    return response.json();
-  } catch (error) {
-    console.error('Error fetching popular posts:', error);
-    return [];
-  }
+  return await fetchWordPressJson<WordPressPost[]>(
+    '/posts?orderby=meta_value&meta_key=popularity_score&per_page=6',
+    { revalidate: 60 },
+  ) ?? [];
 }
 
 export async function fetchLatestPosts(): Promise<WordPressPost[]> {
-  try {
-    const response = await fetch(
-      `${API_BASE}/posts?orderby=date&order=desc&per_page=6`,
-      {
-        next: { revalidate: 60 },
-      }
-    );
-
-    if (!response.ok) {
-      throw new Error(`WordPress API error: ${response.status}`);
-    }
-
-    return response.json();
-  } catch (error) {
-    console.error('Error fetching latest posts:', error);
-    return [];
-  }
+  return await fetchWordPressJson<WordPressPost[]>(
+    '/posts?orderby=date&order=desc&per_page=6',
+    { revalidate: 60 },
+  ) ?? [];
 }

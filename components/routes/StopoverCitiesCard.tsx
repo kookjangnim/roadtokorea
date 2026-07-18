@@ -11,7 +11,8 @@ interface StopoverCitiesCardProps {
 }
 
 function getStopoverImage(stopover: RouteStopover) {
-  return getLocalCityDataBySlug(stopover.citySlug)?.heroImage || '/images/placeholder.png';
+  return getLocalCityDataBySlug(stopover.citySlug)?.heroImage
+    || '/images/cities/seoul_hero_aesthetic_1773587191807.png';
 }
 
 function getCityGuideHref(routeSlug: RouteSlug, stopover: RouteStopover) {

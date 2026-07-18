@@ -26,7 +26,7 @@ function getStopoverImage(citySlug: string) {
   return slots?.slots.route?.asset
     ?? slots?.slots.hero?.asset
     ?? slots?.slots.street?.asset
-    ?? '/images/placeholder.png';
+    ?? '/images/cities/seoul_hero_aesthetic_1773587191807.png';
 }
 
 export default function RoutePageClient({

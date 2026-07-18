@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
-import { getSiteUrl } from "@/lib/site-config";
+import { getAdsenseClient, getSiteUrl } from "@/lib/site-config";
 import "./globals.css";
 
 const siteUrl = getSiteUrl();
-const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+const adsenseClient = getAdsenseClient();
+
+const sans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const editorial = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: "--font-editorial",
+  display: "swap",
+  weight: ["500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -49,6 +63,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {adsenseClient ? (
+          <meta name="google-adsense-account" content={adsenseClient} />
+        ) : null}
+        {adsenseClient ? (
           <Script
             id="adsense-script"
             async
@@ -58,7 +75,7 @@ export default function RootLayout({
           />
         ) : null}
       </head>
-      <body className="antialiased bg-mesh-dark">
+      <body className={`${sans.variable} ${editorial.variable} antialiased bg-mesh-dark`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

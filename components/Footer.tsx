@@ -1,114 +1,77 @@
 import Link from 'next/link';
 
-const footerExplore = [
-  { name: 'Updated Cities', href: '/updated-cities' },
-  { name: 'Route 1', href: '/route-1' },
-  { name: 'Route 2', href: '/route-2' },
-  { name: 'Daejeon', href: '/route-1/daejeon' },
-  { name: 'Gangneung', href: '/route-2/gangneung' },
-  { name: 'Uljin', href: '/route-1/uljin' },
-];
-
 const footerRoutes = [
-  { name: 'KTX route logic', href: '/route-1' },
-  { name: 'Drive south with stopovers', href: '/route-1' },
-  { name: 'Budget bus version', href: '/route-1' },
-  { name: 'Eastbound coast route', href: '/route-2' },
+  { name: 'Seoul to Busan', href: '/route-1' },
+  { name: 'Seoul to Gangneung', href: '/route-2' },
+  { name: 'Seoul to Sokcho', href: '/route-3' },
+  { name: 'Mokpo to Busan', href: '/route-7' },
 ];
 
-const footerGuidance = [
-  'Start with a route, not a city list.',
-  'Choose the transport mode that matches the trip pace you actually want.',
-  'Promote cities into the itinerary only when they improve the route.',
+const footerExplore = [
+  { name: 'All routes', href: '/routes' },
+  { name: 'City guides', href: '/updated-cities' },
+  { name: 'About RoadToKorea', href: '/about' },
+  { name: 'Contact & corrections', href: '/contact' },
+];
+
+const footerPolicies = [
+  { name: 'Editorial & advertising policy', href: '/editorial-policy' },
+  { name: 'Privacy policy', href: '/privacy' },
 ];
 
 export default function Footer() {
   return (
     <footer className="footer-wrap">
+      <div className="footer-callout">
+        <div>
+          <p>Start with the journey</p>
+          <h2>Where will Korea take you?</h2>
+        </div>
+        <Link href="/routes">
+          Explore all routes <span aria-hidden="true">↗</span>
+        </Link>
+      </div>
+
       <div className="footer-inner">
         <div className="footer-about">
-          <Link href="/" className="footer-logo">
-            RoadToKorea
-          </Link>
-          <p className="footer-kicker">Travel Korea Slowly</p>
+          <Link href="/" className="footer-logo">RoadToKorea</Link>
+          <p className="footer-kicker">Korea, route by route</p>
           <p className="footer-about-text">
-            Built for travelers who want Korea to feel deeper, calmer, and more lived-in than a
-            fast itinerary usually allows.
+            An independent English-language travel guide for slower, clearer journeys across
+            South Korea—built around routes, stopovers, and the places between the headlines.
           </p>
-          <div className="footer-highlight-card">
-            <p className="footer-highlight-label">Best use of this site</p>
-            <p className="footer-highlight-text">
-              Choose a corridor first, compare the transport logic, then open city guides only for
-              the stops that deserve time.
-            </p>
-          </div>
+          <a href="mailto:sawjyjm@gmail.com" className="footer-email">sawjyjm@gmail.com</a>
         </div>
 
         <div className="footer-section">
-          <h4 className="footer-heading">Explore</h4>
-          {footerExplore.map((item) => (
-            <Link key={item.name} href={item.href} className="footer-link">
-              {item.name}
-            </Link>
-          ))}
-        </div>
-
-        <div className="footer-section">
-          <h4 className="footer-heading">Route Modes</h4>
+          <h3 className="footer-heading">Featured routes</h3>
           {footerRoutes.map((item) => (
-            <Link key={item.name} href={item.href} className="footer-link">
-              {item.name}
-            </Link>
+            <Link key={item.href} href={item.href} className="footer-link">{item.name}</Link>
           ))}
         </div>
 
         <div className="footer-section">
-          <h4 className="footer-heading">How To Use</h4>
-          <div className="footer-guidance-list">
-            {footerGuidance.map((item) => (
-              <p key={item} className="footer-guidance-item">
-                {item}
-              </p>
-            ))}
-          </div>
+          <h3 className="footer-heading">Explore</h3>
+          {footerExplore.map((item) => (
+            <Link key={item.href} href={item.href} className="footer-link">{item.name}</Link>
+          ))}
         </div>
 
-        <div className="footer-section">
-          <h4 className="footer-heading">Connect</h4>
-          <a href="mailto:sawjyjm@gmail.com" className="footer-contact-link">
-            sawjyjm@gmail.com
-          </a>
-          <p className="footer-contact-copy">
-            For partnership, feedback, or travel questions about the places covered here.
+        <div className="footer-section footer-transparency">
+          <h3 className="footer-heading">Reader trust</h3>
+          <p>
+            Commercial relationships never replace route logic. Advertising and affiliate links,
+            when used, are disclosed and kept visually separate from editorial navigation.
           </p>
-          <div className="rounded-[1.25rem] border border-stone-200 bg-white/80 p-4">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-stone-500">
-              Independent project
-            </p>
-            <p className="mt-3 text-sm leading-7 text-stone-700">
-              RoadToKorea is a route-first editorial travel project. For corrections, partnerships,
-              or privacy questions, email is the main contact channel.
-            </p>
-          </div>
+          {footerPolicies.map((item) => (
+            <Link key={item.href} href={item.href} className="footer-policy-link">{item.name} ↗</Link>
+          ))}
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p className="footer-copyright">
-          Copyright 2026 RoadToKorea. Route-first Korea travel guides built around pace, sequence,
-          and stopover logic.
-        </p>
-        <div className="footer-bottom-links">
-          <Link href="/about" className="footer-policy-link">
-            About
-          </Link>
-          <Link href="/privacy" className="footer-policy-link">
-            Privacy Policy
-          </Link>
-          <Link href="/contact" className="footer-policy-link">
-            Contact
-          </Link>
-        </div>
+        <p>© 2026 RoadToKorea. Independent Korea travel publishing.</p>
+        <p>Made for travelers who want the middle of the journey back.</p>
       </div>
     </footer>
   );

@@ -1,6 +1,31 @@
 import Link from 'next/link';
 import { route2BranchA } from '@/data/routeBranches';
 
+const branchUseCases = [
+  {
+    title: 'Choose it when Route 2 feels too direct',
+    body:
+      'The standard Route 2 line moves cleanly from Seoul toward Wonju, Pyeongchang, Daegwallyeong, and Gangneung. Branch 2A is for travelers who want the mountain interior to become the main story before the coast appears.',
+  },
+  {
+    title: 'Use fewer stops, but let them matter',
+    body:
+      'This branch works best as a slow two- or three-night extension. Wonju can be the hinge, Yeongwol can carry the emotional center, and Jeongseon or Taebaek can decide whether the trip leans toward market revival or coal-highland memory.',
+  },
+  {
+    title: 'Exit through Samcheok only when the coast should continue',
+    body:
+      'Samcheok should not be a random finish. It is strongest when the traveler will keep reading the East Sea through Route 4, where caves, cliffs, ports, and National Route 7 make the inland depth pay off.',
+  },
+];
+
+const pacingNotes = [
+  'A quick version can keep Wonju, Yeongwol, and Samcheok while treating Jecheon, Jeongseon, and Taebaek as optional context.',
+  'A deeper version should sleep inland before the coast, otherwise the branch becomes a long drive with too many emotional beats compressed into one day.',
+  'Winter and highland weather matter here. The route should be planned with more slack than the main Seoul-to-Gangneung corridor.',
+  'This branch is not the best first Korea itinerary. It is better for repeat visitors, road trips, and travelers who enjoy regional history.',
+];
+
 export const metadata = {
   title: `${route2BranchA.label}: ${route2BranchA.title}`,
   description: route2BranchA.summary,
@@ -64,6 +89,89 @@ export default function Route2BranchAPage() {
               ))}
             </div>
           </div>
+
+          <section className="mt-8 rounded-[2rem] border border-stone-200 bg-white/88 p-7 shadow-[0_25px_70px_rgba(34,30,25,0.08)] md:p-8">
+            <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                  When this branch earns the detour
+                </p>
+                <h2 className="mt-3 font-serif text-4xl leading-tight text-stone-950">
+                  Treat Branch 2A like a short regional series.
+                </h2>
+              </div>
+              <p className="max-w-2xl text-sm leading-7 text-stone-600">
+                The point is not to add every possible Gangwon stop. The point is to decide whether
+                Route 2 should remain a clean mountain-to-sea line or become a deeper inland story
+                before it joins the coast.
+              </p>
+            </div>
+
+            <div className="mt-7 grid gap-4 lg:grid-cols-3">
+              {branchUseCases.map((item) => (
+                <article key={item.title} className="border border-stone-200 bg-stone-50 p-5">
+                  <h3 className="font-serif text-2xl leading-tight text-stone-950">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-stone-700">{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="rounded-[2rem] border border-stone-200 bg-white/88 p-7 shadow-[0_25px_70px_rgba(34,30,25,0.08)] md:p-8">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
+                Pacing notes
+              </p>
+              <h2 className="mt-3 font-serif text-4xl leading-tight text-stone-950">
+                Give the inland section enough room to breathe.
+              </h2>
+              <div className="mt-6 grid gap-3">
+                {pacingNotes.map((note) => (
+                  <div
+                    key={note}
+                    className="border border-stone-200 bg-stone-50 px-5 py-4 text-sm leading-7 text-stone-700"
+                  >
+                    {note}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <aside className="rounded-[2rem] border border-stone-200 bg-[#171411] p-7 text-white shadow-[0_25px_70px_rgba(34,30,25,0.16)] md:p-8">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-400">
+                Read next
+              </p>
+              <h2 className="mt-3 font-serif text-4xl leading-tight">
+                Rejoin the coast or return to the main route.
+              </h2>
+              <p className="mt-5 text-sm leading-7 text-stone-300">
+                After Taebaek, the branch should make a deliberate choice. Continue to Samcheok if
+                the East Sea line is the reward, or return to the main Route 2 guide if the traveler
+                mainly needs a cleaner Seoul-to-Gangneung crossing.
+              </p>
+              <p className="mt-4 text-sm leading-7 text-stone-300">
+                That choice keeps the page useful: it explains not only where the branch goes, but
+                also when a traveler should ignore it and protect a simpler itinerary.
+                In that sense, the branch is a filter, not a mandate.
+              </p>
+              <div className="mt-6 grid gap-3">
+                <Link
+                  href="/route-4/samcheok"
+                  className="border border-white/10 bg-white/[0.06] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/[0.12]"
+                >
+                  Open Samcheok coast chapter
+                </Link>
+                <Link
+                  href="/route-2"
+                  className="border border-white/10 bg-white/[0.06] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/[0.12]"
+                >
+                  Back to Route 2 main guide
+                </Link>
+              </div>
+            </aside>
+          </section>
         </div>
       </section>
     </main>

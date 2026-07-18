@@ -34,6 +34,7 @@ export default function StaticPageShell({
                 { label: 'About', href: '/about' },
                 { label: 'Contact', href: '/contact' },
                 { label: 'Privacy', href: '/privacy' },
+                { label: 'Editorial Policy', href: '/editorial-policy' },
                 { label: 'Routes', href: '/routes' },
               ].map((item) => (
                 <Link

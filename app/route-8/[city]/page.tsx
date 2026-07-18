@@ -1,10 +1,17 @@
 import CityPage from '@/components/city-detail/CityGuidePage';
 import RoutePageShell from '@/components/routes/RoutePageShell';
+import { getRouteCityLinks } from '@/data/routeRegistry';
 
 interface PageProps {
   params: Promise<{
     city: string;
   }>;
+}
+
+export function generateStaticParams() {
+  return getRouteCityLinks()
+    .filter((link) => link.routeSlug === 'route-8')
+    .map((link) => ({ city: link.citySlug }));
 }
 
 export default async function RouteEightCityPage({ params }: PageProps) {

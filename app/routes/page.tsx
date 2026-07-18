@@ -29,7 +29,7 @@ function getRouteImage(route: RouteData) {
   return destinationSlots?.slots.route?.asset
     ?? destinationSlots?.slots.hero?.asset
     ?? routeFallbackImages[route.routeCode]
-    ?? '/images/placeholder.png';
+    ?? '/images/cities/seoul_hero_aesthetic_1773587191807.png';
 }
 
 function getRouteReadingLabel(route: RouteData) {

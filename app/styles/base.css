@@ -3,14 +3,17 @@
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 :root {
-  --background: #ffffff;
-  --foreground: #111827;
+  --background: #f4f1e9;
+  --foreground: #17201d;
 
-  --color-brand-primary: #111111;
-  --color-brand-secondary: rgba(0, 0, 0, 0.1);
-  --color-brand-accent: #b08050;
-  --color-brand-sage: #5a6a56;
-  --color-brand-taupe: #787063;
+  --color-brand-primary: #17201d;
+  --color-brand-secondary: rgba(23, 32, 29, 0.1);
+  --color-brand-accent: #d56b45;
+  --color-brand-sage: #456c5b;
+  --color-brand-taupe: #796f61;
+  --color-paper: #f4f1e9;
+  --color-cream: #fbfaf6;
+  --color-ink: #17201d;
 
   --glass-bg: rgba(0, 0, 0, 0.03);
   --glass-border: rgba(0, 0, 0, 0.08);
@@ -19,9 +22,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-cormorant);
+  --font-serif: var(--font-editorial);
 }
 
 body {
@@ -30,6 +31,20 @@ body {
   font-family: var(--font-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(213, 107, 69, 0.24);
+  color: #17201d;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(213, 107, 69, 0.72);
+  outline-offset: 3px;
 }
 
 /* Premium Mesh Background */
@@ -45,7 +60,7 @@ body {
 
 /* Global Utilities */
 .font-editorial {
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-editorial), Georgia, serif;
 }
 
 .glass-panel {

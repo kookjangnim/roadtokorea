@@ -460,7 +460,7 @@ const bicycleJungangRoute: TransportRouteVariant = {
   pacingNote:
     'This route can be compressed or stretched, but it works best when you let each inland chapter actually feel distinct.',
   planningNotes: [
-    'This is the most legible ?쏶eoul to Busan by bike??story because the inland corridor has established long-distance cycling logic.',
+    'This is the most legible "Seoul to Busan by bike" story because the inland corridor has established long-distance cycling logic.',
     'Saejae and Nakdong are the route ideas that matter here, not just generic inland roads.',
     'Busan feels like a genuine finish line on this version because the whole route builds toward it.',
   ],
@@ -504,7 +504,7 @@ const bicycleJungangRoute: TransportRouteVariant = {
       whyItEarnsTime:
         'It is one of the places that makes this route feel like a real cross-country line rather than a collection of flat connectors.',
       decisionReason:
-        'Mungyeong is the city that justifies the route?셲 cross-country claim because the Saejae crossing changes the ride physically and mentally.',
+        'Mungyeong is the city that justifies the route’s cross-country claim because the Saejae crossing changes the ride physically and mentally.',
       recoveryValue:
         'Not a soft recovery town first; its value is in how it breaks the route into before-the-pass and after-the-pass chapters.',
       sleepValue:
@@ -581,7 +581,7 @@ const bicycleJungangRoute: TransportRouteVariant = {
       decisionReason:
         'Changnyeong matters when the rider wants one more calm southern chapter before the finish tightens toward Busan.',
       recoveryValue:
-        'A quieter recovery node that lowers the tempo again after Daegu?셲 bigger urban reset.',
+        'A quieter recovery node that lowers the tempo again after Daegu’s bigger urban reset.',
       sleepValue:
         'Useful as a final softer overnight if the rider does not want the last run to Busan to begin from a larger city mood.',
       foodValue:
@@ -614,7 +614,7 @@ const bicycleNakdongRoute: TransportRouteVariant = {
   totalTravelTime: '4-6 days',
   totalDistance: '460-520 km',
   summary:
-    'A southbound ride that prioritizes joining and following the Nakdonggang logic as much as possible, using the river corridor as the trip?셲 backbone.',
+    'A southbound ride that prioritizes joining and following the Nakdonggang logic as much as possible, using the river corridor as the trip’s backbone.',
   bestFor: 'Riders who want a calmer river-led southbound structure and who care about the Nakdong path more than the mountain-pass identity.',
   tradeoff: 'It can feel less dramatic than the coast and less mythic than the full Saejae-style cross-country story.',
   stopPattern: 'Best when the rider wants the route to settle into a long river rhythm after the initial inland lead-in.',
@@ -625,7 +625,7 @@ const bicycleNakdongRoute: TransportRouteVariant = {
   pacingNote:
     'The useful part here is not a fixed daily plan but the way the corridor becomes easier to read once the ride settles into the Nakdong basin.',
   planningNotes: [
-    'This route borrows from the logic of Korea?셲 Nakdong bicycle path culture more than from generic road routing.',
+    'This route borrows from the logic of Korea’s Nakdong bicycle path culture more than from generic road routing.',
     'Andong matters more here because it is one of the symbolic entry points into the Nakdong story.',
     'It is strongest for riders who want a legible long-distance river descent rather than a hybrid of many route moods.',
   ],
@@ -743,7 +743,7 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
       routeRole: 'Coastal start',
       stayAdvice: 'Keep Gangneung if you want the coast to be the identity of the ride rather than a late-stage reward.',
       whyItEarnsTime:
-        'It is the city that defines the route?셲 tone before the southbound cycling really begins.',
+        'It is the city that defines the route’s tone before the southbound cycling really begins.',
       highlights: ['Anmok Coffee Street', 'Gyeongpo Beach', 'Ojukheon House'],
     },
     {
@@ -769,7 +769,7 @@ const bicycleEastCoastRoute: TransportRouteVariant = {
       routeRole: 'Quiet coast chapter',
       stayAdvice: 'Keep Uljin if the ride should lean into smaller seaside rhythm rather than only larger destination towns.',
       whyItEarnsTime:
-        'It supports the coast route?셲 strongest quality: repeated shoreline atmosphere over a long descent south.',
+        'It supports the coast route’s strongest quality: repeated shoreline atmosphere over a long descent south.',
       decisionReason:
         'Keep Uljin when the coast route should feel expansive and lived-in rather than compressed into only famous anchor points.',
       recoveryValue:
@@ -1931,7 +1931,7 @@ const nationalRoute7Stopovers: RouteStopover[] = [
     coordinates: { lat: 35.8562, lng: 129.2247 },
     travelTimeFromPrevious: '45m',
     cumulativeTime: '7h 05m',
-    pitch: 'Korea?셲 Silla-era capital turns the coast route inward for one major heritage chapter before the final metropolitan south.',
+    pitch: 'Korea’s Silla-era capital turns the coast route inward for one major heritage chapter before the final metropolitan south.',
     routeRole: 'Heritage handoff',
     stayAdvice: 'Use Gyeongju as the highest-value cultural overnight before Ulsan and Busan.',
     whyItEarnsTime: 'It gives Route 4 historical depth instead of letting the final third become only ports and expressway logic.',
@@ -1955,10 +1955,10 @@ const nationalRoute7Stopovers: RouteStopover[] = [
     coordinates: { lat: 35.1796, lng: 129.0756 },
     travelTimeFromPrevious: '1h',
     cumulativeTime: '8h 50m',
-    pitch: 'Korea?셲 major southern port closes the route with beaches, markets, hillsides, rail, ferries, and full-city arrival energy.',
+    pitch: 'Korea’s major southern port closes the route with beaches, markets, hillsides, rail, ferries, and full-city arrival energy.',
     routeRole: 'Southern finish',
     stayAdvice: 'End with at least two nights if Route 4 has been paced slowly; Busan should feel like a finale, not a checkout point.',
-    whyItEarnsTime: 'It resolves the full east coast line into Korea?셲 strongest port-city finish.',
+    whyItEarnsTime: 'It resolves the full east coast line into Korea’s strongest port-city finish.',
     highlights: ['Haeundae', 'Jagalchi Market', 'Gamcheon Culture Village'],
   },
 ];
@@ -2015,11 +2015,11 @@ export const goseongToBusanRoute: RouteData = {
   toSlug: 'busan',
   href: '/route-4',
   routeLabel: 'Goseong to Busan',
-  headline: 'Korea?셲 long East Sea line through National Route 7, surf towns, ports, heritage, industry, and Busan.',
+  headline: 'Korea’s long East Sea line through National Route 7, surf towns, ports, heritage, industry, and Busan.',
   overview:
     'Route 4 is the coastal counterweight to the inland and mountain routes. It begins where the northern coast meets DMZ and Seoraksan memory, then follows the East Sea through Yangyang, Gangneung, Donghae, Samcheok, Uljin, Yeongdeok, Pohang, Gyeongju, Ulsan, and finally Busan.',
   destinationPitch:
-    'Use this route when Korea?셲 east coast should be the main story, not a scenery strip beside the road.',
+    'Use this route when Korea’s east coast should be the main story, not a scenery strip beside the road.',
   bestUseCases: [
     'Travelers planning a Korea east coast road trip from Goseong or Sokcho toward Busan.',
     'Repeat visitors who already know Seoul and Busan but want the towns and cities between them to matter.',

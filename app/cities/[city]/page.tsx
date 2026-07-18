@@ -5,11 +5,16 @@ import {
   getPreferredRouteSlugForCity,
 } from '@/data/routeRegistry';
 import { hasLocalCityData } from '@/data/cityRegistry';
+import { localCityRegistry } from '@/data/cityRegistry';
 
 interface PageProps {
   params: Promise<{
     city: string;
   }>;
+}
+
+export function generateStaticParams() {
+  return Object.keys(localCityRegistry).map((city) => ({ city }));
 }
 
 export default async function CityCanonicalRedirectPage({ params }: PageProps) {
