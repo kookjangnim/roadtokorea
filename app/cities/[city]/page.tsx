@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import CityPage from '@/components/city-detail/CityGuidePage';
 import {
   getCanonicalCityHref,
@@ -6,6 +6,8 @@ import {
 } from '@/data/routeRegistry';
 import { hasLocalCityData } from '@/data/cityRegistry';
 import { localCityRegistry } from '@/data/cityRegistry';
+
+export { generateMetadata } from '@/components/city-detail/CityGuidePage';
 
 interface PageProps {
   params: Promise<{
@@ -20,7 +22,7 @@ export function generateStaticParams() {
 export default async function CityCanonicalRedirectPage({ params }: PageProps) {
   const { city } = await params;
   if (getPreferredRouteSlugForCity(city)) {
-    redirect(getCanonicalCityHref(city));
+    permanentRedirect(getCanonicalCityHref(city));
   }
 
   if (!hasLocalCityData(city)) notFound();

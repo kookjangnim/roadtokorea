@@ -60,18 +60,18 @@ for (const citySlug of routeCitySlugs) {
 
 assert.doesNotMatch(canonicalCityPage, /getLocalCityTier/, 'canonical city page must not depend on tier lookup');
 assert.doesNotMatch(cityPage, /function getLocalCityData\(tier/, 'city detail renderer must not require tier for local city data');
-assert.match(tierCompatibilityPage, /redirect\(getCanonicalCityHref\(city\)\)/, 'tier compatibility route must redirect to canonical city route');
+assert.match(tierCompatibilityPage, /permanentRedirect\(getCanonicalCityHref\(city\)\)/, 'tier compatibility route must permanently redirect to canonical city route');
 assert.doesNotMatch(tierCompatibilityPage, /fetchCity/, 'tier compatibility route must stay thin');
 assert.doesNotMatch(tierCompatibilityPage, /CityGuidePage|CityPage/, 'tier compatibility route must not render city detail directly');
 assert.doesNotMatch(tierCompatibilityPage, /new Set\(\['tier-1'/, 'legacy city route must use centralized legacy compatibility helper');
 assert.match(canonicalHotspotPage, /components\/hotspot-detail\/HotspotGuidePage/, 'canonical hotspot page must render hotspot guide component');
-assert.match(legacyHotspotPage, /redirect\(`\/cities\/\$\{citySlug\}\/\$\{hotspotSlug\}`\)/, 'legacy hotspot page must redirect to canonical city hotspot route');
+assert.match(legacyHotspotPage, /permanentRedirect\(`\/cities\/\$\{citySlug\}\/\$\{hotspotSlug\}`\)/, 'legacy hotspot page must permanently redirect to canonical city hotspot route');
 assert.doesNotMatch(legacyHotspotPage, /<main|dangerouslySetInnerHTML|fetchPostsByCityTag/, 'legacy hotspot page must not render hotspot detail directly');
 assert.match(hotspotGuidePage, /isWpPostCityMatch\(post,\s*city/, 'hotspot guide must validate by city, not tier');
 assert.doesNotMatch(hotspotGuidePage, /\$\{tier\}\/\$\{citySlug\}|\$\{tier\}\/\$\{city\}/, 'hotspot guide must not emit tier hotspot URLs');
-assert.match(tierCitiesPage, /redirect\(LEGACY_ROUTE_INDEX_HREF\)/, 'legacy tier city archive must redirect to route index');
+assert.match(tierCitiesPage, /permanentRedirect\(LEGACY_ROUTE_INDEX_HREF\)/, 'legacy tier city archive must permanently redirect to route index');
 assert.doesNotMatch(tierCitiesPage, /fetchCitiesByTier|CityList|CollectionPage/, 'legacy tier city archive must not render tier UI');
-assert.match(legacyRegionPage, /redirect\(LEGACY_ROUTE_INDEX_HREF\)/, 'legacy region page must redirect to route index');
+assert.match(legacyRegionPage, /permanentRedirect\(LEGACY_ROUTE_INDEX_HREF\)/, 'legacy region page must permanently redirect to route index');
 assert.doesNotMatch(legacyRegionPage, /Image|Link|tierData|Filter by Region/, 'legacy region page must not render tier UI');
 
 for (const legacySource of ['/regions/:tier', '/regions/:tier/cities', '/:tier(tier-1|tier-2|tier-3|tier-4)']) {
@@ -89,7 +89,7 @@ for (const routeNumber of ['1', '2', '3', '4', '5', '6', '7', '8']) {
 for (const tierNumber of ['1', '2', '4']) {
   const tierCityPage = await readFile(new URL(`../app/tier-${tierNumber}/[city]/page.tsx`, import.meta.url), 'utf8');
   const tierCitiesRedirectPage = await readFile(new URL(`../app/tier-${tierNumber}/cities/page.tsx`, import.meta.url), 'utf8');
-  assert.match(tierCityPage, /redirect\(getCanonicalCityHref\(city\)\)/, `tier-${tierNumber} city page must redirect to canonical city route`);
+  assert.match(tierCityPage, /permanentRedirect\(getCanonicalCityHref\(city\)\)/, `tier-${tierNumber} city page must permanently redirect to canonical city route`);
   assert.doesNotMatch(tierCityPage, /CityGuidePage|CityPage/, `tier-${tierNumber} city page must not render city detail directly`);
-  assert.match(tierCitiesRedirectPage, /redirect\(LEGACY_ROUTE_INDEX_HREF\)/, `tier-${tierNumber} city archive must redirect to route index`);
+  assert.match(tierCitiesRedirectPage, /permanentRedirect\(LEGACY_ROUTE_INDEX_HREF\)/, `tier-${tierNumber} city archive must permanently redirect to route index`);
 }

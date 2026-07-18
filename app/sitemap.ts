@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { fetchPosts } from '@/lib/wp-api';
 import { getSiteUrl } from '@/lib/site-config';
-import { getRouteCityLinks } from '@/data/routeRegistry';
+import { getCanonicalCityLinks } from '@/data/routeRegistry';
 import { getIndexableWpPostRoute } from '@/lib/wp-route-context';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -101,7 +101,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ];
 
     try {
-        const routeCityRoutes: MetadataRoute.Sitemap = getRouteCityLinks().map((routeCity) => ({
+        const routeCityRoutes: MetadataRoute.Sitemap = getCanonicalCityLinks().map((routeCity) => ({
             url: `${baseUrl}${routeCity.href}`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
@@ -125,7 +125,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         return [...staticRoutes, ...routeCityRoutes, ...dynamicRoutes];
     } catch (error) {
         console.error('Error generating sitemap:', error);
-        const routeCityRoutes: MetadataRoute.Sitemap = getRouteCityLinks().map((routeCity) => ({
+        const routeCityRoutes: MetadataRoute.Sitemap = getCanonicalCityLinks().map((routeCity) => ({
             url: `${baseUrl}${routeCity.href}`,
             lastModified: new Date(),
             changeFrequency: 'weekly',

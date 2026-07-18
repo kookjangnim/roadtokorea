@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { updatedCities } from '@/data/updatedCities';
 import { getCityImageSlots } from '@/data/cityImageSlots';
 import { getEditorialImageForCity, getSafeEditorialImage } from '@/data/editorialImageFallbacks';
+import { updatedCitiesMetadata } from '@/lib/page-metadata';
+
+export const metadata = updatedCitiesMetadata;
 
 function getCityImage(citySlug: string) {
   const slots = getCityImageSlots(citySlug);

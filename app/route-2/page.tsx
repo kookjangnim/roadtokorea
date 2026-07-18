@@ -1,7 +1,10 @@
 import { notFound } from 'next/navigation';
 import { getRouteDataBySlug } from '@/data/routeRegistry';
+import { buildRouteMetadata } from '@/lib/page-metadata';
 import RoutePageClient from '@/app/routes/[from]/[to]/RoutePageClient';
 import RoutePageShell from '@/components/routes/RoutePageShell';
+
+export const metadata = buildRouteMetadata('route-2');
 
 export default function RouteTwoPage() {
   const routeData = getRouteDataBySlug('route-2');

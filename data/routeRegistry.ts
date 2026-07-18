@@ -9,6 +9,11 @@ export type RouteCityLink = {
   href: string;
 };
 
+export type CanonicalCityLink = {
+  citySlug: string;
+  href: string;
+};
+
 export const routeSlugByCode: Record<string, RouteSlug> = {
   '1': 'route-1',
   '2': 'route-2',
@@ -141,6 +146,20 @@ export function getRouteCityLinks(): RouteCityLink[] {
       }
     }
     addRouteCityLink(routeData.toSlug);
+  }
+
+  return [...links.values()];
+}
+
+export function getCanonicalCityLinks(): CanonicalCityLink[] {
+  const links = new Map<string, CanonicalCityLink>();
+
+  for (const routeCity of getRouteCityLinks()) {
+    const href = getCanonicalCityHref(routeCity.citySlug);
+    links.set(href, {
+      citySlug: routeCity.citySlug,
+      href,
+    });
   }
 
   return [...links.values()];

@@ -1,6 +1,6 @@
 import { fetchPostBySlug } from '@/lib/wp-api';
 import { isLegacyWpPostRouteMatch } from '@/lib/wp-route-context';
-import { notFound, redirect } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 
 type LegacyHotspotParams = {
   tier: string;
@@ -18,5 +18,5 @@ export default async function LegacyHotspotRedirectPage({
 
   if (!post || !isLegacyWpPostRouteMatch(post, legacySegment, citySlug)) notFound();
 
-  redirect(`/cities/${citySlug}/${hotspotSlug}`);
+  permanentRedirect(`/cities/${citySlug}/${hotspotSlug}`);
 }

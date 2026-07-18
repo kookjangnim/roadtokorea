@@ -1,7 +1,10 @@
 import { notFound } from 'next/navigation';
 import { getRouteDataBySlug } from '@/data/routeRegistry';
+import { buildRouteMetadata } from '@/lib/page-metadata';
 import RoutePageClient from '@/app/routes/[from]/[to]/RoutePageClient';
 import RoutePageShell from '@/components/routes/RoutePageShell';
+
+export const metadata = buildRouteMetadata('route-5');
 
 export default function RouteFivePage() {
   const routeData = getRouteDataBySlug('route-5');

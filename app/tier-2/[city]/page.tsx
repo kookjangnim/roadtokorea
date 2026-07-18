@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation';
+import { permanentRedirect } from 'next/navigation';
 import { getCanonicalCityHref } from '@/data/routeRegistry';
 
 type Params = {
@@ -11,5 +11,5 @@ export default async function TierTwoCityRedirectPage({
   params: Promise<Params>;
 }) {
   const { city } = await params;
-  redirect(getCanonicalCityHref(city));
+  permanentRedirect(getCanonicalCityHref(city));
 }

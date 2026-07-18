@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { getCanonicalCityHref } from '@/data/routeRegistry';
 import { isLegacyCategorySlug } from '@/lib/legacy-route-compat';
 
@@ -15,5 +15,5 @@ export default async function LegacyTierCityRedirectPage({
   const { tier: legacySegment, city } = await params;
   if (!isLegacyCategorySlug(legacySegment)) notFound();
 
-  redirect(getCanonicalCityHref(city));
+  permanentRedirect(getCanonicalCityHref(city));
 }

@@ -41,9 +41,6 @@ export const metadata: Metadata = {
     title: "RoadToKorea - Discover the Best Cities in South Korea",
     description: "Find your next destination in South Korea. Explore must-visit cities, hidden gems, and local secrets with RoadToKorea.",
   },
-  alternates: {
-    canonical: siteUrl,
-  },
 };
 
 export default function RootLayout({

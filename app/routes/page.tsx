@@ -4,6 +4,9 @@ import { getAllRouteData, type RouteData } from '@/data/routeStopovers';
 import { getRouteSlugForRoute } from '@/data/routeRegistry';
 import RoutePageShell from '@/components/routes/RoutePageShell';
 import { getCityImageSlots } from '@/data/cityImageSlots';
+import { routesIndexMetadata } from '@/lib/page-metadata';
+
+export const metadata = routesIndexMetadata;
 
 const routeFallbackImages: Record<string, string> = {
   '1': 'https://images.unsplash.com/photo-1575869781339-47700b53a5ca?auto=format&fit=crop&w=1600&q=82',

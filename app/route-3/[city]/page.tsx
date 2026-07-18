@@ -2,6 +2,8 @@ import CityPage from '@/components/city-detail/CityGuidePage';
 import RoutePageShell from '@/components/routes/RoutePageShell';
 import { getRouteCityLinks } from '@/data/routeRegistry';
 
+export { generateMetadata } from '@/components/city-detail/CityGuidePage';
+
 interface PageProps {
   params: Promise<{
     city: string;

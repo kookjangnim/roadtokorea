@@ -16,6 +16,7 @@ import { getCitySupportProfile } from '@/data/citySupportProfiles';
 import { getCitySeoKeywordProfile } from '@/data/citySeoKeywords';
 import { getCityImageSlots } from '@/data/cityImageSlots';
 import { getAllRouteData } from '@/data/routeStopovers';
+import { getCanonicalCityHref } from '@/data/routeRegistry';
 import { getCityQualityPackStatus } from '@/data/reviewedCityQualityRegistry';
 import {
   buildOpenStreetMapDirectionsUrl,
@@ -169,6 +170,7 @@ export async function generateMetadata({
       ? buildStoryExcerpt(cityData.excerpt.rendered, cityData.content.rendered) ||
         `Discover ${title} with RoadToKorea`
       : localCityData?.description || `Discover ${title} with RoadToKorea`;
+  const canonical = `${siteUrl}${getCanonicalCityHref(city)}`;
 
   return {
     title,
@@ -177,8 +179,11 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `${siteUrl}/cities/${city}`,
+      url: canonical,
       type: 'article',
+    },
+    alternates: {
+      canonical,
     },
   };
 }

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { redirect } from 'next/navigation';
+import { permanentRedirect } from 'next/navigation';
 import { LEGACY_ROUTE_INDEX_HREF } from '@/lib/legacy-route-compat';
 import { getSiteUrl } from '@/lib/site-config';
 
@@ -26,5 +26,5 @@ export async function generateMetadata({ params }: { params: Promise<{ tier: str
 }
 
 export default function TierCitiesRedirectPage() {
-  redirect(LEGACY_ROUTE_INDEX_HREF);
+  permanentRedirect(LEGACY_ROUTE_INDEX_HREF);
 }

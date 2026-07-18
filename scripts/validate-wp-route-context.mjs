@@ -17,7 +17,7 @@ const runnableSource = helperSource
   .replace(/type WpTerm = \{[\s\S]*?\};\n\n/, '');
 
 const moduleUrl = `data:text/javascript,${encodeURIComponent(
-  `const VALID_CITY_SLUGS = ${JSON.stringify(citiesModule.VALID_CITY_SLUGS)};\nconst LEGACY_CATEGORY_SLUGS = ['tier-1', 'tier-2', 'tier-3', 'tier-4'];\nfunction isLegacyCategorySlug(value) { return LEGACY_CATEGORY_SLUGS.includes(value); }\n${runnableSource}`
+  `const VALID_CITY_SLUGS = ${JSON.stringify(citiesModule.VALID_CITY_SLUGS)};\nconst LEGACY_CATEGORY_SLUGS = ['tier-1', 'tier-2', 'tier-3', 'tier-4', 'seoul-gyeonggi', 'gangwon-east-coast', 'chungcheong', 'historic-gyeongbuk', 'busan-south-coast', 'jeolla-southwest', 'jeju-island'];\nfunction isLegacyCategorySlug(value) { return LEGACY_CATEGORY_SLUGS.includes(value); }\n${runnableSource}`
 )}`;
 const { getIndexableWpPostRoute, isWpPostCityMatch, isLegacyWpPostRouteMatch } = await import(moduleUrl);
 
@@ -53,6 +53,20 @@ const defaultPost = {
   },
 };
 
+const wpRegionalCategoryPost = {
+  ...taggedPost,
+  id: 102,
+  slug: 'incheon-open-port',
+  _embedded: {
+    'wp:term': [
+      [
+        { id: 20, name: 'Seoul & Gyeonggi', slug: 'seoul-gyeonggi', taxonomy: 'category' },
+        { id: 45, name: 'Incheon', slug: 'incheon', taxonomy: 'post_tag' },
+      ],
+    ],
+  },
+};
+
 assert.deepEqual(getIndexableWpPostRoute(taggedPost), {
   legacyCategorySlug: 'tier-3',
   citySlug: 'seoul',
@@ -60,6 +74,11 @@ assert.deepEqual(getIndexableWpPostRoute(taggedPost), {
 });
 
 assert.equal(getIndexableWpPostRoute(defaultPost), null);
+assert.deepEqual(getIndexableWpPostRoute(wpRegionalCategoryPost), {
+  legacyCategorySlug: 'seoul-gyeonggi',
+  citySlug: 'incheon',
+  href: '/cities/incheon/incheon-open-port',
+});
 assert.equal(isWpPostCityMatch(taggedPost, 'seoul'), true);
 assert.equal(isWpPostCityMatch(taggedPost, 'busan'), false);
 assert.equal(isWpPostCityMatch(defaultPost, 'seoul'), false);
