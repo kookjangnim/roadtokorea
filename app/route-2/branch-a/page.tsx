@@ -1,5 +1,23 @@
+import Image from 'next/image';
 import Link from 'next/link';
+import { getCityImageSlots } from '@/data/cityImageSlots';
 import { route2BranchA } from '@/data/routeBranches';
+
+function getBranchCityImage(citySlug: string) {
+  const slots = getCityImageSlots(citySlug);
+
+  return (
+    slots?.slots.hero.asset ??
+    slots?.slots.route.asset ??
+    slots?.slots.street.asset ??
+    '/images/clipartkorea/wonju/tc00240110506.jpg'
+  );
+}
+
+const branchHeroImages = ['yeongwol', 'jeongseon', 'taebaek'].map((citySlug) => ({
+  citySlug,
+  image: getBranchCityImage(citySlug),
+}));
 
 const branchUseCases = [
   {
@@ -43,16 +61,34 @@ export default function Route2BranchAPage() {
             Back to Route 2
           </Link>
 
-          <div className="mt-8 rounded-[2rem] border border-white/15 bg-white/12 p-8 text-white shadow-[0_30px_90px_rgba(0,0,0,0.18)] backdrop-blur md:p-10">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-300">
-              {route2BranchA.label}
-            </p>
-            <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.94] md:text-7xl">
-              {route2BranchA.title}
-            </h1>
-            <p className="mt-6 max-w-3xl text-base leading-8 text-stone-200 md:text-lg">
-              {route2BranchA.summary}
-            </p>
+          <div className="mt-8 overflow-hidden rounded-[2rem] border border-white/15 bg-white/12 text-white shadow-[0_30px_90px_rgba(0,0,0,0.18)] backdrop-blur lg:grid lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="p-8 md:p-10">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-stone-300">
+                {route2BranchA.label}
+              </p>
+              <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.94] md:text-7xl">
+                {route2BranchA.title}
+              </h1>
+              <p className="mt-6 max-w-3xl text-base leading-8 text-stone-200 md:text-lg">
+                {route2BranchA.summary}
+              </p>
+            </div>
+
+            <div className="grid min-h-[24rem] grid-cols-3 gap-1 bg-black/20 p-1 lg:min-h-full">
+              {branchHeroImages.map((item, index) => (
+                <div key={item.citySlug} className="relative overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={`${item.citySlug} Branch 2A travel context`}
+                    fill
+                    sizes="(max-width: 1024px) 33vw, 18vw"
+                    className="object-cover"
+                    priority={index === 0}
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.04),rgba(17,17,17,0.52))]" />
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="mt-8 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
@@ -71,20 +107,30 @@ export default function Route2BranchAPage() {
                 <Link
                   key={city.slug}
                   href={city.href}
-                  className="group rounded-[1.75rem] border border-stone-200 bg-white/88 p-6 shadow-[0_20px_60px_rgba(34,30,25,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-900/20 hover:bg-white"
+                  className="group grid overflow-hidden rounded-[1.75rem] border border-stone-200 bg-white/88 shadow-[0_20px_60px_rgba(34,30,25,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-900/20 hover:bg-white md:grid-cols-[13rem_minmax(0,1fr)]"
                 >
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="rounded-full bg-stone-950 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-white">
+                  <div className="relative min-h-[12rem] bg-stone-100">
+                    <Image
+                      src={getBranchCityImage(city.slug)}
+                      alt={`${city.name} travel stop on Branch 2A`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 13rem"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute left-4 top-4 rounded-full bg-white/92 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-900 shadow-sm">
                       Stop {index + 1}
-                    </span>
+                    </div>
+                  </div>
+
+                  <div className="p-6">
                     <span className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-600">
                       {city.role}
                     </span>
+                    <h3 className="mt-4 font-serif text-3xl leading-tight text-stone-950 transition-colors group-hover:text-stone-700">
+                      {city.name}
+                    </h3>
+                    <p className="mt-3 text-sm leading-7 text-stone-650">{city.summary}</p>
                   </div>
-                  <h3 className="mt-4 font-serif text-3xl leading-tight text-stone-950 transition-colors group-hover:text-stone-700">
-                    {city.name}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-stone-650">{city.summary}</p>
                 </Link>
               ))}
             </div>
