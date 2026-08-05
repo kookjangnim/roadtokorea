@@ -264,11 +264,11 @@
   "gangneung": {
     "city": "Gangneung",
     "routeSlug": "route-2",
-    "historicalWeight": "Gangneung carries east-coast cultural memory through Gyeongpo, coffee streets, old pavilions, beach mornings, and the feeling of arriving at the sea after crossing Gangwon.",
-    "modernIdentity": "Modern Gangneung is one of Korea's strongest coastal city brands: coffee, beaches, markets, seafood, hotels, festivals, and rail access make it a full destination rather than a waypoint.",
-    "routeMeaning": "On Route 2, Gangneung is the mountain-to-sea payoff after Wonju, Pyeongchang, and Daegwallyeong. It is also a junction city: the trip can end here cleanly or continue south on Route 4.",
-    "imageBrief": "Use one beach or Gyeongpo image, one coffee-street cue, one market or seafood visual, one rail/coast arrival image, and one route cue from Wonju to the East Sea.",
-    "qualityBar": ["The page must explain Gangneung as Route 2's coast-entry payoff and Route 4 junction.", "The page must connect Wonju, Pyeongchang, Daegwallyeong, Gangneung, and Route 4 continuation.", "The page must balance coffee/beach identity with older east-coast memory.", "The images must show coast entry, coffee city, Gyeongpo, and highland-to-sea payoff."]
+    "historicalWeight": "Gangneung's identity reaches well beyond the beach. Ojukheon connects the city to Shin Saimdang and Yi I, Chodang preserves the literary memory of Heo Gyun and Heo Nanseolheon, and Daegwallyeong Old Road recalls the difficult historic crossing between Yeongdong and the capital.",
+    "modernIdentity": "KTX access, the 2018 Winter Olympics, a busy central market, beach cafes, and repeated tourism investment have made Gangneung easier to reach and more outward-facing. The visitor coast and the older residential city still feel markedly different.",
+    "routeMeaning": "Gangneung is both Route 2's mountain-to-sea finish and the east-coast base where a traveler can continue south. Its real advantage over smaller neighboring coast towns is the combination of transport, food, history, city services, and access to the sea.",
+    "imageBrief": "Balance the coast with lived Gangneung: Chodang literary heritage, Ojukheon, the central market or Wolhwa Street, one quieter shoreline choice, and the descent from Daegwallyeong.",
+    "qualityBar": ["The page must use the editor's Chodang residence and repeated recent visits without presenting old memories as current facts.", "The page must distinguish Gyeongpodae Pavilion and Gyeongpo Lake from crowded Gyeongpo Beach.", "The page must compare central and beachfront stays honestly.", "The page must explain Gangneung through history, food, transport, and local life as well as the coast."]
   },
   "samcheok": {
     "city": "Samcheok",

@@ -4485,99 +4485,120 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   gangneung: {
     slug: 'gangneung',
     city: 'Gangneung',
-    mapTitle: 'Where Route 2 finishes and Route 4 can begin',
+    mapTitle: 'A lived city between Daegwallyeong and the sea',
     mapIntro:
-      'Gangneung is a junction support map for deciding whether Route 2 ends at the sea or Route 4 continues south along National Route 7.',
+      'Use this map to separate the working city, Chodang and its literary history, the resort coast, and the road that continues south. Gangneung is easier to plan once those different versions stop being treated as one beach strip.',
     mapCenter: { lat: 37.7519, lng: 128.8761 },
     supportSummary:
-      'Gangneung works as Route 2\'s mountain-to-sea payoff and Route 4\'s major east-coast junction. It completes the Yeoju-Wonju-Pyeongchang-Daegwallyeong crossing while keeping the coast open toward Donghae and Samcheok.',
+      'Gangneung combines something smaller east-coast towns cannot match in one place: KTX and road access, a useful city center, major historical sites, a strong traditional market, distinctive local food, and several very different ways to reach the sea.',
     roleSummary:
-      'This is the junction city. Gangneung can be the end of Route 2 or the point where the traveler chooses the longer National Route 7 line.',
+      'This is the essential east-coast base. Route 2 can end here, while drivers can use Gangneung as the practical starting point for a longer shoreline journey toward Donghae, Samcheok, and Busan.',
     staySummary:
-      'Beach-side stays favor atmosphere, sunrise, and a slower coastal morning. Central stays work better when the route needs cleaner onward timing without giving up the first real sense of coastal commitment.',
+      'A beachfront hotel is not automatically the best choice. Central Gangneung and the station side usually offer better value for food, heritage stops, and onward travel. Pay for Gyeongpo or Anmok when the view and resort atmosphere are the purpose of the stay.',
     foodSummary:
-      'Gangneung should be used for coffee, breakfast, and the first unmistakable change in daily rhythm. It is less about efficiency than about proving that the route has pivoted to the sea for real.',
+      'Chodang sundubu is the clearest regional starting point, but Chodang Sundubu Village now feels more visitor-facing than residential. Central Market and the downtown grid give a broader food plan; compare beachfront menus and do not choose a restaurant only because someone approaches you near the parking area.',
     nextLegSummary:
       'After Gangneung, Route 2 is complete. Continuing south should be framed as Route 4, where Donghae and Samcheok take over the coastline story.',
     accommodationNote:
-      'Strongest stay-planning angle: beach-front stays and cafe-street adjacent hotels.',
+      'Former-resident judgment: keep the city center as the default value choice and treat a beachfront room as an optional experience, not a Gangneung requirement.',
     sections: [
       {
-        title: 'Why Gangneung completes Route 2',
+        title: 'Gangneung beyond beaches and coffee',
         body:
-          'Gangneung matters because it lets the Seoul-to-east route resolve clearly. After Yeoju, Wonju, Pyeongchang, and Daegwallyeong, the sea finally arrives with enough city life to hold the finish.',
+          'Ojukheon connects Gangneung to Shin Saimdang and Yi I. Chodang holds the literary memory of Heo Gyun and Heo Nanseolheon alongside sundubu restaurants, cafes, pine paths, and the nearby sea. Daegwallyeong Old Road adds the history of the difficult crossing once used by officials, merchants, and scholars traveling between Yeongdong and the capital.',
       },
       {
-        title: 'Why the morning matters here',
+        title: 'What growing up in Chodang changes',
         body:
-          'A coastal stay is not only about arrival. The morning light, breakfast rhythm, and sea-facing start are what justify keeping Gangneung overnight at all.',
+          'The editor spent the secondary-school years in Chodang-dong, within walking distance of the sea, and has returned more than one hundred times for work over the past five years. That experience makes the visitor-resident divide hard to miss: the coast can be crowded and polished while older residential streets, aging buildings, and the working city tell a quieter story.',
       },
       {
-        title: 'How it becomes Route 4',
+        title: 'Keep Gyeongpo Lake; decide on Gyeongpo Beach',
         body:
-          'Once this city lands properly, the traveler can either stop or continue south. That continuation belongs to Route 4, where Donghae, Samcheok, Uljin, Yeongdeok, and Pohang become a separate coastal sequence.',
+          'Gyeongpodae Pavilion and Gyeongpo Lake still earn time for history and walking. Gyeongpo Beach is a separate choice: it suits travelers who enjoy a busy resort atmosphere, but in peak summer a quieter beach can make the day feel less managed by traffic, parking, and crowds.',
+      },
+      {
+        title: 'Build two nights around different versions of the city',
+        body:
+          'Use one day for Central Market, Wolhwa Street, Chodang, Ojukheon, and the city food scene. Use the other for the coast, cafes, and leisure. A day trip is more convincing when it focuses on food and one compact area instead of collecting distant landmarks.',
+      },
+      {
+        title: 'Arrive early enough to use the city',
+        body:
+          'Gangneung is not a late-night city in the way Seoul is. An early train or morning road arrival protects the useful part of the day; a late-evening arrival can leave little beyond check-in because many central businesses wind down by late evening.',
+      },
+      {
+        title: 'Treat winter as a route condition',
+        body:
+          'Winter sea views can be beautiful, but snow, wind, and the Daegwallyeong crossing make this a less forgiving first visit. The editor remembers being isolated by heavy snow before the modern expressway era. Today the practical lesson is to check forecasts and road or rail conditions rather than treating the coast as weather-proof.',
       },
     ],
     decisions: [
       {
-        title: 'Finish Route 2 at the beach',
-        bestFor: 'Travelers who want the mountain-to-sea route to feel complete in Gangneung.',
+        title: 'Use the city center as the default base',
+        bestFor: 'Food-led trips, heritage visits, budget-aware travelers, and clean onward departures.',
         why:
-          'This is the version of Gangneung that makes Route 2 feel fully resolved at night and again at first light.',
+          'The station and central grid keep the market, local meals, taxis, and cultural stops useful without paying a beach-view premium.',
       },
       {
-        title: 'Stay central before Route 4',
-        bestFor: 'Travelers who want coastal mood while preserving a clean southbound continuation.',
+        title: 'Pay for the coast on purpose',
+        bestFor: 'Travelers whose main goal is a resort atmosphere, sea view, or cafe-focused stay.',
         why:
-          'A more central stay keeps Gangneung useful while protecting the Route 4 handoff toward Donghae and Samcheok.',
+          'Gyeongpo and Anmok can justify the premium when the room and shoreline are the experience, but the location is not automatically better for food or a wider city itinerary.',
+      },
+      {
+        title: 'Drive the route from Seoul',
+        bestFor: 'Travelers who want the journey through Gangwon to matter as much as arrival.',
+        why:
+          'KTX is the simplest direct move, but a car unlocks intermediate stops and makes dispersed Gangneung sights easier to combine. In summer, use public parking and expect congestion around Gyeongpo.',
       },
     ],
     stayZones: [
       {
-        title: 'Keep the beach-facing stay',
-        areaLabel: 'Anmok / shoreline',
-        bestFor: 'Atmosphere-first coastal overnights.',
+        title: 'Choose the coast deliberately',
+        areaLabel: 'Gyeongpo / Anmok',
+        bestFor: 'Sea-view stays, cafe time, and resort-led trips with room in the budget.',
         why:
-          'This is the strongest zone when the route should pivot fully into sea-facing logic.',
+          'The coast earns its higher price when the view is part of the trip. It is less compelling when the priorities are local food, heritage, and efficient movement.',
       },
       {
-        title: 'Use the central city grid',
-        areaLabel: 'Central Gangneung',
-        bestFor: 'Faster onward movement and simpler route pacing.',
+        title: 'Stay near the station or city center',
+        areaLabel: 'Gangneung Station / central grid',
+        bestFor: 'Better-value rooms, market food, cultural visits, and easier onward travel.',
         why:
-          'This version makes the coast easier to use without requiring a fully resort-like stay.',
+          'Most major zones remain a manageable taxi ride away, while downtown meals and the next departure stay simpler.',
       },
     ],
     visuals: [
       {
-        eyebrow: 'Coast-entry',
-        title: 'Gangneung is where Route 2 reaches the sea',
+        eyebrow: 'Lived Gangneung',
+        title: 'Chodang joins literature, food, pines, and the sea',
         image: '/images/clipartkorea/gangneung/tc00240033488.jpg',
-        alt: 'Editorial route image for Gangneung coast entry',
+        alt: 'Editorial travel image for lived Gangneung near Chodang and the coast',
         body:
-          'This city gives Route 2 its full mountain-to-sea payoff.',
+          'For a former Chodang resident, this is not a themed food stop. It is the neighborhood where literary memory and everyday coastal life overlap.',
         sourceLabel: 'Licensed real travel photograph',
         sourceHref: '/images/clipartkorea/gangneung/tc00240033488.jpg',
         licenseLabel: 'Internal',
       },
       {
-        eyebrow: 'Morning logic',
-        title: 'The overnight only works if the next morning belongs to the sea',
+        eyebrow: 'Stay decision',
+        title: 'A sea view is optional; a useful base is not',
         image: '/images/clipartkorea/gangneung/tip249t012173.jpg',
-        alt: 'Editorial route image for Gangneung coastal overnight mood',
+        alt: 'Editorial travel image comparing Gangneung coastal and central stays',
         body:
-          'Gangneung earns time because the route changes most clearly at breakfast and first light, not only at arrival.',
+          'Central Gangneung usually wins on value, food, and movement. Choose the shoreline when the coast itself is worth the premium.',
         sourceLabel: 'Licensed real travel photograph',
         sourceHref: '/images/clipartkorea/gangneung/tip249t012173.jpg',
         licenseLabel: 'Internal',
       },
       {
-        eyebrow: 'Route commitment',
-        title: 'After this city, Route 4 takes over the coastline',
+        eyebrow: 'Local judgment',
+        title: 'Keep the lake and history separate from the beach crowd',
         image: '/images/clipartkorea/gangneung/tip249t012057.jpg',
-        alt: 'Editorial route image for Gangneung shoreline commitment',
+        alt: 'Editorial travel image for Gangneung lake, heritage, and beach choices',
         body:
-          'Used well, Gangneung makes Donghae, Samcheok, and the longer National Route 7 sequence feel intentional.',
+          'Gyeongpodae Pavilion and Gyeongpo Lake can stay on the plan even when peak-season Gyeongpo Beach does not.',
         sourceLabel: 'Licensed real travel photograph',
         sourceHref: '/images/clipartkorea/gangneung/tip249t012057.jpg',
         licenseLabel: 'Internal',
@@ -4585,13 +4606,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     ],
     points: [
       {
-        id: 'gangneung-beach-stay',
-        name: 'Beach-facing stay strip',
+        id: 'gangneung-chodang',
+        name: 'Chodang lived-history quarter',
         kind: 'stay',
-        areaLabel: 'Anmok side',
-        coordinates: { lat: 37.7725, lng: 128.9472 },
-        summary: 'The strongest overnight zone if the point is to make the route feel fully coastal.',
-        note: 'Use this when the sea-facing morning matters as much as the previous evening.',
+        areaLabel: 'Chodang-dong',
+        coordinates: { lat: 37.7917, lng: 128.9146 },
+        summary: 'Sundubu, cafes, pine-lined streets, and the Heo Gyun and Heo Nanseolheon literary site sit within reach of the sea.',
+        note: 'Use Chodang to connect food and history instead of treating sundubu as an isolated restaurant stop.',
       },
       {
         id: 'gangneung-coffee-line',
@@ -4608,8 +4629,8 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         kind: 'mobility',
         areaLabel: 'City core',
         coordinates: { lat: 37.7512, lng: 128.8765 },
-        summary: 'A more practical base when the coast route needs a cleaner onward handoff.',
-        note: 'Useful for keeping the stop legible without overcommitting to resort timing.',
+        summary: 'The practical base for Gangneung Station, Central Market, Wolhwa Street, better-value rooms, and a wider food plan.',
+        note: 'Former-resident default: stay central unless a sea-view room is one of the main reasons for the trip.',
       },
       {
         id: 'gangneung-uljin-handoff',
@@ -4621,28 +4642,82 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         note: 'After this point, Donghae and Samcheok should carry the shoreline story.',
       },
       {
-        id: 'gangneung-breakfast-launch',
-        name: 'Breakfast launch strip',
-        kind: 'food',
-        areaLabel: 'Beach-to-core transition',
-        coordinates: { lat: 37.7676, lng: 128.9142 },
-        summary: 'A practical morning zone for coffee, bakery stops, and the first clean launch into the long coast day.',
-        note: 'This is where Gangneung proves its overnight value by making the next chapter feel started, not merely resumed.',
+        id: 'gangneung-gyeongpo-choice',
+        name: 'Gyeongpo lake-and-beach choice',
+        kind: 'checkpoint',
+        areaLabel: 'Gyeongpo',
+        coordinates: { lat: 37.7956, lng: 128.9066 },
+        summary: 'The pavilion and lake carry cultural and walking value; the beach adds a much busier seasonal resort layer.',
+        note: 'Do not discard Gyeongpodae and the lake merely because peak-season Gyeongpo Beach is crowded.',
       },
       {
-        id: 'gangneung-sea-reset',
-        name: 'Sea-facing reset edge',
+        id: 'gangneung-daegwallyeong-old-road',
+        name: 'Daegwallyeong Old Road',
         kind: 'recovery',
-        areaLabel: 'Shoreline edge',
-        coordinates: { lat: 37.7713, lng: 128.9488 },
-        summary: 'A short sea-facing reset point that explains why Gangneung belongs as an actual overnight anchor instead of only a scenic stop.',
-        note: 'Useful when the route should feel changed by air, pace, and morning light rather than by distance alone.',
+        areaLabel: 'Seongsan / mountain threshold',
+        coordinates: { lat: 37.6869, lng: 128.7805 },
+        summary: 'Forest, valley terrain, and the historic crossing explain the mountain barrier behind modern Gangneung access.',
+        note: 'Use it when the route needs history and landscape, but check trail and weather conditions before treating it as a casual stop.',
       },
     ],
   },
   pyeongchang: {
     slug: 'pyeongchang',
     city: 'Pyeongchang',
+    officialReferences: [
+      {
+        eyebrow: 'Official culture source',
+        title: 'Chodang carries the literary memory of Heo Gyun and Heo Nanseolheon',
+        image: '/images/clipartkorea/gangneung/tc00240033488.jpg',
+        alt: 'Present-day Gangneung scenery used alongside an official Chodang literary reference',
+        body:
+          'VisitKorea locates the memorial park in Chodang-dong and identifies Heo Gyun as the author of The Story of Hong Gildong and Heo Nanseolheon as a leading Joseon-era poet.',
+        sourceLabel: 'VisitKorea memorial park guide',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=219820',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use the source for current visitor conditions and literary context; keep the editor\'s neighborhood memories separately labeled as personal experience.',
+      },
+      {
+        eyebrow: 'Official history source',
+        title: 'Ojukheon supports Gangneung as a city of history and major figures',
+        image: '/images/clipartkorea/gangneung/tip249t012173.jpg',
+        alt: 'Present-day Gangneung scenery used alongside an official Ojukheon reference',
+        body:
+          'VisitKorea identifies Ojukheon as the birthplace of Yi I and documents the associated house, shrine, pavilion, memorial hall, and Gangneung Municipal Museum.',
+        sourceLabel: 'VisitKorea Ojukheon guide',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110823',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use this source to verify the historical anchor and check current hours before travel.',
+      },
+      {
+        eyebrow: 'Official city source',
+        title: 'Central Market proves the downtown food plan is still active',
+        image: '/images/clipartkorea/gangneung/tip249t012057.jpg',
+        alt: 'Present-day Gangneung scenery used alongside the official Central Market guide',
+        body:
+          'Gangneung City describes Central Market as a long-standing Yeongdong distribution center that grew further after the KTX opening and the 2018 Winter Olympics, with public parking and ongoing market modernization.',
+        sourceLabel: 'Gangneung City Central Market guide',
+        sourceHref: 'https://www.gn.go.kr/www/contents.do?key=568',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use the city source for market history and facilities; individual stalls, menus, and opening times still need same-day checks.',
+      },
+      {
+        eyebrow: 'Official weather source',
+        title: 'Heavy snow belongs in the route plan, not only in an old memory',
+        image: '/images/clipartkorea/gangneung/tc00240033488.jpg',
+        alt: 'Gangneung route scenery used alongside an official regional climate reference',
+        body:
+          'The Korea Meteorological Administration documents the distinctive climate and heavy-snow conditions of Gangwon locations. Forecasts and road or rail notices should decide whether a winter crossing is sensible.',
+        sourceLabel: 'Korea Meteorological Administration regional climate data',
+        sourceHref: 'https://www.weather.go.kr/w/climate/statistics/region.do?area=2',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use the climate source for regional context and a current forecast for the actual travel decision.',
+      },
+    ],
     mapTitle: 'Where Route 2 becomes Olympic highland before the sea',
     mapIntro:
       'Pyeongchang is a support map for the gap between Wonju and Gangneung: Olympic venues, Jinbu access, Odaesan, Woljeongsa, ski resorts, and highland recovery.',

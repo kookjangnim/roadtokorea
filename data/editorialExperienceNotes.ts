@@ -42,14 +42,14 @@ const editorialExperienceNotes: Record<string, EditorialExperienceNote> = {
   gangneung: {
     citySlug: 'gangneung',
     kind: 'former-home',
-    eyebrow: 'Former resident context',
-    title: 'Gangneung is a city the editor once lived in.',
+    eyebrow: 'Former resident - repeated recent visits',
+    title: 'Gangneung is a former home, not just a beach stop.',
     quote:
-      'I lived in Gangneung in the past. That history helps me frame the city as a lived place beyond a beach stop, while current details are checked again.',
+      'I spent my secondary-school years in Chodang-dong and have returned to Gangneung more than one hundred times for work over the past five years.',
     context:
-      'Past residence gives the page a personal geographic starting point, but it is not treated as proof that every business, timetable, or neighborhood condition remains unchanged today.',
+      'Living within walking distance of the sea made Chodang feel like an everyday neighborhood of food, literature, pine paths, and summer heat rather than a sightseeing label. Repeated recent visits also make the contrast clear between busy visitor zones and the older, quieter city where people study, work, shop, and leave for opportunities elsewhere.',
     verification:
-      'Current transport and destination details are refreshed through official tourism, map, and operator references where available.',
+      'Personal memories guide the judgments on pace, neighborhoods, and trade-offs. Current transport, opening conditions, parking, and weather-sensitive advice are checked separately against official or operator sources.',
   },
   gyeongju: {
     citySlug: 'gyeongju',

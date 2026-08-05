@@ -606,16 +606,17 @@ export const citySeoKeywordProfiles: Record<string, CitySeoKeywordProfile> = {
   },
   gangneung: {
     city: 'Gangneung',
-    primaryIntent: 'Gangneung Korea coast entry city after Wonju on Route 2',
-    metaKeywords: ['Gangneung Korea', 'Gangneung travel guide', 'Seoul to Gangneung', 'Wonju to Gangneung', 'Gangneung coffee street', 'Gyeongpo Beach', 'Korea east coast route'],
+    primaryIntent: 'Gangneung travel guide by a former Chodang resident',
+    metaKeywords: ['Gangneung Korea', 'Gangneung travel guide', 'Seoul to Gangneung road trip', 'Chodang Gangneung', 'Ojukheon', 'Gangneung Central Market', 'Gyeongpo Beach crowds', 'Korea east coast route'],
     clusters: [
-      { label: 'Route intent', terms: ['Seoul to Gangneung', 'Wonju to Gangneung', 'Korea east coast route'] },
-      { label: 'Coast intent', terms: ['Gyeongpo Beach', 'Gangneung beaches', 'Gangneung seafood'] },
-      { label: 'Culture intent', terms: ['Gangneung coffee street', 'Gangneung markets', 'Gangneung coastal city'] },
+      { label: 'Route intent', terms: ['Seoul to Gangneung road trip', 'Gangneung without a car', 'Korea east coast route'] },
+      { label: 'Local intent', terms: ['Chodang Gangneung', 'Gangneung Central Market', 'where to stay in Gangneung'] },
+      { label: 'History intent', terms: ['Ojukheon', 'Heo Gyun memorial park', 'Daegwallyeong Old Road'] },
     ],
     questions: [
-      { question: 'Why is Gangneung the Route 2 payoff?', answer: 'Gangneung is where the eastbound route finally reaches the sea with coffee, beaches, markets, seafood, and rail access.' },
-      { question: 'Should Gangneung be treated as a waypoint?', answer: 'No. It is a full coast-entry city and should anchor the eastbound route after Wonju.' },
+      { question: 'Is a beachfront hotel worth it in Gangneung?', answer: 'Only when the view and resort atmosphere are the point. Central Gangneung is usually better value for food, heritage stops, and onward travel.' },
+      { question: 'Should I visit Gyeongpo Beach?', answer: 'Gyeongpo Beach suits travelers who enjoy a busy resort atmosphere. Keep Gyeongpodae Pavilion and Gyeongpo Lake on the cultural plan, but choose a quieter beach in peak summer if crowds weaken the trip.' },
+      { question: 'Why choose Gangneung over another east-coast town?', answer: 'Gangneung combines rail and road access, a working city center, strong food choices, major historical sites, and an easy handoff to the coast south or north.' },
     ],
   },
   samcheok: {
