@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Suspense } from "react";
 import Header from "@/components/Header";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { getAdsenseClient, getSiteUrl } from "@/lib/site-config";
 import "./globals.css";
 
 const siteUrl = getSiteUrl();
 const adsenseClient = getAdsenseClient();
+const googleAnalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID ?? "G-RGED0VX160";
 
 const sans = DM_Sans({
   subsets: ["latin"],
@@ -70,6 +73,9 @@ export default function RootLayout({
         ) : null}
       </head>
       <body className={`${sans.variable} ${editorial.variable} antialiased bg-mesh-dark`}>
+        <Suspense fallback={null}>
+          <GoogleAnalytics measurementId={googleAnalyticsId} />
+        </Suspense>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
