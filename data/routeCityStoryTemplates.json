@@ -45,14 +45,15 @@
     "city": "Yeongwol",
     "routeSlug": "branch-2a",
     "historicalWeight": "Yeongwol carries one of Joseon history's most emotional stories: King Danjong's exile at Cheongnyeongpo, his death in Yeongwol, Jangneung Royal Tomb, and the loyalty memory around figures such as Eom Heung-do. The landscape itself explains the sorrow.",
-    "modernIdentity": "Modern Yeongwol is being re-read through film, festival energy, river landscapes, observatory travel, and renewed attention to Danjong sites after the success of Wang-gwa Saneun Namja. The city now sits where history, screen culture, and preservation pressure meet.",
-    "routeMeaning": "On Branch 2A, Yeongwol is the emotional history chapter before the route deepens into Jeongseon and Taebaek. Wonju provides the hinge, Jecheon gives lake-and-mountain transition, and Yeongwol turns the trip into a story about exile, rivers, memory, and how popular culture can reactivate a local place.",
-    "imageBrief": "Use Cheongnyeongpo or Gwangeumsong exile imagery, Jangneung royal tomb, Donggang or Seogang river landscape, Byeolmaro Observatory or Korean Peninsula-shaped terrain, and one contemporary film-tourism cue that also respects heritage preservation.",
+    "modernIdentity": "Modern Yeongwol works through Donggang camping and rafting, a practical town core, and renewed attention to Danjong sites after the 2026 success of Wang-gwa Saneun Namja. The film drew more than 16 million admissions, but it should open the historical story rather than replace it.",
+    "routeMeaning": "On Branch 2A, the practical driving sequence is Jecheon-Yeongwol-Jeongseon. Yeongwol earns a night through the Donggang, while Cheongnyeongpo, Jangneung, and Seobu Market form the stronger history-and-town group; Gossi Cave should come first when included because it sits farther away.",
+    "imageBrief": "Lead with the editor-tested Donggang camping or rafting experience and the Cheongnyeongpo ferry landscape. Add modest Jangneung, Seobu Market, and one restrained film-interest cue. Keep Byeolmaro and the Korean Peninsula-shaped terrain as sourced options, not first-hand recommendations.",
     "qualityBar": [
       "The page must explain Danjong and Cheongnyeongpo clearly without becoming a textbook.",
+      "The page must disclose about five recent camping and rafting visits and distinguish unvisited places from first-hand recommendations.",
       "The page must mention the 2026 film trend as a revival of existing history, not as a disposable viral hook.",
-      "The page must connect Wonju, Jecheon, Yeongwol, Jeongseon, Taebaek, and Samcheok into a believable deep inland branch.",
-      "The images must balance exile history, river geography, modern film interest, and preservation caution."
+      "The page must support a believable Jecheon-Yeongwol-Jeongseon drive and explain why Gossi Cave comes first when included.",
+      "The page must prioritize Donggang, Cheongnyeongpo, Jangneung, and Seobu Market over collecting every viewpoint."
     ]
   },
   "jeongseon": {
@@ -67,11 +68,11 @@
   "taebaek": {
     "city": "Taebaek",
     "routeSlug": "branch-2a",
-    "historicalWeight": "Taebaek carries Korea's coal and highland industrial memory. Coal powered modernization, and the Taebaek Coal Museum, mining neighborhoods, Hwangji Pond, and Taebaeksan make that history visible in the landscape. The page should also acknowledge the difficult post-coal shrinkage without flattening the city into decline.",
-    "modernIdentity": "Modern Taebaek works through coal heritage, Taebaeksan hiking, winter festivals, Hwangji Pond as the Nakdonggang source, highland climate, Taebaek Hanwoo, and the feeling of being close to the mountain spine before the coast.",
-    "routeMeaning": "On Branch 2A, Taebaek is the last major inland threshold before Samcheok. It turns Jeongseon's cultural mountain interior into a coal, Hanwoo, and highland chapter, then hands the route to Route 4 at the East Sea.",
-    "imageBrief": "Use one coal museum or mining heritage image, one Hwangji Pond image, one Taebaek Hanwoo or food cue, one Taebaeksan or highland snow cue, one town/stay texture, and one route image toward Samcheok.",
-    "qualityBar": ["The page must explain Taebaek through coal history, post-coal pressure, Taebaek Hanwoo, and highland geography.", "The page must connect Jeongseon, Taebaek, and Samcheok.", "The page must balance industrial past with food pride, hiking, river-source, and current travel identity.", "The images must show coal heritage, Hwangji, Hanwoo or food, Taebaeksan/highland, and coast handoff."]
+    "historicalWeight": "Taebaek's coal industry helped power Korean modernization, and mine closures left visible economic and demographic contraction. That history deserves serious treatment through official industrial-heritage sources rather than being reduced to themed decoration.",
+    "modernIdentity": "Modern Taebaek is a compact, quiet highland city whose strongest travel reasons are specific: Taebaeksan, coal history, cool mountain geography, and one deliberate local meal. Hwangji Pond and Geomnyongso carry geographic meaning but can feel visually small.",
+    "routeMeaning": "Taebaek can connect Jeongseon to Samcheok on a map, but the steep, winding descent is not the easiest coast itinerary. Use it as an intentional mountain crossing; for a straightforward east-coast trip, Gangneung-Donghae-Samcheok is more coherent.",
+    "imageBrief": "Lead with Taebaeksan winter or autumn, then show coal labor and post-coal city texture. Treat Hwangji and Geomnyongso as modest source landscapes, keep Hanwoo optional, and show the difficult mountain road honestly.",
+    "qualityBar": ["The page must disclose the editor's short-visit experience and avoid claiming personal review of mining museums.", "The page must recommend Taebaek only for clear interests such as Taebaeksan or coal history.", "The page must set realistic expectations for Hwangji Pond and Geomnyongso.", "The page must not present the Samcheok descent as an easy default route."]
   },
   "gapyeong": {
     "city": "Gapyeong",
@@ -133,14 +134,14 @@
     "city": "Sokcho",
     "routeSlug": "route-3",
     "historicalWeight": "Sokcho carries mountain, sea, market, and migration memory in one compact city. Seoraksan gives it dramatic geography, Abai Village keeps postwar northern-displacement memory visible, and the harbor ties the city to the East Sea.",
-    "modernIdentity": "Modern Sokcho is one of Korea's strongest coastal arrivals: Seoraksan access, Sokcho Tourist and Fishery Market, Abai sundae, beaches, harbor food, seaside hotels, cafes, and easy urban services after the mountain route.",
-    "routeMeaning": "On Route 3, Sokcho is the release after the northern mountain-to-sea sequence. Gapyeong and Chuncheon soften the start, Yanggu and Inje add memory and terrain, Goseong can widen the northern coast, and Sokcho gives the final payoff.",
-    "imageBrief": "Use one Seoraksan cue, one Sokcho market or seafood image, one Abai Village or gaetbae cue, one beach/harbor stay image, and one route image that makes the sea feel earned after Inje and the pass choice.",
+    "modernIdentity": "Modern Sokcho is a fast-changing compact city where high-rise housing and hotels sit beside Cheongchoho, Yeongnangho, ports, food streets, beaches, and Seoraksan views. The strongest base is the lived Cheongchoho-town area, not automatically the most expensive sea-view hotel.",
+    "routeMeaning": "On Route 3, the editor-tested arrival is Inje to Sokcho. Use two nights: one compact city day around Cheongchoho, the market, gaetbae, and Dongmyeong Port, then one separate Seoraksan day rather than forcing the mountain into a beach-and-market checklist.",
+    "imageBrief": "Lead with the compact overlap of Cheongchoho, skyline, Seoraksan, and sea. Add Dongmyeong Port evening food, the market as a first-visit experience, gaetbae and Abai Village memory, and a separate Seoraksan-day cue. Keep Sokcho Beach secondary.",
     "qualityBar": [
-      "The page must explain Sokcho as Route 3's final payoff, not only a beach city.",
-      "The page must balance Seoraksan, East Sea, market, Abai Village, and overnight logic.",
-      "The page must make Sokcho feel earned after Yanggu, Inje, and the pass choice.",
-      "The images must show mountain, market, sea, and postwar local memory."
+      "The page must disclose one year of former residence and about one hundred visits.",
+      "The page must explain why compact Sokcho city and a full Seoraksan day should not be collapsed into one schedule.",
+      "The page must distinguish the editor-tested Gwongeumseong cable car from the future goal of hiking Ulsanbawi.",
+      "The page must prioritize Cheongchoho and Dongmyeong Port while setting realistic expectations for Sokcho Beach and famous market snacks."
     ]
   },
   "goseong": {
@@ -282,11 +283,11 @@
   "pyeongchang": {
     "city": "Pyeongchang",
     "routeSlug": "route-2",
-    "historicalWeight": "Pyeongchang now carries one of Korea's clearest modern global memories through the 2018 Winter Olympics, but the place is older than the Games. Odaesan, Woljeongsa, Jinbu, highland villages, and mountain temple culture give the county deeper Korean context.",
-    "modernIdentity": "Modern Pyeongchang works through ski resorts, Olympic venues, Phoenix Snow Park, Alpensia, Yongpyong, KTX Jinbu access, resort stays, and four-season mountain travel.",
-    "routeMeaning": "On Route 2, Pyeongchang fills the gap between Wonju and Gangneung. It turns the route from an expressway jump into a real Olympic highland chapter before Daegwallyeong and the coast.",
-    "imageBrief": "Use one Olympic or ski resort image, one Odaesan or Woljeongsa image, one Jinbu or KTX access cue, one resort/stay image, and one route image toward Daegwallyeong and Gangneung.",
-    "qualityBar": ["The page must explain Pyeongchang through both 2018 Winter Olympics and older mountain/temple depth.", "The page must connect Wonju, Pyeongchang, Daegwallyeong, and Gangneung.", "The page must include ski and Odaesan search intent without becoming only a resort page.", "The images must show Olympic highlands, Odaesan/Woljeongsa, resort stay, and route handoff."]
+    "historicalWeight": "Pyeongchang holds a deeper national memory than its Olympic image suggests. Odaesan sheltered a royal archive, and the surviving Odaesan copies of the Annals of the Joseon Dynasty and royal protocols have returned to the National Museum of the Annals of the Joseon Dynasty near Woljeongsa.",
+    "modernIdentity": "Modern Pyeongchang is split between a developed expressway corridor through Bongpyeong, Jinbu, and Daegwallyeong and a quieter inland line around Pyeongchang-eup, Bangnim, and Mitan. Resorts and Olympic infrastructure dominate one version; rivers, valleys, markets, and rural life define the other.",
+    "routeMeaning": "Pyeongchang is optional on the fastest trip to Gangneung. It earns a stay only after the traveler chooses a purpose: winter sport, Woljeongsa and the fir forest, the royal-record museum, meditation, or a deliberate highland summer.",
+    "imageBrief": "Show both Pyeongchangs: Jinbu and Odaecheon life, Woljeongsa fir forest, the royal-annals museum or Odaesan archive story, one resort cluster, and the quieter inland river landscape.",
+    "qualityBar": ["The page must use the editor's Jinbu childhood and repeated recent visits without turning old memories into current facts.", "The page must distinguish the expressway tourism corridor from the inland county.", "The page must identify the Annals as UNESCO Memory of the World documentary heritage, not a World Heritage site.", "The page must separate Jinbu/Odaesan history and quiet from Daegwallyeong resort planning."]
   },
   "daegwallyeong": {
     "city": "Daegwallyeong",
@@ -332,20 +333,20 @@
   "yangyang": {
     "city": "Yangyang",
     "routeSlug": "route-4",
-    "historicalWeight": "Yangyang should hold Naksansa, Uisangdae, Hajodae, and the older pilgrimage-and-view culture of the East Sea before the page turns to surf. Naksansa gives the coast Silla-era memory and makes the stop more than a beach trend.",
-    "modernIdentity": "Modern Yangyang is one of Korea's clearest surf-and-youth coast brands. Surfyy Beach, Hajodae, Jukdo, beach stays, cafes, and airport access make it a present-tense stop English-speaking travelers can search for and understand quickly.",
-    "routeMeaning": "On Route 4, Yangyang is the hinge between Sokcho/Seoraksan memory and Gangneung's larger coast-city reset. It proves the East Sea line can be historic, youthful, and useful in the same short stretch.",
-    "imageBrief": "Use one surf or beach-culture image, one Naksansa or Uisangdae heritage cue, one Hajodae coast view, one stay or cafe texture, and one route image that explains the Sokcho-to-Gangneung handoff.",
-    "qualityBar": ["The page must explain Yangyang as surf plus temple heritage, not only a beach stop.", "The page must connect Sokcho, Yangyang, and Gangneung as one readable coast sequence.", "The page must include current surf/search intent while keeping older Naksansa context visible.", "The images must show surf, temple/cliff, beach stay, and route handoff."]
+    "historicalWeight": "Yangyang's older story is not limited to Naksansa. Hangyeryeong was a Yeongseo-to-Yeongdong mountain crossing before the modern road, Osaek belongs to the southern Seoraksan landscape, Naksansa carries Silla-era foundation tradition, and Hajodae preserves an older named coastal viewpoint beside today's beach culture.",
+    "modernIdentity": "Modern Yangyang combines surf beaches, beachfront stays, summer driving, Jukdo and Ingu cafes, and a short connection to Sokcho. About fifty summer work visits let the editor distinguish the real route logic from generic surf-brand copy without claiming every seasonal service was personally tested.",
+    "routeMeaning": "On Route 4, Yangyang is the mountain-to-sea release point. The strongest firsthand variant crosses from Inje over Hangyeryeong into Osaek, then uses Surfyy Beach, Hajodae, and Naksan before continuing naturally to Sokcho. The southbound Gangneung sequence remains valid in reverse.",
+    "imageBrief": "Use the verified Hangyeryeong road as the mountain-arrival hero, Naksansa or Hongryeonam for history, a verified surf-coast image for the present, Hajodae for the beach stay, and a coast image that can support the Sokcho or Gangneung handoff without mislabeling its location.",
+    "qualityBar": ["The page must identify about fifty mainly summer work visits and separate those firsthand judgments from current operating facts.", "The page must make the Inje-Hangyeryeong-Osaek approach a major Yangyang route, not a footnote.", "The page must preserve the editor's Surfyy Beach-to-Naksan day, Hajodae beachfront stay choice, and Sokcho handoff.", "The page must treat matsutake as seasonal rather than a guaranteed meal.", "Every image must match Hangyeryeong, Naksansa, surf coast, Hajodae, or the stated route role accurately."]
   },
   "donghae": {
     "city": "Donghae",
     "routeSlug": "route-4",
-    "historicalWeight": "Donghae carries port and lighthouse memory through Mukho, a working harbor landscape, and the steep village lanes around Nongoldam-gil. It also has older scenic memory at Chuam and mountain-water memory at Mureunggyegok Valley.",
-    "modernIdentity": "Modern Donghae works as a smaller port-city stay with sunrise viewpoints, seafood, murals, cafes, lighthouse walks, Chuam photo stops, and valley recovery. It is practical but still distinctive.",
-    "routeMeaning": "On Route 4, Donghae keeps the coast grounded after Gangneung. It prevents the line from becoming only famous beaches by adding harbor work, sunrise rocks, and local hill-town texture before Samcheok.",
-    "imageBrief": "Use Mukho Lighthouse or Nongoldam-gil, Chuam Chotdaebawi sunrise rocks, Mureunggyegok Valley, one seafood or port cue, and one route image that makes Donghae the connector before Samcheok.",
-    "qualityBar": ["The page must explain Mukho and Donghae as working-coast memory.", "The page must connect Gangneung, Donghae, and Samcheok clearly.", "The page must balance port, sunrise, valley, and stay logic.", "The images must show lighthouse/port, Chuam, Mureung, and Route 4 continuation."]
+    "historicalWeight": "Donghae's broader official story includes Mukho's working harbor, hill-town memory, caves, and the mined landscape later reused at Mureung Byeolyucheonji. The editor did not personally review those places, so the page uses them as researched context rather than pretending they belong to the firsthand route.",
+    "modernIdentity": "After more than fifty mainly summer and winter work visits, the editor remembers Donghae as a compact, more industrial east-coast city with a different atmosphere from tourism-led Sokcho. Mangsang and Chuam are clean but not extraordinary in the editor's judgment; Eodal looks like an ordinary fishing village, with people fishing beside the parking and breakwater edge, but produced the standout sea-urchin sujebi memory.",
+    "routeMeaning": "On Route 4, the firsthand southbound order is Gangneung to Mangsang, Eodal, Chuam, and Samcheok. Donghae does not need an inflated full-day checklist: it works as a selective working-coast connector with one northern beach, one food stop, one southern rock-and-beach checkpoint, and no backtracking.",
+    "imageBrief": "Use a verified compact city-and-harbor view for Donghae's working character, an exact Mangsang Beach image for the northern start, a correctly identified small-harbor image only if Eodal metadata is confirmed, and an exact Chuam Chotdaebawi image for the southern handoff to Samcheok.",
+    "qualityBar": ["The page must disclose more than fifty mainly summer and winter work visits and limit firsthand attraction claims to Mangsang, Eodal, and Chuam.", "The page must preserve the actual Mangsang-Eodal-Chuam-Samcheok order from the Gangneung direction.", "The page must keep the editor's small, industrial-city impression distinct from official fact and avoid dismissing the city.", "The page must preserve the observed Eodal parking-edge fishing scene and sea-urchin sujebi as personal memories without promising a permanent restaurant, fixed price, or year-round supply.", "The page must state that the editor has not stayed overnight and keep all stay guidance route-based.", "Every image must be accurately labeled; generic waves or coves cannot be called Eodal without matching metadata."]
   },
   "gongju": {
     "city": "Gongju",
@@ -395,11 +396,11 @@
   "suncheon": {
     "city": "Suncheon",
     "routeSlug": "route-5",
-    "historicalWeight": "Suncheon carries old-town, bay, village, and agricultural memory, but its strongest route value is how that older landscape has become a modern ecological identity through wetlands and garden planning.",
-    "modernIdentity": "Modern Suncheon is a wetland-and-garden city: Suncheon Bay Wetland, Suncheon Bay National Garden, reeds, bird habitat, slower stays, cafes, old town pockets, and easy access toward Yeosu.",
-    "routeMeaning": "On Route 5, Suncheon is the ecological hinge. It gives the route a calm south-coast threshold so Yeosu arrives as a finale after nature, not only after road distance.",
-    "imageBrief": "Use one Suncheon Bay reed or wetland image, one National Garden image, one bird or sunset cue, one old-town or stay image, and one route image toward Yeosu.",
-    "qualityBar": ["The page must explain Suncheon as Route 5's ecological hinge.", "The page must connect wetlands, gardens, and Yeosu arrival.", "The page must make a slower stop feel valuable.", "The images must show wetland, garden, reed or bird habitat, stay texture, and Yeosu handoff."]
+    "historicalWeight": "Suncheon's older landscape is still readable in Suncheon Bay's fishing and rice-growing communities, the inhabited neighborhoods and thatched houses of Naganeupseong, and the Jogyesan temple branch. These are separate living and cultural systems, not background decoration for the garden.",
+    "modernIdentity": "Modern Suncheon has turned conservation into civic identity through South Korea's first national garden, the protected bay wetland, linked low-impact transport, and a UNESCO biosphere reserve that connects coastal tidal flats with rivers, farms, communities, and forests.",
+    "routeMeaning": "On Route 5, Suncheon is an ecological and pacing decision. One day belongs to the garden-wetland axis; a second day can add the walled town or a mountain-temple branch. Travelers who only want Yeosu should choose one Suncheon stop instead of pretending the entire city fits before dinner.",
+    "imageBrief": "Lead with real hooded-crane habitat or the tidal-flat waterway, show the National Garden as designed conservation, use Naganeupseong for lived heritage, label the drama set as constructed nostalgia, and end with a practical station-or-road handoff toward Yeosu.",
+    "qualityBar": ["The page must distinguish the National Garden from Suncheon Bay Wetland.", "The page must separate the compact ecology axis from Naganeupseong and the Jogyesan heritage branch.", "The page must explain when one Suncheon night is useful and when continuing to Yeosu is the better choice.", "The page must identify source-based judgment without implying a first-person visit.", "The images must accurately label crane habitat, garden planning, lived heritage, constructed drama scenery, and the Yeosu handoff."]
   },
   "yeosu": {
     "city": "Yeosu",
@@ -521,10 +522,10 @@
   "ulsan": {
     "city": "Ulsan",
     "routeSlug": "route-4",
-    "historicalWeight": "Ulsan should carry older coastal and whale memory through Jangsaengpo, maritime life, Daewangam, and the long river-to-bay geography of Taehwagang. Its past is not only industrial; it is a sea-and-river city.",
-    "modernIdentity": "Modern Ulsan is the Route 4 chapter where Korea's industrial present becomes visible: shipbuilding, automotive production, port scale, restored Taehwagang National Garden, Daewangam coastal walks, and metropolitan services.",
-    "routeMeaning": "On Route 4, Ulsan is the final modern-metropolitan coast chapter before Busan. It makes the finish feel like Korea today, not only a scenic descent from Gyeongju into the south.",
-    "imageBrief": "Use Daewangam Park, Taehwagang National Garden, Jangsaengpo whale culture, one industrial or port-scale cue if available, and one route image toward Busan.",
-    "qualityBar": ["The page must explain Ulsan as modern Korea before Busan.", "The page must hold Daewangam, Taehwagang, Jangsaengpo, and industry together.", "The page must connect Gyeongju, Ulsan, and Busan as the final southeast sequence.", "The images must show coast, river recovery, whale memory, and metropolitan scale."]
+    "historicalWeight": "Ulsan's deepest layer is now impossible to treat as a footnote: the Petroglyphs along the Bangucheon Stream were inscribed on the UNESCO World Heritage List in 2025. Jangsaengpo then adds the more recent and ethically complex history of a whaling port before Korea's 1986 prohibition.",
+    "modernIdentity": "Modern Ulsan is a wide, four-zone metropolis shaped by automotive, shipbuilding, and petrochemical production, the restored Taehwagang river corridor, Daewangam's public coast, and the practical separation between KTX Ulsan Station and the central city.",
+    "routeMeaning": "On Route 4, Ulsan connects prehistoric coastal art, twentieth-century industrial growth, twenty-first-century ecological repair, and the final move into Busan. The route must choose among western heritage, central river life, southern whale history, and the eastern coast instead of pretending they form one compact attraction cluster. A firsthand route variant uses Taehwagang Station as a rail-to-car-share handoff for approaching Gijang from the north.",
+    "imageBrief": "Use a licensed Bangucheon petroglyph photograph for deep history, Taehwagang aerial greenery for recovery, Jangsaengpo museum or village for maritime memory, Daewangam for the public coast, and one truthful shipyard, refinery, bridge, or harbor-scale image for industrial Ulsan and the Busan handoff.",
+    "qualityBar": ["The page must separate sourced destination guidance from the editor's firsthand Taehwagang Station-to-Gijang transport tactic.", "The page must explain the 2025 UNESCO inscription and keep the Bangucheon branch geographically separate from Daewangam.", "The page must explain why KTX Ulsan Station is not a downtown base.", "The page must connect Taehwagang recovery, Jangsaengpo history, industry, and the Busan handoff without romanticizing whaling.", "Every image must be labeled as the place it actually depicts; the verified Bangucheon and Jangsaengpo JPG (WEB) assets now fill the two previously weak slots."]
   }
 }

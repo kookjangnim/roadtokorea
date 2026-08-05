@@ -75,21 +75,21 @@ export const supportCityData: Record<string, LocalCityData> = {
   yangyang: {
     name: 'Yangyang',
     slug: 'yangyang',
-    headline: 'The Surf-and-Temple Hinge',
-    heroImage: 'https://tong.visitkorea.or.kr/cms/resource/50/3393450_image2_1.jpg',
-    description: 'A compact East Sea stop where Surfyy Beach, Hajodae, Naksansa, and airport access make old coast and young beach culture meet.',
+    headline: 'The Mountain-to-Surf Crossing',
+    heroImage: '/images/clipartkorea/yangyang/tip249t003055_l.jpg',
+    description: 'A repeatedly traveled Gangwon crossing where Hangyeryeong and Osaek descend into Surfyy Beach, Hajodae, Naksansa, and the short northbound handoff to Sokcho.',
     culturalInsight:
-      'Yangyang matters on Route 4 because it proves the east coast has present-tense culture, not only scenery. Surf schools, beach stays, Naksansa temple memory, and the Sokcho-to-Gangneung handoff all sit close together.',
+      'Yangyang makes the most sense as two connected landscapes. The western side is the dramatic Inje-to-Hangyeryeong-to-Osaek road through Seoraksan; the eastern side is a chain of surf beaches, Hajodae stays, Naksan, and Naksansa. About fifty summer work visits support that route judgment, while current operating details are checked separately.',
     hotspots: []
   },
   donghae: {
     name: 'Donghae',
     slug: 'donghae',
-    headline: 'The Port-and-Sunrise Connector',
-    heroImage: 'https://tong.visitkorea.or.kr/cms/resource/56/3363856_image2_1.jpg',
-    description: 'A smaller port city where Mukho Lighthouse, Nongoldam-gil, Chuam rocks, and Mureung Valley keep the coast grounded and local.',
+    headline: 'The Small Working Coast Between Gangneung and Samcheok',
+    heroImage: '/images/clipartkorea/donghae/tc00240021279.jpg',
+    description: 'A repeatedly traveled work city where the honest southbound sequence is Mangsang Beach, an Eodal Harbor meal, Chuam Beach, and the short continuation to Samcheok.',
     culturalInsight:
-      'Donghae matters because Route 4 should not become a chain of beaches. Mukho port memory, lighthouse views, fishing-town storytelling, sunrise rocks, and mountain-valley water all make the stop feel lived-in.',
+      'More than fifty mainly summer and winter work visits make Donghae feel different from Sokcho: smaller, more industrial, and less driven by resort imagery. Mangsang and Chuam are tidy rather than extraordinary; Eodal looks like an ordinary fishing village but produced the editor\'s strongest food memory, sea-urchin sujebi.',
     hotspots: []
   },
   sangju: {
@@ -135,11 +135,11 @@ export const supportCityData: Record<string, LocalCityData> = {
   ulsan: {
     name: 'Ulsan',
     slug: 'ulsan',
-    headline: 'The Industrial Coast Metropolis',
-    heroImage: 'https://tong.visitkorea.or.kr/cms/resource/44/3422844_image2_1.png',
-    description: 'A metropolitan coast chapter where Daewangam cliffs, Taehwagang National Garden, whale memory, and industrial Korea sit before Busan.',
+    headline: 'Four Koreas in One Metropolitan Coast',
+    heroImage: '/images/clipartkorea/ulsan/tc00240031101.jpg',
+    description: 'A source-researched city of UNESCO-listed rock art, restored river ecology, whale-history museums, and working industrial coastline before Busan.',
     culturalInsight:
-      'Ulsan matters on Route 4 because it shows Korea in the present tense at scale. The city holds shipbuilding and automotive identity, restored river ecology, Daewangam coastal drama, and Jangsaengpo whale memory before the Busan finale.',
+      'Ulsan is strongest when its four separated zones are planned honestly: Bangucheon and Eonyang in the west, Taehwagang and Samsan in the center, Jangsaengpo in the south, and Daewangam beside the shipbuilding coast in the east. That geography connects prehistoric art, industrial expansion, ecological repair, and the final handoff to Busan without pretending they fit into one compact downtown walk.',
     hotspots: []
   },
   mungyeong: {
@@ -314,11 +314,11 @@ export const supportCityData: Record<string, LocalCityData> = {
   suncheon: {
     name: 'Suncheon',
     slug: 'suncheon',
-    headline: 'The Wetland Garden Gateway',
+    headline: 'The Wetland, Garden, And Heritage Split',
     heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg',
-    description: 'A south-coast ecology city where wetlands, gardens, reeds, and slower stays prepare the Yeosu finale.',
+    description: 'A source-based one- or two-day Suncheon guide that separates the National Garden and bay wetland from the Naganeupseong and temple heritage branch before Yeosu.',
     culturalInsight:
-      'Suncheon matters because Jeolla travel should include landscape intelligence, not only food and heritage. Suncheon Bay Wetland, Suncheon Bay National Garden, reed fields, bird habitat, and old-town pockets turn Route 5 toward the coast with calm authority.',
+      'Suncheon matters because its ecological identity is a working network rather than a single photo stop. The UNESCO biosphere reserve connects Suncheon Bay tidal flats with rivers, rice fields, rural communities, and the forested Jogyesan area. For travelers, that means making a real choice: give one full day to the National Garden and wetland axis, or add a second day for Naganeupseong and one mountain-temple branch instead of compressing every attraction before Yeosu.',
     hotspots: []
   },
   imsil: {

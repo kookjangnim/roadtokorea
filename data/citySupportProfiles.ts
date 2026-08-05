@@ -914,76 +914,83 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
     city: 'Yeongwol',
     mapTitle: 'Where Yeongwol turns the inland branch into a story',
     mapIntro:
-      'Yeongwol is the emotional payoff of the short inland branch. Wonju gives the line a hinge, Jecheon gives it lake-and-mountain transition, and Yeongwol gives it Danjong, rivers, film attention, and preservation tension.',
+      'Yeongwol works as a one-night river-and-history stop: camp or raft around the Donggang, cross by ferry into Cheongnyeongpo, and use the town core for Jangneung and Seobu Market.',
     mapCenter: {
       lat: 37.1838,
       lng: 128.4617,
     },
     supportSummary:
-      'Yeongwol works best as an emotional history stop. Cheongnyeongpo, Jangneung, Danjong Culture Festival, Donggang and Seogang scenery, Byeolmaro Observatory, and the 2026 Wang-gwa Saneun Namja film trend make it feel current without erasing the older sorrow.',
+      'After about five recent camping and rafting visits, the clearest plan is not to collect every viewpoint. Give one night to the Donggang, make Cheongnyeongpo the historical priority, and add Jangneung and Seobu Market as a compact town-side group.',
     roleSummary:
       'On the Wonju-Jecheon-Yeongwol short branch, Yeongwol is where the route stops being only scenic inland movement and becomes a story about exile, memory, river geography, and how pop culture can send people back into a real historical place.',
     staySummary:
-      'Stay near the Yeongwol town core when the goal is Cheongnyeongpo, Jangneung, food, and easy movement. Push toward the river and observatory side when the overnight should feel more landscape-led and reflective.',
+      'A riverside campground or valley stay is the stronger reason to spend the night when rafting and landscape are the purpose. Choose the town core only when easy meals and a compact Cheongnyeongpo-Jangneung itinerary matter more.',
     foodSummary:
-      'Food should support the heritage walk rather than dominate the page. Keep it local, practical, and slow enough for travelers who may be moving between Danjong sites, riverside views, and evening observatory plans.',
+      'The editor does not claim a must-eat Yeongwol dish from these visits. Use Seobu Market as a practical stop and treat named local specialties as options to verify, not as the reason for the trip.',
     nextLegSummary:
-      'After Yeongwol, the branch can either loop back toward Jecheon or become a deeper Gangwon inland journey. The important thing is that Yeongwol should feel like the emotional high point, not just the final dot on a side route.',
+      'The most natural experienced sequence is Jecheon, Yeongwol, then Jeongseon. Do not force Yeongwol into a Taebaek-Samcheok coast shortcut simply because the places look close on a map.',
     accommodationNote:
-      'Strongest stay-planning angle: one town-core history stay group, one riverside landscape group, and one observatory-night group for travelers who want the branch to end under a darker sky.',
+      'Strongest stay-planning angle: one Donggang camping or rafting group and one town-core history group. Keep the observatory as an officially sourced optional night plan because it was not personally visited.',
     sections: [
       {
-        title: 'Why Yeongwol is more than a scenic detour',
+        title: 'Why the Donggang can justify one night',
         body:
-          'Yeongwol carries the final chapter of King Danjong. Cheongnyeongpo was his exile place, Jangneung holds the royal tomb, and the surrounding river geography makes the history feel physically enclosed rather than abstract.',
+          'Five recent visits centered on camping and rafting make the river the strongest first-hand reason to stay. The combination of water, mountains, and cliffs feels distinct even within Gangwon, especially in summer and autumn.',
       },
       {
         title: 'Why the film trend belongs here',
         body:
-          'Wang-gwa Saneun Namja matters because it did not invent Yeongwol; it reactivated a story already embedded in the county. The trend gives modern travelers a reason to revisit Danjong sites, but the page should keep the real heritage in front.',
+          'The 2026 film Wang-gwa Saneun Namja drew more than 16 million admissions and visibly renewed interest in Cheongnyeongpo and Jangneung. It belongs on the page, but as an entrance into Danjong history rather than a replacement for it.',
       },
       {
-        title: 'How to write the crowding issue honestly',
+        title: 'Why Cheongnyeongpo comes before a full checklist',
         body:
-          'A film boom can help a local city, but it can also pressure fragile heritage sites. Yeongwol content should mention respectful pacing, official guides, and preservation awareness so the trend does not turn into careless consumption.',
+          'The short ferry crossing can feel inconvenient, especially for some older travelers, yet it is also what makes the visit memorable and makes Danjong\'s isolation physically understandable. Jangneung is quieter and more modest; the two can be paired, but neither requires collecting every Danjong-related site.',
       },
       {
-        title: 'Why Jecheon should sit before Yeongwol',
+        title: 'Build the driving order from the outside in',
         body:
-          'Jecheon gives the branch a natural lake-and-mountain threshold before the route lands in Yeongwol. That order makes the short route feel staged: hinge, terrain, memory.',
+          'Gossi Cave sits farther from the town-side cluster, so see it first when it is part of the day. Then move toward Cheongnyeongpo, Jangneung, and Seobu Market. The roads felt better than expected, but a car remains much easier than public transport for dispersed sights.',
       },
       {
-        title: 'Why rivers are part of the story',
+        title: 'Lower the priority of photo-checklist stops',
         body:
-          'Donggang, Seogang, Cheongnyeongpo, Seondol, and the Korean Peninsula-shaped terrain all make Yeongwol feel shaped by water and rock. The landscape is not background; it explains why the history lands so strongly.',
+          'The Korean Peninsula-shaped terrain is a recognized scenic site, but travelers focused on rafting, camping, or Danjong history can lower its priority. That is an itinerary judgment, not a claim of first-hand disappointment: the editor did not personally visit it.',
       },
       {
         title: 'Why the night sky should stay in the page',
         body:
-          'Byeolmaro Observatory gives Yeongwol a present-day travel reason beyond Danjong. It lets the city shift from daytime heritage to nightscape, which is useful for a short branch that should justify an overnight.',
+          'Byeolmaro Observatory remains a useful weather-dependent option, not an editor-tested recommendation. The page should direct travelers to confirm reservations, access, and visibility rather than promise it as the payoff of every overnight.',
       },
     ],
     decisions: [
       {
         title: 'Follow the Danjong sites',
-        bestFor: 'Travelers coming because of history, the film trend, or a desire to understand why Yeongwol feels emotionally heavy.',
+        bestFor: 'History travelers, film viewers, families, and visitors who want one unusual access experience.',
         why:
-          'Cheongnyeongpo and Jangneung are the core. They make the branch meaningful in a way scenery alone cannot.',
+          'Prioritize Cheongnyeongpo for the ferry and enclosed landscape; add the small, quiet Jangneung when time allows.',
       },
       {
-        title: 'Use Yeongwol as the branch climax',
-        bestFor: 'Trips that want Wonju and Jecheon to build toward one stronger endpoint.',
+        title: 'Stay for the Donggang',
+        bestFor: 'Campers, rafters, and families who want the overnight itself to be part of the trip.',
         why:
-          'The city gives the short branch a narrative finish: hinge in Wonju, mountain-lake transition in Jecheon, exile memory in Yeongwol.',
+          'Camping or rafting gives Yeongwol a stronger one-night purpose than simply extending a sightseeing checklist.',
       },
       {
-        title: 'Stay for the observatory night',
-        bestFor: 'Slow travelers who want the day to move from heritage to river landscape and then to night-sky atmosphere.',
+        title: 'Keep a day trip selective',
+        bestFor: 'Drivers linking Jecheon to Jeongseon without a river overnight.',
         why:
-          'Byeolmaro makes Yeongwol more than a day-trip stop and gives the route a softer ending after the heavier Danjong story.',
+          'Start with distant Gossi Cave only if it matters, then choose Cheongnyeongpo, Jangneung, and Seobu Market rather than trying to prove that every named viewpoint was visited.',
       },
     ],
     stayZones: [
+      {
+        title: 'Camp beside the river',
+        areaLabel: 'Donggang / valley side',
+        bestFor: 'Rafting, camping, families, and a landscape-led one-night stop.',
+        why:
+          'This is the stay style supported most clearly by the editor\'s repeated visits and the strongest reason to give Yeongwol more than a day.',
+      },
       {
         title: 'Keep the town-core history stay',
         areaLabel: 'Yeongwol town / Jangneung side',
@@ -992,18 +999,11 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
           'This is the cleanest base when the page is built around Cheongnyeongpo, Jangneung, and the film-revival route.',
       },
       {
-        title: 'Move toward river scenery',
-        areaLabel: 'Donggang / Seogang side',
-        bestFor: 'Travelers who want the branch to feel like landscape as much as history.',
-        why:
-          'The river side makes the exile geography easier to feel and gives the route a slower visual register.',
-      },
-      {
-        title: 'Plan around the observatory',
+        title: 'Treat the observatory as optional',
         areaLabel: 'Byeolmaro side',
-        bestFor: 'Overnight travelers, photographers, and anyone using Yeongwol as a reflective branch ending.',
+        bestFor: 'Travelers who verify weather, reservations, and road access in advance.',
         why:
-          'The observatory gives the stop a reason to stay after the history sites close and turns the branch into a full day-to-night chapter.',
+          'It can extend the evening, but this page does not present it as a first-hand recommendation.',
       },
     ],
     visuals: [
@@ -1035,9 +1035,9 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         image: 'https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
         alt: 'Cheongnyeongpo landscape connected to the 2026 film-driven Yeongwol travel trend',
         body:
-          'Wang-gwa Saneun Namja belongs on the page because it sent travelers back into an older story. The visual treatment should stay respectful, emphasizing place and memory over fandom alone.',
+          'Wang-gwa Saneun Namja drew more than 16 million admissions and sent travelers back into an older story. The visual treatment should still emphasize place and memory over fandom alone.',
         sourceLabel: 'Hankyung trend report',
-        sourceHref: 'https://www.hankyung.com/article/2026030867587',
+        sourceHref: 'https://www.hankyung.com/article/2026040602997',
         licenseLabel: 'Trend reference',
       },
       {
@@ -1098,9 +1098,9 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         image: 'https://tong.visitkorea.or.kr/cms/resource/74/3375074_image2_1.JPG',
         alt: 'Cheongnyeongpo landscape used as context for film-driven visitor growth',
         body:
-          'Korean business press reported that Cheongnyeongpo and Jangneung visitor counts surged in March 2026 as Wang-gwa Saneun Namja became a major box-office event.',
+          'Korean business press reported more than 16 million admissions and a resulting visitor surge at Cheongnyeongpo and Jangneung in spring 2026.',
         sourceLabel: 'Hankyung visitor trend report',
-        sourceHref: 'https://www.hankyung.com/article/2026030867587',
+        sourceHref: 'https://www.hankyung.com/article/2026040602997',
         licenseLabel: 'News reference',
         usageNote:
           'Use as a time-sensitive trend source. Recheck before publishing refreshed copy because film and visitor-count figures change quickly.',
@@ -1114,9 +1114,9 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Danjong exile site',
         coordinates: { lat: 37.1726, lng: 128.4449 },
         summary:
-          'The exile landscape that gives Yeongwol its emotional core and explains why the film trend lands here.',
+          'The editor\'s top revisit: a short ferry ride into the enclosed exile landscape that makes Danjong\'s story tangible.',
         note:
-          'Treat this as a respect-first heritage site, especially during high-traffic film-tourism periods.',
+          'The crossing is mildly inconvenient but special; confirm ferry operation and accessibility before visiting.',
       },
       {
         id: 'yeongwol-jangneung',
@@ -1127,18 +1127,18 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         summary:
           'The tomb site that keeps Danjong memory grounded in actual place rather than only screen emotion.',
         note:
-          'Best paired with Cheongnyeongpo when the page needs one clear historical itinerary.',
+          'Expect a smaller, quieter royal tomb rather than a monumental complex. Pairing it with Cheongnyeongpo is useful, not compulsory.',
       },
       {
         id: 'yeongwol-town-stay',
-        name: 'Yeongwol town stay grid',
+        name: 'Donggang camping and rafting base',
         kind: 'stay',
-        areaLabel: 'Town core',
+        areaLabel: 'River overnight',
         coordinates: { lat: 37.1838, lng: 128.4617 },
         summary:
-          'The easiest base for food, transit, Cheongnyeongpo, Jangneung, and practical movement around the county.',
+          'The editor-tested reason to stay one night: camp beside the river and build the trip around rafting or a slower landscape morning.',
         note:
-          'Use this when the branch needs a stable overnight rather than a remote scenic stay.',
+          'Check operator safety notices, river levels, weather, and campground rules; one calm past visit is not a guarantee during heavy rain.',
       },
       {
         id: 'yeongwol-byeolmaro',
@@ -1158,9 +1158,9 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Short branch logic',
         coordinates: { lat: 37.1623, lng: 128.3067 },
         summary:
-          'The route concept that makes Yeongwol the emotional end of a compact inland branch instead of a disconnected side trip.',
+          'The practical sequence supported by the editor\'s drives: Jecheon, Yeongwol, then Jeongseon.',
         note:
-          'This is the planning layer: Wonju as hinge, Jecheon as terrain threshold, Yeongwol as history and film revival.',
+          'A car makes the dispersed sights much easier; if Gossi Cave is included, place the outlying cave before the town-side cluster.',
       },
     ],
   },
@@ -1997,52 +1997,109 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   sokcho: {
     slug: 'sokcho',
     city: 'Sokcho',
-    mapTitle: 'Where Route 3 finally releases into Seoraksan and the East Sea',
+    mapTitle: 'A compact city where Seoraksan, lagoons, harbor food, and the sea overlap',
     mapIntro:
-      'Sokcho is the payoff of Route 3. The city should feel like the release after Gapyeong, Chuncheon, Yanggu, Inje, and the Seoraksan pass choice: mountain, sea, market, harbor, Abai Village memory, and enough hotels to land well.',
+      'After living here for a year and returning about one hundred times, the useful lesson is simple: Sokcho city is compact, but Seoraksan is not a side stop. Give the mountain its own day and use Cheongchoho as the practical base for the city day.',
     mapCenter: { lat: 38.2045, lng: 128.5918 },
     supportSummary:
-      'Sokcho works best as the final mountain-to-sea arrival. Seoraksan National Park access, Sokcho Tourist and Fishery Market, Abai Village, Sokcho Beach, harbor seafood, cafes, and seaside hotels let the route resolve with both drama and comfort.',
+      'Two nights are the honest recommendation: one day for Cheongchoho, the market, gaetbae or Abai Village, and Dongmyeong Port; one separate day for Seoraksan. Sokcho Beach is clean and convenient, but repeat East Sea travelers can lower its priority.',
     roleSummary:
-      'On Route 3, Sokcho should not be treated as a generic coastal endpoint. It is where the Seoraksan pass choice becomes emotional, where the East Sea opens, and where local market and Abai Village memory make the arrival human.',
+      'On Route 3, the experienced approach is Inje to Sokcho. Crossing the mountains creates a psychological and visual release, then the city compresses mountain views, two lagoons, ports, food, and urban services into short drives.',
     staySummary:
-      'Stay in Sokcho when the route needs a real finish. Choose beach and hotel zones for ease, market/harbor zones for food and local texture, or Seoraksan-side access when the next morning belongs to the mountain.',
+      'Stay in the Cheongchoho or town-center area for the best balance of food, evening activity, parking, and movement. A costly sea-view room is not essential: many inland-facing rooms trade the sea for a Seoraksan view.',
     foodSummary:
-      'Food should be central: Sokcho Tourist and Fishery Market, seafood, squid, Abai sundae, harbor meals, and casual coastal snacks make the final city feel earned after mountain roads.',
+      'Food is a valid reason to visit, especially around Cheongchoho and Dongmyeong Port. The market is worthwhile once, but famous dakgangjeong and squid sundae felt more like first-visit experiences than foods the editor would repeatedly queue for.',
     nextLegSummary:
-      'After Sokcho, the route can either rest, loop north through Goseong, or continue along the East Sea. But the first job is to let the traveler arrive properly.',
+      'Pair Goseong with Sokcho for a quieter northern-coast rest, or Yangyang with Sokcho for a busier beach trip. The route from Inje into Sokcho is the most natural inland arrival; do not underestimate holiday and foliage-season driving time.',
     accommodationNote:
-      'Strongest stay-planning angle: one beach/hotel stay group, one market-and-harbor food stay group, and one Seoraksan access stay pattern for travelers prioritizing the mountain next morning.',
+      'Strongest stay-planning angle: Cheongchoho/town for a two-night all-round base, Dongmyeong Port for evening food, and Seorak-dong only when the next morning belongs entirely to the mountain.',
     sections: [
-      { title: 'Why Sokcho is the payoff', body: 'Sokcho works because the route has earned it. After lakes, borderland memory, and Seorak pass choices, the East Sea arrival feels like release rather than a simple destination.' },
-      { title: 'Why Seoraksan and the city must stay together', body: 'Sokcho should not become only a mountain base or only a beach town. The best page keeps Seoraksan, the harbor, market food, and coastal hotels in one story.' },
-      { title: 'Why Abai Village matters', body: 'Abai Village gives the city postwar human memory and northern-displacement context. It adds emotional texture to the market-and-sea arrival.' },
+      {
+        title: 'What one year of living here changes',
+        body:
+          'Tourist zones and daily life do not split cleanly in compact Sokcho. Cheongchoho paths, harbor restaurants, apartments, hotels, markets, and mountain views overlap, while high-rise construction has rapidly changed the skyline.',
+      },
+      {
+        title: 'Give Seoraksan a separate day',
+        body:
+          'The editor has taken the cable car to Gwongeumseong once and found it approachable outside peak foliage periods. Ulsanbawi is the next return goal, not a completed review. Trail controls and cable-car operation vary with weather and safety conditions, so check both official notices before leaving.',
+      },
+      {
+        title: 'Use Cheongchoho as the city base',
+        body:
+          'Cheongchoho works for walking, exercise, night views, meals, and lodging in one area. Yeongnangho is the quieter alternative, while Dongmyeong Port adds the stronger evening-food choice without forcing a remote resort stay.',
+      },
+      {
+        title: 'Treat famous market food as a first taste',
+        body:
+          'The market itself is worth seeing, and first-time visitors may still enjoy queueing for dakgangjeong or trying squid and Abai sundae. The editor found the famous versions less distinctive than their reputation and would spend repeat-visit food money around Cheongchoho or Dongmyeong Port instead.',
+      },
+      {
+        title: 'Choose the coast by mood',
+        body:
+          'Goseong plus Sokcho suits a quieter rest; Yangyang plus Sokcho suits travelers comfortable with busier beach energy. Sokcho Beach is clean and convenient but not irreplaceable on a coast full of alternatives.',
+      },
     ],
     decisions: [
-      { title: 'Stay near the beach', bestFor: 'Travelers who want an easy final night, hotels, cafes, and sea air.', why: 'This makes the route finish feel restful after the mountain crossing.' },
-      { title: 'Stay near market and harbor', bestFor: 'Food-focused travelers and people who want Sokcho to feel local.', why: 'Market, seafood, Abai sundae, and harbor streets make the city more human.' },
-      { title: 'Stay toward Seoraksan access', bestFor: 'Travelers planning an early mountain morning.', why: 'This keeps Sokcho tied to the pass-and-peak logic that made Route 3 distinct.' },
+      {
+        title: 'Build a two-night first visit',
+        bestFor: 'Travelers combining food, lagoons, harbor, and one Seoraksan experience.',
+        why:
+          'One day can stay compact inside the city; the other protects the mountain from becoming a rushed half-day add-on.',
+      },
+      {
+        title: 'Prioritize Cheongchoho and Dongmyeong Port',
+        bestFor: 'Food-focused travelers, evening walkers, families, and visitors who value urban convenience.',
+        why:
+          'These areas best support the editor\'s repeated experience of Sokcho as a lived city rather than a beach checklist.',
+      },
+      {
+        title: 'Lower Sokcho Beach priority',
+        bestFor: 'Repeat East Sea travelers or anyone with limited time.',
+        why:
+          'The beach is tidy and accessible, but the coast offers many substitutes; Sokcho\'s compact mountain-lagoon-city combination is harder to replace.',
+      },
     ],
     stayZones: [
-      { title: 'Stay by Sokcho Beach', areaLabel: 'Sea arrival', bestFor: 'Hotels, cafes, easy walks, and a soft final night.', why: 'The beach zone lets the route exhale.' },
-      { title: 'Stay near the market and harbor', areaLabel: 'Food core', bestFor: 'Seafood, Abai sundae, local streets, and evening energy.', why: 'This is where Sokcho feels like a living city rather than only scenery.' },
-      { title: 'Stay toward Seoraksan', areaLabel: 'Mountain access', bestFor: 'Early hikes, cable-car plans, and travelers prioritizing Seorak.', why: 'This keeps the final city connected to the pass choice.' },
+      {
+        title: 'Stay around Cheongchoho',
+        areaLabel: 'Best all-round city base',
+        bestFor: 'Two-night visits, late meals, walks, families, and short drives across the city.',
+        why:
+          'This is where the editor stayed most often and where daily life, food, lodging, and night scenery overlap.',
+      },
+      {
+        title: 'Stay toward Dongmyeong Port',
+        areaLabel: 'Harbor evening',
+        bestFor: 'Seafood, restaurants, harbor atmosphere, and a livelier night.',
+        why:
+          'It offers more practical evening value than paying only for a beachfront view.',
+      },
+      {
+        title: 'Stay toward Seorak-dong',
+        areaLabel: 'Mountain-first morning',
+        bestFor: 'Travelers who have already reserved a full day for Seoraksan.',
+        why:
+          'Choose it for access, not as the default Sokcho base; current trail, weather, parking, and cable-car conditions still need checking.',
+      },
     ],
     visuals: [
-      { eyebrow: 'Final release', title: 'Sokcho turns the pass into sea air', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho Beach and East Sea reference', body: 'The sea image matters because Route 3 should end with relief after the mountain logic.', sourceLabel: 'VisitKorea Seorak Special Tourist Zone', sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222', licenseLabel: 'Official reference' },
-      { eyebrow: 'Food arrival', title: 'The market makes Sokcho human', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fish%20market%20in%20Sokcho.jpg', alt: 'Sokcho Tourist and Fishery Market seafood stalls', body: 'The market visual converts the endpoint into a lived arrival: seafood, dinner decisions, and local evening movement after the mountain crossing.', sourceLabel: 'Wikimedia Commons Sokcho Fish Market', sourceHref: 'https://commons.wikimedia.org/wiki/File:Fish_market_in_Sokcho.jpg', licenseLabel: 'CC BY-SA 4.0 reference' },
-      { eyebrow: 'Postwar memory', title: 'Abai Village adds memory to the coast', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Abai%20village%20-%205433869814.jpg', alt: 'Abai Village in Sokcho near the harbor channel', body: 'Abai Village keeps Sokcho from becoming generic: the final city holds migration memory, harbor life, and food culture as well as beach stays.', sourceLabel: 'Wikimedia Commons Abai Village', sourceHref: 'https://commons.wikimedia.org/wiki/File:Abai_village_-_5433869814.jpg', licenseLabel: 'CC BY 2.0 reference' },
+      { eyebrow: 'Compact city base', title: 'Cheongchoho joins exercise paths, night views, food, and lodging', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho city, lagoon, mountain, and East Sea context', body: 'The useful Sokcho image is not sea alone: it is the tight overlap of lagoon, urban skyline, Seoraksan, and daily movement.', sourceLabel: 'VisitKorea Cheongchoho Lake', sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?menuSn=351&vcontsId=107605', licenseLabel: 'Official reference' },
+      { eyebrow: 'First-visit food', title: 'The market is worth seeing even when its famous snacks are not repeat essentials', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fish%20market%20in%20Sokcho.jpg', alt: 'Sokcho Tourist and Fishery Market seafood stalls', body: 'Keep the market in the itinerary, but separate the atmosphere from claims that one dakgangjeong or sundae shop is uniquely essential.', sourceLabel: 'VisitKorea Sokcho Tourism and Fisheries Market', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=174444', licenseLabel: 'Official reference' },
+      { eyebrow: 'Short local experience', title: 'Gaetbae is optional but distinctly Sokcho', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Abai%20village%20-%205433869814.jpg', alt: 'Abai Village and gaetbae channel in Sokcho', body: 'A bridge can complete the crossing, so the boat is not essential transport. Choose it for a brief local experience and keep the village\'s displacement history visible.', sourceLabel: 'Korea Tourism Organization gaetbae data', sourceHref: 'https://data.visitkorea.or.kr/linkedview/129468', licenseLabel: 'Official reference' },
     ],
     officialReferences: [
-      { eyebrow: 'Official tourism source', title: 'Seorak Special Tourist Zone ties Sokcho to mountain and sea', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho and Seoraksan reference', body: 'VisitKorea frames the Seorak Special Tourist Zone around Seoraksan, Sokcho, beaches, and nearby coastal attractions, supporting Sokcho as a mountain-to-sea arrival.', sourceLabel: 'VisitKorea Seorak Special Tourist Zone', sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=74222', licenseLabel: 'Official reference', usageNote: 'Use as the core source for Seoraksan and East Sea arrival logic.' },
+      { eyebrow: 'Official city source', title: 'Sokcho officially presents mountain, sea, lagoons, and ports together', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho and Seoraksan reference', body: 'The city tourism portal groups Seoraksan, Cheongchoho, Yeongnangho, beaches, ports, gaetbae, and markets, supporting the editor\'s compact multi-landscape reading.', sourceLabel: 'Sokcho City tourism portal', sourceHref: 'https://sokcho.go.kr/ct/tour', licenseLabel: 'Official reference', usageNote: 'Use for current attraction listings and city-wide geography; recheck changing operations separately.' },
       { eyebrow: 'Market source', title: 'Sokcho market supports the food-arrival layer', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fish%20market%20in%20Sokcho.jpg', alt: 'Sokcho market seafood reference', body: 'The central market source supports Sokcho as seafood, snack, and local evening city rather than only a scenic endpoint.', sourceLabel: 'VisitKorea Sokcho Tourism and Fisheries Market', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=174444', licenseLabel: 'Official reference', usageNote: 'Use for market, food, and street-level arrival.' },
-      { eyebrow: 'Memory source', title: 'Abai Village keeps postwar memory visible', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Abai%20village%20-%205433869814.jpg', alt: 'Abai Village reference in Sokcho', body: 'Abai Village is associated with displaced people from Hamgyong Province after the Korean War and gives Sokcho a human memory layer beyond tourism.', sourceLabel: 'Abai Village reference', sourceHref: 'https://en.wikipedia.org/wiki/Abai_Village', licenseLabel: 'Reference', usageNote: 'Use with respectful postwar-memory framing.' },
+      { eyebrow: 'Official lagoon source', title: 'Cheongchoho supports the practical night-and-walk base', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Cheongchoho and Sokcho city context', body: 'VisitKorea describes the five-kilometer lagoon in the city center, its walking environment, mountain views, and illuminated night scenery.', sourceLabel: 'VisitKorea Cheongchoho Lake', sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?menuSn=351&vcontsId=107605', licenseLabel: 'Official reference', usageNote: 'Use to support Cheongchoho as the town base rather than only a scenic stop.' },
+      { eyebrow: 'Official coastal source', title: 'Bada Hyanggi-ro is a walking trail, not a drive', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sokcho%20Beach.jpg', alt: 'Sokcho coastal trail context', body: 'Sokcho City describes the 890-meter Oeongchi coastal route as a four-section walking trail with seasonal access hours.', sourceLabel: 'Sokcho City Bada Hyanggi-ro', sourceHref: 'https://www.sokcho.go.kr/ct/tour/attraction/nature?contentSeq=70', licenseLabel: 'Official reference', usageNote: 'Keep the editor\'s coastal-drive memory separate from the pedestrian trail and verify current access hours.' },
     ],
     points: [
-      { id: 'sokcho-beach', name: 'Sokcho Beach', kind: 'stay', areaLabel: 'Sea arrival', coordinates: { lat: 38.1894, lng: 128.6031 }, summary: 'The simplest final-night zone for travelers who want the sea to be visible and easy.', note: 'Use this for comfort-led endings.' },
-      { id: 'sokcho-market', name: 'Sokcho Tourist and Fishery Market', kind: 'food', areaLabel: 'Market core', coordinates: { lat: 38.2042, lng: 128.5907 }, summary: 'The food and street-level anchor that makes Sokcho feel local.', note: 'This is the strongest conversion point for dinner and evening intent.' },
-      { id: 'abai-village', name: 'Abai Village', kind: 'checkpoint', areaLabel: 'Postwar memory', coordinates: { lat: 38.2012, lng: 128.5958 }, summary: 'The memory layer that connects Sokcho to displacement, harbor life, and Abai sundae.', note: 'Handle with respect; this is not just a food stop.' },
-      { id: 'seoraksan-access', name: 'Seoraksan access side', kind: 'mobility', areaLabel: 'Mountain morning', coordinates: { lat: 38.17, lng: 128.485 }, summary: 'The mountain-side planning zone for travelers who want Seorak early the next day.', note: 'Use when Sokcho should remain tied to the pass and mountain story.' },
+      { id: 'sokcho-cheongchoho', name: 'Cheongchoho city base', kind: 'stay', areaLabel: 'Everyday Sokcho', coordinates: { lat: 38.1998, lng: 128.5907 }, summary: 'The editor-tested all-round base for walks, night views, food, lodging, and short city drives.', note: 'Best default for a two-night visit; summer pricing and parking still need current checks.' },
+      { id: 'sokcho-dongmyeong', name: 'Dongmyeong Port evening', kind: 'food', areaLabel: 'Harbor food', coordinates: { lat: 38.2119, lng: 128.6012 }, summary: 'The editor\'s preferred harbor for restaurants, nearby services, and evening atmosphere.', note: 'Do not promise an international ferry: passenger routes and port operations are time-sensitive.' },
+      { id: 'sokcho-market', name: 'Sokcho Tourist and Fishery Market', kind: 'food', areaLabel: 'First-visit market', coordinates: { lat: 38.2042, lng: 128.5907 }, summary: 'Worth visiting once for atmosphere and choice, even if famous snacks do not guarantee a repeat purchase.', note: 'Parking is the main friction; avoid presenting one branded shop as the only correct choice.' },
+      { id: 'seoraksan-access', name: 'Seoraksan full-day departure', kind: 'mobility', areaLabel: 'Separate mountain day', coordinates: { lat: 38.17, lng: 128.485 }, summary: 'A dedicated day for the mountain instead of squeezing it between the beach and market.', note: 'Gwongeumseong cable car is the editor-tested option; Ulsanbawi is a future goal. Check park and operator notices separately.' },
+      { id: 'sokcho-beach', name: 'Sokcho Beach', kind: 'recovery', areaLabel: 'Optional sea stop', coordinates: { lat: 38.1894, lng: 128.6031 }, summary: 'A clean, convenient beach whose priority can drop for repeat East Sea travelers.', note: 'Changing beachfront attractions and operations require a current check; the beach itself has many regional alternatives.' },
     ],
   },
   mungyeong: {
@@ -3300,85 +3357,88 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   taebaek: {
     slug: 'taebaek',
     city: 'Taebaek',
-    mapTitle: 'Where coal history, Hanwoo, and highland geography prepare the coast exit',
+    mapTitle: 'A highland city worth choosing for one clear reason',
     mapIntro:
-      'Taebaek is a support map for the final inland chapter of Branch 2A: coal memory, Taebaek Hanwoo, Taebaeksan, Hwangji Pond, highland weather, and the push toward Samcheok.',
+      'Use this map to choose, not collect. Taebaeksan and coal history can justify the difficult approach; Hwangji Pond, Geomnyongso, Hanwoo, and the coast descent are supporting decisions rather than automatic must-sees.',
     mapCenter: { lat: 37.1641, lng: 128.9856 },
     supportSummary:
-      'Taebaek works as Branch 2A’s Coal, Hanwoo, and highland threshold. The Taebaek Coal Museum, Hwangji Pond, Taebaeksan, mining memory, Taebaek Hanwoo, and highland city texture make the final inland stop meaningful before Samcheok.',
+      'Taebaek is most convincing as a Taebaeksan or industrial-history trip. The city\'s post-coal contraction is visible, evenings are quiet, and labeled attractions can feel modest. That honesty is more useful than pretending every traveler needs the stop.',
     roleSummary:
-      'This is the coal-highland chapter. Taebaek gives the branch industrial history, mountain air, river-source geography, Hanwoo pride, and a clear Samcheok handoff.',
+      'This is a remote highland choice. It gives Branch 2A industrial weight, but the road to Samcheok is steep and winding rather than a simple coast handoff.',
     staySummary:
-      'Stay near the city core for Hwangji Pond and logistics; stay closer to Taebaeksan when hiking, snow, coal museum context, or mountain mood should lead.',
+      'General sightseeing rarely needs a Taebaek night. Stay in Jeongseon and use Taebaek as a day trip unless a winter sunrise, early hike, festival, or serious coal-history itinerary requires local sleep.',
     foodSummary:
-      'Food should support highland pacing and local pride. Taebaek Hanwoo is the strongest meal hook, with warm bowls, simple town food, market stops, and practical breakfasts before the Samcheok exit.',
+      'Hanwoo is the editor\'s preferred meal hook, but not proof that any price is justified. Compare menus, choose one researched meal, and treat it as an optional reward after the mountain. Mul-dakgalbi remains a local option, not a first-hand recommendation.',
     nextLegSummary:
-      'After Taebaek, Samcheok should feel like the East Sea release and the branch’s connection into Route 4.',
+      'Do not force Taebaek and Samcheok into the same itinerary. The descent through the mountains is possible but demanding; most coast-focused travelers will find Gangneung-Donghae-Samcheok more coherent.',
     accommodationNote:
-      'Strongest stay-planning angle: city-core logistics versus Taebaeksan and coal-heritage access.',
+      'Short-visit judgment: default to a day trip from Jeongseon. Book Taebaek only when the mountain start time or a focused event makes the night necessary.',
     sections: [
       {
-        title: 'Why Taebaek is the final inland threshold',
+        title: 'A difficult city to reach should have a clear purpose',
         body:
-          'Taebaek gives Branch 2A a strong last inland chapter before the coast. Coal history, post-coal pressure, Hanwoo, highland weather, and river-source geography make the transition to Samcheok feel earned.',
+          'The editor\'s first reaction on repeated short visits was how difficult the approach felt. The city is compact, the post-coal slowdown is visible, and late-evening choices are thin. Taebaek works when the traveler has chosen Taebaeksan or industrial history—not when a map checklist demands every attraction.',
       },
       {
-        title: 'Why coal history matters',
+        title: 'Coal history is serious, not decorative',
         body:
-          'The coal story is not decorative. VisitKorea frames Taebaek Coal Museum around Korea’s coal industry and modernization, which fits the site’s past-present city strategy.',
+          'Official city sources describe coal as a major engine of Korean development and the mine closures after industrial restructuring as a cause of sharp population loss and economic contraction. The editor has not personally reviewed the Coal Museum, Cheoram Coal Mine History Town, or Tongri sites, so these remain researched choices rather than first-person endorsements.',
       },
       {
-        title: 'Why Taebaek Hanwoo matters',
+        title: 'Taebaeksan is the strongest first-hand reason to go',
         body:
-          'Taebaek should not be written only as decline after coal. Hanwoo gives the city a current food identity and a reason for travelers to stop, eat well, and understand local pride in the present tense.',
+          'A winter sunrise from Taebaeksan is the editor\'s clearest Taebaek memory. Winter gives the mountain its strongest identity; autumn gives drivers the easier scenic approach. Outside a mountain-led trip, the city becomes much harder to recommend broadly.',
       },
       {
-        title: 'How it hands off to Samcheok',
+        title: 'Source geography needs realistic expectations',
         body:
-          'Taebaek should not end the branch emotionally. It should point downhill and east, making Samcheok feel like the coast release after a deep mountain crossing.',
+          'Hwangji Pond is associated with the Nakdonggang source and Geomnyongso with the Hangang source. Their geographic meaning is substantial, but their physical scale can disappoint visitors expecting dramatic scenery. Keep Hwangji as a brief city-core stop and visit Geomnyongso only when the source story or surrounding trail matters.',
+      },
+      {
+        title: 'The Samcheok descent is not the easy coast route',
+        body:
+          'After the comparatively easier road toward High1, the drive changes. The route becomes steeper and more winding toward Taebaek and again toward Tongri and Samcheok. Use this as an intentional mountain crossing, not as the default way to build a comfortable east-coast trip.',
+      },
+      {
+        title: 'Keep the meal proportionate to the stop',
+        body:
+          'Taebaek Hanwoo can be worth one meal, especially after Taebaeksan, but the editor did not find a dramatic difference from good beef bought elsewhere. Research the restaurant and price first. One meal can complete the day; it should not be the only reason for a costly detour.',
       },
     ],
     decisions: [
       {
-        title: 'Lead with coal heritage',
-        bestFor: 'Travelers who want modern Korean industrial history and a less obvious regional story.',
+        title: 'Go for Taebaeksan',
+        bestFor: 'Winter sunrise trips, autumn mountain scenery, hikers, and highland-weather travelers.',
         why:
-          'Coal makes Taebaek different from scenic mountain towns and gives the page historical weight.',
+          'This is the strongest first-hand reason to accept the long approach and compact city.',
       },
       {
-        title: 'Eat Taebaek Hanwoo',
-        bestFor: 'Travelers who want the city to feel alive in the present instead of only historical.',
+        title: 'Go for coal history',
+        bestFor: 'Travelers studying Korean modernization, mining labor, company housing, and post-coal regional change.',
         why:
-          'Hanwoo turns the stop into a meal chapter and gives the page an honest local-pride hook.',
+          'The museum and Cheoram network can make Taebaek nationally meaningful, but this recommendation is based on official research rather than the editor\'s direct review.',
       },
       {
-        title: 'Lead with Taebaeksan and Hwangji',
-        bestFor: 'Hikers, winter travelers, and users who want highland geography before the sea.',
+        title: 'Skip Taebaek without a theme',
+        bestFor: 'Travelers who do not hike, do not care about industrial history, or want an easy coast itinerary.',
         why:
-          'Taebaeksan and Hwangji Pond make the city feel spatially important as well as historically important.',
+          'Hwangji Pond and Geomnyongso alone rarely justify the difficult approach, and skipping the city is a valid planning decision.',
       },
     ],
     stayZones: [
       {
-        title: 'Stay near Hwangji and the city core',
+        title: 'Use the city core only when a night is necessary',
         areaLabel: 'Central Taebaek',
-        bestFor: 'Logistics, river-source walks, and simple meals.',
+        bestFor: 'Early mountain starts, festivals, and focused industrial-history visits.',
         why:
-          'This zone keeps the branch usable before the Samcheok move.',
+          'Hwangji and basic logistics stay close, but evening activity and late food should not be assumed.',
       },
       {
-        title: 'Use a Hanwoo meal as the city-core anchor',
-        areaLabel: 'Central Taebaek',
-        bestFor: 'Dinner stops, local food pride, and a warmer reading of a difficult post-coal city.',
+        title: 'Base in Jeongseon for the general trip',
+        areaLabel: 'Jeongseon / High1 side',
+        bestFor: 'Travelers combining the region without an early Taebaeksan requirement.',
         why:
-          'A Taebaek Hanwoo meal can make the stop feel current and memorable before the coast exit.',
-      },
-      {
-        title: 'Stay toward Taebaeksan',
-        areaLabel: 'Taebaeksan side',
-        bestFor: 'Mountain access, coal museum context, and highland atmosphere.',
-        why:
-          'This side makes Taebaek feel like a mountain threshold rather than only a city stop.',
+          'Jeongseon offers the stronger overnight base; drive into Taebaek for the chosen purpose and return the same day.',
       },
     ],
     visuals: [
@@ -3395,33 +3455,33 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
       },
       {
         eyebrow: 'River source',
-        title: 'Hwangji Pond gives the city geographic weight',
+        title: 'Hwangji matters more on a map than in scale',
         image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg',
         alt: 'Taebaek highland reference',
         body:
-          'Hwangji Pond helps explain Taebaek as more than a mining city: it is a highland source point before the route turns to sea.',
+          'Keep the Nakdonggang source story, but set expectations: this is a brief city-core pond, not a dramatic natural spectacle.',
         sourceLabel: 'VISITKOREA Hwangji Pond',
         sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=351&vcontsId=80903',
         licenseLabel: 'External reference',
       },
       {
-        eyebrow: 'Food pride',
-        title: 'Taebaek Hanwoo keeps the city in the present tense',
+        eyebrow: 'Optional reward',
+        title: 'One researched Hanwoo meal is enough',
         image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg',
         alt: 'Taebaek highland reference for Hanwoo food identity',
         body:
-          'The Hanwoo angle matters because it gives travelers something current, warm, and local to do in a city often described only through coal decline.',
+          'Hanwoo can complete a Taebaeksan day, but compare prices and do not assume that the local label guarantees a dramatic difference.',
         sourceLabel: 'VISITKOREA Taebaek Eutteum Hanu',
         sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=188477',
         licenseLabel: 'External reference',
       },
       {
-        eyebrow: 'Coast handoff',
-        title: 'After Taebaek, Samcheok becomes the release',
+        eyebrow: 'Difficult crossing',
+        title: 'Samcheok is possible, not the easy default',
         image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taebaeksan%20Mountain.jpg',
         alt: 'Taebaek highland-to-coast route reference',
         body:
-          'The route should feel like it has crossed a deep inland mountain story before it reaches Route 4.',
+          'The steep, winding descent belongs to travelers who chose a mountain crossing. A normal coast trip works better through Gangneung and Donghae.',
         sourceLabel: 'Route editorial reference',
         sourceHref: '/route-2/branch-a',
         licenseLabel: 'Internal',
@@ -3444,7 +3504,7 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'City core',
         coordinates: { lat: 37.1705, lng: 128.9891 },
         summary: 'The Nakdonggang source point and easiest city-core geography cue.',
-        note: 'This gives the highland city a river-source story before the coast.',
+        note: 'Allow a short stop and arrive for geographic meaning rather than visual scale.',
       },
       {
         id: 'taebaek-hanwoo-meal',
@@ -3453,16 +3513,16 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         areaLabel: 'Central Taebaek',
         coordinates: { lat: 37.166, lng: 128.989 },
         summary: 'The food-pride layer that keeps Taebaek current and warm rather than only post-coal.',
-        note: 'Use this as a dinner hook before the Samcheok handoff.',
+        note: 'Compare prices and use this as an optional reward, not a mandatory reason to detour.',
       },
       {
         id: 'taebaek-samcheok-handoff',
-        name: 'Samcheok handoff line',
+        name: 'Steep Samcheok crossing',
         kind: 'mobility',
         areaLabel: 'Eastbound exit',
         coordinates: { lat: 37.235, lng: 129.09 },
-        summary: 'The final inland-to-coast move where Branch 2A releases into Route 4.',
-        note: 'After this point, Samcheok and National Route 7 take over.',
+        summary: 'A steep, winding inland-to-coast connection for an intentional mountain route.',
+        note: 'Do not present this as the easiest way to reach Samcheok; the Gangneung-Donghae coast line is simpler.',
       },
     ],
   },
@@ -4604,6 +4664,60 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         licenseLabel: 'Internal',
       },
     ],
+    officialReferences: [
+      {
+        eyebrow: 'Official culture source',
+        title: 'Chodang carries the literary memory of Heo Gyun and Heo Nanseolheon',
+        image: '/images/clipartkorea/gangneung/tc00240033488.jpg',
+        alt: 'Present-day Gangneung scenery used alongside an official Chodang literary reference',
+        body:
+          'VisitKorea locates the memorial park in Chodang-dong and identifies Heo Gyun as the author of The Story of Hong Gildong and Heo Nanseolheon as a leading Joseon-era poet.',
+        sourceLabel: 'VisitKorea memorial park guide',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=219820',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use the source for current visitor conditions and literary context; keep the editor\'s neighborhood memories separately labeled as personal experience.',
+      },
+      {
+        eyebrow: 'Official history source',
+        title: 'Ojukheon supports Gangneung as a city of history and major figures',
+        image: '/images/clipartkorea/gangneung/tip249t012173.jpg',
+        alt: 'Present-day Gangneung scenery used alongside an official Ojukheon reference',
+        body:
+          'VisitKorea identifies Ojukheon as the birthplace of Yi I and documents the associated house, shrine, pavilion, memorial hall, and Gangneung Municipal Museum.',
+        sourceLabel: 'VisitKorea Ojukheon guide',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110823',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use this source to verify the historical anchor and check current hours before travel.',
+      },
+      {
+        eyebrow: 'Official city source',
+        title: 'Central Market proves the downtown food plan is still active',
+        image: '/images/clipartkorea/gangneung/tip249t012057.jpg',
+        alt: 'Present-day Gangneung scenery used alongside the official Central Market guide',
+        body:
+          'Gangneung City describes Central Market as a long-standing Yeongdong distribution center that grew further after the KTX opening and the 2018 Winter Olympics, with public parking and ongoing market modernization.',
+        sourceLabel: 'Gangneung City Central Market guide',
+        sourceHref: 'https://www.gn.go.kr/www/contents.do?key=568',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use the city source for market history and facilities; individual stalls, menus, and opening times still need same-day checks.',
+      },
+      {
+        eyebrow: 'Official weather source',
+        title: 'Heavy snow belongs in the route plan, not only in an old memory',
+        image: '/images/clipartkorea/gangneung/tc00240033488.jpg',
+        alt: 'Gangneung route scenery used alongside an official regional climate reference',
+        body:
+          'The Korea Meteorological Administration documents the distinctive climate and heavy-snow conditions of Gangwon locations. Forecasts and road or rail notices should decide whether a winter crossing is sensible.',
+        sourceLabel: 'Korea Meteorological Administration regional climate data',
+        sourceHref: 'https://www.weather.go.kr/w/climate/statistics/region.do?area=2',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use the climate source for regional context and a current forecast for the actual travel decision.',
+      },
+    ],
     points: [
       {
         id: 'gangneung-chodang',
@@ -4664,156 +4778,177 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   pyeongchang: {
     slug: 'pyeongchang',
     city: 'Pyeongchang',
-    officialReferences: [
-      {
-        eyebrow: 'Official culture source',
-        title: 'Chodang carries the literary memory of Heo Gyun and Heo Nanseolheon',
-        image: '/images/clipartkorea/gangneung/tc00240033488.jpg',
-        alt: 'Present-day Gangneung scenery used alongside an official Chodang literary reference',
-        body:
-          'VisitKorea locates the memorial park in Chodang-dong and identifies Heo Gyun as the author of The Story of Hong Gildong and Heo Nanseolheon as a leading Joseon-era poet.',
-        sourceLabel: 'VisitKorea memorial park guide',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=219820',
-        licenseLabel: 'Official reference',
-        usageNote:
-          'Use the source for current visitor conditions and literary context; keep the editor\'s neighborhood memories separately labeled as personal experience.',
-      },
-      {
-        eyebrow: 'Official history source',
-        title: 'Ojukheon supports Gangneung as a city of history and major figures',
-        image: '/images/clipartkorea/gangneung/tip249t012173.jpg',
-        alt: 'Present-day Gangneung scenery used alongside an official Ojukheon reference',
-        body:
-          'VisitKorea identifies Ojukheon as the birthplace of Yi I and documents the associated house, shrine, pavilion, memorial hall, and Gangneung Municipal Museum.',
-        sourceLabel: 'VisitKorea Ojukheon guide',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110823',
-        licenseLabel: 'Official reference',
-        usageNote:
-          'Use this source to verify the historical anchor and check current hours before travel.',
-      },
-      {
-        eyebrow: 'Official city source',
-        title: 'Central Market proves the downtown food plan is still active',
-        image: '/images/clipartkorea/gangneung/tip249t012057.jpg',
-        alt: 'Present-day Gangneung scenery used alongside the official Central Market guide',
-        body:
-          'Gangneung City describes Central Market as a long-standing Yeongdong distribution center that grew further after the KTX opening and the 2018 Winter Olympics, with public parking and ongoing market modernization.',
-        sourceLabel: 'Gangneung City Central Market guide',
-        sourceHref: 'https://www.gn.go.kr/www/contents.do?key=568',
-        licenseLabel: 'Official reference',
-        usageNote:
-          'Use the city source for market history and facilities; individual stalls, menus, and opening times still need same-day checks.',
-      },
-      {
-        eyebrow: 'Official weather source',
-        title: 'Heavy snow belongs in the route plan, not only in an old memory',
-        image: '/images/clipartkorea/gangneung/tc00240033488.jpg',
-        alt: 'Gangneung route scenery used alongside an official regional climate reference',
-        body:
-          'The Korea Meteorological Administration documents the distinctive climate and heavy-snow conditions of Gangwon locations. Forecasts and road or rail notices should decide whether a winter crossing is sensible.',
-        sourceLabel: 'Korea Meteorological Administration regional climate data',
-        sourceHref: 'https://www.weather.go.kr/w/climate/statistics/region.do?area=2',
-        licenseLabel: 'Official reference',
-        usageNote:
-          'Use the climate source for regional context and a current forecast for the actual travel decision.',
-      },
-    ],
-    mapTitle: 'Where Route 2 becomes Olympic highland before the sea',
+    mapTitle: 'Two Pyeongchangs: the tourism corridor and the quiet inland county',
     mapIntro:
-      'Pyeongchang is a support map for the gap between Wonju and Gangneung: Olympic venues, Jinbu access, Odaesan, Woljeongsa, ski resorts, and highland recovery.',
+      'Do not plan Pyeongchang as one compact town. Bongpyeong, Jinbu, and Daegwallyeong form the developed expressway tourism corridor; Pyeongchang-eup, Bangnim, and Mitan lead into a quieter inland landscape with fewer visitor services.',
     mapCenter: { lat: 37.3705, lng: 128.3902 },
     supportSummary:
-      'Pyeongchang works as Route 2\'s Olympic highland gateway. It turns the eastbound line into a real mountain-to-sea route through 2018 Winter Olympics memory, Odaesan, Woljeongsa, ski resorts, and Jinbu access.',
+      'Pyeongchang holds two national memories: the global spectacle of the 2018 Winter Olympics and the older documentary history of the Odaesan royal archive. Jinbu, Woljeongsa, and the National Museum of the Annals of the Joseon Dynasty give the county a cultural center independent of its resorts.',
     roleSummary:
-      'This is the chapter that prevents Route 2 from jumping blankly between Wonju and Gangneung.',
+      'This is an optional highland chapter, not a compulsory stop on the fastest route to Gangneung. Stay only after choosing a theme: winter sport, royal records, temple and forest quiet, meditation, food, or summer altitude.',
     staySummary:
-      'Stay near Jinbu or Odaesan for temple and national-park access; stay around the resort cluster when skiing, Olympic memory, or winter logistics matter more.',
+      'Separate Jinbu and Odaesan from the Daegwallyeong resort cluster. Jinbu supports the museum, Woljeongsa, the fir forest, market life, and mountain food. Alpensia and Yongpyong support skiing, winter atmosphere, and late-evening resort services.',
     foodSummary:
-      'Food should be framed through mountain warmth, resort practicality, temple-side pacing, and simple meals that support winter or hiking days.',
+      'Mountain-vegetable set meals are the editor\'s strongest regional recommendation, especially in Jinbu. Buckwheat, trout, hwangtae, beef, and osam bulgogi all have local visibility, but fame does not guarantee preference. Vegetarian travelers should confirm broth, seasoning, and side-dish ingredients rather than assuming a sanchae meal is vegan.',
     nextLegSummary:
       'After Pyeongchang, Daegwallyeong should feel like the final highland pass before Gangneung and the East Sea.',
     accommodationNote:
-      'Strongest stay-planning angle: Odaesan/Jinbu for temple and park access, resort cluster for ski and Olympic highland stays.',
+      'Former-resident judgment: one night works when the theme is clear; use two nights for a ski-led trip. A discounted resort stay can be excellent value, but full resort pricing is easy to overpay when most of the day will be spent elsewhere.',
     sections: [
       {
-        title: 'Why Pyeongchang fills the Route 2 gap',
+        title: 'Pyeongchang is not one destination',
         body:
-          'Without Pyeongchang, Route 2 moves too abruptly from Wonju to Gangneung. The county gives the route a highland chapter with global recognition and local mountain depth.',
+          'The editor grew up in Jinbu, and the county never felt like a single city. The expressway line through Bongpyeong, Jinbu, and Daegwallyeong received most of the tourism and transport investment. The inland line through Pyeongchang-eup, Bangnim, and Mitan is quieter, less convenient, and more useful to travelers seeking rivers, valleys, and rural distance.',
       },
       {
-        title: 'Why the Olympics are only the opening hook',
+        title: 'A childhood in Jinbu before the Olympic image',
         body:
-          'The 2018 Winter Olympics make Pyeongchang searchable, but Odaesan, Woljeongsa, Jinbu, and the ski-resort geography make it usable as a travel stop.',
+          'The clearest memories are playing under an Odaecheon bridge on hot summer days, eating steamed corn with friends, sharing chicken baeksuk beside a valley, and sliding down snowy hills on fertilizer sacks. Repeated recent visits show a better-connected county, but that seasonal mountain life still explains Pyeongchang more honestly than a list of venues.',
       },
       {
-        title: 'How it hands off to Daegwallyeong',
+        title: 'Royal records returned to Odaesan',
         body:
-          'Pyeongchang sets up the mountain mood; Daegwallyeong turns that mood into a pass before Gangneung arrives as the coast.',
+          'The National Museum of the Annals of the Joseon Dynasty preserves and interprets the surviving Odaesan copies of the royal annals and uigwe near their historic archive landscape. The Annals belong to UNESCO\'s Memory of the World Register, a documentary-heritage program distinct from UNESCO World Heritage.',
+      },
+      {
+        title: 'Build the quietest version around Woljeongsa',
+        body:
+          'Pair the royal-annals museum with Woljeongsa and its approximately one-kilometer fir forest. Continue only if time and walking ability support Seonjaegil or the archive-site landscape. This is Pyeongchang\'s strongest non-ski day and the editor\'s first recommendation for travelers seeking genuine quiet.',
+      },
+      {
+        title: 'Do not combine every region in one day',
+        body:
+          'Distances are longer than the county name suggests. KTX solves arrival but not the gaps between Jinbu, Odaesan, Bongpyeong, the resort cluster, and the inland county. A car is the practical tool for a multi-zone trip; otherwise choose one area and protect it.',
+      },
+      {
+        title: 'Weather changes the mountain crossing',
+        body:
+          'The editor has driven through Daegwallyeong fog dense enough to make the road feel almost erased. Treat snow, ice, fog, and congestion as route decisions. Check current forecasts and transport notices instead of relying on Pyeongchang\'s strong snow-removal reputation.',
       },
     ],
     decisions: [
       {
-        title: 'Use the Olympic resort cluster',
-        bestFor: 'Ski trips, winter stays, Olympic venue interest, and travelers who want easy resort logistics.',
+        title: 'Choose Jinbu, the museum, and Woljeongsa',
+        bestFor: 'History, forest walking, meditation, autumn foliage, and travelers who do not ski.',
         why:
-          'Alpensia, Yongpyong, and nearby winter infrastructure make the highland chapter legible to international travelers.',
+          'This combines royal documentary heritage, Buddhist history, the fir forest, and a lived mountain town in one coherent area.',
       },
       {
-        title: 'Use Odaesan and Woljeongsa',
-        bestFor: 'Temple walks, fir forest, national-park depth, and a quieter non-ski version of Pyeongchang.',
+        title: 'Choose Alpensia or Yongpyong',
+        bestFor: 'Skiing, winter atmosphere, family resort facilities, and travelers needing reliable late-evening services.',
         why:
-          'This side gives the city older Korean depth and stops it from reading only as a 2018 Olympics footnote.',
+          'Alpensia feels newer and more compact; Yongpyong is the larger, older all-round complex. Compare packages because resort spending can rise quickly.',
+      },
+      {
+        title: 'Use the inland line only on purpose',
+        bestFor: 'Drivers seeking uncrowded rivers, valleys, rural scenery, and a slower route toward Jeongseon.',
+        why:
+          'Pyeongchang-eup and the inland county are not the easiest first-visit tourism base, but their lower visitor pressure is the point for the right traveler.',
       },
     ],
     stayZones: [
       {
-        title: 'Stay around Jinbu and Odaesan',
+        title: 'Stay for records, forest, and meditation',
         areaLabel: 'Jinbu / Odaesan',
-        bestFor: 'Temple, national park, and calmer mountain access.',
+        bestFor: 'Museum visits, Woljeongsa, fir-forest walks, meditation, and mountain food.',
         why:
-          'This zone gives Route 2 the historical and natural layer between Wonju and Gangneung.',
+          'This is the quieter and historically deeper Pyeongchang. Arrive early because restaurants and everyday services thin out at night.',
       },
       {
-        title: 'Stay in the resort cluster',
+        title: 'Stay for winter sport and self-contained services',
         areaLabel: 'Alpensia / Yongpyong',
-        bestFor: 'Skiing, Olympic venues, and winter logistics.',
+        bestFor: 'Skiing, Olympic venues, family facilities, and later meals inside the resort.',
         why:
-          'This zone makes the global Pyeongchang memory tangible as a stay decision.',
+          'The cluster makes winter logistics easy and can feel exceptional on a good package, but it should not be confused with Jinbu or the inland county.',
       },
     ],
     visuals: [
       {
-        eyebrow: 'Olympic highland',
-        title: 'Alpensia makes the 2018 Winter Olympics visible on Route 2',
+        eyebrow: 'Two national memories',
+        title: 'The royal annals make Pyeongchang older than the Games',
         image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
-        alt: 'Alpensia Resort in Pyeongchang',
+        alt: 'Pyeongchang highland context for its Olympic and royal-record histories',
         body:
-          'Use the resort cluster as the immediate visual hook, then let the page widen into Odaesan and Woljeongsa.',
-        sourceLabel: 'Alpensia Resort reference',
-        sourceHref: 'https://www.alpensia.com/en/info/introduction.do',
-        licenseLabel: 'External reference',
+          'The 2018 Winter Olympics created a global image; the Odaesan archive story preserves a much older national memory.',
+        sourceLabel: 'National Museum of the Annals of the Joseon Dynasty',
+        sourceHref: 'https://www.gogung.go.kr/sillok/main/contents.do?menuNo=1300028',
+        licenseLabel: 'Official reference',
       },
       {
-        eyebrow: 'Mountain depth',
-        title: 'Odaesan keeps Pyeongchang older than the Games',
+        eyebrow: 'Editor’s first choice',
+        title: 'For genuine quiet, walk the Woljeongsa fir forest',
         image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Pyeongchang-Woljeongsa-01.jpg',
         alt: 'Woljeongsa Temple in Pyeongchang on Odaesan Mountain',
         body:
-          'Odaesan and Woljeongsa are the reason the city can carry more than ski and Olympic keywords.',
+          'The museum, fir forest, and temple form Pyeongchang’s strongest non-ski day and a coherent reason to stay in Jinbu.',
         sourceLabel: 'Wikimedia Commons Woljeongsa',
         sourceHref: 'https://commons.wikimedia.org/wiki/File:Korea-Pyeongchang-Woljeongsa-01.jpg',
         licenseLabel: 'CC BY 2.0 reference',
       },
       {
-        eyebrow: 'Route handoff',
-        title: 'Jinbu and the highlands prepare the final pass',
+        eyebrow: 'Childhood geography',
+        title: 'Odaecheon and Jinbu make the county feel lived',
         image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Alpensia.jpg',
-        alt: 'Pyeongchang highland route reference',
+        alt: 'Pyeongchang highland reference for Jinbu and Odaecheon life',
         body:
-          'The practical route story is simple: Wonju sets up the eastbound move, Pyeongchang gives it altitude, and Daegwallyeong prepares the coast.',
-        sourceLabel: 'Route editorial reference',
-        sourceHref: '/route-2',
-        licenseLabel: 'Internal',
+          'Summer river play, steamed corn, valley meals, and improvised winter sleds explain the place before resort branding begins.',
+        sourceLabel: 'Former-resident editorial memory',
+        sourceHref: '/editorial-policy#research-method',
+        licenseLabel: 'Personal experience',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'National museum source',
+        title: 'The surviving Odaesan annals returned to their archive landscape',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Pyeongchang-Woljeongsa-01.jpg',
+        alt: 'Woljeongsa and Odaesan landscape near the national royal-annals museum',
+        body:
+          'The national museum explains that the surviving Odaesan copies were removed to Japan, largely lost in the 1923 Great Kanto Earthquake, and eventually returned to Odaesan. The museum now preserves and interprets 75 surviving volumes.',
+        sourceLabel: 'National Museum of the Annals of the Joseon Dynasty',
+        sourceHref: 'https://www.gogung.go.kr/sillok/main/contents.do?menuNo=1300028',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Use the museum for current display and visitor information; preservation needs mean not every volume should be assumed to be on view at once.',
+      },
+      {
+        eyebrow: 'Official documentary-heritage source',
+        title: 'The Annals are UNESCO Memory of the World',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Pyeongchang-Woljeongsa-01.jpg',
+        alt: 'Odaesan cultural landscape used with an official documentary-heritage reference',
+        body:
+          'The Annals of the Joseon Dynasty are recognized as documentary heritage through UNESCO’s Memory of the World program. This is distinct from designation as a UNESCO World Heritage site.',
+        sourceLabel: 'Korea Heritage Service UNESCO records guide',
+        sourceHref: 'https://www.heritage.go.kr/heri/html/HtmlPage.do?pageNo=5_1_2_0&pg=%2Funesco%2FMemHeritage%2FMemHeritage_02.jsp',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Keep the English terminology precise: Memory of the World documentary heritage, not World Heritage.',
+      },
+      {
+        eyebrow: 'Official temple and forest source',
+        title: 'Woljeongsa and its fir forest anchor the quiet itinerary',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Pyeongchang-Woljeongsa-01.jpg',
+        alt: 'Woljeongsa Temple and Odaesan forest in Pyeongchang',
+        body:
+          'VisitKorea describes the Silla-era temple, its cultural treasures, the approximately one-kilometer path lined by more than 1,700 fir trees, and current Templestay programs.',
+        sourceLabel: 'VisitKorea Woljeongsa guide',
+        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=351&vcontsId=110826',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Check current parking, access, program, and seasonal conditions before travel.',
+      },
+      {
+        eyebrow: 'Official wellness source',
+        title: 'Ombieu is a meditation village, not a temple stay',
+        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Pyeongchang-Woljeongsa-01.jpg',
+        alt: 'Odaesan forest context for a Pyeongchang meditation stay',
+        body:
+          'Pyeongchang Tourism identifies Odaesan Nature Meditation Village Ombieu as a separate accommodation and wellness facility offering experiences such as yoga and meditation.',
+        sourceLabel: 'Pyeongchang Tourism Ombieu guide',
+        sourceHref: 'https://tour.pc.go.kr/Home/H20000/H20200/placeDetail?curationGroup=2&order_column=1&page=1&pageSize=12&place_no=716&place_type=12&search_column=2&search_keyword=%EB%AA%85%EC%83%81&viewType=gallery',
+        licenseLabel: 'Official reference',
+        usageNote:
+          'Do not describe Ombieu as Woljeongsa Templestay; they are different experiences and require separate booking checks.',
       },
     ],
     points: [
@@ -4827,13 +4962,13 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         note: 'Use this when Route 2 should show global winter-sports memory.',
       },
       {
-        id: 'pyeongchang-odaesan',
-        name: 'Odaesan and Woljeongsa side',
+        id: 'pyeongchang-annals-museum',
+        name: 'Royal annals museum and Woljeongsa line',
         kind: 'checkpoint',
         areaLabel: 'Jinbu / Odaesan',
-        coordinates: { lat: 37.731, lng: 128.592 },
-        summary: 'The national-park and temple side that gives Pyeongchang deeper Korean context.',
-        note: 'This is the counterweight to the Olympic resort image.',
+        coordinates: { lat: 37.7215, lng: 128.5883 },
+        summary: 'A compact cultural route linking returned royal records, the fir forest, Woljeongsa, and the historic archive landscape.',
+        note: 'This is the strongest non-ski reason to give Pyeongchang a full day.',
       },
       {
         id: 'pyeongchang-jinbu',
@@ -4841,8 +4976,17 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
         kind: 'mobility',
         areaLabel: 'Jinbu',
         coordinates: { lat: 37.636, lng: 128.556 },
-        summary: 'The access logic that makes Pyeongchang usable between Wonju and Gangneung.',
-        note: 'Useful for keeping the route practical as well as scenic.',
+        summary: 'The editor’s former home base and the practical gateway for Odaesan, local meals, the market, and KTX arrival.',
+        note: 'Do not treat Jinbu as only a station transfer; it is the lived center of the Odaesan side.',
+      },
+      {
+        id: 'pyeongchang-inland-line',
+        name: 'Quiet inland county line',
+        kind: 'recovery',
+        areaLabel: 'Pyeongchang-eup / Bangnim / Mitan',
+        coordinates: { lat: 37.3705, lng: 128.3902 },
+        summary: 'A less-developed route of rivers, valleys, rural roads, and lower visitor pressure away from the expressway tourism belt.',
+        note: 'Use it only with a car and enough time; its lack of headline attractions is part of the appeal.',
       },
     ],
   },
@@ -5383,262 +5527,470 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   yangyang: {
     slug: 'yangyang',
     city: 'Yangyang',
-    mapTitle: 'Where surf culture and Naksansa heritage share the coast',
+    mapTitle: 'From Hangyeryeong and Osaek to Surfyy Beach, Hajodae, and Naksan',
     mapIntro:
-      'Yangyang is a Route 4 support map for choosing between surf-led stays, temple-and-cliff context, and the clean handoff from Sokcho toward Gangneung.',
+      'This map follows a route the editor knows from about fifty summer work visits: enter from Inje over Hangyeryeong for the strongest mountain arrival, descend through Osaek, choose a beach base, and use Naksan as the natural northbound step toward Sokcho.',
     mapCenter: { lat: 38.0754, lng: 128.619 },
     supportSummary:
-      'Yangyang works as the surf-and-temple hinge of Route 4. Surfyy Beach gives it modern search demand, while Naksansa, Uisangdae, and Hajodae keep older East Sea memory visible.',
+      'Yangyang is a mountain-to-sea crossing before it is a surf brand. Hangyeryeong and Osaek create the western arrival; Surfyy Beach, Hajodae, Jukdo and Ingu, Naksan, and Naksansa create the eastern day; nearby Sokcho is the editor\'s most natural onward city.',
     roleSummary:
-      'This is where the northern coast shifts from Seoraksan/Sokcho energy into a younger beach-culture chapter before Gangneung.',
+      'Its Route 4 role changes by direction. From Inje, Yangyang is the moment Seoraksan releases into the East Sea. From Gangneung it is a sequence of surf beaches before Naksan and Sokcho; from Sokcho it is the compact coast chapter before the road continues south.',
     staySummary:
-      'Stay near Hajodae or Jukdo for beach and surf rhythm; stay closer to Naksan when the temple and sunrise side should lead.',
+      'The editor stayed near Hajodae and would choose a beachfront stay again. Use Hajodae for the proven all-round beach night, Jukdo or Ingu for a more surf-led evening, Naksan for a quieter temple-and-Sokcho plan, or Osaek only when the mountain side leads.',
     foodSummary:
-      'Food should be written as beach-town practical rather than prestige dining: seafood, cafes, simple late meals, and easy breakfast before the next coast leg.',
+      'Many everyday dishes overlap with the rest of Gangwon, so do not invent a long Yangyang-only food list. Matsutake is the clearest local distinction in official county tourism, but supply, price, and menu quality are seasonal and should be checked rather than promised.',
     nextLegSummary:
-      'After Yangyang, Route 4 should arrive in Gangneung feeling broader: surf, temple, cliff, and then a full-service coffee-and-beach city.',
+      'From the editor\'s repeated trips, Sokcho is the most natural next city because it is close and continues the northern coast without a forced detour. Southbound travelers can reverse the same logic toward Gangneung, while the mountain variant returns west through Osaek and Hangyeryeong toward Inje.',
     accommodationNote:
-      'Strongest stay-planning angle: surf-side pensions and beach hotels, with Naksan as the heritage/sunrise alternative.',
+      'Strongest firsthand stay judgment: choose a lodging property near the beach around Hajodae again; use Jukdo/Ingu, Naksan, or Osaek only when a more specific route purpose outweighs that default.',
     sections: [
       {
-        title: 'Why Yangyang is not just a surf stop',
+        title: 'Firsthand boundary: repeated summer driving, not every-season expertise',
         body:
-          'Surfyy Beach is the modern hook, but Naksansa and Uisangdae make the place older and more meaningful. The page should let those identities sit together instead of choosing only one.',
+          'The editor visited Yangyang about fifty times, mainly for summer work, drove in from Gangneung, Sokcho, and Inje, and personally visited the main places discussed here. That repetition supports route, stay-zone, and pacing judgments. It does not justify claims about every winter road, surf lesson, trail day, restaurant, or current lodging property.',
       },
       {
-        title: 'How it fits between Sokcho and Gangneung',
+        title: 'The strongest arrival is Inje to Hangyeryeong to Osaek',
         body:
-          'Yangyang keeps Route 4 from jumping straight from Sokcho to Gangneung. It gives the line a compact middle beat where coast culture changes temperature.',
+          'The editor\'s clearest recommendation is the west-to-east drive from Inje over Hangyeryeong into Osaek. The official county description also treats the pass as the old Yeongseo-to-Yeongdong crossing and a major Seoraksan viewpoint. Let the driver concentrate on the mountain road and stop only where parking and access are legal.',
       },
       {
-        title: 'Where the stay decision sits',
+        title: 'Osaek deserves more than a drive-through label',
         body:
-          'A surf-side stay makes the city feel young and social. A Naksan-side stay makes the stop quieter, more sunrise-led, and more connected to temple memory.',
+          'Osaek is the release point after the pass and the gateway to the southern Seoraksan side. Official sources identify Jujeongol, Osaek Mineral Spring, and trail access here, but mountain conditions, reservations, seasonal controls, and roadside parking rules must be checked on the actual travel day.',
+      },
+      {
+        title: 'The editor\'s one-day coast order is Surfyy Beach to Naksan',
+        body:
+          'For a selective summer day, begin with Surfyy Beach and the Hajodae-side coast, then move north to Naksan Beach and Naksansa. This order lets the day shift from contemporary beach culture into temple, pavilion, and cliff-edge history instead of collecting a repetitive string of beaches.',
+      },
+      {
+        title: 'Hajodae is the proven overnight choice',
+        body:
+          'The editor has stayed near Hajodae and would choose a beachfront property again. The reason is practical rather than fashionable: the sea remains the evening and morning anchor, while Surfyy, Jukdo, Naksan, and the north-south coast road remain easy to understand from a central beach base.',
+      },
+      {
+        title: 'No personal red flag does not mean no seasonal friction',
+        body:
+          'Across those visits, the editor did not experience one standout problem with congestion, parking, overpricing, crowding, or disappointment worth turning into a warning. That is a personal record, not a guarantee. Summer weekends, beach events, weather, road controls, and accommodation prices still need a current check.',
       },
     ],
     decisions: [
       {
-        title: 'Stay near the surf beaches',
-        bestFor: 'Surf lessons, casual beach nights, and younger Route 4 energy.',
+        title: 'Enter through Hangyeryeong when the drive is part of the trip',
+        bestFor: 'Drivers coming from Inje who want the strongest landscape transition.',
         why:
-          'Hajodae, Surfyy, and Jukdo give Yangyang the modern identity English-speaking travelers are likely to search first.',
+          'This is the editor\'s top Yangyang recommendation after about fifty visits: Seoraksan dominates the descent into Osaek and makes the arrival itself memorable.',
       },
       {
-        title: 'Use Naksan for heritage and sunrise',
-        bestFor: 'Travelers who want temple context, quieter mornings, and a stronger past-present story.',
+        title: 'Use Surfyy Beach to Naksan for one day',
+        bestFor: 'Travelers who want one modern coast stop and one historical coast stop.',
         why:
-          'Naksansa gives the stop historical gravity and keeps the page from reading like a disposable beach trend.',
+          'It is the editor\'s own compact order and creates more contrast than trying to visit every beach between Hajodae and Sokcho.',
+      },
+      {
+        title: 'Sleep near Hajodae beach',
+        bestFor: 'Summer road trips, beach mornings, and travelers who want a reliable coast-first base.',
+        why:
+          'The editor stayed in this area and would choose the beachfront again; that repeat choice is stronger evidence than a generic accommodation list.',
+      },
+      {
+        title: 'Continue to Sokcho',
+        bestFor: 'Northbound travelers and short Gangwon itineraries.',
+        why:
+          'The editor found Sokcho the closest and most natural next city. It extends the coast and Seoraksan story without adding a complicated transfer.',
       },
     ],
     stayZones: [
       {
-        title: 'Keep the surf-side stay',
-        areaLabel: 'Hajodae / Jukdo coast',
-        bestFor: 'Beach-first travelers and surf lessons.',
+        title: 'Repeat the Hajodae beachfront choice',
+        areaLabel: 'Hajodae coast',
+        bestFor: 'The most balanced beach night and an easy summer morning.',
         why:
-          'This zone makes Yangyang feel contemporary and helps the route explain why the city is trending now.',
+          'This is the editor\'s firsthand default after staying nearby: keep the sea close and decide the next day between Surfyy, Naksan, Sokcho, or the south coast.',
       },
       {
-        title: 'Use the Naksan side',
-        areaLabel: 'Naksan / Naksansa',
-        bestFor: 'Sunrise, temple walks, and quieter coast pacing.',
+        title: 'Choose Jukdo or Ingu for surf-first evenings',
+        areaLabel: 'Jukdo / Ingu coast',
+        bestFor: 'Surf access, cafes, and a more social beach atmosphere.',
         why:
-          'This side brings the older East Sea story into the overnight instead of leaving it as a quick detour.',
+          'Use this when surfing or the contemporary beach scene is the real purpose rather than treating it as the automatic Yangyang base.',
+      },
+      {
+        title: 'Move north to Naksan for temple and Sokcho',
+        areaLabel: 'Naksan / Naksansa',
+        bestFor: 'Naksansa, sunrise, a quieter night, and a simple next move to Sokcho.',
+        why:
+          'This side brings the older East Sea story into the overnight and reduces backtracking for a northbound itinerary.',
+      },
+      {
+        title: 'Use Osaek only for a mountain-led night',
+        areaLabel: 'Osaek / southern Seoraksan',
+        bestFor: 'Early trail access, valley walks, and travelers crossing from Inje.',
+        why:
+          'Osaek is a purposeful mountain base, not the best substitute for a beach stay. Confirm trail controls and parking before committing.',
       },
     ],
     visuals: [
       {
-        eyebrow: 'Modern coast',
-        title: 'Surfyy Beach gives Yangyang its present-tense search hook',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg',
-        alt: 'Yangyang Surfyy Beach reference',
+        eyebrow: 'Firsthand mountain arrival',
+        title: 'Hangyeryeong makes the descent into Yangyang part of the destination',
+        image: '/images/clipartkorea/yangyang/tip249t003055_l.jpg',
+        alt: 'Winding Hangyeryeong road through the green rocky peaks of Seoraksan',
         body:
-          'Yangyang should lean into surf culture because it is real travel intent, but the page must keep it tied to the route instead of writing a generic beach guide.',
-        sourceLabel: 'VISITKOREA Surfyy Beach',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=34381',
-        licenseLabel: 'External reference',
+          'This verified Hangyeryeong road photograph matches the editor\'s strongest recommendation: cross from Inje, let Seoraksan define the drive, and descend into Osaek before the coast.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tip249t003055',
+        licenseLabel: 'Project licensed JPG (WEB)',
       },
       {
-        eyebrow: 'Older coast',
-        title: 'Naksansa keeps the stop from feeling shallow',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg',
-        alt: 'Naksansa Uisangdae pavilion on the Yangyang coast',
+        eyebrow: 'Contemporary coast',
+        title: 'Surfyy Beach opens the editor\'s one-day coast order',
+        image: '/images/clipartkorea/yangyang/tc00240092126.jpg',
+        alt: 'Surfboard and beach facilities on the Yangyang surf coast',
         body:
-          'The temple and cliff-view story gives Yangyang a past-present line that fits the site strategy: local places deserve more than a waypoint label.',
-        sourceLabel: 'Wikimedia Commons / VISITKOREA Naksansa reference',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111119',
-        licenseLabel: 'External reference',
+          'Use the surf scene as the morning\'s modern contrast, not as a claim that every visitor must take a lesson or that the editor personally evaluated one.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240092126',
+        licenseLabel: 'Project licensed asset',
       },
       {
-        eyebrow: 'Route handoff',
-        title: 'Hajodae makes the Sokcho-to-Gangneung link visible',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Naksansa%2C%20naksan%20temple%20uisangdae%2C%20%EB%82%99%EC%82%B0%EC%82%AC%20%EC%9D%98%EC%83%81%EB%8C%80.jpg',
-        alt: 'Hajodae Beach reference for Yangyang route handoff',
+        eyebrow: 'Temple coast',
+        title: 'Naksansa gives the afternoon historical weight',
+        image: '/images/clipartkorea/yangyang/tc00240001341.jpg',
+        alt: 'Hongryeonam hermitage at Naksansa above waves on the Yangyang coast',
         body:
-          'Hajodae is useful because it reads as scenery, stay logic, and route continuity at once.',
-        sourceLabel: 'VISITKOREA Hajodae Beach',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111020',
-        licenseLabel: 'External reference',
+          'The cliff-edge temple image explains why Surfyy-to-Naksan works as a day: the second half is not simply another beach but a shift into history, prayer, and East Sea views.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240001341',
+        licenseLabel: 'Project licensed asset',
+      },
+      {
+        eyebrow: 'Hajodae stay coast',
+        title: 'Hajodae supports the beach lodging decision',
+        image: '/images/clipartkorea/yangyang/cm28011380.jpg',
+        alt: 'Rocky pine-covered coast and open East Sea at Hajodae in Yangyang',
+        body:
+          'The Hajodae coast holds together the editor\'s repeated stay choice, the surf-side morning, and the easy north-south route toward Naksan or Gangneung.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=cm28011380',
+        licenseLabel: 'Project licensed asset',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official source',
+        title: 'Yangyang County confirms Hangyeryeong as the old mountain crossing',
+        image: '/images/clipartkorea/yangyang/tip249t003055_l.jpg',
+        alt: 'Hangyeryeong road winding through Seoraksan toward Yangyang',
+        body:
+          'The county tourism page describes Osaekryeong, commonly called Hangyeryeong, as the historic Yeongseo-to-Yeongdong route and a place for major Seoraksan views. That official context supports the editor\'s firsthand recommendation without replacing it.',
+        sourceLabel: 'Yangyang Tourism - Osaekryeong (Hangyeryeong)',
+        sourceHref: 'https://tour.yangyang.go.kr/pub/yy10view.do?mode=v&seq=68',
+        licenseLabel: 'Project licensed asset + official research',
+        usageNote:
+          'Use the official page for historical and place context. Check live navigation and road-control notices before driving the pass.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'National-park guidance keeps Osaek planning honest',
+        image: '/images/clipartkorea/yangyang/tip249t003055_l.jpg',
+        alt: 'Seoraksan peaks and Hangyeryeong road above Osaek',
+        body:
+          'Korea National Park Service guidance warns that trail periods and controls can change and that parking on National Road 44 around the Hangyeryeong road is not allowed for the referenced trail access. Mountain access must be checked separately from the scenic drive.',
+        sourceLabel: 'Korea National Park Service trail guidance',
+        sourceHref: 'https://reservation.knps.or.kr/contents/T/serviceGuide.do?parkId=B03&prdDvcd=T&vrteId=TB031XXX03',
+        licenseLabel: 'Official research reference',
+        usageNote:
+          'Do not convert the editor\'s good summer drive into a blanket safety or parking guarantee. Use current KNPS notices on the travel day.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'Naksansa turns the coast from trend into history',
+        image: '/images/clipartkorea/yangyang/tc00240001341.jpg',
+        alt: 'Naksansa Hongryeonam hermitage above the East Sea in Yangyang',
+        body:
+          'Yangyang Tourism records Naksansa\'s Silla-era foundation tradition, Uisangdae, Hongryeonam, and its rebuilding after the 2005 wildfire. This is the historical counterweight in the editor\'s Surfyy-to-Naksan day.',
+        sourceLabel: 'Yangyang Tourism - Naksansa',
+        sourceHref: 'https://tour.yangyang.go.kr/pub/yy10view.do?mode=v&seq=114',
+        licenseLabel: 'Project licensed asset + official research',
+        usageNote:
+          'Opening times and fees shown on tourism pages can change; verify them directly before publication or travel.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'Matsutake is the clearest local food distinction',
+        image: '/images/clipartkorea/yangyang/cm28011381.jpg',
+        alt: 'Pine-covered rocky landscape on the Yangyang coast',
+        body:
+          'Yangyang County lists matsutake first among its representative foods and explains its seasonal dishes. The page should use that as a local identity cue while avoiding a promise of year-round supply, fixed prices, or a personally verified restaurant.',
+        sourceLabel: 'Yangyang Tourism - local food',
+        sourceHref: 'https://tour.yangyang.go.kr/pub/yyfood.do',
+        licenseLabel: 'Official research reference',
+        usageNote:
+          'The landscape image is contextual, not a matsutake photograph. Keep food claims seasonal and verify menus directly.',
       },
     ],
     points: [
       {
-        id: 'yangyang-surf-side',
-        name: 'Surf-side stay zone',
+        id: 'yangyang-hangyeryeong',
+        name: 'Hangyeryeong mountain crossing',
+        kind: 'mobility',
+        areaLabel: 'Inje to Osaek',
+        coordinates: { lat: 38.109, lng: 128.403 },
+        summary: 'The editor\'s strongest Yangyang arrival and the dramatic Yeongseo-to-Yeongdong transition.',
+        note: 'Check live road conditions and stop only where parking is legal and safe.',
+      },
+      {
+        id: 'yangyang-osaek',
+        name: 'Osaek and southern Seoraksan',
+        kind: 'checkpoint',
+        areaLabel: 'Osaek',
+        coordinates: { lat: 38.076, lng: 128.45 },
+        summary: 'The mountain-side arrival, valley, mineral-spring, and trail-planning zone.',
+        note: 'Separate a scenic road stop from a real hike; current KNPS controls decide access.',
+      },
+      {
+        id: 'yangyang-hajodae-surfyy',
+        name: 'Surfyy Beach and Hajodae stay coast',
         kind: 'stay',
-        areaLabel: 'Hajodae / Jukdo',
-        coordinates: { lat: 38.018, lng: 128.718 },
-        summary: 'The strongest zone for surf, beach cafes, and the modern Yangyang identity.',
-        note: 'Use this when the route needs current travel demand and a younger coast mood.',
+        areaLabel: 'Hajodae / Hyunbuk-myeon',
+        coordinates: { lat: 38.027, lng: 128.718 },
+        summary: 'The editor\'s proven beach-stay area and the first half of a one-day coast plan.',
+        note: 'Choose a beachfront stay for the same practical coast-first reason the editor would repeat.',
       },
       {
         id: 'yangyang-naksansa',
-        name: 'Naksansa heritage side',
+        name: 'Naksan and Naksansa heritage side',
         kind: 'checkpoint',
         areaLabel: 'Naksan coast',
         coordinates: { lat: 38.124, lng: 128.627 },
-        summary: 'The temple-and-cliff side that gives Yangyang historical and scenic weight.',
-        note: 'This keeps the city from becoming only a surf keyword.',
+        summary: 'The historical second half of the editor\'s Surfyy-to-Naksan day.',
+        note: 'Use the temple and cliff coast to create contrast rather than adding another similar beach stop.',
       },
       {
-        id: 'yangyang-gangneung-handoff',
-        name: 'Gangneung handoff line',
+        id: 'yangyang-sokcho-handoff',
+        name: 'Sokcho handoff line',
         kind: 'mobility',
-        areaLabel: 'Southbound Route 7',
-        coordinates: { lat: 37.965, lng: 128.76 },
-        summary: 'The southbound edge where Yangyang gives the coast to Gangneung.',
-        note: 'This is where the route should shift from surf-and-temple to full coast-city services.',
+        areaLabel: 'Northbound coast',
+        coordinates: { lat: 38.17, lng: 128.607 },
+        summary: 'The closest and most natural next-city move in the editor\'s repeated experience.',
+        note: 'Use Sokcho after Naksan when the itinerary continues north; reverse the same coast logic for Gangneung.',
       },
     ],
   },
   donghae: {
     slug: 'donghae',
     city: 'Donghae',
-    mapTitle: 'Where Mukho port memory, sunrise rocks, and valley recovery meet',
+    mapTitle: 'From Mangsang through Eodal and Chuam to Samcheok',
     mapIntro:
-      'Donghae is a Route 4 support map for deciding whether the stop should focus on Mukho, Chuam, Mureung Valley, or a practical overnight between Gangneung and Samcheok.',
+      'This map follows the editor\'s real southbound order after more than fifty mainly work visits: enter from Gangneung, use Mangsang as the northern beach stop, pause at the small fishing coast around Eodal, finish at Chuam, and continue naturally to Samcheok.',
     mapCenter: { lat: 37.5247, lng: 129.1143 },
     supportSummary:
-      'Donghae works as the port-and-sunrise connector. Mukho Lighthouse and Nongoldam-gil hold working-coast memory, while Chuam and Mureunggyegok Valley give the stop scenery and recovery.',
+      'Donghae is not presented here as a spectacular resort city. In the editor\'s repeated summer and winter experience, it is a compact east-coast city with a stronger industrial and working-harbor tone than Sokcho, two tidy beaches at Mangsang and Chuam, and one unusually strong food memory: sea-urchin sujebi beside Eodal Harbor\'s everyday parking-and-fishing scene.',
     roleSummary:
-      'This is the place that keeps the coast grounded after Gangneung and before Samcheok.',
+      'Its clearest Route 4 role is a grounded transition between Gangneung and Samcheok: less polished as a tourism brand than Sokcho, but honest, compact, and easy to read from north to south.',
     staySummary:
-      'Stay around Mukho for port texture and lighthouse walks; stay closer to Chuam or central Donghae when the route needs simpler movement.',
+      'The editor has not stayed overnight in Donghae, so this page does not pretend to rank hotels. Choose Mangsang only for a beach-first morning, central Donghae for logistics, or Chuam when the next move to Samcheok matters most, then verify the actual property independently.',
     foodSummary:
-      'Write Donghae through seafood, port meals, simple market texture, and the practicality of eating well without turning the stop into a luxury food chapter.',
+      'The standout firsthand food memory is sea-urchin sujebi at Eodal Harbor. Recommend checking restaurants around the Eodal seafood street for that dish rather than promising one permanent shop, fixed recipe, price, or year-round sea-urchin supply.',
     nextLegSummary:
-      'After Donghae, Route 4 can continue into Samcheok cliffs and caves with a stronger sense of working-coast continuity.',
+      'Samcheok is the editor\'s natural next city. The sequence Mangsang to Eodal to Chuam already points south, so continuing across the short city boundary avoids backtracking and keeps the coast leg coherent.',
     accommodationNote:
-      'Strongest stay-planning angle: Mukho for atmosphere, central Donghae for logistics, Chuam for sunrise-first pacing.',
+      'No firsthand lodging claim: the editor repeatedly visited for work but did not sleep in Donghae. Any stay-zone guidance below is route planning, not a personal hotel review.',
     sections: [
       {
-        title: 'Why Mukho matters',
+        title: 'Firsthand boundary: more than fifty visits, but only three reviewed stops',
         body:
-          'Mukho keeps Donghae rooted in port work, lighthouse safety, steep village lanes, and fishing-town memory. That is the difference between a real city stop and a generic sea view.',
+          'The editor has visited Donghae more than fifty times, mainly for work in summer and winter, usually arriving by car from the Gangneung direction. The places personally reviewed here are Mangsang Beach, Eodal Harbor, and Chuam Beach. Mukho, Mureung Valley, caves, attractions, and hotels are not presented as firsthand evaluations.',
       },
       {
-        title: 'Why Chuam changes the mood',
+        title: 'The city feels small, practical, and industrial rather than resort-led',
         body:
-          'Chuam gives the page a fast visual win through sunrise rocks and the ocean bridge, but it should be treated as one part of Donghae rather than the whole city.',
+          'The editor\'s strongest overall memory is the contrast with Sokcho. Donghae feels smaller and carries a more visible industrial and working-city color. That is a repeated personal impression, not a criticism or an official slogan, and it is more useful than forcing the city into the same romantic-resort language used elsewhere on the east coast.',
       },
       {
-        title: 'Why Mureung is useful',
+        title: 'Mangsang and Chuam are clean, easy beach stops rather than revelations',
         body:
-          'Mureunggyegok Valley adds a mountain-water recovery option. That matters on a long coast route because not every useful stop has to be on the beach.',
+          'The editor remembers both Mangsang and Chuam as tidy and pleasant, but not radically different from other good Gangwon beaches. That honest limit improves the itinerary: use Mangsang to open the southbound coast and Chuam to close the Donghae chapter, without spending the whole day collecting similar sand-and-sea views.',
+      },
+      {
+        title: 'Eodal is ordinary in appearance and exceptional in one food memory',
+        body:
+          'Eodal felt like a small neighborhood fishing village rather than a staged attraction. Near the parking area, the editor repeatedly noticed people fishing close to the breakwater and rocky shore; that ordinary local-use scene is more accurate than a polished marina image. The memorable part was a bowl of sea-urchin sujebi, strong enough to become the page\'s main food recommendation. Treat both details as firsthand memory and search current Eodal-area menus rather than guaranteeing every restaurant.',
+      },
+      {
+        title: 'The real southbound order is Mangsang to Eodal to Chuam',
+        body:
+          'Coming from Gangneung, begin at Mangsang, follow the coast through Eodal for a meal, then finish at Chuam before entering Samcheok. The editor did not identify enough must-see sights to justify a packed full-day checklist, so this is a selective driving sequence rather than a claim that Donghae requires a full day.',
+      },
+      {
+        title: 'No personal red flag is not a universal guarantee',
+        body:
+          'Across those visits, the editor did not experience a standout problem with parking, traffic, crowding, overpricing, or disappointment. That record should not erase summer beach congestion, winter coastal weather, changing construction, or restaurant conditions; check live information for the travel date.',
       },
     ],
     decisions: [
       {
-        title: 'Base around Mukho',
-        bestFor: 'Port texture, lighthouse walks, cafes, and a stronger local story.',
+        title: 'Use Donghae selectively rather than filling a checklist',
+        bestFor: 'Drivers who value an honest coast stop, one good meal, and minimal backtracking.',
         why:
-          'Mukho turns Donghae from a map label into a working coastal place with memory.',
+          'After more than fifty visits, the editor still does not describe Donghae as a city of many indispensable attractions. The stronger recommendation is to keep only the places that earn their position in the route.',
       },
       {
-        title: 'Use Chuam as the visual checkpoint',
-        bestFor: 'Sunrise, short stops, and travelers who need one immediate scenic proof point.',
+        title: 'Drive Mangsang to Eodal to Chuam',
+        bestFor: 'Southbound travelers arriving from Gangneung and continuing to Samcheok.',
         why:
-          'Chuam Chotdaebawi is legible quickly and helps the route stay visually memorable.',
+          'This is the editor\'s actual geographic order. It starts at the northern beach, uses Eodal as the meal pause, and ends beside the Samcheok boundary without reversing direction.',
+      },
+      {
+        title: 'Make Eodal the food stop',
+        bestFor: 'Travelers who prefer a small fishing-village meal to another large attraction.',
+        why:
+          'Sea-urchin sujebi at Eodal is the strongest specific memory in the editor\'s Donghae record. Verify the current restaurant, menu, price, and availability before going.',
+      },
+      {
+        title: 'Continue directly to Samcheok',
+        bestFor: 'A southbound east-coast itinerary with no overnight requirement in Donghae.',
+        why:
+          'Chuam naturally hands the road to Samcheok. The editor found that continuation more convincing than diverting inland toward Taebaek or returning north to Gangneung.',
       },
     ],
     stayZones: [
       {
-        title: 'Keep Mukho atmospheric',
-        areaLabel: 'Mukho / Nongoldam-gil',
-        bestFor: 'Travelers who want port and hill-village texture.',
+        title: 'Use Mangsang for a beach-first morning',
+        areaLabel: 'Mangsang coast',
+        bestFor: 'A northern beach base, camping, and travelers arriving late from Gangneung.',
         why:
-          'This is the strongest zone when Donghae should feel like a lived coastal city.',
+          'This is a route-based option supported by official tourism facilities, not the editor\'s personal lodging review. Check the exact accommodation and seasonal operation independently.',
       },
       {
-        title: 'Use Chuam for sunrise',
-        areaLabel: 'Chuam',
-        bestFor: 'Early mornings and scenic short stops.',
+        title: 'Choose central Donghae only for logistics',
+        areaLabel: 'Cheongok / central Donghae',
+        bestFor: 'City services, a practical work stay, and balanced access north and south.',
         why:
-          'This zone makes the visual case quickly before the route continues south.',
+          'The center may reduce route friction, but the editor did not stay there and does not attach a personal hotel recommendation to the area.',
+      },
+      {
+        title: 'Use Chuam for the Samcheok handoff',
+        areaLabel: 'Chuam / southern Donghae',
+        bestFor: 'A sunrise-first stop and the shortest onward move into Samcheok.',
+        why:
+          'Choose this only when the next morning\'s southbound route matters more than evening city atmosphere. Verify lodging access and parking directly.',
       },
     ],
     visuals: [
       {
-        eyebrow: 'Port memory',
-        title: 'Mukho Lighthouse makes the working coast visible',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chuam%20Chotdaebawi%20Rock.jpg',
-        alt: 'Mukho Lighthouse reference in Donghae',
+        eyebrow: 'Compact working city',
+        title: 'Donghae reads differently when the harbor and city share one frame',
+        image: '/images/clipartkorea/donghae/tc00240021279.jpg',
+        alt: 'Compact Donghae city blocks and working harbor seen from above',
         body:
-          'The lighthouse and port story give Donghae a practical maritime identity that should anchor the page.',
-        sourceLabel: 'VISITKOREA Mukho Lighthouse',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=91465',
-        licenseLabel: 'External reference',
+          'The port, low-rise neighborhoods, and mountain edge support the editor\'s repeated impression of a small working city whose industrial color matters as much as its beaches.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240021279',
+        licenseLabel: 'Project licensed asset',
       },
       {
-        eyebrow: 'Sunrise proof',
-        title: 'Chuam gives the stop its immediate visual hook',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chuam%20Chotdaebawi%20Rock.jpg',
-        alt: 'Chuam Chotdaebawi Rock reference in Donghae',
+        eyebrow: 'Northern beach',
+        title: 'Mangsang opens the route without needing exaggerated claims',
+        image: '/images/clipartkorea/donghae/tip2440005210.jpg',
+        alt: 'Waves reaching the broad sandy shore at Mangsang Beach in Donghae',
         body:
-          'Chuam is useful because users understand it fast: rocks, sunrise, coast, and a clear reason to pause.',
-        sourceLabel: 'VISITKOREA Chuam Chotdaebawi Rock',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94231',
-        licenseLabel: 'External reference',
+          'This verified Mangsang photograph matches the editor\'s restrained judgment: a clean, useful beach at the northern end of the city, not a reason to invent an entire day of similar coast stops.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tip2440005210',
+        licenseLabel: 'Project licensed asset',
       },
       {
-        eyebrow: 'Recovery option',
-        title: 'Mureunggyegok keeps Donghae from being only a port',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chuam%20Chotdaebawi%20Rock.jpg',
-        alt: 'Mureunggyegok Valley reference in Donghae',
+        eyebrow: 'Southern checkpoint',
+        title: 'Chuam closes Donghae before the road enters Samcheok',
+        image: '/images/clipartkorea/donghae/tc00240042710.jpg',
+        alt: 'Chuam Chotdaebawi sea stacks rising from the East Sea in Donghae',
         body:
-          'The valley lets Donghae support a different kind of pause: cool water, walking, and mountain-edge reset before Samcheok.',
-        sourceLabel: 'VISITKOREA Mureunggyegok Valley',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=95394',
-        licenseLabel: 'External reference',
+          'Chuam supplies the strongest recognizable landscape on the editor\'s route and, more importantly, sits at the correct southern end for the onward drive to Samcheok.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240042710',
+        licenseLabel: 'Project licensed asset',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official route check',
+        title: 'Donghae City tourism supports the same north-to-south coast logic',
+        image: '/images/clipartkorea/donghae/tip2440005210.jpg',
+        alt: 'Mangsang Beach surf on the northern Donghae coast',
+        body:
+          'The city\'s official tourism material groups Mangsang, the Eodal restaurant area, and Chuam into its coastal and day-trip planning. The editor\'s shorter Mangsang-to-Eodal-to-Chuam order removes attractions not personally reviewed and keeps the direction of travel clear.',
+        sourceLabel: 'Donghae City Tourism - themed and day routes',
+        sourceHref: 'https://dh.go.kr/tour/index.do?menuCode=07020204',
+        licenseLabel: 'Project licensed asset + official research',
+        usageNote:
+          'Use the official page to verify current attraction and course information; use the editor\'s sequence for the firsthand selective route.',
+      },
+      {
+        eyebrow: 'Official beach context',
+        title: 'Mangsang is the broad, facility-led northern beach',
+        image: '/images/clipartkorea/donghae/tip2440005210.jpg',
+        alt: 'Broad sand and active waves at Mangsang Beach in Donghae',
+        body:
+          'Donghae\'s official accessible-tourism page describes Mangsang through its wide sand, pine grove, shallow water, and nearby lodging and camping facilities. That context supports a northern beach or overnight role without turning the editor\'s untested lodging options into reviews.',
+        sourceLabel: 'Donghae Open Tourism - Mangsang Beach',
+        sourceHref: 'https://dh.go.kr/open/index.do',
+        licenseLabel: 'Project licensed asset + official research',
+        usageNote:
+          'Beach operation, swimming zones, camping, weather, and accommodation services change; confirm them for the actual date.',
+      },
+      {
+        eyebrow: 'Official city context',
+        title: 'The official guide shows that Donghae extends beyond the editor\'s three stops',
+        image: '/images/clipartkorea/donghae/tc00240021279.jpg',
+        alt: 'Donghae harbor, city streets, and mountain backdrop',
+        body:
+          'Donghae City also lists Mukho, Nongoldam-gil, Dojebigol, Cheongok Cave, and Mureung Valley. They remain valid research options, but this page does not describe them as personally visited because the editor\'s evidence is limited to Mangsang, Eodal, and Chuam.',
+        sourceLabel: 'Donghae City Tourism - official destination overview',
+        sourceHref: 'https://www.dh.go.kr/tour/index.do',
+        licenseLabel: 'Project licensed asset + official research',
+        usageNote:
+          'This reference widens planning choices while preserving a clear boundary between official research and firsthand experience.',
       },
     ],
     points: [
       {
-        id: 'donghae-mukho',
-        name: 'Mukho Lighthouse and port side',
+        id: 'donghae-mangsang',
+        name: 'Mangsang northern beach start',
         kind: 'checkpoint',
-        areaLabel: 'Mukho',
-        coordinates: { lat: 37.55, lng: 129.116 },
-        summary: 'The strongest place to read Donghae through lighthouse, port, and hill-village memory.',
-        note: 'Use this for the past-present working coast story.',
+        areaLabel: 'Mangsang',
+        coordinates: { lat: 37.594, lng: 129.09 },
+        summary: 'The editor\'s clean northern beach stop and the correct start when arriving from Gangneung.',
+        note: 'Use it selectively, then keep moving south rather than repeating similar beach stops.',
+      },
+      {
+        id: 'donghae-eodal',
+        name: 'Eodal fishing-village meal stop',
+        kind: 'checkpoint',
+        areaLabel: 'Eodal Harbor',
+        coordinates: { lat: 37.566, lng: 129.118 },
+        summary: 'A small ordinary-looking fishing coast with the editor\'s strongest Donghae food memory.',
+        note: 'The editor remembers anglers using the parking-and-breakwater edge. Look for current sea-urchin sujebi menus without relying on an old restaurant name or guaranteed availability.',
       },
       {
         id: 'donghae-chuam',
-        name: 'Chuam sunrise checkpoint',
+        name: 'Chuam southern beach checkpoint',
         kind: 'checkpoint',
         areaLabel: 'Chuam',
         coordinates: { lat: 37.477, lng: 129.158 },
-        summary: 'The quick scenic proof point for sunrise rocks and ocean-edge walking.',
-        note: 'Best for travelers who need Donghae to justify itself in one image.',
+        summary: 'The editor\'s tidy southern beach stop and the visual close of the Donghae sequence.',
+        note: 'Finish here before continuing to Samcheok; verify coastal conditions and parking on busy dates.',
       },
       {
-        id: 'donghae-mureung',
-        name: 'Mureung Valley recovery',
-        kind: 'recovery',
-        areaLabel: 'Mureunggyegok',
-        coordinates: { lat: 37.462, lng: 129.021 },
-        summary: 'The mountain-water reset that gives Donghae a non-beach recovery option.',
-        note: 'Useful on longer Route 4 pacing days before Samcheok.',
+        id: 'donghae-samcheok-handoff',
+        name: 'Samcheok handoff line',
+        kind: 'mobility',
+        areaLabel: 'Southbound coast',
+        coordinates: { lat: 37.46, lng: 129.165 },
+        summary: 'The editor\'s most natural next-city move after Chuam.',
+        note: 'Continue south into Samcheok rather than backtracking to Gangneung or diverting inland to Taebaek.',
       },
     ],
   },
@@ -6005,140 +6357,262 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   ulsan: {
     slug: 'ulsan',
     city: 'Ulsan',
-    mapTitle: 'Where industrial Korea, whale memory, river recovery, and coast meet',
+    mapTitle: 'Four-zone Ulsan: rock art, restored river, whale history, and industrial coast',
     mapIntro:
-      'Ulsan is a Route 4 support map for deciding how to use the final major city before Busan: Daewangam coast, Taehwagang recovery, Jangsaengpo memory, or metropolitan logistics.',
+      'Ulsan is not one compact stop. Use this source-researched map to choose among the western KTX and Bangucheon heritage branch, central Taehwagang and Samsan, southern Jangsaengpo, and eastern Daewangam before continuing to Busan.',
     mapCenter: { lat: 35.5384, lng: 129.3114 },
     supportSummary:
-      'Ulsan works as the industrial coast metropolis before Busan. Daewangam gives the sea drama, Taehwagang gives river recovery, and Jangsaengpo gives whale memory beside modern city scale.',
+      'Ulsan earns a serious stop because four different Koreas meet across a wide metropolitan area: the UNESCO-listed Petroglyphs along the Bangucheon Stream, the recovered Taehwagang river corridor, Jangsaengpo whale-history sites, and Daewangam beside the shipbuilding coast.',
     roleSummary:
-      'This is Route 4 in the present tense: production, port scale, ecology recovery, coast walks, and a clean metropolitan handoff into Busan.',
+      'This is Route 4 in long historical perspective. Prehistoric coastal culture appears in the western rock art, modern production in automotive, shipbuilding, and petrochemical districts, and environmental repair in the national garden before the route reaches Busan.',
     staySummary:
-      'Stay near the city core for logistics, near Taehwagang for river walks, or toward Dong-gu when Daewangam and the coast should lead.',
+      'For one practical night, use Samsan or the Taehwagang Station corridor for food and transport. Choose Dong-gu only when Daewangam and the eastern coast lead the trip, or Eonyang and the KTX station area only when the western heritage branch is the priority.',
     foodSummary:
-      'Food should support the metropolitan chapter: market meals, seafood, Korean barbecue, and easy city dining before the Busan finish.',
+      'Match food to the route: Eonyang bulgogi fits the KTX and petroglyph branch, central Ulsan keeps dinner flexible, and Bangeojin seafood fits the eastern coast. Whale cuisine is a personal ethical choice, not a required Ulsan experience.',
     nextLegSummary:
-      'After Ulsan, Busan should feel like a finale rather than the first real city after a long coast.',
+      'After Ulsan, continue south only after deciding which zone matters. For a Gijang-focused Busan day, the editor has personally used Taehwagang Station as a rail-to-Socar handoff to approach the northeast coast from the north instead of first driving through central Busan.',
     accommodationNote:
-      'Strongest stay-planning angle: river/city-core convenience versus Daewangam-side coast mood.',
+      'Strongest stay-planning angle: Samsan and Taehwagang Station for the default night, Dong-gu for a coast-led stay, and Eonyang or KTX Ulsan Station only for a western heritage plan.',
     sections: [
       {
-        title: 'Why Ulsan belongs before Busan',
+        title: 'Research boundary: sourced city guidance with one firsthand transport tactic',
         body:
-          'Ulsan gives Route 4 a modern Korea chapter at real scale. Without it, the final section jumps too quickly from heritage into Busan without showing the industrial coast that shaped the southeast.',
+          'The heritage, museum, industrial, and ecological sections are built from UNESCO, Ulsan City, Ulsan tourism, and Nam-gu official sources. The specific Taehwagang Station-to-Gijang car-share tactic comes from the editor\'s own trip. Opening hours, transport intervals, car availability, road conditions, and museum operations still require a current check.',
       },
       {
-        title: 'Why Daewangam leads visually',
+        title: 'The four zones solve the transport problem',
         body:
-          'Daewangam is the easiest visual argument for the city: cliffs, pine paths, lighthouse memory, and open East Sea views.',
+          'KTX Ulsan Station sits west of the main urban core; it is not the downtown station. Bangucheon and Eonyang form the western branch, Taehwagang and Samsan the central base, Jangsaengpo the southern museum-and-port branch, and Daewangam the eastern coastal branch. Plan by zone before counting attractions.',
       },
       {
-        title: 'Why Taehwagang changes the story',
+        title: 'Bangucheon became a world-heritage reason to stop',
         body:
-          'Taehwagang National Garden lets the page talk about recovery and ecological repair, giving Ulsan more depth than a pure industry label.',
+          'The Petroglyphs along the Bangucheon Stream were inscribed on the UNESCO World Heritage List in 2025. The Daegok-ri and Cheonjeon-ri sites preserve images made across millennia, so this is not a minor roadside add-on. Give the western valley a protected half day or a full day and confirm access conditions in advance.',
+      },
+      {
+        title: 'Taehwagang is evidence of environmental repair',
+        body:
+          'Ulsan City records a river-restoration campaign beginning in 2004 and the designation of Taehwagang as Korea\'s second national garden in 2019. The river corridor matters because it lets visitors read industrial growth and ecological repair in the same city rather than treating the garden as decorative scenery.',
+      },
+      {
+        title: 'Jangsaengpo requires context, not nostalgia alone',
+        body:
+          'The Whale Museum and Whale Culture Village explain a port community shaped by whaling before Korea prohibited commercial whaling in 1986. Visit for maritime and labor history; do not turn whale meat into a compulsory food recommendation. The district is more useful when the ethical tension remains visible.',
+      },
+      {
+        title: 'Daewangam and industry complete the eastern story',
+        body:
+          'Daewangam supplies pine paths, rocks, and open East Sea views, while the surrounding metropolitan coast shows the scale of shipbuilding and port infrastructure. Ulsan City identifies automotive, shipbuilding, and petrochemicals as core industries, so production is part of the destination story, not an inconvenient background to crop out.',
       },
     ],
     decisions: [
       {
-        title: 'Lead with Daewangam',
-        bestFor: 'Coast-first travelers and users who need immediate visual appeal.',
+        title: 'Build one balanced central overnight',
+        bestFor: 'First-time visitors with roughly one night and part of two days.',
         why:
-          'Daewangam makes Ulsan feel like a travel stop before the industrial story asks for more attention.',
+          'Base around Samsan, use Taehwagang for the recovery story, choose either Jangsaengpo or Daewangam for the first afternoon, and place the other on the following morning before Busan.',
       },
       {
-        title: 'Use Taehwagang for the overnight',
-        bestFor: 'Travelers who want city comfort, river walks, and a calmer evening.',
+        title: 'Give the west its own heritage branch',
+        bestFor: 'Archaeology, UNESCO, and deep-history travelers arriving by KTX or car.',
         why:
-          'The river garden gives Ulsan a recovery identity and keeps the stay from feeling purely logistical.',
+          'Pair Eonyang and its bulgogi district with Bangucheon rather than crossing the entire metropolis for a quick coastal add-on. This respects both travel time and the heritage landscape.',
+      },
+      {
+        title: 'Keep Ulsan to a coast-first half day',
+        bestFor: 'Short itineraries whose main priority is reaching Busan.',
+        why:
+          'Choose Daewangam and one public industrial-harbor viewpoint, then continue south. It is better to omit the western branch honestly than to claim every major site fits comfortably.',
+      },
+      {
+        title: 'Change from rail to car-share at Taehwagang Station',
+        bestFor: 'Travelers continuing to Gijang\'s coast rather than central Busan.',
+        why:
+          'The editor has used this exact tactic: get off at Taehwagang Station, collect a pre-booked Socar, and approach Gijang from the north. It can avoid routing a rental car through Busan\'s denser center, but live traffic and vehicle availability decide whether it is actually the better choice that day.',
       },
     ],
     stayZones: [
       {
-        title: 'Stay around Taehwagang or the city core',
-        areaLabel: 'Central Ulsan',
-        bestFor: 'Hotels, food, transport, and river walks.',
+        title: 'Use Samsan and Taehwagang Station as the default',
+        areaLabel: 'Central transport and dining corridor',
+        bestFor: 'First visits, one-night plans, restaurants, and cross-city taxis or buses.',
         why:
-          'This zone makes Ulsan easy to use as the last full service reset before Busan.',
+          'It is the most practical compromise between the river, Jangsaengpo, Daewangam, and the southbound move. Do not confuse Taehwagang Station with the western KTX station.',
       },
       {
-        title: 'Move toward Daewangam',
-        areaLabel: 'Dong-gu coast',
-        bestFor: 'Coastal walks and East Sea atmosphere.',
+        title: 'Stay near the garden for a slower evening',
+        areaLabel: 'Taehwagang and central river corridor',
+        bestFor: 'Walking, cycling, river scenery, and travelers prioritizing ecological recovery.',
         why:
-          'This side lets the route keep its coast-first identity even inside a major industrial city.',
+          'The river makes the overnight emotionally calmer, but check the exact hotel-to-station transfer rather than assuming the full garden is beside rail access.',
+      },
+      {
+        title: 'Move east when Daewangam leads',
+        areaLabel: 'Dong-gu and Daewangam coast',
+        bestFor: 'Sunrise, coastal walks, shipbuilding-scale views, and a slower eastern morning.',
+        why:
+          'This saves backtracking when the coast is the main purpose, but it is less convenient for the KTX station and western heritage sites.',
+      },
+      {
+        title: 'Use Eonyang or the KTX area for western heritage',
+        areaLabel: 'Ulju-gun west',
+        bestFor: 'Bangucheon, KTX arrivals, Eonyang bulgogi, and car-based heritage days.',
+        why:
+          'This is a branch base, not a substitute for downtown Ulsan. It makes sense only when the petroglyph landscape is central to the itinerary.',
       },
     ],
     visuals: [
       {
-        eyebrow: 'Coastal drama',
-        title: 'Daewangam gives Ulsan its East Sea face',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Daewangam%20Park.jpg',
-        alt: 'Daewangam Park reference in Ulsan',
+        eyebrow: 'Eastern coast',
+        title: 'Daewangam gives the industrial metropolis an open-sea edge',
+        image: '/images/clipartkorea/ulsan/tc00240031101.jpg',
+        alt: 'Daewangam coastal rocks and bridge in Ulsan',
         body:
-          'Lead with Daewangam because it lets English-speaking travelers understand Ulsan as coast before they process the industrial layer.',
-        sourceLabel: 'VISITKOREA Daewangam Park',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=71963',
-        licenseLabel: 'External reference',
+          'Use the coast as the visual entrance, then explain that Dong-gu is one part of a much wider city rather than the whole itinerary.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240031101',
+        licenseLabel: 'Project licensed asset',
       },
       {
-        eyebrow: 'River recovery',
-        title: 'Taehwagang shows the city in recovery mode',
-        image: 'https://tong.visitkorea.or.kr/cms/resource/44/3422844_image2_1.png',
-        alt: 'Taehwagang National Garden bamboo path in Ulsan',
+        eyebrow: 'Central river',
+        title: 'Taehwagang makes ecological recovery visible at city scale',
+        image: '/images/clipartkorea/ulsan/tc00240097257.jpg',
+        alt: 'Aerial view of the green Taehwagang river corridor through Ulsan',
         body:
-          'The garden makes Ulsan feel current and layered: a city of industry, but also a city rebuilding river life into public space.',
-        sourceLabel: 'VISITKOREA Taehwagang National Garden',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=80718',
-        licenseLabel: 'External reference',
+          'This is the best visual proof that the garden belongs inside the industrial story: the green corridor and metropolitan fabric appear together.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240097257',
+        licenseLabel: 'Project licensed asset',
       },
       {
-        eyebrow: 'Whale memory',
-        title: 'Jangsaengpo keeps the older sea story visible',
-        image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Daewangam%20Park.jpg',
-        alt: 'Jangsaengpo Whale Culture Village reference in Ulsan',
+        eyebrow: 'Jangsaengpo working coast',
+        title: 'Jangsaengpo Harbor makes the maritime-industry story specific',
+        image: '/images/clipartkorea/ulsan/tc00240100300_l.jpg',
+        alt: 'Workboats, port facilities, and a refinery at Jangsaengpo Harbor in Ulsan',
         body:
-          'The whale district gives Ulsan a maritime memory line that balances the modern production story.',
-        sourceLabel: 'VISITKOREA Jangsaengpo Whale Culture Village',
-        sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68966',
-        licenseLabel: 'External reference',
+          'This is verified as Jangsaengpo Harbor and shows workboats, port facilities, and the refinery landscape together. It supports the district\'s maritime and industrial context without being misrepresented as the Whale Museum.',
+        sourceLabel: 'ClipartKorea licensed photo',
+        sourceHref: 'https://www.clipartkorea.co.kr/search?menu=m&keyword=tc00240100300',
+        licenseLabel: 'Project licensed asset',
+      },
+    ],
+    officialReferences: [
+      {
+        eyebrow: 'Official source',
+        title: 'UNESCO confirms the 2025 Bangucheon inscription',
+        image: '/images/clipartkorea/ulsan/tc00240010809_l.jpg',
+        alt: 'Rock face and stream at the Bangudae petroglyph site in Ulsan',
+        body:
+          'UNESCO\'s World Heritage Committee inscribed the Petroglyphs along the Bangucheon Stream in 2025. The licensed photograph is verified by its ClipartKorea metadata as the Ulsan Daegok-ri Bangudae petroglyph rock face and stream.',
+        sourceLabel: 'UNESCO World Heritage Committee decision',
+        sourceHref: 'https://whc.unesco.org/en/decisions/8954/',
+        licenseLabel: 'Project licensed asset + official research',
+        usageNote:
+          'Use UNESCO for the inscription date and heritage status, and ClipartKorea content code tc00240010809 for the licensed image record.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'Ulsan City documents the Taehwagang recovery timeline',
+        image: '/images/clipartkorea/ulsan/tc00240097257.jpg',
+        alt: 'Green Taehwagang river corridor and central Ulsan from above',
+        body:
+          'The official garden history records restoration work beginning in 2004 and national-garden designation in 2019, grounding the ecological-repair story in dates rather than slogans.',
+        sourceLabel: 'Taehwagang National Garden official history',
+        sourceHref: 'https://www.ulsan.go.kr/s/garden/contents.ulsan?mId=001001007000000000',
+        licenseLabel: 'Official research reference',
+        usageNote:
+          'Use for the restoration chronology; verify festival schedules and garden operations separately before travel.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'Jangsaengpo presents whaling as history to interpret',
+        image: '/images/clipartkorea/ulsan/tc00240100300_l.jpg',
+        alt: 'Jangsaengpo Harbor workboats and refinery landscape in Ulsan Nam-gu',
+        body:
+          'Nam-gu\'s official tourism page frames the Whale Museum and Whale Culture Village around the district\'s whaling-era history and the change that followed the 1986 prohibition. The licensed photograph shows the district\'s real working harbor rather than pretending to show a museum building.',
+        sourceLabel: 'Ulsan Nam-gu whale tourism',
+        sourceHref: 'https://www.ulsannamgu.go.kr/eng/contents/visiting/whale_tourism.do',
+        licenseLabel: 'Project licensed asset + official research',
+        usageNote:
+          'ClipartKorea metadata identifies content code tc00240100300 as Jangsaengpo Harbor, Jangsaengpo-dong, Nam-gu, Ulsan. Keep the caption specific to the harbor.',
+      },
+      {
+        eyebrow: 'Official source',
+        title: 'Industry is part of Ulsan\'s public identity',
+        image: '/images/clipartkorea/ulsan/cm27010493.jpg',
+        alt: 'Illuminated industrial plant on the Ulsan coast at night',
+        body:
+          'Ulsan City identifies automobiles, shipbuilding, and petrochemicals as the industrial base that shaped the metropolitan economy. The page therefore keeps production visible instead of reducing Ulsan to coastal scenery.',
+        sourceLabel: 'Ulsan City industrial overview',
+        sourceHref: 'https://ulsan.go.kr/u/english/contents.ulsan?mId=001002001002000000',
+        licenseLabel: 'Official research reference',
+        usageNote:
+          'Use public viewpoints and visitor facilities only; do not imply that operational industrial sites are general sightseeing grounds.',
       },
     ],
     points: [
       {
-        id: 'ulsan-daewangam',
-        name: 'Daewangam coast checkpoint',
+        id: 'ulsan-ktx-eonyang',
+        name: 'KTX Ulsan and Eonyang western base',
+        kind: 'mobility',
+        areaLabel: 'Ulju-gun west',
+        coordinates: { lat: 35.5513, lng: 129.1386 },
+        summary: 'The rail arrival and food base for the western heritage branch, not downtown Ulsan.',
+        note: 'Use for Bangucheon and Eonyang bulgogi; allow a separate transfer to the central city.',
+      },
+      {
+        id: 'ulsan-bangucheon',
+        name: 'Bangucheon petroglyph landscape',
         kind: 'checkpoint',
-        areaLabel: 'Dong-gu',
-        coordinates: { lat: 35.491, lng: 129.438 },
-        summary: 'The coast-first visual anchor for Ulsan before Busan.',
-        note: 'Use this to make Ulsan feel immediately travel-worthy.',
+        areaLabel: 'Daegok-ri and Cheonjeon-ri valley',
+        coordinates: { lat: 35.608, lng: 129.174 },
+        summary: 'The UNESCO-listed deep-history anchor in western Ulsan.',
+        note: 'Give it a protected half day or full day and verify current access before departure.',
       },
       {
         id: 'ulsan-taehwagang',
-        name: 'Taehwagang recovery zone',
+        name: 'Taehwagang National Garden corridor',
         kind: 'recovery',
         areaLabel: 'Central Ulsan',
-        coordinates: { lat: 35.548, lng: 129.297 },
-        summary: 'The river-garden side where the city becomes easier to slow down in.',
-        note: 'This supports the past-present story and gives the overnight a calmer shape.',
+        coordinates: { lat: 35.547, lng: 129.299 },
+        summary: 'The central evidence for ecological recovery and a calmer metropolitan stay.',
+        note: 'Pair the walk with the official restoration history rather than presenting it as scenery alone.',
+      },
+      {
+        id: 'ulsan-taehwagang-station-gijang',
+        name: 'Taehwagang Station car-share handoff',
+        kind: 'mobility',
+        areaLabel: 'Taehwagang Station to Gijang',
+        coordinates: { lat: 35.5396, lng: 129.3536 },
+        summary: 'A firsthand rail-to-car tactic for approaching Busan\'s northeastern coast from Ulsan.',
+        note: 'Reserve the vehicle first and check return rules, parking, live traffic, and whether the route is genuinely faster that day.',
       },
       {
         id: 'ulsan-jangsaengpo',
-        name: 'Jangsaengpo whale memory',
+        name: 'Jangsaengpo whale-history district',
         kind: 'checkpoint',
         areaLabel: 'Nam-gu',
-        coordinates: { lat: 35.505, lng: 129.38 },
-        summary: 'The maritime-memory district that keeps Ulsan from reading only as industry.',
-        note: 'Use it as the older sea story inside a modern industrial metropolis.',
+        coordinates: { lat: 35.504, lng: 129.38 },
+        summary: 'The museum-and-port district for reading the city\'s whaling-era history critically.',
+        note: 'Keep museum interpretation separate from any personal decision about whale cuisine.',
+      },
+      {
+        id: 'ulsan-daewangam',
+        name: 'Daewangam and eastern coast',
+        kind: 'checkpoint',
+        areaLabel: 'Dong-gu',
+        coordinates: { lat: 35.492, lng: 129.439 },
+        summary: 'The coast-first visual anchor beside the shipbuilding side of metropolitan Ulsan.',
+        note: 'Best for a half day, sunrise, or the final morning before Busan.',
       },
       {
         id: 'ulsan-busan-handoff',
         name: 'Busan handoff line',
         kind: 'mobility',
         areaLabel: 'Southbound corridor',
-        coordinates: { lat: 35.36, lng: 129.25 },
-        summary: 'The final corridor where Route 4 releases into Busan.',
-        note: 'After this, Busan should feel like a finale, not the first major stop.',
+        coordinates: { lat: 35.31, lng: 129.235 },
+        summary: 'The southbound transition after the selected Ulsan zone is complete.',
+        note: 'Skip cross-city backtracking if the Busan arrival time is the real priority.',
       },
     ],
   },
@@ -6295,31 +6769,67 @@ const citySupportProfiles: Record<string, CitySupportProfile> = {
   suncheon: {
     slug: 'suncheon',
     city: 'Suncheon',
-    mapTitle: 'Where Suncheon turns Route 5 ecological',
-    mapIntro: 'Suncheon is the wetland and garden hinge before Yeosu, so the map centers ecology, slower stays, and the final sea handoff.',
+    mapTitle: 'How to divide Suncheon into workable travel zones',
+    mapIntro: 'The National Garden and Suncheon Bay Wetland form one southern ecology axis, the station and city center form the practical base, and Naganeupseong belongs to a separate heritage day. The map is designed to stop a first visit from becoming an unrealistic checklist.',
     mapCenter: { lat: 34.9506, lng: 127.4872 },
-    supportSummary: 'Suncheon gives Route 5 its Bay, Wetland, and Garden chapter. Suncheon Bay Wetland and Suncheon Bay National Garden slow the route before Yeosu becomes the finale.',
-    roleSummary: 'Its role is to make the south-coast approach feel ecological and calm, not just a final highway push.',
-    staySummary: 'Use Suncheon as the calm pre-Yeosu overnight when the traveler wants reeds, gardens, and a lower-pressure evening.',
-    foodSummary: 'Food should support bay-side pacing through local meals, markets, and simple seafood before the Yeosu finish.',
-    nextLegSummary: 'After Suncheon, Yeosu turns the route into islands, seafood, Odongdo, Hyangiram, and night sea.',
+    supportSummary: 'The strongest first visit gives one unhurried day to the National Garden and Suncheon Bay Wetland, with current opening hours and SkyCube operations checked before departure. Add a second day only when Naganeupseong, Seonamsa, or Songgwangsa is a real priority.',
+    roleSummary: 'Suncheon is Route 5\'s ecological hinge because the city links tidal-flat wetlands, rivers, rice fields, rural communities, and the forested Jogyesan area. That wider UNESCO biosphere context is more meaningful than treating the bay as a sunset photo stop.',
+    staySummary: 'Stay one night when sunset, bird habitat, or a full garden-and-wetland day is the purpose. If Yeosu night sea matters more and only one Suncheon attraction fits, make a selective stop and continue instead of adding an automatic overnight.',
+    foodSummary: 'Use dinner to support the stay rather than inventing one compulsory dish. Suncheon City presents seasonal Namdo table settings as a representative food identity; compare current menus, minimum-order rules, and location before choosing a restaurant.',
+    nextLegSummary: 'Yeosu is the natural sea-facing next leg, but do not let that pairing rush the wetland. Rail travelers can use the station-area base for the handoff; drivers can leave the heritage branch for a separate day and then continue south.',
+    accommodationNote: 'Choose the station and terminal area for rail, buses, dinner, and an easy Yeosu handoff; choose the National Garden and Ocheon edge for an ecology-first morning; choose a Naganeupseong stay only when the rural heritage experience itself is the reason for the night.',
     sections: [
-      { title: 'Wetland before night sea', body: 'Suncheon Bay Wetland gives Route 5 a nature chapter that makes the Yeosu arrival feel earned instead of abrupt.' },
-      { title: 'The garden makes ecology present tense', body: 'Suncheon Bay National Garden translates the city\'s landscape identity into a clear modern travel experience.' },
-      { title: 'Why Yeosu follows', body: 'Suncheon prepares the traveler for Yeosu by shifting the route from inland story into open south-coast atmosphere.' },
+      {
+        title: 'Research boundary: this is not a first-person visit report',
+        body: 'This page is built from UNESCO, Suncheon City, the official garden and wetland operator, and Korea Tourism Organization sources. It offers planning judgments without claiming that the editor personally tested the route, lodging, restaurants, or seasonal conditions.',
+      },
+      {
+        title: 'The National Garden and the wetland are not the same stop',
+        body: 'The National Garden is the designed, accessible introduction to Suncheon\'s ecology; the wetland is the tidal-flat and reed habitat where conservation, light, weather, and bird movement matter. Official linked transport can reduce the transfer, but operating days and last departures must be checked.',
+      },
+      {
+        title: 'One full day belongs to the ecology axis',
+        body: 'A first visit should protect enough time to walk rather than photograph two entrances and leave. Use the garden for orientation and the wetland for the quieter landscape finish, reversing the order only when current hours, weather, or sunset plans make that more sensible.',
+      },
+      {
+        title: 'A second day should have one heritage theme',
+        body: 'Naganeupseong is a preserved walled town with inhabited neighborhoods and thatched houses, while Seonamsa and Songgwangsa create a separate Jogyesan temple branch. Pick the town plus one compatible stop; do not promise all three alongside the garden and wetland in one relaxed day.',
+      },
+      {
+        title: 'Wildlife is habitat, not a guaranteed performance',
+        body: 'UNESCO identifies Suncheon as an important wintering and stopover site for the endangered hooded crane, but sightings depend on season and conditions. Keep distance, follow access controls, and value the tidal-flat system even when the signature birds are not visible.',
+      },
+      {
+        title: 'The Yeosu pairing is a choice, not the whole identity',
+        body: 'Suncheon and Yeosu work well together because rail and road connections are practical, yet their reasons for staying are different. Keep Suncheon when ecology or rural heritage deserves time; move to Yeosu when the trip\'s real priority is harbor evenings, islands, and coastal nightlife.',
+      },
     ],
     decisions: [
-      { title: 'Stay for the wetland', bestFor: 'Nature, photography, and slower-route travelers.', why: 'The wetland is strongest when it is not rushed between transfers.' },
-      { title: 'Use it as a pre-Yeosu reset', bestFor: 'Travelers who want Yeosu to feel like a finale.', why: 'A calm night before Yeosu makes the final coastal chapter land harder.' },
+      { title: 'Give the ecology axis one full day', bestFor: 'First-time visitors, walkers, gardeners, photographers, and wildlife-minded travelers.', why: 'The National Garden and wetland have different jobs; a full day preserves both instead of reducing them to entrance photos.' },
+      { title: 'Add a heritage second day', bestFor: 'Drivers, families, and travelers who care about lived folk architecture or mountain temples.', why: 'Naganeupseong and the Jogyesan sites sit outside the compact station-garden-wetland line and deserve their own pacing.' },
+      { title: 'Make a selective stop before Yeosu', bestFor: 'Short south-coast trips whose main overnight goal is Yeosu.', why: 'Choose either the garden or wetland according to season and interest, then continue. An overnight is not automatically better when Suncheon is only a checklist item.' },
+    ],
+    stayZones: [
+      { title: 'Base near Suncheon Station or the terminal', areaLabel: 'Transit-first city base', bestFor: 'Rail travelers, evening food access, and an easy next move to Yeosu.', why: 'This is the most flexible base when the itinerary mixes the ecology axis with regional transport. It does not place you inside the wetland, but it avoids isolating the whole stay around one attraction.' },
+      { title: 'Stay near the National Garden and Ocheon area', areaLabel: 'Ecology-first base', bestFor: 'Travelers protecting an early garden start, a full walking day, or a quieter evening.', why: 'Choose it for access to the ecology axis, then verify the exact hotel-to-entrance route and evening dining options. It is less useful for a temple or Naganeupseong day.' },
+      { title: 'Sleep in or near Naganeupseong', areaLabel: 'Rural heritage base', bestFor: 'Travelers who want a traditional-village night rather than maximum route efficiency.', why: 'Official tourism information lists inns and visitor facilities inside the walled-town area. Confirm current availability and access directly; this is a deliberate heritage stay, not the default base for the garden or Yeosu.' },
     ],
     visuals: [
-      { eyebrow: 'Wetland hinge', title: 'Suncheon Bay slows Route 5 before the coast', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20Wetland.jpg', alt: 'Suncheon Bay Wetland reference', body: 'Lead with reeds, bay, and light so Suncheon feels ecological, not generic.', sourceLabel: 'VISITKOREA Suncheon reference', sourceHref: 'https://english.visitkorea.or.kr', licenseLabel: 'External reference' },
-      { eyebrow: 'Garden city', title: 'National Garden gives the present-day hook', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suncheon%20Bay%20National%20Garden.jpg', alt: 'Suncheon Bay National Garden reference', body: 'The garden gives Suncheon a modern identity that pairs naturally with the older bay landscape.', sourceLabel: 'VISITKOREA Suncheon Garden reference', sourceHref: 'https://english.visitkorea.or.kr', licenseLabel: 'External reference' },
+      { eyebrow: 'Conservation first', title: 'Hooded cranes make the habitat visible, not predictable', image: '/images/clipartkorea/suncheon/tc02820006621.jpg', alt: 'Hooded cranes gathering in the Suncheon wetland landscape', body: 'The strongest image explains why the wetland needs quiet access and seasonal judgment rather than promising a guaranteed wildlife show.', sourceLabel: 'Licensed real travel photograph', sourceHref: '/images/clipartkorea/suncheon/tc02820006621.jpg', licenseLabel: 'Internal' },
+      { eyebrow: 'Lived heritage', title: 'Naganeupseong gives the second day a different purpose', image: '/images/clipartkorea/suncheon/tc00240036519.jpg', alt: 'Thatched house and stone wall inside Naganeupseong Walled Town', body: 'The village belongs in a heritage branch, not as another quick box after the wetland. Its wall, houses, residents, and programs require a different pace.', sourceLabel: 'Licensed real travel photograph', sourceHref: '/images/clipartkorea/suncheon/tc00240036519.jpg', licenseLabel: 'Internal' },
+    ],
+    officialReferences: [
+      { eyebrow: 'UNESCO ecology source', title: 'The biosphere reserve is larger than the famous reed field', image: '/images/clipartkorea/suncheon/tc02820006621.jpg', alt: 'Hooded cranes in Suncheon\'s wetland ecosystem', body: 'UNESCO describes a connected reserve of Suncheon Bay tidal flats, river corridors, rice-growing communities, and forest ecosystems around Jogyesan and Mohusan. It also identifies the bay as an important wintering and stopover site for endangered hooded cranes.', sourceLabel: 'UNESCO Man and the Biosphere Programme', sourceHref: 'https://www.unesco.org/en/mab/suncheon?hub=66369', licenseLabel: 'Official reference', usageNote: 'Use for the ecological network, 2018 biosphere nomination, and wildlife-conservation context; do not use it to guarantee a sighting on a specific day.' },
+      { eyebrow: 'Current operations source', title: 'Garden, wetland, and linked transport need a same-day check', image: '/images/clipartkorea/suncheon/tc02820004910.jpg', alt: 'Suncheon Bay National Garden and surrounding city', body: 'The official operator publishes separate seasonal hours for the National Garden and wetland, plus operating information for SkyCube and the reed train. Closures and last departures can shape the entire day.', sourceLabel: 'Suncheonman National Garden official visitor guide', sourceHref: 'https://scbay.suncheon.go.kr/garden/0016/0001', licenseLabel: 'Official reference', usageNote: 'Check this page immediately before travel for current hours, closure days, ticket conditions, and transport operations instead of copying a permanent timetable into the guide.' },
+      { eyebrow: 'Official heritage source', title: 'Naganeupseong is a walled town, not a decorative folk set', image: '/images/clipartkorea/suncheon/tc00240036519.jpg', alt: 'Traditional thatched house inside Naganeupseong Walled Town', body: 'Korea Tourism Organization describes a preserved fortress town with three neighborhoods, thatched houses, a walkable wall, resident life, visitor programs, inns, and restaurants.', sourceLabel: 'VISITKOREA Naganeupseong Walled Town', sourceHref: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=80266', licenseLabel: 'Official reference', usageNote: 'Use for the heritage-day and rural-stay logic. Confirm current program schedules, hours, and lodging directly before travel.' },
+      { eyebrow: 'Official itinerary source', title: 'Suncheon City itself separates ecology and heritage into longer routes', image: '/images/clipartkorea/suncheon/tc00240036561.jpg', alt: 'Suncheon Bay tidal-flat landscape at sunset', body: 'The city publishes full-day ecology, history, and temple routes as separate themes and expands to one- and two-night courses when they are combined. That supports a selective itinerary rather than a rushed master checklist.', sourceLabel: 'Suncheon City recommended travel courses', sourceHref: 'https://www.suncheon.go.kr/tour/guide/0011/0001/', licenseLabel: 'Official reference', usageNote: 'Use the official routes as scope evidence, not as a promise that every listed stop fits every traveler or current opening schedule.' },
     ],
     points: [
-      { id: 'suncheon-bay', name: 'Suncheon Bay Wetland', kind: 'recovery', areaLabel: 'Bay area', coordinates: { lat: 34.885, lng: 127.509 }, summary: 'The reed and wetland anchor before Yeosu.', note: 'Use it as the primary ecological proof.' },
-      { id: 'suncheon-garden', name: 'Suncheon Bay National Garden', kind: 'checkpoint', areaLabel: 'Garden area', coordinates: { lat: 34.93, lng: 127.509 }, summary: 'The planned-garden side of the city.', note: 'This is the modern present-tense identity.' },
-      { id: 'suncheon-yeosu-handoff', name: 'Yeosu handoff line', kind: 'mobility', areaLabel: 'South coast line', coordinates: { lat: 34.84, lng: 127.57 }, summary: 'The final move from ecology to island-night-sea arrival.', note: 'This prepares the emotional finish.' },
+      { id: 'suncheon-station-base', name: 'Suncheon Station city base', kind: 'stay', areaLabel: 'Transit and dinner', coordinates: { lat: 34.9458, lng: 127.5019 }, summary: 'The flexible base for rail, city meals, the ecology axis, and the next move to Yeosu.', note: 'Choose practicality here; verify the local connection to the entrance you plan to use.' },
+      { id: 'suncheon-garden', name: 'Suncheon Bay National Garden', kind: 'checkpoint', areaLabel: 'Designed ecology', coordinates: { lat: 34.93, lng: 127.509 }, summary: 'The accessible orientation point for understanding Suncheon\'s garden-city project.', note: 'Treat it as a substantial walk, not a quick prelude. Check seasonal hours and linked transport before departure.' },
+      { id: 'suncheon-bay', name: 'Suncheon Bay Wetland', kind: 'recovery', areaLabel: 'Tidal flat and reeds', coordinates: { lat: 34.885, lng: 127.509 }, summary: 'The conservation landscape where tidal flats, reeds, sunset, and migratory habitat replace the designed garden experience.', note: 'Wildlife and visibility are conditional. Follow current access rules and protect more time than a photo stop.' },
+      { id: 'suncheon-nagan', name: 'Naganeupseong Walled Town', kind: 'checkpoint', areaLabel: 'Separate heritage branch', coordinates: { lat: 34.9066, lng: 127.3426 }, summary: 'The lived walled-town anchor for a second day or deliberate rural overnight.', note: 'It is outside the compact ecology line; a car, tour, or carefully checked bus plan is more realistic than improvising the transfer.' },
+      { id: 'suncheon-yeosu-handoff', name: 'Yeosu handoff line', kind: 'mobility', areaLabel: 'South coast line', coordinates: { lat: 34.84, lng: 127.57 }, summary: 'The move from ecological and rural Suncheon into Yeosu\'s harbor, islands, and night sea.', note: 'Continue the same day when Yeosu is the real overnight priority; stay in Suncheon when the wetland or heritage branch still needs time.' },
     ],
   },
   yeosu: {

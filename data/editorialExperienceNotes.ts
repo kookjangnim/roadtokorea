@@ -51,6 +51,90 @@ const editorialExperienceNotes: Record<string, EditorialExperienceNote> = {
     verification:
       'Personal memories guide the judgments on pace, neighborhoods, and trade-offs. Current transport, opening conditions, parking, and weather-sensitive advice are checked separately against official or operator sources.',
   },
+  pyeongchang: {
+    citySlug: 'pyeongchang',
+    kind: 'former-home',
+    eyebrow: 'Former Jinbu resident · repeated recent visits',
+    title: 'Pyeongchang begins with a childhood in Jinbu, not with the Olympics.',
+    quote:
+      'I lived in Jinbu from age eight to fifteen, attended elementary school there, and have returned to Pyeongchang more than one hundred times in recent years.',
+    context:
+      'The strongest memories are ordinary mountain life: playing in the Odaecheon water on hot days, eating steamed corn with friends, sharing chicken baeksuk beside a valley, and using fertilizer sacks as sleds on snowy hills. They make Pyeongchang feel like several lived regions rather than one resort destination.',
+    verification:
+      'Childhood memories and repeated visits guide the page\'s judgments. Current museum displays, transport, festivals, resort services, weather, restaurant hours, and dietary ingredients require separate confirmation.',
+  },
+  taebaek: {
+    citySlug: 'taebaek',
+    kind: 'past-visit',
+    eyebrow: 'Repeated short visits · limited first-hand scope',
+    title: 'Taebaek is a specific-purpose trip, not a general sightseeing stop.',
+    quote:
+      'I have visited Taebaek about five times, usually for work and for only a few hours. My strongest reason to return is Taebaeksan, especially a winter sunrise.',
+    context:
+      'Those visits support practical judgments on the difficult approach, compact city, quiet evenings, highland weather, source sites, Hanwoo, and the winding descent toward the coast. They do not support pretending that every museum, mining neighborhood, or accommodation has been personally reviewed.',
+    verification:
+      'Coal history and unvisited attractions are described from official sources. Current roads, mountain access, weather, restaurant prices, museum exhibitions, and opening hours require fresh checks.',
+  },
+  yeongwol: {
+    citySlug: 'yeongwol',
+    kind: 'past-visit',
+    eyebrow: 'Five recent visits · Donggang camping and rafting',
+    title: 'Yeongwol became familiar from nights beside the Donggang, not from a sightseeing checklist.',
+    quote:
+      'I visited Yeongwol about five times within a year, mainly to camp and raft around the Donggang. Cheongnyeongpo is the place I would make sure to revisit.',
+    context:
+      'Those trips support first-hand judgments on a riverside overnight, driving between dispersed sights, the ferry crossing into Cheongnyeongpo, the modest scale of Jangneung, and why Gossi Cave should come first when building a day route. Places not personally visited, including Byeolmaro Observatory and the Korean Peninsula-shaped terrain, are not presented as first-hand reviews.',
+    verification:
+      'Current ferry operations, rafting safety, river levels, cave access, film attendance, opening hours, and weather-sensitive activities are checked separately against official or operator sources.',
+  },
+  sokcho: {
+    citySlug: 'sokcho',
+    kind: 'former-home',
+    eyebrow: 'Former resident · about one hundred visits',
+    title: 'Sokcho is a compact lived city between Seoraksan, lagoons, and the sea.',
+    quote:
+      'I lived in Sokcho for about a year when I was eighteen and have visited roughly one hundred times, mainly in summer for travel, work, food, and overnight stays around Cheongchoho.',
+    context:
+      'That experience shapes the page around short real-world distances, Cheongchoho as an everyday base, Dongmyeong Port for an evening meal, the fast-rising skyline, and the difference between seeing Seoraksan from the city and giving the mountain its own day. The editor has ridden the cable car to Gwongeumseong once; Ulsanbawi is a future return goal, not a completed first-hand hike.',
+    verification:
+      'Current trail controls, cable-car operation, weather, parking, restaurant hours, lodging prices, ferry or port services, and changing beachfront attractions require fresh official or operator checks.',
+  },
+  ulsan: {
+    citySlug: 'ulsan',
+    kind: 'past-visit',
+    eyebrow: 'First-hand transport tactic - Taehwagang Station to Gijang',
+    title: 'Taehwagang Station can work as a car-share handoff before Busan.',
+    quote:
+      'When I planned to tour the Gijang side of Busan, I got off at Taehwagang Station and rented a Socar there. It let me approach Gijang from the north without first driving into Busan\'s heavier urban traffic.',
+    context:
+      'That experience gives the station a second route role beyond an Ulsan arrival point. For a Gijang-focused day, rail to Taehwagang followed by a reserved car-share can be a practical alternative to taking a car through central Busan, especially when the itinerary is built around the northeastern coast rather than downtown Busan.',
+    verification:
+      'This is a personal route tactic, not a guarantee that it is always faster. Current car availability, pickup and return rules, parking, road conditions, congestion, and travel times must be checked with the operator and live navigation before departure.',
+  },
+  yangyang: {
+    citySlug: 'yangyang',
+    kind: 'past-visit',
+    eyebrow: 'About fifty summer work visits - three road approaches',
+    title: 'Yangyang is familiar as a mountain-to-sea driving region, not only a surf label.',
+    quote:
+      'I have visited Yangyang about fifty times, mainly for work in summer, and have driven in from Gangneung, Sokcho, and Inje. My strongest recommendation is the drive from Inje over Hangyeryeong into Osaek because Seoraksan is spectacular on that approach.',
+    context:
+      'Those repeated trips support firsthand judgments on the Hangyeryeong-to-Osaek arrival, a Surfyy Beach-to-Naksan day, Hajodae-area beach lodging, and Sokcho as the most natural next city. The editor has personally visited Naksansa, Naksan Beach, Hajodae, Jukdo and Ingu beaches, Surfyy Beach, Osaek, and the southern Seoraksan side.',
+    verification:
+      'The visits were mainly summer work trips, not a claim to have tested every season, surf lesson, trail, restaurant, or accommodation. Current mountain-road controls, trail access, surf operations, parking, lodging conditions, and seasonal matsutake supply require fresh official or operator checks.',
+  },
+  donghae: {
+    citySlug: 'donghae',
+    kind: 'past-visit',
+    eyebrow: 'More than fifty work visits - summer and winter',
+    title: 'Donghae is familiar as a small working coast city, not a resort checklist.',
+    quote:
+      'I have visited Donghae more than fifty times, mainly for work in summer and winter, usually driving in from Gangneung. My real route is Mangsang to Eodal to Chuam, then on to Samcheok. At Eodal, people often fished beside the parking and breakwater area, and the meal I still remember is sea-urchin sujebi.',
+    context:
+      'Those repeated visits support the page\'s judgments on Donghae\'s compact scale, its more industrial and working-city feel compared with Sokcho, the clean but not extraordinary character of Mangsang and Chuam, Eodal\'s everyday parking-edge fishing scene, and Samcheok as the natural next stop. The editor did not stay overnight and does not claim firsthand knowledge of Mukho, Mureung Valley, caves, hotels, or every attraction.',
+    verification:
+      'No standout problem with parking, congestion, crowding, overpricing, or disappointment was personally recorded, but that is not a guarantee. Current beach operation, coastal weather, road work, parking, restaurant menus, prices, sea-urchin availability, and accommodation conditions require fresh checks.',
+  },
   gyeongju: {
     citySlug: 'gyeongju',
     kind: 'past-visit',
@@ -80,4 +164,3 @@ const editorialExperienceNotes: Record<string, EditorialExperienceNote> = {
 export function getEditorialExperienceNote(citySlug: string): EditorialExperienceNote | null {
   return editorialExperienceNotes[citySlug.toLowerCase()] ?? null;
 }
-
