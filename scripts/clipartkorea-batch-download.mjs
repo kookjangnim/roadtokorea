@@ -9,11 +9,18 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 
-const DEFAULT_IDS = ['tip249', 'tip250', 'cm26', 'cm27', 'cm28'];
+const DEFAULT_KEYWORDS = ['은하수', '별', '오로라', '제주도', '이탈리아'];
+const DEFAULT_MIN_DELAY_MS = 1000;
+const DEFAULT_MAX_DELAY_MS = 10000;
 const DEFAULT_DOWNLOAD_TYPE = 'JPG (WEB) 다운받기';
 const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.zip']);
+const ALLOWED_PHOTO_GROUPS = new Set(['krpho', 'photo']);
 
 const REGION_SLUGS = {
+  은하수: 'milky-way',
+  별: 'stars',
+  오로라: 'aurora',
+  이탈리아: 'italy',
   가평: 'gapyeong',
   강릉: 'gangneung',
   경주: 'gyeongju',
@@ -59,29 +66,28 @@ const REGION_SLUGS = {
 function printUsage() {
   console.log([
     'Usage:',
-    '  node scripts/clipartkorea-batch-download.mjs --regions 서울,해운대 --limit 500 [--out F:\\stocks]',
+    '  node scripts/clipartkorea-batch-download.mjs --limit 500 [--out F:\\stocks]',
     '',
     'Options:',
-    '  --ids tip249,tip250,cm26,cm27,cm28  ClipartKorea id prefixes to mix',
-    '  --regions 서울,해운대,부산             Region terms to combine with each id',
+    '  --keywords 은하수,별,오로라,제주도,이탈리아  Search keywords',
     '  --limit 500                           Total new downloads before stopping',
     '  --out F:\\stocks                       External-drive stocks folder. If omitted, CLIPART_STOCKS_ROOT or an existing *:\\stocks is used.',
     '  --profile <path>                      Browser profile folder for ClipartKorea login',
     '  --cdp http://127.0.0.1:9222           Attach to a real Chrome session started with remote debugging',
     '  --downloads <path>                    Native Chrome download folder to watch',
-    '  --per-query 25                        Max new downloads per id/region query per pass',
+    '  --per-query 25                        Max new downloads per keyword per pass',
     '  --max-pages 5                         Max result pages per query',
-    '  --min-delay 3000                       Minimum wait between downloads in ms',
-    '  --max-delay 3000                       Maximum wait between downloads in ms',
-    '  --page-delay 5000                      Wait after each search page loads in ms',
+    '  --min-delay 1000                       Minimum random wait between downloads in ms',
+    '  --max-delay 10000                      Maximum random wait (capped at 10000 ms)',
+    '  --page-delay 1500                      Minimum page review wait in ms',
     '  --download-type "JPG (WEB) 다운받기"  Menu option to click',
     '  --setup-login                         Open the automation profile so you can log in once',
     '  --headless                            Run browser headlessly',
     '  --dry-run                             Print plan without opening browser',
     '',
     'Examples:',
-    '  node scripts/clipartkorea-batch-download.mjs --regions 서울 --limit 1 --out D:\\stocks',
-    '  node scripts/clipartkorea-batch-download.mjs --ids tip249,cm27 --regions 서울,해운대 --limit 500 --out F:\\stocks',
+    '  node scripts/clipartkorea-batch-download.mjs --limit 5 --out D:\\stocks',
+    '  node scripts/clipartkorea-batch-download.mjs --keywords 은하수,오로라 --limit 100 --out F:\\stocks',
   ].join('\n'));
 }
 
@@ -105,8 +111,7 @@ export function slugifyFolderPart(value) {
 
 function parseArgs(argv = process.argv.slice(2)) {
   const options = {
-    ids: DEFAULT_IDS,
-    regions: [],
+    keywords: DEFAULT_KEYWORDS,
     limit: 500,
     out: process.env.CLIPART_STOCKS_ROOT || '',
     profile: path.join(process.env.LOCALAPPDATA || projectRoot, 'RoadToKorea', 'clipartkorea-profile'),
@@ -114,9 +119,9 @@ function parseArgs(argv = process.argv.slice(2)) {
     downloads: path.join(os.homedir(), 'Downloads'),
     perQuery: 25,
     maxPages: 5,
-    minDelay: 3000,
-    maxDelay: 3000,
-    pageDelay: 5000,
+    minDelay: DEFAULT_MIN_DELAY_MS,
+    maxDelay: DEFAULT_MAX_DELAY_MS,
+    pageDelay: 1500,
     downloadType: DEFAULT_DOWNLOAD_TYPE,
     setupLogin: false,
     headless: false,
@@ -129,10 +134,8 @@ function parseArgs(argv = process.argv.slice(2)) {
 
     if (arg === '--help' || arg === '-h') {
       options.help = true;
-    } else if (arg === '--ids') {
-      options.ids = splitCsv(next());
-    } else if (arg === '--regions') {
-      options.regions = splitCsv(next());
+    } else if (arg === '--keywords') {
+      options.keywords = splitCsv(next());
     } else if (arg === '--limit') {
       options.limit = Number.parseInt(next(), 10);
     } else if (arg === '--out') {
@@ -190,6 +193,7 @@ async function openBrowser(options) {
 
   const context = await chromium.launchPersistentContext(options.profile, {
     acceptDownloads: true,
+    channel: 'chrome',
     headless: options.headless,
     viewport: { width: 1440, height: 1000 },
   });
@@ -252,8 +256,8 @@ async function writeJson(filePath, value) {
   await fs.writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
 
-function createSearchUrl(id, region, page) {
-  const keyword = encodeURIComponent(`${id} ${region}`);
+function createSearchUrl(searchTerm, page) {
+  const keyword = encodeURIComponent(searchTerm);
   return `https://www.clipartkorea.co.kr/search?menu=m&hdn=tc0273&ska=2&sort=3&per=150&ad=on&nw=on&keyword=${keyword}&view=g&page=${page}`;
 }
 
@@ -364,6 +368,78 @@ async function waitForResults(page) {
   );
 }
 
+async function ensurePhotoFilters(page) {
+  const targetNames = ['국내포토', '해외포토'];
+  const result = await page.evaluate((names) => {
+    const normalize = (value) => String(value || '').replace(/\s+/g, '');
+    const labels = [...document.querySelectorAll('label')]
+      .filter((label) => label.getClientRects().length > 0);
+    const states = [];
+
+    for (const name of names) {
+      const label = labels.find((candidate) => normalize(candidate.textContent).includes(name));
+      if (!label) {
+        states.push({ name, found: false, checked: false });
+        continue;
+      }
+
+      const input = label.control
+        || label.querySelector('input[type="checkbox"]')
+        || label.parentElement?.querySelector('input[type="checkbox"]');
+      if (!input) {
+        states.push({ name, found: true, checked: false });
+        continue;
+      }
+
+      if (!input.checked) input.click();
+      if (!input.checked) label.click();
+      states.push({ name, found: true, checked: input.checked });
+    }
+
+    return states;
+  }, targetNames);
+
+  const missing = result.filter((item) => !item.found).map((item) => item.name);
+  if (missing.length) {
+    throw new Error(`Required photo filters were not found: ${missing.join(', ')}`);
+  }
+
+  await page.waitForTimeout(1500);
+  const checked = await page.evaluate((names) => {
+    const normalize = (value) => String(value || '').replace(/\s+/g, '');
+    return names.every((name) => {
+      const label = [...document.querySelectorAll('label')]
+        .filter((candidate) => candidate.getClientRects().length > 0)
+        .find((candidate) => normalize(candidate.textContent).includes(name));
+      const input = label?.control
+        || label?.querySelector('input[type="checkbox"]')
+        || label?.parentElement?.querySelector('input[type="checkbox"]');
+      return Boolean(input?.checked);
+    });
+  }, targetNames);
+
+  if (!checked) {
+    const diagnostics = await page.evaluate(() => ({
+      url: location.href,
+      labels: [...document.querySelectorAll('label')]
+        .filter((label) => label.getClientRects().length > 0 && /포토/.test(label.textContent || ''))
+        .map((label) => ({
+          text: (label.textContent || '').trim(),
+          html: (label.parentElement?.outerHTML || label.outerHTML).slice(0, 1200),
+          control: label.control ? {
+            type: label.control.type,
+            name: label.control.name,
+            value: label.control.value,
+            checked: label.control.checked,
+          } : null,
+        })),
+    }));
+    throw new Error(`국내 포토와 해외 포토 필터가 모두 선택되지 않아 다운로드를 중단합니다. ${JSON.stringify(diagnostics)}`);
+  }
+
+  console.log('Photo filters confirmed: 국내 포토, 해외 포토');
+}
+
 async function detectFriction(page) {
   const text = await page.locator('body').innerText({ timeout: 10000 }).catch(() => '');
   const checks = [
@@ -381,44 +457,48 @@ async function detectFriction(page) {
   return checks.find((item) => text.includes(item)) || '';
 }
 
-async function collectResultRecords(page, id, region, regionSlug) {
+async function collectResultRecords(page, keyword, keywordSlug) {
   return page.$$eval('.cksch_unit', (units, args) => units.map((unit) => {
     const image = unit.querySelector('img');
     return {
-      id: args.id,
-      region: args.region,
-      regionSlug: args.regionSlug,
+      keyword: args.keyword,
+      keywordSlug: args.keywordSlug,
       code: unit.dataset.code || '',
       group: unit.dataset.group || '',
       preview: unit.dataset.preview || '',
       thumb: image?.currentSrc || image?.src || '',
       alt: image?.alt || '',
     };
-  }).filter((item) => item.code && item.group === 'krpho'), { id, region, regionSlug });
+  }).filter((item) => item.code && ['krpho', 'photo'].includes(item.group)), { keyword, keywordSlug });
 }
 
 async function clickDownloadMenu(page, code, downloadType) {
-  const unit = page.locator(`.cksch_unit[data-code="${code}"]`);
-  await unit.scrollIntoViewIfNeeded();
-  await page.waitForTimeout(randomInt(1500, 4000));
-  await unit.hover();
-  await page.waitForTimeout(randomInt(1200, 3500));
-  const downloadIcon = unit.locator('.ic_dw');
-  await downloadIcon.click({ timeout: 10000 });
+  const result = await page.evaluate(({ targetCode, targetType }) => {
+    const unit = document.querySelector(`.cksch_unit[data-code="${CSS.escape(targetCode)}"]`);
+    if (!unit) return { ok: false, reason: 'result card not found' };
 
-  const option = unit.locator('.mg-layer__item').filter({ hasText: downloadType });
-  await option.waitFor({ state: 'visible', timeout: 10000 });
-  await page.waitForTimeout(randomInt(1200, 3500));
+    const option = [...unit.querySelectorAll('.mg-layer__item')]
+      .find((item) => (item.textContent || '').includes(targetType));
+    if (!option) return { ok: false, reason: 'download option not found' };
 
-  await option.click({ timeout: 10000 });
+    const handler = option.getAttribute('onclick') || '';
+    option.click();
+    return { ok: true, handler };
+  }, { targetCode: code, targetType: downloadType });
+
+  if (!result.ok) {
+    throw new Error(`DOM download failed for ${code}: ${result.reason}`);
+  }
+
+  console.log(`DOM download triggered: ${code}`);
 }
 
 async function downloadRecord(page, record, outputRoot, registry, options) {
-  if (record.group !== 'krpho') {
+  if (!ALLOWED_PHOTO_GROUPS.has(record.group)) {
     throw new Error(`Refusing non-photo ClipartKorea asset: ${record.code} (${record.group})`);
   }
 
-  const targetDir = path.join(outputRoot, record.id, record.regionSlug);
+  const targetDir = path.join(outputRoot, record.keywordSlug);
   await fs.mkdir(targetDir, { recursive: true });
 
   const downloadsDir = path.resolve(options.downloads);
@@ -439,9 +519,9 @@ async function downloadRecord(page, record, outputRoot, registry, options) {
   await fs.rename(nativeDownload.filePath, targetPath);
   const entry = {
     code: record.code,
-    id: record.id,
-    region: record.region,
-    regionSlug: record.regionSlug,
+    group: record.group,
+    keyword: record.keyword,
+    keywordSlug: record.keywordSlug,
     fileName,
     relativePath: path.relative(outputRoot, targetPath).replace(/\\/g, '/'),
     absolutePath: targetPath,
@@ -467,23 +547,24 @@ async function runBatch(options) {
     return;
   }
 
-  if (!options.ids.length) throw new Error('At least one id is required.');
-  if (!options.regions.length) throw new Error('At least one region is required. Pass --regions 서울,해운대');
+  if (!options.keywords.length) throw new Error('At least one search keyword is required.');
   if (!Number.isFinite(options.limit) || options.limit < 1) throw new Error('--limit must be a positive number.');
   if (!Number.isFinite(options.minDelay) || !Number.isFinite(options.maxDelay) || options.minDelay < 0 || options.maxDelay < options.minDelay) {
     throw new Error('--min-delay and --max-delay must be valid milliseconds, with max >= min.');
   }
+  if (options.maxDelay > DEFAULT_MAX_DELAY_MS) {
+    throw new Error(`--max-delay cannot exceed ${DEFAULT_MAX_DELAY_MS} ms.`);
+  }
 
   const outputRoot = await resolveOutputRoot(options.out);
-  const queries = options.ids.flatMap((id) => options.regions.map((region) => ({
-    id,
-    region,
-    regionSlug: slugifyFolderPart(region),
-  })));
+  const queries = options.keywords.map((keyword) => ({
+    keyword,
+    keywordSlug: slugifyFolderPart(keyword),
+  }));
 
   console.log(`Output root: ${outputRoot}`);
   console.log(`Watching native downloads: ${path.resolve(options.downloads)}`);
-  console.log(`Queries: ${queries.map((query) => `${query.id} ${query.region}`).join(', ')}`);
+  console.log(`Keywords: ${queries.map((query) => query.keyword).join(', ')}`);
   console.log(`Limit: ${options.limit}`);
 
   if (options.dryRun) return;
@@ -504,14 +585,15 @@ async function runBatch(options) {
       for (let pageNumber = 1; pageNumber <= options.maxPages; pageNumber += 1) {
         if (downloadedCount >= options.limit || queryDownloads >= options.perQuery) break;
 
-        const searchUrl = createSearchUrl(query.id, query.region, pageNumber);
-        console.log(`Searching: ${query.id} ${query.region} page ${pageNumber}`);
+        const searchUrl = createSearchUrl(query.keyword, pageNumber);
+        console.log(`Searching: ${query.keyword} page ${pageNumber}`);
         await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
         await waitForResults(page);
-        await humanPause(page, 'Page review', options.pageDelay, options.pageDelay + 10000);
+        await ensurePhotoFilters(page);
+        await humanPause(page, 'Page review', options.pageDelay, Math.min(10000, options.pageDelay + 2000));
 
         const friction = await detectFriction(page);
-        const records = await collectResultRecords(page, query.id, query.region, query.regionSlug);
+        const records = await collectResultRecords(page, query.keyword, query.keywordSlug);
         if (!records.length) {
           if (friction) throw new Error(`ClipartKorea stopped at "${friction}". Login or account confirmation may be needed.`);
           console.log('No result cards found.');
@@ -522,16 +604,19 @@ async function runBatch(options) {
           if (downloadedCount >= options.limit || queryDownloads >= options.perQuery) break;
           if (registry.codes[record.code]) continue;
 
-          await humanPause(page, 'Before download', options.minDelay, options.maxDelay);
-          const result = await downloadRecord(page, record, outputRoot, registry, options);
-          if (result.status === 'downloaded') {
-            downloadedCount += 1;
-            queryDownloads += 1;
-            await writeJson(registryPath, registry);
-            console.log(`[${downloadedCount}/${options.limit}] ${record.id}/${record.regionSlug}/${path.basename(result.targetPath)}`);
+          try {
+            const result = await downloadRecord(page, record, outputRoot, registry, options);
+            if (result.status === 'downloaded') {
+              downloadedCount += 1;
+              queryDownloads += 1;
+              await writeJson(registryPath, registry);
+              console.log(`[${downloadedCount}/${options.limit}] ${record.keywordSlug}/${path.basename(result.targetPath)}`);
+            }
+          } catch (error) {
+            console.error(`Skipping ${record.code}: ${error instanceof Error ? error.message : error}`);
           }
 
-          await humanPause(page, 'After download', options.minDelay, options.maxDelay);
+          await humanPause(page, 'Next download', options.minDelay, options.maxDelay);
         }
       }
     }

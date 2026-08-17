@@ -103,8 +103,7 @@ export function getPreferredRouteSlugForCity(citySlug: string): RouteSlug | null
 }
 
 export function getCanonicalCityHref(citySlug: string): string {
-  const routeSlug = getPreferredRouteSlugForCity(citySlug);
-  return routeSlug ? `/${routeSlug}/${citySlug}` : `/cities/${citySlug}`;
+  return `/cities/${citySlug}`;
 }
 
 export function getRouteCityHref(routeSlug: RouteSlug, citySlug: string): string {
@@ -162,7 +161,7 @@ export function getCanonicalCityLinks(): CanonicalCityLink[] {
 
   for (const routeCity of getRouteCityLinks()) {
     const href = getCanonicalCityHref(routeCity.citySlug);
-    links.set(href, {
+    links.set(routeCity.citySlug, {
       citySlug: routeCity.citySlug,
       href,
     });

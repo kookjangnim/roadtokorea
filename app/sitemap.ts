@@ -3,6 +3,7 @@ import { fetchPosts } from '@/lib/wp-api';
 import { getSiteUrl } from '@/lib/site-config';
 import { getCanonicalCityLinks } from '@/data/routeRegistry';
 import { getIndexableWpPostRoute } from '@/lib/wp-route-context';
+import { getCityGuideTopics } from '@/data/cityGuideTopics';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = getSiteUrl();
@@ -114,6 +115,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             priority: 0.75,
         }));
 
+        const cityGuideRoutes: MetadataRoute.Sitemap = getCanonicalCityLinks().flatMap((city) =>
+          getCityGuideTopics(city.citySlug).map((topic) => ({
+            url: `${baseUrl}/cities/${city.citySlug}/guides/${topic.slug}`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: topic.slug === 'overview' ? 0.72 : 0.68,
+          })),
+        );
+
         const posts = await fetchPosts({ perPage: 100, embed: true });
 
         const dynamicRoutes: MetadataRoute.Sitemap = posts.flatMap((post) => {
@@ -128,7 +138,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           }];
         });
 
-        return [...staticRoutes, ...routeCityRoutes, ...dynamicRoutes];
+        return [...staticRoutes, ...routeCityRoutes, ...cityGuideRoutes, ...dynamicRoutes];
     } catch (error) {
         console.error('Error generating sitemap:', error);
         const routeCityRoutes: MetadataRoute.Sitemap = getCanonicalCityLinks().map((routeCity) => ({
@@ -138,6 +148,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             priority: 0.75,
         }));
 
-        return [...staticRoutes, ...routeCityRoutes];
+        const cityGuideRoutes: MetadataRoute.Sitemap = getCanonicalCityLinks().flatMap((city) =>
+          getCityGuideTopics(city.citySlug).map((topic) => ({
+            url: `${baseUrl}/cities/${city.citySlug}/guides/${topic.slug}`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: topic.slug === 'overview' ? 0.72 : 0.68,
+          })),
+        );
+
+        return [...staticRoutes, ...routeCityRoutes, ...cityGuideRoutes];
     }
 }
